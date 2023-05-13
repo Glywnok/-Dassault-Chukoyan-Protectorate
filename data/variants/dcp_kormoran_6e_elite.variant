@@ -1,0 +1,51 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 20,
+    "fluxVents": 36,
+    "goalVariant": true,
+    "hullId": "dcp_kormoran_6e",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_kormoran_6e_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "dcp_hellhound",
+                "WS0016": "dcp_hellhound"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_hellspear"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_9cmrailgun",
+                "WS0003": "dcp_9cmrailgun",
+                "WS0007": "dcp_linearcannonlight",
+                "WS0008": "dcp_linearcannonlight",
+                "WS0009": "dcp_linearcannonlight",
+                "WS0010": "dcp_linearcannonlight"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_linearflak",
+                "WS0005": "dcp_micropd",
+                "WS0006": "dcp_micropd",
+                "WS0011": "dcp_micropd",
+                "WS0012": "dcp_micropd",
+                "WS0013": "dcp_micropd",
+                "WS0014": "dcp_micropd"
+            }
+        }
+    ]
+}

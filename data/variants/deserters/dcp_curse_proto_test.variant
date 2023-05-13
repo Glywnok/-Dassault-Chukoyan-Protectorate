@@ -1,0 +1,43 @@
+{
+    "displayName": "Prototype",
+    "fluxCapacitors": 10,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "dcp_curse_proto",
+    "hullMods": [
+        "dcp_bbdefense",
+        "expanded_deck_crew"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_curse_proto_test",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_electronrocket_pod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_6cmrailgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_linearcannonlight"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_matador",
+                "WS0005": "dcp_matador"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_arcite_wing",
+        "dcp_bantam_wing"
+    ]
+}

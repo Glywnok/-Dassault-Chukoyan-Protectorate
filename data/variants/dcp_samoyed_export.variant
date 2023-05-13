@@ -1,0 +1,30 @@
+{
+    "displayName": "Export",
+    "fluxCapacitors": 5,
+    "fluxVents": 10,
+    "hullId": "dcp_samoyed",
+    "hullMods": ["hardened_subsystems"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "dcp_samoyed_export",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0013": "dcp_ammftr"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_blazegun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_multipdnode",
+                "WS0006": "dcp_multipdnode"
+            }
+        }
+    ]
+}

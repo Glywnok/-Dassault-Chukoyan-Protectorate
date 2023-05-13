@@ -1,0 +1,73 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 5,
+    "fluxVents": 48,
+    "hullId": "dcp_warlock",
+    "hullMods": ["dcp_bbsupport"],
+    "modules": [{"WS0015": "dcp_bbLRMmodule_std"}],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_warlock_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "dcp_thermalmortar"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_pulseripper"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_electrogun"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_electrogun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "dcp_shellback",
+                "WS0010": "dcp_shellback",
+                "WS0013": "dcp_shellback",
+                "WS0014": "dcp_shellback"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "dcp_proxbomb_ciws",
+                "WS0008": "dcp_proxbomb_ciws"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "dcp_thermalpd",
+                "WS0012": "dcp_thermalpd",
+                "WS0037": "dcp_impulsor",
+                "WS0038": "dcp_impulsor",
+                "WS0039": "dcp_impulsor",
+                "WS0040": "dcp_impulsor",
+                "WS0041": "dcp_impulsor",
+                "WS0042": "dcp_impulsor",
+                "WS0043": "dcp_impulsor",
+                "WS0044": "dcp_impulsor"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_focuser_wing",
+        "dcp_focuser_wing",
+        "dcp_focuser_wing",
+        "dcp_lycosid_wing"
+    ]
+}

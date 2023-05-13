@@ -1,0 +1,34 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_burya",
+    "hullMods": [
+        "unstable_injector",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_burya_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "dcp_perforatorpod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_linearflak_single"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_linearvulcan",
+                "WS0004": "dcp_linearvulcan"
+            }
+        }
+    ]
+}

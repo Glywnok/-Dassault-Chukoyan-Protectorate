@@ -1,0 +1,12 @@
+{
+	"ranks":{
+		#Sigma matter researcher 
+		"dcp_smatterresearch":{"name":"Sigma Matter Researcher"},
+	},
+	
+	"posts":{
+		#SNRI Rep
+		"dcp_SNRIrep":{"name":"SNRI Representative"},
+		"dcp_armsengineer":{"name":"Weapons Engineer"},
+	},
+}

@@ -1,0 +1,32 @@
+{
+  "displayName": "Scout Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_harridan",
+  "hullMods": [],
+  "variantId": "dcp_harridan_Scout",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_ammftr",
+        "WS0002": "dcp_ammftr"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "dcp_magdisruptor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "dcp_multipdnode"
+      }
+    }
+  ]
+}

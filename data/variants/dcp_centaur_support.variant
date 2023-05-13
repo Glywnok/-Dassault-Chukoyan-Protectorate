@@ -1,0 +1,35 @@
+{
+    "displayName": "Fire Support",
+    "fluxCapacitors": 2,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_centaur",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_centaur_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "dcp_marteau_esm_pod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_6cmrailgun",
+                "WS0006": "dcp_6cmrailgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_microflak",
+                "WS0003": "dcp_micropd",
+                "WS0004": "dcp_micropd"
+            }
+        }
+    ]
+}

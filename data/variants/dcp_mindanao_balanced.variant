@@ -1,0 +1,41 @@
+{
+    "displayName": "Balanced",
+    "fluxCapacitors": 17,
+    "fluxVents": 30,
+    "hullId": "dcp_mindanao",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_mindanao_balanced",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_gravmissiletube",
+                "WS0007": "dcp_gravmissiletube"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_12cmrailgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_microflak",
+                "WS0003": "dcp_microflak",
+                "WS0004": "dcp_micropd",
+                "WS0005": "dcp_micropd"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_egret_wing",
+        "dcp_egret_wing",
+        "dcp_flare_wing",
+        "dcp_dard_wing"
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "displayName": "Sniper",
+    "fluxCapacitors": 16,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "dcp_baikal",
+    "hullMods": [
+        "targetingunit",
+        "fluxdistributor"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_baikal_sniper",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "dcp_clusterlauncher",
+                "WS0009": "dcp_gravmissiletube"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_hellspear"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_12cmrailgun",
+                "WS0004": "dcp_tacbeamer",
+                "WS0005": "dcp_tacbeamer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_tribeamer",
+                "WS0006": "dcp_microflak",
+                "WS0007": "dcp_microflak"
+            }
+        }
+    ]
+}

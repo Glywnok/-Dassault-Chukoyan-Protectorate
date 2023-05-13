@@ -1,0 +1,49 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 12,
+    "fluxVents": 20,
+    "hullId": "dcp_devilray",
+    "hullMods": [
+        "dcp_bbsupport",
+        "magazines"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_devilray_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "dcp_marteau_esm_pod"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "dcp_electronrocket",
+                "WS0004": "dcp_electronrocket"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "dcp_electrogun",
+                "WS0002": "dcp_electrogun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_shellback"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0022": "dcp_thermalpd",
+                "WS0023": "dcp_thermalpd"
+            }
+        }
+    ]
+}

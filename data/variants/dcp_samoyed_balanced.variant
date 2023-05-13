@@ -1,0 +1,32 @@
+{
+    "displayName": "Balanced",
+    "fluxCapacitors": 2,
+    "fluxVents": 10,
+    "hullId": "dcp_samoyed",
+    "hullMods": [
+        "advancedshieldemitter",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "variantId": "dcp_samoyed_balanced",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0013": "dcp_amm_samo"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_linearcannonlight"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_multipdnode",
+                "WS0006": "dcp_multipdnode"
+            }
+        }
+    ]
+}

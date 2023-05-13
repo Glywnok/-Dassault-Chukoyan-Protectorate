@@ -1,0 +1,36 @@
+{
+    "displayName": "Patrol",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "afflictor",
+    "hullMods": [
+        "fluxbreakers",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "afflictor_patrol",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "dcp_omniblaster",
+                "WS 003": "dcp_omniblaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "dcp_mirvtorpedo_rack",
+                "WS 004": "dcp_mirvtorpedo_rack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 006": "dcp_micropd"}
+        }
+    ]
+}

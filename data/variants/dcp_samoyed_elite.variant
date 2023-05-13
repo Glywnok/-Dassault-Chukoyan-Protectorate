@@ -1,0 +1,30 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_samoyed",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "dcp_samoyed_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0013": "dcp_amm_samo"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_tacbeamer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_multipdnode",
+                "WS0006": "dcp_multipdnode"
+            }
+        }
+    ]
+}

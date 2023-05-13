@@ -1,0 +1,31 @@
+{
+    "displayName": "Heavy",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_burya",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_burya_heavy",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "dcp_hellhoundlauncher"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_heavylinear_autogun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_linearvulcan",
+                "WS0004": "dcp_linearvulcan"
+            }
+        }
+    ]
+}

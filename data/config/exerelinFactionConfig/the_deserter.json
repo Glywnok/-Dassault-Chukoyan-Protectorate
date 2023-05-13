@@ -1,0 +1,59 @@
+{
+    "playableFaction":false,
+	"startingFaction":true,	# allows us to start as this faction even though it's not technically playable
+	"freeStart":true,	# don't spawn markets in random mode
+	"spawnAsFactionId":"player",	# transfer to this faction at start (after new game time pass)
+	
+    "corvusCompatible":true,
+	"difficultyString":"hard",
+	"ngcTooltip":"Awake on the foreign shores of freedom. Your enemies are many, your friends are few. Having stolen an advanced prototype ship and the blueprints for more, you'll need that firepower often in your new and desperate life.",
+
+    "factionsLiked":[
+    ],
+    "factionsDisliked":[
+		"luddic_path", 				# 
+		"luddic_church", 			# 
+		"independent", 				# 
+		"hegemony", 				# 
+		"tritachyon", 				# 'let's make a fleet of AI warships that can annihilate us all what could go wrong?' 
+		"persean", 					#  
+		"sindrian_diktat", 			# 
+		"remnant", 					#  
+		"dassault_mikoyan", 		# it turns out that when you gun for someone for a decade they take it personally 
+		"blackrock_driveyards",		# we rip huge holes in the fabric of space too 
+		"blackrock_driveyards",		# we rip huge holes in the fabric of space too 
+		"shadow_industry", 			# 
+		"exigency", 				# 
+		"tiandong", 				# we really crossed the line can't even do business with the wheeler-dealers themselves
+		"diableavionics", 			#
+		"SCY", 						#
+		"sylphon", 					#
+		"nullorder", 				# 
+		"fob", 						# 
+		"Coalition", 				# 
+		"neutrinocorp", 			# 
+		"interstellarimperium", 	# 
+		"syndicate_asp", 			# 
+		"pack", 					# 
+		"crystanite", 				# 
+		"vass_shipyards", 			# 
+		"fringe_defence_syndicate", # 
+		"nomads", 					# 
+		"junk_pirates", 			# 
+		"sad", 						# 
+		"apex_design", 				# 
+		"new_galactic_order", 		# 
+		"aria", 					# 
+		"HIVER" 					# 
+    ],
+    
+    "startShipsSolo":[["dcp_starsylph_deserter_test"]],
+    "startShipsCombatLarge":[["dcp_stormkestrel_proto_test"]],
+    "startShipsCarrierSmall":[["dcp_curse_proto_test"]],
+    "startShipsSuper":[["dcpx_braveblade_std", "dcp_flatmouse_std", "dcp_desertersupply_sm_std"]],
+    
+    "startSpecialItems":[
+        [["dcp_deserter_package", ""]],
+    ],
+    
+}

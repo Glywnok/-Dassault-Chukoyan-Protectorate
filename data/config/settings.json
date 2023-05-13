@@ -1,0 +1,101 @@
+{
+	"plugins":{
+		"DMEBlockedHullmodDisplayScript":"data.hullmods.DMEBlockedHullmodDisplayScript",
+		"DME_LightInjector":"data.scripts.plugins.dcp_lightInjector",
+		#"DME_ModuleRetreat":"data.scripts.plugins.dcp_ModuleRetreatCleaner",
+		#"DME_ProjectileTrailHandlerPlugin":"data.scripts.plugins.dcp_ProjectileTrailHandlerPlugin",
+	},
+	
+	"designTypeColors":{
+		"Dassault-Mikoyan":[76,113,175,255],
+		"SNRI Labs":[96,133,200,255],
+		"Blade Breakers":[155,155,190,255],
+		"Deserter":[105,105,120,255],
+		"Sigma Tech":[75,255,175,255],
+		"DME Export":[240,160,40,255],
+		"DME Refit":[200,160,40,255],
+	},
+	
+	"graphics":{
+		"blueprint_packages":{
+			"dcp_dmecivil_package":"graphics/DCP/icons/cargo/dcp_bp_civ.png",
+			"dcp_dmecore_package":"graphics/DCP/icons/cargo/dcp_bp_core.png",
+			"dcp_dmeadv_package":"graphics/DCP/icons/cargo/dcp_bp_adv.png",
+			"dcp_dmeballistic_package":"graphics/DCP/icons/cargo/dcp_bp_bal.png",
+			"dcp_dmeenergy_package":"graphics/DCP/icons/cargo/dcp_bp_eng.png",
+			"dcp_dmemissile_package":"graphics/DCP/icons/cargo/dcp_bp_mis.png",
+			
+			"dcp_bureau_package":"graphics/DCP/icons/cargo/dcp_bp_6eme.png",
+			"dcp_deserter_package":"graphics/DCP/icons/cargo/dcp_bp_deserter.png",
+			"dcp_bladewood_package":"graphics/DCP/icons/cargo/dcp_bp_bladewood.png",
+			"dcp_sigmatech_package":"graphics/DCP/icons/cargo/dcp_bp_sigma.png",
+			"dcp_dmerefit_package":"graphics/DCP/icons/cargo/dcp_bp_ref.png",
+		},
+		"industry":{
+			"dcp_shield_texture":"graphics/DCP/planets/dcp_sigma_shield.png",
+			"dcp_dysonshell":"graphics/DCP/planets/dcp_toposphere.png",
+			"dcp_dysonshield":"graphics/DCP/planets/dcp_toposhield.png",
+		},
+		"campaignEntities":{
+			"dcp_breaker_beacon":"graphics/DCP/stations/dcp_breakerbuoy00.png",
+			"dcp_breaker_beacon_glow":"graphics/DCP/stations/dcp_breakerbuoy00glow.png",
+		},
+		"intel":{
+		"dcp_hardenedbeacon_high":"graphics/DCP/icons/intel/dcp_hardenedbeacon_high.png",
+		"dcp_hardenedbeacon_medium":"graphics/DCP/icons/intel/dcp_hardenedbeacon_medium.png",
+		"dcp_hardenedbeacon_low":"graphics/DCP/icons/intel/dcp_hardenedbeacon_low.png",
+    	},
+		"characters":{
+			"DME_ari":"graphics/DCP/portraits/characters/ariane.png",
+			"DME_niko":"graphics/DCP/portraits/characters/niko.png",
+			"DME_emile":"graphics/DCP/portraits/characters/emile.png",
+			"DME_maya":"graphics/DCP/portraits/characters/maya.png",
+			"volta":"graphics/portraits/characters/volta.png",
+		},
+		"misc":{
+			"dcp_blankring":"graphics/DCP/planets/dcp_blankring.png",
+		},
+		"terrain":{
+			"dcp_nebula_sigma":"graphics/DCP/terrain/dcp_sigma_cloud.png",
+			"dcp_nebula_sigma_glow":"graphics/DCP/terrain/dcp_sigma_cloud_glow.png",
+			"dcp_nebula_sigma_map":"graphics/DCP/terrain/dcp_sigma_cloud_map.png",
+		},
+		"fx":{
+			"projectile_trail_standard":"graphics/DCP/fx/dcp_projectile_contrail.png",
+			"projectile_trail_fuzzy":"graphics/DCP/fx/dcp_projectile_contrail_fuzzy.png",
+			"projectile_trail_smooth":"graphics/DCP/fx/dcp_projectile_contrail_smooth.png",
+			#mine
+			"projectile_trail_arrow":"graphics/DCP/fx/dcp_projectile_contrail_arrow.png",
+			"projectile_trail_cel":"graphics/DCP/fx/dcp_projectile_contrail_cel.png",
+			"projectile_trail_helix":"graphics/DCP/fx/dcp_projectile_contrail_helix.png",
+			"projectile_trail_ring":"graphics/DCP/fx/dcp_projectile_contrail_ring.png",
+			"projectile_trail_electric":"graphics/DCP/fx/dcp_projectile_contrail_electric.png",
+			"projectile_trail_rail":"graphics/DCP/fx/dcp_projectile_contrail_electricrail.png",
+			"projectile_trail_jackal":"graphics/DCP/fx/dcp_projectile_contrail_jackal.png",
+		},
+		"ui":{
+            "dcp_hullmod_incompatible":"graphics/DCP/icons/tooltip/hullmod_incompatible.png",
+            "dcp_hullmod_defense":"graphics/DCP/icons/tooltip/dcp_hullmod_defense.png",
+            "dcp_hullmod_fighter":"graphics/DCP/icons/tooltip/dcp_hullmod_fighter.png",
+            "dcp_hullmod_movement":"graphics/DCP/icons/tooltip/dcp_hullmod_movement.png",
+            "dcp_hullmod_sensor":"graphics/DCP/icons/tooltip/dcp_hullmod_sensor.png",
+        },
+	},
+	
+	"GachaSMods_blacklistedHullmods":[
+		#built-in
+		"dcp_monobloc",
+		"dcp_reactionfurnace",
+		"dcp_bbengineering",
+		"dcp_refurbframe",
+		"dcp_6eme_upgr",
+		"dcp_rangefinder",
+		"dcp_advnavrelay",
+		#modular
+		"dcp_bbassault",
+		"dcp_bbdefense",
+		"dcp_bbsupport",
+		#cc
+		"dcp_dccrew"
+	],
+}

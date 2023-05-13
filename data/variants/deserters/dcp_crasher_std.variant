@@ -1,0 +1,47 @@
+{
+    "displayName": "Prototype",
+    "fluxCapacitors": 15,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_crasher",
+    "hullMods": [
+        "ecm",
+        "magazines"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_crasher_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "dcp_energymortar",
+                "WS0002": "dcp_energymortar"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_perforatorpod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "dcp_linearcannonlight"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_6cmrailgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_matador",
+                "WS0007": "dcp_matador"
+            }
+        }
+    ]
+}

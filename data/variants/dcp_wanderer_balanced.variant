@@ -1,0 +1,42 @@
+{
+    "displayName": "Balanced",
+    "fluxCapacitors": 16,
+    "fluxVents": 20,
+    "hullId": "dcp_wanderer",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_wanderer_balanced",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "dcp_hellhound",
+                "WS0003": "dcp_hellhound"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "dcp_magpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_linearcannontwin",
+                "WS0004": "dcp_ionbeamer",
+                "WS0005": "dcp_ionbeamer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "dcp_micropd",
+                "WS0008": "dcp_micropd"
+            }
+        }
+    ]
+}

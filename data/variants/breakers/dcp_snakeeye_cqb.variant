@@ -1,0 +1,39 @@
+{
+    "displayName": "Close Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "dcp_snakeeye",
+    "hullMods": ["dcp_bbassault"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_snakeeye_cqb",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_impulsor",
+                "WS0005": "dcp_impulsor"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_plasrocket_pod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_thermalpd",
+                "WS0003": "dcp_thermalpd"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0015": "dcp_bbheavymg"}
+        }
+    ]
+}

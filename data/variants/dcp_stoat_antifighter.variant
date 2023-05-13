@@ -1,0 +1,32 @@
+{
+    "displayName": "Anti-Fighter",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "hullId": "dcp_stoat",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_stoat_antifighter",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "dcp_ammpod"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_micropd"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_NTKcannon"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "dcp_NTKcannon"}
+        }
+    ]
+}

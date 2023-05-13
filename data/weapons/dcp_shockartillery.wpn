@@ -1,0 +1,35 @@
+{
+	"id":"dcp_shockartillery",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"everyFrameEffect": "data.scripts.weapons.dcp_ShockArtilleryFX",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_med.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_shockartillery_turret_base.png",
+	"turretGunSprite":"graphics/DCP/weapons/dcp_shockartillery_turret_recoil.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_shockartillery_turret_glow.png",
+	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_socket_hardpoint_med.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_shockartillery_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/DCP/weapons/dcp_shockartillery_hardpoint_recoil.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_shockartillery_hardpoint_glow.png",
+	"visualRecoil":2.0,  # the gun sprites are only used if this is non-0
+	"glowColor":[150,135,235,200],
+	"turretOffsets":[18, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[22, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"muzzleFlashSpec":{"length":36.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":3.0,
+					   "particleSizeMin":9,
+					   "particleSizeRange":27.0,
+					   "particleDuration":0.18,
+					   "particleCount":32,
+					   "particleColor":[150,135,235,200]},
+	"projectileSpecId":"dcp_artillery_shot",  # projectile that will be fired
+	#"projectileSpecId":"dcp_squiggle_artillery_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_energy_charge",
+	"fireSoundTwo":"dcp_shockartillery_fire",
+}

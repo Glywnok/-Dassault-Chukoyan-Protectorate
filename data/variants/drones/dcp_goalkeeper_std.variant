@@ -1,0 +1,24 @@
+{
+  "displayName": "Defense Bit",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_goalkeeper",
+  "hullMods": [],
+  "variantId": "dcp_goalkeeper_std",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dcp_linearcannonlight"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_micropd"
+      }
+    }
+  ]
+}

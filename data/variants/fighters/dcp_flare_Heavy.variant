@@ -1,0 +1,24 @@
+{
+  "displayName": "Heavy Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_flare",
+  "hullMods": [],
+  "variantId": "dcp_flare_Heavy",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "dcp_ammftr"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_linearcannonlight"
+      }
+    }
+  ]
+}

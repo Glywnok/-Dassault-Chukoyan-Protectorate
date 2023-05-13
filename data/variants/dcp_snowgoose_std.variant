@@ -1,0 +1,60 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 16,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_snowgoose",
+    "hullMods": [
+        "targetingunit",
+        "advancedshieldemitter",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_snowgoose_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0019": "dcp_ruptureasm_tube",
+                "WS0020": "dcp_ruptureasm_tube",
+                "WS0021": "dcp_ruptureasm_tube",
+                "WS0022": "dcp_ruptureasm_tube"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "dcp_mirvtorpedo_rack",
+                "WS0016": "dcp_mirvtorpedo_rack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_hybridblaster",
+                "WS0008": "dcp_linearcannon",
+                "WS0009": "dcp_linearcannon",
+                "WS0023": "dcp_linearcannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_multipdnode",
+                "WS0003": "dcp_multipdnode",
+                "WS0004": "dcp_multipdnode",
+                "WS0005": "dcp_multipdnode",
+                "WS0006": "dcp_multipdnode",
+                "WS0007": "dcp_multipdnode",
+                "WS0010": "dcp_multipdnode",
+                "WS0017": "dcp_multipdnode",
+                "WS0018": "dcp_multipdnode"
+            }
+        }
+    ]
+}

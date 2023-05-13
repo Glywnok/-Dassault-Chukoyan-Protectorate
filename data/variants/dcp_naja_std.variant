@@ -1,0 +1,39 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_naja",
+    "hullMods": [
+        "ecm",
+        "extendedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_naja_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_ionbeamer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "dcp_NTKcannon",
+                "WS0009": "dcp_NTKcannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_multipdnode",
+                "WS0002": "dcp_multipdnode",
+                "WS0003": "dcp_multipdnode",
+                "WS0004": "dcp_multipdnode"
+            }
+        }
+    ]
+}

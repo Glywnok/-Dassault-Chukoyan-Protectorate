@@ -1,0 +1,26 @@
+{
+        "defaultChannels":[
+                "DME_public",
+        ],
+        
+        "DME_public":{
+		"name":"Nikolaev Media Authority",
+		"logo":"graphics/DCP/icons/intel/dme_public.png",
+		"icon":"graphics/DCP/icons/intel/dme_public.png",
+		"image":"graphics/DCP/factions/dassault_mikoyan.png",
+		"sound":"ui_channel_news",
+		"faction":"dassault_mikoyan",
+		"type":"News Report",
+		"shortType":"News",
+	},
+	"DME_internal":{
+		"name":"DME High Guard Intelligence",
+		"logo":"graphics/DCP/icons/intel/dme_internal.png",
+		"icon":"graphics/DCP/icons/intel/dme_internal.png",
+		"image":"graphics/DCP/factions/dassault_mikoyan.png",
+		"sound":"ui_channel_comm_secure",
+		"faction":"dassault_mikoyan",
+		"type":"Intelligence Report",
+		"shortType":"Intel",
+	},
+}

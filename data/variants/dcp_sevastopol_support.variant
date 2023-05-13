@@ -1,0 +1,38 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 2,
+    "fluxVents": 18,
+    "hullId": "dcp_sevastopol",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_sevastopol_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0005": "dcp_ruptureasm_sm"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "dcp_erpulsebeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_linearvulcan",
+                "WS0002": "dcp_linearvulcan"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_micropd",
+                "WS0004": "dcp_micropd"
+            }
+        }
+    ]
+}

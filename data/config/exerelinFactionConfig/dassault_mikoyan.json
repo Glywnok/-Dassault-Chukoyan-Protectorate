@@ -1,0 +1,189 @@
+{
+    "uniqueModClassName":"data.scripts.DMEModPlugin", # String
+    "playableFaction":true, # Boolean
+    
+    "corvusCompatible":true,
+	"difficultyString":"normal",
+    "ngcTooltip":"A high/mid-tech faction committed to fast, intense strike and maneuver warfare.",
+
+    "crewExpereinceLevelIncreaseChance":0.5, # Double, 0 - 1.0
+    "baseFleetCostMultiplier":1.0, # Double
+
+    "customRebelFaction":"", # String
+    "customRebelFleetId":"", # String
+    "rebelFleetSuffix":"Renegades", # String
+
+    "directoryUseShortName":true,
+	
+	"marketSpawnWeight":0.75,
+	
+	"invasionSupportFleetName":"Strike Group",
+    "responseFleetName":"Reaction Force",
+    "defenceFleetName":"Orbital Guard",
+
+    "positiveDiplomacyExtra":0, # Integer
+    "negativeDiplomacyExtra":0, # Integer
+    "factionsLiked":[
+    		"tiandong",
+    		"hegemony",
+    		"ORA",
+    		"shadow_industry"], 			# String array
+    "factionsDisliked":[
+    		"luddic_path",
+    		"persean",
+    		"SCY",
+    		"diableavionics",
+    		"interstellarimperium",
+    		"vic",
+    		"mayorate",
+    		"apex_design",
+    		"new_galactic_order",
+    		"aria",
+    		"uaf"], 						# String array
+    "startRelationships":{
+    		"hegemony": 0.25, 				# render unto Caesar, after you skim the cream
+    		"luddic_path": -0.9,			
+    		"tiandong": 0.25, 				# like bros in a wuxia flick
+    		"blackrock_driveyards": -0.3, 	
+    		"shadow_industry": 0.25, 		# so green, so cuddly - SRA ship plushies sell out fast
+    		"diableavionics": -0.5, 		# the whole 'planet full of slaves' is kind of a dealbreaker
+    		"sylphon": 0.25, 				
+    		"scalartech": -0.25, 			# the 'shiny science asshole' competition can only have one winner
+    		"mayorate": -0.8, 				
+    		"magellan_protectorate": -0.3, 	# the whole 'massive pointy social pyramid' thing is a hard no
+    		"communist_clouds": -0.1, 		
+    		"apex_design": -0.1, 			
+    		"new_galactic_order": -1.0,  	# you know why you don't get invited to the good parties
+    		"aria": -1.0,
+    		"uaf": -1.0}, 				
+    "maxRelationships":{
+    		"hegemony": 0.75, 				
+    		"luddic_path": -0.3, 			
+    		"tiandong": 0.75, 				# the sun wukong to your xuanzang
+    		"blackrock_driveyards": 0.6, 	
+    		"shadow_industry": 0.75, 		
+    		"diableavionics": 0.1, 			
+    		"sylphon": 0.5, 				
+    		"scalartech": 0.25, 			# I read your latest paper, and it sucked
+    		"mayorate": -0.2, 				
+    		"magellan_protectorate": 0.3, 	# seriously doubt you're gonna fix that any time soon
+    		"communist_clouds": 0.3, 		
+    		"apex_design": 0.3, 			
+    		"new_galactic_order": -0.9,  	# 'your choice of masturbation fantasy is... unfortunate.'
+    		"aria": -0.9,
+    		"uaf": -0.9}, 				
+    "diplomacyPositiveChance":{
+    		"luddic_church": 0.2, 			# already heard the good news
+    		"luddic_path": 0.1, 			
+    		"blackrock_driveyards": 0.4, 	
+    		"SCY": 0.25, 					
+    		"diableavionics": 0.25, 		
+    		"interstellarimperium": 0.3, 	
+    		"sylphon": 0.3, 				
+    		"scalartech": 0.2, 				# we don't fight battles of wits with the unarmed
+    		"vic": 0.2,
+    		"magellan_protectorate": 0.25, 	# sometimes you get it right
+    		"communist_clouds": 0.3, 		
+    		"apex_design": 0.4, 			
+    		"new_galactic_order": 0.01, 	# fuuuck space nazis
+    		"aria": 0.01,
+    		"uaf": 0.01},					
+    "diplomacyNegativeChance":{
+    		"luddic_church": 0.8, 			# take your little pamphlet and cram it
+    		"luddic_path": 0.9, 			
+    		"blackrock_driveyards": 0.6, 	
+    		"SCY": 0.5, 					
+    		"diableavionics": 0.75, 		
+    		"interstellarimperium": 0.6, 	
+    		"sylphon": 0.6, 				
+    		"scalartech": 0.8, 				# my grad students can totally beat up your grad students
+    		"vic": 0.8,
+    		"magellan_protectorate": 0.75, 	# the sans-culottes are gonna make you a sans-tête if you keep it up
+    		"communist_clouds": 0.7, 		
+    		"apex_design": 0.6, 			
+    		"new_galactic_order": 5.0, 		# fuck them with planet-cracker bombs
+			"aria": 5.0,
+			"uaf": 5.0},
+			
+    "morality":"good", #if 'good' doesn't exclude a whole lotta collateral damage.
+    
+    "factionIdForHqResponse":"6eme_bureau",
+    
+    "allowAgentActions":true,
+    "allowPrisonerActions":false,
+    
+    "alignments":{
+        "corporate":0.4,
+        "technocratic":1.0,
+        "diplomatic":0.8,
+    },
+    "diplomacyTraits":["stalwart", "helps_allies", "anarchist"],
+
+    
+    "vengeanceFleetNames":["Hunter-warrior Team","Pursuit Group","Elimination Fleet"],
+    "vengeanceFleetNamesSingle":["a Hunter-warrior Team","a Pursuit Group","an Elimination Fleet"],
+    
+    "vengeanceFleetSizeMult":1.6,
+        
+    "miningVariantsOrWings":["dcp_tereshkova_std"],
+    
+    "customStations":["station_dme_outpost", "station_dme_lab"],
+    
+    "freeMarket":true,
+    
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.FactionListNamer",
+    
+    "startShipsSolo":[["dcp_starsylph_std"]],
+    "startShipsCombatSmall":[
+    	["dcp_vesper_elite", "dcp_stoat_escort", "dcp_stoat_escort", "dcp_samoyed_std"],
+    	["dcp_naja_elite", "dcp_stoat_std", "dcp_burya_heavy"],
+    	["dcp_tunguska_assault", "dcp_stoat_antifighter"]
+    	],
+    "startShipsCarrierSmall":[
+    	["dcp_leyte_std", "dcp_vesper_assault", "dcp_burya_std"],
+    	["dcp_leyte_patrol", "dcp_tereshkova_assault", "dcp_borzoi_elite"]
+    	],
+    "startShipsTradeSmall":[
+    	["dcp_naja_std", "dcp_tereshkova_std", "dcp_sevastopol_std", "dcp_puddlejumper_std"],
+    	["dcp_wanderer_balanced", "dcp_sevastopol_std", "dcp_sevastopol_std"]
+    	],
+    "startShipsCombatLarge":[
+    	["dcp_kormoran_std", "dcp_baikal_std", "dcp_tunguska_std"],
+    	["dcp_maskirovka_std", "dcp_tonnerre_std", "dcp_wanderer_support", "dcp_burya_support"]
+    	],
+    "startShipsCarrierLarge":[
+    	["dcp_mindanao_std", "dcp_wanderer_std", "dcp_borzoi_elite", "dcp_sevastopol_std"],
+    	["dcp_mindanao_patrol", "dcp_wanderer_balanced", "dcp_stoat_antifighter", "dcp_stoat_antifighter"]
+    	],
+    "startShipsTradeLarge":[
+    	["dcp_zelenograd_explore", "dcp_sevastopol_std"],
+    	["dcp_baikal_brone_barrage", "dcp_centaur_std", "dcp_centaur_std", "dcp_naja_std"]
+    	],
+    "startShipsSuper":[["dcp_snowgoose_elite"]],
+
+    "startSpecialItems":[
+        [["dcp_dmecore_package", "dcp_dmeadv_package"]],
+    ],
+    
+    "colonyExpeditionChance":1.2,
+    "maxColonyDistance": 24,
+    
+    "defenceStations":[
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.6},
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"], "weight":1.0},
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.25},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"aiCore_station", "count":1, "mult":0.1},
+        {"id":"aiCore_military", "mult":0.25},
+        {"id":"aiCore_fuelprod", "count":1},
+        {"id":"aiCore_other", "mult":0.5},
+    ],
+}

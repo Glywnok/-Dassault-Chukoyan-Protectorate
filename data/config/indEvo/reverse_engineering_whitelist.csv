@@ -1,0 +1,39 @@
+id
+# NOTES
+# Ship IDs entered here will be allowed by the Engineering hub (Reverse Engineering ship hulls)
+# Ships that would break the game (Balance/Technical/Lore) if the player could produce them via blueprint should not be on this list.
+dcp_baikal_brone
+dcp_baikal
+dcp_borzoi
+dcp_bouclier
+dcp_burya
+dcp_centaur
+dcp_crasher
+dcp_demon
+dcp_desertersupply_lg
+dcp_desertersupply_sm
+dcp_flatmouse
+dcp_ifrit
+dcp_jeannedarc
+dcp_kormoran
+dcp_leyte
+dcp_maskirovka
+dcp_mindanao
+dcp_naja
+dcp_naja_mk1
+dcp_puddlejumper
+dcp_puddlejumper_mk1
+dcp_reef
+dcp_samoyed
+dcp_sevastopol
+dcp_sevastopol_mk1
+dcp_slammer
+dcp_starsylph
+dcp_stoat
+dcp_tereshkova
+dcp_tonnerre
+dcp_tunguska
+dcp_vesper
+dcp_wanderer
+dcp_zelenograd
+

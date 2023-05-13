@@ -1,0 +1,25 @@
+{
+  "displayName": "Strike Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_damselfly",
+  "hullMods": [],
+  "variantId": "dcp_damselfly_Bomber",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_perforator_ftr",
+        "WS0002": "dcp_perforator_ftr"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "dcp_linearvulcan"
+      }
+    }
+  ]
+}

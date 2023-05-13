@@ -1,0 +1,44 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_mindanao",
+    "hullMods": ["turretgyros"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_mindanao_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0006": "dcp_gravmissiletube",
+                "WS0007": "dcp_gravmissiletube"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_howler",
+                "WS0002": "dcp_6cmrailgun",
+                "WS0003": "dcp_6cmrailgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_micropd",
+                "WS0005": "dcp_micropd"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_rafale2_wing",
+        "dcp_damselfly_wing",
+        "dcp_damselfly_wing",
+        "dcp_dard_wing"
+    ]
+}

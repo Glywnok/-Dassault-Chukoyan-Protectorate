@@ -1,0 +1,7 @@
+id,weight,FPMulti,lootMulti,effectPlugin
+dassault_mikoyan,0.75,1,1,data.world.systems.ptes_genericSystem
+blade_breakers,0.15,1,1.25,data.world.systems.ptes_genericSystem
+"#Anything below this line doesn't work and isn't meant to",,,,
+6eme_bureau,0,0.1,0.01,data.world.systems.ptes_genericSystem
+dme_independentmkt,0,0.1,0.01,data.world.systems.ptes_genericSystem
+the_deserter,0,0.1,0.01,data.world.systems.ptes_genericSystem

@@ -1,0 +1,70 @@
+{
+    "displayName": "Defense",
+    "fluxCapacitors": 19,
+    "fluxVents": 30,
+    "hullId": "dcp_stormkestrel",
+    "hullMods": ["dcp_bbdefense"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_stormkestrel_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_thermalmortar"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "dcp_lens_hdem_rack",
+                "WS0004": "dcp_lens_hdem_rack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_autolaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "dcp_shellback",
+                "WS0008": "dcp_shellback"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_proxbomb_rack",
+                "WS0006": "dcp_proxbomb_rack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "dcp_thermalpd",
+                "WS0010": "dcp_thermalpd"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "dcp_impulsor",
+                "WS0012": "dcp_impulsor",
+                "WS0013": "dcp_impulsor",
+                "WS0014": "dcp_impulsor",
+                "WS0015": "dcp_impulsor",
+                "WS0016": "dcp_impulsor"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_lycosid_wing",
+        "dcp_lycosid_wing"
+    ]
+}

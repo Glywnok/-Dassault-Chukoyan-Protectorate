@@ -1,0 +1,36 @@
+{
+    "displayName": "Patrol",
+    "fluxCapacitors": 1,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "dcp_leyte",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_leyte_patrol",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_6cmrailgun"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_gravmissiletube"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_micropd",
+                "WS0003": "dcp_micropd",
+                "WS0004": "dcp_micropd"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_rafale2_wing",
+        "dcp_harridan_wing"
+    ]
+}

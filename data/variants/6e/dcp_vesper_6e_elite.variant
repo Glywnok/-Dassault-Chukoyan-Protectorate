@@ -1,0 +1,38 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 6,
+    "fluxVents": 12,
+    "hullId": "dcp_vesper_6e",
+    "hullMods": [
+        "advancedshieldemitter",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_vesper_6e_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_whdcper"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_hellhound"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_linearcannonlight",
+                "WS0005": "dcp_linearcannonlight"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_linearcannon"}
+        }
+    ]
+}

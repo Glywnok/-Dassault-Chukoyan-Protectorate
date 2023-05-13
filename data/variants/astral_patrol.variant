@@ -1,0 +1,51 @@
+{
+    "displayName": "Patrol",
+    "fluxCapacitors": 1,
+    "fluxVents": 32,
+    "hullId": "astral",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "astral_patrol",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 011": "dcp_chasseurLRMlauncher",
+                "WS 012": "dcp_chasseurLRMlauncher"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "dcp_magpulser",
+                "WS 014": "dcp_ionbeamer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "dcp_micropd",
+                "WS 003": "dcp_micropd",
+                "WS 005": "dcp_micropd",
+                "WS 006": "dcp_micropd",
+                "WS 007": "dcp_micropd",
+                "WS 013": "dcp_tribeamer",
+                "WS 015": "dcp_tribeamer",
+                "WS 023": "dcp_tribeamer",
+                "WS 024": "dcp_tribeamer"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_rafale1_wing",
+        "dcp_rafale1_wing",
+        "dcp_rafale1_wing",
+        "dcp_rafale1_wing",
+        "dcp_flare_wing",
+        "dcp_flare_wing"
+    ]
+}

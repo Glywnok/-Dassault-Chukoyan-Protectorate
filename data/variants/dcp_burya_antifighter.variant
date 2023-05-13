@@ -1,0 +1,30 @@
+{
+    "displayName": "Anti-fighter",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "dcp_burya",
+    "hullMods": ["auxiliarythrusters"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_burya_antifighter",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "dcp_hedgehog_pod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_linearflak"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_linearvulcan",
+                "WS0004": "dcp_linearvulcan"
+            }
+        }
+    ]
+}

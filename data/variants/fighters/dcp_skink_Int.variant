@@ -1,0 +1,25 @@
+{
+  "displayName": "Interceptor Drone",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_skink",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "dcp_skink_Int",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "dcp_slapper_ftr"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dcp_multipdnode"
+      }
+    }
+  ]
+}

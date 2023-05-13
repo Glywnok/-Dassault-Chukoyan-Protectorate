@@ -1,0 +1,98 @@
+{
+    "displayName": "Damaged",
+    "fluxCapacitors": 25,
+    "fluxVents": 50,
+    "hullId": "dcp_bbsuperheavy",
+    "hullMods": [
+        "heavyarmor",
+        "surveying_equipment",
+        "magazines",
+        "dcp_bbdefense"
+    ],
+    "modules": [
+        {"WS0021": "dcp_bbpdmodule_std"},
+        {"WS0022": "dcp_bbpdmodule_std"},
+        {"WS0023": "dcp_bbmissilemodule_std"},
+        {"WS0063": "dcp_shieldplate_std"}
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_bbsuperheavy_dmg",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_plasmadriver",
+                "WS0004": "dcp_plasmadriver"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "dcp_electronfan",
+                "WS0002": "dcp_electronfan"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "dcp_shellback",
+                "WS0009": "dcp_shellback"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_pulseripper",
+                "WS0010": "dcp_pulseripper",
+                "WS0011": "dcp_pulseripper",
+                "WS0012": "dcp_pulseripper"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0013": "dcp_electrogun",
+                "WS0014": "dcp_electrogun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0017": "dcp_jackal",
+                "WS0018": "dcp_jackal"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "dcp_proxbomb_ciws",
+                "WS0015": "dcp_thermalpd",
+                "WS0016": "dcp_thermalpd",
+                "WS0019": "dcp_thermalpd",
+                "WS0020": "dcp_thermalpd",
+                "WS0043": "dcp_impulsor",
+                "WS0044": "dcp_impulsor",
+                "WS0045": "dcp_impulsor",
+                "WS0046": "dcp_impulsor",
+                "WS0047": "dcp_impulsor",
+                "WS0048": "dcp_impulsor",
+                "WS0049": "dcp_impulsor",
+                "WS0050": "dcp_impulsor",
+                "WS0051": "dcp_impulsor",
+                "WS0052": "dcp_impulsor",
+                "WS0061": "dcp_proxbomb_ciws",
+                "WS0064": "dcp_thermalpd",
+                "WS0065": "dcp_thermalpd",
+                "WS0066": "dcp_proxbomb_ciws"
+            }
+        }
+    ]
+}

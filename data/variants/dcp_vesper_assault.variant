@@ -1,0 +1,35 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 1,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_vesper",
+    "hullMods": [
+        "missleracks",
+        "advancedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_vesper_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "dcp_marteau_esm_pod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_tacbeamer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_NTKcannon",
+                "WS0004": "dcp_linearcannonlight",
+                "WS0005": "dcp_linearcannonlight"
+            }
+        }
+    ]
+}

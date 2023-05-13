@@ -1,0 +1,46 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 1,
+    "fluxVents": 20,
+    "hullId": "dcp_devilray",
+    "hullMods": ["dcp_bbassault"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_devilray_strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "dcp_plasrocket_pod"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "dcp_lens_hdem_rack",
+                "WS0004": "dcp_lens_hdem_rack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_pulseripper",
+                "WS0002": "dcp_pulseripper"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0022": "dcp_plasmadisruptor",
+                "WS0023": "dcp_plasmadisruptor"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_proxbomb_rack"}
+        }
+    ]
+}

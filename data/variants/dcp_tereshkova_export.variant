@@ -1,0 +1,39 @@
+{
+    "displayName": "Export",
+    "fluxCapacitors": 4,
+    "fluxVents": 20,
+    "hullId": "dcp_tereshkova_exp",
+    "hullMods": ["autorepair"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_tereshkova_export",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_linearcannonlight",
+                "WS0004": "dcp_linearcannonlight"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_blazedriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_revanche"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_linearvulcan",
+                "WS0006": "dcp_linearvulcan",
+                "WS0007": "dcp_linearvulcan"
+            }
+        }
+    ]
+}

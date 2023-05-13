@@ -1,0 +1,32 @@
+{
+    "displayName": "Right Hand",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_tempest_deserter",
+    "hullMods": [
+        "missleracks",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tempest_righthand",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "dcp_ammlight"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "dcp_brigador"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "dcp_heavylinear_autogun"}
+        }
+    ],
+    "wings": []
+}

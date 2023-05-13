@@ -1,0 +1,43 @@
+{
+    "displayName": "Patrol",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
+    "hullId": "dcp_mindanao",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_mindanao_patrol",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_gravmissiletube",
+                "WS0007": "dcp_gravmissiletube"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_whdcper",
+                "WS0002": "dcp_linearcannon",
+                "WS0003": "dcp_linearcannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_micropd",
+                "WS0005": "dcp_micropd"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_mystere_wing",
+        "dcp_mystere_wing",
+        "dcp_harridan_wing",
+        "dcp_harridan_wing"
+    ]
+}

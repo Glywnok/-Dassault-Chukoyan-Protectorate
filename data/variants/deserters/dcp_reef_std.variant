@@ -1,0 +1,35 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 6,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_reef",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "dcp_reef_std",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_6cmrailgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_calliope"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_matador",
+                "WS0004": "dcp_matador",
+                "WS0005": "dcp_matador"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_dropper_wing",
+        "dcp_bantam_wing"
+    ]
+}

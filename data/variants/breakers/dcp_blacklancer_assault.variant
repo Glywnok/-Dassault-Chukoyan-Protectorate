@@ -1,0 +1,55 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 22,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "dcp_blacklancer",
+    "hullMods": ["dcp_bbassault"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_blacklancer_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_plasrocket_pod"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "dcp_lens_hdem_rack",
+                "WS0010": "dcp_lens_hdem_rack"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_plasmadriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_proxbomb_rack",
+                "WS0006": "dcp_proxbomb_rack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_pulseripper",
+                "WS0004": "dcp_pulseripper"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "dcp_thermalpd",
+                "WS0008": "dcp_thermalpd"
+            }
+        }
+    ]
+}

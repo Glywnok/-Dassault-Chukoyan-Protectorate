@@ -1,0 +1,25 @@
+{
+  "displayName": "Assault Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_iridium",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "dcp_iridium_Assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dcp_proxbomb"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_plasmadisruptor_ftr"
+      }
+    }
+  ]
+}

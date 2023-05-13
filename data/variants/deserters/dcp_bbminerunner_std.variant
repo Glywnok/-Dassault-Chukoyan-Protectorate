@@ -1,0 +1,32 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_bbminerunner",
+    "hullMods": [
+        "dcp_bbsupport",
+        "magazines"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_bbminerunner_std",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_erpulsebeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_6cmrailgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_matador"}
+        }
+    ],
+    "wings": []
+}

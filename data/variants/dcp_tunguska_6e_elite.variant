@@ -1,0 +1,38 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 15,
+    "fluxVents": 24,
+    "hullId": "dcp_tunguska_6e",
+    "hullMods": ["auxiliarythrusters"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_tunguska_6e_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_hellspear"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_erpulsebeam",
+                "WS0004": "dcp_erpulsebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_9cmrailgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_micropd",
+                "WS0006": "dcp_micropd"
+            }
+        }
+    ]
+}

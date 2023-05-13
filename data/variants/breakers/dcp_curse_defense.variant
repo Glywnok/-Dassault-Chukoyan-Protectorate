@@ -1,0 +1,31 @@
+{
+    "displayName": "Defense",
+    "fluxCapacitors": 17,
+    "fluxVents": 20,
+    "hullId": "dcp_curse",
+    "hullMods": ["dcp_bbdefense"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_curse_defense",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "dcp_plasrocket_pod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_thermalpd",
+                "WS0003": "dcp_thermalpd",
+                "WS0004": "dcp_thermalpd",
+                "WS0005": "dcp_thermalpd"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_iridium_wing",
+        "dcp_lycosid_wing"
+    ]
+}

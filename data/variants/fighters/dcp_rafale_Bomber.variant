@@ -1,0 +1,18 @@
+{
+  "displayName": "Torpedo Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_rafale",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "dcp_rafale_Bomber",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "dcp_mirvtorpedo_single"
+      }
+    }
+  ]
+}

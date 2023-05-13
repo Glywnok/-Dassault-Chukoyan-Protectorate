@@ -1,0 +1,50 @@
+{
+    "displayName": "Prototype",
+    "fluxCapacitors": 6,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_slammer",
+    "hullMods": ["dcp_bbsupport"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_slammer_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_phaserail"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "dcp_perforator",
+                "WS0005": "dcp_perforator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_6cmrailgun",
+                "WS0007": "dcp_6cmrailgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_brigador",
+                "WS0003": "dcp_brigador"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "dcp_matador",
+                "WS0009": "dcp_matador"
+            }
+        }
+    ]
+}

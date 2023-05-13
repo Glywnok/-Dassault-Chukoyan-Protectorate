@@ -1,0 +1,28 @@
+{
+	"id":"dcp_slammerjets",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+	
+	"statsScript":"data.shipsystems.scripts.dcp_SlammerJetsStats",
+	
+	"engineGlowColor":[105,255,155,125],
+	"engineGlowContrailColor":[105,255,155,25],
+	"engineGlowLengthMult":1.2,
+	"engineGlowWidthMult":0.8,
+	"engineGlowGlowMult":1.2,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":false,
+
+	"useSound":"dcp_dockjets_activate",
+	"loopSound":"dcp_dockjets_loop",
+	"outOfUsesSound":"dcp_system_unavailable",
+	
+	"aiHints":{
+		#"activeSpeedIncrease":0,
+		"burstMovementPotential":300,
+		"averageSpeedIncrease":35,
+	}
+}

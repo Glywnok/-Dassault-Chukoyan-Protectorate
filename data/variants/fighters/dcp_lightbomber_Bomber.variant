@@ -1,0 +1,25 @@
+{
+  "displayName": "Heavy Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_lightbomber",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "dcp_lightbomber_Bomber",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_electronrocket"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "dcp_linearvulcan"
+      }
+    }
+  ]
+}

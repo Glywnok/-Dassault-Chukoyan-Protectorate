@@ -1,0 +1,30 @@
+{
+	id:"independent",
+	
+	"knownShips":{
+		"tags":["dmerefit_bp"],
+		"hulls":[
+			"dcp_puddlejumper_exp",
+			"dcp_naja_exp",
+			"dcp_tereshkova_exp",
+			"dcp_centaur_exp",
+		],
+	},
+
+	"knownFighters":{
+		"tags":["dmerefit_bp"],
+		"fighters":[
+			"dcp_dard_wing",
+		],
+	},
+
+	"knownWeapons":{
+		"tags":["dmerefit_bp"],
+		"weapons":[
+			"dcp_blazegun",
+			"dcp_impaler",
+			"dcp_NTKcannon",
+			"dcp_ammlight",
+		],
+	},
+},	

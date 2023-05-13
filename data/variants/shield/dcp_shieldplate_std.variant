@@ -1,0 +1,10 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 1,
+    "hullId": "dcp_shieldplate",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "dcp_shieldplate_std",
+    "weaponGroups": []
+}

@@ -1,0 +1,25 @@
+{
+  "displayName": "Space Superiority Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_egret",
+  "hullMods": [],
+  "variantId": "dcp_egret_SSF",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_autolaser_ftr"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dcp_multipdnode",
+        "WS0003": "dcp_multipdnode"
+      }
+    }
+  ]
+}

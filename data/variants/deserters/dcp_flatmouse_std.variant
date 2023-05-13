@@ -1,0 +1,30 @@
+{
+  "variantId": "dcp_flatmouse_std",
+  "hullId": "dcp_flatmouse",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_linearcannonlight"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "dcp_matador",
+        "WS0005": "dcp_matador"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

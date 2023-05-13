@@ -1,0 +1,55 @@
+id
+# NOTES
+# Ship IDs entered here will be allowed for duplication.
+# "This feature is very hard to get working in campaign as a player, and lorewise, allows for duplication of even the most complex hulls."
+dcp_baikal_brone
+dcp_baikal
+dcp_borzoi
+dcp_bouclier
+dcp_burya
+dcp_centaur
+dcp_centaur_exp
+dcp_crasher
+dcp_curse_proto
+dcp_demon
+dcp_desertersupply_lg
+dcp_desertersupply_sm
+dcp_flatmouse
+dcp_ifrit
+dcp_imp_proto
+dcp_jeannedarc
+dcp_kormoran
+dcp_kormoran_6e
+dcp_leyte
+dcp_maskirovka
+dcp_mindanao
+dcp_naja
+dcp_naja_exp
+dcp_naja_mk1
+dcp_puddlejumper
+dcp_puddlejumper_exp
+dcp_puddlejumper_mk1
+dcp_reef
+dcp_samoyed
+dcp_sevastopol
+dcp_sevastopol_mk1
+dcp_slammer
+dcp_snowgoose
+dcp_starsylph
+dcp_starsylph_deserter
+dcp_stoat
+dcp_stormkestrel_proto
+dcp_tempest_deserter
+dcp_tereshkova
+dcp_tereshkova_exp
+dcp_tonnerre
+dcp_tunguska
+dcp_tunguska_6e
+dcp_vesper
+dcp_vesper_6e
+dcp_wanderer
+dcp_wildgoose
+dcp_zelenograd
+# Specials - these are optional. They could go away if people complain about them being available. If you think they shouldn't be available, remove them.
+dcpx_alauda
+dcpx_braveblade

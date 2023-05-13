@@ -1,0 +1,34 @@
+{
+    "displayName": "Export",
+    "fluxCapacitors": 4,
+    "fluxVents": 20,
+    "hullId": "dcp_centaur_exp",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_centaur_export",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "dcp_gravmissilelauncher"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_blazegun",
+                "WS0006": "dcp_blazegun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_impaler",
+                "WS0003": "dcp_impaler",
+                "WS0004": "dcp_impaler"
+            }
+        }
+    ]
+}

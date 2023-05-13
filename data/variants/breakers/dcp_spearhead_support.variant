@@ -1,0 +1,55 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 20,
+    "fluxVents": 20,
+    "hullId": "dcp_spearhead",
+    "hullMods": [
+        "dcp_bbsupport",
+        "advancedshieldemitter",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_spearhead_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_scatterlaser"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "dcp_marteau_esm_rack",
+                "WS0005": "dcp_marteau_esm_rack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_bbheavymg",
+                "WS0007": "dcp_bbheavymg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_shellhead",
+                "WS0003": "dcp_shellhead"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "dcp_impulsor",
+                "WS0009": "dcp_impulsor",
+                "WS0010": "dcp_impulsor",
+                "WS0011": "dcp_impulsor"
+            }
+        }
+    ]
+}

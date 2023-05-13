@@ -1,0 +1,46 @@
+{
+	"HullMod":{
+		"dcp_DMEAllIncomp":"This ship cannot install the following hullmods:",
+		
+		"dcp_MonoblocDesc1":"EMP damage reduced by %s.",
+		"dcp_MonoblocDesc2":"Overload duration is reduced by %s.",
+		"dcp_MonoblocDesc3":"Increases the 0-flux speed boost by %s.",
+		
+		"dcp_MonoblocDescRThresh":"Weapon range reduced by %s above %s/%s/%s/%s units, depending on hull size.",
+		
+		"dcp_ReactionFurnaceDesc1":"EMP damage reduced by %s.",
+		"dcp_ReactionFurnaceDesc2":"Flux vent rate increased by %s.",
+		"dcp_ReactionFurnaceDesc3":"Sensor profile reduced by %s.",
+		"dcp_ReactionFurnaceDesc4":"Increases the 0-flux speed boost by %s at up to %s of the ship's flux.",
+		"dcp_ReactionFurnaceDesc5":"Reduces damage taken from solar coronas and hyperspace storms by %s.",
+		
+		"dcp_RefurbDesc1":"Improves the repair rate of this ship by %s.",
+		"dcp_RefurbDesc2":"Improves CR recovery by %s.",
+		
+		"dcp_ComCrewDesc1":"Reduces crew and fighter casualties by %s percent, and engine and weapon repair times by %s.",
+		"dcp_ComCrewDesc2":"Reduces the rate at which fighter replacement rate decreases by %s.",
+	
+		"dcp_BBEngDesc1":"All non-missile small/medium/large weapons receive a %s/%s/%s discount.",
+		"dcp_BBEngDesc2":"Supply use is increased by %s.",
+		"dcp_BBEngDesc3":"Overload duration is increased by %s.",
+		"dcp_BBEngDesc4":"Damage taken from solar coronas and hyperspace storms reduced by %s.",
+		
+		"dcp_BBAssaultDesc1":"Increases top speed by %s/%s/%s/%s, depending on hull size, and further increases as the ship builds hard flux.",
+		"dcp_BBAssaultDesc2":"Reduces weapon flux cost by %s.",
+		"dcp_BBAssaultDesc3":"Flux dissipation is increased by a factor of %s.",
+		"dcp_BBAssaultDesc4":"Prevents active venting, and reduces weapon range past %s units.",
+		"dcp_BBAssaultDesc5":"Peak operating time reduced by %s.",
+		"dcp_BBAssaultDescFtr":"Fighter speed increased by %s.",
+		
+		"dcp_BBDefenseDesc1":"Increases shield efficiency by %s, and reduces penetration by shield-piercing weapons.",
+		"dcp_BBDefenseDesc2":"Reduces incoming HE and Energy damage by %s.",
+		"dcp_BBDefenseDesc3":"Increases weapon and engine health by %s.",
+		"dcp_BBDefenseDescFtr":"Fighters take %s less armor and hull damage.",
+		
+		"dcp_BBSupportDesc1":"Increases weapon range by a flat %s/%s/%s/%s units, depending on hull size.",
+		"dcp_BBSupportDesc2":"Increases turret turn rate by %s.",
+		"dcp_BBSupportDesc3":"Increases sight radius by %s.",
+		"dcp_BBSupportDescFtr":"Fighter weapon range increased by %s units.",
+
+	},
+}

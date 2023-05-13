@@ -1,0 +1,43 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 7,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_starsylph",
+    "hullMods": ["advancedshieldemitter"],
+    "permaMods": [],
+    "variantId": "dcp_starsylph_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "dcp_ruptureasm_tube",
+                "WS0010": "dcp_ruptureasm_tube"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_gravmissiletube"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_magpulser",
+                "WS0004": "dcp_magpulser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_tribeamer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0011": "dcp_micropd"}
+        }
+    ]
+}

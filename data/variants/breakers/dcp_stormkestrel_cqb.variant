@@ -1,0 +1,64 @@
+{
+    "displayName": "Close Attack",
+    "fluxCapacitors": 1,
+    "fluxVents": 20,
+    "hullId": "dcp_stormkestrel",
+    "hullMods": ["dcp_bbassault"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_stormkestrel_cqb",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_jackal"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "dcp_electronrocket",
+                "WS0004": "dcp_electronrocket"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_pulseripper"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "dcp_plasmadisruptor",
+                "WS0008": "dcp_plasmadisruptor"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_thermalpd",
+                "WS0006": "dcp_thermalpd",
+                "WS0009": "dcp_thermalpd",
+                "WS0010": "dcp_thermalpd"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "dcp_impulsor",
+                "WS0012": "dcp_impulsor",
+                "WS0013": "dcp_impulsor",
+                "WS0014": "dcp_impulsor",
+                "WS0015": "dcp_impulsor",
+                "WS0016": "dcp_impulsor"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_iridium_wing",
+        "dcp_iridium_wing"
+    ]
+}
