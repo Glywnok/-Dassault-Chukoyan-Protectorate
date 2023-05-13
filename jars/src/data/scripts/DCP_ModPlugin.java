@@ -31,7 +31,7 @@ import org.json.JSONObject;
 //import data.scripts.world.systems.Martinique;
 
 
-public class DCP_ProtectoreateModPlugin extends BaseModPlugin
+public class DCP_ModPlugin extends BaseModPlugin
 {
     
     private static final String DME_SETTINGS = "DMEsettings.ini";
@@ -103,9 +103,9 @@ public class DCP_ProtectoreateModPlugin extends BaseModPlugin
 //        initDME();
         
       if (!isExerelin || SectorManager.getCorvusMode())
-          {
+        {
           initDME();
-          }
+        }
       
       //Whatever the hell I add to get my handmade Breakers setting to work.
       
@@ -169,7 +169,7 @@ public class DCP_ProtectoreateModPlugin extends BaseModPlugin
         try {
             loadDMESettings();
         } catch (IOException | JSONException e) {
-            Global.getLogger(DCP_ProtectoreateModPlugin.class).log(Level.ERROR, "DMEsettings.ini loading failed!" + e.getMessage());
+            Global.getLogger(DCP_ModPlugin.class).log(Level.ERROR, "DMEsettings.ini loading failed!" + e.getMessage());
         }
     }
     

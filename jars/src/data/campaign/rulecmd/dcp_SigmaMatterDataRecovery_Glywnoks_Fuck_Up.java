@@ -1,4 +1,4 @@
-package com.fs.starfarer.api.impl.campaign.rulecmd.salvage;
+package data.campaign.rulecmd;
 
 import java.util.List;
 import java.util.Map;
@@ -37,8 +37,10 @@ import data.campaign.ids.dcp_Ranks;
  *
  * @author Harmful Mechanic
  * I sort of understand what I'm doing here!
+ * 
+ * Glywnok had to fuck it up somehow ¯\_(ツ)_/¯
  */
-public class dcp_SigmaMatterDataRecovery extends BaseCommandPlugin {
+public class dcp_SigmaMatterDataRecovery_Glywnoks_Fuck_Up extends BaseCommandPlugin {
 
     protected CampaignFleetAPI playerFleet;
     protected SectorEntityToken entity;

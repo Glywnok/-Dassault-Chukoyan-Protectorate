@@ -200,5 +200,3 @@ sigmaMatter_turnInResponseDefault,SMatterTurnedIn,,FireAll PopulateOptions,$Pers
 sigmaMatter_turnInResponseDME,SMatterTurnedIn,$faction.id == dassault_mikoyan,FireAll PopulateOptions,"$PersonRank $personLastName thanks you on behalf of the Sixth Bureau's research arm, and the conversation moves on to other matters.",,
 ,,,,,,
 ,,,,,,
-,,,,,,
-,,,,,,

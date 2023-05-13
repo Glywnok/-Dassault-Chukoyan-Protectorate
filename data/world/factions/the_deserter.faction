@@ -9,8 +9,8 @@
 	"personNamePrefix":"deserter",
 	"personNamePrefixAOrAn":"a",
 	"displayNameIsOrAre":"are",
-	"logo":"graphics/DCPfactions/deserter.png",
-	"crest":"graphics/DCPfactions/crest_deserter.png",
+	"logo":"graphics/DCP/factions/deserter.png",
+	"crest":"graphics/DCP/factions/crest_deserter.png",
 	"shipNamePrefix":"FSS",
 	"shipNameSources":{
 		"DASSAULT_MIKOYAN_SILLY":1,

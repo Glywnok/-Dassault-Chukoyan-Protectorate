@@ -6,6 +6,10 @@
 		#"DME_ProjectileTrailHandlerPlugin":"data.scripts.plugins.dcp_ProjectileTrailHandlerPlugin",
 	},
 	
+	"ruleCommandPackages":[
+		"data.campaign.rulecmd"
+	],
+
 	"designTypeColors":{
 		"Dassault-Mikoyan":[76,113,175,255],
 		"SNRI Labs":[96,133,200,255],
