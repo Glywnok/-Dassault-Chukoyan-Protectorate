@@ -1,6 +1,0 @@
-id,cost,weight,faction restriction
-weapons_cache_breakers,35,2,blade_breakers
-weapons_cache_small_breakers,17,2,blade_breakers
-dcp_bladebreaker_research,250,7,blade_breakers
-dcp_bladebreaker_mining,175,10,blade_breakers
-dcp_bladebreaker_habitat,125,15,blade_breakers

@@ -5,8 +5,6 @@
 	"version":"1.0",
 	"description":"This is a mod which adds Dassault-Mikoyan, Magellan Protectorate, NGO, removed BB+ stuff and Deluxe Flags in one mod.\nI \nDo \nNot \nCare\nCope. Seethe. Mald.",
     "gameVersion": "0.95.1a-RC6", 
-  	"jars":["jars/DCP.jar"],
-    "modPlugin":"data.scripts.DCP_ModPlugin",
 	"dependencies": [
     {
         "id": "lw_lazylib",
@@ -20,5 +18,7 @@
         "id": "shaderLib",
         "name": "Remnant Sex"
     }
-    ]
+    ],
+    "jars":["jars/DCP.jar"],
+    "modPlugin":"data.scripts.DCP_ModPlugin",
 }

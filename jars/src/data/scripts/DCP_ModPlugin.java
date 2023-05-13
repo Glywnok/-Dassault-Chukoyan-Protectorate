@@ -33,7 +33,7 @@ import org.json.JSONObject;
 
 public class DCP_ModPlugin extends BaseModPlugin
 {
-    
+
     private static final String DME_SETTINGS = "DMEsettings.ini";
     public static boolean RANDOMBREAKERS;
     //public static boolean HANDMADEBREAKERS;
@@ -189,3 +189,4 @@ public class DCP_ModPlugin extends BaseModPlugin
         }
     }
 }
+

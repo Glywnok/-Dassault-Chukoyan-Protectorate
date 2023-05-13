@@ -1,5 +1,5 @@
 {
-    "uniqueModClassName":"data.scripts.DMEModPlugin", # String
+    "uniqueModClassName":"data.scripts.DCP_ModPlugin", # String
     "playableFaction":true, # Boolean
     
     "corvusCompatible":true,
@@ -27,84 +27,61 @@
     		"tiandong",
     		"hegemony",
     		"ORA",
-    		"shadow_industry"], 			# String array
+    		"shadow_industry"], # String array
     "factionsDisliked":[
     		"luddic_path",
     		"persean",
     		"SCY",
     		"diableavionics",
     		"interstellarimperium",
-    		"vic",
     		"mayorate",
-    		"apex_design",
-    		"new_galactic_order",
-    		"aria",
-    		"uaf"], 						# String array
+    		"new_galactic_order"], # String array
     "startRelationships":{
-    		"hegemony": 0.25, 				# render unto Caesar, after you skim the cream
-    		"luddic_path": -0.9,			
-    		"tiandong": 0.25, 				# like bros in a wuxia flick
-    		"blackrock_driveyards": -0.3, 	
-    		"shadow_industry": 0.25, 		# so green, so cuddly - SRA ship plushies sell out fast
-    		"diableavionics": -0.5, 		# the whole 'planet full of slaves' is kind of a dealbreaker
-    		"sylphon": 0.25, 				
-    		"scalartech": -0.25, 			# the 'shiny science asshole' competition can only have one winner
-    		"mayorate": -0.8, 				
-    		"magellan_protectorate": -0.3, 	# the whole 'massive pointy social pyramid' thing is a hard no
-    		"communist_clouds": -0.1, 		
-    		"apex_design": -0.1, 			
-    		"new_galactic_order": -1.0,  	# you know why you don't get invited to the good parties
-    		"aria": -1.0,
-    		"uaf": -1.0}, 				
+    		"hegemony": 0.25, #render unto Caesar, after you skim the cream
+    		"luddic_path": -0.9, #you gonna get wrecked jesus boy
+    		"tiandong": 0.25, #like bros in a wuxia flick
+    		"blackrock_driveyards": -0.3, #blue vs green style aggro
+    		"shadow_industry": 0.25, #so green, so cuddly - SRA ship plushies sell out fast
+    		"diableavionics": -0.5, #the whole 'planet full of slaves' is kind of a dealbreaker
+    		"sylphon": 0.25, #I like you okay, bud
+    		"mayorate": -0.8, #I don't like the look of your face
+    		"magellan_protectorate": -0.3, #the whole 'massive pointy social pyramid' thing is a hard no
+    		"communist_clouds": -0.1, #not our favorite people, not by a long shot
+    		"new_galactic_order": -1.0 }, #you know why you don't get invited to the good parties
     "maxRelationships":{
-    		"hegemony": 0.75, 				
-    		"luddic_path": -0.3, 			
-    		"tiandong": 0.75, 				# the sun wukong to your xuanzang
-    		"blackrock_driveyards": 0.6, 	
-    		"shadow_industry": 0.75, 		
-    		"diableavionics": 0.1, 			
-    		"sylphon": 0.5, 				
-    		"scalartech": 0.25, 			# I read your latest paper, and it sucked
-    		"mayorate": -0.2, 				
-    		"magellan_protectorate": 0.3, 	# seriously doubt you're gonna fix that any time soon
-    		"communist_clouds": 0.3, 		
-    		"apex_design": 0.3, 			
-    		"new_galactic_order": -0.9,  	# 'your choice of masturbation fantasy is... unfortunate.'
-    		"aria": -0.9,
-    		"uaf": -0.9}, 				
+    		"hegemony": 0.75, #but never mistake an ally for a friend
+    		"luddic_path": -0.3, #stay far away if you want to live
+    		"tiandong": 0.75, #the sun wukong to your xuanzang
+    		"blackrock_driveyards": 0.5, #grudging respect for hard boys from the hood
+    		"shadow_industry": 0.75, #the only conflict with shadowyards is between good and best
+    		"diableavionics": 0.1, #still not gonna swipe right
+    		"sylphon": 0.75, #but taking a stuffed AI core to bed with you is pretty weird
+    		"mayorate": -0.2, #but you live this time
+    		"magellan_protectorate": 0.3, #seriously doubt you're gonna fix that any time soon
+    		"communist_clouds": 0.3, #and there's a big bright line between 'sometimes tolerable' and 'trustworthy'
+    		"new_galactic_order": -0.9 }, #weird right, how genocidal dicks have trouble making friends
     "diplomacyPositiveChance":{
-    		"luddic_church": 0.2, 			# already heard the good news
-    		"luddic_path": 0.1, 			
-    		"blackrock_driveyards": 0.4, 	
-    		"SCY": 0.25, 					
-    		"diableavionics": 0.25, 		
-    		"interstellarimperium": 0.3, 	
-    		"sylphon": 0.3, 				
-    		"scalartech": 0.2, 				# we don't fight battles of wits with the unarmed
-    		"vic": 0.2,
-    		"magellan_protectorate": 0.25, 	# sometimes you get it right
-    		"communist_clouds": 0.3, 		
-    		"apex_design": 0.4, 			
-    		"new_galactic_order": 0.01, 	# fuuuck space nazis
-    		"aria": 0.01,
-    		"uaf": 0.01},					
+    		"luddic_church": 0.2, #already heard the good news
+    		"luddic_path": 0.1, #don't need that old time religion 
+    		"blackrock_driveyards": 0.4, #ooo check out mr. fancy green lights
+    		"SCY": 0.25, #too pretty to live
+    		"diableavionics": 0.25, #man I want to like your visuals so much
+    		"interstellarimperium": 0.3, #space rome wasn't built in a day
+    		"sylphon": 0.6, #Sylphon AIs are fun at parties and buy rounds for the house
+    		"magellan_protectorate": 0.25, #sometimes you get it right
+    		"communist_clouds": 0.3, #on the whole, you're acceptable allies of convenience
+    		"new_galactic_order": 0.01 }, #fuuuck space nazis
     "diplomacyNegativeChance":{
-    		"luddic_church": 0.8, 			# take your little pamphlet and cram it
-    		"luddic_path": 0.9, 			
-    		"blackrock_driveyards": 0.6, 	
-    		"SCY": 0.5, 					
-    		"diableavionics": 0.75, 		
-    		"interstellarimperium": 0.6, 	
-    		"sylphon": 0.6, 				
-    		"scalartech": 0.8, 				# my grad students can totally beat up your grad students
-    		"vic": 0.8,
-    		"magellan_protectorate": 0.75, 	# the sans-culottes are gonna make you a sans-tête if you keep it up
-    		"communist_clouds": 0.7, 		
-    		"apex_design": 0.6, 			
-    		"new_galactic_order": 5.0, 		# fuck them with planet-cracker bombs
-			"aria": 5.0,
-			"uaf": 5.0},
-			
+    		"luddic_church": 0.8, #take your little pamphlet and cram it
+    		"luddic_path": 0.9, #you too mr. jesusguns
+    		"blackrock_driveyards": 0.6, #blinky blinky and then BOOM
+    		"SCY": 0.5, #science colony of your mom
+    		"diableavionics": 0.75, #but the mismatched muzzleflashes and projectiles kill it for me
+    		"interstellarimperium": 0.6, #but it can fall a lot quicker
+    		"sylphon": 0.3, #but let's not kid ourselves the plushie thing is kiiind of freaky
+    		"magellan_protectorate": 0.75, #the sans-culottes are gonna make you a sans-tête if you keep it up
+    		"communist_clouds": 0.7, #but the key concept here is 'convenience'
+    		"new_galactic_order": 5.0 }, #fuck them with planet-cracker bombs
     "morality":"good", #if 'good' doesn't exclude a whole lotta collateral damage.
     
     "factionIdForHqResponse":"6eme_bureau",

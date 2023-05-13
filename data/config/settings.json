@@ -6,10 +6,6 @@
 		#"DME_ProjectileTrailHandlerPlugin":"data.scripts.plugins.dcp_ProjectileTrailHandlerPlugin",
 	},
 	
-	"ruleCommandPackages":[
-		"data.campaign.rulecmd"
-	],
-
 	"designTypeColors":{
 		"Dassault-Mikoyan":[76,113,175,255],
 		"SNRI Labs":[96,133,200,255],
@@ -20,6 +16,10 @@
 		"DME Refit":[200,160,40,255],
 	},
 	
+	"ruleCommandPackages":[
+		"data.campaign.rulecmd",
+	],	
+
 	"graphics":{
 		"blueprint_packages":{
 			"dcp_dmecivil_package":"graphics/DCP/icons/cargo/dcp_bp_civ.png",
@@ -84,22 +84,5 @@
             "dcp_hullmod_movement":"graphics/DCP/icons/tooltip/dcp_hullmod_movement.png",
             "dcp_hullmod_sensor":"graphics/DCP/icons/tooltip/dcp_hullmod_sensor.png",
         },
-	},
-	
-	"GachaSMods_blacklistedHullmods":[
-		#built-in
-		"dcp_monobloc",
-		"dcp_reactionfurnace",
-		"dcp_bbengineering",
-		"dcp_refurbframe",
-		"dcp_6eme_upgr",
-		"dcp_rangefinder",
-		"dcp_advnavrelay",
-		#modular
-		"dcp_bbassault",
-		"dcp_bbdefense",
-		"dcp_bbsupport",
-		#cc
-		"dcp_dccrew"
-	],
+	}
 }

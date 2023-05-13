@@ -390,7 +390,7 @@
 		"AICoreValueMult":2,
 		"AICoreRepMult":0.5,
 		"buysSMatter":true,
-		"SMatterValueMult":2,
+		"SMatterValueMult":4,
 		"SMatterRepMult":0.5,
 		"buysSurveyData":true,		
 		"hostilityImpactOnGrowth":true,

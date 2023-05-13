@@ -9,4 +9,6 @@
     "morality":"amoral",
     
     "customStations":["station_dme_outpost", "station_dme_lab"],
+
+    "defenceStations":["dcp_defstation_std", "dcp_defstation_battle", "dcp_defstation_support"],
 }
