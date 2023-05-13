@@ -8,9 +8,8 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-import java.util.HashMap;
+
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class MonoblocConstruction extends BaseHullMod {
@@ -93,7 +92,7 @@ public class MonoblocConstruction extends BaseHullMod {
             if (ship.getVariant().getHullMods().contains(tmp))
             {
                 ship.getVariant().removeMod(tmp);
-                DMEBlockedHullmodDisplayScript.showBlocked(ship);
+                DCPBlockedHullmodDisplayScript.showBlocked(ship);
             }
         }
     }

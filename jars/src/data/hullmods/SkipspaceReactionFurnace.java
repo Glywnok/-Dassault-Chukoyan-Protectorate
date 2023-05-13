@@ -84,7 +84,7 @@ public class SkipspaceReactionFurnace extends BaseHullMod {
             if (ship.getVariant().getHullMods().contains(tmp))
             {
                 ship.getVariant().removeMod(tmp);
-                DMEBlockedHullmodDisplayScript.showBlocked(ship);
+                DCPBlockedHullmodDisplayScript.showBlocked(ship);
             }
         }
     }

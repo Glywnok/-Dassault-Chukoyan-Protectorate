@@ -5,14 +5,14 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.PluginPick;
 import com.fs.starfarer.api.campaign.CampaignPlugin;
 import com.fs.starfarer.api.campaign.GenericPluginManagerAPI;
-import com.fs.starfarer.api.campaign.RepLevel;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.listeners.ListenerManagerAPI;
 import com.fs.starfarer.api.combat.MissileAIPlugin;
 import com.fs.starfarer.api.combat.MissileAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 //import com.thoughtworks.xstream.XStream;
-import data.hullmods.DMEBlockedHullmodDisplayScript;
+import data.campaign.fleets.dcp_DisposableLevellerFleetManager;
+import data.hullmods.DCPBlockedHullmodDisplayScript;
 import data.scripts.campaign.intel.dcp_DiscoverEntityListener;
 import data.scripts.weapons.ai.dcp_Itano_AMM_AI;
 import data.scripts.weapons.ai.dcp_GradMissileAI;
@@ -27,6 +27,8 @@ import org.dark.shaders.light.LightData;
 import org.dark.shaders.util.ShaderLib;
 import org.dark.shaders.util.TextureData;
 import org.json.JSONObject;
+import data.scripts.world.MagellanGen;
+
 //import data.scripts.world.systems.Nikolaev;
 //import data.scripts.world.systems.Martinique;
 
@@ -34,7 +36,7 @@ import org.json.JSONObject;
 public class DCP_ModPlugin extends BaseModPlugin
 {
 
-    private static final String DME_SETTINGS = "DMEsettings.ini";
+    private static final String DME_SETTINGS = "Dassault-Chykoyan-Protectorate.iml";
     public static boolean RANDOMBREAKERS;
     //public static boolean HANDMADEBREAKERS;
     //public static boolean NEXBREAKERS;
@@ -87,7 +89,11 @@ public class DCP_ModPlugin extends BaseModPlugin
 //    {
 //        new DCPGen().handmadebreakers(Global.getSector());
 //    }
-    
+    private static void initMagellan()
+{
+    new MagellanGen().generate(Global.getSector());
+}
+
     private static void initBreakers()
     {
         new DCPGen().randombreakers(Global.getSector());
@@ -105,6 +111,7 @@ public class DCP_ModPlugin extends BaseModPlugin
       if (!isExerelin || SectorManager.getCorvusMode())
         {
           initDME();
+          initMagellan();
         }
       
       //Whatever the hell I add to get my handmade Breakers setting to work.
@@ -115,13 +122,19 @@ public class DCP_ModPlugin extends BaseModPlugin
           }
           initBreakers();
     }
-    
-    
+
+    @Override
+    public void onNewGameAfterEconomyLoad()
+    {
+        setupLevellerFleetManager();
+    }
+
     @Override
     public void onGameLoad(boolean newGame)
     {
-        Global.getSector().addTransientScript(new DMEBlockedHullmodDisplayScript());
+        Global.getSector().addTransientScript(new DCPBlockedHullmodDisplayScript());
         addBreakerBeaconListener();
+        setupLevellerFleetManager();
     }
     
     private static void loadDMESettings() throws IOException, JSONException {
@@ -141,7 +154,17 @@ public class DCP_ModPlugin extends BaseModPlugin
             listeners.addListener(new dcp_DiscoverEntityListener());
         }    
     }
-    
+
+
+    public void setupLevellerFleetManager() {
+        SectorAPI sector = Global.getSector();
+        if( sector == null ) {
+            return;
+        }
+        if( !sector.hasScript( dcp_DisposableLevellerFleetManager.class ) ) {
+            sector.addScript( new dcp_DisposableLevellerFleetManager() );
+        }
+    }
     @Override
     public void onApplicationLoad()
     {

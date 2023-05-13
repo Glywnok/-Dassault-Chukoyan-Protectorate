@@ -14,9 +14,9 @@ import org.apache.log4j.Logger;
  *
  * @author LazyWizard
  */
-public class DMEBlockedHullmodDisplayScript extends BaseEveryFrameCombatPlugin implements EveryFrameScript
+public class DCPBlockedHullmodDisplayScript extends BaseEveryFrameCombatPlugin implements EveryFrameScript
 {
-    private static final Logger Log = Logger.getLogger(DMEBlockedHullmodDisplayScript.class);
+    private static final Logger Log = Logger.getLogger(DCPBlockedHullmodDisplayScript.class);
     private static final String NOTIFICATION_HULLMOD = "DMEBlockedBlankHullmod";
     private static final String NOTIFICATION_SOUND = "cr_allied_critical";
     private static ShipAPI ship;

@@ -21,4 +21,4 @@ The ship is able to run a low-grade phase field for extended periods of time, re
 "#Comissioned Crews",,,,,,,,,,,,,,,,,,
 Advanced Damage Control,dcp_dccrew,,,,,,,,TRUE,,0,0,0,0,data.hullmods.dcp_ExperiencedDamageControl,"Dassault-Mikoyan's damage-control practices are widely regarded as the best in the sector. Rigorous alert procedures, improved safety gear, and extensive repair training all contribute to fewer deaths and injuries in combat.",Reduces crew casualties and repair times by 10 percent.,graphics/DCP/hullmods/dcp_dccrew.png
 "#Hullmod Blocker",,,,,,,,,,,,,,,,,,
-HULLMOD CONFLICT,DMEBlockedBlankHullmod,,,,,,,FALSE,TRUE,,0,0,0,0,data.hullmods.DMEBlockedBlankHullmod,"%s, the hullmod you tried to install conflicts with this hull or another previously installed hullmod.",Blocks incompatible hullmods.,graphics/icons/intel/investigation.png
+HULLMOD CONFLICT,DMEBlockedBlankHullmod,,,,,,,FALSE,TRUE,,0,0,0,0,data.hullmods.DCPBlockedBlankHullmod,"%s, the hullmod you tried to install conflicts with this hull or another previously installed hullmod.",Blocks incompatible hullmods.,graphics/icons/intel/investigation.png
