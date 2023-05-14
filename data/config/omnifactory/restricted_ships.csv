@@ -1,4 +1,6 @@
 hull id
+
+#DME
 dcp_icax_wing
 dcp_starsylph
 dcp_snowgoose
@@ -41,3 +43,17 @@ dcp_stormkestrel_proto
 dcp_blacklancer
 dcp_bladewood
 dcpx_braveblade
+
+
+#MAGELLAN
+magellan_battleship
+magellan_cruiser
+magellan_carrier
+magellan_fastdestroyer
+magellan_linedestroyer
+magellan_linefrigate
+magellan_phasefrig
+
+magellan_bomber_wing
+magellan_hvyfighter_wing
+magellan_interceptor_wing

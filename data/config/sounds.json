@@ -3,824 +3,829 @@
 	#'City of the Disturbed' ambient music loop by Eric Matyas (www.soundimage.org)
 	#other music TBD
 	#Thanks to the GDC free sound libraries for lots of good sweeteners
-	
+
+
+
+	#DME
+
+
 	#Music - a work in progress
 	"music":{
 		#BB Encounter Loop - needs to be replaced eventually, but nice and creepy
-		"music_dcp_breakers_encounter_hostile":[
-			{"file":"dcp_cityofdisturbed.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
+		"music_dcp_DME_breakers_encounter_hostile":[
+			{"file":"dcp_DME_cityofdisturbed.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
 		],
 		# DME Base Encounter loop
 		# DME Base Market music
 		# Campaign tracks
 	},
 	#Main DME weapons
-	"dcp_6cmrailgun_charge":
+	"dcp_DME_6cmrailgun_charge":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_kineticcharge_sm.ogg","pitch":1, "volume":0.125},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kineticcharge_sm.ogg","pitch":1, "volume":0.125},
 	],
-	"dcp_6cmrailgun_fire":
+	"dcp_DME_6cmrailgun_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_6cmrailgun_fire_01.ogg","pitch":0.99, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_6cmrailgun_fire_01.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_6cmrailgun_fire_01.ogg","pitch":1.01, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_6cmrailgun_fire_02.ogg","pitch":0.99, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_6cmrailgun_fire_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_6cmrailgun_fire_01.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_6cmrailgun_fire_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_6cmrailgun_fire_01.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_6cmrailgun_fire_02.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_6cmrailgun_fire_02.ogg","pitch":1, "volume":0.4},
 	],
-	"dcp_12cmrailgun_charge":
+	"dcp_DME_12cmrailgun_charge":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_kineticcharge_med.ogg","pitch":1, "volume":0.175},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kineticcharge_med.ogg","pitch":1, "volume":0.175},
 	],
-	"dcp_12cmrailgun_fire":
+	"dcp_DME_12cmrailgun_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_12cmrailgun_fire_01.ogg","pitch":0.99, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_12cmrailgun_fire_01.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_12cmrailgun_fire_01.ogg","pitch":1.01, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_12cmrailgun_fire_02.ogg","pitch":0.99, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_12cmrailgun_fire_02.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_12cmrailgun_fire_01.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_12cmrailgun_fire_01.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_12cmrailgun_fire_01.ogg","pitch":1.01, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_12cmrailgun_fire_02.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_12cmrailgun_fire_02.ogg","pitch":1, "volume":0.45},
 	],
-	"dcp_20cmrailgun_charge":
+	"dcp_DME_20cmrailgun_charge":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_kineticcharge_lg.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kineticcharge_lg.ogg","pitch":1, "volume":0.25},
 	],
-	"dcp_20cmrailgun_fire":
+	"dcp_DME_20cmrailgun_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_20cmrailgun_fire_01.ogg","pitch":0.99, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_20cmrailgun_fire_01.ogg","pitch":1., "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_20cmrailgun_fire_01.ogg","pitch":1.01, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_20cmrailgun_fire_02.ogg","pitch":0.99, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_20cmrailgun_fire_02.ogg","pitch":1., "volume":0.5},		
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_20cmrailgun_fire_01.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_20cmrailgun_fire_01.ogg","pitch":1., "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_20cmrailgun_fire_01.ogg","pitch":1.01, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_20cmrailgun_fire_02.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_20cmrailgun_fire_02.ogg","pitch":1., "volume":0.5},		
 	],
 
-	"dcp_magdisruptorfire":
+	"dcp_DME_magdisruptorfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_magdisruptor_01.ogg","pitch":1.01, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_magdisruptor_01.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_magdisruptor_01.ogg","pitch":0.99, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_magdisruptor_02.ogg","pitch":1.01, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_magdisruptor_02.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magdisruptor_01.ogg","pitch":1.01, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magdisruptor_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magdisruptor_01.ogg","pitch":0.99, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magdisruptor_02.ogg","pitch":1.01, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magdisruptor_02.ogg","pitch":1, "volume":0.3},
 	],
-	"dcp_magpulserfire":
+	"dcp_DME_magpulserfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_magpulser_01.ogg","pitch":1.01, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_magpulser_01.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_magpulser_01.ogg","pitch":0.99, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_magpulser_02.ogg","pitch":1.01, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_magpulser_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magpulser_01.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magpulser_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magpulser_01.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magpulser_02.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_magpulser_02.ogg","pitch":1, "volume":0.4},
 	],
-	"dcp_pdbeamer":
+	"dcp_DME_pdbeamer":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_pdbeamer_01.ogg","pitch":1.01, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_pdbeamer_01.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_pdbeamer_01.ogg","pitch":0.99, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_pdbeamer_02.ogg","pitch":1.01, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_pdbeamer_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pdbeamer_01.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pdbeamer_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pdbeamer_01.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pdbeamer_02.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pdbeamer_02.ogg","pitch":1, "volume":0.4},
 	],
-	"dcp_multibeamer":
+	"dcp_DME_multibeamer":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_multibeamer_01.ogg","pitch":1.01, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_multibeamer_01.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_multibeamer_01.ogg","pitch":0.99, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_multibeamer_02.ogg","pitch":1.01, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_multibeamer_02.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multibeamer_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multibeamer_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multibeamer_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multibeamer_02.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multibeamer_02.ogg","pitch":1, "volume":0.35},
 	],
 	
-	"dcp_hitech_arm":
-	[{"file":"sounds/DCP/dcpweapons/dcp_hitech_arm.ogg","pitch":1, "volume":0.05}],
-	"dcp_midtech_arm":
-	[{"file":"sounds/DCP/dcpweapons/dcp_midtech_arm.ogg","pitch":1, "volume":0.05}],
-	"dcp_midtech_arm_sm":
-	[{"file":"sounds/DCP/dcpweapons/dcp_midtech_arm_sm.ogg","pitch":1, "volume":0.05}],
+	"dcp_DME_hitech_arm":
+	[{"file":"sounds/DCP/dcpweapons/dcp_DME_hitech_arm.ogg","pitch":1, "volume":0.05}],
+	"dcp_DME_midtech_arm":
+	[{"file":"sounds/DCP/dcpweapons/dcp_DME_midtech_arm.ogg","pitch":1, "volume":0.05}],
+	"dcp_DME_midtech_arm_sm":
+	[{"file":"sounds/DCP/dcpweapons/dcp_DME_midtech_arm_sm.ogg","pitch":1, "volume":0.05}],
 
-	"dcp_gravmissile_launch":
+	"dcp_DME_gravmissile_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_gravmissilelaunch.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_gravmissilelaunch.ogg","pitch":1.03, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_gravmissilelaunch.ogg","pitch":1.06, "volume":0.33},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_gravmissilelaunch.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_gravmissilelaunch.ogg","pitch":1.03, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_gravmissilelaunch.ogg","pitch":1.06, "volume":0.33},
 	],
-	"dcp_AMM_launch":
+	"dcp_DME_AMM_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_AMMlaunch01.ogg","pitch":1, "volume":0.25},
-		{"file":"sounds/DCP/dcpweapons/dcp_AMMlaunch01.ogg","pitch":1.03, "volume":0.24},
-		{"file":"sounds/DCP/dcpweapons/dcp_AMMlaunch01.ogg","pitch":1.06, "volume":0.23},
-		{"file":"sounds/DCP/dcpweapons/dcp_AMMlaunch02.ogg","pitch":1, "volume":0.25},
-		{"file":"sounds/DCP/dcpweapons/dcp_AMMlaunch02.ogg","pitch":1.03, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_AMMlaunch01.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_AMMlaunch01.ogg","pitch":1.03, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_AMMlaunch01.ogg","pitch":1.06, "volume":0.23},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_AMMlaunch02.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_AMMlaunch02.ogg","pitch":1.03, "volume":0.24},
 	],
-	"dcp_multiAMM_launch":
+	"dcp_DME_multiAMM_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_multiAMMlaunch01.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_multiAMMlaunch01.ogg","pitch":1.03, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_multiAMMlaunch01.ogg","pitch":1.06, "volume":0.33},
-		{"file":"sounds/DCP/dcpweapons/dcp_multiAMMlaunch02.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_multiAMMlaunch02.ogg","pitch":1.03, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multiAMMlaunch01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multiAMMlaunch01.ogg","pitch":1.03, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multiAMMlaunch01.ogg","pitch":1.06, "volume":0.33},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multiAMMlaunch02.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_multiAMMlaunch02.ogg","pitch":1.03, "volume":0.34},
 	],
-	"dcp_slapper_launch":
+	"dcp_DME_slapper_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_slapperlaunch.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_slapperlaunch.ogg","pitch":1.03, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_slapperlaunch.ogg","pitch":1.06, "volume":0.33},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_slapperlaunch.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_slapperlaunch.ogg","pitch":1.03, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_slapperlaunch.ogg","pitch":1.06, "volume":0.33},
 	],
-	"dcp_hellhound_launch":
+	"dcp_DME_hellhound_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_hellhoundlaunch_01.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellhoundlaunch_01.ogg","pitch":1.03, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellhoundlaunch_01.ogg","pitch":1.06, "volume":0.48},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellhoundlaunch_02.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellhoundlaunch_02.ogg","pitch":1.03, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellhoundlaunch_01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellhoundlaunch_01.ogg","pitch":1.03, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellhoundlaunch_01.ogg","pitch":1.06, "volume":0.48},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellhoundlaunch_02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellhoundlaunch_02.ogg","pitch":1.03, "volume":0.49},
 	],
-	"dcp_rupture_launch":
+	"dcp_DME_rupture_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_rupturelaunch.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_rupturelaunch.ogg","pitch":1.03, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_rupturelaunch.ogg","pitch":1.06, "volume":0.48},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rupturelaunch.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rupturelaunch.ogg","pitch":1.03, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rupturelaunch.ogg","pitch":1.06, "volume":0.48},
 	],
-	"dcp_hdem_detonation":
+	"dcp_DME_hdem_detonation":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_HDEMdetonation.ogg","pitch":1, "volume":0.5}
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_HDEMdetonation.ogg","pitch":1, "volume":0.5}
 	],
-	"dcp_jongleur_launch":
+	"dcp_DME_jongleur_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_mirvtorpedo_launch.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_mirvtorpedo_launch.ogg","pitch":1.03, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_mirvtorpedo_launch.ogg","pitch":1.06, "volume":0.43},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_mirvtorpedo_launch.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_mirvtorpedo_launch.ogg","pitch":1.03, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_mirvtorpedo_launch.ogg","pitch":1.06, "volume":0.43},
 	],
-	"dcp_torpedo_launch":
+	"dcp_DME_torpedo_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_torpedolaunch_01.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_torpedolaunch_01.ogg","pitch":1.03, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_torpedolaunch_01.ogg","pitch":1.06, "volume":0.43},
-		{"file":"sounds/DCP/dcpweapons/dcp_torpedolaunch_02.ogg","pitch":1.03, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_torpedolaunch_02.ogg","pitch":1.06, "volume":0.43},
-	],
-	
-	"dcp_microflak_fire":
-	[
-		{"file":"sounds/DCP/dcpweapons/dcp_microflak_01.ogg","pitch":0.985, "volume":0.24},
-		{"file":"sounds/DCP/dcpweapons/dcp_microflak_01.ogg","pitch":1, "volume":0.25},
-		{"file":"sounds/DCP/dcpweapons/dcp_microflak_01.ogg","pitch":1.015, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_torpedolaunch_01.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_torpedolaunch_01.ogg","pitch":1.03, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_torpedolaunch_01.ogg","pitch":1.06, "volume":0.43},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_torpedolaunch_02.ogg","pitch":1.03, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_torpedolaunch_02.ogg","pitch":1.06, "volume":0.43},
 	],
 	
-	"dcp_linearvulcanfire":
+	"dcp_DME_microflak_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_linearvulcan_01.ogg","pitch":1, "volume":0.15},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearvulcan_01.ogg","pitch":1.015, "volume":0.14},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearvulcan_01.ogg","pitch":1.03, "volume":0.13},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearvulcan_02.ogg","pitch":1, "volume":0.15},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearvulcan_02.ogg","pitch":1.015, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_microflak_01.ogg","pitch":0.985, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_microflak_01.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_microflak_01.ogg","pitch":1.015, "volume":0.24},
 	],
-	"dcp_energy_charge":
+	
+	"dcp_DME_linearvulcanfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_energycharge.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearvulcan_01.ogg","pitch":1, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearvulcan_01.ogg","pitch":1.015, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearvulcan_01.ogg","pitch":1.03, "volume":0.13},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearvulcan_02.ogg","pitch":1, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearvulcan_02.ogg","pitch":1.015, "volume":0.14},
 	],
-	"dcp_energy_charge_small":
+	"dcp_DME_energy_charge":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_energycharge_small.ogg","pitch":1, "volume":0.1},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energycharge.ogg","pitch":1, "volume":0.25},
 	],
-	"dcp_autolaser_small_fire":
+	"dcp_DME_energy_charge_small":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_sm_01.ogg","pitch":1.015, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_sm_01.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_sm_01.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_sm_02.ogg","pitch":1.015, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_sm_02.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energycharge_small.ogg","pitch":1, "volume":0.1},
 	],
-	"dcp_autolaser_fire":
+	"dcp_DME_autolaser_small_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_med_01.ogg","pitch":1.02, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_med_01.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_med_01.ogg","pitch":0.98, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_med_02.ogg","pitch":1.02, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_autolaser_med_02.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_sm_01.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_sm_01.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_sm_01.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_sm_02.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_sm_02.ogg","pitch":1, "volume":0.6},
 	],
-	"dcp_scatterlaser_fire":
+	"dcp_DME_autolaser_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_scatterlaser_burst_01.ogg","pitch":1.02, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_scatterlaser_burst_01.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_scatterlaser_burst_01.ogg","pitch":0.98, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_scatterlaser_burst_02.ogg","pitch":1.02, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_scatterlaser_burst_02.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_med_01.ogg","pitch":1.02, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_med_01.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_med_01.ogg","pitch":0.98, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_med_02.ogg","pitch":1.02, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_autolaser_med_02.ogg","pitch":1, "volume":0.6},
 	],
-	"dcp_hybridblaster_fire":
+	"dcp_DME_scatterlaser_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_hybridblaster_01.ogg","pitch":1.015, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_hybridblaster_01.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_hybridblaster_01.ogg","pitch":0.985, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_hybridblaster_02.ogg","pitch":1.015, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_hybridblaster_02.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_scatterlaser_burst_01.ogg","pitch":1.02, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_scatterlaser_burst_01.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_scatterlaser_burst_01.ogg","pitch":0.98, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_scatterlaser_burst_02.ogg","pitch":1.02, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_scatterlaser_burst_02.ogg","pitch":1, "volume":0.6},
 	],
-	"dcp_omniblaster_fire":
+	"dcp_DME_hybridblaster_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_omniblaster_01.ogg","pitch":1.015, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_omniblaster_01.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_omniblaster_01.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_omniblaster_02.ogg","pitch":1.015, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_omniblaster_02.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hybridblaster_01.ogg","pitch":1.015, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hybridblaster_01.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hybridblaster_01.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hybridblaster_02.ogg","pitch":1.015, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hybridblaster_02.ogg","pitch":1, "volume":0.45},
 	],
-	"dcp_beam_intro_01":
+	"dcp_DME_omniblaster_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_beam_intro_01.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_beam_intro_01.ogg","pitch":1.015, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_beam_intro_01.ogg","pitch":1.03, "volume":0.58},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_omniblaster_01.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_omniblaster_01.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_omniblaster_01.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_omniblaster_02.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_omniblaster_02.ogg","pitch":1, "volume":0.6},
 	],
-	"dcp_ionbeamer_fire_sm":
+	"dcp_DME_beam_intro_01":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":1.1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":1.115, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":1.13, "volume":0.33},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_beam_intro_01.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_beam_intro_01.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_beam_intro_01.ogg","pitch":1.03, "volume":0.58},
 	],
-	"dcp_ionbeamer_fire_med":
+	"dcp_DME_ionbeamer_fire_sm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":1.015, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":1.03, "volume":0.48},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":1.1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":1.115, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":1.13, "volume":0.33},
+	],
+	"dcp_DME_ionbeamer_fire_med":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":1.03, "volume":0.48},
 	],	
-	"dcp_ionbeamer_fire_lg":
+	"dcp_DME_ionbeamer_fire_lg":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":0.9, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":0.915, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeamer_loop.ogg","pitch":0.93, "volume":0.58},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":0.9, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":0.915, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeamer_loop.ogg","pitch":0.93, "volume":0.58},
 	],
-	"dcp_tacbeamer_discharge_sm":
+	"dcp_DME_tacbeamer_discharge_sm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_tacbeam_discharge_sm.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_tacbeam_discharge_sm.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_tacbeam_discharge_sm.ogg","pitch":0.97, "volume":0.48},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacbeam_discharge_sm.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacbeam_discharge_sm.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacbeam_discharge_sm.ogg","pitch":0.97, "volume":0.48},
 	],
-	"dcp_ionbeamer_intro":
+	"dcp_DME_ionbeamer_intro":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeam_intro_01.ogg","pitch":1, "volume":0.7},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeam_intro_01.ogg","pitch":0.985, "volume":0.69},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeam_intro_01.ogg","pitch":0.97, "volume":0.68},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeam_intro_02.ogg","pitch":0.985, "volume":0.69},
-		{"file":"sounds/DCP/dcpweapons/dcp_ionbeam_intro_02.ogg","pitch":0.97, "volume":0.68},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeam_intro_01.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeam_intro_01.ogg","pitch":0.985, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeam_intro_01.ogg","pitch":0.97, "volume":0.68},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeam_intro_02.ogg","pitch":0.985, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ionbeam_intro_02.ogg","pitch":0.97, "volume":0.68},
 	],
-	"dcp_tacbeamer_discharge_lg":
+	"dcp_DME_tacbeamer_discharge_lg":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_tacbeam_discharge_lg.ogg","pitch":1, "volume":0.9},
-		{"file":"sounds/DCP/dcpweapons/dcp_tacbeam_discharge_lg.ogg","pitch":0.985, "volume":0.89},
-		{"file":"sounds/DCP/dcpweapons/dcp_tacbeam_discharge_lg.ogg","pitch":0.97, "volume":0.88},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacbeam_discharge_lg.ogg","pitch":1, "volume":0.9},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacbeam_discharge_lg.ogg","pitch":0.985, "volume":0.89},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacbeam_discharge_lg.ogg","pitch":0.97, "volume":0.88},
 	],
 
-	"dcp_ripper_fire":
+	"dcp_DME_ripper_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_ripperfire_01.ogg","pitch":1.015, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_ripperfire_01.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_ripperfire_01.ogg","pitch":0.985, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_ripperfire_02.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_ripperfire_02.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ripperfire_01.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ripperfire_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ripperfire_01.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ripperfire_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ripperfire_02.ogg","pitch":1.015, "volume":0.39},
 	],
-	"dcp_linearflak_fire":
+	"dcp_DME_linearflak_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_linearflakfire_01.ogg","pitch":0.985, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearflakfire_01.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearflakfire_01.ogg","pitch":1.015, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearflakfire_02.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearflakfire_02.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearflakfire_01.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearflakfire_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearflakfire_01.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearflakfire_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearflakfire_02.ogg","pitch":1.015, "volume":0.39},
 	],
-	"dcp_explosion_flak_small":
+	"dcp_DME_explosion_flak_small":
 	[
 		{"file":"sounds/sfx_impacts/explosion_missile_01.ogg","pitch":1.35,"volume":0.25},
 	],	
-	"dcp_perforator_fire":
+	"dcp_DME_perforator_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_perforatorfire.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_perforatorfire.ogg","pitch":1.03, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_perforatorfire.ogg","pitch":1.06, "volume":0.58},		
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_perforatorfire.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_perforatorfire.ogg","pitch":1.03, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_perforatorfire.ogg","pitch":1.06, "volume":0.58},		
 	],
 	
-	"dcp_NTKcannon_fire":
+	"dcp_DME_NTKcannon_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_01.ogg","pitch":1.03, "volume":0.48},
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_01.ogg","pitch":1.015, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_01.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_02.ogg","pitch":1.015, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_01.ogg","pitch":1.03, "volume":0.48},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_01.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_02.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_02.ogg","pitch":1, "volume":0.5},
 	],
-	"dcp_barker_fire":
+	"dcp_DME_barker_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_01.ogg","pitch":1.23, "volume":0.33},
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_01.ogg","pitch":1.215, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_01.ogg","pitch":1.2, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_02.ogg","pitch":1.215, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_NTKcannonfire_02.ogg","pitch":1.2, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_01.ogg","pitch":1.23, "volume":0.33},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_01.ogg","pitch":1.215, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_01.ogg","pitch":1.2, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_02.ogg","pitch":1.215, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_NTKcannonfire_02.ogg","pitch":1.2, "volume":0.35},
 	],
-	"dcp_NTKautogun_fire":
+	"dcp_DME_NTKautogun_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_rakerfire_01.ogg","pitch":1.015, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_rakerfire_01.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_rakerfire_01.ogg","pitch":0.985, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_rakerfire_02.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_rakerfire_02.ogg","pitch":1.015, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rakerfire_01.ogg","pitch":1.015, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rakerfire_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rakerfire_01.ogg","pitch":0.985, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rakerfire_02.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rakerfire_02.ogg","pitch":1.015, "volume":0.34},
 	],
-	"dcp_howler_fire":
+	"dcp_DME_howler_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_howlerfire_01.ogg","pitch":1.03, "volume":0.58},
-		{"file":"sounds/DCP/dcpweapons/dcp_howlerfire_01.ogg","pitch":1.015, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_howlerfire_01.ogg","pitch":1, "volume":0.6},
-		#{"file":"sounds/DCP/dcpweapons/dcp_howlerfire_02.ogg","pitch":0.85, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_howlerfire_01.ogg","pitch":1.03, "volume":0.58},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_howlerfire_01.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_howlerfire_01.ogg","pitch":1, "volume":0.6},
+		#{"file":"sounds/DCP/dcpweapons/dcp_DME_howlerfire_02.ogg","pitch":0.85, "volume":0.59},
 	],
-	"dcp_hellspear_fire":
+	"dcp_DME_hellspear_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_hellspearfire_01.ogg","pitch":1.03, "volume":0.78},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellspearfire_01.ogg","pitch":1.015, "volume":0.79},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellspearfire_01.ogg","pitch":1, "volume":0.8},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellspearfire_02.ogg","pitch":0.9, "volume":0.79},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellspearfire_02.ogg","pitch":1, "volume":0.8},
-	],
-	
-	"dcp_buzzgun_fire":
-	[
-		{"file":"sounds/DCP/dcpweapons/dcp_buzzgun_01.ogg","pitch":1.01, "volume":0.14},
-		{"file":"sounds/DCP/dcpweapons/dcp_buzzgun_01.ogg","pitch":1, "volume":0.15},
-		{"file":"sounds/DCP/dcpweapons/dcp_buzzgun_01.ogg","pitch":0.99, "volume":0.14},
-		{"file":"sounds/DCP/dcpweapons/dcp_buzzgun_02.ogg","pitch":1.01, "volume":0.14},
-		{"file":"sounds/DCP/dcpweapons/dcp_buzzgun_02.ogg","pitch":1, "volume":0.15},
-	],
-	"dcp_linearmg_fire":
-	[
-		{"file":"sounds/DCP/dcpweapons/dcp_linearmgfire.ogg","pitch":1.01, "volume":0.19},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearmgfire.ogg","pitch":1, "volume":0.2},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearmgfire.ogg","pitch":0.99, "volume":0.19},
-	],
-	"dcp_linearautogun_fire":
-	[
-		{"file":"sounds/DCP/dcpweapons/dcp_linearautogun_01.ogg","pitch":1.01, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearautogun_01.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearautogun_01.ogg","pitch":0.99, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearautogun_02.ogg","pitch":1.01, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearautogun_02.ogg","pitch":1, "volume":0.35},
-	],
-	"dcp_linearcannon_fire":
-	[
-		{"file":"sounds/DCP/dcpweapons/dcp_linearcannonfire.ogg","pitch":1.01, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearcannonfire.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearcannonfire.ogg","pitch":0.99, "volume":0.39},
-	],
-	"dcp_linearshotgun_fire":
-	[
-		{"file":"sounds/DCP/dcpweapons/dcp_linearshotgunfire.ogg","pitch":1.015, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearshotgunfire.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_linearshotgunfire.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellspearfire_01.ogg","pitch":1.03, "volume":0.78},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellspearfire_01.ogg","pitch":1.015, "volume":0.79},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellspearfire_01.ogg","pitch":1, "volume":0.8},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellspearfire_02.ogg","pitch":0.9, "volume":0.79},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellspearfire_02.ogg","pitch":1, "volume":0.8},
 	],
 	
-	"dcp_defbeamer_intro":
+	"dcp_DME_buzzgun_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamerfire.ogg","pitch":1.015, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamerfire.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamerfire.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamerfire.ogg","pitch":0.97, "volume":0.28},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_buzzgun_01.ogg","pitch":1.01, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_buzzgun_01.ogg","pitch":1, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_buzzgun_01.ogg","pitch":0.99, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_buzzgun_02.ogg","pitch":1.01, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_buzzgun_02.ogg","pitch":1, "volume":0.15},
 	],
-	"dcp_defbeamer_loop":
+	"dcp_DME_linearmg_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamer_loop_01.ogg","pitch":1.015, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamer_loop_01.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamer_loop_01.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamer_loop_02.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_defbeamer_loop_02.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearmgfire.ogg","pitch":1.01, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearmgfire.ogg","pitch":1, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearmgfire.ogg","pitch":0.99, "volume":0.19},
 	],
-	"dcp_erpulsebeam_intro":
+	"dcp_DME_linearautogun_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_erpulsebeam_intro_01.ogg","pitch":1.015, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_erpulsebeam_intro_01.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_erpulsebeam_intro_01.ogg","pitch":0.985, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_erpulsebeam_intro_02.ogg","pitch":1.015, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_erpulsebeam_intro_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearautogun_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearautogun_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearautogun_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearautogun_02.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearautogun_02.ogg","pitch":1, "volume":0.35},
 	],
-	"dcp_erpulsebeam_loop":
+	"dcp_DME_linearcannon_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_erpulsebeam_loop.ogg","pitch":1.015, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_erpulsebeam_loop.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_erpulsebeam_loop.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearcannonfire.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearcannonfire.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearcannonfire.ogg","pitch":0.99, "volume":0.39},
 	],
-	"dcp_smallpulsedbeam_fire":
+	"dcp_DME_linearshotgun_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_pulsedbeamsmall.ogg","pitch":1.015, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulsedbeamsmall.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulsedbeamsmall.ogg","pitch":0.985, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulsedbeamsmall.ogg","pitch":0.97, "volume":0.43},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearshotgunfire.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearshotgunfire.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_linearshotgunfire.ogg","pitch":0.985, "volume":0.59},
 	],
-	"dcp_medpulsedbeam_fire":
+	
+	"dcp_DME_defbeamer_intro":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_pulsedbeammed.ogg","pitch":1.015, "volume":0.69},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulsedbeammed.ogg","pitch":1, "volume":0.7},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulsedbeammed.ogg","pitch":0.985, "volume":0.69},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulsedbeammed.ogg","pitch":0.97, "volume":0.68},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamerfire.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamerfire.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamerfire.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamerfire.ogg","pitch":0.97, "volume":0.28},
 	],
-	"dcp_medbeamer_loop":
+	"dcp_DME_defbeamer_loop":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_medbeamer_loop_01.ogg","pitch":1.015, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_medbeamer_loop_01.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_medbeamer_loop_01.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_medbeamer_loop_02.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_medbeamer_loop_02.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamer_loop_01.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamer_loop_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamer_loop_01.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamer_loop_02.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_defbeamer_loop_02.ogg","pitch":0.985, "volume":0.29},
 	],
-	"dcp_blazesm_fire":
+	"dcp_DME_erpulsebeam_intro":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_blazegun_01.ogg","pitch":1.01, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_blazegun_01.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_blazegun_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_erpulsebeam_intro_01.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_erpulsebeam_intro_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_erpulsebeam_intro_01.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_erpulsebeam_intro_02.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_erpulsebeam_intro_02.ogg","pitch":1, "volume":0.4},
 	],
-	"dcp_blazemed_fire":
+	"dcp_DME_erpulsebeam_loop":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_blazegun_02.ogg","pitch":1.005, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_blazegun_02.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_blazegun_02.ogg","pitch":0.995, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_erpulsebeam_loop.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_erpulsebeam_loop.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_erpulsebeam_loop.ogg","pitch":0.985, "volume":0.39},
+	],
+	"dcp_DME_smallpulsedbeam_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulsedbeamsmall.ogg","pitch":1.015, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulsedbeamsmall.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulsedbeamsmall.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulsedbeamsmall.ogg","pitch":0.97, "volume":0.43},
+	],
+	"dcp_DME_medpulsedbeam_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulsedbeammed.ogg","pitch":1.015, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulsedbeammed.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulsedbeammed.ogg","pitch":0.985, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulsedbeammed.ogg","pitch":0.97, "volume":0.68},
+	],
+	"dcp_DME_medbeamer_loop":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_medbeamer_loop_01.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_medbeamer_loop_01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_medbeamer_loop_01.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_medbeamer_loop_02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_medbeamer_loop_02.ogg","pitch":0.985, "volume":0.49},
+	],
+	"dcp_DME_blazesm_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_blazegun_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_blazegun_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_blazegun_01.ogg","pitch":0.99, "volume":0.34},
+	],
+	"dcp_DME_blazemed_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_blazegun_02.ogg","pitch":1.005, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_blazegun_02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_blazegun_02.ogg","pitch":0.995, "volume":0.49},
 
 	],
-	"dcp_shockartillery_fire":
+	"dcp_DME_shockartillery_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shockartillery_01.ogg","pitch":1.01, "volume":0.79},
-		{"file":"sounds/DCP/dcpweapons/dcp_shockartillery_01.ogg","pitch":1, "volume":0.8},
-		{"file":"sounds/DCP/dcpweapons/dcp_shockartillery_01.ogg","pitch":0.99, "volume":0.79},
-		{"file":"sounds/DCP/dcpweapons/dcp_shockartillery_02.ogg","pitch":1, "volume":0.8},
-		{"file":"sounds/DCP/dcpweapons/dcp_shockartillery_02.ogg","pitch":0.99, "volume":0.79},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockartillery_01.ogg","pitch":1.01, "volume":0.79},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockartillery_01.ogg","pitch":1, "volume":0.8},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockartillery_01.ogg","pitch":0.99, "volume":0.79},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockartillery_02.ogg","pitch":1, "volume":0.8},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockartillery_02.ogg","pitch":0.99, "volume":0.79},
 	],
-	"dcp_TBM_launch":
+	"dcp_DME_TBM_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_perforatorfire.ogg","pitch":0.82, "volume":0.79},
-		{"file":"sounds/DCP/dcpweapons/dcp_perforatorfire.ogg","pitch":0.8, "volume":0.8},
-		{"file":"sounds/DCP/dcpweapons/dcp_perforatorfire.ogg","pitch":0.78, "volume":0.79},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_perforatorfire.ogg","pitch":0.82, "volume":0.79},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_perforatorfire.ogg","pitch":0.8, "volume":0.8},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_perforatorfire.ogg","pitch":0.78, "volume":0.79},
 	],
-	"dcp_tacticalmissile":
+	"dcp_DME_tacticalmissile":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_tacticalmissile.ogg","pitch":0.82, "volume":1},
-		{"file":"sounds/DCP/dcpweapons/dcp_tacticalmissile.ogg","pitch":0.8, "volume":1},
-		{"file":"sounds/DCP/dcpweapons/dcp_tacticalmissile.ogg","pitch":0.78, "volume":1},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacticalmissile.ogg","pitch":0.82, "volume":1},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacticalmissile.ogg","pitch":0.8, "volume":1},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_tacticalmissile.ogg","pitch":0.78, "volume":1},
 	],
 		
 	#Blade Breaker weapons
-	"dcp_laservulcanfire":
+	"dcp_DME_laservulcanfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_laservulcan_fire_01.ogg","pitch":1.015, "volume":0.19},
-		{"file":"sounds/DCP/dcpweapons/dcp_laservulcan_fire_01.ogg","pitch":1, "volume":0.2},
-		{"file":"sounds/DCP/dcpweapons/dcp_laservulcan_fire_01.ogg","pitch":0.985, "volume":0.19},
-		{"file":"sounds/DCP/dcpweapons/dcp_laservulcan_fire_02.ogg","pitch":1, "volume":0.2},
-		{"file":"sounds/DCP/dcpweapons/dcp_laservulcan_fire_02.ogg","pitch":0.985, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_laservulcan_fire_01.ogg","pitch":1.015, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_laservulcan_fire_01.ogg","pitch":1, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_laservulcan_fire_01.ogg","pitch":0.985, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_laservulcan_fire_02.ogg","pitch":1, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_laservulcan_fire_02.ogg","pitch":0.985, "volume":0.19},
 	],
-	"dcp_thermoburst_fire":
+	"dcp_DME_thermoburst_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_thermoburst_01.ogg","pitch":1.015, "volume":0.14},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermoburst_01.ogg","pitch":1, "volume":0.15},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermoburst_01.ogg","pitch":0.985, "volume":0.14},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermoburst_02.ogg","pitch":1, "volume":0.15},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermoburst_02.ogg","pitch":0.985, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermoburst_01.ogg","pitch":1.015, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermoburst_01.ogg","pitch":1, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermoburst_01.ogg","pitch":0.985, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermoburst_02.ogg","pitch":1, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermoburst_02.ogg","pitch":0.985, "volume":0.14},
 	],
-	"dcp_thermomortar_fire":
+	"dcp_DME_thermomortar_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_thermalmortar_01.ogg","pitch":1.015, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermalmortar_01.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermalmortar_01.ogg","pitch":0.985, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermalmortar_02.ogg","pitch":1, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermalmortar_02.ogg","pitch":0.985, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermalmortar_01.ogg","pitch":1.015, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermalmortar_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermalmortar_01.ogg","pitch":0.985, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermalmortar_02.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermalmortar_02.ogg","pitch":0.985, "volume":0.34},
 	],
-	"dcp_thermoburst_boom":
+	"dcp_DME_thermoburst_boom":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_thermoboom_01.ogg","pitch":1.015, "volume":0.14},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermoboom_01.ogg","pitch":1, "volume":0.15},
-		{"file":"sounds/DCP/dcpweapons/dcp_thermoboom_01.ogg","pitch":0.985, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermoboom_01.ogg","pitch":1.015, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermoboom_01.ogg","pitch":1, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_thermoboom_01.ogg","pitch":0.985, "volume":0.14},
 	],
-	"dcp_degencycler_fire":
+	"dcp_DME_degencycler_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_degencycler_01.ogg","pitch":1.015, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_degencycler_01.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_degencycler_01.ogg","pitch":0.985, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_degencycler_02.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_degencycler_02.ogg","pitch":0.985, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_degencycler_03.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_degencycler_03.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_degencycler_01.ogg","pitch":1.015, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_degencycler_01.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_degencycler_01.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_degencycler_02.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_degencycler_02.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_degencycler_03.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_degencycler_03.ogg","pitch":0.985, "volume":0.44},
 	],
 
-	"dcp_irbeam_intro":
+	"dcp_DME_irbeam_intro":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_irbeam_start.ogg","pitch":1.01, "volume":0.067},
-		{"file":"sounds/DCP/dcpweapons/dcp_irbeam_start.ogg","pitch":1, "volume":0.075},
-		{"file":"sounds/DCP/dcpweapons/dcp_irbeam_start.ogg","pitch":0.99, "volume":0.067},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_irbeam_start.ogg","pitch":1.01, "volume":0.067},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_irbeam_start.ogg","pitch":1, "volume":0.075},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_irbeam_start.ogg","pitch":0.99, "volume":0.067},
 	],
 	
-	"dcp_bbheavymg_fire":
+	"dcp_DME_bbheavymg_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_bbmg_01.ogg","pitch":1.015, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_bbmg_01.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_bbmg_01.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_bbmg_02.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_bbmg_02.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bbmg_01.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bbmg_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bbmg_01.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bbmg_02.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bbmg_02.ogg","pitch":0.985, "volume":0.29},
 	],
-	"dcp_shellback_fire":
+	"dcp_DME_shellback_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shellbackfire.ogg","pitch":1.01, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellbackfire.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellbackfire.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellbackfire.ogg","pitch":1.01, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellbackfire.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellbackfire.ogg","pitch":0.99, "volume":0.44},
 	],
-	"dcp_shellbackftr_fire":
+	"dcp_DME_shellbackftr_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shellbackfire.ogg","pitch":1.36, "volume":0.34},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellbackfire.ogg","pitch":1.35, "volume":0.35},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellbackfire.ogg","pitch":1.34, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellbackfire.ogg","pitch":1.36, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellbackfire.ogg","pitch":1.35, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellbackfire.ogg","pitch":1.34, "volume":0.34},
 	],
-	"dcp_shellhead_charge":
+	"dcp_DME_shellhead_charge":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_charge.ogg","pitch":1.03, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_charge.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_charge.ogg","pitch":0.97, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_charge.ogg","pitch":1.03, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_charge.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_charge.ogg","pitch":0.97, "volume":0.29},
 	],
-	"dcp_shellhead_fire":
+	"dcp_DME_shellhead_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shellheadfire.ogg","pitch":1.015, "volume":0.69},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellheadfire.ogg","pitch":1, "volume":0.7},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellheadfire.ogg","pitch":0.985, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellheadfire.ogg","pitch":1.015, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellheadfire.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellheadfire.ogg","pitch":0.985, "volume":0.69},
 	],
-	"dcp_shellshocker_charge":
+	"dcp_DME_shellshocker_charge":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_charge.ogg","pitch":1.03, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_charge.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_charge.ogg","pitch":0.97, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_charge.ogg","pitch":1.03, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_charge.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_charge.ogg","pitch":0.97, "volume":0.59},
 	],
-	"dcp_shellshocker_fire":
+	"dcp_DME_shellshocker_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_fire_01.ogg","pitch":1.03, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_fire_01.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_fire_01.ogg","pitch":0.97, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_fire_02.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_shellshocker_fire_02.ogg","pitch":0.97, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_fire_01.ogg","pitch":1.03, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_fire_01.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_fire_01.ogg","pitch":0.97, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_fire_02.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shellshocker_fire_02.ogg","pitch":0.97, "volume":0.74},
 	],
 	
-	"dcp_plasmadisruptorfire":
+	"dcp_DME_plasmadisruptorfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_sm_01.ogg","pitch":1.015, "volume":0.24},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_sm_01.ogg","pitch":1, "volume":0.25},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_sm_01.ogg","pitch":0.985, "volume":0.24},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_sm_02.ogg","pitch":1, "volume":0.25},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_sm_02.ogg","pitch":0.985, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_sm_01.ogg","pitch":1.015, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_sm_01.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_sm_01.ogg","pitch":0.985, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_sm_02.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_sm_02.ogg","pitch":0.985, "volume":0.24},
 	],
-	"dcp_plasbeamer_fire":
+	"dcp_DME_plasbeamer_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_plasbeamerfire.ogg","pitch":1.015, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasbeamerfire.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasbeamerfire.ogg","pitch":0.985, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasbeamerfire.ogg","pitch":0.97, "volume":0.43},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasbeamerfire.ogg","pitch":1.015, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasbeamerfire.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasbeamerfire.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasbeamerfire.ogg","pitch":0.97, "volume":0.43},
 	],
-	"dcp_megastreamer_fire":
+	"dcp_DME_megastreamer_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_megastreamerfire.ogg","pitch":1.015, "volume":0.69},
-		{"file":"sounds/DCP/dcpweapons/dcp_megastreamerfire.ogg","pitch":1, "volume":0.7},
-		{"file":"sounds/DCP/dcpweapons/dcp_megastreamerfire.ogg","pitch":0.985, "volume":0.69},
-		{"file":"sounds/DCP/dcpweapons/dcp_megastreamerfire.ogg","pitch":0.97, "volume":0.68},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_megastreamerfire.ogg","pitch":1.015, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_megastreamerfire.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_megastreamerfire.ogg","pitch":0.985, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_megastreamerfire.ogg","pitch":0.97, "volume":0.68},
 	],
-	"dcp_pulseripper_fire":
+	"dcp_DME_pulseripper_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_pulseripper_01.ogg","pitch":1.015, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulseripper_01.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulseripper_01.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulseripper_02.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_pulseripper_02.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulseripper_01.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulseripper_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulseripper_01.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulseripper_02.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_pulseripper_02.ogg","pitch":0.985, "volume":0.29},
 	],
-	"dcp_plasmadriver_fire":
+	"dcp_DME_plasmadriver_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_01.ogg","pitch":1.015, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_01.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_01.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_02.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmadriver_02.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_01.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_01.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmadriver_02.ogg","pitch":0.985, "volume":0.49},
 	],
-	"dcp_ebolter_fire":
+	"dcp_DME_ebolter_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_ebolter.ogg","pitch":1.015, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_ebolter.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_ebolter.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ebolter.ogg","pitch":1.015, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ebolter.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ebolter.ogg","pitch":0.985, "volume":0.44},
 	],
-	"dcp_electrogun_fire":
+	"dcp_DME_electrogun_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_electrogun_01.ogg","pitch":1.015, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_electrogun_01.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_electrogun_01.ogg","pitch":0.985, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_electrogun_02.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_electrogun_02.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_electrogun_01.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_electrogun_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_electrogun_01.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_electrogun_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_electrogun_02.ogg","pitch":0.985, "volume":0.39},
 	],
-	"dcp_lens_launch":
+	"dcp_DME_lens_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_lenslaunch.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_lenslaunch.ogg","pitch":1.03, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_lenslaunch.ogg","pitch":1.06, "volume":0.43},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_lenslaunch.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_lenslaunch.ogg","pitch":1.03, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_lenslaunch.ogg","pitch":1.06, "volume":0.43},
 	],
-	"dcp_plasrocket_fire":
+	"dcp_DME_plasrocket_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_plasrocket_fire.ogg","pitch":1.02, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasrocket_fire.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasrocket_fire.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasrocket_fire.ogg","pitch":1.02, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasrocket_fire.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasrocket_fire.ogg","pitch":0.98, "volume":0.29},
 	],
-	"dcp_jackal_fire":
+	"dcp_DME_jackal_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_bladegun_fire_01.ogg","pitch":1.015, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_bladegun_fire_01.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_bladegun_fire_01.ogg","pitch":0.985, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_bladegun_fire_02.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_bladegun_fire_02.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bladegun_fire_01.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bladegun_fire_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bladegun_fire_01.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bladegun_fire_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_bladegun_fire_02.ogg","pitch":0.985, "volume":0.39},
 	],		
-	"dcp_plasvulcan_fire":
+	"dcp_DME_plasvulcan_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_plasvulcan_01.ogg","pitch":1.015, "volume":0.17},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasvulcan_01.ogg","pitch":1, "volume":0.18},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasvulcan_01.ogg","pitch":0.985, "volume":0.17},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasvulcan_01.ogg","pitch":0.97, "volume":0.16},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasvulcan_02.ogg","pitch":1.015, "volume":0.17},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasvulcan_02.ogg","pitch":1, "volume":0.18},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasvulcan_02.ogg","pitch":0.985, "volume":0.17},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasvulcan_01.ogg","pitch":1.015, "volume":0.17},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasvulcan_01.ogg","pitch":1, "volume":0.18},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasvulcan_01.ogg","pitch":0.985, "volume":0.17},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasvulcan_01.ogg","pitch":0.97, "volume":0.16},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasvulcan_02.ogg","pitch":1.015, "volume":0.17},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasvulcan_02.ogg","pitch":1, "volume":0.18},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasvulcan_02.ogg","pitch":0.985, "volume":0.17},
 	],
-	"dcp_plasmamortar_fire":
+	"dcp_DME_plasmamortar_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmamortar_01.ogg","pitch":1.015, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmamortar_01.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmamortar_01.ogg","pitch":0.985, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmamortar_02.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_plasmamortar_02.ogg","pitch":0.985, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmamortar_01.ogg","pitch":1.015, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmamortar_01.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmamortar_01.ogg","pitch":0.985, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmamortar_02.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_plasmamortar_02.ogg","pitch":0.985, "volume":0.74},
 	],
-	"dcp_matadorfire":
+	"dcp_DME_matadorfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_matadorfire.ogg","pitch":1.015, "volume":0.19},
-		{"file":"sounds/DCP/dcpweapons/dcp_matadorfire.ogg","pitch":1, "volume":0.2},
-		{"file":"sounds/DCP/dcpweapons/dcp_matadorfire.ogg","pitch":0.985, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_matadorfire.ogg","pitch":1.015, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_matadorfire.ogg","pitch":1, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_matadorfire.ogg","pitch":0.985, "volume":0.19},
 	],
-	"dcp_toreadorfire":
+	"dcp_DME_toreadorfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_toreador_fire.ogg","pitch":1.015, "volume":0.39},
-		{"file":"sounds/DCP/dcpweapons/dcp_toreador_fire.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpweapons/dcp_toreador_fire.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_toreador_fire.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_toreador_fire.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_toreador_fire.ogg","pitch":0.985, "volume":0.39},
 	],
-	"dcp_brigadorfire":
+	"dcp_DME_brigadorfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_brigador_fire.ogg","pitch":1.015, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_brigador_fire.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_brigador_fire.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_brigador_fire.ogg","pitch":1.015, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_brigador_fire.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_brigador_fire.ogg","pitch":0.985, "volume":0.44},
 	],
-	"dcp_phaserail_fire":
+	"dcp_DME_phaserail_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_phaserail_fire.ogg","pitch":1.015, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_phaserail_fire.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_phaserail_fire.ogg","pitch":0.985, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_phaserail_fire.ogg","pitch":1.015, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_phaserail_fire.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_phaserail_fire.ogg","pitch":0.985, "volume":0.74},
 	],
-	"dcp_miniphaserail_fire":
+	"dcp_DME_miniphaserail_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_miniphaserail_fire.ogg","pitch":1.015, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_miniphaserail_fire.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_miniphaserail_fire.ogg","pitch":0.985, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_miniphaserail_fire.ogg","pitch":1.015, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_miniphaserail_fire.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_miniphaserail_fire.ogg","pitch":0.985, "volume":0.44},
 	],
-	"dcp_lasergatling_loop":
+	"dcp_DME_lasergatling_loop":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_lasergatling_loop.ogg","pitch":1.015, "volume":0.24},
-		{"file":"sounds/DCP/dcpweapons/dcp_lasergatling_loop.ogg","pitch":1, "volume":0.25},
-		{"file":"sounds/DCP/dcpweapons/dcp_lasergatling_loop.ogg","pitch":0.985, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_lasergatling_loop.ogg","pitch":1.015, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_lasergatling_loop.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_lasergatling_loop.ogg","pitch":0.985, "volume":0.24},
 	],
-	"dcp_electronrocket_launch":
+	"dcp_DME_electronrocket_launch":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_electorpedo_launch.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_electorpedo_launch.ogg","pitch":1.03, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_electorpedo_launch.ogg","pitch":1.06, "volume":0.73},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_electorpedo_launch.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_electorpedo_launch.ogg","pitch":1.03, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_electorpedo_launch.ogg","pitch":1.06, "volume":0.73},
 	],
-	"dcp_microphasebeamfire":
+	"dcp_DME_microphasebeamfire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_matadorfire.ogg","pitch":1.215, "volume":0.19},
-		{"file":"sounds/DCP/dcpweapons/dcp_matadorfire.ogg","pitch":1.2, "volume":0.2},
-		{"file":"sounds/DCP/dcpweapons/dcp_matadorfire.ogg","pitch":1.185, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_matadorfire.ogg","pitch":1.215, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_matadorfire.ogg","pitch":1.2, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_matadorfire.ogg","pitch":1.185, "volume":0.19},
 	],
-	"dcp_phaseblaster_fire":
+	"dcp_DME_phaseblaster_fire":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_phaseblaster_01.ogg","pitch":1.015, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_phaseblaster_01.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_phaseblaster_01.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_phaseblaster_02.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_phaseblaster_02.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_phaseblaster_01.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_phaseblaster_01.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_phaseblaster_01.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_phaseblaster_02.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_phaseblaster_02.ogg","pitch":0.985, "volume":0.59},
 	],
 	
 	#Critical hit and impact sounds
-	"dcp_ballistic_crit":
+	"dcp_DME_ballistic_crit":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_01.ogg","pitch":1.03, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_01.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_01.ogg","pitch":0.97, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_02.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_02.ogg","pitch":0.97, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_01.ogg","pitch":1.03, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_01.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_01.ogg","pitch":0.97, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_02.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_02.ogg","pitch":0.97, "volume":0.74},
 	],
-	"dcp_ballistic_crit_sm":
+	"dcp_DME_ballistic_crit_sm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_01.ogg","pitch":1.03, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_01.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_01.ogg","pitch":0.97, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_02.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_ballistic_crit_02.ogg","pitch":0.97, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_01.ogg","pitch":1.03, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_01.ogg","pitch":0.97, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_ballistic_crit_02.ogg","pitch":0.97, "volume":0.49},
 	],
-	"dcp_energy_crit":
+	"dcp_DME_energy_crit":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":1.03, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":0.97, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_02.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_02.ogg","pitch":0.97, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":1.03, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":0.97, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_02.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_02.ogg","pitch":0.97, "volume":0.74},
 	],
-	"dcp_energy_crit_sm":
+	"dcp_DME_energy_crit_sm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":1.03, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":0.97, "volume":0.49},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_02.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_02.ogg","pitch":0.97, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":1.03, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":0.97, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_02.ogg","pitch":0.97, "volume":0.49},
 	],
-	"dcp_energy_crit_micro":
+	"dcp_DME_energy_crit_micro":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":1.23, "volume":0.19},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":1.2, "volume":0.2},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_01.ogg","pitch":1.17, "volume":0.19},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_02.ogg","pitch":1.2, "volume":0.2},
-		{"file":"sounds/DCP/dcpweapons/dcp_energy_crit_02.ogg","pitch":1.17, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":1.23, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":1.2, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_01.ogg","pitch":1.17, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_02.ogg","pitch":1.2, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_energy_crit_02.ogg","pitch":1.17, "volume":0.19},
 	],
-	"dcp_hellhound_crit":
+	"dcp_DME_hellhound_crit":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_hellhound_crit.ogg","pitch":1.015, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellhound_crit.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_hellhound_crit.ogg","pitch":0.985, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellhound_crit.ogg","pitch":1.015, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellhound_crit.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_hellhound_crit.ogg","pitch":0.985, "volume":0.74},
 	],
-	"dcp_rail_crit_20cm":
+	"dcp_DME_rail_crit_20cm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":1.02, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":0.98, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":1.02, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":0.98, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":1.02, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":0.98, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":1.02, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":0.98, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":1.02, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":0.98, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":1.02, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":0.98, "volume":0.59},
 	],
-	"dcp_rail_crit_12cm":
+	"dcp_DME_rail_crit_12cm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":1.02, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":0.98, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":1.02, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":0.98, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":1.02, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":1, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":0.98, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":1.02, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":0.98, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":1.02, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":0.98, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":1.02, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":0.98, "volume":0.44},
 	],
-	"dcp_rail_crit_6cm":
+	"dcp_DME_rail_crit_6cm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":1.02, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_01.ogg","pitch":0.98, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":1.02, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_02.ogg","pitch":0.98, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":1.02, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_rail_crit_03.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":1.02, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_01.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":1.02, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_02.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":1.02, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_rail_crit_03.ogg","pitch":0.98, "volume":0.29},
 	],
-	"dcp_shockarty_crit":
+	"dcp_DME_shockarty_crit":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shockarty_crit.ogg","pitch":1.02, "volume":0.69},
-		{"file":"sounds/DCP/dcpweapons/dcp_shockarty_crit.ogg","pitch":1, "volume":0.7},
-		{"file":"sounds/DCP/dcpweapons/dcp_shockarty_crit.ogg","pitch":0.98, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockarty_crit.ogg","pitch":1.02, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockarty_crit.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockarty_crit.ogg","pitch":0.98, "volume":0.69},
 	],
-	"dcp_shockarty_crit_sm":
+	"dcp_DME_shockarty_crit_sm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_shockarty_crit.ogg","pitch":1.02, "volume":0.54},
-		{"file":"sounds/DCP/dcpweapons/dcp_shockarty_crit.ogg","pitch":1, "volume":0.55},
-		{"file":"sounds/DCP/dcpweapons/dcp_shockarty_crit.ogg","pitch":0.98, "volume":0.54},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockarty_crit.ogg","pitch":1.02, "volume":0.54},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockarty_crit.ogg","pitch":1, "volume":0.55},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_shockarty_crit.ogg","pitch":0.98, "volume":0.54},
 	],
 	#Shellback, Shell Hawk and Slicer/Sheller crits	
-	"dcp_kinetic_crit_med":
+	"dcp_DME_kinetic_crit_med":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":1.02, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":0.98, "volume":0.74},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_02.ogg","pitch":1, "volume":0.75},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_02.ogg","pitch":0.98, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":1.02, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":0.98, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_02.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_02.ogg","pitch":0.98, "volume":0.74},
 	],
-	"dcp_kinetic_crit_sm":
+	"dcp_DME_kinetic_crit_sm":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":1.12, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":1.1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":1.08, "volume":0.59},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_02.ogg","pitch":1.1, "volume":0.6},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_02.ogg","pitch":1.08, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":1.12, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":1.1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":1.08, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_02.ogg","pitch":1.1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_02.ogg","pitch":1.08, "volume":0.59},
 	],
-	"dcp_kinetic_crit_micro":
+	"dcp_DME_kinetic_crit_micro":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":1.23, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":1.2, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_01.ogg","pitch":1.17, "volume":0.44},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_02.ogg","pitch":1.2, "volume":0.45},
-		{"file":"sounds/DCP/dcpweapons/dcp_kinetic_crit_02.ogg","pitch":1.17, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":1.23, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":1.2, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_01.ogg","pitch":1.17, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_02.ogg","pitch":1.2, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_kinetic_crit_02.ogg","pitch":1.17, "volume":0.44},
 	],
 	#Jackal Crit	
-	"dcp_jackal_crit":
+	"dcp_DME_jackal_crit":
 	[
-		{"file":"sounds/DCP/dcpweapons/dcp_jackal_crit_01.ogg","pitch":1.03, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_jackal_crit_01.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_jackal_crit_01.ogg","pitch":0.97, "volume":0.29},
-		{"file":"sounds/DCP/dcpweapons/dcp_jackal_crit_02.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpweapons/dcp_jackal_crit_02.ogg","pitch":0.97, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_jackal_crit_01.ogg","pitch":1.03, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_jackal_crit_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_jackal_crit_01.ogg","pitch":0.97, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_jackal_crit_02.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_DME_jackal_crit_02.ogg","pitch":0.97, "volume":0.29},
 	],
-    "dcp_mine_explosion_sm":{
+    "dcp_DME_mine_explosion_sm":{
         "sounds":[
         {"file":"sounds/sfx_systems/mine_strike_explosion_01.ogg","pitch":1.2,"volume":0.75},
         {"file":"sounds/sfx_systems/mine_strike_explosion_02.ogg","pitch":1.2,"volume":0.75},
@@ -828,7 +833,7 @@
         {"file":"sounds/sfx_systems/mine_strike_explosion_04.ogg","pitch":1.2,"volume":0.75},
         ],
     },
-    "dcp_mine_explosion_vsm":{
+    "dcp_DME_mine_explosion_vsm":{
         "sounds":[
         {"file":"sounds/sfx_systems/mine_strike_explosion_01.ogg","pitch":1.4,"volume":0.6},
         {"file":"sounds/sfx_systems/mine_strike_explosion_02.ogg","pitch":1.4,"volume":0.6},
@@ -838,165 +843,165 @@
     },
 
 	#Other ship sounds
-	"dcp_DME_dronelaunch":
+	"dcp_DME_DME_dronelaunch":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_dronelaunch.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpmisc/dcp_dronelaunch.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpmisc/dcp_dronelaunch.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dronelaunch.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dronelaunch.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dronelaunch.ogg","pitch":1.015, "volume":0.29},
 	],
-	"dcp_miragesystem":
+	"dcp_DME_miragesystem":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_miragejump.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpmisc/dcp_miragejump.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpmisc/dcp_miragejump.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_miragejump.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_miragejump.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_miragejump.ogg","pitch":1.015, "volume":0.59},
 	],
-	"dcp_miragerecall":
+	"dcp_DME_miragerecall":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_miragerecall.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpmisc/dcp_miragerecall.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpmisc/dcp_miragerecall.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_miragerecall.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_miragerecall.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_miragerecall.ogg","pitch":1.015, "volume":0.49},
 	],
-	"dcp_mirage_empty":
+	"dcp_DME_mirage_empty":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_mirageempty.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpmisc/dcp_mirageempty.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpmisc/dcp_mirageempty.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_mirageempty.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_mirageempty.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_mirageempty.ogg","pitch":1.015, "volume":0.29},
 	],
-	"dcp_pulsejets":
+	"dcp_DME_pulsejets":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets01.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets01.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets01.ogg","pitch":1.015, "volume":0.49},
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets02.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets02.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets02.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets01.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets01.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets02.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets02.ogg","pitch":1.015, "volume":0.49},
 	],
-	"dcp_pulsejets_ftr":
+	"dcp_DME_pulsejets_ftr":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets_ftr01.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets_ftr01.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpmisc/dcp_pulsejets_ftr01.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets_ftr01.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets_ftr01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_pulsejets_ftr01.ogg","pitch":1.015, "volume":0.29},
 	],
-	"dcp_jetinjector_activate":
+	"dcp_DME_jetinjector_activate":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_start.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_start.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_start.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_start.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_start.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_start.ogg","pitch":1.015, "volume":0.59},
 	],
-	"dcp_jetinjector_loop":
+	"dcp_DME_jetinjector_loop":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_loop.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_loop.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_loop.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_loop.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_loop.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_loop.ogg","pitch":1.015, "volume":0.29},
 	],
-	"dcp_ramdrive_activate":
+	"dcp_DME_ramdrive_activate":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_ramdrive_start.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpmisc/dcp_ramdrive_start.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpmisc/dcp_ramdrive_start.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_ramdrive_start.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_ramdrive_start.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_ramdrive_start.ogg","pitch":1.015, "volume":0.59},
 	],
-	"dcp_ramdrive_loop":
+	"dcp_DME_ramdrive_loop":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_ramdrive_loop.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpmisc/dcp_ramdrive_loop.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpmisc/dcp_ramdrive_loop.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_ramdrive_loop.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_ramdrive_loop.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_ramdrive_loop.ogg","pitch":1.015, "volume":0.29},
 	],
-	"dcp_jetinjector_deactivate":
+	"dcp_DME_jetinjector_deactivate":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_end.ogg","pitch":0.985, "volume":0.39},
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_end.ogg","pitch":1, "volume":0.4},
-		{"file":"sounds/DCP/dcpmisc/dcp_jetinjector_end.ogg","pitch":1.015, "volume":0.39},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_end.ogg","pitch":0.985, "volume":0.39},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_end.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_jetinjector_end.ogg","pitch":1.015, "volume":0.39},
 	],
-	"dcp_dockjets_activate":
+	"dcp_DME_dockjets_activate":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_dockjets_start.ogg","pitch":0.985, "volume":0.29},
-		{"file":"sounds/DCP/dcpmisc/dcp_dockjets_start.ogg","pitch":1, "volume":0.3},
-		{"file":"sounds/DCP/dcpmisc/dcp_dockjets_start.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dockjets_start.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dockjets_start.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dockjets_start.ogg","pitch":1.015, "volume":0.29},
 	],
-	"dcp_dockjets_loop":
+	"dcp_DME_dockjets_loop":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_dockjets_loop.ogg","pitch":0.985, "volume":0.19},
-		{"file":"sounds/DCP/dcpmisc/dcp_dockjets_loop.ogg","pitch":1, "volume":0.2},
-		{"file":"sounds/DCP/dcpmisc/dcp_dockjets_loop.ogg","pitch":1.015, "volume":0.19},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dockjets_loop.ogg","pitch":0.985, "volume":0.19},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dockjets_loop.ogg","pitch":1, "volume":0.2},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_dockjets_loop.ogg","pitch":1.015, "volume":0.19},
 	],
-	"dcp_sigma_disruptor":
+	"dcp_DME_sigma_disruptor":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_sigmadisruptor_01.ogg","pitch":1, "volume":0.9},
-		{"file":"sounds/DCP/dcpmisc/dcp_sigmadisruptor_01.ogg","pitch":1.015, "volume":0.89},
-		{"file":"sounds/DCP/dcpmisc/dcp_sigmadisruptor_02.ogg","pitch":1, "volume":0.9},
-		{"file":"sounds/DCP/dcpmisc/dcp_sigmadisruptor_02.ogg","pitch":1.015, "volume":0.89},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_sigmadisruptor_01.ogg","pitch":1, "volume":0.9},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_sigmadisruptor_01.ogg","pitch":1.015, "volume":0.89},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_sigmadisruptor_02.ogg","pitch":1, "volume":0.9},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_sigmadisruptor_02.ogg","pitch":1.015, "volume":0.89},
 	],
-	"dcp_sigma_jaunt":
+	"dcp_DME_sigma_jaunt":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_sigmajaunt_01.ogg","pitch":1, "volume":1.0},
-		{"file":"sounds/DCP/dcpmisc/dcp_sigmajaunt_01.ogg","pitch":1.015, "volume":0.99},
-		{"file":"sounds/DCP/dcpmisc/dcp_sigmajaunt_02.ogg","pitch":1, "volume":1.0},
-		{"file":"sounds/DCP/dcpmisc/dcp_sigmajaunt_02.ogg","pitch":1.015, "volume":0.99},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_sigmajaunt_01.ogg","pitch":1, "volume":1.0},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_sigmajaunt_01.ogg","pitch":1.015, "volume":0.99},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_sigmajaunt_02.ogg","pitch":1, "volume":1.0},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_sigmajaunt_02.ogg","pitch":1.015, "volume":0.99},
 	],
-	"dcp_stutterwarp":
+	"dcp_DME_stutterwarp":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_stutterwarp_01.ogg","pitch":0.985, "volume":0.99},
-		{"file":"sounds/DCP/dcpmisc/dcp_stutterwarp_01.ogg","pitch":1, "volume":1.0},
-		{"file":"sounds/DCP/dcpmisc/dcp_stutterwarp_01.ogg","pitch":1.015, "volume":0.99},
-		{"file":"sounds/DCP/dcpmisc/dcp_stutterwarp_01.ogg","pitch":1.03, "volume":0.98},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_stutterwarp_01.ogg","pitch":0.985, "volume":0.99},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_stutterwarp_01.ogg","pitch":1, "volume":1.0},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_stutterwarp_01.ogg","pitch":1.015, "volume":0.99},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_stutterwarp_01.ogg","pitch":1.03, "volume":0.98},
 	],	
-	"dcp_foclense_powerup":
+	"dcp_DME_foclense_powerup":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_powerup.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_powerup.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_powerup.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_powerup.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_powerup.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_powerup.ogg","pitch":1.015, "volume":0.59},
 	],
-	"dcp_foclense_powerdown":
+	"dcp_DME_foclense_powerdown":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_powerdown.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_powerdown.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_powerdown.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_powerdown.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_powerdown.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_powerdown.ogg","pitch":1.015, "volume":0.49},
 	],
-	"dcp_foclense_loop":
+	"dcp_DME_foclense_loop":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_loop.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_loop.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpmisc/dcp_focuslense_loop.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_loop.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_loop.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_focuslense_loop.ogg","pitch":1.015, "volume":0.49},
 	],
-	"dcp_system_fastloader":
+	"dcp_DME_system_fastloader":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_system_fastloader.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_fastloader.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_fastloader.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_fastloader.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_fastloader.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_fastloader.ogg","pitch":1.015, "volume":0.59},
 	],
 	
-	"dcp_system_unavailable":
+	"dcp_DME_system_unavailable":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_system_unavailable01.ogg","pitch":0.985, "volume":0.19},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_unavailable01.ogg","pitch":1, "volume":0.2},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_unavailable01.ogg","pitch":1.015, "volume":0.19},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_unavailable02.ogg","pitch":0.985, "volume":0.19},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_unavailable02.ogg","pitch":1, "volume":0.2},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_unavailable02.ogg","pitch":1.015, "volume":0.19},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_unavailable01.ogg","pitch":0.985, "volume":0.19},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_unavailable01.ogg","pitch":1, "volume":0.2},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_unavailable01.ogg","pitch":1.015, "volume":0.19},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_unavailable02.ogg","pitch":0.985, "volume":0.19},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_unavailable02.ogg","pitch":1, "volume":0.2},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_unavailable02.ogg","pitch":1.015, "volume":0.19},
 	],
-	"dcp_system_powerup":
+	"dcp_DME_system_powerup":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerup.ogg","pitch":0.985, "volume":0.59},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerup.ogg","pitch":1, "volume":0.6},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerup.ogg","pitch":1.015, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerup.ogg","pitch":0.985, "volume":0.59},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerup.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerup.ogg","pitch":1.015, "volume":0.59},
 	],
-	"dcp_system_powerdown":
+	"dcp_DME_system_powerdown":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerdown.ogg","pitch":0.985, "volume":0.49},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerdown.ogg","pitch":1, "volume":0.5},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerdown.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerdown.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerdown.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerdown.ogg","pitch":1.015, "volume":0.49},
 	],
-	"dcp_system_powerup_deep":
+	"dcp_DME_system_powerup_deep":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerup_deep.ogg","pitch":0.985, "volume":0.84},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerup_deep.ogg","pitch":1, "volume":0.85},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerup_deep.ogg","pitch":1.015, "volume":0.84},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerup_deep.ogg","pitch":0.985, "volume":0.84},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerup_deep.ogg","pitch":1, "volume":0.85},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerup_deep.ogg","pitch":1.015, "volume":0.84},
 	],
-	"dcp_system_powerdown_deep":
+	"dcp_DME_system_powerdown_deep":
 	[
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerdown_deep.ogg","pitch":0.985, "volume":0.79},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerdown_deep.ogg","pitch":1, "volume":0.8},
-		{"file":"sounds/DCP/dcpmisc/dcp_system_powerdown_deep.ogg","pitch":1.015, "volume":0.79},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerdown_deep.ogg","pitch":0.985, "volume":0.79},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerdown_deep.ogg","pitch":1, "volume":0.8},
+		{"file":"sounds/DCP/dcpmisc/dcp_DME_system_powerdown_deep.ogg","pitch":1.015, "volume":0.79},
 	],
 	
 	
@@ -1005,7 +1010,7 @@
 	# played when engines are being used - depending on ship style and size
 	# For example - a "new" frigate would play the third sound listed, at volume 0.6
 
-	"dcp_engine_loop":{
+	"dcp_DME_engine_loop":{
 		"sounds":[
 			{"file":"sounds/sfx_engines/engine_01_lotek_00_fighter.ogg","pitch":0.67,"volume":1}, # index:  0
 			{"file":"sounds/sfx_engines/engine_01_lotek_01_frigate.ogg","pitch":1,"volume":1},    # index:  1
@@ -1035,7 +1040,7 @@
 		},
 
 
-	"dcp_engine_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
+	"dcp_DME_engine_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
 		"sounds":[
 			{"file":"sounds/sfx_engines/engine_boost_01.ogg","pitch":1.0,"volume":0.4},
 			{"file":"sounds/sfx_engines/engine_boost_02.ogg","pitch":1.0,"volume":0.4},
@@ -1052,11 +1057,11 @@
 	},
 
 	# Shields and related
-	"dcp_shield_burnout":{ # played when a ship overloads
+	"dcp_DME_shield_burnout":{ # played when a ship overloads
 		"sounds":[
-			{"file":"sounds/DCP/dcpflux/dcp_shield_burnout_01.ogg","pitch":1,"volume":1},
-			{"file":"sounds/DCP/dcpflux/dcp_shield_burnout_02.ogg","pitch":1,"volume":1},
-			{"file":"sounds/DCP/dcpflux/dcp_shield_burnout_03.ogg","pitch":1,"volume":1},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_shield_burnout_01.ogg","pitch":1,"volume":1},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_shield_burnout_02.ogg","pitch":1,"volume":1},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_shield_burnout_03.ogg","pitch":1,"volume":1},
 		],
 		"DMELowtech":{"sounds":[0], "pitch":0.7, "volume":1},
 		"DMEMain":{"sounds":[0], "pitch":0.9, "volume":1},
@@ -1067,7 +1072,7 @@
 		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
 		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
 	},
-	"dcp_emp_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
+	"dcp_DME_emp_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
 		"sounds":[
 			{"file":"sounds/sfx_shields/shields_burnout_loop.ogg","pitch":1,"volume":0.6},
 		],
@@ -1080,9 +1085,9 @@
 		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
 		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
 	},
-	"dcp_flux_loop":{ # played while a ship is venting flux
+	"dcp_DME_flux_loop":{ # played while a ship is venting flux
 		"sounds":[
-			{"file":"sounds/DCP/dcpflux/dcp_flux_flush_loop.ogg","pitch":1,"volume":0.7},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_flux_flush_loop.ogg","pitch":1,"volume":0.7},
 		],
 		"DMELowtech":{"sounds":[0], "pitch":0.7, "volume":1},
 		"DMEMain":{"sounds":[0], "pitch":0.9, "volume":1},
@@ -1093,13 +1098,13 @@
 		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
 		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
 	},	
-	"dcp_flux_vent":{ # played once when a ship starts venting flux
+	"dcp_DME_flux_vent":{ # played once when a ship starts venting flux
 		"sounds":[
-			{"file":"sounds/DCP/dcpflux/dcp_flux_vent_01.ogg","pitch":1.015,"volume":0.59},
-			{"file":"sounds/DCP/dcpflux/dcp_flux_vent_01.ogg","pitch":1,"volume":0.6},
-			{"file":"sounds/DCP/dcpflux/dcp_flux_vent_01.ogg","pitch":0.985,"volume":0.59},
-			{"file":"sounds/DCP/dcpflux/dcp_flux_vent_02.ogg","pitch":1,"volume":0.6},
-			{"file":"sounds/DCP/dcpflux/dcp_flux_vent_02.ogg","pitch":0.985,"volume":0.59},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_flux_vent_01.ogg","pitch":1.015,"volume":0.59},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_flux_vent_01.ogg","pitch":1,"volume":0.6},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_flux_vent_01.ogg","pitch":0.985,"volume":0.59},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_flux_vent_02.ogg","pitch":1,"volume":0.6},
+			{"file":"sounds/DCP/dcpflux/dcp_DME_flux_vent_02.ogg","pitch":0.985,"volume":0.59},
 		],
 		"DMELowtech":{"sounds":[0], "pitch":0.7, "volume":1},
 		"DMEMain":{"sounds":[0], "pitch":0.9, "volume":1},
@@ -1113,11 +1118,11 @@
 	
 	# Similar setup to engine loop - defines which of the two sounds to use, and
 	# what pitch/volume to use them at, depending on ship style and size
-	"dcp_shield_lower":{
+	"dcp_DME_shield_lower":{
 		"sounds":[
-			{"file":"sounds/DCP/dcpshields/dcp_shields_down_large.ogg","pitch":1,"volume":0.4},
-			{"file":"sounds/DCP/dcpshields/dcp_shields_down_medium.ogg","pitch":1,"volume":0.4},
-			{"file":"sounds/DCP/dcpshields/dcp_shields_down_small.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/DCP/dcpshields/dcp_DME_shields_down_large.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/DCP/dcpshields/dcp_DME_shields_down_medium.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/DCP/dcpshields/dcp_DME_shields_down_small.ogg","pitch":1,"volume":0.4},
 		],
 		"DMELowtech":{"sounds":[0,1,2], "pitch":1, "volume":1},
 		"DMEMain":{"sounds":[0,1,2], "pitch":1, "volume":1},
@@ -1128,11 +1133,11 @@
 		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
 		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
 	},
-	"dcp_shield_raise":{
+	"dcp_DME_shield_raise":{
 		"sounds":[
-			{"file":"sounds/DCP/dcpshields/dcp_shields_up_large.ogg","pitch":1,"volume":1},
-			{"file":"sounds/DCP/dcpshields/dcp_shields_up_medium.ogg","pitch":1,"volume":1},
-			{"file":"sounds/DCP/dcpshields/dcp_shields_up_small.ogg","pitch":1,"volume":1},
+			{"file":"sounds/DCP/dcpshields/dcp_DME_shields_up_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/DCP/dcpshields/dcp_DME_shields_up_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/DCP/dcpshields/dcp_DME_shields_up_small.ogg","pitch":1,"volume":1},
 		],
 		"DMELowtech":{"sounds":[0,1,2], "pitch":1, "volume":1},
 		"DMEMain":{"sounds":[0,1,2], "pitch":1, "volume":1},
@@ -1144,7 +1149,7 @@
 		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
 	},
 	# Explosions
-	"dcp_explosion_ship":{ # when a fighter or ship explodes
+	"dcp_DME_explosion_ship":{ # when a fighter or ship explodes
 		"sounds":[
 			{"file":"sounds/sfx_impacts/explosion_01.ogg","pitch":1,"volume":1.0},
 			{"file":"sounds/sfx_impacts/explosion_02.ogg","pitch":1,"volume":1.0},
@@ -1162,15 +1167,708 @@
 	},
 	
 	# Terrain
-	"dcp_terrain_sigma":[
-		{"file":"sounds/DCP/dcpterrain/dcp_terrain_sigma_default.ogg","pitch":0.985,"volume":0.49},
-		{"file":"sounds/DCP/dcpterrain/dcp_terrain_sigma_default.ogg","pitch":1,"volume":0.5},
-		{"file":"sounds/DCP/dcpterrain/dcp_terrain_sigma_default.ogg","pitch":1.015,"volume":0.49},
+	"dcp_DME_terrain_sigma":[
+		{"file":"sounds/DCP/dcpterrain/dcp_DME_terrain_sigma_default.ogg","pitch":0.985,"volume":0.49},
+		{"file":"sounds/DCP/dcpterrain/dcp_DME_terrain_sigma_default.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/DCP/dcpterrain/dcp_DME_terrain_sigma_default.ogg","pitch":1.015,"volume":0.49},
 	],		
 	
-	"dcp_terrain_sigma_flare":[
-		{"file":"sounds/DCP/dcpterrain/dcp_terrain_sigma_flare.ogg","pitch":0.985,"volume":0.74},
-		{"file":"sounds/DCP/dcpterrain/dcp_terrain_sigma_flare.ogg","pitch":1,"volume":0.75},
-		{"file":"sounds/DCP/dcpterrain/dcp_terrain_sigma_flare.ogg","pitch":1.015,"volume":0.74},
+	"dcp_DME_terrain_sigma_flare":[
+		{"file":"sounds/DCP/dcpterrain/dcp_DME_terrain_sigma_flare.ogg","pitch":0.985,"volume":0.74},
+		{"file":"sounds/DCP/dcpterrain/dcp_DME_terrain_sigma_flare.ogg","pitch":1,"volume":0.75},
+		{"file":"sounds/DCP/dcpterrain/dcp_DME_terrain_sigma_flare.ogg","pitch":1.015,"volume":0.74},
 	],
+
+
+
+
+	#MAGELLAN
+
+
+
+	# Credits
+	# 'Unforgiving Himalayas', 'Mystical Journey', and 'Emerging Alien Civilizations' ambient music loops by Eric Matyas (www.soundimage.org)
+	# other music by MesoTroniK (www.soundcloud.com/mesotronik)
+	# Thanks to the GDC free sound libraries 2016- for great samples and sweeteners
+	
+	# Music - a work in progress
+	"music":{
+		# Leveller Encounter Loop - needs to be replaced eventually
+		"music_dcp_magellan_leveller_encounter":[
+			{"file":"dcp_magellan_unforgivinghimalayas.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":false},
+		],
+		# Leveller market loop - also needs to be replaced
+		"music_dcp_magellan_leveller_market":[
+			{"file":"dcp_magellan_mysticaljourney.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":false},
+		],
+		# Meetpoint Turan interaction loop - just a little chill noise.
+		"music_dcp_magellan_indiemarket":[
+			{"file":"dcp_magellan_emergingaliencivilizations.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
+		],
+		# Magellan Encounter Music (by MesoTroniK)
+		"music_dcp_magellan_protectorate_encounter_neutral":[
+			{"file":"dcp_magellan_protectorate_neutral_encounter.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
+		],
+		"music_dcp_magellan_protectorate_encounter_hostile":[
+			{"file":"dcp_magellan_protectorate_hostile_encounter.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
+		],
+		"music_dcp_magellan_protectorate_encounter_friendly":[
+			{"file":"dcp_magellan_protectorate_friendly_encounter.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
+		],
+		# Magellan Market Music (by MesoTroniK)
+		"music_dcp_magellan_protectorate_market_neutral":[
+			{"file":"dcp_magellan_protectorate_market_neutral.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
+		],
+		"music_dcp_magellan_protectorate_market_hostile":[
+			{"file":"dcp_magellan_protectorate_market_hostile.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
+		],
+	},
+	#Ballistics
+	"dcp_magellan_vsmallac_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_vsmkinetic_01.ogg","pitch":0.99, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_vsmkinetic_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_vsmkinetic_01.ogg","pitch":1.01, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_vsmkinetic_02.ogg","pitch":0.99, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_vsmkinetic_02.ogg","pitch":1, "volume":0.3},
+	],
+	"dcp_magellan_smallgat_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_02.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_02.ogg","pitch":1, "volume":0.35},
+	],
+	"dcp_magellan_medgat_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_medkinetic_01.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_medkinetic_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_medkinetic_01.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_medkinetic_02.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_medkinetic_02.ogg","pitch":1, "volume":0.4},
+	],
+	
+	"dcp_magellan_bonesaw_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_01.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_01.ogg","pitch":1.0, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_01.ogg","pitch":1.02, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_02.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_02.ogg","pitch":1.0, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_02.ogg","pitch":1.02, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_03.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_03.ogg","pitch":1.0, "volume":0.3},
+	],
+	"dcp_magellan_boneshaker_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_boneshaker_fire_01.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_boneshaker_fire_01.ogg","pitch":1.0, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_boneshaker_fire_01.ogg","pitch":1.02, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_boneshaker_fire_02.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_boneshaker_fire_02.ogg","pitch":1.0, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_boneshaker_fire_02.ogg","pitch":1.02, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_boneshaker_fire_03.ogg","pitch":0.98, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_boneshaker_fire_03.ogg","pitch":1.0, "volume":0.3},
+	],
+	"dcp_magellan_bonesaw_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":0.99, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":1, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":1.01, "volume":0.19},
+	],
+	"dcp_magellan_bonesaw_ftr_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_01.ogg","pitch":1.19, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_01.ogg","pitch":1.2, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_01.ogg","pitch":1.21, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_02.ogg","pitch":1.19, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_02.ogg","pitch":1.2, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_02.ogg","pitch":1.21, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_03.ogg","pitch":1.19, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_fire_03.ogg","pitch":1.2, "volume":0.3},
+	],
+	"dcp_magellan_bonesaw_ftr_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":1.19, "volume":0.09},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":1.2, "volume":0.1},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":1.21, "volume":0.09},
+	],
+	"dcp_magellan_bonecracker_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecracker_fire_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecracker_fire_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecracker_fire_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecracker_fire_02.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecracker_fire_02.ogg","pitch":1, "volume":0.35},
+	],
+	
+	"dcp_magellan_bonecrusher_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecrusher_fire_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecrusher_fire_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecrusher_fire_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecrusher_fire_02.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonecrusher_fire_02.ogg","pitch":1, "volume":0.35},
+	],
+	"dcp_magellan_bonecrusher_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":0.79, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":0.8, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bonesaw_impact.ogg","pitch":0.81, "volume":0.19},
+	],
+	"dcp_magellan_quenchgun_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchgun_01.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchgun_01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchgun_01.ogg","pitch":1.01, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchgun_02.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchgun_02.ogg","pitch":1, "volume":0.5},
+	],
+	"dcp_magellan_quenchcannon_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchcannon_01.ogg","pitch":0.99, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchcannon_01.ogg","pitch":1.0, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchcannon_01.ogg","pitch":1.01, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchcannon_02.ogg","pitch":0.99, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_quenchcannon_02.ogg","pitch":1.0, "volume":0.6},
+	],
+	"dcp_magellan_kineticspall_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_01.ogg","pitch":1.0, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_02.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_02.ogg","pitch":1.0, "volume":0.35},
+	],
+	"dcp_magellan_kineticspall_sm_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_01.ogg","pitch":1.19, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_01.ogg","pitch":1.2, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_01.ogg","pitch":1.21, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_02.ogg","pitch":1.19, "volume":0.14},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_kineticspall_crit_02.ogg","pitch":1.2, "volume":0.15},
+	],
+	"dcp_magellan_salvoag_fire": #replace later with manually-adjusted Burstmaster sound
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_01.ogg","pitch":1.19, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_01.ogg","pitch":1.2, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_01.ogg","pitch":1.21, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_02.ogg","pitch":1.19, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_02.ogg","pitch":1.2, "volume":0.3},
+	],
+	"dcp_magellan_revgrenade_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_revgrenade_fire.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_revgrenade_fire.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_revgrenade_fire.ogg","pitch":1.01, "volume":0.39},
+	],
+	"dcp_magellan_beehive_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_01.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_01.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_01.ogg","pitch":1.01, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_02.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_02.ogg","pitch":1, "volume":0.45},
+	],	
+	"dcp_magellan_burstmaster_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_01.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_01.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_01.ogg","pitch":1.01, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_02.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_burstmaster_fire_02.ogg","pitch":1, "volume":0.45},
+	],
+	"dcp_magellan_largemortar_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_largemortar_fire_01.ogg","pitch":0.99, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_largemortar_fire_01.ogg","pitch":1.0, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_largemortar_fire_01.ogg","pitch":1.01, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_largemortar_fire_02.ogg","pitch":0.99, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_largemortar_fire_02.ogg","pitch":1.0, "volume":0.7},
+	],
+	
+	"dcp_magellan_lmg_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lmgfire_01.ogg","pitch":0.99, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lmgfire_01.ogg","pitch":1, "volume":0.16},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lmgfire_01.ogg","pitch":1.01, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lmgfire_02.ogg","pitch":0.99, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lmgfire_02.ogg","pitch":1, "volume":0.16},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lmgfire_03.ogg","pitch":0.99, "volume":0.15},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lmgfire_03.ogg","pitch":1, "volume":0.16},
+	],
+	"dcp_magellan_hmg_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_hmgfire_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_hmgfire_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_hmgfire_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_hmgfire_02.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_hmgfire_02.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_hmgfire_03.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_hmgfire_03.ogg","pitch":1, "volume":0.35},
+	],
+	"dcp_magellan_mg_boom":{
+			"sounds":[
+			{"file":"sounds/sfx_wpn_guns/devastator_shell_exp_01.ogg","pitch":1.2,"volume":0.2},
+			{"file":"sounds/sfx_wpn_guns/devastator_shell_exp_02.ogg","pitch":1.2,"volume":0.2},
+			{"file":"sounds/sfx_wpn_guns/devastator_shell_exp_03.ogg","pitch":1.2,"volume":0.2},
+			{"file":"sounds/sfx_wpn_guns/devastator_shell_exp_04.ogg","pitch":1.2,"volume":0.2},
+		],
+	},
+	
+	"dcp_magellan_lilsolenoid_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lilsolenoid_01.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lilsolenoid_01.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lilsolenoid_01.ogg","pitch":1.01, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lilsolenoid_02.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_lilsolenoid_02.ogg","pitch":1, "volume":0.35},
+	],
+	"dcp_magellan_bigsolenoid_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bigsolenoid_01.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bigsolenoid_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bigsolenoid_01.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bigsolenoid_02.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_bigsolenoid_02.ogg","pitch":1, "volume":0.4},
+	],	
+	
+	"dcp_magellan_fuelrod_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_fire.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_fire.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_fire.ogg","pitch":1.01, "volume":0.49},
+	],
+	"dcp_magellan_fuelrod_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_01.ogg","pitch":0.99, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_01.ogg","pitch":1.01, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_02.ogg","pitch":0.99, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_02.ogg","pitch":1, "volume":0.3},
+	],
+	"dcp_magellan_fuelscatter_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_01.ogg","pitch":0.89, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_01.ogg","pitch":0.9, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_01.ogg","pitch":0.91, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_02.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_beehive_fire_02.ogg","pitch":0.9, "volume":0.4},
+	],	
+	"dcp_magellan_fuelrod_crit_sm":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_01.ogg","pitch":1.19, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_01.ogg","pitch":1.2, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_01.ogg","pitch":1.21, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_02.ogg","pitch":1.19, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fuelrod_impact_02.ogg","pitch":1.2, "volume":0.2},
+	],
+	
+	#Missiles
+	"dcp_magellan_cracker_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_cracker_fire.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_cracker_fire.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_cracker_fire.ogg","pitch":1.01, "volume":0.39},
+	],
+	
+	"dcp_magellan_foxfire_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_foxfire_launch.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_foxfire_launch.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_foxfire_launch.ogg","pitch":1.01, "volume":0.39},
+	],
+	"dcp_magellan_LKmissile_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_foxfire_launch.ogg","pitch":0.79, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_foxfire_launch.ogg","pitch":0.8, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_foxfire_launch.ogg","pitch":0.81, "volume":0.49},
+	],
+	
+	"dcp_magellan_ripfire_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ripfire_launch.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ripfire_launch.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ripfire_launch.ogg","pitch":1.01, "volume":0.39},
+	],
+	
+	"dcp_magellan_stratlrm_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_stratlrm_01.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_stratlrm_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_stratlrm_01.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_stratlrm_02.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_stratlrm_02.ogg","pitch":1, "volume":0.4},
+	],
+	
+	"dcp_magellan_slamfire_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_slamfire_launch.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_slamfire_launch.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_slamfire_launch.ogg","pitch":1.01, "volume":0.44}
+	],
+	
+	"dcp_magellan_balefire_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_balefire_launch.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_balefire_launch.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_balefire_launch.ogg","pitch":1.01, "volume":0.49},
+	],
+	"dcp_magellan_electroshock_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrolaunch_fire.ogg","pitch":0.99, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrolaunch_fire.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrolaunch_fire.ogg","pitch":1.01, "volume":0.59},
+	],
+	"dcp_magellan_stunfire_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ripfire_launch.ogg","pitch":0.68, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ripfire_launch.ogg","pitch":0.7, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ripfire_launch.ogg","pitch":0.72, "volume":0.49},
+	],
+	
+	"dcp_magellan_fusbomb_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusbomb_launch.ogg","pitch":0.99, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusbomb_launch.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusbomb_launch.ogg","pitch":1.01, "volume":0.59},
+	],
+	"dcp_magellan_fusbomb_sm_launch":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusbomb_sm_launch.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusbomb_sm_launch.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusbomb_sm_launch.ogg","pitch":1.01, "volume":0.49},
+	],
+	
+	#Energy
+	"dcp_magellan_electrontorpedo_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrontorpedo.ogg","pitch":0.99, "volume":0.44},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrontorpedo.ogg","pitch":1, "volume":0.45},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrontorpedo.ogg","pitch":1.01, "volume":0.44},
+	],
+	"dcp_magellan_electron_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":0.99, "volume":0.34},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":1, "volume":0.35},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":1.01, "volume":0.34},
+	],
+	"dcp_magellan_electron_crit_sm":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":1.14, "volume":0.19},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":1.15, "volume":0.2},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":1.16, "volume":0.19},
+	],
+	
+	"dcp_magellan_fusion_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_01.ogg","pitch":0.99, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_01.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_01.ogg","pitch":1.01, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_02.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_02.ogg","pitch":1.01, "volume":0.69},
+	],
+	"dcp_magellan_fusion_sm_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_01.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_01.ogg","pitch":1.01, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_02.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_fusionimpact_02.ogg","pitch":1.01, "volume":0.39},
+	],
+	"dcp_magellan_flamer_loop":
+	[
+		{"file":"sounds/sfx_wpn_energy/cryoflamer_loop.ogg","pitch":0.5,"volume":1.2},
+	],
+	
+	"dcp_magellan_laserfire_med":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_laserfire_med.ogg","pitch":0.99, "volume":0.74},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_laserfire_med.ogg","pitch":1, "volume":0.75},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_laserfire_med.ogg","pitch":1.01, "volume":0.74},
+	],
+	"dcp_magellan_laserfire_sm":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_laserfire_sm.ogg","pitch":0.99, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_laserfire_sm.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_laserfire_sm.ogg","pitch":1.01, "volume":0.59},
+	],
+	
+	#"dcp_magellan_smpdmaser":
+	#[
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_pointmaser_01.ogg","pitch":1.01, "volume":0.44},
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_pointmaser_01.ogg","pitch":1, "volume":0.45},
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_pointmaser_01.ogg","pitch":0.99, "volume":0.44},
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_pointmaser_02.ogg","pitch":1.01, "volume":0.44},
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_pointmaser_02.ogg","pitch":1, "volume":0.45},
+	#],
+	#"dcp_magellan_medpdmaser":
+	#[
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_zonemaser_01.ogg","pitch":1.01, "volume":0.39},
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_zonemaser_01.ogg","pitch":1, "volume":0.4},
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_zonemaser_01.ogg","pitch":0.99, "volume":0.39},
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_zonemaser_02.ogg","pitch":1.01, "volume":0.39},
+	#	{"file":"sounds/DCP/dcpweapons/dcp_magellan_zonemaser_02.ogg","pitch":1, "volume":0.4},
+	#],
+	
+	#Leveller Weapons
+	"dcp_magellan_laservulcan_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_evulcan.ogg","pitch":1.015, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_evulcan.ogg","pitch":1.0, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_evulcan.ogg","pitch":0.985, "volume":0.29},
+	],
+	"dcp_magellan_diffusionlaser_fire": #replace later with manually-adjusted Electra sound
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_evulcan.ogg","pitch":0.91, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_evulcan.ogg","pitch":0.9, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_evulcan.ogg","pitch":0.89, "volume":0.49},
+	],
+	"dcp_magellan_eflak_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electroflak.ogg","pitch":0.99, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electroflak.ogg","pitch":1.0, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electroflak.ogg","pitch":1.01, "volume":0.39},
+	],
+	"dcp_magellan_ebolter_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ebolter.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ebolter.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_ebolter.ogg","pitch":0.985, "volume":0.49},
+	],
+	"dcp_magellan_ebolter_crit":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":0.88, "volume":0.09},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":0.9, "volume":0.1},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electronimpact.ogg","pitch":0.92, "volume":0.09},
+	],
+	"dcp_magellan_electrogun_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrogun_01.ogg","pitch":1.015, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrogun_01.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrogun_01.ogg","pitch":0.985, "volume":0.69},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrogun_02.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_electrogun_02.ogg","pitch":0.985, "volume":0.69},
+	],
+	"dcp_magellan_supersolenoid_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_01.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_01.ogg","pitch":1.01, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_02.ogg","pitch":0.99, "volume":0.49},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_02.ogg","pitch":1, "volume":0.5},
+	],
+	"dcp_magellan_supersolenoid_sm_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_sm_01.ogg","pitch":0.99, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_sm_01.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_sm_01.ogg","pitch":1.01, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_sm_02.ogg","pitch":0.99, "volume":0.59},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_supersolenoid_sm_02.ogg","pitch":1, "volume":0.6},
+	],	
+	
+	"dcp_magellan_estat_ftr_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_01.ogg","pitch":0.95, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_01.ogg","pitch":1.05, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_02.ogg","pitch":0.95, "volume":0.29},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_smallkinetic_02.ogg","pitch":1, "volume":0.3},
+	],
+	#Antique ACs
+	"dcp_magellan_silverdart_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverdart_01.ogg","pitch":0.97, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverdart_01.ogg","pitch":1, "volume":0.25},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverdart_01.ogg","pitch":1.03, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverdart_02.ogg","pitch":0.97, "volume":0.24},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverdart_02.ogg","pitch":1, "volume":0.25},
+	],
+	"dcp_magellan_silverbolt_fire":
+	[
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverbolt_01.ogg","pitch":0.97, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverbolt_01.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverbolt_01.ogg","pitch":1.03, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverbolt_02.ogg","pitch":0.97, "volume":0.39},
+		{"file":"sounds/DCP/dcpweapons/dcp_magellan_silverbolt_02.ogg","pitch":1, "volume":0.4},
+	],
+	"dcp_magellan_mine_explosion_sm":{
+        "sounds":[
+        {"file":"sounds/sfx_systems/mine_strike_explosion_01.ogg","pitch":1.2,"volume":0.6},
+        {"file":"sounds/sfx_systems/mine_strike_explosion_02.ogg","pitch":1.2,"volume":0.6},
+        {"file":"sounds/sfx_systems/mine_strike_explosion_03.ogg","pitch":1.2,"volume":0.6},
+        {"file":"sounds/sfx_systems/mine_strike_explosion_04.ogg","pitch":1.2,"volume":0.6},
+        ],
+    },
+    "dcp_magellan_mine_explosion_vsm":{
+        "sounds":[
+        {"file":"sounds/sfx_systems/mine_strike_explosion_01.ogg","pitch":1.5,"volume":0.4},
+        {"file":"sounds/sfx_systems/mine_strike_explosion_02.ogg","pitch":1.5,"volume":0.4},
+        {"file":"sounds/sfx_systems/mine_strike_explosion_03.ogg","pitch":1.5,"volume":0.4},
+        {"file":"sounds/sfx_systems/mine_strike_explosion_04.ogg","pitch":1.5,"volume":0.4},
+        ],
+    },
+	
+	#misc sounds
+	
+	#Systems
+	
+	"dcp_magellan_burstjet":
+	[
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets01.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets01.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets01.ogg","pitch":1.015, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets02.ogg","pitch":0.985, "volume":0.49},
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets02.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets02.ogg","pitch":1.015, "volume":0.49},
+	],
+	"dcp_magellan_burstftr":
+	[
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets_ftr01.ogg","pitch":0.985, "volume":0.29},
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets_ftr01.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/DCP/dcpmisc/dcp_magellan_burstjets_ftr01.ogg","pitch":1.015, "volume":0.29},
+	],
+	
+	# Engines
+	# played when engines are being used - depending on ship style and size
+	# For example - a "new" frigate would play the third sound listed, at volume 0.6
+
+	"dcp_magellan_engine_loop":{
+		"sounds":[
+			{"file":"sounds/sfx_engines/engine_01_lotek_00_fighter.ogg","pitch":0.7,"volume":1}, # index:  0
+			{"file":"sounds/sfx_engines/engine_01_lotek_01_frigate.ogg","pitch":1, "volume":1},    # index:  1
+			{"file":"sounds/sfx_engines/engine_01_lotek_02_destroyer.ogg","pitch":1,"volume":1},  # index:  2
+			{"file":"sounds/sfx_engines/engine_01_lotek_03_cruiser.ogg","pitch":1,"volume":1},    # index:  3
+			{"file":"sounds/sfx_engines/engine_01_lotek_04_capital.ogg","pitch":1,"volume":1},    # index:  4
+			
+			{"file":"sounds/sfx_engines/engine_03_hitek_00_fighter.ogg","pitch":0.7,"volume":1}, # index: 5
+			{"file":"sounds/sfx_engines/engine_03_hitek_01_frigate.ogg","pitch":1,"volume":1},    # index: 6
+			{"file":"sounds/sfx_engines/engine_03_hitek_02_destroyer.ogg","pitch":1,"volume":1},  # index: 7
+			{"file":"sounds/sfx_engines/engine_03_hitek_03_cruiser.ogg","pitch":1,"volume":1},    # index: 8
+			{"file":"sounds/sfx_engines/engine_03_hitek_04_capital.ogg","pitch":1,"volume":1},    # index: 9
+			],
+
+		"MAGELLAN":{"sounds":[0,1,2,3,4], "pitch":0.9, "volume":0.5},
+		"MGLN_LEVELLER":{"sounds":[5,6,7,8,9], "pitch":1, "volume":0.5},
+		"FIGHTER":{"sounds":[0,5], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[1,6], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[2,7], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[3,8], "pitch":1, "volume":0.7},
+		"CAPITAL_SHIP":{"sounds":[4,9], "pitch":1, "volume":1},	
+		},
+
+
+	"dcp_magellan_engine_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
+		"sounds":[
+			{"file":"sounds/sfx_engines/engine_boost_01.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/sfx_engines/engine_boost_02.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/sfx_engines/engine_boost_03.ogg","pitch":1,"volume":0.4},
+		],
+		"MAGELLAN":{"sounds":[0,1,2], "pitch":0.75, "volume":1},
+		"MGLN_LEVELLER":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0,1,2], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0,1,2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[0,1,2], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[0,1,2], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0,1,2], "pitch":1, "volume":1},		
+	},
+
+	# Shields and related
+	"dcp_magellan_shield_burnout":{ # played when a ship overloads
+		"sounds":[
+			{"file":"sounds/sfx_shields/shields_burnout_oneshot.ogg","pitch":1,"volume":1},
+		],
+		"MAGELLAN":{"sounds":[0], "pitch":0.75, "volume":1},
+		"MGLN_LEVELLER":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	"dcp_magellan_emp_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
+		"sounds":[
+			{"file":"sounds/sfx_shields/shields_burnout_loop.ogg","pitch":1,"volume":0.6},
+		],
+		"MAGELLAN":{"sounds":[0], "pitch":0.75, "volume":1},
+		"MGLN_LEVELLER":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},
+	"dcp_magellan_flux_loop":{ # played while a ship is venting flux
+		"sounds":[
+			{"file":"sounds/sfx_flux/flux_flush_loop.ogg","pitch":1,"volume":0.8},
+		],
+		"MAGELLAN":{"sounds":[0], "pitch":0.75, "volume":1},
+		"MGLN_LEVELLER":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},	
+	"dcp_magellan_flux_vent":{ # played once when a ship starts venting flux
+		"sounds":[
+			{"file":"sounds/sfx_flux/flux_vent.ogg","pitch":1,"volume":0.5},
+		],
+		"MAGELLAN":{"sounds":[0], "pitch":0.75, "volume":1},
+		"MGLN_LEVELLER":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},	
+	
+	# Similar setup to engine loop - defines which of the two sounds to use, and
+	# what pitch/volume to use them at, depending on ship style and size
+	"dcp_magellan_shield_lower":{
+		"sounds":[
+			{"file":"sounds/sfx_shields/shields_down_large.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/sfx_shields/shields_down_medium.ogg","pitch":1,"volume":0.4},
+			{"file":"sounds/sfx_shields/shields_down_small.ogg","pitch":1,"volume":0.4},
+		],
+		"MAGELLAN":{"sounds":[0,1,2], "pitch":0.95, "volume":1},
+		"MGLN_LEVELLER":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.6},
+		"FRIGATE":{"sounds":[1], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	"dcp_magellan_shield_raise":{
+		"sounds":[
+			{"file":"sounds/sfx_shields/shields_up_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/sfx_shields/shields_up_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/sfx_shields/shields_up_small.ogg","pitch":1,"volume":1},
+		],
+		"MAGELLAN":{"sounds":[0,1,2], "pitch":0.95, "volume":1},
+		"MGLN_LEVELLER":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	# Explosions
+	"dcp_magellan_explosion_ship":{ # when a fighter or ship explodes
+		"sounds":[
+			{"file":"sounds/sfx_impacts/explosion_01.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/sfx_impacts/explosion_02.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/sfx_impacts/explosion_03_fighter.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/sfx_impacts/explosion_04.ogg","pitch":1,"volume":1.0},
+		],
+		"MAGELLAN":{"sounds":[0,1,2,3], "pitch":0.95, "volume":1},
+		"MGLN_LEVELLER":{"sounds":[0,1,2,3], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":1.0},
+		"FRIGATE":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"DESTROYER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CRUISER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CAPITAL_SHIP":{"sounds":[0,1,3], "pitch":0.7, "volume":1.0},		
+	},
+
 }

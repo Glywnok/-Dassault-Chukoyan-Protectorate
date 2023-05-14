@@ -1,5 +1,12 @@
 faction,system,entityID
+#DME,,
 ,,
 dassault_mikoyan,Nikolaev,dcp_planet_peremohy
 ,,
 the_deserter,Martinique,antilles_port
+,,
+#MAGELLAN,,
+,,
+magellan_protectorate,Khamn,magellan_planet_annore
+magellan_leveller,Graveyard,station_junkyardstarport
+magellan_ancientstarfarer,Karic,magellan_planet_turan

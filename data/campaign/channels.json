@@ -1,26 +1,48 @@
 {
-        "defaultChannels":[
-                "DME_public",
-        ],
-        
-        "DME_public":{
-		"name":"Nikolaev Media Authority",
-		"logo":"graphics/DCP/icons/intel/dme_public.png",
-		"icon":"graphics/DCP/icons/intel/dme_public.png",
-		"image":"graphics/DCP/factions/dassault_mikoyan.png",
-		"sound":"ui_channel_news",
-		"faction":"dassault_mikoyan",
-		"type":"News Report",
-		"shortType":"News",
-	},
-	"DME_internal":{
-		"name":"DME High Guard Intelligence",
-		"logo":"graphics/DCP/icons/intel/dme_internal.png",
-		"icon":"graphics/DCP/icons/intel/dme_internal.png",
-		"image":"graphics/DCP/factions/dassault_mikoyan.png",
-		"sound":"ui_channel_comm_secure",
-		"faction":"dassault_mikoyan",
-		"type":"Intelligence Report",
-		"shortType":"Intel",
-	},
+	"defaultChannels":[
+			"dcp_magellan_public",
+			"dcp_DME_public",
+	],
+	
+	"dcp_magellan_public":{
+	"name":"Magellan Information Ministry",
+	"logo":"graphics/DCP/icons/intel/dcp_magellan_public.png",
+	"icon":"graphics/DCP/icons/intel/dcp_magellan_public.png",
+	"image":"graphics/DCP/factions/protectorate.png",
+	"sound":"ui_channel_news",
+	"faction":"magellan_protectorate",
+	"type":"News Report",
+	"shortType":"News",
+},
+"dcp_magellan_internal":{
+	"name":"Magellan fleet Intelligence",
+	"logo":"graphics/DCP/icons/intel/dcp_magellan_internal.png",
+	"icon":"graphics/DCP/icons/intel/dcp_magellan_internal.png",
+	"image":"graphics/DCP/factions/protectorate.png",
+	"sound":"ui_channel_comm_secure",
+	"faction":"magellan_protectorate",
+	"type":"Intelligence Report",
+	"shortType":"Intel",
+},
+
+"DME_public":{
+	"name":"Nikolaev Media Authority",
+	"logo":"graphics/DCP/icons/intel/dcp_dme_public.png",
+	"icon":"graphics/DCP/icons/intel/dcp_dme_public.png",
+	"image":"graphics/DCP/factions/dassault_mikoyan.png",
+	"sound":"ui_channel_news",
+	"faction":"dassault_mikoyan",
+	"type":"News Report",
+	"shortType":"News",
+},
+"DME_internal":{
+	"name":"DME High Guard Intelligence",
+	"logo":"graphics/DCP/icons/intel/dcp_dme_internal.png",
+	"icon":"graphics/DCP/icons/intel/dcp_dme_internal.png",
+	"image":"graphics/DCP/factions/dassault_mikoyan.png",
+	"sound":"ui_channel_comm_secure",
+	"faction":"dassault_mikoyan",
+	"type":"Intelligence Report",
+	"shortType":"Intel",
+},
 }

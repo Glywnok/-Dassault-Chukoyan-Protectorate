@@ -1,3 +1,9 @@
 faction,equilibrium,decayRate
+#DME,,
 dassault_mikoyan,0,1
 blade_breakers,-50,1
+,,
+#MAGELLAN,,
+magellan_protectorate,0,1
+magellan_leveller,-50,1
+,,

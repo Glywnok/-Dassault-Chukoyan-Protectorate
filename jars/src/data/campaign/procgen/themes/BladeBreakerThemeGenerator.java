@@ -9,7 +9,6 @@ import java.util.List;
 import org.lwjgl.util.vector.Vector2f;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.AICoreOfficerPlugin;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
 import com.fs.starfarer.api.campaign.CargoAPI;
 import com.fs.starfarer.api.campaign.CustomCampaignEntityAPI;
@@ -31,7 +30,6 @@ import com.fs.starfarer.api.impl.campaign.FleetInteractionDialogPluginImpl.FIDCo
 import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
 import com.fs.starfarer.api.impl.campaign.ids.Abilities;
-import com.fs.starfarer.api.impl.campaign.ids.Commodities;
 import com.fs.starfarer.api.impl.campaign.ids.Entities;
 import data.campaign.ids.dcp_Entities;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
@@ -45,12 +43,9 @@ import com.fs.starfarer.api.impl.campaign.procgen.DefenderDataOverride;
 import com.fs.starfarer.api.impl.campaign.procgen.NameAssigner;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
-import data.campaign.procgen.themes.BladeBreakerSeededFleetManager;
-import data.campaign.procgen.themes.BladeBreakerStationFleetManager;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner.SpecialCreationContext;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.ThemeGenContext;
-import data.campaign.procgen.themes.dcp_Themes;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import data.campaign.ids.dcp_Factions;
@@ -80,7 +75,7 @@ public class BladeBreakerThemeGenerator extends BaseThemeGenerator {
 	}
 	
 public String getThemeId() {
-		return dcp_Themes.BREAKERS;
+		return dcp_DME_Themes.BREAKERS;
 	}
 
 	@Override
@@ -167,7 +162,7 @@ public String getThemeId() {
 				type = BladeBreakerSystemType.SUPPRESSED;
 			}
 			
-			context.majorThemes.put(c, dcp_Themes.BREAKERS);
+			context.majorThemes.put(c, dcp_DME_Themes.BREAKERS);
 			numUsed++;
 
 			if (DEBUG) System.out.println("Generating " + numMain + " main systems in " + c.getName());

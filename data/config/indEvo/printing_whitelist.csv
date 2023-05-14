@@ -1,7 +1,10 @@
 id
+
+
 # NOTES
 # Ship IDs entered here will be allowed for duplication.
 # "This feature is very hard to get working in campaign as a player, and lorewise, allows for duplication of even the most complex hulls."
+#DME
 dcp_baikal_brone
 dcp_baikal
 dcp_borzoi
@@ -53,3 +56,21 @@ dcp_zelenograd
 # Specials - these are optional. They could go away if people complain about them being available. If you think they shouldn't be available, remove them.
 dcpx_alauda
 dcpx_braveblade
+
+
+
+#MAGELLAN
+magellan_battleship
+magellan_carrier
+magellan_cbtfreight
+magellan_cruiser
+magellan_fastdestroyer
+magellan_linedestroyer
+magellan_linefrigate
+magellan_phasefrig
+magellan_supply
+magellan_supportcruiser
+magellan_supportdestroyer
+magellan_supportfrigate
+# Specials - these are optional. They could go away if people complain about them being available. If you think they shouldn't be available, remove them.
+magellan_skipjack
