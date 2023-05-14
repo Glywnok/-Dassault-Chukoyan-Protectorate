@@ -1,4 +1,4 @@
-package data.missions.dcp_devilbelt;
+package data.missions.dcp_DME_devilbelt;
 
 import com.fs.starfarer.api.combat.BattleCreationContext;
 import com.fs.starfarer.api.fleet.FleetGoal;

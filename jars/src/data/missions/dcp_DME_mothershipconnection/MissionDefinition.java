@@ -1,4 +1,4 @@
-package data.missions.dcp_mothershipconnection;
+package data.missions.dcp_DME_mothershipconnection;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;

@@ -1,4 +1,4 @@
-package data.missions.dcp_hellsownsun;
+package data.missions.dcp_DME_hellsownsun;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;

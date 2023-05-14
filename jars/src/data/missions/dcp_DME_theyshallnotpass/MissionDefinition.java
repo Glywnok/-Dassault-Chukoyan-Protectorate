@@ -1,4 +1,4 @@
-package data.missions.dcp_theyshallnotpass;
+package data.missions.dcp_DME_theyshallnotpass;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;

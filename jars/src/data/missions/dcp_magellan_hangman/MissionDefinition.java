@@ -1,4 +1,4 @@
-package data.missions.dcp_hangman;
+package data.missions.dcp_magellan_hangman;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;

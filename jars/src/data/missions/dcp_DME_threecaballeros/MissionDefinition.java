@@ -1,4 +1,4 @@
-package data.missions.dcp_threecaballeros;
+package data.missions.dcp_DME_threecaballeros;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;

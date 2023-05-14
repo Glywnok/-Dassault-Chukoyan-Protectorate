@@ -1,4 +1,4 @@
-package data.missions.dcp_goosechase;
+package data.missions.dcp_DME_goosechase;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;
