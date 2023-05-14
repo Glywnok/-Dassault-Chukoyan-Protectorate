@@ -74,13 +74,13 @@ Phase Cloak,dcp_DME_deserterphasecloak,,,,,,,,,,0.5,,0.5,15,,,TRUE,TRUE,TRUE,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #MAGELLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Impulse Jets,dcp_magellan_burstjets_ftr,,,,,,,,2,0.12,0.3,0.5,0.7,0.1,,,,,,,,,,,,,graphics/Magellan/icons/hullsys/dcp_magellan_movement.png
-Heavy Impulse Jets,dcp_magellan_burstjets,,,,,,,,3,0.1,0.4,0.6,0.5,,,,,,,,,,,,,,graphics/Magellan/icons/hullsys/dcp_magellan_movement.png
-Torch Drive,dcp_magellan_burndrive,1,,,,,,,,,2,5,1,10,TRUE,,,,,,TRUE,TRUE,TRUE,,,,graphics/Magellan/icons/hullsys/dcp_magellan_movement.png
-Impulse Burn,dcp_magellan_microburn,1,,,,,,,3,0.1,0.5,0.5,0.5,,,,,,,,TRUE,TRUE,,,,,graphics/Magellan/icons/hullsys/dcp_magellan_movement.png
-Impulse Burn,dcp_magellan_microburn_capital,1,,,,,,,2,0.075,0.5,0.4,0.6,,,,,,,,TRUE,TRUE,,,,,graphics/Magellan/icons/hullsys/dcp_magellan_movement.png
+Impulse Jets,dcp_magellan_burstjets_ftr,,,,,,,,2,0.12,0.3,0.5,0.7,0.1,,,,,,,,,,,,,graphics/DCP/icons/hullsys/dcp_magellan_movement.png
+Heavy Impulse Jets,dcp_magellan_burstjets,,,,,,,,3,0.1,0.4,0.6,0.5,,,,,,,,,,,,,,graphics/DCP/icons/hullsys/dcp_magellan_movement.png
+Torch Drive,dcp_magellan_burndrive,1,,,,,,,,,2,5,1,10,TRUE,,,,,,TRUE,TRUE,TRUE,,,,graphics/DCP/icons/hullsys/dcp_magellan_movement.png
+Impulse Burn,dcp_magellan_microburn,1,,,,,,,3,0.1,0.5,0.5,0.5,,,,,,,,TRUE,TRUE,,,,,graphics/DCP/icons/hullsys/dcp_magellan_movement.png
+Impulse Burn,dcp_magellan_microburn_capital,1,,,,,,,2,0.075,0.5,0.4,0.6,,,,,,,,TRUE,TRUE,,,,,graphics/DCP/icons/hullsys/dcp_magellan_movement.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Ballistic Accelerator,dcp_magellan_ammofeed,,,,,,,,,,1,5,1,10,,,,,,,,,,,,,graphics/Magellan/icons/hullsys/dcp_magellan_ballistic.png
+Ballistic Accelerator,dcp_magellan_ammofeed,,,,,,,,,,1,5,1,10,,,,,,,,,,,,,graphics/DCP/icons/hullsys/dcp_magellan_ballistic.png
 Targeting Drones,dcp_magellan_targdrones,,,,,,,,2,0.02,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_sensor.png
 Targeting Drones,dcp_magellan_targdrones_lev,,,,,,,,2,0.02,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_sensor.png
 Chaff Launcher,dcp_magellan_smokelayer,,,,,,,,3,0.06,,,,6,,,,,,,,,,,,,graphics/icons/hullsys/flare_launcher.png
@@ -88,7 +88,7 @@ Chaff Launcher,dcp_magellan_smokelayer_bad,,,,,,,,2,0.06,,,,5,,,,,,,,,,,,,graphi
 Chaff Dispensers,dcp_magellan_smokelayer_def,,,,,,,,5,,,,,5,,,,,,,,,,,,,graphics/icons/hullsys/flare_launcher.png
 Electron Charge Flak,dcp_magellan_ionchargelayer,,,,,,,,3,0.05,,,,3,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Command Datalink,dcp_magellan_fightercom,,,,,,0.3,,,,0.5,20,0.5,10,,,,,,,,,,,,,graphics/Magellan/icons/hullsys/dcp_magellan_fighter.png
+Command Datalink,dcp_magellan_fightercom,,,,,,0.3,,,,0.5,20,0.5,10,,,,,,,,,,,,,graphics/DCP/icons/hullsys/dcp_magellan_fighter.png
 Drone Strike,dcp_magellan_drone_strike,,,,250,,,,3,0.1,0,0.05,0.2,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
 Area Defense Charges,dcp_magellan_flakpods,,,,,,,,2,0.05,,,,3,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,

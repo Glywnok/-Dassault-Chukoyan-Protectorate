@@ -18,6 +18,37 @@
 		# DME Base Encounter loop
 		# DME Base Market music
 		# Campaign tracks
+
+		# Leveller Encounter Loop - needs to be replaced eventually
+		"music_dcp_magellan_leveller_encounter":[
+			{"file":"dcp_magellan_unforgivinghimalayas.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":false},
+		],
+		# Leveller market loop - also needs to be replaced
+		"music_dcp_magellan_leveller_market":[
+			{"file":"dcp_magellan_mysticaljourney.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":false},
+		],
+		# Meetpoint Turan interaction loop - just a little chill noise.
+		"music_dcp_magellan_indiemarket":[
+			{"file":"dcp_magellan_emergingaliencivilizations.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
+		],
+		# Magellan Encounter Music (by MesoTroniK)
+		"music_dcp_magellan_protectorate_encounter_neutral":[
+			{"file":"dcp_magellan_protectorate_neutral_encounter.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
+		],
+		"music_dcp_magellan_protectorate_encounter_hostile":[
+			{"file":"dcp_magellan_protectorate_hostile_encounter.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
+		],
+		"music_dcp_magellan_protectorate_encounter_friendly":[
+			{"file":"dcp_magellan_protectorate_friendly_encounter.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
+		],
+		# Magellan Market Music (by MesoTroniK)
+		"music_dcp_magellan_protectorate_market_neutral":[
+			{"file":"dcp_magellan_protectorate_market_neutral.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
+		],
+		"music_dcp_magellan_protectorate_market_hostile":[
+			{"file":"dcp_magellan_protectorate_market_hostile.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
+		],
+				
 	},
 	#Main DME weapons
 	"dcp_DME_6cmrailgun_charge":
@@ -1192,37 +1223,6 @@
 	# Thanks to the GDC free sound libraries 2016- for great samples and sweeteners
 	
 	# Music - a work in progress
-	"music":{
-		# Leveller Encounter Loop - needs to be replaced eventually
-		"music_dcp_magellan_leveller_encounter":[
-			{"file":"dcp_magellan_unforgivinghimalayas.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":false},
-		],
-		# Leveller market loop - also needs to be replaced
-		"music_dcp_magellan_leveller_market":[
-			{"file":"dcp_magellan_mysticaljourney.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":false},
-		],
-		# Meetpoint Turan interaction loop - just a little chill noise.
-		"music_dcp_magellan_indiemarket":[
-			{"file":"dcp_magellan_emergingaliencivilizations.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
-		],
-		# Magellan Encounter Music (by MesoTroniK)
-		"music_dcp_magellan_protectorate_encounter_neutral":[
-			{"file":"dcp_magellan_protectorate_neutral_encounter.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
-		],
-		"music_dcp_magellan_protectorate_encounter_hostile":[
-			{"file":"dcp_magellan_protectorate_hostile_encounter.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
-		],
-		"music_dcp_magellan_protectorate_encounter_friendly":[
-			{"file":"dcp_magellan_protectorate_friendly_encounter.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
-		],
-		# Magellan Market Music (by MesoTroniK)
-		"music_dcp_magellan_protectorate_market_neutral":[
-			{"file":"dcp_magellan_protectorate_market_neutral.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
-		],
-		"music_dcp_magellan_protectorate_market_hostile":[
-			{"file":"dcp_magellan_protectorate_market_hostile.ogg","source":"sounds/DCP/music","volume":0.40,"randomStart":true},
-		],
-	},
 	#Ballistics
 	"dcp_magellan_vsmallac_fire":
 	[

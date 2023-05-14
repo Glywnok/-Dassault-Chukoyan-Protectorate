@@ -27,28 +27,28 @@
 			"crest":"graphics/DCP/factions/custom/player_diamond_crest.png"
 		},
 		{
-			"logo":"graphics/Magellan/factions/custom/player_angelmoon_flag.png",
-			"crest":"graphics/Magellan/factions/custom/player_angelmoon_crest.png"
+			"logo":"graphics/DCP/factions/custom/player_angelmoon_flag.png",
+			"crest":"graphics/DCP/factions/custom/player_angelmoon_crest.png"
 		},
 		{
-			"logo":"graphics/Magellan/factions/custom/player_egalitarian_flag.png",
-			"crest":"graphics/Magellan/factions/custom/player_egalitarian_crest.png"
+			"logo":"graphics/DCP/factions/custom/player_egalitarian_flag.png",
+			"crest":"graphics/DCP/factions/custom/player_egalitarian_crest.png"
 		},
 		{
-			"logo":"graphics/Magellan/factions/custom/player_elegant_flag.png",
-			"crest":"graphics/Magellan/factions/custom/player_elegant_crest.png"
+			"logo":"graphics/DCP/factions/custom/player_elegant_flag.png",
+			"crest":"graphics/DCP/factions/custom/player_elegant_crest.png"
 		},
 		{
-			"logo":"graphics/Magellan/factions/custom/player_corsair_flag.png",
-			"crest":"graphics/Magellan/factions/custom/player_corsair_crest.png"
+			"logo":"graphics/DCP/factions/custom/player_corsair_flag.png",
+			"crest":"graphics/DCP/factions/custom/player_corsair_crest.png"
 		},
 		{
-			"logo":"graphics/Magellan/factions/custom/player_nomad_flag.png",
-			"crest":"graphics/Magellan/factions/custom/player_nomad_crest.png"
+			"logo":"graphics/DCP/factions/custom/player_nomad_flag.png",
+			"crest":"graphics/DCP/factions/custom/player_nomad_crest.png"
 		},
 		{
-			"logo":"graphics/Magellan/factions/custom/player_republic_flag.png",
-			"crest":"graphics/Magellan/factions/custom/player_republic_crest.png"
+			"logo":"graphics/DCP/factions/custom/player_republic_flag.png",
+			"crest":"graphics/DCP/factions/custom/player_republic_crest.png"
 		},
 	],
 }

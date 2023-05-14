@@ -13,8 +13,8 @@
 	"displayNameWithArticle":"the Herd",
 	"displayNameIsOrAre":"are",
 	"showInIntelTab":true,
-	"logo":"graphics/Magellan/factions/theherd.png",
-	"crest":"graphics/Magellan/factions/crest_theherd.png",
+	"logo":"graphics/DCP/factions/theherd.png",
+	"crest":"graphics/DCP/factions/crest_theherd.png",
 	"shipNamePrefix":"HS",
 	"shipNameSources":{
 		"MAGELLAN_THEHERD":2,

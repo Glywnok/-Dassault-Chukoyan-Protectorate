@@ -12,8 +12,8 @@
 	"displayName":"Leveller",
 	"displayNameWithArticle":"the Levellers",
 	"showInIntelTab":true,
-	"logo":"graphics/Magellan/factions/levellers.png",
-	"crest":"graphics/Magellan/factions/crest_levellers.png",
+	"logo":"graphics/DCP/factions/levellers.png",
+	"crest":"graphics/DCP/factions/crest_levellers.png",
 	"shipNamePrefix":"LVS",
 	"shipNameSources":{
 		"KNIGHTS":4,

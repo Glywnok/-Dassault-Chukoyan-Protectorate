@@ -10,8 +10,8 @@
 	
 	"displayName":"Blackcollar",
 	"displayNameWithArticle":"the Blackcollar Regiment",
-	"logo":"graphics/Magellan/factions/protectorate.png", #change
-	"crest":"graphics/Magellan/factions/crest_protectorate.png", #change
+	"logo":"graphics/DCP/factions/protectorate.png", #change
+	"crest":"graphics/DCP/factions/crest_protectorate.png", #change
 	"shipNamePrefix":"FSS",
 	"shipNameSources":{
 

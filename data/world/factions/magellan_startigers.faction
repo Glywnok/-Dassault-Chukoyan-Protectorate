@@ -3,8 +3,8 @@
 	"color":[153,134,117,255],
 	"displayName":"Skytigers",
 	"displayNameWithArticle":"the Skytiger Guards",
-	"logo":"graphics/Magellan/factions/protectorate.png",
-	"crest":"graphics/Magellan/factions/crest_protectorate.png",
+	"logo":"graphics/DCP/factions/protectorate.png",
+	"crest":"graphics/DCP/factions/crest_protectorate.png",
 	"shipNamePrefix":"FSS",
 	"showInIntelTab":false,
 	"shipNameSources":{

@@ -39,7 +39,7 @@ import data.campaign.ids.dcp_Ranks;
  * 
  * Glywnok had to fuck it up somehow ¯\_(ツ)_/¯
  */
-public class dcp_DME_SigmaMatterDataRecovery_Glywnoks_Fuck_Up extends BaseCommandPlugin {
+public class dcp_DME_SigmaMatterDataRecovery extends BaseCommandPlugin {
 
     protected CampaignFleetAPI playerFleet;
     protected SectorEntityToken entity;

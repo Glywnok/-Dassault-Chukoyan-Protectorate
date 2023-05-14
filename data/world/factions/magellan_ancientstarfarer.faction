@@ -9,8 +9,8 @@
 	"personNamePrefix":"starfarer",
 	"personNamePrefixAOrAn":"a",
 	"displayNameIsOrAre":"are",
-	"logo":"graphics/Magellan/factions/starfarer.png",
-	"crest":"graphics/Magellan/factions/crest_starfarer.png",
+	"logo":"graphics/DCP/factions/starfarer.png",
+	"crest":"graphics/DCP/factions/crest_starfarer.png",
 	"shipNamePrefix":"DNS",
 	"shipNameSources":{
 		"MAGELLAN_STARFARER":1,
