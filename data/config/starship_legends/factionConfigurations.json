@@ -1,0 +1,71 @@
+{
+	"magellan_protectorate":{
+		# Any of the entries in this file may be ommited if you simply want to defer
+		#	to the default for that entry
+	
+		# Prevents references to crew in the faction's fleets, sometimes substituting
+		#	"crew" with "AI persona"
+		"useCrewlessTraitNames":false,
+		
+		# Changes the short description prior to listing traits. Enter %s where the
+		#	commander's name should be, if you want it to apear at all
+		"descriptionOverride":"Magellan ships are known for having the following traits:",
+		
+		# Allows the fleets of this faction to have famous flagships, which the
+		# 	player may find out about from a bar event
+		"allowFamousFlagshipsInFleets":false,
+		
+		# If true, the bars at markets owned by your faction will sometimes have
+		#	patrons that offer information about the whereabouts of famous
+		#	flagships or derelicts
+		"allowFamousFlagshipBarEvent":false,
+		"allowFamousDerelictBarEvent":false,
+		
+		# Edit the values in the lists below to change the probability of fleets from
+		#	this faction getting traits. Higher numbers make traits more likely.
+		#	To disable a trait, set its value to 0. Removing a trait from the list will
+		#	only revert it to the default value.
+		"goodTraitFrequency":{
+			"peak_cr_time":2,
+			"repair":2,
+			"mount_durability":1,
+			"engine_durability":1,
+			"hull_integrity":4,
+			"armor_strength":4,
+			"damage":2,
+			"weapon_stability":2,
+			"range":2,
+			"fighter_speed":0,
+			"fighter_durability":0.25,
+			"refit_time":0.25,
+			"overload_time":1,
+			"flux_capacity":1,
+			"flux_dissipation":1,
+			"vent_rate":1,
+			"shield_raise_rate":0,
+			"shield_stability":0,
+			"shield_strength":0,
+			"phase_cost":0,
+			"phase_cooldown":0,
+			"blockade_runner":0,
+			"ballistics_rof":1,
+			"energy_cost":0,
+			"pd_range":1,
+			"pd_damage":1,
+		},
+		
+		"badTraitFrequency":{
+			"peak_cr_time":0,
+			"repair":0,
+			"malfunction":0,
+			"mount_durability":0,
+			"engine_durability":0,
+			"hull_integrity":0,
+			"armor_strength":0,
+			"emp_resistance":0,
+			"shield_raise_rate":2,
+			"shield_stability":2,
+			"shield_strength":2,
+		},
+	},
+}

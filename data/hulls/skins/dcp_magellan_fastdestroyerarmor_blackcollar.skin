@@ -1,0 +1,16 @@
+{
+	"baseHullId":"dcp_magellan_fastdestroyerarmor",
+	"skinHullId":"dcp_magellan_fastdestroyerarmor_blackcollar",
+	"hullName":"Armor",
+	"tags":["module_unselectable", "module_refit_bright", "module_hull_bar_only"],
+	"tech":"Blackcollar Regiment",
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/blackcollars/dcp_magellan_fastdestroyerarmor_blackcollar.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{},
+    "builtInMods":[],
+	"builtInWeapons":{},
+}

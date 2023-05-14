@@ -1,0 +1,123 @@
+{
+    "uniqueModClassName":"data.scripts.MagellanModPlugin", # String
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Traitors",
+    
+    "marketSpawnWeight":1.2,
+
+    "negativeDiplomacyExtra":0.5, 							# Integer
+    "factionsLiked":[
+    		"tiandong",
+    		"interstellarimperium",
+    		"persean"], 									# String array
+    "factionsDisliked":[
+    		"hegemony",
+    		"magellan_leveller",
+    		"SCY",
+    		"diableavionics",
+    		"scalartech",
+			"aria",
+    		"apex_design",
+    		"uaf",
+    		"new_galactic_order"], 							# String array
+    "startRelationships":{ 
+    		"hegemony": -0.9, 					# We tried to get away from you assholes before
+    		"persean": 0.4, 					# let's hear more about this whole 'to hell with the Domain' thing
+    		"luddic_path": -0.5,			 	
+    		"blackrock_driveyards": -0.1, 		
+    		"shadow_industry": 0.2, 			# what is this 'egalitarianism' of which you speak and is it catching
+    		"diableavionics": -0.5, 			
+    		"scalartech": -0.5, 				# free trade, high tech, and - ugh - pacifism, gross
+    		"dassault_mikoyan": -0.5, 			# regicide is crude and unbecoming of civilized nations, hmph
+    		"communist_clouds": -0.3, 			# 'holy shit, these guys make Levellers look like sober, reasonable people'
+    		"apex_design": -0.3, 				
+    		"new_galactic_order": -1.0, 		# no matter where you go, space Nazis suck ass
+    		"aria": -1.0,
+    		"uaf": -1.0}, 						
+	"maxRelationships":{
+    		"hegemony": -0.1, 					# fuuuck youuuuuuu
+    		"luddic_path": 0.3, 				
+    		"shadow_industry": 0.5, 			# I like you okay, but letting the proles vote is crazy talk
+    		"diableavionics": 0.1, 				
+    		"scalartech": 0.1, 					# you can keep your lunch money... for now
+    		"dassault_mikoyan": 0.3, 			# we will tolerate you for your excellent pastries and wine, though
+    		"communist_clouds": 0.1, 			# the best we can hope for is to ignore them
+    		"apex_design": 0.1, 				
+    		"new_galactic_order": -0.9, 		# they suck it through a curly straw
+    		"aria": -0.9,
+    		"uaf": -0.9}, 						
+    "diplomacyPositiveChance":{
+    		"luddic_church": 0.4, 				
+    		"luddic_path": 0.25, 				
+    		"magellan_leveller": 0.25, 			# okay, you don't *literally* eat babies
+    		"SCY": 0.3, 						
+    		"shadow_industry": 0.3, 			# disinformation is an investment, not an expense
+    		"diableavionics": 0.25, 			
+    		"interstellarimperium": 0.6, 		# I like your aggressive and dehumanizing class system
+    		"scalartech": 0.25, 				
+    		"dassault_mikoyan": 0.25, 			# let us discuss the finer things
+    		"communist_clouds": 0.2, 			# every now and then you aren't the worst ever
+    		"apex_design": 0.2, 				
+    		"new_galactic_order": 0.01, 		# I can *almost* tolerate you
+    		"aria": 0.01,
+    		"uaf": 0.01}, 					
+    "diplomacyNegativeChance":{
+    		"luddic_church": 0.6, 				
+    		"luddic_path": 0.75, 				
+    		"magellan_leveller": 0.75, 			# but you're still a motley bunch of perfidious egalitarians
+    		"SCY": 0.6, 						
+    		"shadow_industry": 0.7, 			# but there's some shit even Protectorate Times can't spin
+    		"diableavionics": 0.75, 			
+    		"interstellarimperium": 0.3, 		# and your haircuts are pretty bitchin' too
+    		"scalartech": 0.75, 				
+    		"dassault_mikoyan": 0.75, 			# what do you mean brainwashing the servants is 'wrong'
+    		"communist_clouds": 0.8, 			
+    		"apex_design": 0.8, 				
+    		"new_galactic_order": 3.0, 			# did you really expect this set differently
+    		"aria": 3.0,
+    		"uaf": 3.0}, 						
+    
+    "alignments":{
+        "militarist":0.75,
+        "hierarchical":1,
+        "ideological":0.25,
+    },
+    
+    "diplomacyTraits":["paranoid", "law_and_order", "irredentist", "selfrighteous"],
+
+    "startShipsSolo":[
+      ["magellan_cbtfreight_frontier"]
+    ],
+    "startShipsCombatSmall":[
+      ["magellan_supportdestroyer_std", "magellan_linefrigate_std", "magellan_phasefrig_std"]
+    ],
+    "startShipsCombatLarge":[
+      ["magellan_cruiser_std", "magellan_linedestroyer_std", "magellan_supportfrigate_std"]
+    ],
+    "startShipsCarrierLarge":[
+      ["magellan_fastdestroyer_std", "magellan_carrier_std", "magellan_linefrigate_std"]
+    ],
+    "startShipsSuper":[["magellan_skipjack_militarized_std"]],
+
+    "startSpecialItems":[
+        [["magellan_core_package", "magellan_adv_package"]],
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.5},
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.3},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"population_upsize", "count":1},
+        {"id":"nanoforge_corrupted", "count":1},
+    ],
+}

@@ -1,0 +1,258 @@
+{
+  "bounds": [
+    87,
+    -10,
+    81.5,
+    -13,
+    82,
+    -28,
+    86,
+    -34,
+    64,
+    -36,
+    55,
+    -17.5,
+    26,
+    -20,
+    13,
+    -34.5,
+    -1.5,
+    -32.5,
+    -26.5,
+    -44,
+    -46.5,
+    -44.5,
+    -51,
+    -19.5,
+    -78,
+    -19.5,
+    -84.5,
+    -13.5,
+    -84.5,
+    13.5,
+    -78,
+    19.5,
+    -51,
+    19.5,
+    -46.5,
+    44.5,
+    -26.5,
+    44,
+    -1.5,
+    32.5,
+    13,
+    34.5,
+    26,
+    20,
+    55,
+    17.5,
+    64,
+    36,
+    86,
+    34,
+    82,
+    28,
+    81.5,
+    13,
+    87,
+    10
+  ],
+  "builtInMods": [
+    "dcp_magellan_engineering"
+  ],
+  "center": [
+    46,
+    90
+  ],
+  "collisionRadius": 120,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 60,
+      "location": [
+        -89,
+        -0
+      ],
+      "style": "MagellanFlare",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 30,
+      "location": [
+        -87,
+        10.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 30,
+      "location": [
+        -87,
+        -10.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 48,
+      "location": [
+        -55,
+        27
+      ],
+      "style": "MagellanFlare",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 48,
+      "location": [
+        -55,
+        -27
+      ],
+      "style": "MagellanFlare",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 24,
+      "location": [
+        -53,
+        37.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 24,
+      "location": [
+        -53,
+        -37.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 6
+    }
+  ],
+  "height": 180,
+  "hullId": "dcp_magellan_supportdestroyer",
+  "hullName": "Porey",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 118,
+  "spriteName": "graphics/DCP/ships/dcp_magellan_supportdestroyer.png",
+  "style": "MAGELLAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0001",
+      "locations": [
+        66,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0002",
+      "locations": [
+        38,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 75,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        8,
+        21
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -75,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        8,
+        -21
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 105,
+      "arc": 160,
+      "id": "WS0005",
+      "locations": [
+        -34,
+        25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -105,
+      "arc": 160,
+      "id": "WS0006",
+      "locations": [
+        -34,
+        -25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        74,
+        26
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        74,
+        -26
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 92
+}

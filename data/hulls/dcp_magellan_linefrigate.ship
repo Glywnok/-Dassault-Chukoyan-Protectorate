@@ -1,0 +1,141 @@
+{
+  "hullName": "Magellan Line Frigate",
+  "hullId": "dcp_magellan_linefrigate",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/DCP/ships/dcp_magellan_linefrigate.png",
+  "style": "MAGELLAN",
+  "height": 97,
+  "width": 74,
+  "center": [37, 48],
+  "collisionRadius": 76,
+  "shieldCenter": [4, 0],
+  "shieldRadius": 72,
+  "viewOffset": 0,
+  "builtInMods": [
+    "dcp_magellan_engineering"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 70,
+      "locations": [16, 20]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -70,
+      "locations": [16, -20]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [39, 19]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [39, -19]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-19, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [20, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 75,
+      "locations": [-15.5, 13.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -75,
+      "locations": [-15.5, -13.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-45, -0],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MagellanFlare"
+    },
+    {
+      "location": [-47, 10.5],
+      "length": 32,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "MagellanFighterFlare"
+    },
+    {
+      "location": [-47, -10.5],
+      "length": 32,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "MagellanFighterFlare"
+    }
+  ],
+  "bounds": [
+    23.5, -9.5,
+    42.5, -9.5,
+    47, -19,
+    42.5, -32.5,
+    1.5, -32.5,
+    -4, -35.5,
+    -17.5, -35.5,
+    -21.5, -16.5,
+    -39.5, -16.5,
+    -42.5, -13.5,
+    -46.5, -13.5,
+    -46.5, 13.5,
+    -42.5, 13.5,
+    -39.5, 16.5,
+    -21.5, 16.5,
+    -17.5, 35.5,
+    -4, 35.5,
+    1.5, 32.5,
+    42.5, 32.5,
+    47, 19,
+    42.5, 9.5,
+    23.5, 9.5
+  ]
+}

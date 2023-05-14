@@ -1,0 +1,37 @@
+{
+	"baseHullId":"dcp_magellan_supply",
+	"skinHullId":"dcp_magellan_supply_civ",
+	"hullName":"Hager [CIV]",
+	"descriptionId":"dcp_magellan_supply",
+	"descriptionPrefix":"This hull has been demilitarized for sale to independent worlds in the Magellan sphere of influence.",
+	"tags":["dcp_magellan_civ"],
+	"tech":"Magellan",
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/civ/dcp_magellan_supply_civ.png",
+    "systemId":"dcp_magellan_burndrive",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+    	"WS0005":{
+      		"size": "MEDIUM",
+      		"type": "MISSILE",
+    	},
+    },
+    "builtInMods":["dcp_magellan_engineering_civ"],
+	"builtInWeapons":{},
+		"engineSlotChanges":{
+		"0":{
+			#"width": 0,
+          	#"length": 210,
+          	#"angle": 210,
+          	"style": "M_HIGH_STD",
+		},
+		"1":{"style":"M_HIGH_STD"},
+		"2":{"style":"M_HIGH_STD"},
+		"3":{"style":"M_HIGH_STD"},
+		"4":{"style":"M_HIGH_STD"},
+		"5":{"style":"M_HIGH_STD"},
+	},
+}

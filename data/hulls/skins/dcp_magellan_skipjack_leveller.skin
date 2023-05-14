@@ -1,0 +1,53 @@
+{
+	"baseHullId":"dcp_magellan_skipjack",
+	"skinHullId":"dcp_magellan_skipjack_leveller",
+	"hullName":"Mallory [LV]",
+	"descriptionId":"dcp_magellan_skipjack",
+	"descriptionPrefix":"This hull has been reconditioned to serve as a Leveller command ship, with an experimental reactor. Targeting systems have been refurbished, and most of the weapon mounts refitted, while the Rounder fighters have been converted to light bombers.",
+	"tags":["ship_can_not_scuttle", "restricted", "dcp_magellan_unique_ship"],
+	"tech":"Leveller",
+    "fleetPoints":28,
+    "baseValueMult":1.2,
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/dcp_magellan_skipjack_leveller.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_classicdesign","surveying_equipment"], 		# hullmod ids
+    "removeBuiltInWings":[
+    	"dcp_magellan_skate_wing",
+    	"dcp_magellan_rounder_wing"
+    ],
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0001":{
+      		"type": "BUILT_IN",
+    	},
+		"WS0002":{
+      		"type": "SYNERGY",
+    	},
+    	"WS0003":{
+      		"type": "SYNERGY",
+    	},
+    	"WS0004":{
+      		"type": "ENERGY",
+    	},
+		"WS0007":{
+      		"type": "ENERGY",
+    	},  
+    	"WS0010":{
+      		"type": "SYNERGY",
+    	},
+    	"WS0011":{
+      		"type": "SYNERGY",
+    	},
+    	
+    },
+    "builtInMods":["dcp_magellan_spartacusreactor", "operations_center"],
+    "builtInWings":[
+		"dcp_magellan_rounder_leveller_wing",
+		"dcp_magellan_swarmfighter_wing",
+	],
+	"builtInWeapons":{
+		"WS0001": "dcp_magellan_supersolenoid_sm",
+	},
+}

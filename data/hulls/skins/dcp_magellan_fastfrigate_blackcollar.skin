@@ -1,0 +1,28 @@
+{
+	"baseHullId":"dcp_magellan_fastfrigate",
+	"skinHullId":"dcp_magellan_fastfrigate_blackcollar",
+	"hullName":"Almarshad [BCR]",
+	"descriptionId":"dcp_magellan_fastfrigate",
+	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in Magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating.",
+	"tags":["dcp_magellan_blackcollar", "no_dealer", "restricted"],
+	"tech":"Blackcollar Regiment",
+    "ordnancePoints":54,
+    "baseValueMult":1.2,
+    "removeHints":[],
+    "removeBuiltInWings":["dcp_magellan_flakdrone_wing"],
+	"spriteName":"graphics/DCP/ships/blackcollars/dcp_magellan_fastfrigate_blackcollar.png",
+    "systemId":"dcp_magellan_drone_strike",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0001":{
+      		"type": "UNIVERSAL",
+    	},   
+    },
+    "builtInMods":["dcp_magellan_blackcollarmod"],
+	"builtInWings":[
+		"dcp_magellan_missiledrone_wing"
+	],
+}

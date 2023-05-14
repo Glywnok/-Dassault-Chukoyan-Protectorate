@@ -1,0 +1,57 @@
+{
+    "playableFaction":false,
+	"startingFaction":true,	# allows us to start as this faction even though it's not technically playable
+	"freeStart":true,	# don't spawn markets in random mode
+	"spawnAsFactionId":"player",	# transfer to this faction at start (after new game time pass)
+	
+    "corvusCompatible":true,
+	"difficultyString":"hard",
+	"ngcTooltip":"Believe in the revolution, and in yourself - you have few enough other friends.",
+
+    "factionsLiked":[
+		"shadow_industry",
+		"dassault_mikoyan",
+		"communist_clouds",
+    ],
+    "factionsDisliked":[
+		"luddic_path",
+		"luddic_church",
+		"independent",
+		"hegemony",
+		"tritachyon",
+		"persean",
+		"sindrian_diktat",
+		"remnant",
+		"blackrock_driveyards",
+		"magellan_protectorate",
+		"exigency",
+		"tiandong",
+		"diableavionics",
+		"SCY",
+		"sylphon",
+		"nullorder",
+		"fob",
+		"Coalition",
+		"neutrinocorp",
+		"interstellarimperium",
+		"syndicate_asp",
+		"pack",
+		"crystanite",
+		"vass_shipyards",
+		"fringe_defence_syndicate",
+		"nomads",
+		"junk_pirates",
+		"sad",
+		"new_galactic_order",
+		"apex_design",
+		"aria"
+    ],
+    
+    "startShipsCombatSmall":[["magellan_patroldestroyer_leveller_turncoat"]],
+    "startShipsSuper":[["magellan_skipjack_leveller_std"]],
+    
+    "startSpecialItems":[
+        [["magellan_levellercore_package", ""]],
+    ],
+    
+}

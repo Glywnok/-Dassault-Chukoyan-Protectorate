@@ -1,0 +1,39 @@
+{
+	"baseHullId":"dcp_magellan_linefrigate",
+	"skinHullId":"dcp_magellan_linefrigate_leveller",
+	"hullName":"Janz [LV]",
+	"descriptionId":"dcp_magellan_linefrigate",
+	"descriptionPrefix":"This hull has been reconditioned to serve the Leveller cause. A flux distributor has been integrated into the frame, while the ballistic accelerator has been removed in favor of an impulse-burn rig, and several of the weapon mounts refitted.",
+	"tags":["dcp_magellan_levellercore_bp", "restricted"],
+	"tech":"Leveller",
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/dcp_magellan_linefrigate_leveller.png",
+    "systemId":"dcp_magellan_microburn_capital",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0001":{
+      		"type": "HYBRID",
+    	}, 	
+		"WS0002":{
+      		"type": "HYBRID",
+    	},
+		"WS0005":{
+      		"type": "SYNERGY",
+    	},     	
+    },
+    "builtInMods":["dcp_magellan_levellermod"],
+	"builtInWeapons":{},
+		"engineSlotChanges":{
+		"0":{
+			#"width": 0,
+          	#"length": 210,
+          	#"angle": 210,
+          	"style": "M_HIGH_STD",
+		},
+		"1":{"style":"M_HIGH_STD"},
+		"2":{"style":"M_HIGH_STD"},
+	},
+}

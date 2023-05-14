@@ -1,0 +1,119 @@
+{
+  "hullName": "Lance Frigate",
+  "hullId": "dcp_magellan_lev_lancefrig",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/DCP/ships/dcp_magellan_lev_lancefrig.png",
+  "style": "MAGELLAN",
+  "height": 120,
+  "width": 44,
+  "center": [22, 45],
+  "collisionRadius": 84,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 79,
+  "viewOffset": 0,
+  "builtInMods": [
+    "dcp_magellan_levellermod",
+    "rugged"
+  ],
+  "builtInWeapons": {
+    "WS0001": "dcp_magellan_electrolance_med"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [71, -6]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-15, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 30,
+      "locations": [3, 14]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -30,
+      "locations": [3, -14]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44, -0],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "M_HIGH_STD"
+    },
+    {
+      "location": [-28, 13],
+      "length": 12,
+      "width": 4,
+      "angle": 160,
+      "contrailSize": 4,
+      "style": "M_HIGH_STD"
+    },
+    {
+      "location": [-28, -13],
+      "length":12,
+      "width": 4,
+      "angle": -160,
+      "contrailSize": 4,
+      "style": "M_HIGH_STD"
+    }
+  ],
+  "bounds": [
+    69, -10,
+    40, -10,
+    24.5, -15.5,
+    9.5, -16.5,
+    7.5, -14.5,
+    2.5, -14.5,
+    -2.5, -20.5,
+    -5.5, -20.5,
+    -7.5, -15.5,
+    -13.5, -15.5,
+    -13.5, -18.5,
+    -16.5, -18.5,
+    -18.5, -14.5,
+    -43.5, -5.5,
+    -43.5, 5.5,
+    -18.5, 14.5,
+    -16.5, 18.5,
+    -13.5, 18.5,
+    -13.5, 15.5,
+    -7.5, 15.5,
+    -5.5, 20.5,
+    -2.5, 20.5,
+    2.5, 14.5,
+    7.5, 14.5,
+    9.5, 16.5,
+    24.5, 15.5,
+    55, 4.5,
+    52, 1,
+    29, 1,
+    29, -2,
+    69, -2,
+    73.5, -6
+  ]
+}

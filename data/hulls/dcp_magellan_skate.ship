@@ -1,0 +1,142 @@
+{
+  "bounds": [
+    0.5,
+    -5,
+    -7.5,
+    -12.5,
+    -12.5,
+    -5.5,
+    -6.5,
+    -3.5,
+    -6.5,
+    3.5,
+    -12.5,
+    5.5,
+    -7.5,
+    12.5,
+    0.5,
+    5,
+    17,
+    -0
+  ],
+  "builtInMods": [
+    "no_weapon_flux",
+    "dcp_magellan_classicshieldgen",
+  ],
+  "builtInWeapons": {
+    "WS0001": "dcp_magellan_estat_ftr",
+    "WS0002": "dcp_magellan_crackerftrdouble"
+  },
+  "center": [
+    14,
+    14
+  ],
+  "collisionRadius": 28,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 9,
+      "length": 6,
+      "location": [
+        -7.5,
+        -0
+      ],
+      "style": "M_HIGH_DIFFUSE_TRAIL",
+      "width": 9
+    },
+	{
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 18,
+      "location": [
+        -7.5,
+        -0
+      ],
+      "style": "M_HIGH_STD",
+      "width": 3
+    },
+    {
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 24,
+      "location": [
+        -12.5,
+        5
+      ],
+      "style": "M_HIGH_STD",
+      "width": 3
+    },
+    {
+      "angle": -180,
+      "contrailSize": 3,
+      "length": 24,
+      "location": [
+        -12.5,
+        -5
+      ],
+      "style": "M_HIGH_STD",
+      "width": 3
+    },
+    {
+      "angle": 175,
+      "contrailSize": 3,
+      "length": 12,
+      "location": [
+        -11.5,
+        7
+      ],
+      "style": "M_HIGH_STD",
+      "width": 3
+    },
+    {
+      "angle": -175,
+      "contrailSize": 3,
+      "length": 12,
+      "location": [
+        -11.5,
+        -7
+      ],
+      "style": "M_HIGH_STD",
+      "width": 3
+    }
+  ],
+  "height": 32,
+  "hullId": "dcp_magellan_skate",
+  "hullName": "Skat",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    -4,
+    -0
+  ],
+  "shieldRadius": 24,
+  "spriteName": "graphics/DCP/ships/dcp_magellan_skate.png",
+  "style": "MAGELLAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 20,
+      "id": "WS0001",
+      "locations": [
+        3,
+        0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        1,
+        0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 28
+}

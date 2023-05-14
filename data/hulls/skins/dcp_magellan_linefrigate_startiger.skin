@@ -1,0 +1,25 @@
+{
+	"baseHullId":"dcp_magellan_linefrigate",
+	"skinHullId":"dcp_magellan_linefrigate_startiger",
+	"hullName":"Janz [SKT]",
+	"descriptionId":"dcp_magellan_linefrigate",
+	"descriptionPrefix":"This hull has been refurbished to an alternate spec for the Skytiger Guards division.",
+	"tags":["dcp_magellan_startiger", "no_dealer"],
+	"tech":"Skytiger Guards Division",
+    "fleetPoints":6,
+    "ordnancePoints":48,
+    "baseValueMult":1.08,
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/startigers/dcp_magellan_linefrigate_startiger.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0005":{
+      		"type": "UNIVERSAL",
+    	}, 	
+    },
+    "builtInMods":["dcp_magellan_startigermod"],
+	"builtInWeapons":{},
+}

@@ -1,0 +1,48 @@
+{
+	"baseHullId":"dcp_magellan_supply",
+	"skinHullId":"dcp_magellan_supply_yellowtail",
+	"hullName":"Hager [TMC]",
+	"descriptionId":"dcp_magellan_supply",
+	"descriptionPrefix":"This hull has been refurbished to an alternate spec for the Tichel Concern's merchant guards. Energy mounts have been installed for point-defense to save money on ammunition.",
+	"tags":["dcp_magellan_yellowtail", "no_dealer"],
+	"tech":"Tichel Mercantile Concern",
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/yellowtails/dcp_magellan_supply_yellowtail.png",
+    "systemId":"dcp_magellan_microburn",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0001":{
+      		"type": "ENERGY",
+    	},     
+    	"WS0002":{
+      		"type": "ENERGY",
+    	},  
+    	"WS0003":{
+      		"type": "ENERGY",
+    	},
+    	"WS0004":{
+      		"type": "ENERGY",
+    	},
+    	"WS0005":{
+      		"type": "UNIVERSAL",
+    	},
+    },
+    "builtInMods":["dcp_magellan_yellowtailmod", "shielded_holds"],
+	"builtInWeapons":{},
+		"engineSlotChanges":{
+		"0":{
+			#"width": 0,
+          	#"length": 210,
+          	#"angle": 210,
+          	"style": "M_HIGH_STD",
+		},
+		"1":{"style":"M_HIGH_STD"},
+		"2":{"style":"M_HIGH_STD"},
+		"3":{"style":"M_HIGH_STD"},
+		"4":{"style":"M_HIGH_STD"},
+		"5":{"style":"M_HIGH_STD"},
+	},
+}

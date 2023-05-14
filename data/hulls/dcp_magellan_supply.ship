@@ -1,0 +1,215 @@
+{
+  "bounds": [
+    124.5,
+    -18.5,
+    131.5,
+    -21.5,
+    131.5,
+    -28.5,
+    85,
+    -56.5,
+    -37,
+    -57.5,
+    -48,
+    -48,
+    -48,
+    -58.5,
+    -95,
+    -58.5,
+    -99.5,
+    -54,
+    -99.5,
+    -42.5,
+    -92,
+    -42.5,
+    -92,
+    -39.5,
+    -106.5,
+    -39.5,
+    -111.5,
+    -34,
+    -115.5,
+    -33.5,
+    -115.5,
+    33.5,
+    -111.5,
+    34,
+    -106.5,
+    39.5,
+    -92,
+    39.5,
+    -92,
+    42.5,
+    -99.5,
+    42.5,
+    -99.5,
+    54,
+    -95,
+    58.5,
+    -48,
+    58.5,
+    -48,
+    48,
+    -37,
+    57.5,
+    85,
+    56.5,
+    131.5,
+    28.5,
+    131.5,
+    21.5,
+    124.5,
+    18.5
+  ],
+  "builtInMods": [
+    "dcp_magellan_engineering"
+  ],
+  "center": [
+    64,
+    120
+  ],
+  "collisionRadius": 144,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 60,
+      "location": [
+        -119,
+        20
+      ],
+      "style": "MagellanFlare",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 60,
+      "location": [
+        -119,
+        -20
+      ],
+      "style": "MagellanFlare",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 48,
+      "location": [
+        -117,
+        30.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 48,
+      "location": [
+        -117,
+        -30.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 48,
+      "location": [
+        -116,
+        9.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 48,
+      "location": [
+        -116,
+        -9.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 6
+    }
+  ],
+  "height": 256,
+  "hullId": "dcp_magellan_supply",
+  "hullName": "Supply Ship",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    8,
+    0
+  ],
+  "shieldRadius": 134,
+  "spriteName": "graphics/DCP/ships/dcp_magellan_supply.png",
+  "style": "MAGELLAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 60,
+      "arc": 150,
+      "id": "WS0001",
+      "locations": [
+        26,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -60,
+      "arc": 150,
+      "id": "WS0002",
+      "locations": [
+        26,
+        -33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 120,
+      "arc": 150,
+      "id": "WS0003",
+      "locations": [
+        -66,
+        27
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -120,
+      "arc": 150,
+      "id": "WS0004",
+      "locations": [
+        -66,
+        -27
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 75,
+      "id": "WS0005",
+      "locations": [
+        1,
+        -41
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    }
+  ],
+  "width": 128
+}

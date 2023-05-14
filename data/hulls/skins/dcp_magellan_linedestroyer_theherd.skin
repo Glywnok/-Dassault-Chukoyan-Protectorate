@@ -1,0 +1,45 @@
+{
+	"baseHullId":"dcp_magellan_linedestroyer",
+	"skinHullId":"dcp_magellan_linedestroyer_theherd",
+	"hullName":"Graff [Herd]",
+	"descriptionId":"dcp_magellan_linedestroyer",
+	"descriptionPrefix":"This hull has been battered by years of low-level warfare and unsafe drive modifications. A makeshift gamma torch has been crudely attached to the bow, providing both a fearsome close-range weapon, and a safety valve for the dangerously overtuned drive rig.",
+	"tags":["dcp_magellan_theherd", "restricted"],
+	"tech":"The Herd",
+    "fleetPoints":10,
+    "ordnancePoints":105,
+    "baseValueMult":0.96,
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/theherd/dcp_magellan_linedestroyer_theherd.png",
+    "systemId":"microburn",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0003":{
+      		"type": "MISSILE",
+    	}, 	
+		"WS0004":{
+      		"angle": 5,
+      		"arc": 60,
+      		"type": "BALLISTIC",
+    	},    	
+		"WS0005":{
+      		"angle": -5,
+      		"arc": 60,
+      		"type": "BALLISTIC",
+    	},
+    	"WS0008":{
+      		"arc": 5,
+      		"type": "BUILT_IN",
+    	},       	
+    },
+	"builtInMods":["dcp_magellan_herdmod", "converted_hangar", "degraded_engines"],
+	"builtInWings":[
+		"dcp_magellan_hvyfighter_theherd_single_wing",
+	],
+	"builtInWeapons":{
+		"WS0008": "dcp_magellan_radflamer_med",
+	},
+}

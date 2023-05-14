@@ -1,0 +1,54 @@
+{
+	"baseHullId":"dcp_magellan_carrier",
+	"skinHullId":"dcp_magellan_carrier_yellowtail",
+	"hullName":"Edger [TMC]",
+	"descriptionId":"dcp_magellan_carrier",
+	"descriptionPrefix":"This hull has been refurbished to an alternate spec for the Tichel Concern's merchant guards. Energy mounts have been installed for point-defense to save money on ammunition, and all fighter LPCs have been integrated.",
+	"tags":["dcp_magellan_yellowtail", "no_dealer"],
+	"tech":"Tichel Mercantile Concern",
+    "ordnancePoints":105,
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/yellowtails/dcp_magellan_carrier_yellowtail.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0003":{
+      		"type": "HYBRID",
+    	},     
+    	"WS0004":{
+      		"type": "ENERGY",
+    	},  
+    	"WS0005":{
+      		"type": "ENERGY",
+    	},
+    	"WS0006":{
+      		"type": "ENERGY",
+    	},
+    	"WS0007":{
+      		"type": "ENERGY",
+    	},
+    },
+    "builtInMods":["dcp_magellan_yellowtailmod"],
+    "builtInWings":[
+		"dcp_magellan_hvyfighter_yellowtail_wing",
+		"dcp_magellan_hvyfighter_yellowtail_wing",
+		"dcp_magellan_intyellowtail_wing",
+	],
+	"builtInWeapons":{},
+	"engineSlotChanges":{
+		"0":{
+			#"width": 0,
+          	#"length": 210,
+          	#"angle": 210,
+          	"style": "M_HIGH_STD",
+		},
+		"1":{"style":"M_HIGH_STD"},
+		"2":{"style":"M_HIGH_STD"},
+		"3":{"style":"M_HIGH_STD"},
+		"4":{"style":"M_HIGH_STD"},
+		"5":{"style":"M_HIGH_STD"},
+		"6":{"style":"M_HIGH_STD"},
+	},
+}

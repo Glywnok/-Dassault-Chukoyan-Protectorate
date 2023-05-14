@@ -1,0 +1,37 @@
+{
+	"baseHullId":"dcp_magellan_battleship",
+	"skinHullId":"dcp_magellan_battleship_startiger",
+	"hullName":"Mazian [SKT]",
+	"descriptionId":"dcp_magellan_battleship",
+	"descriptionPrefix":"This hull has been refurbished to an alternate spec for the Skytiger Guards division.",
+	"tags":["dcp_magellan_startiger", "no_dealer"],
+	"tech":"Skytiger Guards Division",
+    "fleetPoints":35,
+    "ordnancePoints":360,
+    "baseValueMult":1.08,
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/startigers/dcp_magellan_battleship_startiger.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering", "hbi"], 		# hullmod ids
+	"removeBuiltInWeapons":["WS0019", "WS0020", "WS0023", "WS0024"], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0001":{
+      		"type": "HYBRID",
+    	},
+		"WS0002":{
+      		"type": "HYBRID",
+    	}, 	
+    },
+    "builtInMods":["dcp_magellan_startigermod", "dcp_magellan_convertedbay"],
+    "builtInWings":[
+		"dcp_magellan_interceptor_startiger_wing",
+		"dcp_magellan_interceptor_startiger_wing",
+	],
+	"builtInWeapons":{
+    	"WS0019": "dcp_magellan_boneshaker_ftr",
+    	"WS0020": "dcp_magellan_boneshaker_ftr",
+    	"WS0023": "dcp_magellan_boneshaker_ftr",
+    	"WS0024": "dcp_magellan_boneshaker_ftr",
+	},
+}

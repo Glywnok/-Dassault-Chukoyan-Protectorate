@@ -1,0 +1,33 @@
+{
+	"baseHullId":"dcp_magellan_carrier",
+	"skinHullId":"dcp_magellan_carrier_startiger",
+	"hullName":"Edger [SKT]",
+	"descriptionId":"dcp_magellan_carrier",
+	"descriptionPrefix":"This hull has been refurbished to an alternate spec for the Skytiger Guards division.",
+	"tags":["dcp_magellan_startiger", "no_dealer"],
+	"tech":"Skytiger Guards Division",
+    "fleetPoints":17,
+    "ordnancePoints":128,
+    "baseValueMult":1.08,
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/startigers/dcp_magellan_carrier_startiger.png",
+	"removeWeaponSlots":["WS0002"], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0001":{
+      		"size": "LARGE",
+    	}, 
+		"WS0003":{
+      		"type": "HYBRID",
+    	},     
+    },
+    "builtInMods":["dcp_magellan_startigermod"],
+    "builtInWings":[
+		"dcp_magellan_corvette_startiger_wing",
+		"dcp_magellan_bomber_startiger_wing",
+		"dcp_magellan_bomber_startiger_wing",
+	],
+	"builtInWeapons":{},
+}

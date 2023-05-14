@@ -1,0 +1,41 @@
+{
+	"baseHullId":"dcp_magellan_schooner",
+	"skinHullId":"dcp_magellan_schooner_d2",
+	"hullName":"Musa [D]",
+	"descriptionId":"dcp_magellan_schooner",
+	"descriptionPrefix":"Not all classics are passed down in mint condition - and this one has seen harder wear and more questionable aftermarket modifications than most. But there's a beautiful frame under there, if only you're willing to put in the work.",
+	"restoreToBaseHull":true,
+	"tags":["dcp_magellan_civ", "no_dealer"],
+    "fleetPoints":6,
+    "ordnancePoints":48,
+    "baseValueMult":0.3,
+	"spriteName":"graphics/DCP/ships/civ/dcp_magellan_schooner_d2.png",
+    "systemId":"dcp_magellan_smokelayer_bad",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":["WS0001"], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0002":{
+      		"type": "BALLISTIC",
+    	},	
+		"WS0005":{
+      		"type": "BALLISTIC",
+    	},
+    },
+	"builtInMods":["faulty_grid"],
+	"builtInWeapons":{
+		"WS0001": "swarmer",
+	},
+	"engineSlotChanges":{
+		"0":{
+			#"width": 0,
+          	#"length": 210,
+          	#"angle": 210,
+          	"style": "MIDLINE",
+		},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},	
+	},
+}

@@ -1,0 +1,36 @@
+{
+	"baseHullId":"dcp_magellan_ltfreight_cbt",
+	"skinHullId":"dcp_magellan_ltfreight_theherd",
+	"hullName":"Phillips [Herd]",
+	"descriptionId":"dcp_magellan_ltfreight",
+	"descriptionPrefix":"This hull has been battered by years of low-level warfare and unsafe drive modifications. Cargo space has been repurposed to hold missiles and fighter chassis, the shield generator has been removed, and crude weapons mounts have been installed to provide extra firepower.",
+	"tags":["dcp_magellan_theherd", "restricted"],
+	"tech":"The Herd",
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/theherd/dcp_magellan_ltfreight_theherd.png",
+    "systemId":"plasmajets",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{},
+	"builtInMods":["dcp_magellan_herdmod", "converted_hangar", "degraded_engines"],
+	"builtInWings":[
+		"dcp_magellan_hvyfighter_theherd_wing",
+	],
+	"builtInWeapons":{},
+	"engineSlotChanges":{
+		"0":{
+			#"width": 0,
+          	#"length": 210,
+          	#"angle": 210,
+          	"style": "MagellanFlare",
+		},
+		"1":{"style":"MagellanFlare"},
+		"2":{"style":"MagellanFlare"},
+		"3":{"style":"MagellanFlare"},
+		"4":{"style":"MagellanFlare"},
+		"5":{"style":"MagellanFlare"},
+		"6":{"style":"MagellanFlare"},
+	},
+}

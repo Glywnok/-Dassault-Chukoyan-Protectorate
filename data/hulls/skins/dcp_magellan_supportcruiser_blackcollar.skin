@@ -1,0 +1,33 @@
+{
+	"baseHullId":"dcp_magellan_supportcruiser",
+	"skinHullId":"dcp_magellan_supportcruiser_blackcollar",
+	"hullName":"Sung [BCR]",
+	"descriptionId":"dcp_magellan_supportcruiser",
+	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in Magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating.",
+	"tags":["dcp_magellan_blackcollar", "no_dealer", "restricted"],
+	"tech":"Blackcollar Regiment",
+    "fleetPoints":19,
+    "ordnancePoints":130,
+    "baseValueMult":1.08,
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/blackcollars/dcp_magellan_supportcruiser_blackcollar.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":["WS0002",], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0005":{
+      		"type": "HYBRID",
+    	},
+    	"WS0010":{
+      		"type": "HYBRID",
+    	},
+    },
+    "builtInMods":["dcp_magellan_blackcollarmod", "dcp_magellan_convertedbay"],
+    "builtInWings":[
+		"dcp_magellan_interceptor_blackcollar_wing",
+	],
+	"builtInWeapons":{
+    	"WS0002": "dcp_magellan_cruiserlrm_builtin",
+	},
+}

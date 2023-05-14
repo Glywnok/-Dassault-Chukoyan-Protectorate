@@ -1,0 +1,34 @@
+{
+	"baseHullId":"dcp_magellan_skiff",
+	"skinHullId":"dcp_magellan_skiff_d",
+	"descriptionId":"dcp_magellan_skiff",
+	"descriptionPrefix":"This Nan has seen better days, but a little elbow grease has it in flyable condition. Properly restoring it, on the other hand, is going to take a little bit more work...",
+	"restoreToBaseHull":true,
+	"tags":["dcp_magellan_civ", "no_dealer"],
+    "fleetPoints":4,
+    "baseValueMult":0.5,
+	"spriteName":"graphics/DCP/ships/civ/dcp_magellan_skiff_d.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_classicdesign_b"], 		# hullmod ids
+	"removeBuiltInWeapons":["WS0001"], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0004":{
+      		"type": "BALLISTIC",
+    	},
+    },
+	"builtInMods":[],
+	"builtInWeapons":{
+		"WS0001": "swarmer",
+	},
+	"engineSlotChanges":{
+		"0":{
+			#"width": 0,
+          	#"length": 210,
+          	#"angle": 210,
+          	"style": "MIDLINE",
+		},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+	},
+}

@@ -1,0 +1,68 @@
+{
+    "playableFaction":false,
+	"startingFaction":true,			# allows us to start as this faction even though it's not technically playable
+	"freeStart":true,				# don't spawn markets in random mode
+	"spawnAsFactionId":"player",	# transfer to this faction at start (after new game time pass)
+	
+    "corvusCompatible":true,
+	"difficultyString":"hard",
+	"ngcTooltip":"A classic ship, a stubborn dream, and a star to steer by.",
+
+    "factionsLiked":[
+    	"magellan_protectorate",
+		"independent",
+		"junk_pirates"
+    ],
+    "factionsDisliked":[
+		"luddic_path",
+		"hegemony",
+		"tritachyon",
+		"sindrian_diktat",
+		"remnant",
+		"dassault_mikoyan",
+		"blackrock_driveyards",
+		"shadow_industry",
+		"exigency",
+		"tiandong",
+		"diableavionics",
+		"SCY",
+		"sylphon",
+		"nullorder",
+		"fob",
+		"Coalition",
+		"neutrinocorp",
+		"interstellarimperium",
+		"syndicate_asp",
+		"pack",
+		"crystanite",
+		"vass_shipyards",
+		"fringe_defence_syndicate",
+		"nomads",
+		"sad",
+		"aria",
+		"apex_design",
+		"HIVER",
+		"new_galactic_order"
+    ],
+    
+    "startShipsSolo":[
+    	["magellan_cbtfreight_civ_std"],
+    	["magellan_schooner_d_std"]
+    ],
+	"startShipsTradeSmall":[
+		["magellan_linefrigate_civ_std", "magellan_supply_civ_std"],
+		["magellan_skiff_d_std", "magellan_ltfreight_std"],
+		["magellan_schooner_yellowtail_std", "magellan_ltfreight_yellowtail_std"]
+	],
+    "startShipsCombatSmall":[
+    	["magellan_patroldestroyer_civ_std", "magellan_linefrigate_civ_std"]
+    ],
+    "startShipsSuper":[
+    	["magellan_skipjack_std"]
+    ],
+    
+    "startSpecialItems":[
+        [["magellan_core_package", "magellan_adv_package"]],
+    ],
+    
+}

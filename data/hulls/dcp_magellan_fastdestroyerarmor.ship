@@ -1,0 +1,54 @@
+{
+  "bounds": [
+    30.5,
+    -4,
+    28,
+    -7,
+    -16.5,
+    -17,
+    -26,
+    -23,
+    -39,
+    -8,
+    -8.5,
+    -4,
+    -8.5,
+    4,
+    -39,
+    8,
+    -26,
+    23,
+    -16.5,
+    17,
+    28,
+    7,
+    30.5,
+    4,
+    45,
+    0
+  ],
+  "builtInMods": [
+    "always_detaches",
+    "reduced_explosion"
+  ],
+  "center": [
+    26,
+    42
+  ],
+  "collisionRadius": 48,
+  "engineSlots": [],
+  "height": 89,
+  "hullId": "dcp_magellan_fastdestroyerarmor",
+  "hullName": "Armor",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    -7,
+    -0
+  ],
+  "shieldRadius": 54,
+  "spriteName": "graphics/DCP/ships/dcp_magellan_fastdestroyerarmor.png",
+  "style": "MAGELLAN",
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "width": 52
+}

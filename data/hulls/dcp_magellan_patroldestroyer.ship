@@ -1,0 +1,297 @@
+{
+  "bounds": [
+    98.5,
+    -7,
+    92,
+    -15.5,
+    95.5,
+    -17.5,
+    74,
+    -23.5,
+    66,
+    -31.5,
+    47.5,
+    -36.5,
+    41,
+    -32,
+    -9.5,
+    -45.5,
+    -16,
+    -45.5,
+    -35.5,
+    -42,
+    -48.5,
+    -45.5,
+    -77.5,
+    -45.5,
+    -86,
+    -42,
+    -85.5,
+    -18,
+    -70,
+    -14,
+    -70,
+    14,
+    -85.5,
+    18,
+    -86,
+    42,
+    -77.5,
+    45.5,
+    -48.5,
+    45.5,
+    -35.5,
+    42,
+    -16,
+    45.5,
+    -9.5,
+    45.5,
+    41,
+    32,
+    47.5,
+    36.5,
+    66,
+    31.5,
+    74,
+    23.5,
+    95.5,
+    17.5,
+    92,
+    15.5,
+    98.5,
+    7
+  ],
+  "builtInMods": [
+    "dcp_magellan_engineering",
+    "hiressensors"
+  ],
+  "center": [
+    48,
+    91
+  ],
+  "collisionRadius": 128,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 40,
+      "location": [
+        -90,
+        30
+      ],
+      "style": "MagellanFlare",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 40,
+      "location": [
+        -90,
+        -30
+      ],
+      "style": "MagellanFlare",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 5,
+      "length": 28,
+      "location": [
+        -87,
+        39.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 5
+    },
+    {
+      "angle": -180,
+      "contrailSize": 5,
+      "length": 28,
+      "location": [
+        -87,
+        -39.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 5
+    },
+    {
+      "angle": 180,
+      "contrailSize": 5,
+      "length": 28,
+      "location": [
+        -87,
+        20.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 5
+    },
+    {
+      "angle": -180,
+      "contrailSize": 5,
+      "length": 28,
+      "location": [
+        -87,
+        -20.5
+      ],
+      "style": "MagellanFighterFlare",
+      "width": 5
+    }
+  ],
+  "height": 192,
+  "hullId": "dcp_magellan_patroldestroyer",
+  "hullName": "Patrol Destroyer",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    3,
+    -0
+  ],
+  "shieldRadius": 120,
+  "spriteName": "graphics/DCP/ships/dcp_magellan_patroldestroyer.png",
+  "style": "MAGELLAN",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        86,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -10,
+      "arc": 90,
+      "id": "WS0002",
+      "locations": [
+        35,
+        -18
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 10,
+      "arc": 75,
+      "id": "WS0003",
+      "locations": [
+        41,
+        20
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 10,
+      "arc": 75,
+      "id": "WS0004",
+      "renderOrderMod": 3,
+      "locations": [
+        21,
+        24
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 150,
+      "id": "WS0005",
+      "locations": [
+        57,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 120,
+      "arc": 150,
+      "id": "WS0006",
+      "locations": [
+        -66,
+        30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -120,
+      "arc": 150,
+      "id": "WS0007",
+      "locations": [
+        -66,
+        -30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 150,
+      "id": "WS0008",
+      "locations": [
+        -11,
+        38
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 150,
+      "id": "WS0009",
+      "locations": [
+        -11,
+        -38
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -47,
+        -0,
+        -47,
+        8,
+        -47,
+        -8,
+        -52,
+        4,
+        -52,
+        -4
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 180,
+      "arc": 0,
+      "id": "WS0010",
+      "locations": [
+        -33.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 96
+}

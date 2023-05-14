@@ -1,0 +1,25 @@
+{
+	"baseHullId":"dcp_magellan_supportdestroyer",
+	"skinHullId":"dcp_magellan_supportdestroyer_blackcollar",
+	"hullName":"Pollard [BCR]",
+	"descriptionId":"dcp_magellan_supportdestroyer",
+	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in Magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating.",
+	"tags":["dcp_magellan_blackcollar", "no_dealer", "restricted"],
+	"tech":"Blackcollar Regiment",
+    "fleetPoints":11,
+    "ordnancePoints":105,
+    "baseValueMult":1.08,
+    "removeHints":[],
+	"spriteName":"graphics/DCP/ships/blackcollars/dcp_magellan_supportdestroyer_blackcollar.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["dcp_magellan_engineering"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+		"WS0001":{
+      		"type": "HYBRID",
+    	},
+    },
+    "builtInMods":["dcp_magellan_blackcollarmod"],
+	"builtInWeapons":{},
+}

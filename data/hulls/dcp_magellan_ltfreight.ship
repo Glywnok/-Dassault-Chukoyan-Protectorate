@@ -1,0 +1,177 @@
+{
+  "hullName": "Freighter",
+  "hullId": "dcp_magellan_ltfreight",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/DCP/ships/civ/dcp_magellan_ltfreight.png",
+  "style": "MAGELLAN",
+  "height": 192,
+  "width": 96,
+  "center": [48, 92],
+  "collisionRadius": 120,
+  "shieldCenter": [1.5, -0],
+  "shieldRadius": 116.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade"
+  ],
+  "builtInWeapons": {
+    "WS0003": "dcp_magellan_linkflak"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [-5, 33]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [-5, -33]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-53, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 105,
+      "locations": [-41, 26.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -105,
+      "locations": [-41, -26.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 50,
+      "locations": [59, 8.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -50,
+      "locations": [59, -8.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-91, -0],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71, 28],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71, -28],
+      "length": 40,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-88, 9.5],
+      "length": 12,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-88, -9.5],
+      "length": 12,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-69, 38.5],
+      "length": 12,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-69, -38.5],
+      "length": 12,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -89, -4.5,
+    -86, -12.5,
+    -45, -17,
+    -70, -23.5,
+    -67.5, -41,
+    -58.5, -43.5,
+    -13.5, -42,
+    -9.5, -46,
+    -0.5, -46,
+    3.5, -42.5,
+    85, -42.5,
+    91, -39,
+    88.5, -31.5,
+    94.5, -21.5,
+    94, -5.5,
+    98.5, -2.5,
+    98.5, 2.5,
+    94, 5.5,
+    94.5, 21.5,
+    88.5, 31.5,
+    91, 39,
+    85, 42.5,
+    3.5, 42.5,
+    -0.5, 46,
+    -9.5, 46,
+    -13.5, 42,
+    -58.5, 43.5,
+    -67.5, 41,
+    -70, 23.5,
+    -45, 17,
+    -86, 12.5,
+    -89, 4.5
+  ]
+}

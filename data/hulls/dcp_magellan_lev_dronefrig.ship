@@ -1,0 +1,114 @@
+{
+  "hullName": "Drone",
+  "hullId": "dcp_magellan_lev_dronefrig",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/DCP/ships/dcp_magellan_lev_dronefrig.png",
+  "style": "MAGELLAN",
+  "height": 108,
+  "width": 60,
+  "center": [30, 43],
+  "collisionRadius": 72,
+  "shieldCenter": [11, -0],
+  "shieldRadius": 60,
+  "viewOffset": 0,
+  "builtInMods": [
+    "dcp_magellan_levellermod",
+    "rugged"
+  ],
+  "builtInWeapons": {
+    "WS0004": "dcp_magellan_targetingbeam"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [8, 22]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-11, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [8, -22]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [37.5, -6.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-41, -0],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "M_HIGH_STD"
+    },
+    {
+      "location": [-26, 13],
+      "length": 12,
+      "width": 4,
+      "angle": 160,
+      "contrailSize": 4,
+      "style": "M_HIGH_STD"
+    },
+    {
+      "location": [-26, -13],
+      "length": 12,
+      "width": 4,
+      "angle": -160,
+      "contrailSize": 4,
+      "style": "M_HIGH_STD"
+    }
+  ],
+  "bounds": [
+    28, -12,
+    13, -13,
+    6.5, -28.5,
+    -6.5, -28.5,
+    -7.5, -13.5,
+    -20, -13.5,
+    -41, -5.5,
+    -41, 5.5,
+    -20, 13.5,
+    -7.5, 13.5,
+    -6.5, 28.5,
+    6.5, 28.5,
+    13, 13,
+    32, 12,
+    63, 3,
+    60, -0,
+    32, -0,
+    24, -4,
+    24, -5,
+    30, -8,
+    33, -5,
+    38, -5,
+    38, -8,
+    35.5, -8,
+    33, -11,
+    36.5, -12.5,
+    32, -13.5
+  ]
+}
