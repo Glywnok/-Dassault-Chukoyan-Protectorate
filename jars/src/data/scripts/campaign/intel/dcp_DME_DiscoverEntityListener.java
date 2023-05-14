@@ -10,7 +10,7 @@ public class dcp_DME_DiscoverEntityListener implements DiscoverEntityListener {
 
    public void reportEntityDiscovered(SectorEntityToken entity) {
       if (entity.hasTag("istl_hardened_warning_beacon")) {
-         istl_BreakerBeaconIntel intel = new istl_BreakerBeaconIntel(entity);
+         dcp_DME_BreakerBeaconIntel intel = new dcp_DME_BreakerBeaconIntel(entity);
          Global.getSector().getIntelManager().addIntel(intel);
       }
 

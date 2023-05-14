@@ -50,10 +50,10 @@ public class dcp_magellan_DemilitarizedRefit extends BaseHullMod {
       float pad2S = 4.0F;
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
-      Color mag = magellan_hullmodUtils.getMagellanHLColor();
-      Color magbg = magellan_hullmodUtils.getMagellanBGColor();
+      Color mag = dcp_magellan_hullmodUtils.getMagellanHLColor();
+      Color magbg = dcp_magellan_hullmodUtils.getMagellanBGColor();
       Color bad = Misc.getNegativeHighlightColor();
-      Color badbg = magellan_hullmodUtils.getNegativeBGColor();
+      Color badbg = dcp_magellan_hullmodUtils.getNegativeBGColor();
       tooltip.addSectionHeading(this.getString("MagellanEngTitle"), mag, magbg, Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("MagellanEngDesc1"), pad, h, new String[]{"50%"});
       tooltip.addPara("- " + this.getString("MagellanEngDesc3"), padS, h, new String[]{"50%"});
@@ -78,7 +78,7 @@ public class dcp_magellan_DemilitarizedRefit extends BaseHullMod {
          String tmp = (String)var3.next();
          if (ship.getVariant().getHullMods().contains(tmp)) {
             ship.getVariant().removeMod(tmp);
-            MagellanBlockedHullmodDisplayScript.showBlocked(ship);
+            DCPBlockedHullmodDisplayScript.showBlocked(ship);
          }
       }
 

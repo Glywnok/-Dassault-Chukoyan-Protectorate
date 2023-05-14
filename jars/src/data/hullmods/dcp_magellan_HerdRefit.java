@@ -71,9 +71,9 @@ public class dcp_magellan_HerdRefit extends BaseHullMod {
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
       Color bad = Misc.getNegativeHighlightColor();
-      Color badbg = magellan_hullmodUtils.getNegativeBGColor();
-      Color herd = magellan_hullmodUtils.getHerdHLColor();
-      Color herdbg = magellan_hullmodUtils.getHerdBGColor();
+      Color badbg = dcp_magellan_hullmodUtils.getNegativeBGColor();
+      Color herd = dcp_magellan_hullmodUtils.getHerdHLColor();
+      Color herdbg = dcp_magellan_hullmodUtils.getHerdBGColor();
       tooltip.addSectionHeading(this.getString("MagellanEngTitle"), herd, herdbg, Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("MagellanEngDesc1"), pad, h, new String[]{"100%"});
       tooltip.addPara("- " + this.getString("MagellanEngDesc2"), padS, h, new String[]{"10%"});
@@ -98,7 +98,7 @@ public class dcp_magellan_HerdRefit extends BaseHullMod {
          String tmp = (String)var3.next();
          if (ship.getVariant().getHullMods().contains(tmp)) {
             ship.getVariant().removeMod(tmp);
-            MagellanBlockedHullmodDisplayScript.showBlocked(ship);
+            DCPBlockedHullmodDisplayScript.showBlocked(ship);
          }
       }
 

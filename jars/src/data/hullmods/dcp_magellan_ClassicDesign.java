@@ -68,10 +68,10 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
       float pad = 10.0F;
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
-      Color clas = magellan_hullmodUtils.getClassicHLColor();
-      Color clasbg = magellan_hullmodUtils.getClassicBGColor();
+      Color clas = dcp_magellan_hullmodUtils.getClassicHLColor();
+      Color clasbg = dcp_magellan_hullmodUtils.getClassicBGColor();
       Color bad = Misc.getNegativeHighlightColor();
-      Color badbg = magellan_hullmodUtils.getNegativeBGColor();
+      Color badbg = dcp_magellan_hullmodUtils.getNegativeBGColor();
       tooltip.addSectionHeading(this.getString("ClassicTitle"), clas, clasbg, Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("ClassicDesc1"), pad, h, new String[]{"50%"});
       tooltip.addPara("- " + this.getString("ClassicDesc2"), padS, h, new String[]{this.getString("Classic2HL")});
@@ -94,7 +94,7 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
          String tmp = (String)var3.next();
          if (ship.getVariant().getHullMods().contains(tmp)) {
             ship.getVariant().removeMod(tmp);
-            MagellanBlockedHullmodDisplayScript.showBlocked(ship);
+            DCPBlockedHullmodDisplayScript.showBlocked(ship);
          }
       }
 

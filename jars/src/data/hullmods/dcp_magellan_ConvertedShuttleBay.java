@@ -29,8 +29,8 @@ public class dcp_magellan_ConvertedShuttleBay extends BaseHullMod {
       float pad = 10.0F;
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
-      Color mag = magellan_hullmodUtils.getMagellanHLColor();
-      Color magbg = magellan_hullmodUtils.getMagellanBGColor();
+      Color mag = dcp_magellan_hullmodUtils.getMagellanHLColor();
+      Color magbg = dcp_magellan_hullmodUtils.getMagellanBGColor();
       tooltip.addSectionHeading(this.getString("MagellanEffects"), mag, magbg, Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("MagellanBaysDesc1"), pad, h, new String[]{"1", "1", "2"});
       tooltip.addPara("- " + this.getString("MagellanBaysDesc2"), padS, h, new String[]{"50%"});

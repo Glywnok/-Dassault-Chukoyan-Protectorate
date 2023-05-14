@@ -53,9 +53,9 @@ public class dcp_magellan_LevellerRefit extends BaseHullMod {
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
       Color bad = Misc.getNegativeHighlightColor();
-      Color badbg = magellan_hullmodUtils.getNegativeBGColor();
-      Color lev = magellan_hullmodUtils.getLevellerHLColor();
-      Color levbg = magellan_hullmodUtils.getLevellerBGColor();
+      Color badbg = dcp_magellan_hullmodUtils.getNegativeBGColor();
+      Color lev = dcp_magellan_hullmodUtils.getLevellerHLColor();
+      Color levbg = dcp_magellan_hullmodUtils.getLevellerBGColor();
       tooltip.addSectionHeading(this.getString("MagellanEngTitle"), lev, levbg, Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("MagellanEngDesc1"), pad, h, new String[]{"100%"});
       tooltip.addPara("- " + this.getString("MagellanEngDesc2"), padS, h, new String[]{"10%"});
@@ -83,7 +83,7 @@ public class dcp_magellan_LevellerRefit extends BaseHullMod {
          String tmp = (String)var3.next();
          if (ship.getVariant().getHullMods().contains(tmp)) {
             ship.getVariant().removeMod(tmp);
-            MagellanBlockedHullmodDisplayScript.showBlocked(ship);
+            DCPBlockedHullmodDisplayScript.showBlocked(ship);
          }
       }
 

@@ -120,12 +120,12 @@ public class dcp_magellan_KineticSpallOnHit implements OnHitEffectPlugin {
          engine.applyDamage(target, point, MathUtils.getRandomNumberInRange(speed, facing), DamageType.FRAGMENTATION, 0.0F, false, false, projectile.getSource());
          engine.spawnExplosion(point, v_comp, EXPLOSION_COLOR, explosion_size, explosion_dur);
          Global.getSoundPlayer().playSound(spall_sfx, 1.0F, 1.0F, loc_target, v_comp);
-         float speed = projectile.getVelocity().length();
+         float speed1 = projectile.getVelocity().length();
          angle = projectile.getFacing();
 
          for(int i = 0; i <= particle_count; ++i) {
-            float angle = MathUtils.getRandomNumberInRange(angle - 60.0F, angle + 60.0F);
-            float vel = MathUtils.getRandomNumberInRange(speed * -0.06F, speed * -0.12F);
+            float angle1 = MathUtils.getRandomNumberInRange(angle - 60.0F, angle + 60.0F);
+            float vel = MathUtils.getRandomNumberInRange(speed1 * -0.06F, speed * -0.12F);
             Vector2f vector = MathUtils.getPointOnCircumference((Vector2f)null, vel, angle);
             engine.addHitParticle(point, vector, particle_size, 255.0F, particle_dur, PARTICLE_COLOR);
             engine.addHitParticle(point, vector, particle_size * 4.0F, 255.0F, particle_dur * 0.75F, GLOW_COLOR);

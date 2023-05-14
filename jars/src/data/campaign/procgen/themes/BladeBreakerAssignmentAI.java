@@ -52,9 +52,9 @@ public class BladeBreakerAssignmentAI implements EveryFrameScript {
             days = Misc.getSpeedForBurnLevel(8.0F);
             float dist = Misc.getDistance(this.fleet.getLocation(), target.getLocation());
             float seconds = dist / days;
-            float days = seconds / Global.getSector().getClock().getSecondsPerDay();
-            days += 5.0F + 5.0F * (float)Math.random();
-            this.fleet.addAssignment(FleetAssignment.PATROL_SYSTEM, target, days, "patrolling");
+            float days1 = seconds / Global.getSector().getClock().getSecondsPerDay();
+            days1 += 5.0F + 5.0F * (float)Math.random();
+            this.fleet.addAssignment(FleetAssignment.PATROL_SYSTEM, target, days1, "patrolling");
             return;
          }
 

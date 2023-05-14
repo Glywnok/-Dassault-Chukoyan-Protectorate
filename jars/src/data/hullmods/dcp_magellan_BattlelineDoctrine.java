@@ -31,7 +31,7 @@ public class dcp_magellan_BattlelineDoctrine extends BaseHullMod {
       float pad = 10.0F;
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
-      Color quote = magellan_hullmodUtils.getQuoteColor();
+      Color quote = dcp_magellan_hullmodUtils.getQuoteColor();
       Color attrib = Misc.getGrayColor();
       tooltip.addSectionHeading("Technical Details", Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("ComCrewDesc1"), pad, h, new String[]{"20%"});

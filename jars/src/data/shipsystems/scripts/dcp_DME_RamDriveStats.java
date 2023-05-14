@@ -16,7 +16,7 @@ public class dcp_DME_RamDriveStats extends BaseShipSystemScript {
    private static final float PARTICLE_VELOCITY_MULT = 0.4F;
    private static final float CONE_ANGLE = 50.0F;
    private static final Color COLOR_FULL = new Color(255, 90, 75, 255);
-   private static final SkipjetParticleFX myParticleFX;
+   private static final dcp_DME_SkipjetParticleFX myParticleFX;
 
    public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
       if (state == State.OUT) {
@@ -45,6 +45,6 @@ public class dcp_DME_RamDriveStats extends BaseShipSystemScript {
    }
 
    static {
-      myParticleFX = new SkipjetParticleFX(3.0F, 0.9F, 9.0F, 1.0F, 0.4F, 50.0F, COLOR_FULL);
+      myParticleFX = new dcp_DME_SkipjetParticleFX(3.0F, 0.9F, 9.0F, 1.0F, 0.4F, 50.0F, COLOR_FULL);
    }
 }

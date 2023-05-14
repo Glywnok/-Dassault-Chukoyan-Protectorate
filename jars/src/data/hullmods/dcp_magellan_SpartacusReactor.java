@@ -85,10 +85,10 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
       Color bad = Misc.getNegativeHighlightColor();
-      Color badbg = magellan_hullmodUtils.getNegativeBGColor();
-      Color emp_color = magellan_hullmodUtils.getEMPHLColor();
-      Color lev = magellan_hullmodUtils.getLevellerHLColor();
-      Color levbg = magellan_hullmodUtils.getLevellerBGColor();
+      Color badbg = dcp_magellan_hullmodUtils.getNegativeBGColor();
+      Color emp_color = dcp_magellan_hullmodUtils.getEMPHLColor();
+      Color lev = dcp_magellan_hullmodUtils.getLevellerHLColor();
+      Color levbg = dcp_magellan_hullmodUtils.getLevellerBGColor();
       tooltip.addSectionHeading(this.getString("SpartacusReactorTitle"), lev, levbg, Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("SpartacusReactorDesc1"), pad, h, new String[]{"2", "4", "8 OP"});
       tooltip.addPara("- " + this.getString("ClassicDesc2"), padS, h, new String[]{this.getString("Classic2HL")});
@@ -112,7 +112,7 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
          String tmp = (String)var3.next();
          if (ship.getVariant().getHullMods().contains(tmp)) {
             ship.getVariant().removeMod(tmp);
-            MagellanBlockedHullmodDisplayScript.showBlocked(ship);
+            DCPBlockedHullmodDisplayScript.showBlocked(ship);
          }
       }
 

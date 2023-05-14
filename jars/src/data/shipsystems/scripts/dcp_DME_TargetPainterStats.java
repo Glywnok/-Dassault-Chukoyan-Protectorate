@@ -150,7 +150,7 @@ public class dcp_DME_TargetPainterStats extends BaseShipSystemScript {
       ShipAPI target = ship.getShipTarget();
       float dist;
       if (target != null) {
-         float dist = Misc.getDistance(ship.getLocation(), target.getLocation());
+         float dist1 = Misc.getDistance(ship.getLocation(), target.getLocation());
          dist = ship.getCollisionRadius() + target.getCollisionRadius();
          if (dist > range + dist) {
             target = null;

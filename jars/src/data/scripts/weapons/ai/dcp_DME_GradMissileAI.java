@@ -17,7 +17,7 @@ import org.lazywizard.lazylib.VectorUtils;
 import org.lazywizard.lazylib.combat.AIUtils;
 import org.lwjgl.util.vector.Vector2f;
 
-public class dcp_DME_GradMissileAI extends istl_BaseMissile {
+public class dcp_DME_GradMissileAI extends dcp_DME_BaseMissile {
    private static final float ENGINE_DEAD_TIME_MAX = 1.0F;
    private static final float ENGINE_DEAD_TIME_MIN = 0.5F;
    private static final float FIRE_INACCURACY = 2.0F;
@@ -136,8 +136,8 @@ public class dcp_DME_GradMissileAI extends istl_BaseMissile {
                   Vector2f vel = this.missile.getVelocity();
                   Vector2f boost = VectorUtils.rotate(submunitionVelocityMod, this.missile.getFacing());
                   vel.translate(boost.x, boost.y);
-                  DamagingProjectileAPI submunition = (DamagingProjectileAPI)Global.getCombatEngine().spawnProjectile(this.launchingShip, this.missile.getWeapon(), "istl_TBM_subForAI", this.missile.getLocation(), angle, vel);
-                  submunition.setFromMissile(true);
+                  DamagingProjectileAPI submunition1 = (DamagingProjectileAPI)Global.getCombatEngine().spawnProjectile(this.launchingShip, this.missile.getWeapon(), "istl_TBM_subForAI", this.missile.getLocation(), angle, vel);
+                  submunition1.setFromMissile(true);
                }
 
                Global.getSoundPlayer().playSound("devastator_explosion", 1.0F, 1.0F, this.missile.getLocation(), this.missile.getVelocity());

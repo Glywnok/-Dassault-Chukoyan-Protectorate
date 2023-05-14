@@ -34,9 +34,9 @@ public class dcp_magellan_AblativeComposites extends BaseHullMod {
       float pad = 10.0F;
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
-      Color emp_color = magellan_hullmodUtils.getEMPHLColor();
-      Color mag = magellan_hullmodUtils.getMagellanHLColor();
-      Color magbg = magellan_hullmodUtils.getMagellanBGColor();
+      Color emp_color = dcp_magellan_hullmodUtils.getEMPHLColor();
+      Color mag = dcp_magellan_hullmodUtils.getMagellanHLColor();
+      Color magbg = dcp_magellan_hullmodUtils.getMagellanBGColor();
       tooltip.addSectionHeading(this.getString("MagellanEffects"), mag, magbg, Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("MagellanArmorDesc1"), pad, h, new String[]{"60%", "25%"});
       tooltip.addPara("- " + this.getString("MagellanArmorDesc2"), padS, h, new String[]{"30%", "40%", "50%"});

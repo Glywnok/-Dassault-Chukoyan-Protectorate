@@ -11,7 +11,7 @@ import org.lazywizard.lazylib.VectorUtils;
 import org.lazywizard.lazylib.combat.AIUtils;
 import org.lwjgl.util.vector.Vector2f;
 
-public class dcp_DME_Itano_AMM_AI extends istl_BaseMissile {
+public class dcp_DME_Itano_AMM_AI extends dcp_DME_BaseMissile {
    private static final float ENGINE_DEAD_TIME_MAX = 0.2F;
    private static final float ENGINE_DEAD_TIME_MIN = 0.12F;
    private static final float LEAD_GUIDANCE_FACTOR = 0.6F;

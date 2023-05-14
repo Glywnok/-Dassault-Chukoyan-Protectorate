@@ -16,7 +16,7 @@ public class dcp_DME_SkipjetInjectorStats extends BaseShipSystemScript {
    private static final float PARTICLE_VELOCITY_MULT = 0.3F;
    private static final float CONE_ANGLE = 45.0F;
    private static final Color COLOR_FULL = new Color(145, 175, 255, 255);
-   private static final SkipjetParticleFX myParticleFX;
+   private static final dcp_DME_SkipjetParticleFX myParticleFX;
 
    public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
       if (state == State.OUT) {
@@ -45,6 +45,6 @@ public class dcp_DME_SkipjetInjectorStats extends BaseShipSystemScript {
    }
 
    static {
-      myParticleFX = new SkipjetParticleFX(3.0F, 0.6F, 7.0F, 0.6F, 0.3F, 45.0F, COLOR_FULL);
+      myParticleFX = new dcp_DME_SkipjetParticleFX(3.0F, 0.6F, 7.0F, 0.6F, 0.3F, 45.0F, COLOR_FULL);
    }
 }

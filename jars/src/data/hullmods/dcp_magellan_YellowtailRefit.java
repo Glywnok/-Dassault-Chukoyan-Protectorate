@@ -48,9 +48,9 @@ public class dcp_magellan_YellowtailRefit extends BaseHullMod {
       float padS = 2.0F;
       Color h = Misc.getHighlightColor();
       Color bad = Misc.getNegativeHighlightColor();
-      Color badbg = magellan_hullmodUtils.getNegativeBGColor();
-      Color tmc = magellan_hullmodUtils.getTichelHLColor();
-      Color tmcbg = magellan_hullmodUtils.getTichelBGColor();
+      Color badbg = dcp_magellan_hullmodUtils.getNegativeBGColor();
+      Color tmc = dcp_magellan_hullmodUtils.getTichelHLColor();
+      Color tmcbg = dcp_magellan_hullmodUtils.getTichelBGColor();
       tooltip.addSectionHeading(this.getString("MagellanEngTitle"), tmc, tmcbg, Alignment.MID, pad);
       tooltip.addPara("- " + this.getString("MagellanEngDesc1"), pad, h, new String[]{"100%"});
       tooltip.addPara("- " + this.getString("MagellanEngDesc3"), padS, h, new String[]{"50%"});
@@ -78,7 +78,7 @@ public class dcp_magellan_YellowtailRefit extends BaseHullMod {
          String tmp = (String)var3.next();
          if (ship.getVariant().getHullMods().contains(tmp)) {
             ship.getVariant().removeMod(tmp);
-            MagellanBlockedHullmodDisplayScript.showBlocked(ship);
+            DCPBlockedHullmodDisplayScript.showBlocked(ship);
          }
       }
 

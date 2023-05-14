@@ -19,13 +19,13 @@ import org.lazywizard.lazylib.VectorUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 
-public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugin {
-   private static final String GUIDANCE_MODE_PRIMARY = "INTERCEPT";
+public class dcp_DME_MortarGuidanceProjScript extends BaseEveryFrameCombatPlugin {
+   private static final String GUIDANCE_MODE_PRIMARY = "DUMBCHASER_SWARM";
    private static final String GUIDANCE_MODE_SECONDARY = "REACQUIRE_NEAREST_PROJ";
    private static final List<String> VALID_TARGET_TYPES = new ArrayList();
-   private static final float TARGET_REACQUIRE_RANGE = 600.0F;
-   private static final float TARGET_REACQUIRE_ANGLE = 150.0F;
-   private static final float TURN_RATE = 240.0F;
+   private static final float TARGET_REACQUIRE_RANGE = 1000.0F;
+   private static final float TARGET_REACQUIRE_ANGLE = 90.0F;
+   private static final float TURN_RATE = 120.0F;
    private static final float SWAY_AMOUNT_PRIMARY = 0.0F;
    private static final float SWAY_AMOUNT_SECONDARY = 0.0F;
    private static final float SWAY_PERIOD_PRIMARY = 0.0F;
@@ -52,7 +52,7 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
    private Vector2f lastTargetPos;
    private float actualGuidanceDelay;
 
-   public istl_ADSMissileGuidanceProjScript(@NotNull DamagingProjectileAPI proj, CombatEntityAPI target) {
+   public dcp_DME_MortarGuidanceProjScript(@NotNull DamagingProjectileAPI proj, CombatEntityAPI target) {
       this.proj = proj;
       this.target = target;
       this.lastTargetPos = target != null ? target.getLocation() : new Vector2f(proj.getLocation());
@@ -62,12 +62,12 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
       this.estimateMaxLife = proj.getWeapon().getRange() / (new Vector2f(proj.getVelocity().x - proj.getSource().getVelocity().x, proj.getVelocity().y - proj.getSource().getVelocity().y)).length();
       this.delayCounter = 0.0F;
       this.actualGuidanceDelay = MathUtils.getRandomNumberInRange(0.2F, 0.3F);
-      if ("INTERCEPT".equals("ONE_TURN_DUMB")) {
+      if ("DUMBCHASER_SWARM".equals("ONE_TURN_DUMB")) {
          this.targetAngle = proj.getWeapon().getCurrAngle() + MathUtils.getRandomNumberInRange(-0.0F, 0.0F);
          this.offsetVelocity = proj.getSource().getVelocity();
-      } else if ("INTERCEPT".equals("ONE_TURN_TARGET")) {
+      } else if ("DUMBCHASER_SWARM".equals("ONE_TURN_TARGET")) {
          this.targetPoint = MathUtils.getRandomPointInCircle(this.getApproximateInterception(25), 0.0F);
-      } else if ("INTERCEPT".contains("SWARM") && target != null) {
+      } else if ("DUMBCHASER_SWARM".contains("SWARM") && target != null) {
          this.applySwarmOffset();
       } else {
          this.targetPoint = new Vector2f(Misc.ZERO);
@@ -93,7 +93,7 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
                this.swayCounter1 += amount * 0.0F;
                this.swayCounter2 += amount * 0.0F;
                float swayThisFrame = (float)Math.pow((double)(1.0F - this.lifeCounter / this.estimateMaxLife), 0.0D) * ((float)(FastTrig.sin(6.283185307179586D * (double)this.swayCounter1) * 0.0D) + (float)(FastTrig.sin(6.283185307179586D * (double)this.swayCounter2) * 0.0D));
-               if (!"INTERCEPT".contains("ONE_TURN")) {
+               if (!"DUMBCHASER_SWARM".contains("ONE_TURN")) {
                   if (this.target != null) {
                      if (!Global.getCombatEngine().isEntityInPlay(this.target)) {
                         this.target = null;
@@ -122,17 +122,17 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
                   }
                }
 
-               if ("INTERCEPT".contains("ONE_TURN") || this.target != null) {
+               if ("DUMBCHASER_SWARM".contains("ONE_TURN") || this.target != null) {
                   float facingSwayless;
-                  float facingSwayless;
+                  float facingSwayless1;
                   Vector2f targetPointRotated;
-                  if ("INTERCEPT".equals("ONE_TURN_DUMB")) {
+                  if ("DUMBCHASER_SWARM".equals("ONE_TURN_DUMB")) {
                      facingSwayless = this.proj.getFacing() - swayThisFrame;
 
                      for(facingSwayless = Math.abs(this.targetAngle - facingSwayless); facingSwayless > 180.0F; facingSwayless = Math.abs(facingSwayless - 360.0F)) {
                      }
 
-                     facingSwayless += Misc.getClosestTurnDirection(facingSwayless, this.targetAngle) * Math.min(facingSwayless, 240.0F * amount);
+                     facingSwayless += Misc.getClosestTurnDirection(facingSwayless, this.targetAngle) * Math.min(facingSwayless, 120.0F * amount);
                      targetPointRotated = new Vector2f(this.proj.getVelocity());
                      targetPointRotated.x -= this.offsetVelocity.x;
                      targetPointRotated.y -= this.offsetVelocity.y;
@@ -141,32 +141,32 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
                      this.proj.getVelocity().y = MathUtils.getPoint(new Vector2f(Misc.ZERO), targetPointRotated.length(), facingSwayless + swayThisFrame).y + this.offsetVelocity.y;
                   } else {
                      float angleToHit;
-                     if ("INTERCEPT".equals("ONE_TURN_TARGET")) {
+                     if ("DUMBCHASER_SWARM".equals("ONE_TURN_TARGET")) {
                         facingSwayless = this.proj.getFacing() - swayThisFrame;
                         facingSwayless = VectorUtils.getAngle(this.proj.getLocation(), this.targetPoint);
 
                         for(angleToHit = Math.abs(facingSwayless - facingSwayless); angleToHit > 180.0F; angleToHit = Math.abs(angleToHit - 360.0F)) {
                         }
 
-                        facingSwayless += Misc.getClosestTurnDirection(facingSwayless, facingSwayless) * Math.min(angleToHit, 240.0F * amount);
+                        facingSwayless += Misc.getClosestTurnDirection(facingSwayless, facingSwayless) * Math.min(angleToHit, 120.0F * amount);
                         this.proj.setFacing(facingSwayless + swayThisFrame);
                         this.proj.getVelocity().x = MathUtils.getPoint(new Vector2f(Misc.ZERO), this.proj.getVelocity().length(), facingSwayless + swayThisFrame).x;
                         this.proj.getVelocity().y = MathUtils.getPoint(new Vector2f(Misc.ZERO), this.proj.getVelocity().length(), facingSwayless + swayThisFrame).y;
                      } else {
-                        float angleToHit;
-                        if ("INTERCEPT".contains("DUMBCHASER")) {
+                        float angleToHit1;
+                        if ("DUMBCHASER_SWARM".contains("DUMBCHASER")) {
                            facingSwayless = this.proj.getFacing() - swayThisFrame;
-                           Vector2f targetPointRotated = VectorUtils.rotate(new Vector2f(this.targetPoint), this.target.getFacing());
-                           angleToHit = VectorUtils.getAngle(this.proj.getLocation(), Vector2f.add(this.target.getLocation(), targetPointRotated, new Vector2f(Misc.ZERO)));
+                           Vector2f targetPointRotated1 = VectorUtils.rotate(new Vector2f(this.targetPoint), this.target.getFacing());
+                           angleToHit = VectorUtils.getAngle(this.proj.getLocation(), Vector2f.add(this.target.getLocation(), targetPointRotated1, new Vector2f(Misc.ZERO)));
 
                            for(angleToHit = Math.abs(angleToHit - facingSwayless); angleToHit > 180.0F; angleToHit = Math.abs(angleToHit - 360.0F)) {
                            }
 
-                           facingSwayless += Misc.getClosestTurnDirection(facingSwayless, angleToHit) * Math.min(angleToHit, 240.0F * amount);
+                           facingSwayless += Misc.getClosestTurnDirection(facingSwayless, angleToHit) * Math.min(angleToHit, 120.0F * amount);
                            this.proj.setFacing(facingSwayless + swayThisFrame);
                            this.proj.getVelocity().x = MathUtils.getPoint(new Vector2f(Misc.ZERO), this.proj.getVelocity().length(), facingSwayless + swayThisFrame).x;
                            this.proj.getVelocity().y = MathUtils.getPoint(new Vector2f(Misc.ZERO), this.proj.getVelocity().length(), facingSwayless + swayThisFrame).y;
-                        } else if ("INTERCEPT".contains("INTERCEPT")) {
+                        } else if ("DUMBCHASER_SWARM".contains("INTERCEPT")) {
                            int iterations = 4;
                            facingSwayless = this.proj.getFacing() - swayThisFrame;
                            targetPointRotated = VectorUtils.rotate(new Vector2f(this.targetPoint), this.target.getFacing());
@@ -176,7 +176,7 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
                            for(angleDiffAbsolute = Math.abs(angleToHit - facingSwayless); angleDiffAbsolute > 180.0F; angleDiffAbsolute = Math.abs(angleDiffAbsolute - 360.0F)) {
                            }
 
-                           facingSwayless += Misc.getClosestTurnDirection(facingSwayless, angleToHit) * Math.min(angleDiffAbsolute, 240.0F * amount);
+                           facingSwayless += Misc.getClosestTurnDirection(facingSwayless, angleToHit) * Math.min(angleDiffAbsolute, 120.0F * amount);
                            this.proj.setFacing(facingSwayless + swayThisFrame);
                            this.proj.getVelocity().x = MathUtils.getPoint(new Vector2f(Misc.ZERO), this.proj.getVelocity().length(), facingSwayless + swayThisFrame).x;
                            this.proj.getVelocity().y = MathUtils.getPoint(new Vector2f(Misc.ZERO), this.proj.getVelocity().length(), facingSwayless + swayThisFrame).y;
@@ -203,50 +203,50 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
       Iterator var4;
       CombatEntityAPI potTarget;
       if (VALID_TARGET_TYPES.contains("ASTEROID")) {
-         var4 = CombatUtils.getAsteroidsWithinRange(centerOfDetection, 600.0F).iterator();
+         var4 = CombatUtils.getAsteroidsWithinRange(centerOfDetection, 1000.0F).iterator();
 
          while(var4.hasNext()) {
             potTarget = (CombatEntityAPI)var4.next();
-            if (potTarget.getOwner() != this.proj.getOwner() && Math.abs(VectorUtils.getAngle(this.proj.getLocation(), potTarget.getLocation()) - this.proj.getFacing()) < 150.0F) {
+            if (potTarget.getOwner() != this.proj.getOwner() && Math.abs(VectorUtils.getAngle(this.proj.getLocation(), potTarget.getLocation()) - this.proj.getFacing()) < 90.0F) {
                potentialTargets.add(potTarget);
             }
          }
       }
 
       if (VALID_TARGET_TYPES.contains("MISSILE")) {
-         var4 = CombatUtils.getMissilesWithinRange(centerOfDetection, 600.0F).iterator();
+         var4 = CombatUtils.getMissilesWithinRange(centerOfDetection, 1000.0F).iterator();
 
          while(var4.hasNext()) {
             potTarget = (CombatEntityAPI)var4.next();
-            if (potTarget.getOwner() != this.proj.getOwner() && Math.abs(VectorUtils.getAngle(this.proj.getLocation(), potTarget.getLocation()) - this.proj.getFacing()) < 150.0F) {
+            if (potTarget.getOwner() != this.proj.getOwner() && Math.abs(VectorUtils.getAngle(this.proj.getLocation(), potTarget.getLocation()) - this.proj.getFacing()) < 90.0F) {
                potentialTargets.add(potTarget);
             }
          }
       }
 
-      var4 = CombatUtils.getShipsWithinRange(centerOfDetection, 600.0F).iterator();
+      var4 = CombatUtils.getShipsWithinRange(centerOfDetection, 1000.0F).iterator();
 
       while(var4.hasNext()) {
-         ShipAPI potTarget = (ShipAPI)var4.next();
-         if (potTarget.getOwner() != this.proj.getOwner() && !(Math.abs(VectorUtils.getAngle(this.proj.getLocation(), potTarget.getLocation()) - this.proj.getFacing()) > 150.0F) && !potTarget.isHulk() && !potTarget.isPhased()) {
-            if (potTarget.getHullSize().equals(HullSize.FIGHTER) && VALID_TARGET_TYPES.contains("FIGHTER")) {
-               potentialTargets.add(potTarget);
+         ShipAPI potTarget1 = (ShipAPI)var4.next();
+         if (potTarget1.getOwner() != this.proj.getOwner() && !(Math.abs(VectorUtils.getAngle(this.proj.getLocation(), potTarget1.getLocation()) - this.proj.getFacing()) > 90.0F) && !potTarget1.isHulk() && !potTarget1.isPhased()) {
+            if (potTarget1.getHullSize().equals(HullSize.FIGHTER) && VALID_TARGET_TYPES.contains("FIGHTER")) {
+               potentialTargets.add(potTarget1);
             }
 
-            if (potTarget.getHullSize().equals(HullSize.FRIGATE) && VALID_TARGET_TYPES.contains("FRIGATE")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.FRIGATE) && VALID_TARGET_TYPES.contains("FRIGATE")) {
+               potentialTargets.add(potTarget1);
             }
 
-            if (potTarget.getHullSize().equals(HullSize.DESTROYER) && VALID_TARGET_TYPES.contains("DESTROYER")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.DESTROYER) && VALID_TARGET_TYPES.contains("DESTROYER")) {
+               potentialTargets.add(potTarget1);
             }
 
-            if (potTarget.getHullSize().equals(HullSize.CRUISER) && VALID_TARGET_TYPES.contains("CRUISER")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.CRUISER) && VALID_TARGET_TYPES.contains("CRUISER")) {
+               potentialTargets.add(potTarget1);
             }
 
-            if (potTarget.getHullSize().equals(HullSize.CAPITAL_SHIP) && VALID_TARGET_TYPES.contains("CAPITAL")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.CAPITAL_SHIP) && VALID_TARGET_TYPES.contains("CAPITAL")) {
+               potentialTargets.add(potTarget1);
             }
          }
       }
@@ -268,7 +268,7 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
          }
 
          this.target = newTarget;
-         if ("INTERCEPT".contains("SWARM")) {
+         if ("DUMBCHASER_SWARM".contains("SWARM")) {
             this.applySwarmOffset();
          }
       }
@@ -311,8 +311,9 @@ public class istl_ADSMissileGuidanceProjScript extends BaseEveryFrameCombatPlugi
    }
 
    static {
-      VALID_TARGET_TYPES.add("MISSILE");
-      VALID_TARGET_TYPES.add("FIGHTER");
       VALID_TARGET_TYPES.add("FRIGATE");
+      VALID_TARGET_TYPES.add("DESTROYER");
+      VALID_TARGET_TYPES.add("CRUISER");
+      VALID_TARGET_TYPES.add("CAPITAL");
    }
 }

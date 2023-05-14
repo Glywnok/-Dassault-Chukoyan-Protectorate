@@ -19,7 +19,7 @@ import org.lazywizard.lazylib.VectorUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 
-public class istl_BusterGuidanceProjScript extends BaseEveryFrameCombatPlugin {
+public class dcp_DME_BusterGuidanceProjScript extends BaseEveryFrameCombatPlugin {
    private static final String GUIDANCE_MODE_PRIMARY = "DUMBCHASER";
    private static final String GUIDANCE_MODE_SECONDARY = "NONE";
    private static final List<String> VALID_TARGET_TYPES = new ArrayList();
@@ -52,7 +52,7 @@ public class istl_BusterGuidanceProjScript extends BaseEveryFrameCombatPlugin {
    private Vector2f lastTargetPos;
    private float actualGuidanceDelay;
 
-   public istl_BusterGuidanceProjScript(@NotNull DamagingProjectileAPI proj, CombatEntityAPI target) {
+   public dcp_DME_BusterGuidanceProjScript(@NotNull DamagingProjectileAPI proj, CombatEntityAPI target) {
       this.proj = proj;
       this.target = target;
       this.lastTargetPos = target != null ? target.getLocation() : new Vector2f(proj.getLocation());
@@ -132,7 +132,7 @@ public class istl_BusterGuidanceProjScript extends BaseEveryFrameCombatPlugin {
 
                if ("DUMBCHASER".contains("ONE_TURN") || this.target != null) {
                   float facingSwayless;
-                  float facingSwayless;
+                  float facingSwayless1;
                   Vector2f targetPointRotated;
                   if ("DUMBCHASER".equals("ONE_TURN_DUMB")) {
                      facingSwayless = this.proj.getFacing() - swayThisFrame;
@@ -161,11 +161,11 @@ public class istl_BusterGuidanceProjScript extends BaseEveryFrameCombatPlugin {
                         this.proj.getVelocity().x = MathUtils.getPoint(new Vector2f(Misc.ZERO), this.proj.getVelocity().length(), facingSwayless + swayThisFrame).x;
                         this.proj.getVelocity().y = MathUtils.getPoint(new Vector2f(Misc.ZERO), this.proj.getVelocity().length(), facingSwayless + swayThisFrame).y;
                      } else {
-                        float angleToHit;
+                        float angleToHit1;
                         if ("DUMBCHASER".contains("DUMBCHASER")) {
                            facingSwayless = this.proj.getFacing() - swayThisFrame;
-                           Vector2f targetPointRotated = VectorUtils.rotate(new Vector2f(this.targetPoint), this.target.getFacing());
-                           angleToHit = VectorUtils.getAngle(this.proj.getLocation(), Vector2f.add(this.target.getLocation(), targetPointRotated, new Vector2f(Misc.ZERO)));
+                           Vector2f targetPointRotated1 = VectorUtils.rotate(new Vector2f(this.targetPoint), this.target.getFacing());
+                           angleToHit = VectorUtils.getAngle(this.proj.getLocation(), Vector2f.add(this.target.getLocation(), targetPointRotated1, new Vector2f(Misc.ZERO)));
 
                            for(angleToHit = Math.abs(angleToHit - facingSwayless); angleToHit > 180.0F; angleToHit = Math.abs(angleToHit - 360.0F)) {
                            }
@@ -235,29 +235,29 @@ public class istl_BusterGuidanceProjScript extends BaseEveryFrameCombatPlugin {
       var4 = CombatUtils.getShipsWithinRange(centerOfDetection, 1000.0F).iterator();
 
       while(var4.hasNext()) {
-         ShipAPI potTarget = (ShipAPI)var4.next();
-         if (potTarget.getOwner() != this.proj.getOwner() && !(Math.abs(VectorUtils.getAngle(this.proj.getLocation(), potTarget.getLocation()) - this.proj.getFacing()) > 120.0F) && !potTarget.isHulk()) {
-            if (potTarget.isPhased()) {
+         ShipAPI potTarget1 = (ShipAPI)var4.next();
+         if (potTarget1.getOwner() != this.proj.getOwner() && !(Math.abs(VectorUtils.getAngle(this.proj.getLocation(), potTarget1.getLocation()) - this.proj.getFacing()) > 120.0F) && !potTarget1.isHulk()) {
+            if (potTarget1.isPhased()) {
             }
 
-            if (potTarget.getHullSize().equals(HullSize.FIGHTER) && VALID_TARGET_TYPES.contains("FIGHTER")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.FIGHTER) && VALID_TARGET_TYPES.contains("FIGHTER")) {
+               potentialTargets.add(potTarget1);
             }
 
-            if (potTarget.getHullSize().equals(HullSize.FRIGATE) && VALID_TARGET_TYPES.contains("FRIGATE")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.FRIGATE) && VALID_TARGET_TYPES.contains("FRIGATE")) {
+               potentialTargets.add(potTarget1);
             }
 
-            if (potTarget.getHullSize().equals(HullSize.DESTROYER) && VALID_TARGET_TYPES.contains("DESTROYER")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.DESTROYER) && VALID_TARGET_TYPES.contains("DESTROYER")) {
+               potentialTargets.add(potTarget1);
             }
 
-            if (potTarget.getHullSize().equals(HullSize.CRUISER) && VALID_TARGET_TYPES.contains("CRUISER")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.CRUISER) && VALID_TARGET_TYPES.contains("CRUISER")) {
+               potentialTargets.add(potTarget1);
             }
 
-            if (potTarget.getHullSize().equals(HullSize.CAPITAL_SHIP) && VALID_TARGET_TYPES.contains("CAPITAL")) {
-               potentialTargets.add(potTarget);
+            if (potTarget1.getHullSize().equals(HullSize.CAPITAL_SHIP) && VALID_TARGET_TYPES.contains("CAPITAL")) {
+               potentialTargets.add(potTarget1);
             }
          }
       }

@@ -14,7 +14,7 @@ import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 
-public class istl_PhasedBusterLauncherGuidedFX implements EveryFrameWeaponEffectPlugin {
+public class dcp_DME_PhasedBusterLauncherGuidedFX implements EveryFrameWeaponEffectPlugin {
    private static final float OFFSET = 5.0F;
    private static final Color FLASH_COLOR = new Color(185, 175, 100, 255);
    private static final float FLASH_SIZE = 135.0F;
@@ -56,7 +56,7 @@ public class istl_PhasedBusterLauncherGuidedFX implements EveryFrameWeaponEffect
          while(var13.hasNext()) {
             DamagingProjectileAPI proj = (DamagingProjectileAPI)var13.next();
             if (proj.getWeapon() == weapon && !this.alreadyRegisteredProjectiles.contains(proj) && engine.isEntityInPlay(proj) && !proj.didDamage()) {
-               engine.addPlugin(new istl_BusterGuidanceProjScript(proj, target));
+               engine.addPlugin(new dcp_DME_BusterGuidanceProjScript(proj, target));
                this.alreadyRegisteredProjectiles.add(proj);
             }
          }

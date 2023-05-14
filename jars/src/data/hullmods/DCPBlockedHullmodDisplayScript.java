@@ -12,14 +12,14 @@ import org.apache.log4j.Logger;
 
 public class DCPBlockedHullmodDisplayScript extends BaseEveryFrameCombatPlugin implements EveryFrameScript {
    private static final Logger Log = Logger.getLogger(data.hullmods.DCPBlockedHullmodDisplayScript.class);
-   private static final String NOTIFICATION_HULLMOD = "DMEBlockedBlankHullmod";
+   private static final String NOTIFICATION_HULLMOD = "DCPBlockedBlankHullmod";
    private static final String NOTIFICATION_SOUND = "cr_allied_critical";
    private static ShipAPI ship;
 
    public static void showBlocked(ShipAPI blocked) {
       stopDisplaying();
       ship = blocked;
-      ship.getVariant().addMod("DMEBlockedBlankHullmod");
+      ship.getVariant().addMod("DCPBlockedBlankHullmod");
       Global.getSoundPlayer().playUISound("cr_allied_critical", 1.0F, 1.0F);
    }
 
@@ -34,7 +34,7 @@ public class DCPBlockedHullmodDisplayScript extends BaseEveryFrameCombatPlugin i
    public static void stopDisplaying() {
       if (ship != null) {
          Log.debug("Removed from existing ship.");
-         ship.getVariant().removeMod("DMEBlockedBlankHullmod");
+         ship.getVariant().removeMod("DCPBlockedBlankHullmod");
          ship = null;
       }
 

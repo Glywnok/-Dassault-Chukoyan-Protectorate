@@ -32,5 +32,5 @@ public class dcp_DME_HullMods {
    public static final String MAGELLAN_CLASSIC_HULLMOD = "dcp_magellan_classicdesign";
    public static final String TAG_MAG_ANTIQUE_HULLMOD = "dcp_magellan_antique_hullmod";
    public static final String TAG_MAG_EXCLUSIVE_HULLMOD = "dcp_magellan_exclusive_hullmod";
-   public static final String MAGELLAN_COMCREW_BATTLELINE = dcp_"magellan_battleline";
+   public static final String MAGELLAN_COMCREW_BATTLELINE = "dcp_magellan_battleline";
 }

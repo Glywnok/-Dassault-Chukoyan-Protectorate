@@ -88,9 +88,9 @@ public class dcp_magellan_MagellanFighter extends BaseHullMod {
       Color h = Misc.getHighlightColor();
       Color pos = Misc.getPositiveHighlightColor();
       Color neg = Misc.getNegativeHighlightColor();
-      Color mag = magellan_hullmodUtils.getMagellanHLColor();
-      Color magbg = magellan_hullmodUtils.getMagellanBGColor();
-      Color quote = magellan_hullmodUtils.getQuoteColor();
+      Color mag = dcp_magellan_hullmodUtils.getMagellanHLColor();
+      Color magbg = dcp_magellan_hullmodUtils.getMagellanBGColor();
+      Color quote = dcp_magellan_hullmodUtils.getQuoteColor();
       Color attrib = Misc.getGrayColor();
       tooltip.addSectionHeading(this.getString("MagSpecialTitle"), mag, magbg, Alignment.MID, pad);
       TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/magellan_hullmod_fighter.png", 40.0F);
