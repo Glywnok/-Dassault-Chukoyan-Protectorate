@@ -1,9 +1,5 @@
 package data.campaign;
 
-import java.awt.Color;
-
-import org.lwjgl.util.vector.Vector2f;
-
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.CampaignEngineLayers;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
@@ -13,203 +9,173 @@ import com.fs.starfarer.api.campaign.SectorEntityToken.VisibilityLevel;
 import com.fs.starfarer.api.combat.ViewportAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.campaign.BaseCustomEntityPlugin;
-import com.fs.starfarer.api.impl.campaign.ids.Pings;
-import com.fs.starfarer.api.impl.campaign.intel.BaseIntelPlugin;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-import data.campaign.procgen.themes.BladeBreakerThemeGenerator.BladeBreakerSystemType;
+import data.campaign.procgen.themes.BladeBreakerThemeGenerator;
+import java.awt.Color;
+import org.lwjgl.util.vector.Vector2f;
 
 public class dcp_DME_BladeBreakerBeaconPlugin extends BaseCustomEntityPlugin {
+   public static String GLOW_COLOR_KEY = "$core_beaconGlowColor";
+   public static String PING_COLOR_KEY = "$core_beaconPingColor";
+   public static float GLOW_FREQUENCY = 1.2F;
+   private transient SpriteAPI sprite;
+   private transient SpriteAPI glow;
+   private float phase = 0.0F;
+   private float freqMult = 1.0F;
+   private float sincePing = 10.0F;
 
-	public static String GLOW_COLOR_KEY = "$core_beaconGlowColor";
-	public static String PING_COLOR_KEY = "$core_beaconPingColor";
-	
-	public static float GLOW_FREQUENCY = 1.2f; // on/off cycles per second
-	
-	
-	//private SectorEntityToken entity;
-	
-	transient private SpriteAPI sprite;
-	transient private SpriteAPI glow;
-	
-	public void init(SectorEntityToken entity, Object pluginParams) {
-		super.init(entity, pluginParams);
-		//this.entity = entity;
-		entity.setDetectionRangeDetailsOverrideMult(0.75f);
-		readResolve();
-	}
-	
-	Object readResolve() {
-		sprite = Global.getSettings().getSprite("campaignEntities", "dcp_breaker_beacon");
-		glow = Global.getSettings().getSprite("campaignEntities", "dcp_breaker_beacon_glow");
-		return this;
-	}
-	
-	private float phase = 0f;
-	private float freqMult = 1f;
-	private float sincePing = 10f;
-	public void advance(float amount) {
-		phase += amount * GLOW_FREQUENCY * freqMult;
-		while (phase > 1) phase --;
-		
-		if (entity.isInCurrentLocation()) {
-			sincePing += amount;
-			if (sincePing >= 6f && phase > 0.1f && phase < 0.2f) {
-				sincePing = 0f;
-				CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
-				if (playerFleet != null && 
-					entity.getVisibilityLevelTo(playerFleet) == VisibilityLevel.COMPOSITION_AND_FACTION_DETAILS) {
-					
-					String pingId = Pings.WARNING_BEACON1;
-					freqMult = 1f;
-					if (entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerSystemType.SUPPRESSED.getBeaconFlag())) { //Change this later to point to Blade Breaker procgen
-						pingId = Pings.WARNING_BEACON2;
-						freqMult = 1.25f;
-					} else if (entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerSystemType.RESURGENT.getBeaconFlag())) { //Change this later to point to Blade Breaker procgen
-						pingId = Pings.WARNING_BEACON3;
-						freqMult = 1.5f;
-					}
-					
-					//Global.getSector().addPing(entity, pingId);
-					
-					//Color pingColor = entity.getFaction().getBrightUIColor();
-					Color pingColor = new Color(75,255,175,255);
-					if (entity.getMemoryWithoutUpdate().contains(PING_COLOR_KEY)) {
-						pingColor = (Color) entity.getMemoryWithoutUpdate().get(PING_COLOR_KEY);
-					}
-					
-					Global.getSector().addPing(entity, pingId, pingColor);
-				}
-			}
-		}
-	}
+   public void init(SectorEntityToken entity, Object pluginParams) {
+      super.init(entity, pluginParams);
+      entity.setDetectionRangeDetailsOverrideMult(0.75F);
+      this.readResolve();
+   }
 
-	public float getRenderRange() {
-		return entity.getRadius() + 100f;
-	}
+   Object readResolve() {
+      this.sprite = Global.getSettings().getSprite("campaignEntities", "istl_breaker_beacon");
+      this.glow = Global.getSettings().getSprite("campaignEntities", "istl_breaker_beacon_glow");
+      return this;
+   }
 
-	public void render(CampaignEngineLayers layer, ViewportAPI viewport) {
-		float alphaMult = viewport.getAlphaMult();
-		if (alphaMult <= 0f) return;
-		
-		CustomEntitySpecAPI spec = entity.getCustomEntitySpec();
-		if (spec == null) return;
-		
-		float w = spec.getSpriteWidth();
-		float h = spec.getSpriteHeight();
-		
-		Vector2f loc = entity.getLocation();
-		
-		sprite.setAngle(entity.getFacing() - 90f);
-		sprite.setSize(w, h);
-		sprite.setAlphaMult(alphaMult);
-		sprite.setNormalBlend();
-		sprite.renderAtCenter(loc.x, loc.y);
-		
-		
-		float glowAlpha = 0f;
-		if (phase < 0.5f) glowAlpha = phase * 2f;
-		if (phase >= 0.5f) glowAlpha = (1f - (phase - 0.5f) * 2f);
-		
-		float glowAngle1 = (((phase * 1.3f) % 1) - 0.5f) * 12f;
-		float glowAngle2 = (((phase * 1.9f) % 1) - 0.5f) * 12f;
-//		glowAngle1 = 0f;
-//		glowAngle2 = 0f;
-		
-		boolean glowAsLayer = true;
-		if (glowAsLayer) {
-			//glow.setAngle(entity.getFacing() - 90f);
-			Color glowColor = new Color(75,255,175,255);
-			//Color glowColor = entity.getFaction().getBrightUIColor();
-			if (entity.getMemoryWithoutUpdate().contains(GLOW_COLOR_KEY)) {
-				glowColor = (Color) entity.getMemoryWithoutUpdate().get(GLOW_COLOR_KEY);
-			}
+   public void advance(float amount) {
+      for(this.phase += amount * GLOW_FREQUENCY * this.freqMult; this.phase > 1.0F; --this.phase) {
+      }
 
-			//glow.setColor(Color.white);
-			glow.setColor(glowColor);
-			
-			glow.setSize(w, h);
-			glow.setAlphaMult(alphaMult * glowAlpha);
-			glow.setAdditiveBlend();
-			
-			glow.setAngle(entity.getFacing() - 90f + glowAngle1);
-			glow.renderAtCenter(loc.x, loc.y);
-			
-			glow.setAngle(entity.getFacing() - 90f + glowAngle2);
-			glow.setAlphaMult(alphaMult * glowAlpha * 0.5f);
-			glow.renderAtCenter(loc.x, loc.y);
-		} else {
-			glow.setAngle(entity.getFacing() - 90f);
-			glow.setColor(new Color(125,255,255,255));
-			float gs = w * 3;
-			glow.setSize(gs, gs);
-			glow.setAdditiveBlend();
-			
-			float spacing = 10;
-			glow.setAlphaMult(alphaMult * glowAlpha * 0.5f);
-			glow.renderAtCenter(loc.x - spacing, loc.y);
-			glow.renderAtCenter(loc.x + spacing, loc.y);
-			
-			glow.setAlphaMult(alphaMult * glowAlpha);
-			glow.setSize(gs * 0.25f, gs * 0.25f);
-			glow.renderAtCenter(loc.x - spacing, loc.y);
-			glow.renderAtCenter(loc.x + spacing, loc.y);
-		}
-	}
+      if (this.entity.isInCurrentLocation()) {
+         this.sincePing += amount;
+         if (this.sincePing >= 6.0F && this.phase > 0.1F && this.phase < 0.2F) {
+            this.sincePing = 0.0F;
+            CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
+            if (playerFleet != null && this.entity.getVisibilityLevelTo(playerFleet) == VisibilityLevel.COMPOSITION_AND_FACTION_DETAILS) {
+               String pingId = "warning_beacon1";
+               this.freqMult = 1.0F;
+               if (this.entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerThemeGenerator.BladeBreakerSystemType.SUPPRESSED.getBeaconFlag())) {
+                  pingId = "warning_beacon2";
+                  this.freqMult = 1.25F;
+               } else if (this.entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerThemeGenerator.BladeBreakerSystemType.RESURGENT.getBeaconFlag())) {
+                  pingId = "warning_beacon3";
+                  this.freqMult = 1.5F;
+               }
 
-	@Override
-	public void createMapTooltip(TooltipMakerAPI tooltip, boolean expanded) {
-		String post = "";
-		Color color = entity.getFaction().getBaseUIColor();
-		Color postColor = color;
-		if (entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerSystemType.DESTROYED.getBeaconFlag())) {
-			post = " - Low";
-			postColor = Misc.getPositiveHighlightColor();
-		} else if (entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerSystemType.SUPPRESSED.getBeaconFlag())) {
-			post = " - Medium";
-			postColor = Misc.getHighlightColor();
-		} else if (entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerSystemType.RESURGENT.getBeaconFlag())) {
-			post = " - High";
-			postColor = Misc.getNegativeHighlightColor();
-		}
-		
-		tooltip.addPara(entity.getName() + post, 0f, color, postColor, post.replaceFirst(" - ", ""));
-	}
+               Color pingColor = new Color(75, 255, 175, 255);
+               if (this.entity.getMemoryWithoutUpdate().contains(PING_COLOR_KEY)) {
+                  pingColor = (Color)this.entity.getMemoryWithoutUpdate().get(PING_COLOR_KEY);
+               }
 
-	@Override
-	public boolean hasCustomMapTooltip() {
-		return true;
-	}
-	
-	@Override
-	public void appendToCampaignTooltip(TooltipMakerAPI tooltip, VisibilityLevel level) {
-		if (level == VisibilityLevel.COMPOSITION_AND_FACTION_DETAILS || 
-				level == VisibilityLevel.COMPOSITION_DETAILS) {
-			
-			String post = "";
-			Color color = Misc.getTextColor();
-			Color postColor = color;
-			if (entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerSystemType.DESTROYED.getBeaconFlag())) {
-				post = "low";
-				postColor = Misc.getPositiveHighlightColor();
-			} else if (entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerSystemType.SUPPRESSED.getBeaconFlag())) {
-				post = "medium";
-				postColor = Misc.getHighlightColor();
-			} else if (entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerSystemType.RESURGENT.getBeaconFlag())) {
-				post = "high";
-				postColor = Misc.getNegativeHighlightColor();
-			}
-			if (!post.isEmpty()) {
-				tooltip.setParaFontDefault();
-				tooltip.addPara(BaseIntelPlugin.BULLET + "Danger level: " + post, 10f, color, postColor, post);
-			}
-		}
-		
-	}
+               Global.getSector().addPing(this.entity, pingId, pingColor);
+            }
+         }
+      }
+
+   }
+
+   public float getRenderRange() {
+      return this.entity.getRadius() + 100.0F;
+   }
+
+   public void render(CampaignEngineLayers layer, ViewportAPI viewport) {
+      float alphaMult = viewport.getAlphaMult();
+      if (!(alphaMult <= 0.0F)) {
+         CustomEntitySpecAPI spec = this.entity.getCustomEntitySpec();
+         if (spec != null) {
+            float w = spec.getSpriteWidth();
+            float h = spec.getSpriteHeight();
+            Vector2f loc = this.entity.getLocation();
+            this.sprite.setAngle(this.entity.getFacing() - 90.0F);
+            this.sprite.setSize(w, h);
+            this.sprite.setAlphaMult(alphaMult);
+            this.sprite.setNormalBlend();
+            this.sprite.renderAtCenter(loc.x, loc.y);
+            float glowAlpha = 0.0F;
+            if (this.phase < 0.5F) {
+               glowAlpha = this.phase * 2.0F;
+            }
+
+            if (this.phase >= 0.5F) {
+               glowAlpha = 1.0F - (this.phase - 0.5F) * 2.0F;
+            }
+
+            float glowAngle1 = (this.phase * 1.3F % 1.0F - 0.5F) * 12.0F;
+            float glowAngle2 = (this.phase * 1.9F % 1.0F - 0.5F) * 12.0F;
+            boolean glowAsLayer = true;
+            if (glowAsLayer) {
+               Color glowColor = new Color(75, 255, 175, 255);
+               if (this.entity.getMemoryWithoutUpdate().contains(GLOW_COLOR_KEY)) {
+                  glowColor = (Color)this.entity.getMemoryWithoutUpdate().get(GLOW_COLOR_KEY);
+               }
+
+               this.glow.setColor(glowColor);
+               this.glow.setSize(w, h);
+               this.glow.setAlphaMult(alphaMult * glowAlpha);
+               this.glow.setAdditiveBlend();
+               this.glow.setAngle(this.entity.getFacing() - 90.0F + glowAngle1);
+               this.glow.renderAtCenter(loc.x, loc.y);
+               this.glow.setAngle(this.entity.getFacing() - 90.0F + glowAngle2);
+               this.glow.setAlphaMult(alphaMult * glowAlpha * 0.5F);
+               this.glow.renderAtCenter(loc.x, loc.y);
+            } else {
+               this.glow.setAngle(this.entity.getFacing() - 90.0F);
+               this.glow.setColor(new Color(125, 255, 255, 255));
+               float gs = w * 3.0F;
+               this.glow.setSize(gs, gs);
+               this.glow.setAdditiveBlend();
+               float spacing = 10.0F;
+               this.glow.setAlphaMult(alphaMult * glowAlpha * 0.5F);
+               this.glow.renderAtCenter(loc.x - spacing, loc.y);
+               this.glow.renderAtCenter(loc.x + spacing, loc.y);
+               this.glow.setAlphaMult(alphaMult * glowAlpha);
+               this.glow.setSize(gs * 0.25F, gs * 0.25F);
+               this.glow.renderAtCenter(loc.x - spacing, loc.y);
+               this.glow.renderAtCenter(loc.x + spacing, loc.y);
+            }
+
+         }
+      }
+   }
+
+   public void createMapTooltip(TooltipMakerAPI tooltip, boolean expanded) {
+      String post = "";
+      Color color = this.entity.getFaction().getBaseUIColor();
+      Color postColor = color;
+      if (this.entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerThemeGenerator.BladeBreakerSystemType.DESTROYED.getBeaconFlag())) {
+         post = " - Low";
+         postColor = Misc.getPositiveHighlightColor();
+      } else if (this.entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerThemeGenerator.BladeBreakerSystemType.SUPPRESSED.getBeaconFlag())) {
+         post = " - Medium";
+         postColor = Misc.getHighlightColor();
+      } else if (this.entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerThemeGenerator.BladeBreakerSystemType.RESURGENT.getBeaconFlag())) {
+         post = " - High";
+         postColor = Misc.getNegativeHighlightColor();
+      }
+
+      tooltip.addPara(this.entity.getName() + post, 0.0F, color, postColor, new String[]{post.replaceFirst(" - ", "")});
+   }
+
+   public boolean hasCustomMapTooltip() {
+      return true;
+   }
+
+   public void appendToCampaignTooltip(TooltipMakerAPI tooltip, VisibilityLevel level) {
+      if (level == VisibilityLevel.COMPOSITION_AND_FACTION_DETAILS || level == VisibilityLevel.COMPOSITION_DETAILS) {
+         String post = "";
+         Color color = Misc.getTextColor();
+         Color postColor = color;
+         if (this.entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerThemeGenerator.BladeBreakerSystemType.DESTROYED.getBeaconFlag())) {
+            post = "low";
+            postColor = Misc.getPositiveHighlightColor();
+         } else if (this.entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerThemeGenerator.BladeBreakerSystemType.SUPPRESSED.getBeaconFlag())) {
+            post = "medium";
+            postColor = Misc.getHighlightColor();
+         } else if (this.entity.getMemoryWithoutUpdate().getBoolean(BladeBreakerThemeGenerator.BladeBreakerSystemType.RESURGENT.getBeaconFlag())) {
+            post = "high";
+            postColor = Misc.getNegativeHighlightColor();
+         }
+
+         if (!post.isEmpty()) {
+            tooltip.setParaFontDefault();
+            tooltip.addPara("    - Danger level: " + post, 10.0F, color, postColor, new String[]{post});
+         }
+      }
+
+   }
 }
-
-
-
-
-
-

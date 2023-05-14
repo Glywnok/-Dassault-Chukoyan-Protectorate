@@ -1,149 +1,116 @@
 package data.campaign.fleets;
 
-import java.awt.Color;
-
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.PlanetAPI;
 import com.fs.starfarer.api.campaign.econ.CommoditySpecAPI;
 import com.fs.starfarer.api.impl.campaign.econ.impl.BaseIndustry;
-import com.fs.starfarer.api.impl.campaign.ids.Stats;
-import com.fs.starfarer.api.impl.campaign.ids.Strings;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-import data.campaign.ids.dcp_Factions;
-
-
+import java.awt.Color;
 
 public class dcp_DME_SigmaShield extends BaseIndustry {
+   public static float DEFENSE_BONUS = 4.0F;
+   public static float ALPHA_CORE_BONUS = 0.5F;
 
-	public static float DEFENSE_BONUS = 4f;
-	
-        @Override
-	public boolean isHidden() {
-		return !market.getFactionId().equals(dcp_Factions.BREAKERS);
-	}
-	
-	@Override
-	public boolean isFunctional() {
-		return super.isFunctional() && market.getFactionId().equals(dcp_Factions.BREAKERS);
-	}
-        
-	public void apply() {
-		super.apply(false);
-		
-		int size = 5;
-		applyIncomeAndUpkeep(size);
-		
-		float bonus = DEFENSE_BONUS;
-		market.getStats().getDynamic().getMod(Stats.GROUND_DEFENSES_MOD)
-						.modifyMult(getModId(), 1f + bonus, getNameForModifier());
-		
-		if (isFunctional()) {
-			applyVisuals(market.getPlanetEntity());
-		} else {
-			unapply();
-		}
-	}
-	
-	public static void applyVisuals(PlanetAPI planet) {
-		if (planet == null) return;
-		planet.getSpec().setShieldTexture(Global.getSettings().getSpriteName("industry", "dcp_shield_texture"));
-		//planet.getSpec().setShieldThickness(0.07f);
-		//planet.getSpec().setShieldColor(new Color(255,0,0,255));
-		planet.getSpec().setShieldThickness(0.06f);
-		planet.getSpec().setShieldColor(new Color(255,255,255,100));
-		planet.applySpecChanges();
-	}
-	
-	public static void unapplyVisuals(PlanetAPI planet) {
-		if (planet == null) return;
-		planet.getSpec().setShieldTexture(null);
-		planet.getSpec().setShieldThickness(0f);
-		planet.getSpec().setShieldColor(null);
-		planet.applySpecChanges();
-	}
+   public boolean isHidden() {
+      return !this.market.getFactionId().equals("blade_breakers");
+   }
 
-	
-	@Override
-	public void unapply() {
-		super.unapply();
-		
-		unapplyVisuals(market.getPlanetEntity());
-		
-		market.getStats().getDynamic().getMod(Stats.GROUND_DEFENSES_MOD).unmodifyMult(getModId());
-	}
+   public boolean isFunctional() {
+      return super.isFunctional() && this.market.getFactionId().equals("blade_breakers");
+   }
 
-	@Override
-	public boolean isAvailableToBuild() {
-		return false;
-	}
-	
-	public boolean showWhenUnavailable() {
-		return Global.getSector().getPlayerFaction().knowsIndustry(getId());
-	}
+   public void apply() {
+      super.apply(false);
+      int size = 5;
+      this.applyIncomeAndUpkeep((float)size);
+      float bonus = DEFENSE_BONUS;
+      this.market.getStats().getDynamic().getMod("ground_defenses_mod").modifyMult(this.getModId(), 1.0F + bonus, this.getNameForModifier());
+      if (this.isFunctional()) {
+         applyVisuals(this.market.getPlanetEntity());
+      } else {
+         this.unapply();
+      }
 
-	protected boolean hasPostDemandSection(boolean hasDemand, IndustryTooltipMode mode) {
-		return mode != IndustryTooltipMode.NORMAL || isFunctional();
-	}
-	
-	@Override
-	protected void addPostDemandSection(TooltipMakerAPI tooltip, boolean hasDemand, IndustryTooltipMode mode) {
-		if (mode != IndustryTooltipMode.NORMAL || isFunctional()) {
-			
-			float bonus = DEFENSE_BONUS;
-			addGroundDefensesImpactSection(tooltip, bonus, (String[])null);
-		}
-	}
-        
-        @Override
-	protected int getBaseStabilityMod() {
-		return 5;
-	}
-	
-	public static float ALPHA_CORE_BONUS = 0.5f;
-	@Override
-	protected void applyAlphaCoreModifiers() {
-		market.getStats().getDynamic().getMod(Stats.GROUND_DEFENSES_MOD).modifyMult(
-				getModId(1), 1f + ALPHA_CORE_BONUS, "Alpha core (" + getNameForModifier() + ")");
-	}
-	
-	@Override
-	protected void applyNoAICoreModifiers() {
-		market.getStats().getDynamic().getMod(Stats.GROUND_DEFENSES_MOD).unmodifyMult(getModId(1));
-	}
-	
-	@Override
-	protected void applyAlphaCoreSupplyAndDemandModifiers() {
-		demandReduction.modifyFlat(getModId(0), DEMAND_REDUCTION, "Alpha core");
-	}
-	
-	protected void addAlphaCoreDescription(TooltipMakerAPI tooltip, AICoreDescriptionMode mode) {
-		float opad = 10f;
-		Color highlight = Misc.getHighlightColor();
-		
-		String pre = "Alpha-level AI core currently assigned. ";
-		if (mode == AICoreDescriptionMode.MANAGE_CORE_DIALOG_LIST || mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
-			pre = "Alpha-level AI core. ";
-		}
-		float a = ALPHA_CORE_BONUS;
-		//String str = Strings.X + (int)Math.round(a * 100f) + "%";
-		String str = Strings.X + (1f + a) + "";
-		
-		if (mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
-			CommoditySpecAPI coreSpec = Global.getSettings().getCommoditySpec(aiCoreId);
-			TooltipMakerAPI text = tooltip.beginImageWithText(coreSpec.getIconName(), 48);
-			text.addPara(pre + "Reduces upkeep cost by %s. Reduces demand by %s unit. " +
-					"Increases ground defenses by %s.", 0f, highlight,
-					"" + (int)((1f - UPKEEP_MULT) * 100f) + "%", "" + DEMAND_REDUCTION,
-					str);
-			tooltip.addImageWithText(opad);
-			return;
-		}
-		
-		tooltip.addPara(pre + "Reduces upkeep cost by %s. Reduces demand by %s unit. " +
-				"Increases ground defenses by %s.", opad, highlight,
-				"" + (int)((1f - UPKEEP_MULT) * 100f) + "%", "" + DEMAND_REDUCTION,
-				str);
-		
-	}
+   }
+
+   public static void applyVisuals(PlanetAPI planet) {
+      if (planet != null) {
+         planet.getSpec().setShieldTexture(Global.getSettings().getSpriteName("industry", "istl_shield_texture"));
+         planet.getSpec().setShieldThickness(0.06F);
+         planet.getSpec().setShieldColor(new Color(255, 255, 255, 100));
+         planet.applySpecChanges();
+      }
+   }
+
+   public static void unapplyVisuals(PlanetAPI planet) {
+      if (planet != null) {
+         planet.getSpec().setShieldTexture((String)null);
+         planet.getSpec().setShieldThickness(0.0F);
+         planet.getSpec().setShieldColor((Color)null);
+         planet.applySpecChanges();
+      }
+   }
+
+   public void unapply() {
+      super.unapply();
+      unapplyVisuals(this.market.getPlanetEntity());
+      this.market.getStats().getDynamic().getMod("ground_defenses_mod").unmodifyMult(this.getModId());
+   }
+
+   public boolean isAvailableToBuild() {
+      return false;
+   }
+
+   public boolean showWhenUnavailable() {
+      return Global.getSector().getPlayerFaction().knowsIndustry(this.getId());
+   }
+
+   protected boolean hasPostDemandSection(boolean hasDemand, IndustryTooltipMode mode) {
+      return mode != IndustryTooltipMode.NORMAL || this.isFunctional();
+   }
+
+   protected void addPostDemandSection(TooltipMakerAPI tooltip, boolean hasDemand, IndustryTooltipMode mode) {
+      if (mode != IndustryTooltipMode.NORMAL || this.isFunctional()) {
+         float bonus = DEFENSE_BONUS;
+         this.addGroundDefensesImpactSection(tooltip, bonus, (String[])null);
+      }
+
+   }
+
+   protected int getBaseStabilityMod() {
+      return 5;
+   }
+
+   protected void applyAlphaCoreModifiers() {
+      this.market.getStats().getDynamic().getMod("ground_defenses_mod").modifyMult(this.getModId(1), 1.0F + ALPHA_CORE_BONUS, "Alpha core (" + this.getNameForModifier() + ")");
+   }
+
+   protected void applyNoAICoreModifiers() {
+      this.market.getStats().getDynamic().getMod("ground_defenses_mod").unmodifyMult(this.getModId(1));
+   }
+
+   protected void applyAlphaCoreSupplyAndDemandModifiers() {
+      this.demandReduction.modifyFlat(this.getModId(0), (float)DEMAND_REDUCTION, "Alpha core");
+   }
+
+   protected void addAlphaCoreDescription(TooltipMakerAPI tooltip, AICoreDescriptionMode mode) {
+      float opad = 10.0F;
+      Color highlight = Misc.getHighlightColor();
+      String pre = "Alpha-level AI core currently assigned. ";
+      if (mode == AICoreDescriptionMode.MANAGE_CORE_DIALOG_LIST || mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
+         pre = "Alpha-level AI core. ";
+      }
+
+      float a = ALPHA_CORE_BONUS;
+      String str = "×" + (1.0F + a) + "";
+      if (mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
+         CommoditySpecAPI coreSpec = Global.getSettings().getCommoditySpec(this.aiCoreId);
+         TooltipMakerAPI text = tooltip.beginImageWithText(coreSpec.getIconName(), 48.0F);
+         text.addPara(pre + "Reduces upkeep cost by %s. Reduces demand by %s unit. Increases ground defenses by %s.", 0.0F, highlight, new String[]{"" + (int)((1.0F - UPKEEP_MULT) * 100.0F) + "%", "" + DEMAND_REDUCTION, str});
+         tooltip.addImageWithText(opad);
+      } else {
+         tooltip.addPara(pre + "Reduces upkeep cost by %s. Reduces demand by %s unit. Increases ground defenses by %s.", opad, highlight, new String[]{"" + (int)((1.0F - UPKEEP_MULT) * 100.0F) + "%", "" + DEMAND_REDUCTION, str});
+      }
+   }
 }

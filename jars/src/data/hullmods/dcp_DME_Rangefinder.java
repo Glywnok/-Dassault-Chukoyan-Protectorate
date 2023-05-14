@@ -6,33 +6,33 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import java.util.HashMap;
 import java.util.Map;
 
-public class dcp_DME_Rangefinder extends BaseHullMod
-{
-    private static Map mag = new HashMap(); //
-    static {
-	mag.put(HullSize.FIGHTER, 0f);
-	mag.put(HullSize.FRIGATE, 0f);
-	mag.put(HullSize.DESTROYER, 100f);
-	mag.put(HullSize.CRUISER, 200f);
-	mag.put(HullSize.CAPITAL_SHIP, 200f);
-    }
-    
-    public static final float AUTOFIRE_BONUS = 60f;    
-    
-    @Override
-    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id)
-    {
-    stats.getAutofireAimAccuracy().modifyFlat(id, AUTOFIRE_BONUS * 0.01f);
-    //stats.getWeaponRangeThreshold().modifyFlat(id, (Float) mag.get(hullSize)); // increase range threshold.
-    }
+public class dcp_DME_Rangefinder extends BaseHullMod {
+   private static Map mag = new HashMap();
+   public static final float AUTOFIRE_BONUS = 60.0F;
 
-	public String getDescriptionParam(int index, HullSize hullSize) {
-		if (index == 0) return "" + (int) AUTOFIRE_BONUS + "%";
-                
-                if (index == 1) return "" + ((Float) mag.get(HullSize.FRIGATE)).intValue();
-                if (index == 2) return "" + ((Float) mag.get(HullSize.DESTROYER)).intValue();
-                if (index == 3) return "" + ((Float) mag.get(HullSize.CRUISER)).intValue();
-                if (index == 4) return "" + ((Float) mag.get(HullSize.CAPITAL_SHIP)).intValue();
-                return null;
-	}
+   public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
+      stats.getAutofireAimAccuracy().modifyFlat(id, 0.59999996F);
+   }
+
+   public String getDescriptionParam(int index, HullSize hullSize) {
+      if (index == 0) {
+         return "60%";
+      } else if (index == 1) {
+         return "" + ((Float)mag.get(HullSize.FRIGATE)).intValue();
+      } else if (index == 2) {
+         return "" + ((Float)mag.get(HullSize.DESTROYER)).intValue();
+      } else if (index == 3) {
+         return "" + ((Float)mag.get(HullSize.CRUISER)).intValue();
+      } else {
+         return index == 4 ? "" + ((Float)mag.get(HullSize.CAPITAL_SHIP)).intValue() : null;
+      }
+   }
+
+   static {
+      mag.put(HullSize.FIGHTER, 0.0F);
+      mag.put(HullSize.FRIGATE, 0.0F);
+      mag.put(HullSize.DESTROYER, 100.0F);
+      mag.put(HullSize.CRUISER, 200.0F);
+      mag.put(HullSize.CAPITAL_SHIP, 200.0F);
+   }
 }

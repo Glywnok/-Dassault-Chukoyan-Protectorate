@@ -1,7 +1,5 @@
 package data.campaign.procgen.themes;
 
-import java.util.Random;
-
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
 import com.fs.starfarer.api.campaign.LocationAPI;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
@@ -10,80 +8,60 @@ import com.fs.starfarer.api.campaign.CampaignEventListener.FleetDespawnReason;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetParamsV3;
 import com.fs.starfarer.api.impl.campaign.fleets.SourceBasedFleetManager;
-import com.fs.starfarer.api.impl.campaign.ids.Factions;
-import com.fs.starfarer.api.impl.campaign.ids.FleetTypes;
+import java.util.Random;
 
 public class BladeBreakerStationFleetManager extends SourceBasedFleetManager {
+   protected int minPts;
+   protected int maxPts;
+   protected int totalLost;
 
-	protected int minPts;
-	protected int maxPts;
-	protected int totalLost;
+   public BladeBreakerStationFleetManager(SectorEntityToken source, float thresholdLY, int minFleets, int maxFleets, float respawnDelay, int minPts, int maxPts) {
+      super(source, thresholdLY, minFleets, maxFleets, respawnDelay);
+      this.minPts = minPts;
+      this.maxPts = maxPts;
+   }
 
-	public BladeBreakerStationFleetManager(SectorEntityToken source, float thresholdLY, int minFleets, int maxFleets, float respawnDelay, 
-									  int minPts, int maxPts) {
-		super(source, thresholdLY, minFleets, maxFleets, respawnDelay);
-		this.minPts = minPts;
-		this.maxPts = maxPts;
-	}
-	
-	@Override
-	protected CampaignFleetAPI spawnFleet() {
-		Random random = new Random();
-		
-		int combatPoints = minPts + random.nextInt(maxPts - minPts + 1);
-		
-		int bonus = totalLost * 4;
-		if (bonus > maxPts) bonus = maxPts;
-		
-		combatPoints += bonus;
-		
-		String type = FleetTypes.PATROL_SMALL;
-		if (combatPoints > 8) type = FleetTypes.PATROL_MEDIUM;
-		if (combatPoints > 16) type = FleetTypes.PATROL_LARGE;
-		
-		combatPoints *= 8f;
-		
-		FleetParamsV3 params = new FleetParamsV3(
-				source.getMarket(),
-				source.getLocationInHyperspace(),
-				"blade_breakers",
-				1f,
-				type,
-				combatPoints, // combatPts
-				0f, // freighterPts 
-				0f, // tankerPts
-				0f, // transportPts
-				0f, // linerPts
-				0f, // utilityPts
-				0f // qualityMod
-		);
-		params.officerNumberBonus = 10;
-		params.random = random;
-		
-		CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
-		if (fleet == null) return null;;
-		
-		LocationAPI location = source.getContainingLocation();
-		location.addEntity(fleet);
-		
-		BladeBreakerSeededFleetManager.initBladeBreakerFleetProperties(random, fleet, false);
-		
-		fleet.setLocation(source.getLocation().x, source.getLocation().y);
-		fleet.setFacing(random.nextFloat() * 360f);
-		
-		fleet.addScript(new BladeBreakerAssignmentAI(fleet, (StarSystemAPI) source.getContainingLocation(), source));
-		
-		return fleet;
-	}
+   protected CampaignFleetAPI spawnFleet() {
+      Random random = new Random();
+      int combatPoints = this.minPts + random.nextInt(this.maxPts - this.minPts + 1);
+      int bonus = this.totalLost * 4;
+      if (bonus > this.maxPts) {
+         bonus = this.maxPts;
+      }
 
-	
-	@Override
-	public void reportFleetDespawnedToListener(CampaignFleetAPI fleet, FleetDespawnReason reason, Object param) {
-		super.reportFleetDespawnedToListener(fleet, reason, param);
-		if (reason == FleetDespawnReason.DESTROYED_BY_BATTLE) {
-			totalLost++;
-		}
-	}
+      combatPoints += bonus;
+      String type = "patrolSmall";
+      if (combatPoints > 8) {
+         type = "patrolMedium";
+      }
 
-	
+      if (combatPoints > 16) {
+         type = "patrolLarge";
+      }
+
+      combatPoints = (int)((float)combatPoints * 8.0F);
+      FleetParamsV3 params = new FleetParamsV3(this.source.getMarket(), this.source.getLocationInHyperspace(), "blade_breakers", 1.0F, type, (float)combatPoints, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F);
+      params.officerNumberBonus = 10;
+      params.random = random;
+      CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
+      if (fleet == null) {
+         return null;
+      } else {
+         LocationAPI location = this.source.getContainingLocation();
+         location.addEntity(fleet);
+         BladeBreakerSeededFleetManager.initBladeBreakerFleetProperties(random, fleet, false);
+         fleet.setLocation(this.source.getLocation().x, this.source.getLocation().y);
+         fleet.setFacing(random.nextFloat() * 360.0F);
+         fleet.addScript(new BladeBreakerAssignmentAI(fleet, (StarSystemAPI)this.source.getContainingLocation(), this.source));
+         return fleet;
+      }
+   }
+
+   public void reportFleetDespawnedToListener(CampaignFleetAPI fleet, FleetDespawnReason reason, Object param) {
+      super.reportFleetDespawnedToListener(fleet, reason, param);
+      if (reason == FleetDespawnReason.DESTROYED_BY_BATTLE) {
+         ++this.totalLost;
+      }
+
+   }
 }

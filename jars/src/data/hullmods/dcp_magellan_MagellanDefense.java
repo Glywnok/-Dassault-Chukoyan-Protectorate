@@ -1,114 +1,110 @@
 package data.hullmods;
 
-import com.fs.starfarer.api.ui.LabelAPI;
+import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.combat.BaseHullMod;
+import com.fs.starfarer.api.combat.MutableShipStatsAPI;
+import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.ui.Alignment;
+import com.fs.starfarer.api.ui.LabelAPI;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 import data.scripts.DMEUtils;
-import com.fs.starfarer.api.combat.MutableShipStatsAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.Global;
 import java.awt.Color;
-import com.fs.starfarer.api.combat.BaseHullMod;
 
-public class dcp_magellan_MagellanDefense extends BaseHullMod
-{
-    public static final Color ZERO_FLUX_RING;
-    public static final Color ZERO_FLUX_INNER;
-    public static final Color FULL_FLUX_RING;
-    public static final Color FULL_FLUX_INNER;
-    public static final float PROJ_DAMAGE_MULT = 0.15f;
-    public static final float BEAM_DAMAGE_MULT = 0.2f;
-    public static final float FRAG_DAMAGE_MULT = 0.25f;
-    public static final float PROJ_DAMAGE_MULT_HS = 0.05f;
-    public static final float BEAM_DAMAGE_MULT_HS = 0.5f;
-    public static final float OVERLOAD_DUR_MULT = 1.5f;
-    public static final float SHIELD_DIE_CHANCE = 0.03f;
-    public static final float SHIELD_DIE_FLUXLEVEL = 0.8f;
+public class dcp_magellan_MagellanDefense extends BaseHullMod {
+   public static final Color ZERO_FLUX_RING = new Color(255, 255, 225, 255);
+   public static final Color ZERO_FLUX_INNER = new Color(125, 125, 100, 75);
+   public static final Color FULL_FLUX_RING = new Color(255, 240, 225, 255);
+   public static final Color FULL_FLUX_INNER = new Color(255, 90, 75, 75);
+   public static final float PROJ_DAMAGE_MULT = 0.15F;
+   public static final float BEAM_DAMAGE_MULT = 0.2F;
+   public static final float FRAG_DAMAGE_MULT = 0.25F;
+   public static final float PROJ_DAMAGE_MULT_HS = 0.05F;
+   public static final float BEAM_DAMAGE_MULT_HS = 0.5F;
+   public static final float OVERLOAD_DUR_MULT = 1.5F;
+   public static final float SHIELD_DIE_CHANCE = 0.03F;
+   public static final float SHIELD_DIE_FLUXLEVEL = 0.8F;
 
-    public int getDisplaySortOrder() {
-        return 4;
-    }
+   public int getDisplaySortOrder() {
+      return 4;
+   }
 
-    public int getDisplayCategoryIndex() {
-        return 3;
-    }
+   public int getDisplayCategoryIndex() {
+      return 3;
+   }
 
-    private String getString(final String key) {
-        return Global.getSettings().getString("Hullmod", "magellan_" + key);
-    }
+   private String getString(String key) {
+      return Global.getSettings().getString("Hullmod", "magellan_" + key);
+   }
 
-    public void applyEffectsBeforeShipCreation(final ShipAPI.HullSize hullSize, final MutableShipStatsAPI stats, final String id) {
-        if (stats.getVariant().hasHullMod("hardenedshieldemitter")) {
-            stats.getProjectileShieldDamageTakenMult().modifyMult(id, 0.95f);
-            stats.getBeamShieldDamageTakenMult().modifyMult(id, 1.5f);
-            stats.getOverloadTimeMod().modifyMult(id, 1.5f);
-            stats.getShieldMalfunctionChance().modifyFlat(id, 0.03f);
-            stats.getShieldMalfunctionFluxLevel().modifyFlat(id, 0.8f);
-        }
-        else {
-            stats.getProjectileShieldDamageTakenMult().modifyMult(id, 0.85f);
-            stats.getBeamShieldDamageTakenMult().modifyMult(id, 1.2f);
-        }
-        stats.getFragmentationDamageTakenMult().modifyMult(id, 0.75f);
-    }
+   public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
+      if (stats.getVariant().hasHullMod("hardenedshieldemitter")) {
+         stats.getProjectileShieldDamageTakenMult().modifyMult(id, 0.95F);
+         stats.getBeamShieldDamageTakenMult().modifyMult(id, 1.5F);
+         stats.getOverloadTimeMod().modifyMult(id, 1.5F);
+         stats.getShieldMalfunctionChance().modifyFlat(id, 0.03F);
+         stats.getShieldMalfunctionFluxLevel().modifyFlat(id, 0.8F);
+      } else {
+         stats.getProjectileShieldDamageTakenMult().modifyMult(id, 0.85F);
+         stats.getBeamShieldDamageTakenMult().modifyMult(id, 1.2F);
+      }
 
-    public void advanceInCombat(final ShipAPI ship, final float amount) {
-        if (ship.getShield() != null) {
-            final float hardflux_track = ship.getHardFluxLevel();
-            float outputColorLerp = 0.0f;
-            if (hardflux_track < 0.5f) {
-                outputColorLerp = 0.0f;
-            }
-            else if (hardflux_track >= 0.5f) {
-                outputColorLerp = DMEUtils.lerp(0.0f, hardflux_track, hardflux_track);
-            }
-            final Color color1 = Misc.interpolateColor(dcp_magellan_MagellanDefense.ZERO_FLUX_RING, dcp_magellan_MagellanDefense.FULL_FLUX_RING, Math.min(outputColorLerp, 1.0f));
-            final Color color2 = Misc.interpolateColor(dcp_magellan_MagellanDefense.ZERO_FLUX_INNER, dcp_magellan_MagellanDefense.FULL_FLUX_INNER, Math.min(outputColorLerp, 1.0f));
-            ship.getShield().setRingColor(color1);
-            ship.getShield().setInnerColor(color2);
-        }
-    }
+      stats.getFragmentationDamageTakenMult().modifyMult(id, 0.75F);
+   }
 
-    public void addPostDescriptionSection(final TooltipMakerAPI tooltip, final ShipAPI.HullSize hullSize, final ShipAPI ship, final float width, final boolean isForModSpec) {
-        final float pad = 10.0f;
-        final float padS = 2.0f;
-        final Color h = Misc.getHighlightColor();
-        final Color neg = Misc.getNegativeHighlightColor();
-        final Color mag = dcp_magellan_hullmodUtils.getMagellanHLColor();
-        final Color magbg = dcp_magellan_hullmodUtils.getMagellanBGColor();
-        final Color quote = dcp_magellan_hullmodUtils.getQuoteColor();
-        final Color attrib = Misc.getGrayColor();
-        tooltip.addSectionHeading(this.getString("MagSpecialTitle"), mag, magbg, Alignment.MID, pad);
-        final TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/magellan_hullmod_defense.png", 40.0f);
-        text.addPara("- " + this.getString("DefenseSPDesc1"), padS, h, new String[] { "15%" });
-        text.addPara("- " + this.getString("DefenseSPDesc2"), padS, h, new String[] { "20%" });
-        text.addPara("- " + this.getString("DefenseSPDesc3"), padS, h, new String[] { "25%" });
-        tooltip.addImageWithText(pad);
-        tooltip.addPara(this.getString("MagSpecialCompatMalfunction") + " " + this.getString("DefenseMalfunctionHL"), neg, pad);
-        final LabelAPI label = tooltip.addPara(this.getString("DefenseQuote"), quote, pad);
-        label.italicize(0.12f);
-        tooltip.addPara("      " + this.getString("MagellanEmDash") + this.getString("DefenseAttrib"), attrib, padS);
-    }
+   public void advanceInCombat(ShipAPI ship, float amount) {
+      if (ship.getShield() != null) {
+         float hardflux_track = ship.getHardFluxLevel();
+         float outputColorLerp = 0.0F;
+         if (hardflux_track < 0.5F) {
+            outputColorLerp = 0.0F;
+         } else if (hardflux_track >= 0.5F) {
+            outputColorLerp = DMEUtils.lerp(0.0F, hardflux_track, hardflux_track);
+         }
 
-    public boolean isApplicableToShip(final ShipAPI ship) {
-        return !this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_exclusive_hullmod") && (ship.getVariant().hasHullMod("magellan_engineering") || ship.getVariant().hasHullMod("magellan_engineering_civ") || ship.getVariant().hasHullMod("magellan_blackcollarmod") || ship.getVariant().hasHullMod("magellan_startigermod") || ship.getVariant().hasHullMod("magellan_levellermod") || ship.getVariant().hasHullMod("magellan_herdmod") || ship.getVariant().hasHullMod("magellan_yellowtailmod")) && super.isApplicableToShip(ship);
-    }
+         Color color1 = Misc.interpolateColor(ZERO_FLUX_RING, FULL_FLUX_RING, Math.min(outputColorLerp, 1.0F));
+         Color color2 = Misc.interpolateColor(ZERO_FLUX_INNER, FULL_FLUX_INNER, Math.min(outputColorLerp, 1.0F));
+         ship.getShield().setRingColor(color1);
+         ship.getShield().setInnerColor(color2);
+      }
 
-    public String getUnapplicableReason(final ShipAPI ship) {
-        if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_exclusive_hullmod")) {
-            return this.getString("MagSpecialCompat1");
-        }
-        if (!ship.getVariant().hasHullMod("magellan_engineering") || !ship.getVariant().hasHullMod("magellan_engineering_civ") || !ship.getVariant().hasHullMod("magellan_blackcollarmod") || !ship.getVariant().hasHullMod("magellan_startigermod") || !ship.getVariant().hasHullMod("magellan_levellermod") || !ship.getVariant().hasHullMod("magellan_herdmod") || !ship.getVariant().hasHullMod("magellan_yellowtailmod")) {
-            return this.getString("MagSpecialCompat2");
-        }
-        return super.getUnapplicableReason(ship);
-    }
+   }
 
-    static {
-        ZERO_FLUX_RING = new Color(255, 255, 225, 255);
-        ZERO_FLUX_INNER = new Color(125, 125, 100, 75);
-        FULL_FLUX_RING = new Color(255, 240, 225, 255);
-        FULL_FLUX_INNER = new Color(255, 90, 75, 75);
-    }
+   public void addPostDescriptionSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
+      float pad = 10.0F;
+      float padS = 2.0F;
+      Color h = Misc.getHighlightColor();
+      Color neg = Misc.getNegativeHighlightColor();
+      Color mag = magellan_hullmodUtils.getMagellanHLColor();
+      Color magbg = magellan_hullmodUtils.getMagellanBGColor();
+      Color quote = magellan_hullmodUtils.getQuoteColor();
+      Color attrib = Misc.getGrayColor();
+      tooltip.addSectionHeading(this.getString("MagSpecialTitle"), mag, magbg, Alignment.MID, pad);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/magellan_hullmod_defense.png", 40.0F);
+      text.addPara("- " + this.getString("DefenseSPDesc1"), padS, h, new String[]{"15%"});
+      text.addPara("- " + this.getString("DefenseSPDesc2"), padS, h, new String[]{"20%"});
+      text.addPara("- " + this.getString("DefenseSPDesc3"), padS, h, new String[]{"25%"});
+      tooltip.addImageWithText(pad);
+      tooltip.addPara(this.getString("MagSpecialCompatMalfunction") + " " + this.getString("DefenseMalfunctionHL"), neg, pad);
+      LabelAPI label = tooltip.addPara(this.getString("DefenseQuote"), quote, pad);
+      label.italicize(0.12F);
+      tooltip.addPara("      " + this.getString("MagellanEmDash") + this.getString("DefenseAttrib"), attrib, padS);
+   }
+
+   public boolean isApplicableToShip(ShipAPI ship) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_exclusive_hullmod")) {
+         return false;
+      } else {
+         return (ship.getVariant().hasHullMod("magellan_engineering") || ship.getVariant().hasHullMod("magellan_engineering_civ") || ship.getVariant().hasHullMod("magellan_blackcollarmod") || ship.getVariant().hasHullMod("magellan_startigermod") || ship.getVariant().hasHullMod("magellan_levellermod") || ship.getVariant().hasHullMod("magellan_herdmod") || ship.getVariant().hasHullMod("magellan_yellowtailmod")) && super.isApplicableToShip(ship);
+      }
+   }
+
+   public String getUnapplicableReason(ShipAPI ship) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_exclusive_hullmod")) {
+         return this.getString("MagSpecialCompat1");
+      } else {
+         return ship.getVariant().hasHullMod("magellan_engineering") && ship.getVariant().hasHullMod("magellan_engineering_civ") && ship.getVariant().hasHullMod("magellan_blackcollarmod") && ship.getVariant().hasHullMod("magellan_startigermod") && ship.getVariant().hasHullMod("magellan_levellermod") && ship.getVariant().hasHullMod("magellan_herdmod") && ship.getVariant().hasHullMod("magellan_yellowtailmod") ? super.getUnapplicableReason(ship) : this.getString("MagSpecialCompat2");
+      }
+   }
 }

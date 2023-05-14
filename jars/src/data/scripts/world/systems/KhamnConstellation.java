@@ -1,8 +1,8 @@
 package data.scripts.world.systems;
 
-import java.awt.Color;
-
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.campaign.CampaignFleetAPI;
+import com.fs.starfarer.api.campaign.FleetAssignment;
 import com.fs.starfarer.api.campaign.JumpPointAPI;
 import com.fs.starfarer.api.campaign.LocationAPI;
 import com.fs.starfarer.api.campaign.PlanetAPI;
@@ -10,694 +10,512 @@ import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
-import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
-import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin;
-import com.fs.starfarer.api.impl.campaign.ids.Conditions;
-import com.fs.starfarer.api.impl.campaign.ids.Entities;
-import com.fs.starfarer.api.impl.campaign.ids.Factions;
-import com.fs.starfarer.api.impl.campaign.ids.Industries;
-import com.fs.starfarer.api.impl.campaign.ids.Items;
-import com.fs.starfarer.api.impl.campaign.ids.Ranks;
-import com.fs.starfarer.api.impl.campaign.ids.Skills;
-import com.fs.starfarer.api.impl.campaign.ids.StarTypes;
-import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
-import com.fs.starfarer.api.impl.campaign.ids.Terrain;
+import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin.DerelictShipData;
+import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin.DerelictType;
 import com.fs.starfarer.api.impl.campaign.procgen.Constellation;
 import com.fs.starfarer.api.impl.campaign.procgen.NameGenData;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
-import com.fs.starfarer.api.impl.campaign.procgen.ProcgenUsedNames;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
+import com.fs.starfarer.api.impl.campaign.procgen.Constellation.ConstellationType;
+import com.fs.starfarer.api.impl.campaign.procgen.ProcgenUsedNames.NamePick;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner;
-import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
-import com.fs.starfarer.api.impl.campaign.submarkets.StoragePlugin;
-import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner.ShipRecoverySpecialCreator;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner.SpecialCreationContext;
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial.PerShipData;
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial.ShipCondition;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
+import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin.AsteroidFieldParams;
+import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin.DebrisFieldParams;
+import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin.DebrisFieldSource;
 import com.fs.starfarer.api.util.Misc;
+import com.fs.starfarer.api.util.WeightedRandomPicker;
+import data.scripts.util.MagicCampaign;
 import data.scripts.world.AddMarketplace;
-import static java.lang.Math.cos;
-import static java.lang.Math.sin;
-import static java.lang.Math.sqrt;
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
 import java.util.Random;
 
 public class KhamnConstellation {
+   Random characterSaveSeed;
+   Random random;
+   float selector;
+   float spawnXradius;
+   float spawnYradius;
+   float spawnXoffset;
+   float spawnYoffset;
+   float selectionXradiusSq;
+   float selectionYradiusSq;
+   float selectionAngle;
+   public float hsLocationX;
+   public float hsLocationY;
+   float A1Xoffset;
+   float A1Yoffset;
+   float A2Xoffset;
+   float A2Yoffset;
+   float A3Xoffset;
+   float A3Yoffset;
+   float A4Xoffset;
+   float A4Yoffset;
+   float A5Xoffset;
+   float A5Yoffset;
+   String[] strings;
+   int nameSelector;
+   public String StarName;
+   public static float radius_junkyard = 2400.0F;
+   public static float radius_junk_outer = 6000.0F;
+   private static final String GOODIE_TAG = "magellan_unique_ship";
 
-    // used to keep the random location consistent between seeds, helpful for save transfer
-    Random characterSaveSeed = StarSystemGenerator.random;
-    Random random = new Random(characterSaveSeed.nextLong());
-    // to be honest the double random should be overkill, yet it seems to make the distribution more "random"  
-    // I would blame that normal generation seems to use about 10% of the possible seeds
-    float selector = random.nextFloat();
+   public KhamnConstellation() {
+      this.characterSaveSeed = StarSystemGenerator.random;
+      this.random = new Random(this.characterSaveSeed.nextLong());
+      this.selector = this.random.nextFloat();
+      this.spawnXradius = 3000.0F;
+      this.spawnYradius = 2000.0F;
+      this.spawnXoffset = -4800.0F;
+      this.spawnYoffset = 32000.0F;
+      this.selectionXradiusSq = this.selector * this.spawnXradius * this.spawnXradius;
+      this.selectionYradiusSq = this.selector * this.spawnYradius * this.spawnYradius;
+      this.selectionAngle = this.selector * 360.0F;
+      this.hsLocationX = (float)(Math.sqrt((double)this.selectionXradiusSq) * Math.cos((double)this.selectionAngle));
+      this.hsLocationY = (float)(Math.sqrt((double)this.selectionYradiusSq) * Math.sin((double)this.selectionAngle));
+      this.A1Xoffset = -500.0F + this.selector * 1000.0F;
+      this.A1Yoffset = 1000.0F + this.selector * -500.0F;
+      this.A2Xoffset = -2000.0F + this.selector * -1000.0F;
+      this.A2Yoffset = -1000.0F + this.selector * -2000.0F;
+      this.A3Xoffset = 1500.0F + this.selector * 500.0F;
+      this.A3Yoffset = 2000.0F + this.selector * 1000.0F;
+      this.A4Xoffset = 2000.0F + this.selector * 1000.0F;
+      this.A4Yoffset = -1000.0F + this.selector * -1000.0F;
+      this.A5Xoffset = 1500.0F + this.selector * 1000.0F;
+      this.A5Yoffset = 4000.0F + this.selector * 500.0F;
+      this.strings = new String[]{"Aixa", "Beilis", "Dorca", "Estar", "Orlo", "Pailsen", "Voscune"};
+      this.nameSelector = this.random.nextInt(this.strings.length);
+      this.StarName = this.strings[this.nameSelector];
+   }
 
-    // generates an elliptical area, from where a random coordinate is selected for system generation
-    // in this case the area is set to the sector's northwestern quadrant, instead of the whole sector
-    // this is in order to avoid finding this sytem becoming a "find a needle in a haystack" task, as the star's name will also be random
-    float spawnXradius = 3600f; // horizontal ellipse radius
-    float spawnYradius = 2000f; // vertical ellipse radius
-    float spawnXoffset = -4800f; // circular area X axis origin
-    float spawnYoffset = 32000f; // circular area Y axis origin
+   public void generate(SectorAPI sector) {
+      LocationAPI hyper = Global.getSector().getHyperspace();
+      StarAge magellan_constellation_Age = StarAge.ANY;
+      if (this.selector < 0.33F) {
+         magellan_constellation_Age = StarAge.YOUNG;
+      }
 
-    //values used to select a coordinate inside the ellipse
-    //use squared radii, otherwise the distribution will be clustered in the origin
-    float selectionXradiusSq = selector * spawnXradius * spawnXradius;
-    float selectionYradiusSq = selector * spawnYradius * spawnYradius;
-    float selectionAngle = selector * 360f;
+      if (this.selector >= 0.33F && this.selector < 0.66F) {
+         magellan_constellation_Age = StarAge.AVERAGE;
+      }
 
-    public float hsLocationX = (float) (sqrt(selectionXradiusSq) * cos(selectionAngle));
-    public float hsLocationY = (float) (sqrt(selectionYradiusSq) * sin(selectionAngle));
+      if (this.selector >= 0.66F) {
+         magellan_constellation_Age = StarAge.OLD;
+      }
 
-    float A1Xoffset = (float) (-500 + Math.random() * 1000f);
-    float A1Yoffset = (float) (1000 + Math.random() * -500f);
+      Constellation magellan_constellation_Khamn = new Constellation(ConstellationType.NORMAL, magellan_constellation_Age);
+      NameGenData data = new NameGenData("null", "null");
+      NamePick constname = new NamePick(data, this.strings[this.nameSelector], "null");
+      magellan_constellation_Khamn.setNamePick(constname);
+      StarSystemAPI system_khamn = sector.createStarSystem("Khamn");
+      StarSystemAPI system_karic = sector.createStarSystem("Karic");
+      StarSystemAPI system_two = sector.createStarSystem(this.StarName + " Secundus");
+      StarSystemAPI system_three = sector.createStarSystem(this.StarName + "'s Rose");
+      StarSystemAPI system_four = sector.createStarSystem(this.StarName + " Tertius");
+      magellan_constellation_Khamn.getSystems().add(sector.getStarSystem("Khamn"));
+      magellan_constellation_Khamn.getSystems().add(sector.getStarSystem("Karic"));
+      magellan_constellation_Khamn.getSystems().add(sector.getStarSystem(this.StarName + " Secundus"));
+      magellan_constellation_Khamn.getSystems().add(sector.getStarSystem(this.StarName + "'s Rose"));
+      magellan_constellation_Khamn.getSystems().add(sector.getStarSystem(this.StarName + " Tertius"));
+      sector.getStarSystem("Khamn").setConstellation(magellan_constellation_Khamn);
+      sector.getStarSystem("Karic").setConstellation(magellan_constellation_Khamn);
+      sector.getStarSystem(this.StarName + " Secundus").setConstellation(magellan_constellation_Khamn);
+      sector.getStarSystem(this.StarName + "'s Rose").setConstellation(magellan_constellation_Khamn);
+      sector.getStarSystem(this.StarName + " Tertius").setConstellation(magellan_constellation_Khamn);
+      system_khamn.setBackgroundTextureFilename("graphics/backgrounds/background1.jpg");
+      PlanetAPI khamn_star = system_khamn.initStar("khamn", "star_red_supergiant", 1000.0F, this.hsLocationX + this.spawnXoffset + this.A1Xoffset, this.hsLocationY + this.spawnYoffset + this.A1Yoffset, 600.0F);
+      system_khamn.setLightColor(new Color(255, 200, 200));
+      system_khamn.addTag("theme_core");
+      system_khamn.addTag("theme_core_populated");
+      system_khamn.addTag("theme_unsafe");
+      system_khamn.addTag("theme_hidden");
+      system_khamn.addTag("theme_magellan_system");
+      system_khamn.addTag("theme_magellan_homeworld");
+      PlanetAPI baphain = system_khamn.addPlanet("magellan_planet_baphain", khamn_star, "Baphain", "toxic", 270.0F, 75.0F, 1800.0F, 90.0F);
+      Misc.initConditionMarket(baphain);
+      baphain.getMarket().addCondition("very_hot");
+      baphain.getMarket().addCondition("low_gravity");
+      baphain.getMarket().addCondition("organics_trace");
+      baphain.getMemoryWithoutUpdate().set("$nex_do_not_colonize", true);
+      SectorEntityToken khamn_buoy = system_khamn.addCustomEntity("khamn_nav_buoy", "Khamn Nav Buoy", "nav_buoy", "magellan_protectorate");
+      khamn_buoy.setCircularOrbitPointingDown(system_khamn.getEntityById("khamn"), 90.0F, 1850.0F, 90.0F);
+      system_khamn.addRingBand(khamn_star, "misc", "rings_dust0", 256.0F, 1, Color.white, 256.0F, 2110.0F, 98.0F);
+      system_khamn.addRingBand(khamn_star, "misc", "rings_dust0", 256.0F, 2, Color.white, 256.0F, 2150.0F, 102.0F);
+      system_khamn.addAsteroidBelt(khamn_star, 120, 2130.0F, 300.0F, 200.0F, 300.0F, "asteroid_belt", "Baphain's Cry");
+      PlanetAPI pariya = system_khamn.addPlanet("magellan_planet_pariya", khamn_star, "Pariya", "barren", 150.0F, 60.0F, 2550.0F, 150.0F);
+      MarketAPI pariyaMarket = AddMarketplace.addMarketplace("magellan_protectorate", pariya, (ArrayList)null, "Pariya", 3, new ArrayList(Arrays.asList("hot", "low_gravity", "no_atmosphere", "outpost", "population_3")), new ArrayList(Arrays.asList("spaceport", "heavybatteries", "population")), new ArrayList(Arrays.asList("black_market", "open_market", "storage")), 0.3F);
+      pariyaMarket.addIndustry("fuelprod", new ArrayList(Arrays.asList("synchrotron")));
+      pariya.setCustomDescriptionId("planet_pariya");
+      PlanetAPI magella = system_khamn.addPlanet("magellan_planet_magella", khamn_star, "Magella", "gas_giant", 150.0F, 750.0F, 6400.0F, 270.0F);
+      magella.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "banded"));
+      magella.getSpec().setGlowColor(new Color(235, 38, 8, 145));
+      magella.getSpec().setUseReverseLightForGlow(true);
+      magella.getSpec().setAtmosphereThickness(0.5F);
+      magella.getSpec().setCloudRotation(15.0F);
+      magella.getSpec().setAtmosphereColor(new Color(138, 118, 255, 145));
+      magella.getSpec().setPitch(30.0F);
+      magella.getSpec().setTilt(15.0F);
+      magella.applySpecChanges();
+      magella.getMemoryWithoutUpdate().set("$nex_do_not_colonize", true);
+      Misc.initConditionMarket(magella);
+      magella.getMarket().addCondition("hot");
+      magella.getMarket().addCondition("extreme_weather");
+      magella.getMarket().addCondition("dense_atmosphere");
+      magella.getMarket().addCondition("high_gravity");
+      magella.getMarket().addCondition("volatiles_abundant");
+      magella.getMarket().addCondition("organics_trace");
+      magella.setCustomDescriptionId("planet_magella");
+      PlanetAPI innermoon = system_khamn.addPlanet("magellan_planet_eran", magella, "Eran", "lava", 210.0F, 50.0F, 1000.0F, 90.0F);
+      Misc.initConditionMarket(innermoon);
+      innermoon.getMarket().addCondition("extreme_tectonic_activity");
+      innermoon.getMarket().addCondition("no_atmosphere");
+      innermoon.getMarket().addCondition("very_hot");
+      innermoon.getMarket().addCondition("ore_abundant");
+      innermoon.getMarket().addCondition("rare_ore_sparse");
+      PlanetAPI jeshad = system_khamn.addPlanet("magellan_planet_jeshad", magella, "Jeshad", "arid", 30.0F, 120.0F, 1360.0F, 90.0F);
+      jeshad.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "asharu"));
+      jeshad.getSpec().setGlowColor(new Color(255, 160, 30, 255));
+      jeshad.getSpec().setUseReverseLightForGlow(true);
+      jeshad.getSpec().setPitch(-15.0F);
+      jeshad.getSpec().setTilt(20.0F);
+      jeshad.applySpecChanges();
+      jeshad.setInteractionImage("illustrations", "desert_moons_ruins");
+      MarketAPI jeshadMarket = AddMarketplace.addMarketplace("magellan_protectorate", jeshad, (ArrayList)null, "Jeshad", 8, new ArrayList(Arrays.asList("habitable", "extreme_weather", "farmland_poor", "ore_abundant", "rare_ore_sparse", "organics_common", "urbanized_polity", "dissident", "magellan_warrens", "population_8")), new ArrayList(Arrays.asList("starfortress", "megaport", "farming", "mining", "highcommand", "heavybatteries", "population")), new ArrayList(Arrays.asList("generic_military", "black_market", "open_market", "storage")), 0.3F);
+      jeshadMarket.addIndustry("heavyindustry", new ArrayList(Arrays.asList("corrupted_nanoforge")));
+      jeshad.setCustomDescriptionId("planet_jeshad");
+      PlanetAPI annore = system_khamn.addPlanet("magellan_planet_annore", magella, "Annore", "water", 360.0F * (float)Math.random(), 75.0F, 2100.0F, 105.0F);
+      annore.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "volturn"));
+      annore.getSpec().setGlowColor(new Color(215, 235, 255, 225));
+      annore.getSpec().setUseReverseLightForGlow(true);
+      annore.getSpec().setPitch(20.0F);
+      annore.applySpecChanges();
+      annore.setInteractionImage("illustrations", "urban00");
+      SectorEntityToken annoreOrbital = system_khamn.addCustomEntity("magellan_annore_orbital", "Annore Orbital", "station_side04", "magellan_protectorate");
+      annoreOrbital.setCircularOrbitPointingDown(system_khamn.getEntityById("magellan_planet_annore"), 360.0F * (float)Math.random(), 150.0F, 60.0F);
+      annoreOrbital.setInteractionImage("illustrations", "orbital");
+      AddMarketplace.addMarketplace("magellan_protectorate", annore, new ArrayList(Arrays.asList(annoreOrbital)), "Annore", 5, new ArrayList(Arrays.asList("habitable", "water_surface", "free_market", "regional_capital", "closed_immigration", "population_5")), new ArrayList(Arrays.asList("orbitalstation", "aquaculture", "spaceport", "waystation", "lightindustry", "refining", "magellan_startigerhq", "heavybatteries", "population")), new ArrayList(Arrays.asList("black_market", "open_market", "storage")), 0.3F);
+      annore.setCustomDescriptionId("planet_annore");
+      annoreOrbital.setCustomDescriptionId("station_annoreorbital");
+      system_khamn.addRingBand(magella, "misc", "rings_ice0", 256.0F, 1, Color.white, 256.0F, 3000.0F, 90.0F, "ring", "Magella Ring");
+      SectorEntityToken magellaL4 = system_khamn.addTerrain("asteroid_field", new AsteroidFieldParams(840.0F, 1080.0F, 35, 64, 7.0F, 21.0F, "Magella L4 Trojans"));
+      JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("khamn_inner_jump", "Khamn Bridge");
+      jumpPoint1.setCircularOrbit(system_khamn.getEntityById("khamn"), 210.0F, 6400.0F, 270.0F);
+      jumpPoint1.setRelatedPlanet(annore);
+      system_khamn.addEntity(jumpPoint1);
+      SectorEntityToken magellaL5 = system_khamn.addTerrain("asteroid_field", new AsteroidFieldParams(840.0F, 1080.0F, 35, 64, 7.0F, 21.0F, "Magella L5 Trojans"));
+      SectorEntityToken magella_l5_loc = system_khamn.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
+      magella_l5_loc.setCircularOrbitPointingDown(khamn_star, 90.0F, 6400.0F, 270.0F);
+      magellaL4.setCircularOrbit(khamn_star, 210.0F, 6400.0F, 270.0F);
+      magellaL5.setCircularOrbit(khamn_star, 90.0F, 6400.0F, 270.0F);
+      SectorEntityToken sporeStation = system_khamn.addCustomEntity("magellan_sporeship", "Crucible Base", "station_sporeship_derelict", "magellan_protectorate");
+      sporeStation.setCircularOrbitPointingDown(system_khamn.getEntityById("khamn"), 330.0F, 6400.0F, 270.0F);
+      sporeStation.setCustomDescriptionId("magellan_fleet_sporeship");
+      sporeStation.setInteractionImage("illustrations", "cargo_loading");
+      sporeStation.addTag("magellan_blackcollarBase");
+      SectorEntityToken magella_array = system_khamn.addCustomEntity("magella_sensor_array", "Magella Array", "sensor_array", "magellan_protectorate");
+      magella_array.setCircularOrbitPointingDown(system_khamn.getEntityById("khamn"), 150.0F, 9600.0F, 270.0F);
+      system_khamn.addAsteroidBelt(khamn_star, 100, 10750.0F, 500.0F, 290.0F, 310.0F, "asteroid_belt", "Khamn Belt");
+      system_khamn.addRingBand(khamn_star, "misc", "rings_dust0", 256.0F, 3, Color.white, 256.0F, 10700.0F, 275.0F, (String)null, (String)null);
+      system_khamn.addRingBand(khamn_star, "misc", "rings_dust0", 256.0F, 1, Color.white, 256.0F, 10800.0F, 245.0F, (String)null, (String)null);
+      SectorEntityToken obilot = system_khamn.addPlanet("magellan_planet_obilot", khamn_star, "Obilot", "ice_giant", 360.0F * (float)Math.random(), 250.0F, 12800.0F, 400.0F);
+      obilot.getMemoryWithoutUpdate().set("$nex_do_not_colonize", true);
+      PlanetAPI outermoon = system_khamn.addPlanet("magellan_planet_spera", obilot, "Spera", "cryovolcanic", 180.0F, 75.0F, 900.0F, 90.0F);
+      outermoon.setCustomDescriptionId("planet_spera");
+      Misc.initConditionMarket(outermoon);
+      outermoon.getMarket().addCondition("low_gravity");
+      outermoon.getMarket().addCondition("no_atmosphere");
+      outermoon.getMarket().addCondition("volatiles_abundant");
+      outermoon.getMarket().addCondition("ore_moderate");
+      outermoon.getMarket().addCondition("rare_ore_sparse");
+      outermoon.getMarket().addCondition("ruins_scattered");
+      SectorEntityToken pirStation = system_khamn.addCustomEntity("station_obilotbase", "Port Obilo", "station_side05", "pirates");
+      pirStation.setCircularOrbitWithSpin(system_khamn.getEntityById("magellan_planet_obilot"), 0.0F, 900.0F, 90.0F, 1.0F, 3.0F);
+      MarketAPI pirbaseMarket = AddMarketplace.addMarketplace("pirates", pirStation, (ArrayList)null, "Port Obilo", 3, new ArrayList(Arrays.asList("free_market", "stealth_minefields", "organized_crime", "population_3")), new ArrayList(Arrays.asList("orbitalstation", "heavybatteries", "spaceport", "population")), new ArrayList(Arrays.asList("black_market", "magellan_open_market", "storage")), 0.12F);
+      pirbaseMarket.addTag("magellan_indiemarket");
+      pirStation.setCustomDescriptionId("station_obilotbase");
+      CampaignFleetAPI herdfleet_portobilo = MagicCampaign.createFleet("Port Obilo Herd", "magellan_theherd", "scavengerLarge", "HS Now You Get The Horns", "magellan_herdcarrier_std", (PersonAPI)null, (Map)null, 240, "magellan_theherd", 0.75F, (SectorEntityToken)null, FleetAssignment.ORBIT_AGGRESSIVE, pirStation, false, true);
+      herdfleet_portobilo.setDiscoverable(false);
+      herdfleet_portobilo.getMemoryWithoutUpdate().set("$canOnlyBeEngagedWhenVisibleToPlayer", true);
+      herdfleet_portobilo.setFaction("pirates", true);
+      StarSystemGenerator.addOrbitingEntities(system_khamn, khamn_star, StarAge.AVERAGE, 3, 4, 14400.0F, 4, true);
+      system_khamn.autogenerateHyperspaceJumpPoints(true, true);
+      this.cleanup(system_khamn);
+      system_karic.setBackgroundTextureFilename("graphics/backgrounds/background1.jpg");
+      PlanetAPI karic_star = system_karic.initStar("karic", "star_white", 350.0F, this.hsLocationX + this.spawnXoffset + this.A4Xoffset, this.hsLocationY + this.spawnYoffset + this.A4Yoffset, 255.0F);
+      system_karic.setLightColor(new Color(225, 225, 245));
+      system_karic.addTag("theme_core");
+      system_karic.addTag("theme_core_populated");
+      system_karic.addTag("theme_unsafe");
+      system_karic.addTag("theme_hidden");
+      system_karic.addTag("theme_magellan_system");
+      StarSystemGenerator.addSystemwideNebula(system_karic, magellan_constellation_Age);
+      system_karic.addRingBand(karic_star, "misc", "rings_dust0", 256.0F, 3, Color.gray, 256.0F, 1400.0F, 90.0F, "ring", "Karic Dust Band");
+      PlanetAPI turan = system_karic.addPlanet("magellan_planet_turan", karic_star, "Turan", "barren-desert", 135.0F, 120.0F, 3600.0F, 150.0F);
+      SectorEntityToken turanPort = system_karic.addCustomEntity("magellan_station_turanport", "Turan Starport", "station_side03", "independent");
+      turanPort.setCircularOrbitPointingDown(system_karic.getEntityById("magellan_planet_turan"), 260.0F, 300.0F, 60.0F);
+      turanPort.setCustomDescriptionId("station_turanstarport");
+      SectorEntityToken meetpointTuran = system_karic.addCustomEntity("magellan_station_meetpoint", "Meetpoint Turan", "station_side04", "magellan_independentmkt");
+      meetpointTuran.setCircularOrbitPointingDown(system_karic.getEntityById("magellan_planet_turan"), 80.0F, 500.0F, 60.0F);
+      meetpointTuran.setCustomDescriptionId("station_meetpoint");
+      meetpointTuran.setInteractionImage("illustrations", "cargo_loading");
+      meetpointTuran.addTag("magellan_meetpointInt");
+      MarketAPI turanMarket = AddMarketplace.addMarketplace("independent", turan, new ArrayList(Arrays.asList(turanPort)), "Turan", 5, new ArrayList(Arrays.asList("thin_atmosphere", "meteor_impacts", "habitable", "farmland_rich", "free_market", "dissident", "population_5")), new ArrayList(Arrays.asList("orbitalstation_mid", "spaceport", "farming", "heavyindustry", "grounddefenses", "population")), new ArrayList(Arrays.asList("black_market", "magellan_open_market", "storage")), 0.3F);
+      turanMarket.addTag("magellan_indiemarket");
+      turan.setCustomDescriptionId("planet_turan");
+      JumpPointAPI jumpPoint2a = Global.getFactory().createJumpPoint("karic_innermost_jump", "Turan Bridge");
+      jumpPoint2a.setCircularOrbit(system_karic.getEntityById("karic"), 75.0F, 3600.0F, 150.0F);
+      jumpPoint2a.setRelatedPlanet(turan);
+      system_karic.addEntity(jumpPoint2a);
+      SectorEntityToken turanL4 = system_karic.addTerrain("asteroid_field", new AsteroidFieldParams(720.0F, 960.0F, 24, 48, 6.0F, 18.0F, "Turan-Karic Shoal Zone"));
+      turanL4.setCircularOrbit(karic_star, 195.0F, 3600.0F, 150.0F);
+      SectorEntityToken valcaOrbital = system_karic.addCustomEntity("magellan_valca_orbital", "Valca Bastion", "station_side02", "magellan_protectorate");
+      valcaOrbital.setCircularOrbitPointingDown(karic_star, 210.0F, 4800.0F, 210.0F);
+      valcaOrbital.setInteractionImage("illustrations", "orbital");
+      AddMarketplace.addMarketplace("magellan_protectorate", valcaOrbital, (ArrayList)null, "Valca Bastion", 4, new ArrayList(Arrays.asList("outpost", "vice_demand", "population_4")), new ArrayList(Arrays.asList("battlestation", "militarybase", "spaceport", "heavybatteries", "population")), new ArrayList(Arrays.asList("black_market", "open_market", "storage")), 0.3F);
+      valcaOrbital.setCustomDescriptionId("station_valcabastion");
+      system_karic.addRingBand(karic_star, "misc", "rings_ice0", 256.0F, 1, Color.gray, 256.0F, 5280.0F, 180.0F);
+      system_karic.addRingBand(karic_star, "misc", "rings_ice0", 256.0F, 2, Color.white, 512.0F, 5400.0F, 180.0F, "ring", "Karic Ring");
+      system_karic.addRingBand(karic_star, "misc", "rings_ice0", 256.0F, 3, Color.gray, 256.0F, 5520.0F, 180.0F);
+      PlanetAPI driftersrest = system_karic.addPlanet("magellan_planet_drifters", karic_star, "Drifter's Rest", "barren2", 30.0F, 60.0F, 5720.0F, 240.0F);
+      MarketAPI driftersMarket = AddMarketplace.addMarketplace("pirates", driftersrest, (ArrayList)null, "Drifter's Rest", 3, new ArrayList(Arrays.asList("no_atmosphere", "low_gravity", "free_market", "stealth_minefields", "organized_crime", "population_3")), new ArrayList(Arrays.asList("militarybase", "spaceport", "heavybatteries", "population")), new ArrayList(Arrays.asList("black_market", "magellan_open_market", "storage")), 0.3F);
+      driftersMarket.addTag("magellan_indiemarket");
+      driftersrest.setCustomDescriptionId("planet_driftersrest");
+      PlanetAPI valca = system_karic.addPlanet("magellan_planet_valca", karic_star, "Valca", "tundra", 210.0F, 200.0F, 7200.0F, 270.0F);
+      MarketAPI valcaMarket = AddMarketplace.addMarketplace("independent", valca, (ArrayList)null, "Valca", 6, new ArrayList(Arrays.asList("cold", "extreme_weather", "habitable", "volatiles_plentiful", "ore_abundant", "rare_ore_sparse", "free_market", "vice_demand", "dissident", "organized_crime", "population_6")), new ArrayList(Arrays.asList("spaceport", "lightindustry", "mining", "population")), new ArrayList(Arrays.asList("black_market", "magellan_open_market", "storage")), 0.3F);
+      valcaMarket.addTag("magellan_indiemarket");
+      valca.setCustomDescriptionId("planet_valca");
+      data.campaign.fleets.dcp_magellan_MCivFleetRouteManager karicfleets = new data.campaign.fleets.dcp_magellan_MCivFleetRouteManager(system_karic);
+      system_karic.addScript(karicfleets);
+      SectorEntityToken valca_l3_loc = system_karic.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
+      valca_l3_loc.setCircularOrbitPointingDown(karic_star, 30.0F, 7200.0F, 270.0F);
+      JumpPointAPI jumpPoint2b = Global.getFactory().createJumpPoint("karic_middle_jump", "Valca Bridge");
+      jumpPoint2b.setCircularOrbit(system_karic.getEntityById("karic"), 150.0F, 7200.0F, 270.0F);
+      jumpPoint2b.setRelatedPlanet(valca);
+      system_karic.addEntity(jumpPoint2b);
+      SectorEntityToken valca_l4_loc = system_karic.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
+      valca_l4_loc.setCircularOrbitPointingDown(karic_star, 270.0F, 7200.0F, 270.0F);
+      system_karic.addRingBand(karic_star, "misc", "rings_dust0", 256.0F, 3, Color.gray, 256.0F, 8400.0F, 270.0F, "ring", "Karic Outer Band");
+      StarSystemGenerator.addOrbitingEntities(system_karic, karic_star, magellan_constellation_Age, 1, 3, 9600.0F, 0, true);
+      system_karic.autogenerateHyperspaceJumpPoints(true, true);
+      this.cleanup(system_karic);
+      system_two.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
+      PlanetAPI two_star = system_two.initStar(this.StarName + " Secundus", "star_orange", 400.0F, this.hsLocationX + this.spawnXoffset + this.A2Xoffset, this.hsLocationY + this.spawnYoffset + this.A2Yoffset, 255.0F);
+      system_two.setLightColor(new Color(255, 225, 205));
+      system_two.addTag("theme_core");
+      system_two.addTag("theme_core_populated");
+      system_two.addTag("theme_ruins");
+      system_two.addTag("theme_ruins_secondary");
+      system_two.addTag("theme_unsafe");
+      system_two.addTag("theme_hidden");
+      system_two.addTag("theme_magellan_system");
+      system_two.addTag("theme_magellan_graveyard");
+      two_star.setName(this.StarName + " Secundus");
+      system_two.setName(this.StarName + " Secundus Star System");
+      system_two.addRingBand(two_star, "misc", "rings_dust0", 256.0F, 0, Color.gray, 144.0F, radius_junkyard - 1000.0F, 1050.0F);
+      system_two.addAsteroidBelt(two_star, 100, radius_junkyard - 1000.0F, 240.0F, 120.0F, 180.0F, "asteroid_belt", this.StarName + " Secundus Inner Belt");
+      SectorEntityToken junkyardStation = system_two.addCustomEntity("station_junkyardstarport", "Ghammol Station", "station_side06", "independent");
+      junkyardStation.setCircularOrbitWithSpin(two_star, 60.0F, radius_junkyard - 600.0F, 105.0F, 3.0F, 7.0F);
+      MarketAPI junkyardMarket = AddMarketplace.addMarketplace("independent", junkyardStation, (ArrayList)null, "Ghammol Station", 4, new ArrayList(Arrays.asList("stealth_minefields", "population_4")), new ArrayList(Arrays.asList("battlestation", "heavybatteries", "spaceport", "refining", "population")), new ArrayList(Arrays.asList("magellan_ind_military", "black_market", "magellan_open_market", "storage")), 0.2F);
+      junkyardMarket.addTag("magellan_indiemarket");
+      junkyardStation.setCustomDescriptionId("station_junkyardstarport");
+      JumpPointAPI jumpPoint3 = Global.getFactory().createJumpPoint("magellan_junkyard_jump", this.StarName + " Secundus Bridge");
+      jumpPoint3.setCircularOrbit(two_star, 240.0F, radius_junkyard - 600.0F, 105.0F);
+      system_two.addEntity(jumpPoint3);
+      system_two.addRingBand(two_star, "misc", "rings_dust0", 256.0F, 1, Color.gray, 144.0F, radius_junkyard, 210.0F);
+      system_two.addRingBand(two_star, "misc", "rings_dust0", 256.0F, 0, Color.gray, 256.0F, radius_junkyard + 200.0F, 235.0F);
+      system_two.addAsteroidBelt(two_star, 300, radius_junkyard + 120.0F, 800.0F, 180.0F, 300.0F, "asteroid_belt", this.StarName + " Secundus Graveyard");
+      system_two.addAsteroidBelt(two_star, 600, radius_junkyard + 500.0F, 2000.0F, 270.0F, 450.0F, "asteroid_belt", this.StarName + " Secundus Graveyard");
+      DebrisFieldParams params1 = new DebrisFieldParams(420.0F, 1.5F, 1.0E7F, 0.0F);
+      params1.source = DebrisFieldSource.MIXED;
+      params1.baseSalvageXP = 750L;
+      SectorEntityToken junkInner1 = Misc.addDebrisField(system_two, params1, StarSystemGenerator.random);
+      junkInner1.setSensorProfile(1200.0F);
+      junkInner1.setDiscoverable(true);
+      junkInner1.setCircularOrbit(two_star, 360.0F * (float)Math.random(), radius_junkyard - 100.0F, 150.0F);
+      junkInner1.setId("magellan_junkInner1");
+      DebrisFieldParams params2 = new DebrisFieldParams(300.0F, 1.2F, 1.0E7F, 0.0F);
+      params2.source = DebrisFieldSource.MIXED;
+      params2.baseSalvageXP = 750L;
+      SectorEntityToken junkInner2 = Misc.addDebrisField(system_two, params2, StarSystemGenerator.random);
+      junkInner2.setSensorProfile(1200.0F);
+      junkInner2.setDiscoverable(true);
+      junkInner2.setCircularOrbit(two_star, 360.0F * (float)Math.random(), radius_junkyard + 50.0F, 180.0F);
+      junkInner2.setId("magellan_junkInner2");
+      SectorEntityToken junkInner3 = Misc.addDebrisField(system_two, params2, StarSystemGenerator.random);
+      junkInner3.setSensorProfile(1200.0F);
+      junkInner3.setDiscoverable(true);
+      junkInner3.setCircularOrbit(two_star, 360.0F * (float)Math.random(), radius_junkyard + 150.0F, 180.0F);
+      junkInner3.setId("magellan_junkInner3");
+      SectorEntityToken junkInner4 = Misc.addDebrisField(system_two, params1, StarSystemGenerator.random);
+      junkInner4.setSensorProfile(1200.0F);
+      junkInner4.setDiscoverable(true);
+      junkInner4.setCircularOrbit(two_star, 360.0F * (float)Math.random(), radius_junkyard + 225.0F, 150.0F);
+      junkInner4.setId("magellan_junkInner4");
+      SectorEntityToken junkInner5 = Misc.addDebrisField(system_two, params2, StarSystemGenerator.random);
+      junkInner5.setSensorProfile(1200.0F);
+      junkInner5.setDiscoverable(true);
+      junkInner5.setCircularOrbit(two_star, 360.0F * (float)Math.random(), radius_junkyard + 300.0F, 180.0F);
+      junkInner5.setId("magellan_junkInner5");
+      this.addDerelict(system_two, two_star, "magellan_skipjack_std", ShipCondition.AVERAGE, radius_junkyard - 160.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_lightcruiser_elite_proto", ShipCondition.AVERAGE, radius_junkyard, true);
+      this.addDerelict(system_two, two_star, "magellan_carrier_startiger_std", ShipCondition.BATTERED, radius_junkyard - 75.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_schooner_d2_std", ShipCondition.AVERAGE, radius_junkyard + 450.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_skiff_d_std", ShipCondition.AVERAGE, radius_junkyard - 140.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_cruiser_obsolete", ShipCondition.WRECKED, radius_junkyard + 75.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_linefrigate_support", ShipCondition.BATTERED, radius_junkyard + 160.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_supply_std", ShipCondition.AVERAGE, radius_junkyard + 175.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_linefrigate_attack", ShipCondition.WRECKED, radius_junkyard + 180.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_supportfrigate_std", ShipCondition.WRECKED, radius_junkyard + 205.0F, false);
+      this.addDerelict(system_two, two_star, "starliner_Standard", ShipCondition.BATTERED, radius_junkyard + 225.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_cruiser_obsolete", ShipCondition.WRECKED, radius_junkyard + 275.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_supply_std", ShipCondition.WRECKED, radius_junkyard + 300.0F, false);
+      this.addDerelict(system_two, two_star, "nebula_Standard", ShipCondition.BATTERED, radius_junkyard + 350.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_skiff_d_std", ShipCondition.GOOD, radius_junkyard + 375.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_skiff_d2_std", ShipCondition.AVERAGE, radius_junkyard + 390.0F, true);
+      this.addDerelict(system_two, two_star, "phaeton_Standard", ShipCondition.WRECKED, radius_junkyard + 400.0F, false);
+      this.addDerelict(system_two, two_star, "dram_Light", ShipCondition.BATTERED, radius_junkyard + 410.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_cruiser_obsolete", ShipCondition.WRECKED, radius_junkyard + 425.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_lightcruiser_std", ShipCondition.BATTERED, radius_junkyard + 475.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_ltfreight_d_std", ShipCondition.AVERAGE, radius_junkyard + 500.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_patroldestroyer_std", ShipCondition.WRECKED, radius_junkyard + 525.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_linedestroyer_std", ShipCondition.BATTERED, radius_junkyard + 600.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_ltfreight_d_std", ShipCondition.AVERAGE, radius_junkyard + 650.0F, true);
+      data.campaign.fleets.dcp_magellan_MCivFleetRouteManager junkfleets = new data.campaign.fleets.dcp_magellan_MCivFleetRouteManager(system_two);
+      system_two.addScript(junkfleets);
+      system_two.addRingBand(two_star, "misc", "rings_dust0", 256.0F, 0, Color.gray, 256.0F, radius_junkyard + 800.0F, 300.0F);
+      system_two.addRingBand(two_star, "misc", "rings_dust0", 256.0F, 1, Color.gray, 256.0F, radius_junkyard + 1400.0F, 360.0F);
+      system_two.addRingBand(two_star, "misc", "rings_dust0", 256.0F, 3, Color.gray, 256.0F, radius_junkyard + 2600.0F, 420.0F);
+      PlanetAPI calicheman = system_two.addPlanet("magellan_planet_calicheman", two_star, "Calicheman", "arid", 300.0F, 100.0F, 4000.0F, 270.0F);
+      calicheman.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "asharu"));
+      MarketAPI calichemanMarket = AddMarketplace.addMarketplace("pirates", calicheman, (ArrayList)null, "Calicheman", 5, new ArrayList(Arrays.asList("free_market", "farmland_rich", "organized_crime", "population_5")), new ArrayList(Arrays.asList("farming", "heavybatteries", "spaceport", "militarybase", "population")), new ArrayList(Arrays.asList("black_market", "magellan_open_market", "storage")), 0.1F);
+      calichemanMarket.addTag("magellan_indiemarket");
+      calicheman.setCustomDescriptionId("planet_calicheman");
+      CampaignFleetAPI herdfleet_junk = MagicCampaign.createFleet("Calicheman Herd", "magellan_theherd", "scavengerMedium", "HS Eat A Lotta Meat", "magellan_herdcarrier_std", (PersonAPI)null, (Map)null, 180, "magellan_theherd", 0.75F, (SectorEntityToken)null, FleetAssignment.ORBIT_AGGRESSIVE, calicheman, false, true);
+      herdfleet_junk.setDiscoverable(false);
+      herdfleet_junk.getMemoryWithoutUpdate().set("$canOnlyBeEngagedWhenVisibleToPlayer", true);
+      herdfleet_junk.getMemoryWithoutUpdate().set("$cfai_ignoreOtherFleets", true);
+      herdfleet_junk.getMemoryWithoutUpdate().set("$cfai_doNotIgnorePlayer", true);
+      herdfleet_junk.setFaction("pirates", true);
+      CampaignFleetAPI herdfleet_junk2 = MagicCampaign.createFleet("Calicheman Subherd", "magellan_theherd", "patrolSmall", "HS Big Moo II", "magellan_linedestroyer_theherd_support", (PersonAPI)null, (Map)null, 75, "magellan_theherd", 0.75F, (SectorEntityToken)null, FleetAssignment.ORBIT_PASSIVE, calicheman, false, true);
+      herdfleet_junk2.setDiscoverable(false);
+      herdfleet_junk2.getMemoryWithoutUpdate().set("$canOnlyBeEngagedWhenVisibleToPlayer", true);
+      herdfleet_junk2.setFaction("pirates", true);
+      CampaignFleetAPI herdfleet_junk3 = MagicCampaign.createFleet("Calicheman Subherd", "magellan_theherd", "patrolSmall", "HS Cow Tools IV", "magellan_linedestroyer_theherd_fighter", (PersonAPI)null, (Map)null, 75, "magellan_theherd", 0.75F, (SectorEntityToken)null, FleetAssignment.ORBIT_PASSIVE, calicheman, false, true);
+      herdfleet_junk3.setDiscoverable(false);
+      herdfleet_junk3.getMemoryWithoutUpdate().set("$canOnlyBeEngagedWhenVisibleToPlayer", true);
+      herdfleet_junk3.setFaction("pirates", true);
+      SectorEntityToken graveyard_inner_loc = system_two.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
+      graveyard_inner_loc.setCircularOrbitPointingDown(two_star, 75.0F, radius_junk_outer - 800.0F, 240.0F);
+      SectorEntityToken graveyard_outer_loc = system_two.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
+      graveyard_outer_loc.setCircularOrbitPointingDown(two_star, 215.0F, radius_junk_outer + 1200.0F, 300.0F);
+      system_two.addRingBand(two_star, "misc", "rings_ice0", 256.0F, 1, Color.gray, 144.0F, radius_junk_outer, 300.0F);
+      system_two.addRingBand(two_star, "misc", "rings_ice0", 256.0F, 0, Color.gray, 256.0F, radius_junk_outer + 250.0F, 360.0F);
+      system_two.addAsteroidBelt(two_star, 300, radius_junk_outer + 150.0F, 800.0F, 180.0F, 300.0F, "asteroid_belt", this.StarName + " Secundus Outer Belt");
+      this.addDerelict(system_two, two_star, "magellan_lightcruiser_elite_proto", ShipCondition.WRECKED, radius_junk_outer - 125.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_supportdestroyer_blackcollar_elite", ShipCondition.BATTERED, radius_junk_outer + 25.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_fastdestroyer_blackcollar_elite", ShipCondition.AVERAGE, radius_junk_outer + 145.0F, true);
+      this.addDerelict(system_two, two_star, "dram_Light", ShipCondition.BATTERED, radius_junk_outer + 150.0F, true);
+      this.addDerelict(system_two, two_star, "starliner_Standard", ShipCondition.WRECKED, radius_junk_outer + 300.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_supply_std", ShipCondition.BATTERED, radius_junk_outer - 175.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_linefrigate_support", ShipCondition.BATTERED, radius_junk_outer - 100.0F, true);
+      this.addDerelict(system_two, two_star, "magellan_linefrigate_attack", ShipCondition.WRECKED, radius_junk_outer - 25.0F, false);
+      this.addDerelict(system_two, two_star, "mudskipper_Standard", ShipCondition.WRECKED, radius_junk_outer + 50.0F, false);
+      this.addDerelict(system_two, two_star, "magellan_linedestroyer_std", ShipCondition.BATTERED, radius_junk_outer + 125.0F, false);
+      system_two.addRingBand(two_star, "misc", "rings_dust0", 256.0F, 1, Color.gray, 256.0F, radius_junk_outer + 2000.0F, 600.0F);
+      StarSystemGenerator.addOrbitingEntities(system_two, two_star, magellan_constellation_Age, 1, 3, 10800.0F, 0, true);
+      system_two.autogenerateHyperspaceJumpPoints(true, true);
+      this.cleanup(system_two);
+      system_three.setBackgroundTextureFilename("graphics/backgrounds/hyperspace1.jpg");
+      PlanetAPI three_star = system_three.initStar(this.StarName + "'s Rose", "star_red_dwarf", 250.0F, this.hsLocationX + this.spawnXoffset + this.A3Xoffset, this.hsLocationY + this.spawnYoffset + this.A3Yoffset, 175.0F);
+      system_three.setLightColor(new Color(255, 145, 205));
+      system_three.addTag("theme_core");
+      system_three.addTag("theme_core_unpopulated");
+      system_three.addTag("theme_unsafe");
+      system_three.addTag("theme_hidden");
+      system_three.addTag("theme_magellan_leveller");
+      system_three.addTag("theme_magellan_leveller_home_nebula");
+      Misc.addNebulaFromPNG("data/campaign/terrain/eos_nebula.png", 0.0F, 0.0F, system_three, "terrain", "magellan_garden_nebula", 4, 4, magellan_constellation_Age);
+      system_three.setName(this.StarName + "'s Rose");
+      JumpPointAPI jumpPoint4 = Global.getFactory().createJumpPoint("magellan_garden_jump", "Thorn Gateway");
+      jumpPoint4.setCircularOrbit(three_star, 270.0F, 1450.0F, 150.0F);
+      system_three.addEntity(jumpPoint4);
+      SectorEntityToken gardenRelay = system_three.addCustomEntity("magellan_garden_relay", "Rosebriar Relay", "comm_relay_makeshift", "magellan_leveller");
+      gardenRelay.setCircularOrbitPointingDown(three_star, 30.0F, 1450.0F, 150.0F);
+      SectorEntityToken oldLevellerStation = system_three.addCustomEntity("magellan_rosebriar_station", "Rosebriar Station", "station_side03", "magellan_leveller");
+      oldLevellerStation.setCircularOrbitPointingDown(three_star, 150.0F, 1450.0F, 150.0F);
+      oldLevellerStation.setInteractionImage("illustrations", "space_wreckage");
+      oldLevellerStation.setCustomDescriptionId("magellan_levellerbase");
+      oldLevellerStation.addTag("magellan_oldLevellerHabitat");
+      CampaignFleetAPI levellerwarfleet = MagicCampaign.createFleet("Rosebriar Guard Fleet", "magellan_leveller", "taskForce", "LVS Vanguard", "magellan_skipjack_leveller_std", (PersonAPI)null, (Map)null, 180, "magellan_leveller", 2.0F, (SectorEntityToken)null, FleetAssignment.PATROL_SYSTEM, oldLevellerStation, true, true);
+      levellerwarfleet.setDiscoverable(false);
+      levellerwarfleet.getFlagship().getStats().getDynamic().getMod("individual_ship_recovery_mod").modifyFlat("magellan_unique_ship", 1000.0F);
+      levellerwarfleet.getMemoryWithoutUpdate().set("$canOnlyBeEngagedWhenVisibleToPlayer", true);
+      CampaignFleetAPI levellerpatrolfleet_1 = MagicCampaign.createFleet("Rosebriar Patrol Group", "magellan_leveller", "taskForce", "LVS Knight", "magellan_supportdestroyer_leveller_turncoat", (PersonAPI)null, (Map)null, 60, "magellan_leveller", 1.5F, (SectorEntityToken)null, FleetAssignment.ORBIT_PASSIVE, oldLevellerStation, false, true);
+      levellerpatrolfleet_1.setDiscoverable(false);
+      levellerpatrolfleet_1.getMemoryWithoutUpdate().set("$canOnlyBeEngagedWhenVisibleToPlayer", true);
+      CampaignFleetAPI levellerpatrolfleet_2 = MagicCampaign.createFleet("Rosebriar Scout Group", "magellan_leveller", "taskForce", "LVS Swan", "magellan_patroldestroyer_leveller_turncoat", (PersonAPI)null, (Map)null, 36, "magellan_leveller", 1.5F, (SectorEntityToken)null, FleetAssignment.DEFEND_LOCATION, oldLevellerStation, false, true);
+      levellerpatrolfleet_2.setDiscoverable(false);
+      levellerpatrolfleet_2.getMemoryWithoutUpdate().set("$canOnlyBeEngagedWhenVisibleToPlayer", true);
+      system_three.addRingBand(three_star, "misc", "rings_dust0", 256.0F, 1, Color.gray, 256.0F, 1800.0F, 150.0F);
+      system_three.addAsteroidBelt(three_star, 90, 1800.0F, 240.0F, 135.0F, 210.0F, "asteroid_belt", "Rosebriar Belt");
+      system_three.addRingBand(three_star, "misc", "rings_dust0", 256.0F, 1, Color.gray, 256.0F, 3850.0F, 315.0F);
+      system_three.addAsteroidBelt(three_star, 30, 3950.0F, 400.0F, 325.0F, 500.0F, "asteroid_belt", "Outer Belt");
+      system_three.addRingBand(three_star, "misc", "rings_dust0", 256.0F, 2, Color.white, 256.0F, 4000.0F, 345.0F);
+      system_three.addRingBand(three_star, "misc", "rings_ice0", 256.0F, 1, Color.white, 256.0F, 4100.0F, 360.0F);
+      system_three.addRingBand(three_star, "misc", "rings_dust0", 256.0F, 1, Color.gray, 256.0F, 4250.0F, 380.0F);
+      StarSystemGenerator.addOrbitingEntities(system_three, three_star, magellan_constellation_Age, 1, 2, 8000.0F, 0, true);
+      system_three.autogenerateHyperspaceJumpPoints(true, true);
+      this.cleanup(system_three);
+      system_four.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
+      PlanetAPI four_star = system_four.initStar(this.StarName + " Tertius", "star_browndwarf", 175.0F, this.hsLocationX + this.spawnXoffset + this.A5Xoffset, this.hsLocationY + this.spawnYoffset + this.A5Yoffset, 125.0F);
+      system_four.setLightColor(new Color(255, 145, 205));
+      system_four.addTag("theme_core");
+      system_four.addTag("theme_core_unpopulated");
+      system_four.addTag("theme_unsafe");
+      system_four.addTag("theme_hidden");
+      system_four.addTag("theme_magellan_leveller");
+      system_four.setName(this.StarName + " Tertius");
+      JumpPointAPI jumpPoint5 = Global.getFactory().createJumpPoint("magellan_four_jump", this.StarName + " Tertius Bridge");
+      jumpPoint5.setCircularOrbit(four_star, 135.0F, 1050.0F, 120.0F);
+      system_four.addEntity(jumpPoint5);
+      system_four.addRingBand(four_star, "misc", "rings_dust0", 256.0F, 1, Color.gray, 256.0F, 2850.0F, 215.0F);
+      system_four.addAsteroidBelt(four_star, 30, 2950.0F, 400.0F, 325.0F, 500.0F, "asteroid_belt", this.StarName + " Tertius Belt");
+      system_four.addRingBand(four_star, "misc", "rings_dust0", 256.0F, 2, Color.white, 256.0F, 3000.0F, 245.0F);
+      system_four.addRingBand(four_star, "misc", "rings_ice0", 256.0F, 1, Color.white, 256.0F, 3100.0F, 260.0F);
+      system_four.addRingBand(three_star, "misc", "rings_dust0", 256.0F, 1, Color.gray, 256.0F, 3250.0F, 280.0F);
+      StarSystemGenerator.addOrbitingEntities(system_four, four_star, magellan_constellation_Age, 1, 3, 4800.0F, 0, true);
+      system_four.autogenerateHyperspaceJumpPoints(true, true);
+      this.cleanup(system_four);
+   }
 
-    float A2Xoffset = (float) (-2000 + Math.random() * -1000f);
-    float A2Yoffset = (float) (-1000 + Math.random() * -2000f);
+   void cleanup(StarSystemAPI system) {
+      HyperspaceTerrainPlugin plugin = (HyperspaceTerrainPlugin)Misc.getHyperspaceTerrain().getPlugin();
+      NebulaEditor editor = new NebulaEditor(plugin);
+      float minRadius = plugin.getTileSize() * 2.0F;
+      float radius = system.getMaxRadiusInHyperspace();
+      editor.clearArc(system.getLocation().x, system.getLocation().y, 0.0F, radius + minRadius * 0.5F, 0.0F, 360.0F);
+      editor.clearArc(system.getLocation().x, system.getLocation().y, 0.0F, radius + minRadius, 0.0F, 360.0F, 0.25F);
+   }
 
-    float A3Xoffset = (float) (1500 + Math.random() * 1500f);
-    float A3Yoffset = (float) (1500 + Math.random() * 1500f);
+   private void addDerelict(StarSystemAPI system_khamn, SectorEntityToken focus, String variantId, ShipCondition condition, float orbitRadius, boolean recoverable) {
+      DerelictShipData params = new DerelictShipData(new PerShipData(variantId, condition), false);
+      SectorEntityToken ship = BaseThemeGenerator.addSalvageEntity(system_khamn, "wreck", "neutral", params);
+      ship.setDiscoverable(true);
+      float orbitDays = orbitRadius / (10.0F + (float)Math.random() * 5.0F);
+      ship.setCircularOrbit(focus, (float)Math.random() * 360.0F, orbitRadius, orbitDays);
+      if (recoverable) {
+         ShipRecoverySpecialCreator creator = new ShipRecoverySpecialCreator((Random)null, 0, 0, false, (DerelictType)null, (WeightedRandomPicker)null);
+         Misc.setSalvageSpecial(ship, creator.createSpecial(ship, (SpecialCreationContext)null));
+      }
 
-    float A4Xoffset = (float) (2000 + Math.random() * 1000f);
-    float A4Yoffset = (float) (-1000 + Math.random() * -1000f);
-
-    // name list for random renaming
-    String[] strings = {"Estar", "Voscune", "Pailsen", "Apone"};
-    int nameSelector = random.nextInt(strings.length);      // random name selector
-    public String StarName = strings[nameSelector];
-        
-    //Random derelict radius 
-    public static float radius_star = 320f;
-    public static float radius_station = 2600f;
-    public static float radius_acolyte_three = 1200f;
-    public static float radius_variation = 400f;
-        
-        public void generate(SectorAPI sector) {
-
-        LocationAPI hyper = Global.getSector().getHyperspace();
-
-        StarAge magellan_constellation_Age = StarAge.ANY;
-
-        if (selector < 0.33f) {
-            magellan_constellation_Age = StarAge.YOUNG;
-        }
-        if (selector >= 0.33f && selector < 0.66f) {
-            magellan_constellation_Age = StarAge.AVERAGE;
-        }
-        if (selector >= 0.66f) {
-            magellan_constellation_Age = StarAge.OLD;
-        }
-
-        // create the constellation nebula       
-        Constellation magellan_constellation_Khamn = new Constellation(
-                Constellation.ConstellationType.NORMAL, magellan_constellation_Age
-        );
-
-        NameGenData data = new NameGenData("null", "null");
-        ProcgenUsedNames.NamePick constname = new ProcgenUsedNames.NamePick(data, strings[nameSelector], "null");
-        magellan_constellation_Khamn.setNamePick(constname);      // sets the new star name
-        
-        StarSystemAPI system_khamn = sector.createStarSystem("Khamn");
-        StarSystemAPI system_two = sector.createStarSystem("Beta " + StarName);
-        StarSystemAPI system_three = sector.createStarSystem("Gamma " + StarName);
-        StarSystemAPI system_karic = sector.createStarSystem("Karic");
-        //StarSystemAPI system_tet = sector.createStarSystem("prefix " + StarName);
-        
-        magellan_constellation_Khamn.getSystems().add(sector.getStarSystem("Khamn"));
-        magellan_constellation_Khamn.getSystems().add(sector.getStarSystem("Beta " + StarName));
-        magellan_constellation_Khamn.getSystems().add(sector.getStarSystem("Gamma " + StarName));
-        magellan_constellation_Khamn.getSystems().add(sector.getStarSystem("Karic"));
-        //magellan_constellation_Khamn.getSystems().add(sector.getStarSystem("prefix " + StarName));
-
-        sector.getStarSystem("Khamn").setConstellation(magellan_constellation_Khamn);
-        sector.getStarSystem("Beta " + StarName).setConstellation(magellan_constellation_Khamn);
-        sector.getStarSystem("Gamma " + StarName).setConstellation(magellan_constellation_Khamn);
-        sector.getStarSystem("Karic").setConstellation(magellan_constellation_Khamn);
-        //sector.getStarSystem("prefix " + StarName).setConstellation(magellan_constellation_Khamn);
-        
-        /////////////////
-        //KHAMN SYSTEM//
-        /////////////////
-        system_khamn.setBackgroundTextureFilename("graphics/backgrounds/background1.jpg");
-		
-		// create the star and generate the hyperspace anchor for this system
-		// Khamn, an enormous blue giant
-		PlanetAPI khamn_star = system_khamn.initStar("khamn", // unique id for this star 
-			"star_red_supergiant",  // id in planets.json
-			1000f, // radius (in pixels at default zoom)
-                        (hsLocationX + spawnXoffset + A1Xoffset), // hyper space location x axis
-                        (hsLocationY + spawnYoffset + A1Yoffset), // hyper space location y axis
-                        600); // corona radius, from star edge
-                                                                                    
-		system_khamn.setLightColor(new Color(255, 200, 200)); // light color in entire system_khamn, affects all entities
-                
-                //Add some crap in here - a toxic mini-Venusoid and a rockbelt or two. Nothing past about 2400.
-                PlanetAPI baphain = system_khamn.addPlanet("magellan_planet_baphain", khamn_star, "Baphain", "toxic", 270f, 75, 1800, 90f);
-                
-                    // Add fixed conditions to Baphain.
-                    Misc.initConditionMarket(baphain);
-                    baphain.getMarket().addCondition(Conditions.VERY_HOT);
-                    baphain.getMarket().addCondition(Conditions.LOW_GRAVITY);
-                    baphain.getMarket().addCondition(Conditions.ORGANICS_TRACE);
-                    
-                SectorEntityToken khamn_buoy = system_khamn.addCustomEntity("khamn_nav_buoy", // unique id
-                "Khamn Nav Buoy", // name - if null, defaultName from custom_entities.json will be used
-                "nav_buoy", // type of object, defined in custom_entities.json
-                "magellan_protectorate"); // faction
-                khamn_buoy.setCircularOrbitPointingDown(system_khamn.getEntityById("khamn"), 90f, 1850, 90f);
-                    
-                // add first asteroid belt of the disk ---------------
-                system_khamn.addRingBand(khamn_star, "misc", "rings_dust0", 256f, 1, Color.white, 256f, 2110, 98f);
-                system_khamn.addRingBand(khamn_star, "misc", "rings_dust0", 256f, 2, Color.white, 256f, 2150, 102f);
-		system_khamn.addAsteroidBelt(khamn_star, 120, 2130, 300, 200, 300, Terrain.ASTEROID_BELT, "Baphain's Cry");
-                
-                //Add a small fuelling moon.
-                PlanetAPI pariya = system_khamn.addPlanet("magellan_planet_pariya", khamn_star, "Pariya", "barren", 150f, 60, 2550, 150f);
-                
-                    //Add the marketplace to Pariya
-                    MarketAPI pariyaMarket = AddMarketplace.addMarketplace("magellan_protectorate", pariya, null,
-                        "Pariya", // name of the market
-                        3, // size of the market (from the JSON)
-                        new ArrayList<>(
-                                Arrays.asList( // list of market conditions from martinique.json
-                                        Conditions.HOT,
-                                        Conditions.LOW_GRAVITY,
-                                        Conditions.NO_ATMOSPHERE,
-                                        Conditions.OUTPOST,
-                                        Conditions.POPULATION_3)),
-                        new ArrayList<>(
-                                Arrays.asList( // list of industries
-                                        Industries.SPACEPORT,
-                                        Industries.FUELPROD,
-                                        Industries.GROUNDDEFENSES,                                        
-                                        Industries.POPULATION)),
-                        new ArrayList<>(
-                                Arrays.asList( // which submarkets to generate
-                                        Submarkets.SUBMARKET_OPEN,
-                                        Submarkets.SUBMARKET_STORAGE)),
-                        0.3f); // tariff amount
-                        pariyaMarket.addIndustry(Industries.FUELPROD, new ArrayList<>(Arrays.asList(Items.SYNCHROTRON)));
-                
-                        pariya.setCustomDescriptionId("planet_pariya");
-
-                
-                // Magella, a hot gas giant with several moons.
-                PlanetAPI magella = system_khamn.addPlanet("magellan_planet_magella", khamn_star, "Magella", "gas_giant", 150, 750, 6400, 270f);
-                    magella.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "banded"));
-                    magella.getSpec().setGlowColor(new Color(235,38,8,145));
-                    magella.getSpec().setUseReverseLightForGlow(true);
-                    magella.getSpec().setAtmosphereThickness(0.5f);
-                    magella.getSpec().setCloudRotation(15f);
-                    magella.getSpec().setAtmosphereColor(new Color(138,118,255,145));
-                    magella.getSpec().setPitch(30f);
-                    magella.getSpec().setTilt(15f);
-                    magella.applySpecChanges();             
-
-                    // Add fixed conditions to Magella.
-                    Misc.initConditionMarket(magella);
-                        magella.getMarket().addCondition(Conditions.HOT);
-                        magella.getMarket().addCondition(Conditions.EXTREME_WEATHER);
-                        magella.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
-                        magella.getMarket().addCondition(Conditions.HIGH_GRAVITY);
-                        magella.getMarket().addCondition(Conditions.VOLATILES_ABUNDANT);
-                        magella.getMarket().addCondition(Conditions.ORGANICS_TRACE);
-                        
-                    magella.setCustomDescriptionId("planet_magella");
-                        
-                    //A wretched inner lava moon.
-                    PlanetAPI innermoon = system_khamn.addPlanet("magellan_planet_eran", magella, "Eran", "lava", 210, 50, 1000, 90f);
-                    //innermoon.setCustomDescriptionId("planet_eran");
-        
-                        // Add fixed conditions.
-                        Misc.initConditionMarket(innermoon);
-                        innermoon.getMarket().addCondition(Conditions.EXTREME_TECTONIC_ACTIVITY);
-                        innermoon.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
-                        innermoon.getMarket().addCondition(Conditions.VERY_HOT);
-                        innermoon.getMarket().addCondition(Conditions.ORE_ABUNDANT);
-                        innermoon.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
-                    
-                    //Jeshad, a huge, arid hive-world with a restive and violent underclass.
-                        PlanetAPI jeshad = system_khamn.addPlanet("magellan_planet_jeshad", magella, "Jeshad", "arid", 30, 120, 1360, 90f);
-                        jeshad.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "asharu"));
-                        jeshad.getSpec().setGlowColor( new Color(255,160,30,255) );
-                        jeshad.getSpec().setUseReverseLightForGlow(true);
-                        jeshad.getSpec().setPitch(-15f);
-                        jeshad.getSpec().setTilt(20f);
-                        jeshad.applySpecChanges();
-                        jeshad.setInteractionImage("illustrations", "desert_moons_ruins");
-                
-                    //Add the marketplace to Jeshad
-                    MarketAPI jeshadMarket = AddMarketplace.addMarketplace("magellan_protectorate", jeshad, null,
-                        "Jeshad", // name of the market
-                        8, // size of the market (from the JSON)
-                        new ArrayList<>(
-                                Arrays.asList( // list of market conditions from martinique.json
-                                        Conditions.HABITABLE,
-                                        Conditions.EXTREME_WEATHER,
-                                        Conditions.FARMLAND_ADEQUATE,
-                                        Conditions.ORE_ABUNDANT,
-                                        Conditions.RARE_ORE_SPARSE,
-                                        Conditions.ORGANICS_COMMON,
-                                        Conditions.URBANIZED_POLITY,
-                                        Conditions.DISSIDENT,
-                                        //Conditions.SPACEPORT,
-                                        Conditions.POPULATION_8)),
-                        new ArrayList<>(
-                                Arrays.asList( // list of industries
-                                        Industries.STARFORTRESS,
-                                        Industries.MEGAPORT,
-                                        Industries.FARMING,
-                                        Industries.MINING,
-                                        Industries.MILITARYBASE,
-                                        Industries.HEAVYBATTERIES,
-                                        Industries.POPULATION)),
-                        new ArrayList<>(
-                                Arrays.asList( // which submarkets to generate
-                                        Submarkets.GENERIC_MILITARY,
-                                        Submarkets.SUBMARKET_BLACK,
-                                        Submarkets.SUBMARKET_OPEN,
-                                        Submarkets.SUBMARKET_STORAGE)),
-                        0.3f); // tariff amount
-                        jeshadMarket.addIndustry(Industries.HEAVYINDUSTRY, new ArrayList<>(Arrays.asList(Items.CORRUPTED_NANOFORGE)));
-
-                        jeshad.setCustomDescriptionId("planet_jeshad");
-                        
-                    //Annore, a gorgeous water moon where the aristocratic elite rule.
-                    PlanetAPI annore = system_khamn.addPlanet("magellan_planet_annore", magella, "Annore", "water", 360*(float)Math.random(), 75, 2100, 105f);
-                        annore.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "volturn"));
-                        annore.getSpec().setGlowColor( new Color(215,235,255,225) );
-                        annore.getSpec().setUseReverseLightForGlow(true);
-                        annore.getSpec().setPitch(20f);
-                        annore.applySpecChanges();      
-                        annore.setInteractionImage("illustrations", "urban00");
-
-                        //Annore Orbital, the cream of the cream.
-                        SectorEntityToken annoreOrbital = system_khamn.addCustomEntity("magellan_annore_orbital", "Annore Orbital", "station_side04", "magellan_protectorate");
-                        annoreOrbital.setCircularOrbitPointingDown(system_khamn.getEntityById("magellan_planet_annore"), 360*(float)Math.random(), 150, 60f);
-                        annoreOrbital.setInteractionImage("illustrations", "orbital");
-                        
-                    // add the marketplace to Annore/Annore Orbital ---------------
-                    MarketAPI annoreMarket = AddMarketplace.addMarketplace("magellan_protectorate", annore, new ArrayList<>(Arrays.asList(annoreOrbital)),
-                        "Annore", // name of the market
-                        5, // size of the market (from the JSON)
-                        new ArrayList<>(
-                                Arrays.asList( // list of market conditions from martinique.json
-                                        Conditions.HABITABLE,
-                                        Conditions.WATER_SURFACE,
-                                        Conditions.FREE_PORT,
-                                        Conditions.REGIONAL_CAPITAL,
-                                        Conditions.CLOSED_IMMIGRATION,
-                                        Conditions.POPULATION_5)),
-                        new ArrayList<>
-                                (Arrays.asList( // list of industries
-                                        Industries.ORBITALSTATION,
-                                        Industries.AQUACULTURE,
-                                        Industries.SPACEPORT,
-                                        Industries.WAYSTATION,
-                                        Industries.LIGHTINDUSTRY,
-                                        Industries.REFINING,
-                                        Industries.HEAVYBATTERIES,
-                                        Industries.POPULATION)),
-                        new ArrayList<>(
-                                Arrays.asList( // which submarkets to generate
-                                        Submarkets.SUBMARKET_BLACK,
-                                        Submarkets.SUBMARKET_OPEN,
-                                        Submarkets.SUBMARKET_STORAGE)),
-                        0.3f); // tariff amount
-                        
-                        annore.setCustomDescriptionId("planet_annore");
-                        annoreOrbital.setCustomDescriptionId("station_annoreorbital");
-                        
-                        //add custom admin to Annore.      
-//                        annoreMarket =  Global.getSector().getEconomy().getMarket("magellan_planet_annore");
-//                        if (annoreMarket != null) {
-//                                PersonAPI person = Global.getFactory().createPerson();
-//                                person.setFaction("magellan_protectorate");
-//                                person.setGender(FullName.Gender.FEMALE);
-//                                person.setRankId(Ranks.FACTION_LEADER);
-//                                person.setPostId(Ranks.POST_FACTION_LEADER);
-//                                person.getName().setFirst("Emilie");
-//                                person.getName().setLast("Kailen-Sxown");
-//                                person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "magellan_ladyregent"));
-//                                person.getStats().setSkillLevel(Skills.SPACE_OPERATIONS, 3);
-//                                person.getStats().setSkillLevel(Skills.INDUSTRIAL_PLANNING, 2);
-//			
-//                                annoreMarket.setAdmin(person);
-//                                annoreMarket.getCommDirectory().addPerson(person, 0);
-//                                annoreMarket.addPerson(person);
-//                        }
-                        
-                        //Add a small ring.
-                        system_khamn.addRingBand(magella, "misc", "rings_ice0", 256f, 1, Color.white, 256f, 3000, 90f, Terrain.RING, "Magella Ring");
-
-            //Magella's Trojans and an abandoned sporeship opposite Magella at L3.
-            
-                //Trojan asteroids.
-                SectorEntityToken magellaL4 = system_khamn.addTerrain(Terrain.ASTEROID_FIELD,
-                new AsteroidFieldTerrainPlugin.AsteroidFieldParams(
-                        840f, // min radius
-                        1080f, // max radius
-                        35, // min asteroid count
-                        64, // max asteroid count
-                        7f, // min asteroid radius 
-                        21f, // max asteroid radius
-                        "Magella L4 Trojans")); // null for default name
-                
-                // Jump point in L4.
-                JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("khamn_inner_jump", "Khamn Bridge");
-		jumpPoint1.setCircularOrbit(system_khamn.getEntityById("khamn"), 210f, 6400, 270f);
-		jumpPoint1.setRelatedPlanet(annore);
-		system_khamn.addEntity(jumpPoint1);
-                
-                SectorEntityToken magellaL5 = system_khamn.addTerrain(Terrain.ASTEROID_FIELD,
-                new AsteroidFieldTerrainPlugin.AsteroidFieldParams(
-                        840f, // min radius
-                        1080f, // max radius
-                        35, // min asteroid count
-                        64, // max asteroid count
-                        7f, // min asteroid radius 
-                        21f, // max asteroid radius
-                        "Magella L5 Trojans")); // null for default name
-                
-                //Stable location in L5.
-                SectorEntityToken magella_l5_loc = system_khamn.addCustomEntity(null,null, "stable_location",Factions.NEUTRAL); 
-		magella_l5_loc.setCircularOrbitPointingDown(khamn_star, 90f, 6400, 270f);
-                
-                magellaL4.setCircularOrbit(khamn_star, 210f, 6400, 270f);
-                magellaL5.setCircularOrbit(khamn_star, 90f, 6400, 270f);     
-                
-                //Abandoned sporeship.
-                SectorEntityToken sporeStation = system_khamn.addCustomEntity("magellan_sporeship", "Abandoned Fleet Sporeship", "station_sporeship_derelict", "neutral");
-                sporeStation.setCircularOrbitWithSpin(system_khamn.getEntityById("khamn"), 330, 6400, 270f, 4, 14);
-                sporeStation.setDiscoverable(true);
-                sporeStation.setDiscoveryXP(1500f);
-                sporeStation.setSensorProfile(0.25f);
-                sporeStation.setCustomDescriptionId("magellan_fleet_sporeship");
-                sporeStation.setInteractionImage("illustrations", "abandoned_station");
-                
-                sporeStation.getMemoryWithoutUpdate().set("$abandonedStation", true);
-                MarketAPI market = Global.getFactory().createMarket("magellan_fleet_sporeship_market", sporeStation.getName(), 0);
-                market.setPrimaryEntity(sporeStation);
-                market.setFactionId(sporeStation.getFaction().getId());
-                //market.addCondition(Conditions.ABANDONED_STATION);
-                market.addSubmarket(Submarkets.SUBMARKET_STORAGE);
-                ((StoragePlugin) market.getSubmarket(Submarkets.SUBMARKET_STORAGE).getPlugin()).setPlayerPaidToUnlock(true);
-                sporeStation.setMarket(market);
-               
-            //Add a sensor array at Magella L2.
-            SectorEntityToken magella_array = system_khamn.addCustomEntity("magella_sensor_array", // unique id
-            "Magella Array", // name - if null, defaultName from custom_entities.json will be used
-            "sensor_array", // type of object, defined in custom_entities.json
-            "magellan_protectorate"); // faction
-            magella_array.setCircularOrbitPointingDown(system_khamn.getEntityById("khamn"), 150, 9600, 270f);
-                
-            //Outer system should have sparse asteroids, a Neptune, pirate base.
-            
-                //Asteroid belt.
-                system_khamn.addAsteroidBelt(khamn_star, 100, 10750, 500, 290, 310, Terrain.ASTEROID_BELT,  "Khamn Belt");
-		system_khamn.addRingBand(khamn_star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 10700, 275f, null, null);
-		system_khamn.addRingBand(khamn_star, "misc", "rings_dust0", 256f, 1, Color.white, 256f, 10800, 245f, null, null);
-                
-                //An unremarkable Neptunoid, Obilot.
-                SectorEntityToken obilot = system_khamn.addPlanet("magellan_planet_obilot", khamn_star, "Obilot", "ice_giant", 360*(float)Math.random(), 250, 12800, 400f);
-                
-                //And throw in another little rock of a moon here.
-                PlanetAPI outermoon = system_khamn.addPlanet("magellan_planet_spera", obilot, "Spera", "cryovolcanic", 180, 75, 900, 90f);
-                outermoon.setCustomDescriptionId("planet_spera");
-                
-                    // Add fixed conditions.
-                    Misc.initConditionMarket(outermoon);
-                    outermoon.getMarket().addCondition(Conditions.LOW_GRAVITY);
-                    outermoon.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
-                    outermoon.getMarket().addCondition(Conditions.VOLATILES_ABUNDANT);
-                    outermoon.getMarket().addCondition(Conditions.ORE_MODERATE);
-                    outermoon.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
-                    outermoon.getMarket().addCondition(Conditions.RUINS_SCATTERED);
-
-                
-                //Pirate base around Obilot.
-                SectorEntityToken pirStation = system_khamn.addCustomEntity("station_obilotbase", "Port Obilo", "station_side05", "pirates");
-                pirStation.setCircularOrbitWithSpin(system_khamn.getEntityById("magellan_planet_obilot"), 0f, 900, 90f, 7, 21);
-
-                    // add the marketplace to Brightheaven ---------------
-                    MarketAPI pirbaseMarket = AddMarketplace.addMarketplace("pirates", pirStation, null,
-                         "Port Obilo", // name of the market
-                        3, // size of the market (from the JSON)
-                        new ArrayList<>(
-                            Arrays.asList( // list of market conditions from json
-                                Conditions.FREE_PORT,
-                                Conditions.STEALTH_MINEFIELDS,
-                                Conditions.ORGANIZED_CRIME,
-                                //Conditions.ORBITAL_STATION,
-                                Conditions.POPULATION_3)),
-                        new ArrayList<>
-                            (Arrays.asList( // list of industries
-                                Industries.ORBITALSTATION,
-                                Industries.HEAVYBATTERIES,
-                                Industries.SPACEPORT,
-                                Industries.POPULATION)),
-                        new ArrayList<>(
-                            Arrays.asList( // which submarkets to generate
-                                Submarkets.SUBMARKET_BLACK,
-                                Submarkets.SUBMARKET_OPEN,
-                                Submarkets.SUBMARKET_STORAGE)),
-                        0.12f); // tariff amount
-
-                    pirStation.setCustomDescriptionId("station_obilotbase");
-
-                        
-                // Procgen makes you strong.
-                float radiusAfter = StarSystemGenerator.addOrbitingEntities(system_khamn, khamn_star, StarAge.AVERAGE,
-                        3, 6, // min/max entities to add
-                        14400, // radius to start adding at 
-                        4, // name offset - next planet will be <system_khamn name> <roman numeral of this parameter + 1>
-                        true); // whether to use custom or system_khamn-name based names
-                
-                // Add a nebula to the system_khamn.
-		//StarSystemGenerator.addSystemwideNebula(system_khamn, StarAge.OLD);
-                
-                // generates hyperspace destinations for in-system_khamn jump points
-		system_khamn.autogenerateHyperspaceJumpPoints(true, true);
-
-                cleanup(system_khamn);
-                
-     
-        /////////////////
-        //KARIC SYSTEM //
-        /////////////////
-        system_karic.setBackgroundTextureFilename("graphics/backgrounds/background1.jpg");
-
-        // create the star and generate the hyperspace anchor for this system
-        PlanetAPI karic_star = system_karic.initStar(
-                "karic", // unique id for this star
-                StarTypes.WHITE_DWARF, // id in planets.json
-                350f, // radius (in pixels at default zoom)
-                (hsLocationX + spawnXoffset + A4Xoffset), // hyper space location x axis
-                (hsLocationY + spawnYoffset + A4Yoffset), // hyper space location y axis
-                255 // corona radius, from star edge
-        );
-
-        system_karic.setLightColor(new Color(225, 225, 245)); // light color in entire system, affects all entities
-        
-        StarSystemGenerator.addSystemwideNebula(system_karic, magellan_constellation_Age);
-        
-        // an inner asteroid ring.
-        system_karic.addRingBand(karic_star, "misc", "rings_ice0", 256f, 1, Color.gray, 256f, 3600, 90f, Terrain.RING, "Karic Ring");
-        
-        //Valca, a hellish volatile-mining world with a large dissident population.
-        PlanetAPI valca = system_karic.addPlanet("magellan_planet_valca", karic_star, "Valca", "cryovolcanic", 210, 120, 4800, 180);
-                
-                    // Add market with conditions and industries to Valca.
-                    MarketAPI valcaMarket = AddMarketplace.addMarketplace("independent", valca, null,
-                        "Valca", // name of the market
-                        5, // size of the market (from the JSON)
-                        new ArrayList<>(
-                                Arrays.asList( // list of market conditions from martinique.json
-                                        Conditions.THIN_ATMOSPHERE,
-                                        Conditions.COLD,
-                                        Conditions.VOLATILES_PLENTIFUL,
-                                        Conditions.FREE_PORT,
-                                        Conditions.VICE_DEMAND,
-                                        Conditions.DISSIDENT,
-                                        Conditions.ORGANIZED_CRIME,
-                                        Conditions.POPULATION_5)),
-                        new ArrayList<>
-                                (Arrays.asList( // list of industries
-                                        Industries.SPACEPORT,
-                                        Industries.LIGHTINDUSTRY,
-                                        Industries.MINING,
-                                        Industries.POPULATION)),
-                        new ArrayList<>(
-                                Arrays.asList( // which submarkets to generate
-                                        Submarkets.SUBMARKET_BLACK,
-                                        Submarkets.SUBMARKET_OPEN,
-                                        Submarkets.SUBMARKET_STORAGE)),
-                        0.3f); // tariff amount
-                        
-                        valca.setCustomDescriptionId("planet_valca");
-                        
-        //Valca Bastion, a Magellan military outpost to keep an eye on the troublemakers.
-        SectorEntityToken valcaOrbital = system_karic.addCustomEntity("magellan_valca_orbital", "Valca Bastion", "station_side02", "magellan_protectorate");
-        valcaOrbital.setCircularOrbitPointingDown(system_karic.getEntityById("magellan_planet_valca"), 360*(float)Math.random(), 360, 105f);
-        valcaOrbital.setInteractionImage("illustrations", "orbital");
-        
-                    // Add market with conditions and industries to Valca Bastion.
-                    MarketAPI valcaBastionMarket = AddMarketplace.addMarketplace("magellan_protectorate", valcaOrbital, null,
-                        "Valca Bastion", // name of the market
-                        3, // size of the market (from the JSON)
-                        new ArrayList<>(
-                                Arrays.asList( // list of market conditions
-                                        Conditions.OUTPOST,
-                                        Conditions.VICE_DEMAND,
-                                        Conditions.POPULATION_3)),
-                        new ArrayList<>
-                                (Arrays.asList( // list of industries
-                                        Industries.BATTLESTATION,
-                                        Industries.MILITARYBASE,
-                                        Industries.SPACEPORT,
-                                        Industries.HEAVYBATTERIES,
-                                        Industries.POPULATION)),
-                        new ArrayList<>(
-                                Arrays.asList( // which submarkets to generate
-                                        Submarkets.SUBMARKET_BLACK,
-                                        Submarkets.SUBMARKET_OPEN,
-                                        Submarkets.SUBMARKET_STORAGE)),
-                        0.3f); // tariff amount
-                    
-                        valcaOrbital.setCustomDescriptionId("station_valcabastion");
-                        
-        //Comm relay opposite Valca.
-        SectorEntityToken valca_l3_loc = system_karic.addCustomEntity(null,null, "stable_location",Factions.NEUTRAL); 
-        valca_l3_loc.setCircularOrbitPointingDown(karic_star, 30f, 4800, 180f);
-        
-        // Jump point in L5.
-        JumpPointAPI jumpPoint2 = Global.getFactory().createJumpPoint("karic_inner_jump", "Karic Bridge");
-	jumpPoint2.setCircularOrbit(system_karic.getEntityById("karic"), 150f, 4800, 180f);
-	jumpPoint2.setRelatedPlanet(valca);
-	system_karic.addEntity(jumpPoint2);
-        
-        // Stable location in L4
-        SectorEntityToken valca_l4_loc = system_karic.addCustomEntity(null,null, "stable_location",Factions.NEUTRAL); 
-        valca_l4_loc.setCircularOrbitPointingDown(karic_star, 270f, 4800, 180f);
-
-        //Station assigner for a Leveller base in the outer system. Should pick a pretty location.
-        
-        
-        float karic_Outer = StarSystemGenerator.addOrbitingEntities(
-                system_karic,
-                karic_star,
-                magellan_constellation_Age,
-                3, 5, // min/max entities to add
-                6000, // radius to start adding at 
-                0, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
-                true // whether to use custom or system-name based names  
-        );
-
-        system_karic.autogenerateHyperspaceJumpPoints(true, true);
-
-        cleanup(system_karic);           
-        
-        /////////////////
-        //TWO SYSTEM   //
-        /////////////////
-        system_two.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
-
-        // create the star and generate the hyperspace anchor for this system
-        PlanetAPI two_star = system_two.initStar(
-                "Beta " + StarName, // unique id for this star
-                StarTypes.ORANGE, // id in planets.json
-                400f, // radius (in pixels at default zoom)
-                (hsLocationX + spawnXoffset + A2Xoffset), // hyper space location x axis
-                (hsLocationY + spawnYoffset + A2Yoffset), // hyper space location y axis
-                255 // corona radius, from star edge
-        );
-
-        system_two.setLightColor(new Color(255, 225, 205)); // light color in entire system, affects all entities
-        
-        two_star.setName("Beta " + StarName);
-        system_two.setName("Beta " + StarName + " Star System");
-        
-        //Huge debris field.
-        
-
-        float two_Outer = StarSystemGenerator.addOrbitingEntities(
-                system_two,
-                two_star,
-                magellan_constellation_Age,
-                3, 5, // min/max entities to add
-                2000, // radius to start adding at 
-                0, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
-                true // whether to use custom or system-name based names  
-        );
-
-        system_two.autogenerateHyperspaceJumpPoints(true, true);
-
-        cleanup(system_two);        
-        
-        /////////////////
-        //THREE SYSTEM //
-        /////////////////
-        system_three.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
-
-        // create the star and generate the hyperspace anchor for this system
-        PlanetAPI three_star = system_three.initStar(
-                "Gamma " + StarName, // unique id for this star
-                StarTypes.RED_DWARF, // id in planets.json
-                300f, // radius (in pixels at default zoom)
-                (hsLocationX + spawnXoffset + A3Xoffset), // hyper space location x axis
-                (hsLocationY + spawnYoffset + A3Yoffset), // hyper space location y axis
-                255 // corona radius, from star edge
-        );
-
-        system_three.setLightColor(new Color(255, 225, 205)); // light color in entire system, affects all entities
-        
-        system_three.setName("Gamma " + StarName + " Star System");
-
-        StarSystemGenerator.addSystemwideNebula(system_three, magellan_constellation_Age);
-                
-        float three_Outer = StarSystemGenerator.addOrbitingEntities(
-                system_three,
-                three_star,
-                magellan_constellation_Age,
-                4, 6, // min/max entities to add
-                700, // radius to start adding at 
-                0, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
-                true // whether to use custom or system-name based names  
-        );
-
-        system_three.autogenerateHyperspaceJumpPoints(true, true);
-
-        cleanup(system_three);
-        
-        }
-        
-    void cleanup(StarSystemAPI system) {
-        HyperspaceTerrainPlugin plugin = (HyperspaceTerrainPlugin) Misc.getHyperspaceTerrain().getPlugin();
-        NebulaEditor editor = new NebulaEditor(plugin);
-        float minRadius = plugin.getTileSize() * 2f;
-
-        float radius = system.getMaxRadiusInHyperspace();
-        editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius * 0.5f, 0, 360f);
-        editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0, 360f, 0.25f);
-    }
-
-    private void addDerelict(StarSystemAPI system_khamn, 
-            SectorEntityToken focus, 
-            String variantId, 
-            ShipRecoverySpecial.ShipCondition condition, 
-            float orbitRadius, 
-            boolean recoverable) {
-        DerelictShipEntityPlugin.DerelictShipData params = new DerelictShipEntityPlugin.DerelictShipData(new ShipRecoverySpecial.PerShipData(variantId, condition), false);
-        SectorEntityToken ship = BaseThemeGenerator.addSalvageEntity(system_khamn, Entities.WRECK, Factions.NEUTRAL, params);
-        ship.setDiscoverable(true);
-
-        float orbitDays = orbitRadius / (10f + (float) Math.random() * 5f);
-        ship.setCircularOrbit(focus, (float) Math.random() * 360f, orbitRadius, orbitDays);
-
-        if (recoverable) {
-            SalvageSpecialAssigner.ShipRecoverySpecialCreator creator = new SalvageSpecialAssigner.ShipRecoverySpecialCreator(null, 0, 0, false, null, null);
-            Misc.setSalvageSpecial(ship, creator.createSpecial(ship, null));
-        }
-    }
+   }
 }

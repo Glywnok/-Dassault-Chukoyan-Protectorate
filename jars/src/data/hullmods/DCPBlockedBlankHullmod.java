@@ -3,15 +3,8 @@ package data.hullmods;
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 
-public class DCPBlockedBlankHullmod extends BaseHullMod
-{
-    @Override
-    public String getDescriptionParam(int index, HullSize hullSize)
-    {
-        if (index == 0)
-        {
-            return "WARNING";
-        }
-        return null;
-    }
+public class DCPBlockedBlankHullmod extends BaseHullMod {
+   public String getDescriptionParam(int index, HullSize hullSize) {
+      return index == 0 ? "WARNING" : null;
+   }
 }

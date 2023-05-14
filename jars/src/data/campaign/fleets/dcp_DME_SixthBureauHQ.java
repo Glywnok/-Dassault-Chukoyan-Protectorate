@@ -1,11 +1,9 @@
 package data.campaign.fleets;
 
-import java.util.Random;
-
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.BattleAPI;
-import com.fs.starfarer.api.campaign.CampaignEventListener.FleetDespawnReason;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
+import com.fs.starfarer.api.campaign.CampaignEventListener.FleetDespawnReason;
 import com.fs.starfarer.api.campaign.FactionAPI.ShipPickMode;
 import com.fs.starfarer.api.campaign.econ.CommodityOnMarketAPI;
 import com.fs.starfarer.api.campaign.econ.Industry;
@@ -13,383 +11,319 @@ import com.fs.starfarer.api.campaign.listeners.FleetEventListener;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.impl.campaign.econ.impl.BaseIndustry;
 import com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase.PatrolFleetData;
-import com.fs.starfarer.api.impl.campaign.fleets.FleetFactory.PatrolType;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetParamsV3;
 import com.fs.starfarer.api.impl.campaign.fleets.PatrolAssignmentAIV4;
 import com.fs.starfarer.api.impl.campaign.fleets.RouteManager;
+import com.fs.starfarer.api.impl.campaign.fleets.FleetFactory.PatrolType;
 import com.fs.starfarer.api.impl.campaign.fleets.RouteManager.OptionalFleetData;
 import com.fs.starfarer.api.impl.campaign.fleets.RouteManager.RouteData;
 import com.fs.starfarer.api.impl.campaign.fleets.RouteManager.RouteFleetSpawner;
 import com.fs.starfarer.api.impl.campaign.fleets.RouteManager.RouteSegment;
-import com.fs.starfarer.api.impl.campaign.ids.Commodities;
-//import com.fs.starfarer.api.impl.campaign.ids.Factions;
-import com.fs.starfarer.api.impl.campaign.ids.MemFlags;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
-import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.MarketCMD.RaidDangerLevel;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.Pair;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
-import data.campaign.ids.dcp_Factions;
-
+import java.util.Iterator;
+import java.util.Random;
+import org.lwjgl.util.vector.Vector2f;
 
 public class dcp_DME_SixthBureauHQ extends BaseIndustry implements RouteFleetSpawner, FleetEventListener {
-	
-	@Override
-	public boolean isHidden() {
-		return !market.getFactionId().equals(dcp_Factions.DASSAULT);
-	}
-	
-	@Override
-	public boolean isFunctional() {
-		return super.isFunctional() && market.getFactionId().equals(dcp_Factions.DASSAULT);
-	}
+   protected IntervalUtil tracker = new IntervalUtil(Global.getSettings().getFloat("averagePatrolSpawnInterval") * 0.7F, Global.getSettings().getFloat("averagePatrolSpawnInterval") * 1.3F);
+   protected float returningPatrolValue = 0.0F;
 
-	public void apply() {
-		super.apply(true);
-		
-		int size = market.getSize();
-		
-		demand(Commodities.SUPPLIES, size - 1);
-		demand(Commodities.FUEL, size - 1);
-		demand(Commodities.SHIPS, size - 1);
-		
-		supply(Commodities.CREW, size);
-		
-		demand(Commodities.HAND_WEAPONS, size);
-		supply(Commodities.MARINES, size);
-			
-		Pair<String, Integer> deficit = getMaxDeficit(Commodities.HAND_WEAPONS);
-		applyDeficitToProduction(1, deficit, Commodities.MARINES);
-		
-		modifyStabilityWithBaseMod();
-		
-		MemoryAPI memory = market.getMemoryWithoutUpdate();
-		Misc.setFlagWithReason(memory, MemFlags.MARKET_PATROL, getModId(), true, -1);
-		Misc.setFlagWithReason(memory, MemFlags.MARKET_MILITARY, getModId(), true, -1);
-		
-		if (!isFunctional()) {
-			supply.clear();
-			unapply();
-		}
+   public boolean isHidden() {
+      return !this.market.getFactionId().equals("dassault_mikoyan");
+   }
 
-	}
+   public boolean isFunctional() {
+      return super.isFunctional() && this.market.getFactionId().equals("dassault_mikoyan");
+   }
 
-	@Override
-	public void unapply() {
-		super.unapply();
-		
-		MemoryAPI memory = market.getMemoryWithoutUpdate();
-		Misc.setFlagWithReason(memory, MemFlags.MARKET_PATROL, getModId(), false, -1);
-		Misc.setFlagWithReason(memory, MemFlags.MARKET_MILITARY, getModId(), false, -1);
-		
-		unmodifyStabilityWithBaseMod();
-	}
-	
-	protected boolean hasPostDemandSection(boolean hasDemand, IndustryTooltipMode mode) {
-		return mode != IndustryTooltipMode.NORMAL || isFunctional();
-	}
-	
-	@Override
-	protected void addPostDemandSection(TooltipMakerAPI tooltip, boolean hasDemand, IndustryTooltipMode mode) {
-		if (mode != IndustryTooltipMode.NORMAL || isFunctional()) {
-			addStabilityPostDemandSection(tooltip, hasDemand, mode);
-		}
-	}
-	
-	@Override
-	protected int getBaseStabilityMod() {
-		return 2;
-	}
-	
-	public String getNameForModifier() {
-		if (getSpec().getName().contains("HQ")) {
-			return getSpec().getName();
-		}
-		return Misc.ucFirst(getSpec().getName());
-	}
-	
-	@Override
-	protected Pair<String, Integer> getStabilityAffectingDeficit() {
-		return getMaxDeficit(Commodities.SUPPLIES, Commodities.FUEL, Commodities.SHIPS, Commodities.HAND_WEAPONS);
-	}
-	
-	@Override
-	public String getCurrentImage() {
-		return super.getCurrentImage();
-	}
+   public void apply() {
+      super.apply(true);
+      int size = this.market.getSize();
+      this.demand("supplies", size - 1);
+      this.demand("fuel", size - 1);
+      this.demand("ships", size - 1);
+      this.supply("crew", size);
+      this.demand("hand_weapons", size);
+      this.supply("marines", size);
+      Pair<String, Integer> deficit = this.getMaxDeficit(new String[]{"hand_weapons"});
+      this.applyDeficitToProduction(1, deficit, new String[]{"marines"});
+      this.modifyStabilityWithBaseMod();
+      MemoryAPI memory = this.market.getMemoryWithoutUpdate();
+      Misc.setFlagWithReason(memory, "$patrol", this.getModId(), true, -1.0F);
+      Misc.setFlagWithReason(memory, "$military", this.getModId(), true, -1.0F);
+      if (!this.isFunctional()) {
+         this.supply.clear();
+         this.unapply();
+      }
 
-	
-	public boolean isDemandLegal(CommodityOnMarketAPI com) {
-		return true;
-	}
+   }
 
-	public boolean isSupplyLegal(CommodityOnMarketAPI com) {
-		return true;
-	}
+   public void unapply() {
+      super.unapply();
+      MemoryAPI memory = this.market.getMemoryWithoutUpdate();
+      Misc.setFlagWithReason(memory, "$patrol", this.getModId(), false, -1.0F);
+      Misc.setFlagWithReason(memory, "$military", this.getModId(), false, -1.0F);
+      this.unmodifyStabilityWithBaseMod();
+   }
 
-	protected IntervalUtil tracker = new IntervalUtil(Global.getSettings().getFloat("averagePatrolSpawnInterval") * 0.7f,
-													  Global.getSettings().getFloat("averagePatrolSpawnInterval") * 1.3f);
-	
-	protected float returningPatrolValue = 0f;
-	
-	@Override
-	protected void buildingFinished() {
-		super.buildingFinished();
-		
-		tracker.forceIntervalElapsed();
-	}
-	
-	@Override
-	protected void upgradeFinished(Industry previous) {
-		super.upgradeFinished(previous);
-		
-		tracker.forceIntervalElapsed();
-	}
+   protected boolean hasPostDemandSection(boolean hasDemand, IndustryTooltipMode mode) {
+      return mode != IndustryTooltipMode.NORMAL || this.isFunctional();
+   }
 
-	@Override
-	public void advance(float amount) {
-		super.advance(amount);
-		
-		if (Global.getSector().getEconomy().isSimMode()) return;
+   protected void addPostDemandSection(TooltipMakerAPI tooltip, boolean hasDemand, IndustryTooltipMode mode) {
+      if (mode != IndustryTooltipMode.NORMAL || this.isFunctional()) {
+         this.addStabilityPostDemandSection(tooltip, hasDemand, mode);
+      }
 
-		if (!isFunctional()) return;
-		
-		float days = Global.getSector().getClock().convertToDays(amount);
-		
-		float spawnRate = 1f;
-		float rateMult = market.getStats().getDynamic().getStat(Stats.COMBAT_FLEET_SPAWN_RATE_MULT).getModifiedValue();
-		spawnRate *= rateMult;
-		
-		
-		float extraTime = 0f;
-		if (returningPatrolValue > 0) {
-			// apply "returned patrols" to spawn rate, at a maximum rate of 1 interval per day
-			float interval = tracker.getIntervalDuration();
-			extraTime = interval * days;
-			returningPatrolValue -= days;
-			if (returningPatrolValue < 0) returningPatrolValue = 0;
-		}
-		tracker.advance(days * spawnRate + extraTime);
-		
-		//tracker.advance(days * spawnRate * 100f);
-		
-		if (tracker.intervalElapsed()) {
-			String sid = getRouteSourceId();
-			
-			int light = getCount(PatrolType.FAST);
-			int medium = getCount(PatrolType.COMBAT);
-			int heavy = getCount(PatrolType.HEAVY);
+   }
 
-			int maxLight = 3;
-			int maxMedium = 2;
-			int maxHeavy = 1;
-			
-			WeightedRandomPicker<PatrolType> picker = new WeightedRandomPicker<PatrolType>();
-			picker.add(PatrolType.HEAVY, maxHeavy - heavy); 
-			picker.add(PatrolType.COMBAT, maxMedium - medium); 
-			picker.add(PatrolType.FAST, maxLight - light); 
-			
-			if (picker.isEmpty()) return;
-			
-			PatrolType type = picker.pick();
-			PatrolFleetData custom = new PatrolFleetData(type);
-			
-			OptionalFleetData extra = new OptionalFleetData(market);
-			extra.fleetType = type.getFleetType();
-			
-			RouteData route = RouteManager.getInstance().addRoute(sid, market, Misc.genRandomSeed(), extra, this, custom);
-			float patrolDays = 35f + (float) Math.random() * 10f;
-			
-			route.addSegment(new RouteSegment(patrolDays, market.getPrimaryEntity()));
-		}
-	}
-	
-	public void reportAboutToBeDespawnedByRouteManager(RouteData route) {
-	}
-	
-	public boolean shouldRepeat(RouteData route) {
-		return false;
-	}
-	
-	public int getCount(PatrolType ... types) {
-		int count = 0;
-		for (RouteData data : RouteManager.getInstance().getRoutesForSource(getRouteSourceId())) {
-			if (data.getCustom() instanceof PatrolFleetData) {
-				PatrolFleetData custom = (PatrolFleetData) data.getCustom();
-				for (PatrolType type : types) {
-					if (type == custom.type) {
-						count++;
-						break;
-					}
-				}
-			}
-		}
-		return count;
-	}
+   protected int getBaseStabilityMod() {
+      return 2;
+   }
 
-	public int getMaxPatrols(PatrolType type) {
-		if (type == PatrolType.FAST) {
-			return (int) market.getStats().getDynamic().getMod(Stats.PATROL_NUM_LIGHT_MOD).computeEffective(0);
-		}
-		if (type == PatrolType.COMBAT) {
-			return (int) market.getStats().getDynamic().getMod(Stats.PATROL_NUM_MEDIUM_MOD).computeEffective(0);
-		}
-		if (type == PatrolType.HEAVY) {
-			return (int) market.getStats().getDynamic().getMod(Stats.PATROL_NUM_HEAVY_MOD).computeEffective(0);
-		}
-		return 0;
-	}
-	
-	public boolean shouldCancelRouteAfterDelayCheck(RouteData route) {
-		return false;
-	}
+   public String getNameForModifier() {
+      return this.getSpec().getName().contains("HQ") ? this.getSpec().getName() : Misc.ucFirst(this.getSpec().getName());
+   }
 
-	public void reportBattleOccurred(CampaignFleetAPI fleet, CampaignFleetAPI primaryWinner, BattleAPI battle) {
-		
-	}
+   protected Pair<String, Integer> getStabilityAffectingDeficit() {
+      return this.getMaxDeficit(new String[]{"supplies", "fuel", "ships", "hand_weapons"});
+   }
 
-	public void reportFleetDespawnedToListener(CampaignFleetAPI fleet, FleetDespawnReason reason, Object param) {
-		if (!isFunctional()) return;
-		
-		if (reason == FleetDespawnReason.REACHED_DESTINATION) {
-			RouteData route = RouteManager.getInstance().getRoute(getRouteSourceId(), fleet);
-			if (route.getCustom() instanceof PatrolFleetData) {
-				PatrolFleetData custom = (PatrolFleetData) route.getCustom();
-				if (custom.spawnFP > 0) {
-					float fraction  = fleet.getFleetPoints() / custom.spawnFP;
-					returningPatrolValue += fraction;
-				}
-			}
-		}
-	}
-	
-	public CampaignFleetAPI spawnFleet(RouteData route) {
-		
-		PatrolFleetData custom = (PatrolFleetData) route.getCustom();
-		PatrolType type = custom.type;
-		
-		Random random = route.getRandom();
-		
-		float combat = 0f;
-		float tanker = 0f;
-		float freighter = 0f;
-		String fleetType = type.getFleetType();
-		switch (type) {
-		case FAST:
-			combat = Math.round(3f + (float) random.nextFloat() * 2f) * 5f;
-			break;
-		case COMBAT:
-			combat = Math.round(6f + (float) random.nextFloat() * 3f) * 5f;
-			tanker = Math.round((float) random.nextFloat()) * 5f;
-			break;
-		case HEAVY:
-			combat = Math.round(10f + (float) random.nextFloat() * 5f) * 5f;
-			tanker = Math.round((float) random.nextFloat()) * 10f;
-			freighter = Math.round((float) random.nextFloat()) * 10f;
-			break;
-		}
-		
-		FleetParamsV3 params = new FleetParamsV3(
-				market, 
-				null, // loc in hyper; don't need if have market
-				"6eme_bureau",
-				route.getQualityOverride(), // quality override
-				fleetType,
-				combat, // combatPts
-				freighter, // freighterPts 
-				tanker, // tankerPts
-				0f, // transportPts
-				0f, // linerPts
-				0f, // utilityPts
-				0f // qualityMod - since the Lion's Guard is in a different-faction market, counter that penalty
-				);
-		params.timestamp = route.getTimestamp();
-		params.random = random;
-		params.modeOverride = Misc.getShipPickMode(market);
-		params.modeOverride = ShipPickMode.PRIORITY_THEN_ALL;
-		CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
-		
-		if (fleet == null || fleet.isEmpty()) return null;
-		
-		fleet.setFaction(market.getFactionId(), true);
-		fleet.setNoFactionInName(true);
-		
-		fleet.addEventListener(this);
-		
-//		PatrolAssignmentAIV2 ai = new PatrolAssignmentAIV2(fleet, custom);
-//		fleet.addScript(ai);
-		
-		fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_PATROL_FLEET, true);
-		fleet.getMemoryWithoutUpdate().set(MemFlags.FLEET_IGNORES_OTHER_FLEETS, true, 0.3f);
+   public String getCurrentImage() {
+      return super.getCurrentImage();
+   }
 
-		if (type == PatrolType.FAST || type == PatrolType.COMBAT) {
-			fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_CUSTOMS_INSPECTOR, true);
-		}
-		
-		String postId = Ranks.POST_PATROL_COMMANDER;
-		String rankId = Ranks.SPACE_COMMANDER;
-		switch (type) {
-		case FAST:
-			rankId = Ranks.SPACE_LIEUTENANT;
-			break;
-		case COMBAT:
-			rankId = Ranks.SPACE_COMMANDER;
-			break;
-		case HEAVY:
-			rankId = Ranks.SPACE_CAPTAIN;
-			break;
-		}
-		
-		fleet.getCommander().setPostId(postId);
-		fleet.getCommander().setRankId(rankId);
-		
-		market.getContainingLocation().addEntity(fleet);
-		fleet.setFacing((float) Math.random() * 360f);
-		// this will get overridden by the patrol assignment AI, depending on route-time elapsed etc
-		fleet.setLocation(market.getPrimaryEntity().getLocation().x, market.getPrimaryEntity().getLocation().y);
-		
-		fleet.addScript(new PatrolAssignmentAIV4(fleet, route));
-		
-		//market.getContainingLocation().addEntity(fleet);
-		//fleet.setLocation(market.getPrimaryEntity().getLocation().x, market.getPrimaryEntity().getLocation().y);
-		
-		if (custom.spawnFP <= 0) {
-			custom.spawnFP = fleet.getFleetPoints();
-		}
-		
-		return fleet;
-	}
-	
-	public String getRouteSourceId() {
-		return getMarket().getId() + "_" + "sixthbureau";
-	}
+   public boolean isDemandLegal(CommodityOnMarketAPI com) {
+      return true;
+   }
 
-	@Override
-	public boolean isAvailableToBuild() {
-		return false;
-	}
-	
-	public boolean showWhenUnavailable() {
-		return false;
-	}
+   public boolean isSupplyLegal(CommodityOnMarketAPI com) {
+      return true;
+   }
 
-	@Override
-	public boolean canImprove() {
-		return false;
-	}
-	
-	@Override
-	public RaidDangerLevel adjustCommodityDangerLevel(String commodityId, RaidDangerLevel level) {
-		return level.next();
-	}
+   protected void buildingFinished() {
+      super.buildingFinished();
+      this.tracker.forceIntervalElapsed();
+   }
 
-	@Override
-	public RaidDangerLevel adjustItemDangerLevel(String itemId, String data, RaidDangerLevel level) {
-		return level.next();
-	}
-	
+   protected void upgradeFinished(Industry previous) {
+      super.upgradeFinished(previous);
+      this.tracker.forceIntervalElapsed();
+   }
+
+   public void advance(float amount) {
+      super.advance(amount);
+      if (!Global.getSector().getEconomy().isSimMode()) {
+         if (this.isFunctional()) {
+            float days = Global.getSector().getClock().convertToDays(amount);
+            float spawnRate = 1.0F;
+            float rateMult = this.market.getStats().getDynamic().getStat("combat_fleet_spawn_rate_mult").getModifiedValue();
+            spawnRate *= rateMult;
+            float extraTime = 0.0F;
+            if (this.returningPatrolValue > 0.0F) {
+               float interval = this.tracker.getIntervalDuration();
+               extraTime = interval * days;
+               this.returningPatrolValue -= days;
+               if (this.returningPatrolValue < 0.0F) {
+                  this.returningPatrolValue = 0.0F;
+               }
+            }
+
+            this.tracker.advance(days * spawnRate + extraTime);
+            if (this.tracker.intervalElapsed()) {
+               String sid = this.getRouteSourceId();
+               int light = this.getCount(PatrolType.FAST);
+               int medium = this.getCount(PatrolType.COMBAT);
+               int heavy = this.getCount(PatrolType.HEAVY);
+               int maxLight = 3;
+               int maxMedium = 2;
+               int maxHeavy = 1;
+               WeightedRandomPicker<PatrolType> picker = new WeightedRandomPicker();
+               picker.add(PatrolType.HEAVY, (float)(maxHeavy - heavy));
+               picker.add(PatrolType.COMBAT, (float)(maxMedium - medium));
+               picker.add(PatrolType.FAST, (float)(maxLight - light));
+               if (picker.isEmpty()) {
+                  return;
+               }
+
+               PatrolType type = (PatrolType)picker.pick();
+               PatrolFleetData custom = new PatrolFleetData(type);
+               OptionalFleetData extra = new OptionalFleetData(this.market);
+               extra.fleetType = type.getFleetType();
+               RouteData route = RouteManager.getInstance().addRoute(sid, this.market, Misc.genRandomSeed(), extra, this, custom);
+               float patrolDays = 35.0F + (float)Math.random() * 10.0F;
+               route.addSegment(new RouteSegment(patrolDays, this.market.getPrimaryEntity()));
+            }
+
+         }
+      }
+   }
+
+   public void reportAboutToBeDespawnedByRouteManager(RouteData route) {
+   }
+
+   public boolean shouldRepeat(RouteData route) {
+      return false;
+   }
+
+   public int getCount(PatrolType... types) {
+      int count = 0;
+      Iterator var3 = RouteManager.getInstance().getRoutesForSource(this.getRouteSourceId()).iterator();
+
+      while(true) {
+         while(true) {
+            RouteData data;
+            do {
+               if (!var3.hasNext()) {
+                  return count;
+               }
+
+               data = (RouteData)var3.next();
+            } while(!(data.getCustom() instanceof PatrolFleetData));
+
+            PatrolFleetData custom = (PatrolFleetData)data.getCustom();
+            PatrolType[] var6 = types;
+            int var7 = types.length;
+
+            for(int var8 = 0; var8 < var7; ++var8) {
+               PatrolType type = var6[var8];
+               if (type == custom.type) {
+                  ++count;
+                  break;
+               }
+            }
+         }
+      }
+   }
+
+   public int getMaxPatrols(PatrolType type) {
+      if (type == PatrolType.FAST) {
+         return (int)this.market.getStats().getDynamic().getMod("patrol_num_light_mod").computeEffective(0.0F);
+      } else if (type == PatrolType.COMBAT) {
+         return (int)this.market.getStats().getDynamic().getMod("patrol_num_medium_mod").computeEffective(0.0F);
+      } else {
+         return type == PatrolType.HEAVY ? (int)this.market.getStats().getDynamic().getMod("patrol_num_heavy_mod").computeEffective(0.0F) : 0;
+      }
+   }
+
+   public boolean shouldCancelRouteAfterDelayCheck(RouteData route) {
+      return false;
+   }
+
+   public void reportBattleOccurred(CampaignFleetAPI fleet, CampaignFleetAPI primaryWinner, BattleAPI battle) {
+   }
+
+   public void reportFleetDespawnedToListener(CampaignFleetAPI fleet, FleetDespawnReason reason, Object param) {
+      if (this.isFunctional()) {
+         if (reason == FleetDespawnReason.REACHED_DESTINATION) {
+            RouteData route = RouteManager.getInstance().getRoute(this.getRouteSourceId(), fleet);
+            if (route.getCustom() instanceof PatrolFleetData) {
+               PatrolFleetData custom = (PatrolFleetData)route.getCustom();
+               if (custom.spawnFP > 0) {
+                  float fraction = (float)(fleet.getFleetPoints() / custom.spawnFP);
+                  this.returningPatrolValue += fraction;
+               }
+            }
+         }
+
+      }
+   }
+
+   public CampaignFleetAPI spawnFleet(RouteData route) {
+      PatrolFleetData custom = (PatrolFleetData)route.getCustom();
+      PatrolType type = custom.type;
+      Random random = route.getRandom();
+      float combat = 0.0F;
+      float tanker = 0.0F;
+      float freighter = 0.0F;
+      String fleetType = type.getFleetType();
+      switch(type) {
+      case FAST:
+         combat = (float)Math.round(3.0F + random.nextFloat() * 2.0F) * 5.0F;
+         break;
+      case COMBAT:
+         combat = (float)Math.round(6.0F + random.nextFloat() * 3.0F) * 5.0F;
+         tanker = (float)Math.round(random.nextFloat()) * 5.0F;
+         break;
+      case HEAVY:
+         combat = (float)Math.round(10.0F + random.nextFloat() * 5.0F) * 5.0F;
+         tanker = (float)Math.round(random.nextFloat()) * 10.0F;
+         freighter = (float)Math.round(random.nextFloat()) * 10.0F;
+      }
+
+      FleetParamsV3 params = new FleetParamsV3(this.market, (Vector2f)null, "6eme_bureau", route.getQualityOverride(), fleetType, combat, freighter, tanker, 0.0F, 0.0F, 0.0F, 0.0F);
+      params.timestamp = route.getTimestamp();
+      params.random = random;
+      params.modeOverride = Misc.getShipPickMode(this.market);
+      params.modeOverride = ShipPickMode.PRIORITY_THEN_ALL;
+      CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
+      if (fleet != null && !fleet.isEmpty()) {
+         fleet.setFaction(this.market.getFactionId(), true);
+         fleet.setNoFactionInName(true);
+         fleet.addEventListener(this);
+         fleet.getMemoryWithoutUpdate().set("$isPatrol", true);
+         fleet.getMemoryWithoutUpdate().set("$cfai_ignoreOtherFleets", true, 0.3F);
+         if (type == PatrolType.FAST || type == PatrolType.COMBAT) {
+            fleet.getMemoryWithoutUpdate().set("$isCustomsInspector", true);
+         }
+
+         String postId = Ranks.POST_PATROL_COMMANDER;
+         String rankId = Ranks.SPACE_COMMANDER;
+         switch(type) {
+         case FAST:
+            rankId = Ranks.SPACE_LIEUTENANT;
+            break;
+         case COMBAT:
+            rankId = Ranks.SPACE_COMMANDER;
+            break;
+         case HEAVY:
+            rankId = Ranks.SPACE_CAPTAIN;
+         }
+
+         fleet.getCommander().setPostId(postId);
+         fleet.getCommander().setRankId(rankId);
+         this.market.getContainingLocation().addEntity(fleet);
+         fleet.setFacing((float)Math.random() * 360.0F);
+         fleet.setLocation(this.market.getPrimaryEntity().getLocation().x, this.market.getPrimaryEntity().getLocation().y);
+         fleet.addScript(new PatrolAssignmentAIV4(fleet, route));
+         if (custom.spawnFP <= 0) {
+            custom.spawnFP = fleet.getFleetPoints();
+         }
+
+         return fleet;
+      } else {
+         return null;
+      }
+   }
+
+   public String getRouteSourceId() {
+      return this.getMarket().getId() + "_sixthbureau";
+   }
+
+   public boolean isAvailableToBuild() {
+      return false;
+   }
+
+   public boolean showWhenUnavailable() {
+      return false;
+   }
+
+   public boolean canImprove() {
+      return false;
+   }
+
+   public RaidDangerLevel adjustCommodityDangerLevel(String commodityId, RaidDangerLevel level) {
+      return level.next();
+   }
+
+   public RaidDangerLevel adjustItemDangerLevel(String itemId, String data, RaidDangerLevel level) {
+      return level.next();
+   }
 }

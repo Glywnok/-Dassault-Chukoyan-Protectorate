@@ -2,7 +2,7 @@
 	"id":"dcp_DME_mirage_ftr",
 	"type":"TELEPORTER",
 	"aiType":"PHASE_TELEPORTER_2",
-	#"statsScript":"data.shipsystems.scripts.MirageFXStatsSm",
+	#"statsScript":"data.shipsystems.scripts.dcp_DME_MirageFXStatsSm",
 
 	"jitterColor":[145,175,255,155],
 	"jitterCopies":12,

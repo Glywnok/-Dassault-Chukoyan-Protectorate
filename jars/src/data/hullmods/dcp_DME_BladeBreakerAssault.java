@@ -9,115 +9,99 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-import data.campaign.ids.dcp_HullMods;
 import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
 
 public class dcp_DME_BladeBreakerAssault extends BaseHullMod {
-    private String getString(String key) {
-    return Global.getSettings().getString("HullMod", "dcp_" + key);}
-    
-    private static Map speed = new HashMap();
-    static {
-	speed.put(HullSize.FRIGATE, 50f);
-	speed.put(HullSize.DESTROYER, 40f);
-	speed.put(HullSize.CRUISER, 25f);
-	speed.put(HullSize.CAPITAL_SHIP, 15f);
-    }
-	
-    public static final float FLUX_REDUCTION = 25f;
-    private static final float FLUX_DISSIPATION_MULT = 2f;
-    private static final float PEAK_MULT = 0.75f;
+   private static Map speed = new HashMap();
+   public static final float FLUX_REDUCTION = 25.0F;
+   private static final float FLUX_DISSIPATION_MULT = 2.0F;
+   private static final float PEAK_MULT = 0.75F;
+   private static final float RANGE_THRESHOLD = 600.0F;
+   private static final float RANGE_MULT = 0.5F;
+   private static final float FTR_SPEED_BOOST = 0.25F;
+   private Color color = new Color(0, 255, 0, 255);
 
-    private static final float RANGE_THRESHOLD = 600f;
-    private static final float RANGE_MULT = 0.5f; // Range penalty above threshold.
-    
-    private static final float FTR_SPEED_BOOST = 0.25f;
-    
-    @Override
-    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id)
-    {
-        stats.getMaxSpeed().modifyFlat(id, (Float) speed.get(hullSize));
-        stats.getBallisticWeaponFluxCostMod().modifyPercent(id, -FLUX_REDUCTION);
-        stats.getEnergyWeaponFluxCostMod().modifyPercent(id, -FLUX_REDUCTION);
-        stats.getFluxDissipation().modifyMult(id, FLUX_DISSIPATION_MULT);
-	stats.getPeakCRDuration().modifyMult(id, PEAK_MULT);
+   private String getString(String key) {
+      return Global.getSettings().getString("HullMod", "istl_" + key);
+   }
 
-        stats.getVentRateMult().modifyMult(id, 0f);
+   public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
+      stats.getMaxSpeed().modifyFlat(id, (Float)speed.get(hullSize));
+      stats.getBallisticWeaponFluxCostMod().modifyPercent(id, -25.0F);
+      stats.getEnergyWeaponFluxCostMod().modifyPercent(id, -25.0F);
+      stats.getFluxDissipation().modifyMult(id, 2.0F);
+      stats.getPeakCRDuration().modifyMult(id, 0.75F);
+      stats.getVentRateMult().modifyMult(id, 0.0F);
+      stats.getWeaponRangeThreshold().modifyFlat(id, 600.0F);
+      stats.getWeaponRangeMultPastThreshold().modifyMult(id, 0.5F);
+   }
 
-        stats.getWeaponRangeThreshold().modifyFlat(id, RANGE_THRESHOLD);
-	stats.getWeaponRangeMultPastThreshold().modifyMult(id, RANGE_MULT); // range multiplier beyond threshold.
-    }
-    
-    //Add effects.
-    public void applyEffectsToFighterSpawnedByShip(ShipAPI fighter, ShipAPI ship, String id)
-    {
-	MutableShipStatsAPI stats = fighter.getMutableStats();
+   public void applyEffectsToFighterSpawnedByShip(ShipAPI fighter, ShipAPI ship, String id) {
+      MutableShipStatsAPI stats = fighter.getMutableStats();
+      stats.getMaxSpeed().modifyMult(id, 1.25F);
+   }
 
-        stats.getMaxSpeed().modifyMult(id, 1f + FTR_SPEED_BOOST);
-    }
- 
-    public void addPostDescriptionSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec)
-    {
-        float pad = 10f;
-        float padS = 2f;
-        tooltip.addSectionHeading("Details", Alignment.MID, pad);
-        TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCPicons/tooltip/dcp_DME_hullmod_movement.png", 40);
-            text.addPara("- " + getString("BBAssaultDesc1"), pad, Misc.getHighlightColor(), "50", "40", "25", "15");
-            text.addPara("- " + getString("BBAssaultDesc2"), padS, Misc.getHighlightColor(), "25%");
-            text.addPara("- " + getString("BBAssaultDesc3"), padS, Misc.getHighlightColor(), "2");
-            text.addPara("- " + getString("BBAssaultDesc4"), padS, Misc.getHighlightColor(), "600");
-            text.addPara("- " + getString("BBAssaultDesc5"), padS, Misc.getHighlightColor(), "25%");
-            
-        tooltip.addImageWithText(pad);
-        TooltipMakerAPI text2 = tooltip.beginImageWithText("graphics/DCPicons/tooltip/dcp_DME_hullmod_fighter.png", 40);
-            text2.addPara("- " + getString("BBAssaultDescFtr"), padS, Misc.getHighlightColor(), "25%");
-        tooltip.addImageWithText(pad);
-    }
-    
-    private Color color = new Color(0,255,0,255);
-    @Override
-    public void advanceInCombat(ShipAPI ship, float amount) {
-        HullSize hullSize = ship.getHullSize();
-        MutableShipStatsAPI stats = ship.getMutableStats();
-        String id = "BladeBreakerAssault";
-        FluxTrackerAPI flux = ship.getFluxTracker();
-        final float fluxLevel = flux.getCurrFlux() / flux.getMaxFlux();
-        float speedBonus = 1f;
-        // Doubled bonus if overloaded or venting.
-        if (flux.isOverloadedOrVenting()) {
-            speedBonus = 2f;
-        }            
-        //Improves top speed/accel based on flux level
-        stats.getMaxSpeed().modifyFlat(id, (Float) speed.get(hullSize) * speedBonus * fluxLevel);
-        stats.getAcceleration().modifyPercent(id, 60f * (Float) speed.get(hullSize) * speedBonus * fluxLevel);
-        stats.getDeceleration().modifyPercent(id, 40f * (Float) speed.get(hullSize) * speedBonus * fluxLevel);
-        //Improves turning/turn accel based on flux level
-        stats.getMaxTurnRate().modifyFlat(id, 5f * (speedBonus/2f) * fluxLevel);
-        stats.getMaxTurnRate().modifyPercent(id, 100f * (Float) speed.get(hullSize) * fluxLevel);
-        stats.getTurnAcceleration().modifyFlat(id, 10f * (speedBonus/1.5f) * fluxLevel);
-        stats.getTurnAcceleration().modifyPercent(id, 50f * (speedBonus/1.5f) * fluxLevel);
-        //Also improves your chances of getting your shit wrecked based on flux level
-        stats.getEngineDamageTakenMult().modifyPercent(id, 100f * fluxLevel);
-        //Sweet green visuals based on flux level
-        ship.getEngineController().fadeToOtherColor(this, color, null, 1f * fluxLevel, 0.5f);
-        ship.getEngineController().extendFlame(this, 0.3f * fluxLevel, 0.3f * fluxLevel, 0.6f * fluxLevel);
-    }
+   public void addPostDescriptionSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
+      float pad = 10.0F;
+      float padS = 2.0F;
+      tooltip.addSectionHeading("Details", Alignment.MID, pad);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/ISTL/icons/tooltip/istl_hullmod_movement.png", 40.0F);
+      text.addPara("- " + this.getString("BBAssaultDesc1"), pad, Misc.getHighlightColor(), new String[]{"50", "40", "25", "15"});
+      text.addPara("- " + this.getString("BBAssaultDesc2"), padS, Misc.getHighlightColor(), new String[]{"25%"});
+      text.addPara("- " + this.getString("BBAssaultDesc3"), padS, Misc.getHighlightColor(), new String[]{"2"});
+      text.addPara("- " + this.getString("BBAssaultDesc4"), padS, Misc.getHighlightColor(), new String[]{"600"});
+      text.addPara("- " + this.getString("BBAssaultDesc5"), padS, Misc.getHighlightColor(), new String[]{"25%"});
+      tooltip.addImageWithText(pad);
+      TooltipMakerAPI text2 = tooltip.beginImageWithText("graphics/ISTL/icons/tooltip/istl_hullmod_fighter.png", 40.0F);
+      text2.addPara("- " + this.getString("BBAssaultDescFtr"), padS, Misc.getHighlightColor(), new String[]{"25%"});
+      tooltip.addImageWithText(pad);
+   }
 
-    @Override
-    public boolean isApplicableToShip(ShipAPI ship) {
-        if (shipHasOtherModInCategory(ship, spec.getId(), dcp_HullMods.TAG_BREAKER_PACKAGE)) return false;
-        return ship.getVariant().hasHullMod(dcp_HullMods.BLADEBREAKER_BASE) && super.isApplicableToShip(ship);
-    }
-    @Override
-    public String getUnapplicableReason(ShipAPI ship) {
-        if (shipHasOtherModInCategory(ship, spec.getId(), dcp_HullMods.TAG_BREAKER_PACKAGE)) {
-                return "Can only install one combat focus on a Blade Breaker hull";
-        }
-        if (!ship.getVariant().hasHullMod(dcp_HullMods.BLADEBREAKER_BASE)) {
-                return "Must be installed on a Blade Breaker ship";
-        }
-        return super.getUnapplicableReason(ship);
-    }
+   public void advanceInCombat(ShipAPI ship, float amount) {
+      HullSize hullSize = ship.getHullSize();
+      MutableShipStatsAPI stats = ship.getMutableStats();
+      String id = "BladeBreakerAssault";
+      FluxTrackerAPI flux = ship.getFluxTracker();
+      float fluxLevel = flux.getCurrFlux() / flux.getMaxFlux();
+      float speedBonus = 1.0F;
+      if (flux.isOverloadedOrVenting()) {
+         speedBonus = 2.0F;
+      }
+
+      stats.getMaxSpeed().modifyFlat(id, (Float)speed.get(hullSize) * speedBonus * fluxLevel);
+      stats.getAcceleration().modifyPercent(id, 60.0F * (Float)speed.get(hullSize) * speedBonus * fluxLevel);
+      stats.getDeceleration().modifyPercent(id, 40.0F * (Float)speed.get(hullSize) * speedBonus * fluxLevel);
+      stats.getMaxTurnRate().modifyFlat(id, 5.0F * (speedBonus / 2.0F) * fluxLevel);
+      stats.getMaxTurnRate().modifyPercent(id, 100.0F * (Float)speed.get(hullSize) * fluxLevel);
+      stats.getTurnAcceleration().modifyFlat(id, 10.0F * (speedBonus / 1.5F) * fluxLevel);
+      stats.getTurnAcceleration().modifyPercent(id, 50.0F * (speedBonus / 1.5F) * fluxLevel);
+      stats.getEngineDamageTakenMult().modifyPercent(id, 100.0F * fluxLevel);
+      ship.getEngineController().fadeToOtherColor(this, this.color, (Color)null, 1.0F * fluxLevel, 0.5F);
+      ship.getEngineController().extendFlame(this, 0.3F * fluxLevel, 0.3F * fluxLevel, 0.6F * fluxLevel);
+   }
+
+   public boolean isApplicableToShip(ShipAPI ship) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "istl_breaker_package")) {
+         return false;
+      } else {
+         return ship.getVariant().hasHullMod("istl_bbengineering") && super.isApplicableToShip(ship);
+      }
+   }
+
+   public String getUnapplicableReason(ShipAPI ship) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "istl_breaker_package")) {
+         return "Can only install one combat focus on a Blade Breaker hull";
+      } else {
+         return !ship.getVariant().hasHullMod("istl_bbengineering") ? "Must be installed on a Blade Breaker ship" : super.getUnapplicableReason(ship);
+      }
+   }
+
+   static {
+      speed.put(HullSize.FRIGATE, 50.0F);
+      speed.put(HullSize.DESTROYER, 40.0F);
+      speed.put(HullSize.CRUISER, 25.0F);
+      speed.put(HullSize.CAPITAL_SHIP, 15.0F);
+   }
 }
