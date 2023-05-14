@@ -31,17 +31,17 @@ public class MissionDefinition implements MissionDefinitionPlugin
 
         // Set up the player's fleet.  Variant names come from the
         // files in data/variants and data/variants/fighters
-        api.addToFleet(FleetSide.PLAYER, "dcp_tunguska_fsup", FleetMemberType.SHIP, "Pup Tentacle", true);
-        api.addToFleet(FleetSide.PLAYER, "dcp_wanderer_std", FleetMemberType.SHIP, "Peaches En Regalia", false);
-        api.addToFleet(FleetSide.PLAYER, "dcp_tereshkova_tech", FleetMemberType.SHIP, "Roxy & Elsewhere", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_tunguska_fsup", FleetMemberType.SHIP, "Pup Tentacle", true);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_wanderer_std", FleetMemberType.SHIP, "Peaches En Regalia", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_tereshkova_tech", FleetMemberType.SHIP, "Roxy & Elsewhere", false);
 
         // Set up the enemy fleet.
         api.addToFleet(FleetSide.ENEMY, "hammerhead_Overdriven", FleetMemberType.SHIP, false);
         api.addToFleet(FleetSide.ENEMY, "centurion_Assault", FleetMemberType.SHIP, false);
-        api.addToFleet(FleetSide.ENEMY, "dcp_sevastopol_mk1_std", FleetMemberType.SHIP, "I'm The Slime", false);
-        api.addToFleet(FleetSide.ENEMY, "dcp_naja_mk1_std", FleetMemberType.SHIP, false);
-        api.addToFleet(FleetSide.ENEMY, "dcp_naja_mk1_brawl", FleetMemberType.SHIP, false);
-        api.addToFleet(FleetSide.ENEMY, "dcp_naja_mk1_brawl", FleetMemberType.SHIP, false);
+        api.addToFleet(FleetSide.ENEMY, "dcp_DME_sevastopol_mk1_std", FleetMemberType.SHIP, "I'm The Slime", false);
+        api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_mk1_std", FleetMemberType.SHIP, false);
+        api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_mk1_brawl", FleetMemberType.SHIP, false);
+        api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_mk1_brawl", FleetMemberType.SHIP, false);
 
         api.defeatOnShipLoss("Pup Tentacle");
 

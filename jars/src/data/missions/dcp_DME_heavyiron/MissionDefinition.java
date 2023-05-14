@@ -35,18 +35,18 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		// Set up the player's fleet.  Variant names come from the
 		// files in data/variants and data/variants/fighters
 		//api.addToFleet(FleetSide.PLAYER, "harbinger_Strike", FleetMemberType.SHIP, "TTS Invisible Hand", true, CrewXPLevel.VETERAN);
-		api.addToFleet(FleetSide.PLAYER, "dcp_baikal_brone_elite", FleetMemberType.SHIP, "DMS Rokossovsky", true);
-		api.addToFleet(FleetSide.PLAYER, "dcp_grand_union_std", FleetMemberType.SHIP, "UNS Nameless", false);
-		api.addToFleet(FleetSide.PLAYER, "dcp_feeder_std", FleetMemberType.SHIP, "UNS Dar es Salaam", false);
-		api.addToFleet(FleetSide.PLAYER, "dcp_stoat_c_std", FleetMemberType.SHIP, "UNS Balls To The Wall", false);
-		api.addToFleet(FleetSide.PLAYER, "dcp_stoat_c_std", FleetMemberType.SHIP, "UNS Plowman", false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_baikal_brone_elite", FleetMemberType.SHIP, "DMS Rokossovsky", true);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_grand_union_std", FleetMemberType.SHIP, "UNS Nameless", false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_feeder_std", FleetMemberType.SHIP, "UNS Dar es Salaam", false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_stoat_c_std", FleetMemberType.SHIP, "UNS Balls To The Wall", false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_stoat_c_std", FleetMemberType.SHIP, "UNS Plowman", false);
 
 		api.defeatOnShipLoss("DMS Rokossovsky");
 		
 		// Set up the enemy fleet.
 		api.addToFleet(FleetSide.ENEMY, "heron_Attack", FleetMemberType.SHIP, "Hiryu", false);
-		api.addToFleet(FleetSide.ENEMY, "dcp_naja_export", FleetMemberType.SHIP, false);
-		api.addToFleet(FleetSide.ENEMY, "dcp_naja_mk1_std", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_export", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_mk1_std", FleetMemberType.SHIP, false);
 		
 		api.addToFleet(FleetSide.ENEMY, "colossus3_Pirate", FleetMemberType.SHIP, "Golden Circle", true);
 		api.addToFleet(FleetSide.ENEMY, "enforcer_Assault", FleetMemberType.SHIP, false);
@@ -54,7 +54,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.addToFleet(FleetSide.ENEMY, "hound_Overdriven", FleetMemberType.SHIP, false);
 		api.addToFleet(FleetSide.ENEMY, "hound_d_pirates_Shielded", FleetMemberType.SHIP, false);
 		
-		api.addToFleet(FleetSide.ENEMY, "dcp_sevastopol_mk1_std", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_sevastopol_mk1_std", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.ENEMY, "nebula_Standard", FleetMemberType.SHIP, false);
 
 		

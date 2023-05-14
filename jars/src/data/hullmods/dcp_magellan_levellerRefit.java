@@ -1,96 +1,97 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package data.hullmods;
 
-import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.BaseHullMod;
-import com.fs.starfarer.api.combat.MutableShipStatsAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.combat.ShipAPI.HullSize;
-import com.fs.starfarer.api.ui.Alignment;
-import com.fs.starfarer.api.ui.TooltipMakerAPI;
-import com.fs.starfarer.api.util.Misc;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
+import com.fs.starfarer.api.ui.LabelAPI;
+import java.awt.Color;
+import com.fs.starfarer.api.ui.Alignment;
+import com.fs.starfarer.api.util.Misc;
+import com.fs.starfarer.api.ui.TooltipMakerAPI;
+import com.fs.starfarer.api.combat.MutableShipStatsAPI;
+import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.Global;
 import java.util.Map;
 import java.util.Set;
+import com.fs.starfarer.api.combat.BaseHullMod;
 
-/**
- *
- * @author HarmfulMechanic
- */
-public class dcp_magellan_levellerRefit extends BaseHullMod {
-        private String getString(String key) {
-        return Global.getSettings().getString("HullMod", "magellan_" + key);}
+public class dcp_magellan_LevellerRefit extends BaseHullMod
+{
+    private static final Set<String> BLOCKED_HULLMODS;
+    public static final float HEALTH_BONUS = 100.0f;
+    public static final float TURN_PENALTY = 10.0f;
+    private static Map mag;
+    public static final int ENERGY_RANGE_BONUS = 200;
+    public static final float MANEUVER_BONUS = 25.0f;
 
-	private static final Set<String> BLOCKED_HULLMODS = new HashSet<>(2);
-	
-        public static final float HEALTH_BONUS = 100f;
-	public static final float TURN_PENALTY = 10f;
-        private static Map mag = new HashMap();
-	static {
-		mag.put(HullSize.FRIGATE, 30f);
-		mag.put(HullSize.DESTROYER, 60f);
-		mag.put(HullSize.CRUISER, 90f);
-		mag.put(HullSize.CAPITAL_SHIP, 150f);
-	}
-        public static final float MANEUVER_BONUS = 25f;
-        
-        static
-        {
-            // These hullmods will automatically be removed
-            // Not as elegant as blocking them in the first place, but
-            // this method doesn't require editing every hullmod's script
-            BLOCKED_HULLMODS.add("fluxdistributor"); // No more flux upgrades, sorry.
-            BLOCKED_HULLMODS.add("armoredweapons"); // No more uparmoring those mounts.
+    public int getDisplaySortOrder() {
+        return 0;
+    }
+
+    public int getDisplayCategoryIndex() {
+        return 0;
+    }
+
+    private String getString(final String key) {
+        return Global.getSettings().getString("Hullmod", "magellan_" + key);
+    }
+
+    public void applyEffectsBeforeShipCreation(final ShipAPI.HullSize hullSize, final MutableShipStatsAPI stats, final String id) {
+        stats.getWeaponHealthBonus().modifyPercent(id, 100.0f);
+        stats.getWeaponTurnRateBonus().modifyMult(id, 0.9f);
+        stats.getEnergyWeaponRangeBonus().modifyFlat(id, 200.0f);
+        stats.getFluxDissipation().modifyFlat(id, (float)dcp_magellan_LevellerRefit.mag.get(hullSize));
+        stats.getAcceleration().modifyPercent(id, 50.0f);
+        stats.getDeceleration().modifyPercent(id, 25.0f);
+        stats.getTurnAcceleration().modifyPercent(id, 50.0f);
+        stats.getMaxTurnRate().modifyPercent(id, 25.0f);
+    }
+
+    public void addPostDescriptionSection(final TooltipMakerAPI tooltip, final ShipAPI.HullSize hullSize, final ShipAPI ship, final float width, final boolean isForModSpec) {
+        final float pad = 10.0f;
+        final float pad2S = 4.0f;
+        final float padS = 2.0f;
+        final Color h = Misc.getHighlightColor();
+        final Color bad = Misc.getNegativeHighlightColor();
+        final Color badbg = dcp_magellan_hullmodUtils.getNegativeBGColor();
+        final Color lev = dcp_magellan_hullmodUtils.getLevellerHLColor();
+        final Color levbg = dcp_magellan_hullmodUtils.getLevellerBGColor();
+        tooltip.addSectionHeading(this.getString("MagellanEngTitle"), lev, levbg, Alignment.MID, pad);
+        tooltip.addPara("- " + this.getString("MagellanEngDesc1"), pad, h, new String[] { "100%" });
+        tooltip.addPara("- " + this.getString("MagellanEngDesc2"), padS, h, new String[] { "10%" });
+        final LabelAPI label = tooltip.addPara("\u2014\u2014\u2014 " + this.getString("LevellerRefitTitle") + " \u2014\u2014\u2014", lev, pad2S);
+        label.setAlignment(Alignment.MID);
+        tooltip.addPara("- " + this.getString("LevellerRefitDesc2"), pad2S, h, new String[] { "200su" });
+        tooltip.addPara("- " + this.getString("LevellerRefitDesc3"), padS, h, new String[] { "30", "60", "90", "150" });
+        tooltip.addPara("- " + this.getString("LevellerRefitDesc4"), padS, h, new String[] { "25%" });
+        tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+        final TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/hullmod_incompatible.png", 40.0f);
+        text.addPara(this.getString("MagellanAllIncomp"), padS);
+        text.addPara("- Armored Weapon Mounts", bad, 0.0f);
+        text.addPara("- Converted Hangar", bad, 0.0f);
+        if (Global.getSettings().getModManager().isModEnabled("roider")) {
+            text.addPara("- Fighter Clamps", bad, 0.0f);
         }
-        
-	public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
-		stats.getWeaponHealthBonus().modifyPercent(id, HEALTH_BONUS);
-		stats.getWeaponTurnRateBonus().modifyMult(id, 1f - TURN_PENALTY * 0.01f);
-		stats.getFluxDissipation().modifyFlat(id, (Float) mag.get(hullSize));
-                stats.getAcceleration().modifyPercent(id, MANEUVER_BONUS * 2f);
-		stats.getDeceleration().modifyPercent(id, MANEUVER_BONUS);
-		stats.getTurnAcceleration().modifyPercent(id, MANEUVER_BONUS * 2f);
-		stats.getMaxTurnRate().modifyPercent(id, MANEUVER_BONUS);
-	}
-        
-        @Override
-        public void addPostDescriptionSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
-            float pad = 10f;
-            float padS = 2f;
-            tooltip.addSectionHeading("Incompatibilities", Alignment.MID, pad);
-            tooltip.addPara("%s " + getString("MagellanAllIncomp"), pad, Misc.getNegativeHighlightColor(), "-", "Flux Distributor, Armored Weapon Mounts");
-            tooltip.addSectionHeading("Details", Alignment.MID, pad);
-            tooltip.addPara("%s " + getString("MagellanEngDesc1"), pad, Misc.getHighlightColor(), "-", "100%");
-            tooltip.addPara("%s " + getString("MagellanEngDesc2"), padS, Misc.getHighlightColor(), "-", "10%");
-            tooltip.addSectionHeading("Refit Effects", Alignment.MID, pad);
-            tooltip.addPara("%s " + getString("LevellerRefitDesc3"), pad, Misc.getHighlightColor(), "-", "30", "60", "90", "150");
-            tooltip.addPara("%s " + getString("LevellerRefitDesc4"), padS, Misc.getHighlightColor(), "-", "25%");
-        }
-        
-            @Override
-            public void applyEffectsAfterShipCreation(ShipAPI ship, String id)
-        {
-            for (String tmp : BLOCKED_HULLMODS)
-            {
-                if (ship.getVariant().getHullMods().contains(tmp))
-                {
-                    ship.getVariant().removeMod(tmp);
-                    DCPBlockedHullmodDisplayScript.showBlocked(ship);
-                }
+        tooltip.addImageWithText(pad);
+    }
+
+    public void applyEffectsAfterShipCreation(final ShipAPI ship, final String id) {
+        for (final String tmp : dcp_magellan_LevellerRefit.BLOCKED_HULLMODS) {
+            if (ship.getVariant().getHullMods().contains(tmp)) {
+                ship.getVariant().removeMod(tmp);
+                DCPBlockedHullmodDisplayScript.showBlocked(ship);
             }
         }
-	
-	public String getDescriptionParam(int index, HullSize hullSize) {
-		if (index == 0) return "" + (int) HEALTH_BONUS + "%";
-		if (index == 1) return "" + (int) TURN_PENALTY + "%";
-		if (index == 2) return "" + (int) (HEALTH_BONUS/2) + "%";
-		return null;
-	}
+    }
 
-
+    static {
+        BLOCKED_HULLMODS = new HashSet<String>(3);
+        (dcp_magellan_LevellerRefit.mag = new HashMap()).put(ShipAPI.HullSize.FRIGATE, 30.0f);
+        dcp_magellan_LevellerRefit.mag.put(ShipAPI.HullSize.DESTROYER, 60.0f);
+        dcp_magellan_LevellerRefit.mag.put(ShipAPI.HullSize.CRUISER, 90.0f);
+        dcp_magellan_LevellerRefit.mag.put(ShipAPI.HullSize.CAPITAL_SHIP, 150.0f);
+        dcp_magellan_LevellerRefit.BLOCKED_HULLMODS.add("armoredweapons");
+        dcp_magellan_LevellerRefit.BLOCKED_HULLMODS.add("converted_hangar");
+        dcp_magellan_LevellerRefit.BLOCKED_HULLMODS.add("roider_fighterClamps");
+    }
 }

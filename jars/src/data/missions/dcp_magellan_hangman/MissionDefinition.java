@@ -25,29 +25,29 @@ public class MissionDefinition implements MissionDefinitionPlugin {
                 api.addBriefingItem("Kill Maxau Sxown, who's visiting the Herdmaster on SS Verdant Vision.");
 		
 		// Set up the player's fleet
-		api.addToFleet(FleetSide.PLAYER, "magellan_fastdestroyer_blackcollar_elite", FleetMemberType.SHIP, "FSS Ring Of Swords", true);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_fastdestroyer_blackcollar_elite", FleetMemberType.SHIP, "FSS Ring Of Swords", true);
                 // Cruiser
-		api.addToFleet(FleetSide.PLAYER, "magellan_lightcruiser_blackcollar_elite", FleetMemberType.SHIP, "FSS Three Hearts, Three Suns", false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_lightcruiser_blackcollar_elite", FleetMemberType.SHIP, "FSS Three Hearts, Three Suns", false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
                 // Destroyers
-		api.addToFleet(FleetSide.PLAYER, "magellan_patroldestroyer_blackcollar_elite", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
-		api.addToFleet(FleetSide.PLAYER, "magellan_supportdestroyer_blackcollar_elite", FleetMemberType.SHIP, "FSS Knight Of Cups", false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
-		api.addToFleet(FleetSide.PLAYER, "magellan_supportdestroyer_blackcollar_elite", FleetMemberType.SHIP, "FSS Queen Of Clubs", false).getCaptain().setPersonality(Personalities.STEADY);
-		api.addToFleet(FleetSide.PLAYER, "magellan_supportdestroyer_blackcollar_elite", FleetMemberType.SHIP, "FSS Knave Of Wands", false).getCaptain().setPersonality(Personalities.STEADY);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_patroldestroyer_blackcollar_elite", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_supportdestroyer_blackcollar_elite", FleetMemberType.SHIP, "FSS Knight Of Cups", false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_supportdestroyer_blackcollar_elite", FleetMemberType.SHIP, "FSS Queen Of Clubs", false).getCaptain().setPersonality(Personalities.STEADY);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_supportdestroyer_blackcollar_elite", FleetMemberType.SHIP, "FSS Knave Of Wands", false).getCaptain().setPersonality(Personalities.STEADY);
                 // Frigates
-		api.addToFleet(FleetSide.PLAYER, "magellan_phasefrig_blackcollar_attack", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_phasefrig_blackcollar_attack", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
 		
 		// Set up the enemy fleet
-		api.addToFleet(FleetSide.ENEMY, "magellan_carrier_theherd_std", FleetMemberType.SHIP, "SS Verdant Vision", false).getCaptain().setPersonality(Personalities.CAUTIOUS);
+		api.addToFleet(FleetSide.ENEMY, "dcp_magellan_carrier_theherd_std", FleetMemberType.SHIP, "SS Verdant Vision", false).getCaptain().setPersonality(Personalities.CAUTIOUS);
 		// Herd ships
-                api.addToFleet(FleetSide.ENEMY, "magellan_linedestroyer_theherd_support", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.RECKLESS);
-		api.addToFleet(FleetSide.ENEMY, "magellan_linedestroyer_theherd_support", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
-		api.addToFleet(FleetSide.ENEMY, "magellan_supportfrigate_theherd_std", FleetMemberType.SHIP, false);
-		api.addToFleet(FleetSide.ENEMY, "magellan_supportfrigate_theherd_std", FleetMemberType.SHIP, false);
-		api.addToFleet(FleetSide.ENEMY, "magellan_phasefrig_theherd_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.RECKLESS);
+                api.addToFleet(FleetSide.ENEMY, "dcp_magellan_linedestroyer_theherd_support", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.RECKLESS);
+		api.addToFleet(FleetSide.ENEMY, "dcp_magellan_linedestroyer_theherd_support", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.ENEMY, "dcp_magellan_supportfrigate_theherd_std", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_magellan_supportfrigate_theherd_std", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_magellan_phasefrig_theherd_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.RECKLESS);
                 // Traitor garrison
-                api.addToFleet(FleetSide.ENEMY, "magellan_cruiser_obsolete", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
-		api.addToFleet(FleetSide.ENEMY, "magellan_linedestroyer_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
-		api.addToFleet(FleetSide.ENEMY, "magellan_supportfrigate_std", FleetMemberType.SHIP, false);
+                api.addToFleet(FleetSide.ENEMY, "dcp_magellan_cruiser_obsolete", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.ENEMY, "dcp_magellan_linedestroyer_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
+		api.addToFleet(FleetSide.ENEMY, "dcp_magellan_supportfrigate_std", FleetMemberType.SHIP, false);
                 
 		// Mark fleet flagship as essential
 		api.defeatOnShipLoss("SS Verdant Vision");

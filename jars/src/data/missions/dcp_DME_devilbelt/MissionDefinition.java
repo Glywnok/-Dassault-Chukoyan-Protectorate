@@ -27,28 +27,28 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.addBriefingItem("At least 25% of your mining fleet must escape");
 		
 		// Set up the player's fleet
-		api.addToFleet(FleetSide.PLAYER, "dcp_tereshkova_export", FleetMemberType.SHIP, "SS Goats On Toast", true);
-		api.addToFleet(FleetSide.PLAYER, "dcp_wanderer_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
-		api.addToFleet(FleetSide.PLAYER, "dcp_naja_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
-		api.addToFleet(FleetSide.PLAYER, "dcp_sevastopol_std", FleetMemberType.SHIP, "SS Just A Working Girl", false).getCaptain().setPersonality(Personalities.CAUTIOUS);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_tereshkova_export", FleetMemberType.SHIP, "SS Goats On Toast", true);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_wanderer_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_naja_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_sevastopol_std", FleetMemberType.SHIP, "SS Just A Working Girl", false).getCaptain().setPersonality(Personalities.CAUTIOUS);
 		
-		api.addToFleet(FleetSide.PLAYER, "dcp_centaur_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
-		api.addToFleet(FleetSide.PLAYER, "dcp_puddlejumper_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.TIMID);
-		api.addToFleet(FleetSide.PLAYER, "dcp_puddlejumper_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.TIMID);
-		api.addToFleet(FleetSide.PLAYER, "dcp_puddlejumper_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.TIMID);
-		api.addToFleet(FleetSide.PLAYER, "dcp_puddlejumper_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.TIMID);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_centaur_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_puddlejumper_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.TIMID);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_puddlejumper_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.TIMID);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_puddlejumper_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.TIMID);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_puddlejumper_export", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.TIMID);
 		
 		// Mark player flagship as essential
 		api.defeatOnShipLoss("SS Just A Working Girl");
 		
 		// Set up the enemy fleet
 		api.addToFleet(FleetSide.ENEMY, "medusa_Attack", FleetMemberType.SHIP, "IMS Chastain", false).getCaptain().setPersonality(Personalities.RECKLESS);
-		api.addToFleet(FleetSide.ENEMY, "dcp_imp_assault", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.RECKLESS);
-		api.addToFleet(FleetSide.ENEMY, "dcp_imp_assault", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.RECKLESS);
-		api.addToFleet(FleetSide.ENEMY, "dcp_imp_support", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
-		api.addToFleet(FleetSide.ENEMY, "dcp_imp_support", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_imp_assault", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.RECKLESS);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_imp_assault", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.RECKLESS);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_imp_support", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_imp_support", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
                 api.addToFleet(FleetSide.ENEMY, "tempest_Attack", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
-		api.addToFleet(FleetSide.ENEMY, "dcp_snakeeye_cqb", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_snakeeye_cqb", FleetMemberType.SHIP, false);
 
 		
 		

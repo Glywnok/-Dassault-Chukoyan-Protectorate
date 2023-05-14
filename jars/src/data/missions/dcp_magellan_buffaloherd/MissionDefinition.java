@@ -16,11 +16,11 @@ public class MissionDefinition implements MissionDefinitionPlugin
         api.addBriefingItem("Show these rustlers how we deal with someone horning in on our perfectly legitimate illegal activities.");
         api.addBriefingItem("Don't lose the 'Stranger Than Friction' - it's too big a loss to replace");
         final boolean testMode = false;
-        api.addToFleet(FleetSide.PLAYER, "magellan_linedestroyer_theherd_support", FleetMemberType.SHIP, "HS Brisket With Attitude", true);
-        api.addToFleet(FleetSide.PLAYER, "magellan_herdcarrier_std", FleetMemberType.SHIP, "HS Stranger Than Friction", false);
-        api.addToFleet(FleetSide.PLAYER, "magellan_ltfreight_theherd_std", FleetMemberType.SHIP, "HS Milk Run", false);
-        api.addToFleet(FleetSide.PLAYER, "magellan_supportfrigate_theherd_std", FleetMemberType.SHIP, "HS Half Calf", false);
-        api.addToFleet(FleetSide.PLAYER, "magellan_missilefrigate_theherd_std", FleetMemberType.SHIP, "HS Look Ma, No Hands!", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_magellan_linedestroyer_theherd_support", FleetMemberType.SHIP, "HS Brisket With Attitude", true);
+        api.addToFleet(FleetSide.PLAYER, "dcp_magellan_herdcarrier_std", FleetMemberType.SHIP, "HS Stranger Than Friction", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_magellan_ltfreight_theherd_std", FleetMemberType.SHIP, "HS Milk Run", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_magellan_supportfrigate_theherd_std", FleetMemberType.SHIP, "HS Half Calf", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_magellan_missilefrigate_theherd_std", FleetMemberType.SHIP, "HS Look Ma, No Hands!", false);
         api.addToFleet(FleetSide.ENEMY, "colossus3_Pirate", FleetMemberType.SHIP, false);
         api.addToFleet(FleetSide.ENEMY, "enforcer_d_pirates_Strike", FleetMemberType.SHIP, "SS Moose Juice", false);
         api.addToFleet(FleetSide.ENEMY, "manticore_pirates_Assault", FleetMemberType.SHIP, false);

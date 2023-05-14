@@ -30,11 +30,11 @@ public class MissionDefinition implements MissionDefinitionPlugin
 
         // Set up the player's fleet.  Variant names come from the
         // files in data/variants and data/variants/fighters
-        api.addToFleet(FleetSide.PLAYER, "dcp_jeannedarc_std", FleetMemberType.SHIP, "DMS Talleyrand", true);
-        api.addToFleet(FleetSide.PLAYER, "dcp_baikal_std", FleetMemberType.SHIP, "DMS Konev", false);
-        api.addToFleet(FleetSide.PLAYER, "dcp_leyte_std", FleetMemberType.SHIP, "DMS Hougoumont", false);
-        api.addToFleet(FleetSide.PLAYER, "dcp_stoat_std", FleetMemberType.SHIP, false);
-        api.addToFleet(FleetSide.PLAYER, "dcp_stoat_std", FleetMemberType.SHIP, false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_jeannedarc_std", FleetMemberType.SHIP, "DMS Talleyrand", true);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_baikal_std", FleetMemberType.SHIP, "DMS Konev", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_leyte_std", FleetMemberType.SHIP, "DMS Hougoumont", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_stoat_std", FleetMemberType.SHIP, false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_stoat_std", FleetMemberType.SHIP, false);
 
         // Set up the enemy fleet.
         api.addToFleet(FleetSide.ENEMY, "conquest_Standard", FleetMemberType.SHIP, "NIS Imperator", false);

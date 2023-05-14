@@ -33,20 +33,20 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		
 		// Set up the player's fleet.  Variant names come from the
 		// files in data/variants and data/variants/fighters
-		api.addToFleet(FleetSide.PLAYER, "dcp_devilray_strike", FleetMemberType.SHIP, "Fang Leader", true);
-		api.addToFleet(FleetSide.PLAYER, "dcp_stormkestrel_elite", FleetMemberType.SHIP, "Base One", false);
-		api.addToFleet(FleetSide.PLAYER, "dcp_snakeeye_support", FleetMemberType.SHIP, "Fang I", false);
-		api.addToFleet(FleetSide.PLAYER, "dcp_imp_assault", FleetMemberType.SHIP, "Fang II", false);
-		api.addToFleet(FleetSide.PLAYER, "dcp_imp_assault", FleetMemberType.SHIP, "Fang III", false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_devilray_strike", FleetMemberType.SHIP, "Fang Leader", true);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_stormkestrel_elite", FleetMemberType.SHIP, "Base One", false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_snakeeye_support", FleetMemberType.SHIP, "Fang I", false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_imp_assault", FleetMemberType.SHIP, "Fang II", false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_DME_imp_assault", FleetMemberType.SHIP, "Fang III", false);
 		
 		// Set up the enemy fleet.
-		api.addToFleet(FleetSide.ENEMY, "dcp_wildgoose_elite", FleetMemberType.SHIP, "SBS Night Killer V", false);
-		api.addToFleet(FleetSide.ENEMY, "dcp_kormoran_6e_elite", FleetMemberType.SHIP, "SBS Ultima Ratio", false);
-		api.addToFleet(FleetSide.ENEMY, "dcp_tunguska_6e_elite", FleetMemberType.SHIP, "SBS Eccentric Orbit", false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_wildgoose_elite", FleetMemberType.SHIP, "SBS Night Killer V", false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_kormoran_6e_elite", FleetMemberType.SHIP, "SBS Ultima Ratio", false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_tunguska_6e_elite", FleetMemberType.SHIP, "SBS Eccentric Orbit", false);
 		api.addToFleet(FleetSide.ENEMY, "afflictor_patrol", FleetMemberType.SHIP, "SBS String 1", false);
-		api.addToFleet(FleetSide.ENEMY, "dcp_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 2", false);
-		api.addToFleet(FleetSide.ENEMY, "dcp_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 3", false);
-		api.addToFleet(FleetSide.ENEMY, "dcp_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 4", false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 2", false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 3", false);
+		api.addToFleet(FleetSide.ENEMY, "dcp_DME_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 4", false);
 		api.addToFleet(FleetSide.ENEMY, "wolf_patrol", FleetMemberType.SHIP, "SBS String 5", false);
 		api.addToFleet(FleetSide.ENEMY, "omen_patrol", FleetMemberType.SHIP, "SBS String 6", false);
 		api.addToFleet(FleetSide.ENEMY, "omen_patrol", FleetMemberType.SHIP, "SBS String 7", false);

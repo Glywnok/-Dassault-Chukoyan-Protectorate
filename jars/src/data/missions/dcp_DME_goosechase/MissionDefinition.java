@@ -30,9 +30,9 @@ public class MissionDefinition implements MissionDefinitionPlugin
 
         // Set up the player's fleet.  Variant names come from the
         // files in data/variants and data/variants/fighters
-        api.addToFleet(FleetSide.PLAYER, "dcp_snowgoose_std", FleetMemberType.SHIP, "DMS Incontrovertible", true);
-        api.addToFleet(FleetSide.PLAYER, "dcp_samoyed_std", FleetMemberType.SHIP, false);
-        api.addToFleet(FleetSide.PLAYER, "dcp_samoyed_std", FleetMemberType.SHIP, false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_snowgoose_std", FleetMemberType.SHIP, "DMS Incontrovertible", true);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_samoyed_std", FleetMemberType.SHIP, false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_samoyed_std", FleetMemberType.SHIP, false);
 
         // Set up the enemy fleet.
         api.addToFleet(FleetSide.ENEMY, "dominator_Assault", FleetMemberType.SHIP, "Incapable Of Listening To Reason", false);

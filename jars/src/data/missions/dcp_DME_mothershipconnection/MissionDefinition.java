@@ -31,10 +31,10 @@ public class MissionDefinition implements MissionDefinitionPlugin
 
         // Set up the player's fleet.  Variant names come from the
         // files in data/variants and data/variants/fighters
-        api.addToFleet(FleetSide.PLAYER, "dcp_mindanao_std", FleetMemberType.SHIP, "Tear The Roof Off The Sucker", true);
-        api.addToFleet(FleetSide.PLAYER, "dcp_tereshkova_std", FleetMemberType.SHIP, "The Electric Spanking of War Babies", false);
-        api.addToFleet(FleetSide.PLAYER, "dcp_leyte_std", FleetMemberType.SHIP, "Night of the Thumpasorus Peoples", false);
-        api.addToFleet(FleetSide.PLAYER, "dcp_samoyed_elite", FleetMemberType.SHIP, "Bop Gunner", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_mindanao_std", FleetMemberType.SHIP, "Tear The Roof Off The Sucker", true);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_tereshkova_std", FleetMemberType.SHIP, "The Electric Spanking of War Babies", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_leyte_std", FleetMemberType.SHIP, "Night of the Thumpasorus Peoples", false);
+        api.addToFleet(FleetSide.PLAYER, "dcp_DME_samoyed_elite", FleetMemberType.SHIP, "Bop Gunner", false);
 
         // Set up the enemy fleet.
         api.addToFleet(FleetSide.ENEMY, "heron_Strike", FleetMemberType.SHIP, "The Man", false);

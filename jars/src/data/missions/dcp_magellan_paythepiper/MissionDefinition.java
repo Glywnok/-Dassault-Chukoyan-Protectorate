@@ -26,14 +26,14 @@ public class MissionDefinition implements MissionDefinitionPlugin {
                 api.addBriefingItem("FSS Dalganos must survive.");
 		
 		// Set up the player's fleet
-		api.addToFleet(FleetSide.PLAYER, "magellan_supportdestroyer_elite", FleetMemberType.SHIP, "FSS Knifepoint", true);
-		api.addToFleet(FleetSide.PLAYER, "magellan_battleship_elite", FleetMemberType.SHIP, "FSS Dalganos", false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
-		api.addToFleet(FleetSide.PLAYER, "magellan_battleship_line", FleetMemberType.SHIP, "FSS Riva", false).getCaptain().setPersonality(Personalities.RECKLESS);
-		api.addToFleet(FleetSide.PLAYER, "magellan_carrier_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
-		api.addToFleet(FleetSide.PLAYER, "magellan_carrier_std", FleetMemberType.SHIP, false);
-		api.addToFleet(FleetSide.PLAYER, "magellan_linedestroyer_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
-		api.addToFleet(FleetSide.PLAYER, "magellan_linefrigate_std", FleetMemberType.SHIP, false);
-		api.addToFleet(FleetSide.PLAYER, "magellan_linefrigate_std", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_supportdestroyer_elite", FleetMemberType.SHIP, "FSS Knifepoint", true);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_battleship_elite", FleetMemberType.SHIP, "FSS Dalganos", false).getCaptain().setPersonality(Personalities.AGGRESSIVE);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_battleship_line", FleetMemberType.SHIP, "FSS Riva", false).getCaptain().setPersonality(Personalities.RECKLESS);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_carrier_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_carrier_std", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_linedestroyer_std", FleetMemberType.SHIP, false).getCaptain().setPersonality(Personalities.STEADY);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_linefrigate_std", FleetMemberType.SHIP, false);
+		api.addToFleet(FleetSide.PLAYER, "dcp_magellan_linefrigate_std", FleetMemberType.SHIP, false);
 		
 		// Mark fleet flagship as essential
 		api.defeatOnShipLoss("FSS Dalganos");
