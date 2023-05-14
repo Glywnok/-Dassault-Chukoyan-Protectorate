@@ -1,0 +1,30 @@
+{
+	"id":"dcp_DME_autohybridblaster",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_HybridBlasterFX",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"displayArcRadius":350,
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_autohybridblaster_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_autohybridblaster_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_autohybridblaster_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_autohybridblaster_hardpoint_glow.png",
+	"glowColor":[135,110,255,255],
+	"turretOffsets":[34, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[36, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"muzzleFlashSpec":{"length":36.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":3.0,
+					   "particleSizeMin":9,
+					   "particleSizeRange":27.0,
+					   "particleDuration":0.125,
+					   "particleCount":40,
+					   "particleColor":[120,110,255,255]},
+	"projectileSpecId":"dcp_DME_hybridblaster_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge",
+	"fireSoundTwo":"dcp_DME_hybridblaster_fire",
+}

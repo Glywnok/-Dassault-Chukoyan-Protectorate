@@ -1,0 +1,31 @@
+{
+	"id":"dcp_DME_energymortar",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_EnergyMortarFX",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_plasmamortar_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_plasmamortar_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_plasmamortar_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_plasmamortar_hardpoint_glow.png",
+	"glowColor":[25,200,125,215],
+	"turretOffsets":[8, 0, 12, 3, 12, -3,
+					 8, 4.5, 8, -4.5],
+	"turretAngleOffsets":[0, 2, -2, 4, -4],
+	"hardpointOffsets":[9, 0, 13, 3, 13, -3,
+					 	9, 4.5, 9, -4.5],
+	"hardpointAngleOffsets":[0, 2, -2, 4, -4],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":24.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":2.0,
+					   "particleSizeMin":17.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.12,
+					   "particleCount":15,
+					   "particleColor":[25,200,125,215]},
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"dcp_DME_energymortar_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge",
+	"fireSoundTwo":"dcp_DME_plasmamortar_fire", # If I like it, I'll change this
+}
