@@ -29,8 +29,8 @@
 		"atmosphereThicknessMin":20, #  minimum thickness in pixels
 		"atmosphereColor":[110, 170, 255, 255],
 		"texture":"graphics/planets/radiated.jpg",
-		"icon":"graphics/DCP/warroom/dcp_iconsigmaworld.png",
-		"starscapeIcon":"graphics/DCP/starscape/dcp_starscapesigmaworld.png",
+		"icon":"graphics/DCP/warroom/dcp_DME_iconsigmaworld.png",
+		"starscapeIcon":"graphics/DCP/starscape/dcp_DME_starscapesigmaworld.png",
 		"iconColor":[105,255,155,255],
 		"isStar":true,
 		"scaleMultMapIcon":1.25,
