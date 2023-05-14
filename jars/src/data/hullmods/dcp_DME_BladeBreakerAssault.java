@@ -63,7 +63,7 @@ public class dcp_DME_BladeBreakerAssault extends BaseHullMod {
         float pad = 10f;
         float padS = 2f;
         tooltip.addSectionHeading("Details", Alignment.MID, pad);
-        TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCPicons/tooltip/dcp_hullmod_movement.png", 40);
+        TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCPicons/tooltip/dcp_DME_hullmod_movement.png", 40);
             text.addPara("- " + getString("BBAssaultDesc1"), pad, Misc.getHighlightColor(), "50", "40", "25", "15");
             text.addPara("- " + getString("BBAssaultDesc2"), padS, Misc.getHighlightColor(), "25%");
             text.addPara("- " + getString("BBAssaultDesc3"), padS, Misc.getHighlightColor(), "2");
@@ -71,7 +71,7 @@ public class dcp_DME_BladeBreakerAssault extends BaseHullMod {
             text.addPara("- " + getString("BBAssaultDesc5"), padS, Misc.getHighlightColor(), "25%");
             
         tooltip.addImageWithText(pad);
-        TooltipMakerAPI text2 = tooltip.beginImageWithText("graphics/DCPicons/tooltip/dcp_hullmod_fighter.png", 40);
+        TooltipMakerAPI text2 = tooltip.beginImageWithText("graphics/DCPicons/tooltip/dcp_DME_hullmod_fighter.png", 40);
             text2.addPara("- " + getString("BBAssaultDescFtr"), padS, Misc.getHighlightColor(), "25%");
         tooltip.addImageWithText(pad);
     }

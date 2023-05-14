@@ -49,7 +49,7 @@
 		"atmosphereThickness":0, # as fraction of radius.  Set to 0 for no atmosphere
 		"atmosphereThicknessMin":1, #  minimum thickness in pixels
 		"atmosphereColor":[100,140,160,155],
-		"texture":"graphics/DCP/planets/dcp_toposphere.png",
+		"texture":"graphics/DCP/planets/dcp_DME_toposphere.png",
 		"icon":"graphics/stations/gate.png",
 		"iconColor":[102,103,106,255],
 		"isStar":false,

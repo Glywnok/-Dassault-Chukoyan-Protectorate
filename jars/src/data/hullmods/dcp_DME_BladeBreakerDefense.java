@@ -46,12 +46,12 @@ public class dcp_DME_BladeBreakerDefense extends BaseHullMod {
         float pad = 10f;
         float padS = 2f;
         tooltip.addSectionHeading("Details", Alignment.MID, pad);
-        TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_defense.png", 40);
+        TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_DME_hullmod_defense.png", 40);
             text.addPara("- " + getString("BBDefenseDesc1"), pad, Misc.getHighlightColor(), "20%");
             text.addPara("- " + getString("BBDefenseDesc2"), padS, Misc.getHighlightColor(), "20%");
             text.addPara("- " + getString("BBDefenseDesc3"), padS, Misc.getHighlightColor(), "100%");
         tooltip.addImageWithText(pad);
-        TooltipMakerAPI text2 = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_fighter.png", 40);
+        TooltipMakerAPI text2 = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_DME_hullmod_fighter.png", 40);
             text2.addPara("- " + getString("BBDefenseDescFtr"), padS, Misc.getHighlightColor(), "20%");
         tooltip.addImageWithText(pad);
     }

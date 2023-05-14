@@ -56,9 +56,9 @@
 			"magellan_theherd_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_theherd.png",
 		},
 		"industry":{
-			"dcp_shield_texture":"graphics/DCP/planets/dcp_sigma_shield.png",
-			"dcp_dysonshell":"graphics/DCP/planets/dcp_toposphere.png",
-			"dcp_dysonshield":"graphics/DCP/planets/dcp_toposhield.png",
+			"dcp_shield_texture":"graphics/DCP/planets/dcp_DME_sigma_shield.png",
+			"dcp_dysonshell":"graphics/DCP/planets/dcp_DME_toposphere.png",
+			"dcp_dysonshield":"graphics/DCP/planets/dcp_DME_toposhield.png",
 		},
 		"campaignEntities":{
 			"dcp_breaker_beacon":"graphics/DCP/stations/dcp_breakerbuoy00.png",
