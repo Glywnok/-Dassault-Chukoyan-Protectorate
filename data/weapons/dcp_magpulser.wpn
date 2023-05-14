@@ -1,15 +1,15 @@
 {
-	"id":"dcp_magpulser",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_magpulser",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_PulserMuzzleFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_PulserMuzzleFX",
 	"type":"ENERGY",
 	"size":"SMALL",
-	"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_sm.png",
-	"turretSprite":"graphics/DCP/weapons/dcp_magpulser_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_magpulser_turret_glow.png",
-	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_socket_hardpoint_sm.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_magpulser_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_magpulser_hardpoint_glow.png",
+	"turretUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_turret_sm.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_magpulser_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_magpulser_turret_glow.png",
+	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_hardpoint_sm.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_magpulser_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_magpulser_hardpoint_glow.png",
 	"glowColor":[135,110,255,210],
 	"turretOffsets":[12, 0],
 	"turretAngleOffsets":[0],
@@ -25,7 +25,7 @@
 					   "particleCount":24,
 					   "particleColor":[120,110,255,255]},
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
-	"projectileSpecId":"dcp_magpulser_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge_small",
-	"fireSoundTwo":"dcp_magpulserfire",
+	"projectileSpecId":"dcp_DME_magpulser_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge_small",
+	"fireSoundTwo":"dcp_DME_magpulserfire",
 }

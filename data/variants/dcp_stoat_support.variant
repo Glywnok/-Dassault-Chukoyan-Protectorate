@@ -3,32 +3,32 @@
     "fluxCapacitors": 1,
     "fluxVents": 9,
     "goalVariant": true,
-    "hullId": "dcp_stoat",
+    "hullId": "dcp_DME_stoat",
     "hullMods": [
         "missleracks",
         "turretgyros"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_stoat_support",
+    "variantId": "dcp_DME_stoat_support",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_linearcannonlight",
-                "WS0004": "dcp_linearcannonlight"
+                "WS0003": "dcp_DME_linearcannonlight",
+                "WS0004": "dcp_DME_linearcannonlight"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_marteau_esm_rack"}
+            "weapons": {"WS0001": "dcp_DME_marteau_esm_rack"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_erpulsebeam"}
+            "weapons": {"WS0002": "dcp_DME_erpulsebeam"}
         }
     ],
     "wings": []

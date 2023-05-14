@@ -2,42 +2,42 @@
     "displayName": "Patrol",
     "fluxCapacitors": 0,
     "fluxVents": 18,
-    "hullId": "dcp_mindanao",
+    "hullId": "dcp_DME_mindanao",
     "hullMods": [],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_mindanao_patrol",
+    "variantId": "dcp_DME_mindanao_patrol",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "dcp_gravmissiletube",
-                "WS0007": "dcp_gravmissiletube"
+                "WS0006": "dcp_DME_gravmissiletube",
+                "WS0007": "dcp_DME_gravmissiletube"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_whdcper",
-                "WS0002": "dcp_linearcannon",
-                "WS0003": "dcp_linearcannon"
+                "WS0001": "dcp_DME_whdcp_DMEer",
+                "WS0002": "dcp_DME_linearcannon",
+                "WS0003": "dcp_DME_linearcannon"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_micropd",
-                "WS0005": "dcp_micropd"
+                "WS0004": "dcp_DME_micropd",
+                "WS0005": "dcp_DME_micropd"
             }
         }
     ],
     "wings": [
-        "dcp_mystere_wing",
-        "dcp_mystere_wing",
-        "dcp_harridan_wing",
-        "dcp_harridan_wing"
+        "dcp_DME_mystere_wing",
+        "dcp_DME_mystere_wing",
+        "dcp_DME_harridan_wing",
+        "dcp_DME_harridan_wing"
     ]
 }

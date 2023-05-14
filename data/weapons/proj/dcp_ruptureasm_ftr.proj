@@ -1,9 +1,9 @@
 {
-	"id":"dcp_ruptureasm_ftr",
+	"id":"dcp_DME_ruptureasm_ftr",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_VoltigeurOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_VoltigeurOnHit",
 	"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
-	"sprite":"graphics/DCP/missiles/dcp_ruptureasm_ftr.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_ruptureasm_ftr.png",
 	"size":[7,12],	
 	"center":[3.5,6],
 	"collisionRadius":14,

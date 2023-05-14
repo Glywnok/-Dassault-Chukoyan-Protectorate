@@ -2,69 +2,69 @@
     "displayName": "Assault",
     "fluxCapacitors": 0,
     "fluxVents": 15,
-    "hullId": "dcp_stormkestrel",
-    "hullMods": ["dcp_bbassault"],
+    "hullId": "dcp_DME_stormkestrel",
+    "hullMods": ["dcp_DME_bbassault"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_stormkestrel_assault",
+    "variantId": "dcp_DME_stormkestrel_assault",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0003": "dcp_lens_hdem_single",
-                "WS0004": "dcp_lens_hdem_single"
+                "WS0003": "dcp_DME_lens_hdem_single",
+                "WS0004": "dcp_DME_lens_hdem_single"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_plasrocket_pod"}
+            "weapons": {"WS0001": "dcp_DME_plasrocket_pod"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_pulseripper"}
+            "weapons": {"WS0002": "dcp_DME_pulseripper"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "dcp_plasmadisruptor",
-                "WS0008": "dcp_plasmadisruptor"
+                "WS0007": "dcp_DME_plasmadisruptor",
+                "WS0008": "dcp_DME_plasmadisruptor"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0009": "dcp_proxbomb_rack",
-                "WS0010": "dcp_proxbomb_rack"
+                "WS0009": "dcp_DME_proxbomb_rack",
+                "WS0010": "dcp_DME_proxbomb_rack"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_bbheavymg",
-                "WS0006": "dcp_bbheavymg"
+                "WS0005": "dcp_DME_bbheavymg",
+                "WS0006": "dcp_DME_bbheavymg"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0011": "dcp_impulsor",
-                "WS0012": "dcp_impulsor",
-                "WS0013": "dcp_impulsor",
-                "WS0014": "dcp_impulsor",
-                "WS0015": "dcp_impulsor",
-                "WS0016": "dcp_impulsor"
+                "WS0011": "dcp_DME_impulsor",
+                "WS0012": "dcp_DME_impulsor",
+                "WS0013": "dcp_DME_impulsor",
+                "WS0014": "dcp_DME_impulsor",
+                "WS0015": "dcp_DME_impulsor",
+                "WS0016": "dcp_DME_impulsor"
             }
         }
     ],
     "wings": [
-        "dcp_focuser_wing",
-        "dcp_firespray_wing"
+        "dcp_DME_focuser_wing",
+        "dcp_DME_firespray_wing"
     ]
 }

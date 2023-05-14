@@ -42,5 +42,180 @@
 		"dcp_BBSupportDesc3":"Increases sight radius by %s.",
 		"dcp_BBSupportDescFtr":"Fighter weapon range increased by %s units.",
 
+
+		"magellan_MagellanIncompTitle":"Incompatibilities",
+		"magellan_MagellanAllIncomp":"This ship cannot install the following hullmods:",
+		"magellan_MagellanEffects":"Effects",
+		
+		"magellan_MagellanEmDash":"\u2014 ",
+		"magellan_MagellanDeltaSymbol":"\u0394 ",
+
+		# Basic faction hullmods
+		"magellan_MagellanEngTitle":"Magellan Technology",
+		"magellan_MagellanEngDesc1":"Weapon durability increased by %s.",
+		"magellan_MagellanEngDesc2":"Weapon turn rate reduced by %s.",
+		"magellan_MagellanEngDesc3":"Engine durability increased by %s.",
+		"magellan_MagellanEngDesc4":"Chances of D-mods on recovery reduced by %s.",
+		
+		"magellan_MagellanArmorDesc1":"Maximum damage reduction by armor is reduced by %s, for a total of %s.",
+		"magellan_MagellanArmorDesc2":"Weapon, engine, and hull damage is reduced by %s/%s/%s by hull size.",
+		"magellan_MagellanArmorDesc3":"Beam weapon and EMP damage taken reduced by %s.",
+		"magellan_MagellanArmorDesc3HL":"EMP",
+		
+		"magellan_MagellanBaysDesc1":"Adds %s/%s/%s fighter bays to this ship, by hull size.",
+		"magellan_MagellanBaysDesc2":"Fighter refit time is increased by %s.",
+		
+		"magellan_DemilTitle":"Demilitarization",
+		"magellan_DemilDesc5":"Sensor profile increased by %s.",
+		"magellan_DemilDesc6":"Sensor strength reduced by %s.",
+		"magellan_DemilDesc7":"Minimum crew/supply/fuel costs reduced by %s.",
+		
+		"magellan_ClassicTitle":"Antique Technology",
+		"magellan_ClassicDesc1":"Ballistic and energy weapon range increased by %s.",
+		"magellan_ClassicDesc2":"Fighter replacement rate %s with losses.",
+		"magellan_Classic2HL":"does not decline",
+		"magellan_ClassicDesc3":"The maximum number of permanent hullmods is increased by %s.",
+		
+		"magellan_SpartacusReactorTitle":"Leveller Technology",
+		#"magellan_SpartacusReactorDesc0":"",
+		#"magellan_SpartacusReactor0HL":"",
+		"magellan_SpartacusReactorDesc1":"All energy weapons receive a %s/%s/%s discount.",
+		"magellan_SpartacusReactorDesc3":"The ship's EMP damage taken ranges from %s to %s, depending on flux level.",
+		"magellan_SpartacusReactor3HL":"EMP",
+		"magellan_SpartacusReactorDesc4":"The ship's %s increases by up to %s with hard flux level.",
+		"magellan_SpartacusReactor4HL":"explosion radius when destroyed",
+		
+		# Subfaction refits	
+		"magellan_BlackcollarSubtitle":"Blackcollar Refit",
+		"magellan_BlackcollarModDesc5":"Weapon recoil reduced by %s.",
+		"magellan_BlackcollarModDesc6":"Sensor profile reduced by %s.",
+		"magellan_BlackcollarModDesc7":"Chance of critical weapon and engine malfunctions at low CR reduced by %s.",
+		
+		"magellan_StartigerModTitle":"Skytiger Refit",
+		"magellan_StartigerModDesc5":"High Explosive damage taken reduced by %s.",
+		"magellan_StartigerModDesc6":"EMP damage taken increased by %s.",
+		"magellan_StartigerMod6HL":"EMP",
+		
+		"magellan_LevellerRefitTitle":"Leveller Refit",
+		"magellan_LevellerRefitDesc2":"Non-beam energy weapon range is increased by %s.",
+		"magellan_LevellerRefitDesc3":"Flux dissipation increased %s/%s/%s/%s, by hull size.",
+		"magellan_LevellerRefitDesc4":"Maneuverability increased by %s.",
+		
+		"magellan_HerdRefitTitle":"Herd Refit",
+		"magellan_HerdRefitDesc3":"Top speed increased %s/%s/%s/%s, by hull size.",
+		"magellan_HerdRefitDesc4":"Target leading is degraded by %s.",
+				
+		"magellan_YellowtailModTitle":"Tichel Concern Refit",
+		"magellan_YellowtailModDesc5":"Top speed increased %s/%s/%s/%s, by hull size.",
+		# I'll get the code for this working... sometime.
+		"magellan_AllRefitHangarDesc":"This ship has a fixed fighter wing LPC if %s is installed.",
+		"magellan_AllRefitHangarHL":"Converted Hangar",
+		
+		# Modular hullmods
+		"magellan_MagSpecialTitle":"Technical Details",
+		
+		"magellan_MagSpecialCompatFrigate":"Can not be installed on a frigate",
+		"magellan_MagSpecialCompatDestroyer":"Can not be installed on a destroyer",
+		"magellan_MagSpecialCompatCruiser":"Can not be installed on a cruiser",
+		"magellan_MagSpecialCompatCapital":"Can not be installed on a capital ship",		
+		"magellan_MagSpecialCompatHasBays":"Ship already has standard fighter bays",		
+		"magellan_MagSpecialCompatNoBays":"Ship does not have standard fighter bays",		
+		"magellan_MagSpecialCompatPhase":"Can not be installed on a phase ship",		
+		"magellan_MagSpecialCompatMalfunction":"May malfunction if combined with",		
+		"magellan_MagSpecialCompat1":"Can only install one proprietary hullmod at a time",
+		"magellan_MagSpecialCompat2":"Must be installed on a Magellan ship",
+		"magellan_MagSpecialCompat3":"Cannot be installed on this ship",
+		
+		"magellan_DefenseSPDesc1":"Projectile shield damage reduced by %s.",
+		"magellan_DefenseSPDesc2":"Beam shield damage increased by %s.",
+		"magellan_DefenseSPDesc3":"Fragmentation damage to armor and hull is reduced by %s.",
+		"magellan_DefenseMalfunctionHL":"Hardened Shields",		
+		"magellan_DefenseQuote":"\"You can't take every hit on your chin, and if you try, you just end up on your back, wondering why the ceiling spins so fast.\"",
+		"magellan_DefenseAttrib":"attributed to Magellan boxer Romann Bermejo",
+		
+		"magellan_FighterSPDesc1":"The size of this ship's fighter wings is increased by %s/%s/%s, depending on the wing's size, up to a maximum wing size of %s fighters.",
+		"magellan_FighterSPDesc2":"Fighter replacement time is increased by %s.",
+		"magellan_FighterSPDesc3":"Ship speed is reduced by %s.",
+		"magellan_FighterSPDesc4":"Ship acceleration is reduced by %s.",
+		"magellan_FighterMalfunctionHL":"Expanded Deck Crew",	
+		"magellan_FighterSPExExpand":"Hold F1 for more information",
+		"magellan_FighterSPExTitle":"Fighter Wing Effects",
+		"magellan_FighterSPExDesc1":"Wings with 3 or fewer fighters gain +1 additional chassis,",
+		"magellan_FighterSPExDesc2":"while wings with 4 fighters gain +2, and wings with 5 fighters gain +3.",
+		"magellan_FighterSPExDesc3":"Wings with 6 fighters gain only +2 additional chassis for the maximum of 8.",
+		"magellan_FighterQuote":"\"You know what goes through a fighter pilot's head in combat? As little as possible, if she's good. Every thought is practical \u2013 or you die.\"",
+		"magellan_FighterAttrib":"Maiellen Sxown, Protectorate Times interview",
+		
+		"magellan_MovementSPDesc1":"Top speed increased by %s/%s/%s, depending on hull size. Zero-flux boost increased by %s.",
+		"magellan_MovementSPDesc2":"Fuel use in hyperspace increased by %s.",
+		"magellan_MovementSPDesc3":"Engine damage taken in combat is %s.",
+		"magellan_MovementSP3HL":"doubled",
+		"magellan_MovementMalfunctionHL":"Safety Overrides",		
+		"magellan_MovementQuote":"\"Fire without maneuver is a waste of ammunition. Maneuver without fire is begging for someone to call in artillery on your last known position.\"",
+		"magellan_MovementAttrib":"Blackcollar aphorism",
+		
+		# Commissioned crews hullmod
+		"magellan_ComCrewDesc1":"All projectile speeds increased by %s.",
+		"magellan_ComCrewDesc2":"Non-beam PD weapons receive a %s increase to range.",
+		"magellan_ComCrewDesc3":"All weapons do %s more damage to fighters.",
+		"magellan_ComCrewQuote":"\"Oh aye, the 'decisive battle' doctrine \u2013 very popular upstairs. But ask the scuts who do the bleedin' and dyin' how it sounds t' them...\'",
+		"magellan_ComCrewAttrib":"overheard in Jeshad Station enlisted mess",		
+		
+		# Leveller Hullmods
+		"magellan_GenericLevellerHullmodDesc1":"something will go here!",
+		
 	},
+
+	"System":{
+		"magellan_ballisticaccel_str1":"ballistic rate of fire",
+		"magellan_ballisticaccel_str2":"ballistic flux use",
+		"magellan_ballisticaccel_str3":"ballistic range increase",
+		
+		"magellan_burstjet_str1":"improved maneuverability",		
+		"magellan_burstjet_str2":"increased top speed",	
+		
+		"magellan_fightercom_str1":"% more fighter damage",
+		"magellan_fightercom_str2":"% reduction to fighter armor damage",
+		"magellan_fightercom_str3":"% more fighter agility",
+		"magellan_fightercom_str4":"% more fighter accuracy",
+		
+		"magellan_impulseburn_str":"increased engine power",
+		
+		"magellan_targetdrone_str1":"sensor range",		
+		"magellan_targetdrone_str2":"weapon range",
+		"magellan_targetdrone_str3":"recoil reduced by",
+	},	
+	"Magellan_Strings": {
+		# Misc	
+		"magellan_str_system_ready":"READY",
+		"magellan_str_system_outofrange":"OUT OF RANGE",
+		"magellan_str_system_notarget":"NO TARGET",
+		"magellan_str_system_nodrones":"NO DRONES",
+		
+		"magellan_Magellan2ndEmDash":"\u2014 ",	
+		
+		# City-warrens
+		"magellan_citywarrens_title":"City Warrens",
+		"magellan_citywarrens_desc":"Magellan city-warrens",
+		
+		"magellan_citywarrens_effects":"Effects",
+		"magellan_citywarrens_ef1":"%s stability if controlled by a Magellan faction;",
+		"magellan_citywarrens_ef2":"%s reduction in stability otherwise.",
+		"magellan_citywarrens_ef3":"%s to the planet's defense rating if controlled by a Magellan faction;",
+		"magellan_citywarrens_ef4":"%s otherwise.",
+		
+		"magellan_citywarrens_listfaction":"Eligible Factions",
+		"magellan_citywarrens_protectorate":"the Magellan Protectorate",
+		"magellan_citywarrens_leveller":"the Levellers",
+		 
+		"magellan_citywarrens_quote":"\"Considering the circumstances, the food is good!\"",
+		"magellan_citywarrens_attrib":"overheard in an emergency shelter",
+		
+		# Submarkets
+		"magellan_str_armsmarket":"Arms Market",
+		"magellan_str_revolutionary":"Revolutionary",
+		
+		"magellan_str_armsmarket_quote":"\"The arms business is founded on human folly, whose depths will never be plumbed - and that's why it will go on forever.\"",
+		"magellan_str_armsmarket_attrib":"'S. Cummings', pre-starflight",
+	}
 }

@@ -1,5 +1,5 @@
 {
-	"id":"dcp_microflak_shot_OLD",
+	"id":"dcp_DME_microflak_shot_OLD",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
@@ -12,7 +12,7 @@
 	"coreColor":[255,255,255,255],
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_slapper.png",
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_slapper.png",
 	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
 					"shotRangeVariance":0.2,
 					"range":25,

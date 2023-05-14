@@ -2,29 +2,29 @@
     "displayName": "Defense",
     "fluxCapacitors": 3,
     "fluxVents": 10,
-    "hullId": "dcp_imp",
-    "hullMods": ["dcp_bbdefense"],
+    "hullId": "dcp_DME_imp",
+    "hullMods": ["dcp_DME_bbdefense"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_imp_picket",
+    "variantId": "dcp_DME_imp_picket",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_thermalpd",
-                "WS0002": "dcp_thermalpd"
+                "WS0001": "dcp_DME_thermalpd",
+                "WS0002": "dcp_DME_thermalpd"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0006": "dcp_lens_hdem_rack"}
+            "weapons": {"WS0006": "dcp_DME_lens_hdem_rack"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_bbheavymg"}
+            "weapons": {"WS0003": "dcp_DME_bbheavymg"}
         }
     ]
 }

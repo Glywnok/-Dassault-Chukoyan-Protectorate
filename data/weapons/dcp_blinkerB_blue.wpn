@@ -1,11 +1,11 @@
 {
-	"id":"dcp_blinkerB_blue",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_blinkerB_blue",  # this id must match what's in the spreadsheet
 	"specClass":"beam",
 	"type":"DECORATIVE",
 	"size":"SMALL",
-	"everyFrameEffect":"data.scripts.weapons.dcp_blinkerEffect",
-	"turretSprite":"graphics/DCP/weapons/decorative/dcp_blinkerB_blue/dcp_blinkBblue00.png",
-	"hardpointSprite":"graphics/DCP/weapons/decorative/dcp_blinkerB_blue/dcp_blinkBblue00.png",	
+	"everyFrameEffect":"data.scripts.weapons.dcp_DME_blinkerEffect",
+	"turretSprite":"graphics/DCP/weapons/decorative/dcp_DME_blinkerB_blue/dcp_DME_blinkBblue00.png",
+	"hardpointSprite":"graphics/DCP/weapons/decorative/dcp_DME_blinkerB_blue/dcp_DME_blinkBblue00.png",
 	"numFrames":23,
 	"frameRate":16,
 	"alwaysAnimate":"true",

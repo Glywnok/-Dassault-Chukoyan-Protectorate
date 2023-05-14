@@ -1,8 +1,8 @@
 {
-	"id":"dcp_mirvtorpedo",
+	"id":"dcp_DME_mirvtorpedo",
 	"specClass":"missile",	
 	"missileType":"ROCKET",
-	"sprite":"graphics/DCP/missiles/dcp_mirvtorpedo.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_mirvtorpedo.png",
 	"size":[10,22],	
 	"center":[5,11],
 	"collisionRadius":15,

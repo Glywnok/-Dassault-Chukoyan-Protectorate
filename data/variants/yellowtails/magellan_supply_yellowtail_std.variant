@@ -1,0 +1,27 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 4,
+    "fluxVents": 25,
+    "hullId": "dcp_magellan_supply_yellowtail",
+    "hullMods": ["magazines"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_supply_yellowtail_std",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_laservulcan",
+                "WS0002": "dcp_magellan_laservulcan",
+                "WS0003": "dcp_magellan_laservulcan",
+                "WS0004": "dcp_magellan_laservulcan"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_magellan_ripfiresrm"}
+        }
+    ]
+}

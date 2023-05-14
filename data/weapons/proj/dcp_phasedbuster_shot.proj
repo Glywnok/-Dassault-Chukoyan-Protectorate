@@ -1,10 +1,10 @@
 {
-	"id":"dcp_phasedbuster_shot",
+	"id":"dcp_DME_phasedbuster_shot",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_SigmaBusterOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_SigmaBusterOnHit",
 	#"missileType":"MISSILE",
 	"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
-	"sprite":"graphics/DCP/missiles/dcp_hdem.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_hdem.png",
 	"size":[1,9],	
 	"center":[0.5,4.5],
 	"collisionRadius":12,

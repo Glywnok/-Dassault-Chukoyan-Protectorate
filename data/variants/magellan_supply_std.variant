@@ -1,0 +1,34 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 6,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "dcp_magellan_supply",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_supply_std",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_magellan_smpdmaser",
+                "WS0004": "dcp_magellan_smpdmaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_magellan_ripfiresrm"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_smciws",
+                "WS0002": "dcp_magellan_smciws"
+            }
+        }
+    ]
+}

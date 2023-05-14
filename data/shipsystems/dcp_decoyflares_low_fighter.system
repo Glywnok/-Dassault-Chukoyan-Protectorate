@@ -1,8 +1,0 @@
-{
-	"id":"dcp_decoyflares_low_fighter",
-	"type":"WEAPON",
-	"aiType":"FLARE",
-	
-	"weaponDataId":"dcp_flarelauncher_low_fighter",
-	"outOfUsesSound":"gun_out_of_ammo",
-}

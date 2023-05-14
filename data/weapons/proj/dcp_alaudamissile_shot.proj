@@ -1,9 +1,9 @@
 {
-	"id":"dcp_alaudamissile_shot",
+	"id":"dcp_DME_alaudamissile_shot",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_VoleurOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_VoleurOnHit",
 	"missileType":"MISSILE",
-	"sprite":"graphics/DCP/missiles/dcp_calliope_stage1.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_calliope_stage1.png",
 	"size":[9,20],	
 	"center":[4.5,10],
 	"collisionRadius":12,

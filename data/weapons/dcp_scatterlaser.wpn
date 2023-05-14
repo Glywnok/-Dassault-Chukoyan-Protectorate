@@ -1,13 +1,13 @@
 {
-	"id":"dcp_scatterlaser",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_scatterlaser",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_ScatterLaserFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_ScatterLaserFX",
 	"type":"ENERGY",
 	"size":"LARGE",
-	"turretSprite":"graphics/DCP/weapons/dcp_scatterlaser_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_scatterlaser_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_scatterlaser_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_scatterlaser_hardpoint_glow.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_scatterlaser_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_scatterlaser_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_scatterlaser_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_scatterlaser_hardpoint_glow.png",
 	"glowColor":[25,175,255,200],
 	"turretOffsets":[22, 0],
 	"turretAngleOffsets":[0],
@@ -24,7 +24,7 @@
 					   "particleCount":48,
 					   "particleColor":[25,175,255,200]},
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
-	"projectileSpecId":"dcp_scatterlaser_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge",
-	"fireSoundTwo":"dcp_scatterlaser_fire",
+	"projectileSpecId":"dcp_DME_scatterlaser_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge",
+	"fireSoundTwo":"dcp_DME_scatterlaser_fire",
 }

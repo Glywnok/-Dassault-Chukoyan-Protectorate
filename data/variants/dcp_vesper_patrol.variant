@@ -2,7 +2,7 @@
     "displayName": "Patrol",
     "fluxCapacitors": 10,
     "fluxVents": 10,
-    "hullId": "dcp_vesper",
+    "hullId": "dcp_DME_vesper",
     "hullMods": [
         "hardened_subsystems",
         "targetingunit",
@@ -10,29 +10,29 @@
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_vesper_patrol",
+    "variantId": "dcp_DME_vesper_patrol",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0002": "dcp_perforator"}
+            "weapons": {"WS0002": "dcp_DME_perforator"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_heavylinear_autogun"}
+            "weapons": {"WS0001": "dcp_DME_heavylinear_autogun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_erpulsebeam"}
+            "weapons": {"WS0003": "dcp_DME_erpulsebeam"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_microflak",
-                "WS0005": "dcp_microflak"
+                "WS0004": "dcp_DME_microflak",
+                "WS0005": "dcp_DME_microflak"
             }
         }
     ]

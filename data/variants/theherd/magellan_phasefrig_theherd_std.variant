@@ -1,0 +1,33 @@
+{
+    "displayName": "Raider",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "dcp_magellan_phasefrig_theherd",
+    "hullMods": [
+        "hardened_subsystems",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_phasefrig_theherd_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_magellan_radflamer",
+                "WS0003": "dcp_magellan_radflamer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_medciws"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "dcp_magellan_smciws"}
+        }
+    ]
+}

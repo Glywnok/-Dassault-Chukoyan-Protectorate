@@ -1,0 +1,11 @@
+{
+	"id":"dcp_magellan_smokelayer_def",
+	"type":"WEAPON",
+	"aiType":"FLARE",
+	
+	"weaponDataId":"dcp_magellan_smokelauncher_bad",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	#"weaponGlowColor":[55,200,255,255],
+ 	#"weaponTypes":[SYSTEM],
+}

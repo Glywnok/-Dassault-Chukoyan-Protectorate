@@ -2,40 +2,40 @@
     "displayName": "Balanced",
     "fluxCapacitors": 16,
     "fluxVents": 20,
-    "hullId": "dcp_wanderer",
+    "hullId": "dcp_DME_wanderer",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_wanderer_balanced",
+    "variantId": "dcp_DME_wanderer_balanced",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0002": "dcp_hellhound",
-                "WS0003": "dcp_hellhound"
+                "WS0002": "dcp_DME_hellhound",
+                "WS0003": "dcp_DME_hellhound"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0006": "dcp_magpulser"}
+            "weapons": {"WS0006": "dcp_DME_magpulser"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_linearcannontwin",
-                "WS0004": "dcp_ionbeamer",
-                "WS0005": "dcp_ionbeamer"
+                "WS0001": "dcp_DME_linearcannontwin",
+                "WS0004": "dcp_DME_ionbeamer",
+                "WS0005": "dcp_DME_ionbeamer"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "dcp_micropd",
-                "WS0008": "dcp_micropd"
+                "WS0007": "dcp_DME_micropd",
+                "WS0008": "dcp_DME_micropd"
             }
         }
     ]

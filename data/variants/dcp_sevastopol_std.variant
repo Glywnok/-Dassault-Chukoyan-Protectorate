@@ -3,36 +3,36 @@
     "fluxCapacitors": 0,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_sevastopol",
+    "hullId": "dcp_DME_sevastopol",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_sevastopol_std",
+    "variantId": "dcp_DME_sevastopol_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "ALTERNATING",
-            "weapons": {"WS0005": "dcp_gravmissiletube"}
+            "weapons": {"WS0005": "dcp_DME_gravmissiletube"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0006": "dcp_NTKcannon"}
+            "weapons": {"WS0006": "dcp_DME_NTKcannon"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_linearvulcan",
-                "WS0002": "dcp_linearvulcan"
+                "WS0001": "dcp_DME_linearvulcan",
+                "WS0002": "dcp_DME_linearvulcan"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_micropd",
-                "WS0004": "dcp_micropd"
+                "WS0003": "dcp_DME_micropd",
+                "WS0004": "dcp_DME_micropd"
             }
         }
     ]

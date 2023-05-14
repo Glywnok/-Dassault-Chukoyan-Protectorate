@@ -3,33 +3,33 @@
     "fluxCapacitors": 8,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_naja_mk1",
+    "hullId": "dcp_DME_naja_mk1",
     "hullMods": ["hardened_subsystems"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_naja_mk1_std",
+    "variantId": "dcp_DME_naja_mk1_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0008": "dcp_ammlight"}
+            "weapons": {"WS0008": "dcp_DME_ammlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_howler"}
+            "weapons": {"WS0005": "dcp_DME_howler"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0009": "dcp_blazegun"}
+            "weapons": {"WS0009": "dcp_DME_blazegun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_microflak",
-                "WS0004": "dcp_microflak"
+                "WS0003": "dcp_DME_microflak",
+                "WS0004": "dcp_DME_microflak"
             }
         }
     ]

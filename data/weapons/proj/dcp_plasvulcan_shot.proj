@@ -1,5 +1,5 @@
 {
-	"id":"dcp_plasvulcan_shot",
+	"id":"dcp_DME_plasvulcan_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
@@ -13,5 +13,5 @@
 	"textureType":"SMOOTH",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-450.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_miniblaster_bolt.png"	
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_miniblaster_bolt.png"
 }

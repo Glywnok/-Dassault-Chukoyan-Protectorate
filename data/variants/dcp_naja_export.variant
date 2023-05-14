@@ -2,33 +2,33 @@
     "displayName": "Export",
     "fluxCapacitors": 7,
     "fluxVents": 10,
-    "hullId": "dcp_naja_exp",
+    "hullId": "dcp_DME_naja_exp",
     "hullMods": ["hardened_subsystems"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_naja_export",
+    "variantId": "dcp_DME_naja_export",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0009": "dcp_ammlight"}
+            "weapons": {"WS0009": "dcp_DME_ammlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0008": "dcp_linearcannonlight"}
+            "weapons": {"WS0008": "dcp_DME_linearcannonlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_blazedriver"}
+            "weapons": {"WS0005": "dcp_DME_blazedriver"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_microflak",
-                "WS0004": "dcp_microflak"
+                "WS0003": "dcp_DME_microflak",
+                "WS0004": "dcp_DME_microflak"
             }
         }
     ]

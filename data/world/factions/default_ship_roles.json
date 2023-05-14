@@ -2,296 +2,450 @@
 	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
 	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
 	"combatSmallForSmallFleet":{
-		"dcp_burya_std":8,
-		"dcp_burya_assault":6,
-		"dcp_burya_antifighter":6,
-		"dcp_burya_support":4,
-		"dcp_stoat_std":10,
-		"dcp_stoat_escort":8,
-		"dcp_stoat_support":5,
-		"dcp_naja_elite":1,
-		"dcp_naja_std":4,
-		"dcp_naja_support":2,
-		"dcp_vesper_std":10,
-		"dcp_vesper_support":8,
-		"dcp_vesper_assault":6,
-		"dcp_vesper_patrol":4,
+		#DME
+		"dcp_DME_burya_std":8,
+		"dcp_DME_burya_assault":6,
+		"dcp_DME_burya_antifighter":6,
+		"dcp_DME_burya_support":4,
+		"dcp_DME_stoat_std":10,
+		"dcp_DME_stoat_escort":8,
+		"dcp_DME_stoat_support":5,
+		"dcp_DME_naja_elite":1,
+		"dcp_DME_naja_std":4,
+		"dcp_DME_naja_support":2,
+		"dcp_DME_vesper_std":10,
+		"dcp_DME_vesper_support":8,
+		"dcp_DME_vesper_assault":6,
+		"dcp_DME_vesper_patrol":4,
 		
-		"dcp_naja_export":4,
+		"dcp_DME_naja_export":4,
 	
-		"dcp_naja_mk1_std":5,
-		"dcp_naja_mk1_brawl":2,
+		"dcp_DME_naja_mk1_std":5,
+		"dcp_DME_naja_mk1_brawl":2,
 		
-		"dcp_imp_assault":8,
-		"dcp_imp_support":10,
-		"dcp_imp_picket":8,
-		"dcp_snakeeye_attack":7,
-		"dcp_snakeeye_std":5,
-		"dcp_snakeeye_defense":5,
-		"dcp_snakeeye_cqb":5,
-		"dcp_blackhand_defense":5,
+		"dcp_DME_imp_assault":8,
+		"dcp_DME_imp_support":10,
+		"dcp_DME_imp_picket":8,
+		"dcp_DME_snakeeye_attack":7,
+		"dcp_DME_snakeeye_std":5,
+		"dcp_DME_snakeeye_defense":5,
+		"dcp_DME_snakeeye_cqb":5,
+		"dcp_DME_blackhand_defense":5,
 				
-		"dcp_imp_proto_test":8, #should not produce
+		"dcp_DME_imp_proto_test":8, #should not produce
 		
-		"dcp_stoat_c_std":8,
+		"dcp_DME_stoat_c_std":8,
 		
+
+		#Magellan
+		"dcp_magellan_linefrigate_std":10,
+		"dcp_magellan_supportfrigate_std":10,
+		"dcp_magellan_linefrigate_attack":5,
+		"dcp_magellan_supportfrigate_attack":5,
+		"dcp_magellan_fastfrigate_attack":10,
+		"dcp_magellan_fastfrigate_std":5,
+		"dcp_magellan_linefrigate_startiger_std":10,
+		"dcp_magellan_linefrigate_leveller_turncoat":10,
+		"dcp_magellan_lev_dronefrig_std":3,
+		"dcp_magellan_lev_dronefrig_strike":1,
+		"dcp_magellan_skiff_theherd_std":5,
+		"dcp_magellan_supportfrigate_theherd_std":10,
+		"dcp_magellan_missilefrigate_theherd_std":4,
+	
+
 		"fallback":{"combatSmall":1},
 	},
 	"combatSmall":{
-		"dcp_burya_std":8,
-		"dcp_burya_assault":6,
-		"dcp_burya_antifighter":6,
-		"dcp_burya_support":4,
-		"dcp_stoat_std":10,
-		"dcp_stoat_escort":8,
-		"dcp_stoat_support":5,
-		"dcp_naja_elite":1,
-		"dcp_naja_std":5,
-		"dcp_naja_support":3,
-		"dcp_vesper_std":10,
-		"dcp_vesper_support":8,
-		"dcp_vesper_assault":6,
-		"dcp_vesper_patrol":4,
-		"dcp_vesper_6e_elite":3,
-		"dcpx_alauda_std":3,
+		#DME
+		"dcp_DME_burya_std":8,
+		"dcp_DME_burya_assault":6,
+		"dcp_DME_burya_antifighter":6,
+		"dcp_DME_burya_support":4,
+		"dcp_DME_stoat_std":10,
+		"dcp_DME_stoat_escort":8,
+		"dcp_DME_stoat_support":5,
+		"dcp_DME_naja_elite":1,
+		"dcp_DME_naja_std":5,
+		"dcp_DME_naja_support":3,
+		"dcp_DME_vesper_std":10,
+		"dcp_DME_vesper_support":8,
+		"dcp_DME_vesper_assault":6,
+		"dcp_DME_vesper_patrol":4,
+		"dcp_DME_vesper_6e_elite":3,
+		"dcp_DMEx_alauda_std":3,
 		
-		"dcp_naja_mk1_std":4,
-		"dcp_naja_mk1_brawl":4,
+		"dcp_DME_naja_mk1_std":4,
+		"dcp_DME_naja_mk1_brawl":4,
 		
-		"dcp_imp_assault":8,
-		"dcp_imp_support":10,
-		"dcp_imp_picket":8,
-		"dcp_snakeeye_support":7,
-		"dcp_snakeeye_attack":7,
-		"dcp_snakeeye_std":6,
-		"dcp_snakeeye_defense":5,
-		"dcp_snakeeye_cqb":6,
-		"dcp_blackhand_support":5,
-		"dcp_blackhand_defense":4,
-		"dcp_blackhand_assault":3,
+		"dcp_DME_imp_assault":8,
+		"dcp_DME_imp_support":10,
+		"dcp_DME_imp_picket":8,
+		"dcp_DME_snakeeye_support":7,
+		"dcp_DME_snakeeye_attack":7,
+		"dcp_DME_snakeeye_std":6,
+		"dcp_DME_snakeeye_defense":5,
+		"dcp_DME_snakeeye_cqb":6,
+		"dcp_DME_blackhand_support":5,
+		"dcp_DME_blackhand_defense":4,
+		"dcp_DME_blackhand_assault":3,
 				
 		"tempest_righthand":8,
-		"dcpx_braveblade_std":1,
-		"dcp_starsylph_deserter_test":1,
-		"dcp_bbminerunner_std":4,
+		"dcp_DMEx_braveblade_std":1,
+		"dcp_DME_starsylph_deserter_test":1,
+		"dcp_DME_bbminerunner_std":4,
 		
-		"dcp_stoat_c_std":8,
+		"dcp_DME_stoat_c_std":8,
 			
+
+		#Magellan
+
+		"dcp_magellan_linefrigate_std":10,
+		"dcp_magellan_supportfrigate_std":10,
+		"dcp_magellan_linefrigate_attack":5,
+		"dcp_magellan_supportfrigate_attack":5,
+		"dcp_magellan_linefrigate_support":5,
+		"dcp_magellan_supportfrigate_support":5,
+		"dcp_magellan_fastfrigate_std":10,
+		"dcp_magellan_fastfrigate_attack":5,
+		"dcp_magellan_fastfrigate_blackcollar_elite":8,
+
+		"dcp_magellan_linefrigate_startiger_std":10,
+		"dcp_magellan_linefrigate_leveller_turncoat":10,
+		"dcp_magellan_linefrigate_leveller_missile":4,
+		"dcp_magellan_lev_dronefrig_std":4,
+		"dcp_magellan_lev_dronefrig_support":2,
+		"dcp_magellan_lev_dronefrig_strike":1,
+		"dcp_magellan_skiff_theherd_std":10,
+		"dcp_magellan_supportfrigate_theherd_std":10,
+		"dcp_magellan_missilefrigate_theherd_std":8,
+		"dcp_magellan_linefrigate_civ_std":10,
+
 		"fallback":{"combatMedium":0.5},
 	},
 	"combatMedium":{
-		"dcp_wanderer_std":10,
-		"dcp_wanderer_support":7,
-		"dcp_wanderer_assault":5,
-		"dcp_wanderer_balanced":2,
-		"dcp_tereshkova_support":5,
-		"dcp_tunguska_std":10,
-		"dcp_tunguska_assault":6,
-		"dcp_tunguska_fsup":6,
-		"dcp_tunguska_6e_elite":2,
+		#DME
+		"dcp_DME_wanderer_std":10,
+		"dcp_DME_wanderer_support":7,
+		"dcp_DME_wanderer_assault":5,
+		"dcp_DME_wanderer_balanced":2,
+		"dcp_DME_tereshkova_support":5,
+		"dcp_DME_tunguska_std":10,
+		"dcp_DME_tunguska_assault":6,
+		"dcp_DME_tunguska_fsup":6,
+		"dcp_DME_tunguska_6e_elite":2,
 		
-		"dcp_devilray_support":10,
-		"dcp_devilray_strike":8,
-		"dcp_curse_attack":6,
-		"dcp_spearhead_std":10,
-		"dcp_spearhead_support":8,
-		"dcp_spearhead_strike":8,
-		"dcp_spearhead_def":4,
+		"dcp_DME_devilray_support":10,
+		"dcp_DME_devilray_strike":8,
+		"dcp_DME_curse_attack":6,
+		"dcp_DME_spearhead_std":10,
+		"dcp_DME_spearhead_support":8,
+		"dcp_DME_spearhead_strike":8,
+		"dcp_DME_spearhead_def":4,
 		
-		"dcp_crasher_std":8,
-		"dcp_slammer_std":4,
+		"dcp_DME_crasher_std":8,
+		"dcp_DME_slammer_std":4,
 		
-		"dcp_grand_union_std":8,
-		"dcp_grand_union_cqb":4,
+		"dcp_DME_grand_union_std":8,
+		"dcp_DME_grand_union_cqb":4,
 		
+
+		#Magellan
+		"dcp_magellan_linedestroyer_std":9,
+		"dcp_magellan_linedestroyer_support":4,
+		"dcp_magellan_linedestroyer_elite":2,
+		"dcp_magellan_supportdestroyer_std":10,
+		"dcp_magellan_supportdestroyer_support":6,
+		"dcp_magellan_supportdestroyer_shtrafbat":6,
+		"dcp_magellan_supportdestroyer_elite":4,
+		"dcp_magellan_fastdestroyer_std":6,
+		"dcp_magellan_fastdestroyer_elite":2,
+		
+		"dcp_magellan_ltfreight_theherd_std":12,
+		"dcp_magellan_linedestroyer_theherd_support":8,
+		"dcp_magellan_linedestroyer_theherd_fighter":4,
+		"dcp_magellan_supportdestroyer_leveller_turncoat":8,
+		"dcp_magellan_fastdestroyer_blackcollar_elite":1,
+		"dcp_magellan_supportdestroyer_blackcollar_elite":4,
+		"dcp_magellan_patroldestroyer_civ_std":5,
+
 		"fallback":{"combatSmall":1},
 	},
 	"combatLarge":{
-		"dcp_kormoran_std":10,
-		"dcp_kormoran_command":8,
-		"dcp_kormoran_pbeam":4,
-		"dcp_kormoran_6e_elite":1,
-		"dcp_baikal_std":10,
-		"dcp_baikal_cqb":8,
-		"dcp_baikal_arty":8,
-		"dcp_baikal_sniper":4,
-		"dcp_baikal_brone_elite":2,
-		"dcp_tonnerre_std":8,
-		"dcp_tonnerre_support":4,
-		"dcp_tonnerre_area":2,
-		"dcp_snowgoose_std":2,
-		"dcp_snowgoose_elite":1,
-		"dcp_wildgoose_elite":1,
+		#DME
+		"dcp_DME_kormoran_std":10,
+		"dcp_DME_kormoran_command":8,
+		"dcp_DME_kormoran_pbeam":4,
+		"dcp_DME_kormoran_6e_elite":1,
+		"dcp_DME_baikal_std":10,
+		"dcp_DME_baikal_cqb":8,
+		"dcp_DME_baikal_arty":8,
+		"dcp_DME_baikal_sniper":4,
+		"dcp_DME_baikal_brone_elite":2,
+		"dcp_DME_tonnerre_std":8,
+		"dcp_DME_tonnerre_support":4,
+		"dcp_DME_tonnerre_area":2,
+		"dcp_DME_snowgoose_std":2,
+		"dcp_DME_snowgoose_elite":1,
+		"dcp_DME_wildgoose_elite":1,
 		
-		"dcp_blacklancer_std":10,
-		"dcp_blacklancer_assault":6,
-		"dcp_blacklancer_defense":4,
-		"dcp_stormkestrel_elite":4,
-		"dcp_stormkestrel_command":4,
-		"dcp_stormkestrel_assault":2,
-		"dcp_stormkestrel_cqb":2,
+		"dcp_DME_blacklancer_std":10,
+		"dcp_DME_blacklancer_assault":6,
+		"dcp_DME_blacklancer_defense":4,
+		"dcp_DME_stormkestrel_elite":4,
+		"dcp_DME_stormkestrel_command":4,
+		"dcp_DME_stormkestrel_assault":2,
+		"dcp_DME_stormkestrel_cqb":2,
 
-		"dcp_ifrit_std":5, #should not build yet
-		"dcp_stormkestrel_proto_test":1, #should not produce
+		"dcp_DME_ifrit_std":5, #should not build yet
+		"dcp_DME_stormkestrel_proto_test":1, #should not produce
 
+
+		#Magellan
+		"dcp_magellan_lightcruiser_std":8,
+		"dcp_magellan_lightcruiser_veteran":4,
+		"dcp_magellan_cruiser_std":10,
+		"dcp_magellan_cruiser_obsolete":7,
+		"dcp_magellan_cruiser_elite":3,
+		"dcp_magellan_supportcruiser_std":8,
+		"dcp_magellan_supportcruiser_assault":4,
+		"dcp_magellan_supportcruiser_elite":1,
+		
+		"dcp_magellan_cruiser_startiger_elite":6,
+		"dcp_magellan_lightcruiser_blackcollar_elite":5,
+		"dcp_magellan_supportcruiser_blackcollar_elite":2,
 		"fallback":{"combatMedium":1},
 	},
 	"combatCapital":{
-		"dcp_zelenograd_std":10,
-		"dcp_zelenograd_explore":6,
-		"dcp_zelenograd_battle":4,
+		#DME
+		"dcp_DME_zelenograd_std":10,
+		"dcp_DME_zelenograd_explore":6,
+		"dcp_DME_zelenograd_battle":4,
 		
+
+		#Magellan
+		"dcp_magellan_battleship_std":5,
+		"dcp_magellan_battleship_line":3,
+		"dcp_magellan_battleship_elite":2,
+		"dcp_magellan_battlecruiser_std":7,
+		"dcp_magellan_battlecruiser_support":4,
+		"dcp_magellan_battlecruiser_elite":2,
+		
+		"dcp_magellan_battlecruiser_blackcollar_elite":0.5,
+		"dcp_magellan_battleship_startiger_elite":3,
+
 		"fallback":{"combatLarge":1},
 	},
 	
 	
 	# hybrid ships with good combat and cargo capacity
 	"combatFreighterSmall":{
-		"dcp_bouclier_std":10,
-		"dcp_starsylph_std":2,
+		#DME
+		"dcp_DME_bouclier_std":10,
+		"dcp_DME_starsylph_std":2,
 				
-		"dcp_puddlejumper_mk1_std":5,
+		"dcp_DME_puddlejumper_mk1_std":5,
+		
+
+		#Magellan
+		"dcp_magellan_cbtfreight_frontier":10,
+		"dcp_magellan_cbtfreight_std":5,
+		
+ 		"dcp_magellan_cbtfreight_civ_std":8,
 
 		"fallback":{"freighterSmall":1},
 	},
 	"combatFreighterMedium":{
-		"dcp_tereshkova_std":5,
-		"dcp_tereshkova_tech":2,
+		"dcp_DME_tereshkova_std":5,
+		"dcp_DME_tereshkova_tech":2,
 		
-		"dcp_tereshkova_export":2,
+		"dcp_DME_tereshkova_export":2,
 		
-		"dcp_sevastopol_mk1_std":3,
+		"dcp_DME_sevastopol_mk1_std":3,
 		
 		"fallback":{"combatFreighterSmall":1},
 	},
 	"combatFreighterLarge":{
-		"dcp_centaur_std":10,
-		"dcp_centaur_balanced":10,
-		"dcp_centaur_elite":8,
-		"dcp_centaur_support":5,
-		"dcp_baikal_support":2,
-		"dcp_tereshkova_tech":4,
-		"dcp_tereshkova_support":2,
+		"dcp_DME_centaur_std":10,
+		"dcp_DME_centaur_balanced":10,
+		"dcp_DME_centaur_elite":8,
+		"dcp_DME_centaur_support":5,
+		"dcp_DME_baikal_support":2,
+		"dcp_DME_tereshkova_tech":4,
+		"dcp_DME_tereshkova_support":2,
 		
 		"fallback":{"combatFreighterMedium":1},
 	},
 	
 	"civilianRandom":{
-		"dcp_tereshkova_std":4,
-		"dcp_puddlejumper_std":10,
-		"dcp_puddlejumper_hispeed":8,
-		"dcp_puddlejumper_balanced":6,
-		"dcp_bouclier_std":3,
-		"dcp_starsylph_std":1,
+		"dcp_DME_tereshkova_std":4,
+		"dcp_DME_puddlejumper_std":10,
+		"dcp_DME_puddlejumper_hispeed":8,
+		"dcp_DME_puddlejumper_balanced":6,
+		"dcp_DME_bouclier_std":3,
+		"dcp_DME_starsylph_std":1,
 		
-		"dcp_puddlejumper_export":8,
-		"dcp_centaur_export":4,
+		"dcp_DME_puddlejumper_export":8,
+		"dcp_DME_centaur_export":4,
 	},
 
 	# carriers
 	"carrierSmall":{
-		"dcp_leyte_std":10,
-		"dcp_leyte_patrol":6,
-		"dcp_leyte_balanced":4,
+		#DME
+		"dcp_DME_leyte_std":10,
+		"dcp_DME_leyte_patrol":6,
+		"dcp_DME_leyte_balanced":4,
 		
-		"dcp_curse_defense":4,
-		"dcp_curse_support":8,
-		"dcp_curse_attack":2,
+		"dcp_DME_curse_defense":4,
+		"dcp_DME_curse_support":8,
+		"dcp_DME_curse_attack":2,
 		
-		"dcp_curse_proto_test":1, #should not normally produce
-		"dcp_reef_std":5,
+		"dcp_DME_curse_proto_test":1, #should not normally produce
+		"dcp_DME_reef_std":5,
 		
-		"dcp_feeder_std":8,
+		"dcp_DME_feeder_std":8,
+
+
+
+		#Magellan
+		"dcp_magellan_patroldestroyer_std":10,
+		"dcp_magellan_patroldestroyer_explorer":5,
+
+		"dcp_magellan_patroldestroyer_leveller_turncoat":8,
+		"dcp_magellan_patroldestroyer_blackcollar_elite":8,
+		
+		"dcp_magellan_patroldestroyer_civ_std":5,
 
 		"fallback":{"carrierMedium":0.5},
 		"fallback2":{"carrierLarge":0.25},
 	},
 	"carrierMedium":{
-		"dcp_mindanao_std":10,
-		"dcp_mindanao_patrol":8,
-		"dcp_mindanao_support":8,
-		"dcp_mindanao_balanced":8,
+		#DME
+		"dcp_DME_mindanao_std":10,
+		"dcp_DME_mindanao_patrol":8,
+		"dcp_DME_mindanao_support":8,
+		"dcp_DME_mindanao_balanced":8,
+
+
+		#Magellan
+		"dcp_magellan_carrier_std":10,
+		"dcp_magellan_carrier_attack":6,
+		
+		"dcp_magellan_carrier_startiger_std":10,
+		"dcp_magellan_herdcarrier_std":10,
 
 		"fallback":{"carrierSmall":1},
 		"fallback2":{"carrierLarge":0.5},
 	},
 	"carrierLarge":{
-		"dcp_jeannedarc_std":10,
-		"dcp_jeannedarc_attack":6,
-		"dcp_jeannedarc_support":4,
+		"dcp_DME_jeannedarc_std":10,
+		"dcp_DME_jeannedarc_attack":6,
+		"dcp_DME_jeannedarc_support":4,
 		
-		"dcp_warlock_std":10,
-		"dcp_warlock_assault":8,
+		"dcp_DME_warlock_std":10,
+		"dcp_DME_warlock_assault":8,
 		
-		"dcp_bladewood_std":8,
-		"dcp_bladewood_support":4,
-		"dcp_bladewood_elite":2,
-				
+		"dcp_DME_bladewood_std":8,
+		"dcp_DME_bladewood_support":4,
+		"dcp_DME_bladewood_elite":2,
+
 		"fallback":{"carrierMedium":1},
 		"fallback2":{"carrierSmall":1},
 	},
 
 	# phase ships
 	"phaseSmall":{
-		"dcp_borzoi_elite":10,
-		"dcp_borzoi_support":2,
+		#DME
+		"dcp_DME_borzoi_elite":10,
+		"dcp_DME_borzoi_support":2,
 		
-		"dcp_demon_std":10,
-				
+		"dcp_DME_demon_std":10,
+
+		#Magellan
+		"dcp_magellan_phasefrig_std":10,
+		"dcp_magellan_phasefrig_attack":10,
+		
+		"dcp_magellan_phasefrig_theherd_std":8,
+		"dcp_magellan_phasefrig_blackcollar_attack":4,
+		
 		"fallback":{"phaseMedium":0.5},
 		"fallback2":{"phaseLarge":0.25},
 	},
 	"phaseMedium":{
-		"dcp_maskirovka_std":10,
-		"dcp_maskirovka_elite":7,
-		"dcp_maskirovka_support":3,
+		"dcp_DME_maskirovka_std":10,
+		"dcp_DME_maskirovka_elite":7,
+		"dcp_DME_maskirovka_support":3,
 
-		"dcp_devilray_std":8,
-		"dcp_devilray_support":10,
-		"dcp_devilray_strike":6,
+		"dcp_DME_devilray_std":8,
+		"dcp_DME_devilray_support":10,
+		"dcp_DME_devilray_strike":6,
 		
 		"fallback":{"phaseSmall":1},
 		"fallback2":{"phaseLarge":0.5},
 	},
 	
-	# you know what goes here
+	# you know what goes here - Soren
+	#I do not actually... But thanks I guess? -Glywnok
 	"phaseCapital":{
-	
+		"dcp_magellan_phasecruiser_std":10,
+		
+		"fallback":{"phaseMedium":1},
+		"fallback2":{"phaseSmall":1},
 	},
 
 	# freighters and such
 	"freighterSmall":{
-		"dcp_puddlejumper_std":10,
-		"dcp_puddlejumper_hispeed":8,
-		"dcp_puddlejumper_balanced":6,
-		"dcp_samoyed_std":3,
+		#DME
+		"dcp_DME_puddlejumper_std":10,
+		"dcp_DME_puddlejumper_hispeed":8,
+		"dcp_DME_puddlejumper_balanced":6,
+		"dcp_DME_samoyed_std":3,
 		
-		"dcp_puddlejumper_export":8,
+		"dcp_DME_puddlejumper_export":8,
 		
-		"dcp_desertersupply_sm_std":5,
+		"dcp_DME_desertersupply_sm_std":5,
+
+		#Magellan
+		"dcp_magellan_cbtfreight_frontier":2,
+		"dcp_magellan_cbtfreight_civ_std":4,
+
+	   "dcp_magellan_skiff_d_std":7,
+	   "dcp_magellan_skiff_d2_std":10,
+	   
+	   "dcp_magellan_schooner_d_std":7,
+	   "dcp_magellan_schooner_d2_std":10,
 	},
 	"freighterMedium":{
-		"dcp_sevastopol_std":10,
-		"dcp_sevastopol_support":10,
-		"dcp_sevastopol_anti_ftr":8,
-		"dcp_tereshkova_std":4,
+		#DME
+		"dcp_DME_sevastopol_std":10,
+		"dcp_DME_sevastopol_support":10,
+		"dcp_DME_sevastopol_anti_ftr":8,
+		"dcp_DME_tereshkova_std":4,
 		
-		"dcp_desertersupply_lg_std":10,
+		"dcp_DME_desertersupply_lg_std":10,
+
+		#Magellan
+		"dcp_magellan_ltfreight_std":5,
+		"dcp_magellan_ltfreight_d_std":10,
 	},
 	"freighterLarge":{
-		"dcp_centaur_std":10,
-		"dcp_centaur_support":5,
+		#DME
+		"dcp_DME_centaur_std":10,
+		"dcp_DME_centaur_support":5,
+
+		#Magellan
+		"dcp_magellan_supply_std":10,
+		"dcp_magellan_supply_civ_std":8,
 	},
 	
 	"tankerSmall":{
-		"dcp_desertersupply_sm_std":2,
+		"dcp_DME_desertersupply_sm_std":2,
 	},
 	"tankerMedium":{
-		"dcp_desertersupply_lg_std":4,
+		"dcp_DME_desertersupply_lg_std":4,
 	},
 	
 	"personnelSmall":{
-		"dcp_flatmouse_std":8,
+		"dcp_DME_flatmouse_std":8,
 	},
 	
 	# station

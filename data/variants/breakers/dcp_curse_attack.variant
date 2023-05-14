@@ -2,36 +2,36 @@
     "displayName": "Attack",
     "fluxCapacitors": 3,
     "fluxVents": 20,
-    "hullId": "dcp_curse",
-    "hullMods": ["dcp_bbassault"],
+    "hullId": "dcp_DME_curse",
+    "hullMods": ["dcp_DME_bbassault"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_curse_attack",
+    "variantId": "dcp_DME_curse_attack",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_jackal"}
+            "weapons": {"WS0001": "dcp_DME_jackal"}
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0002": "dcp_lens_hdem_rack",
-                "WS0003": "dcp_lens_hdem_rack"
+                "WS0002": "dcp_DME_lens_hdem_rack",
+                "WS0003": "dcp_DME_lens_hdem_rack"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_thermalpd",
-                "WS0005": "dcp_thermalpd"
+                "WS0004": "dcp_DME_thermalpd",
+                "WS0005": "dcp_DME_thermalpd"
             }
         }
     ],
     "wings": [
-        "dcp_focuser_wing",
-        "dcp_lycosid_wing"
+        "dcp_DME_focuser_wing",
+        "dcp_DME_lycosid_wing"
     ]
 }

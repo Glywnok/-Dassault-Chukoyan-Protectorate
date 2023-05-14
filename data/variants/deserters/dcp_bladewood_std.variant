@@ -3,66 +3,66 @@
     "fluxCapacitors": 14,
     "fluxVents": 50,
     "goalVariant": true,
-    "hullId": "dcp_bladewood",
+    "hullId": "dcp_DME_bladewood",
     "hullMods": ["expanded_deck_crew"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_bladewood_std",
+    "variantId": "dcp_DME_bladewood_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_20cmrailgun"}
+            "weapons": {"WS0001": "dcp_DME_20cmrailgun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_calliope",
-                "WS0003": "dcp_calliope"
+                "WS0002": "dcp_DME_calliope",
+                "WS0003": "dcp_DME_calliope"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_heavylinear_autogun",
-                "WS0005": "dcp_heavylinear_autogun",
-                "WS0006": "dcp_heavylinear_autogun",
-                "WS0007": "dcp_heavylinear_autogun",
-                "WS0008": "dcp_6cmrailgun",
-                "WS0009": "dcp_6cmrailgun",
-                "WS0010": "dcp_6cmrailgun",
-                "WS0011": "dcp_6cmrailgun"
+                "WS0004": "dcp_DME_heavylinear_autogun",
+                "WS0005": "dcp_DME_heavylinear_autogun",
+                "WS0006": "dcp_DME_heavylinear_autogun",
+                "WS0007": "dcp_DME_heavylinear_autogun",
+                "WS0008": "dcp_DME_6cmrailgun",
+                "WS0009": "dcp_DME_6cmrailgun",
+                "WS0010": "dcp_DME_6cmrailgun",
+                "WS0011": "dcp_DME_6cmrailgun"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0012": "dcp_matador",
-                "WS0013": "dcp_matador",
-                "WS0014": "dcp_matador",
-                "WS0015": "dcp_matador"
+                "WS0012": "dcp_DME_matador",
+                "WS0013": "dcp_DME_matador",
+                "WS0014": "dcp_DME_matador",
+                "WS0015": "dcp_DME_matador"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0016": "dcp_impulsor_ring",
-                "WS0017": "dcp_impulsor_ring",
-                "WS0018": "dcp_impulsor_ring",
-                "WS0019": "dcp_impulsor_ring",
-                "WS0020": "dcp_impulsor_ring",
-                "WS0021": "dcp_impulsor_ring"
+                "WS0016": "dcp_DME_impulsor_ring",
+                "WS0017": "dcp_DME_impulsor_ring",
+                "WS0018": "dcp_DME_impulsor_ring",
+                "WS0019": "dcp_DME_impulsor_ring",
+                "WS0020": "dcp_DME_impulsor_ring",
+                "WS0021": "dcp_DME_impulsor_ring"
             }
         }
     ],
     "wings": [
-        "dcp_dropper_wing",
-        "dcp_dropper_wing",
-        "dcp_firebeetle_wing",
-        "dcp_bantam_wing"
+        "dcp_DME_dropper_wing",
+        "dcp_DME_dropper_wing",
+        "dcp_DME_firebeetle_wing",
+        "dcp_DME_bantam_wing"
     ]
 }

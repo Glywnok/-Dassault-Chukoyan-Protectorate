@@ -1,9 +1,9 @@
 {
-	"id":"dcp_bomblet1",
+	"id":"dcp_DME_bomblet1",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_SlapperEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_SlapperEMPOnHit",
 	"missileType":"MIRV",
-	"sprite":"graphics/DCP/missiles/dcp_bombletB.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_bombletB.png",
 	"size":[11,18],	
 	"center":[5.5,9],
 	"collisionRadius":12,
@@ -49,7 +49,7 @@
 					"spreadSpeed":150,
 					"spreadSpeedRange":400,
 					"projectileRange":600, # only needed if not a missile
-					"projectileSpec":"dcp_energyspike",
+					"projectileSpec":"dcp_DME_energyspike",
 					"smokeSpec":{"particleSizeMin":12.0,
 								 "particleSizeRange":12.0,
 								 "cloudParticleCount":5,

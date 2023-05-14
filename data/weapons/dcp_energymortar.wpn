@@ -1,13 +1,13 @@
 {
-	"id":"dcp_energymortar",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_energymortar",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_EnergyMortarFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_EnergyMortarFX",
 	"type":"ENERGY",
 	"size":"MEDIUM",
-	"turretSprite":"graphics/DCP/weapons/dcp_plasmamortar_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_plasmamortar_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_plasmamortar_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_plasmamortar_hardpoint_glow.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_plasmamortar_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_plasmamortar_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_plasmamortar_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_plasmamortar_hardpoint_glow.png",
 	"glowColor":[25,200,125,215],
 	"turretOffsets":[8, 0, 12, 3, 12, -3,
 					 8, 4.5, 8, -4.5],
@@ -25,7 +25,7 @@
 					   "particleCount":15,
 					   "particleColor":[25,200,125,215]},
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
-	"projectileSpecId":"dcp_energymortar_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge",
-	"fireSoundTwo":"dcp_plasmamortar_fire", # If I like it, I'll change this
+	"projectileSpecId":"dcp_DME_energymortar_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge",
+	"fireSoundTwo":"dcp_DME_plasmamortar_fire", # If I like it, I'll change this
 }

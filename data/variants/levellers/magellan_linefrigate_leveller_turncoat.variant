@@ -1,0 +1,35 @@
+{
+    "displayName": "Turncoat",
+    "fluxCapacitors": 5,
+    "fluxVents": 10,
+    "hullId": "dcp_magellan_linefrigate_leveller",
+    "hullMods": ["hardened_subsystems"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_linefrigate_leveller_turncoat",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "dcp_magellan_stunfire_rack"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_magellan_calliope_sm"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_ebolter",
+                "WS0002": "dcp_magellan_ebolter"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_magellan_eflak"}
+        }
+    ]
+}

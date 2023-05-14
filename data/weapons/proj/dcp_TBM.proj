@@ -1,8 +1,8 @@
 {
-	"id":"dcp_TBM",
+	"id":"dcp_DME_TBM",
 	"specClass":"missile",	
 	"missileType":"MIRV",
-	"sprite":"graphics/DCP/missiles/dcp_TBM.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_TBM.png",
 	"size":[13,29],	
 	"center":[6.5,14.5],
 	"collisionRadius":18,
@@ -50,8 +50,8 @@
 					"spreadSpeed":250,
 					"spreadSpeedRange":400,
 					"projectileRange":750, # only needed if not a missile
-					"projectileSpec":"dcp_TBM_submunition",
-					#"projectileSpec":"dcp_TBM_dummysub",
+					"projectileSpec":"dcp_DME_TBM_submunition",
+					#"projectileSpec":"dcp_DME_TBM_dummysub",
 					"smokeSpec":{"particleSizeMin":16.0,
 								 "particleSizeRange":20.0,
 								 "cloudParticleCount":16,

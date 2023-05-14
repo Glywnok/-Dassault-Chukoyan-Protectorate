@@ -1,10 +1,10 @@
 {
-	"id":"dcp_mirvtorpedo_guided",
+	"id":"dcp_DME_mirvtorpedo_guided",
 	"specClass":"missile",	
-	"onHitEffect":"data.scripts.weapons.dcp_FrappeurOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_FrappeurOnHit",
 	#"missileType":"ROCKET",
 	"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
-	"sprite":"graphics/DCP/missiles/dcp_mirvtorpedo.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_mirvtorpedo.png",
 	"size":[10,22],	
 	"center":[5,11],
 	"collisionRadius":15,

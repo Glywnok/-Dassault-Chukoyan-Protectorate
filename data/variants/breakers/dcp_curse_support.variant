@@ -2,36 +2,36 @@
     "displayName": "Support",
     "fluxCapacitors": 14,
     "fluxVents": 20,
-    "hullId": "dcp_curse",
-    "hullMods": ["dcp_bbsupport"],
+    "hullId": "dcp_DME_curse",
+    "hullMods": ["dcp_DME_bbsupport"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_curse_support",
+    "variantId": "dcp_DME_curse_support",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0001": "dcp_marteau_esm_pod"}
+            "weapons": {"WS0001": "dcp_DME_marteau_esm_pod"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_shellback",
-                "WS0003": "dcp_shellback"
+                "WS0002": "dcp_DME_shellback",
+                "WS0003": "dcp_DME_shellback"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_bbheavymg",
-                "WS0005": "dcp_bbheavymg"
+                "WS0004": "dcp_DME_bbheavymg",
+                "WS0005": "dcp_DME_bbheavymg"
             }
         }
     ],
     "wings": [
-        "dcp_firespray_wing",
-        "dcp_firespray_wing"
+        "dcp_DME_firespray_wing",
+        "dcp_DME_firespray_wing"
     ]
 }

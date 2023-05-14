@@ -1,0 +1,33 @@
+{
+    "displayName": "Export",
+    "fluxCapacitors": 7,
+    "fluxVents": 10,
+    "hullId": "dcp_magellan_cbtfreight_civ",
+    "hullMods": ["reinforcedhull"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_cbtfreight_civ_std",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_magellan_sniperautogun",
+                "WS0005": "dcp_magellan_sniperautogun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_crackerafm"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_magellan_smciws",
+                "WS0007": "dcp_magellan_smciws"
+            }
+        }
+    ]
+}

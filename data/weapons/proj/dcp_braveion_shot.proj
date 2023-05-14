@@ -1,7 +1,7 @@
 {
-	"id":"dcp_braveion_shot",
+	"id":"dcp_DME_braveion_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_EBolterEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_EBolterEMPOnHit",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",

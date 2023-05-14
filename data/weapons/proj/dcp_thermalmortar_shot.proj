@@ -1,7 +1,7 @@
 {
-	"id":"dcp_thermalmortar_shot",
+	"id":"dcp_DME_thermalmortar_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_SmartPlasmidOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_SmartPlasmidOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

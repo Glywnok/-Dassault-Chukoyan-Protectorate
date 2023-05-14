@@ -1,0 +1,68 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 8,
+    "fluxVents": 30,
+    "hullId": "dcp_magellan_cruiser_startiger",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_cruiser_startiger_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0016": "dcp_magellan_balefiremrm_tube",
+                "WS0017": "dcp_magellan_balefiremrm_tube"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "dcp_magellan_calliope",
+                "WS0013": "dcp_magellan_calliope"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_magellan_burstmaster",
+                "WS0004": "dcp_magellan_burstmaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_magellan_boneshakerbattery"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_quenchgun",
+                "WS0002": "dcp_magellan_quenchgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0018": "dcp_magellan_smhetlaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_magellan_ioncharge",
+                "WS0007": "dcp_magellan_ioncharge",
+                "WS0008": "dcp_magellan_smpdmaser",
+                "WS0009": "dcp_magellan_smpdmaser",
+                "WS0010": "dcp_magellan_ioncharge",
+                "WS0011": "dcp_magellan_ioncharge",
+                "WS0014": "dcp_magellan_smpdmaser",
+                "WS0015": "dcp_magellan_smpdmaser"
+            }
+        }
+    ]
+}

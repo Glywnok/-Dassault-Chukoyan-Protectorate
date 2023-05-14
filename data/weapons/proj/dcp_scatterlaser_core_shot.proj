@@ -1,5 +1,5 @@
 {
-	"id":"dcp_scatterlaser_core_shot",
+	"id":"dcp_DME_scatterlaser_core_shot",
 	"specClass":"projectile",
 	"onHitEffect":"data.scripts.weapons.ScatterlaserSparks",
 	#"spawnType":"BEAM",

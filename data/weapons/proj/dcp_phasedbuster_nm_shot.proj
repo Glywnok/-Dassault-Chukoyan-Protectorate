@@ -1,7 +1,7 @@
 {
-	"id":"dcp_phasedbuster_nm_shot",
+	"id":"dcp_DME_phasedbuster_nm_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_SigmaBusterOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_SigmaBusterOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

@@ -3,37 +3,37 @@
     "fluxCapacitors": 4,
     "fluxVents": 20,
     "goalVariant": true,
-    "hullId": "dcp_tereshkova",
+    "hullId": "dcp_DME_tereshkova",
     "hullMods": ["autorepair"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_tereshkova_tech",
+    "variantId": "dcp_DME_tereshkova_tech",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_hellspear"}
+            "weapons": {"WS0002": "dcp_DME_hellspear"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_6cmrailgun",
-                "WS0004": "dcp_6cmrailgun"
+                "WS0003": "dcp_DME_6cmrailgun",
+                "WS0004": "dcp_DME_6cmrailgun"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_shockartillery"}
+            "weapons": {"WS0001": "dcp_DME_shockartillery"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_linearvulcan",
-                "WS0006": "dcp_linearvulcan",
-                "WS0007": "dcp_linearvulcan"
+                "WS0005": "dcp_DME_linearvulcan",
+                "WS0006": "dcp_DME_linearvulcan",
+                "WS0007": "dcp_DME_linearvulcan"
             }
         }
     ]

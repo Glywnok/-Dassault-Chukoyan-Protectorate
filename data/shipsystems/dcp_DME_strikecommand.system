@@ -1,0 +1,19 @@
+{
+	"id":"dcp_DME_strikecommand",
+	"type":"STAT_MOD",
+	"aiType":"RESERVE_DEPLOYMENT",
+	
+	"statsScript":"data.shipsystems.scripts.dcp_DME_StrikeCommandStats",
+	
+	"useSound":"dcp_DME_system_powerup",
+	#"loopSound":"system_targeting_feed_loop",
+	"deactivateSound":"dcp_DME_system_powerdown",
+	"outOfUsesSound":"dcp_DME_system_unavailable",
+	
+	"aiHints":{
+	}
+}
+
+
+
+

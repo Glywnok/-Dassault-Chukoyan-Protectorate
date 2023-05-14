@@ -2,37 +2,37 @@
     "displayName": "Artillery",
     "fluxCapacitors": 18,
     "fluxVents": 30,
-    "hullId": "dcp_baikal",
+    "hullId": "dcp_DME_baikal",
     "hullMods": ["hardenedshieldemitter"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_baikal_arty",
+    "variantId": "dcp_DME_baikal_arty",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0003": "dcp_ruptureasm_med",
-                "WS0008": "dcp_marteau_esm_barrage",
-                "WS0009": "dcp_gravmissiletube"
+                "WS0003": "dcp_DME_ruptureasm_med",
+                "WS0008": "dcp_DME_marteau_esm_barrage",
+                "WS0009": "dcp_DME_gravmissiletube"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_hellspear",
-                "WS0002": "dcp_shockartillery"
+                "WS0001": "dcp_DME_hellspear",
+                "WS0002": "dcp_DME_shockartillery"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_micropd",
-                "WS0005": "dcp_micropd",
-                "WS0006": "dcp_micropd",
-                "WS0007": "dcp_microflak"
+                "WS0004": "dcp_DME_micropd",
+                "WS0005": "dcp_DME_micropd",
+                "WS0006": "dcp_DME_micropd",
+                "WS0007": "dcp_DME_microflak"
             }
         }
     ]

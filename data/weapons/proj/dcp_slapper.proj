@@ -1,9 +1,9 @@
 {
-	"id":"dcp_slapperSRM",
+	"id":"dcp_DME_slapperSRM",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_SlapperEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_SlapperEMPOnHit",
 	"missileType":"MISSILE",
-	"sprite":"graphics/DCP/missiles/dcp_slapper.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_slapper.png",
 	"size":[4,10],	
 	"center":[2,5],
 	"collisionRadius":8,

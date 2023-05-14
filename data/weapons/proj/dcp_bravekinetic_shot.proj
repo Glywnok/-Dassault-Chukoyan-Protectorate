@@ -1,7 +1,7 @@
 {
-	"id":"dcp_bravekinetic_shot",
+	"id":"dcp_DME_bravekinetic_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_BraveKineticSparks",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_BraveKineticSparks",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

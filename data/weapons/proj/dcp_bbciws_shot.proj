@@ -1,5 +1,5 @@
 {
-	"id":"dcp_bbciws_shot",
+	"id":"dcp_DME_bbciws_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
@@ -16,7 +16,7 @@
 	"textureType":"ROUGH",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-48.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_miniblaster_long_bolt.png",
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_miniblaster_long_bolt.png",
 	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
 					"shotRangeVariance":0.2,
 					"range":10,
@@ -31,7 +31,7 @@
 									 "particleCount":12,
 									 "particleColor":[225,160,75,200],
 									 "explosionColor":[255,155,75,55],
-									 "sound":"dcp_explosion_flak_small"},
+									 "sound":"dcp_DME_explosion_flak_small"},
 					}
 					
 }

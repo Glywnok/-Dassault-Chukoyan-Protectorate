@@ -2,51 +2,51 @@
     "displayName": "Battle",
     "fluxCapacitors": 2,
     "fluxVents": 32,
-    "hullId": "dcp_zelenograd",
+    "hullId": "dcp_DME_zelenograd",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "quality": 0.75,
-    "variantId": "dcp_zelenograd_battle",
+    "variantId": "dcp_DME_zelenograd_battle",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0015": "dcp_ruptureasm_med",
-                "WS0016": "dcp_ruptureasm_med",
-                "WS0017": "dcp_hellhoundlauncher",
-                "WS0018": "dcp_hellhoundlauncher"
+                "WS0015": "dcp_DME_ruptureasm_med",
+                "WS0016": "dcp_DME_ruptureasm_med",
+                "WS0017": "dcp_DME_hellhoundlauncher",
+                "WS0018": "dcp_DME_hellhoundlauncher"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_linearcannonheavy",
-                "WS0002": "dcp_linearcannonheavy",
-                "WS0006": "dcp_6cmrailgun",
-                "WS0007": "dcp_6cmrailgun",
-                "WS0008": "dcp_6cmrailgun",
-                "WS0009": "dcp_6cmrailgun",
-                "WS0010": "dcp_6cmrailgun",
-                "WS0011": "dcp_magpulser",
-                "WS0012": "dcp_magpulser"
+                "WS0001": "dcp_DME_linearcannonheavy",
+                "WS0002": "dcp_DME_linearcannonheavy",
+                "WS0006": "dcp_DME_6cmrailgun",
+                "WS0007": "dcp_DME_6cmrailgun",
+                "WS0008": "dcp_DME_6cmrailgun",
+                "WS0009": "dcp_DME_6cmrailgun",
+                "WS0010": "dcp_DME_6cmrailgun",
+                "WS0011": "dcp_DME_magpulser",
+                "WS0012": "dcp_DME_magpulser"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_tribeamer",
-                "WS0004": "dcp_tribeamer",
-                "WS0005": "dcp_tribeamer",
-                "WS0013": "dcp_micropd",
-                "WS0014": "dcp_micropd"
+                "WS0003": "dcp_DME_tribeamer",
+                "WS0004": "dcp_DME_tribeamer",
+                "WS0005": "dcp_DME_tribeamer",
+                "WS0013": "dcp_DME_micropd",
+                "WS0014": "dcp_DME_micropd"
             }
         }
     ],
     "wings": [
-        "dcp_rafale1_wing",
-        "dcp_dard_wing"
+        "dcp_DME_rafale1_wing",
+        "dcp_DME_dard_wing"
     ]
 }

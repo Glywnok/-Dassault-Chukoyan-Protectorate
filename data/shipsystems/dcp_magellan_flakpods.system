@@ -1,0 +1,13 @@
+{
+	"id":"dcp_magellan_flakpods",
+	"type":"WEAPON",
+	"aiType":"CANISTER_FLAK",
+	
+	#"statsScript":"data.shipsystems.scripts.dcp_magellan_FlakPodsStats",
+	
+	"weaponDataId":"dcp_magellan_flakpod_wpn",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}

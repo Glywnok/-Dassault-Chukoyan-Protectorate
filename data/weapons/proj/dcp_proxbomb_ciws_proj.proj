@@ -1,9 +1,9 @@
 {
-	"id":"dcp_proxbomb_ciws_proj",
+	"id":"dcp_DME_proxbomb_ciws_proj",
 	"specClass":"missile",
-	"onFireEffect":"data.scripts.weapons.dcp_GrenadeBehaviorPlugin",
+	"onFireEffect":"data.scripts.weapons.dcp_DME_GrenadeBehaviorPlugin",
 	"missileType":"BOMB_WITH_SLOW",
-	"sprite":"graphics/DCP/missiles/dcp_lightbomb.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_lightbomb.png",
 	"size":[7,10],	
 	"center":[3.5,5],
 	"collisionRadius":9,

@@ -1,6 +1,6 @@
 {
-  "variantId": "dcp_flatmouse_std",
-  "hullId": "dcp_flatmouse",
+  "variantId": "dcp_DME_flatmouse_std",
+  "hullId": "dcp_DME_flatmouse",
   "displayName": "Standard",
   "goalVariant": true,
   "fluxCapacitors": 3,
@@ -13,15 +13,15 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_linearcannonlight"
+        "WS0001": "dcp_DME_linearcannonlight"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "dcp_matador",
-        "WS0005": "dcp_matador"
+        "WS0004": "dcp_DME_matador",
+        "WS0005": "dcp_DME_matador"
       }
     }
   ],

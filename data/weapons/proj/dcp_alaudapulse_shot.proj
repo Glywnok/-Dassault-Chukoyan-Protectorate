@@ -1,5 +1,5 @@
 {
-	"id":"dcp_alaudapulse_shot",
+	"id":"dcp_DME_alaudapulse_shot",
 	"specClass":"projectile",
 	"onHitEffect":"data.scripts.weapons.AutolaserSmallSparks",
 	"hitGlowRadius":15,

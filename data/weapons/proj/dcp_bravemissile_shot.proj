@@ -1,9 +1,9 @@
 {
-	"id":"dcp_bravemissile_shot",
+	"id":"dcp_DME_bravemissile_shot",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_SigmaBusterOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_SigmaBusterOnHit",
 	"missileType":"MISSILE",
-	"sprite":"graphics/DCP/missiles/dcp_hdem.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_hdem.png",
 	"size":[7,10],	
 	"center":[3.5,5],
 	"collisionRadius":9,

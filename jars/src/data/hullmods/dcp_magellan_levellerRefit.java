@@ -80,7 +80,7 @@ public class dcp_magellan_levellerRefit extends BaseHullMod {
                 if (ship.getVariant().getHullMods().contains(tmp))
                 {
                     ship.getVariant().removeMod(tmp);
-                    MagellanBlockedHullmodDisplayScript.showBlocked(ship);
+                    DCPBlockedHullmodDisplayScript.showBlocked(ship);
                 }
             }
         }

@@ -1,5 +1,5 @@
 {
-	"id":"dcp_buzzgun_shot",
+	"id":"dcp_DME_buzzgun_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
@@ -16,5 +16,5 @@
 	"textureType":"ROUGH",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-48.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_miniblaster_bolt.png"
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_miniblaster_bolt.png"
 }

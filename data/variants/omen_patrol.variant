@@ -12,17 +12,17 @@
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS 003": "dcp_ammpod"}
+            "weapons": {"WS 003": "dcp_DME_ammpod"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 001": "dcp_autolaser_small"}
+            "weapons": {"WS 001": "dcp_DME_autolaser_small"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 002": "dcp_micropd"}
+            "weapons": {"WS 002": "dcp_DME_micropd"}
         }
     ]
 }

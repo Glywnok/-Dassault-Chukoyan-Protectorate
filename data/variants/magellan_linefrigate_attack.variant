@@ -1,0 +1,41 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "dcp_magellan_linefrigate",
+    "hullMods": [
+        "unstable_injector",
+        "pointdefenseai",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "variantId": "dcp_magellan_linefrigate_attack",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_magellan_smciws"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_smgatling"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_magellan_smgatling"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_magellan_slamfire_rack"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "dcp_magellan_slamfire_rack"}
+        }
+    ]
+}

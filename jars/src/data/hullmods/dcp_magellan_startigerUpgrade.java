@@ -92,7 +92,7 @@ public class dcp_magellan_startigerUpgrade extends BaseHullMod {
                 if (ship.getVariant().getHullMods().contains(tmp))
                 {
                     ship.getVariant().removeMod(tmp);
-                    MagellanBlockedHullmodDisplayScript.showBlocked(ship);
+                    DCPBlockedHullmodDisplayScript.showBlocked(ship);
                 }
             }
         }

@@ -1,7 +1,7 @@
 {
-	"id":"dcp_phaserail_shot",
+	"id":"dcp_DME_phaserail_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_PhaseRailOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_PhaseRailOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

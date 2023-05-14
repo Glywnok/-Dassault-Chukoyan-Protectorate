@@ -2,23 +2,23 @@
   "displayName": "Drone Fighter",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_dard",
+  "hullId": "dcp_DME_dard",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_dard_Interceptor",
+  "variantId": "dcp_DME_dard_Interceptor",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "dcp_slapper_ftr"
+        "WS0002": "dcp_DME_slapper_ftr"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_autolaser_smallftr"
+        "WS0001": "dcp_DME_autolaser_smallftr"
       }
     }
   ]

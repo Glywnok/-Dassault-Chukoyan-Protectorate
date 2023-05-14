@@ -12,40 +12,40 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS 011": "dcp_chasseurLRMlauncher",
-                "WS 012": "dcp_chasseurLRMlauncher"
+                "WS 011": "dcp_DME_chasseurLRMlauncher",
+                "WS 012": "dcp_DME_chasseurLRMlauncher"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 008": "dcp_magpulser",
-                "WS 014": "dcp_ionbeamer"
+                "WS 008": "dcp_DME_magpulser",
+                "WS 014": "dcp_DME_ionbeamer"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 002": "dcp_micropd",
-                "WS 003": "dcp_micropd",
-                "WS 005": "dcp_micropd",
-                "WS 006": "dcp_micropd",
-                "WS 007": "dcp_micropd",
-                "WS 013": "dcp_tribeamer",
-                "WS 015": "dcp_tribeamer",
-                "WS 023": "dcp_tribeamer",
-                "WS 024": "dcp_tribeamer"
+                "WS 002": "dcp_DME_micropd",
+                "WS 003": "dcp_DME_micropd",
+                "WS 005": "dcp_DME_micropd",
+                "WS 006": "dcp_DME_micropd",
+                "WS 007": "dcp_DME_micropd",
+                "WS 013": "dcp_DME_tribeamer",
+                "WS 015": "dcp_DME_tribeamer",
+                "WS 023": "dcp_DME_tribeamer",
+                "WS 024": "dcp_DME_tribeamer"
             }
         }
     ],
     "wings": [
-        "dcp_rafale1_wing",
-        "dcp_rafale1_wing",
-        "dcp_rafale1_wing",
-        "dcp_rafale1_wing",
-        "dcp_flare_wing",
-        "dcp_flare_wing"
+        "dcp_DME_rafale1_wing",
+        "dcp_DME_rafale1_wing",
+        "dcp_DME_rafale1_wing",
+        "dcp_DME_rafale1_wing",
+        "dcp_DME_flare_wing",
+        "dcp_DME_flare_wing"
     ]
 }

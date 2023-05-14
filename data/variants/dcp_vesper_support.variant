@@ -3,35 +3,35 @@
     "fluxCapacitors": 2,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_vesper",
+    "hullId": "dcp_DME_vesper",
     "hullMods": [
         "hardened_subsystems",
         "targetingunit"
     ],
     "permaMods": [],
-    "variantId": "dcp_vesper_support",
+    "variantId": "dcp_DME_vesper_support",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "ALTERNATING",
-            "weapons": {"WS0002": "dcp_gravmissiletube"}
+            "weapons": {"WS0002": "dcp_DME_gravmissiletube"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_howler"}
+            "weapons": {"WS0001": "dcp_DME_howler"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_6cmrailgun"}
+            "weapons": {"WS0003": "dcp_DME_6cmrailgun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_tacbeamer",
-                "WS0005": "dcp_tacbeamer"
+                "WS0004": "dcp_DME_tacbeamer",
+                "WS0005": "dcp_DME_tacbeamer"
             }
         }
     ]

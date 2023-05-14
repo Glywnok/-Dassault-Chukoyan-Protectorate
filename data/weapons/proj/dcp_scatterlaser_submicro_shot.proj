@@ -1,5 +1,5 @@
 {
-	"id":"dcp_scatterlaser_submicro_shot",
+	"id":"dcp_DME_scatterlaser_submicro_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
@@ -28,7 +28,7 @@
 									 "particleCount":9,
 									 "particleColor":[5,120,175,255],
 									 "explosionColor":[5,120,175,155],
-									 "sound":"dcp_energy_crit_micro"
+									 "sound":"dcp_DME_energy_crit_micro"
 									 },	
 					},
 }

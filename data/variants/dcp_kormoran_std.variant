@@ -3,59 +3,59 @@
     "fluxCapacitors": 21,
     "fluxVents": 30,
     "goalVariant": true,
-    "hullId": "dcp_kormoran",
+    "hullId": "dcp_DME_kormoran",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_kormoran_std",
+    "variantId": "dcp_DME_kormoran_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_autohybridblaster"}
+            "weapons": {"WS0001": "dcp_DME_autohybridblaster"}
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0015": "dcp_mirvtorpedo_rack",
-                "WS0016": "dcp_mirvtorpedo_rack"
+                "WS0015": "dcp_DME_mirvtorpedo_rack",
+                "WS0016": "dcp_DME_mirvtorpedo_rack"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "dcp_tacbeamer",
-                "WS0008": "dcp_tacbeamer",
-                "WS0009": "dcp_tacbeamer",
-                "WS0010": "dcp_tacbeamer"
+                "WS0007": "dcp_DME_tacbeamer",
+                "WS0008": "dcp_DME_tacbeamer",
+                "WS0009": "dcp_DME_tacbeamer",
+                "WS0010": "dcp_DME_tacbeamer"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_linearcannontwin",
-                "WS0003": "dcp_linearcannontwin"
+                "WS0002": "dcp_DME_linearcannontwin",
+                "WS0003": "dcp_DME_linearcannontwin"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_micropd",
-                "WS0006": "dcp_micropd",
-                "WS0011": "dcp_micropd",
-                "WS0012": "dcp_micropd",
-                "WS0013": "dcp_micropd",
-                "WS0014": "dcp_micropd"
+                "WS0005": "dcp_DME_micropd",
+                "WS0006": "dcp_DME_micropd",
+                "WS0011": "dcp_DME_micropd",
+                "WS0012": "dcp_DME_micropd",
+                "WS0013": "dcp_DME_micropd",
+                "WS0014": "dcp_DME_micropd"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0004": "dcp_linearflak_single"}
+            "weapons": {"WS0004": "dcp_DME_linearflak_single"}
         }
     ]
 }

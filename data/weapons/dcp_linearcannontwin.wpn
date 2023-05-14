@@ -1,14 +1,14 @@
 {
-	"id":"dcp_linearcannontwin",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_linearcannontwin",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"BALLISTIC",
 	"size":"MEDIUM",
-	"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_med.png",
-	"turretSprite":"graphics/DCP/weapons/dcp_linearcannontwin_turret_base.png",
-	"turretGunSprite":"graphics/DCP/weapons/dcp_linearcannontwin_turret_recoil.png",
-	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_socket_hardpoint_med.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_linearcannontwin_hardpoint_base.png",
-	"hardpointGunSprite":"graphics/DCP/weapons/dcp_linearcannontwin_hardpoint_recoil.png",
+	"turretUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_turret_med.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_linearcannontwin_turret_base.png",
+	"turretGunSprite":"graphics/DCP/weapons/dcp_DME_linearcannontwin_turret_recoil.png",
+	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_hardpoint_med.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_linearcannontwin_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/DCP/weapons/dcp_DME_linearcannontwin_hardpoint_recoil.png",
 	"visualRecoil":5,  # the gun sprites are only used if this is non-0
 	"turretOffsets":[16, -5, 16, 5],
 	"turretAngleOffsets":[0, 0],
@@ -25,7 +25,7 @@
 					   "particleDuration":0.06,
 					   "particleCount":28,
 					   "particleColor":[125,175,255,255]},
-	"projectileSpecId":"dcp_linearcannon_shot",  # projectile that will be fired
-	#"fireSoundOne":"dcp_6cmrailgun_charge",
-	"fireSoundTwo":"dcp_linearcannon_fire",
+	"projectileSpecId":"dcp_DME_linearcannon_shot",  # projectile that will be fired
+	#"fireSoundOne":"dcp_DME_6cmrailgun_charge",
+	"fireSoundTwo":"dcp_DME_linearcannon_fire",
 }

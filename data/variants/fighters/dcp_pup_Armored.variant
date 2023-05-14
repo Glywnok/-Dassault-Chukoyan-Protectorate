@@ -2,23 +2,23 @@
   "displayName": "Armored Assault Fighter",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_pup",
+  "hullId": "dcp_DME_pup",
   "hullMods": [],
-  "variantId": "dcp_pup_Armored",
+  "variantId": "dcp_DME_pup_Armored",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_barker"
+        "WS0001": "dcp_DME_barker"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "dcp_buzzgun",
-        "WS0003": "dcp_buzzgun"
+        "WS0002": "dcp_DME_buzzgun",
+        "WS0003": "dcp_DME_buzzgun"
       }
     }
   ]

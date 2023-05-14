@@ -7,6 +7,19 @@
 	"[DME] Dassault-Mikoyan markets have lower tariffs than vanilla Starsector or most other mod factions.",
 	"[DME] Most Dassault-Mikoyan ships aren't good toe-to-toe brawlers - instead, rely on your above-average mobility to flank, and mass fighter strikes to reduce heavier enemies. It rarely pays to slug it out with other ships - instead, disengage and find a new target.",
 	"[DME] Dassault-Mikoyan plays well when allied to a slow, tanky faction like the Hegemony; their own ships focus on cruiser- and fighter-centric maneuver warfare.",
+	"You know if you use UAF you have severe skill issue",
+	"UAF is a good looking mod, but CY is a big dickhead",
+	"[DCP] Hey! Yes you! Would you like to see horrors?",
 	"Don't forget to hydrate! Drink water regularly, especially while playing Starsector.",
-     ],
+    "[Magellan] The technological divergence of Protectorate weapons from Domain standard technology means you can't always rely on damage type to define a weapon's role. Pay attention to burst and alpha damage, especially on fragmentation weapons.",
+	"[Magellan] Magellan ships are line combatants first and foremost. What you can't steamroller into paste, you should be able to outlast.",
+	"[Magellan] Magellan fighters are designed to support the heavy firepower of the gun line, not to deal strike damage directly. Use Lochaber bombers to strategically cripple ships for your heavies to destroy.",
+	"[Magellan] Don't be afraid to tank damage on your armor. You've got lots of it, and your weapons and engines are tough enough to shrug off hits that would cripple those systems on other ships.",
+	{"freq":0.5, "tip": "[Magellan] The movement systems on Magellan ships have a much lower, or nonexistent, chance of flaming out the engines on collision with other ships."},
+	{"freq":0.5, "tip": "[Magellan] Slow-moving rockets, bombs, and other dumbfire projectiles can be accelerated with ship systems that suddenly boost movement speed. Try it with Fusion Bombs."},
+	#dumb bullshit with very low frequency
+	{"freq":0.01, "tip": "If you can't spot the sucker at the poker table - it's you."},
+	{"freq":0, "tip": "You can turn off silly tips that offend your delicate sense of 'immersion' by setting their frequency to 0, just like this one."},
+
+],
 }

@@ -1,17 +1,17 @@
 {
-	"id":"dcp_brigador",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_brigador",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"ENERGY",
 	"mountTypeOverride":"HYBRID",
 	"size":"MEDIUM",
 	"displayArcRadius":800,
-	"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_med.png",
-	"turretSprite":"graphics/DCP/weapons/dcp_brigador_turret_base.png",
-	"turretGunSprite":"graphics/DCP/weapons/dcp_brigador_turret_recoil.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_brigador_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_brigador_hardpoint_base.png",
-	"hardpointGunSprite":"graphics/DCP/weapons/dcp_brigador_hardpoint_recoil.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_brigador_hardpoint_glow.png",
+	"turretUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_turret_med.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_brigador_turret_base.png",
+	"turretGunSprite":"graphics/DCP/weapons/dcp_DME_brigador_turret_recoil.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_brigador_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_brigador_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/DCP/weapons/dcp_DME_brigador_hardpoint_recoil.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_brigador_hardpoint_glow.png",
 	"visualRecoil":4.0,  # the gun sprites are only used if this is non-0
 	"glowColor":[75,125,200,255],
 	"turretOffsets":[10, 0],
@@ -29,6 +29,6 @@
 					   "particleDuration":0.06,
 					   "particleCount":40,
 					   "particleColor":[75,125,200,175]},
-	"projectileSpecId":"dcp_brigador_shot",  # projectile that will be fired
-	"fireSoundTwo":"dcp_brigadorfire",	
+	"projectileSpecId":"dcp_DME_brigador_shot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_brigadorfire",
 }

@@ -2,31 +2,31 @@
   "displayName": "Standard",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_gunpod",
+  "hullId": "dcp_DME_gunpod",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_gunpod_std",
+  "variantId": "dcp_DME_gunpod_std",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_electrogun"
+        "WS0001": "dcp_DME_electrogun"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "dcp_thermalheavy"
+        "WS0002": "dcp_DME_thermalheavy"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "dcp_impulsor",
-        "WS0004": "dcp_impulsor"
+        "WS0003": "dcp_DME_impulsor",
+        "WS0004": "dcp_DME_impulsor"
       }
     }
   ]

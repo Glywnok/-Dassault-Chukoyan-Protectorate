@@ -1,0 +1,11 @@
+{
+	"id":"dcp_magellan_ionchargelayer",
+	"type":"WEAPON",
+	"aiType":"CANISTER_FLAK",
+	
+	"weaponDataId":"dcp_magellan_ionchargelauncher",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	#"weaponGlowColor":[55,200,255,255],
+ 	#"weaponTypes":[SYSTEM],
+}

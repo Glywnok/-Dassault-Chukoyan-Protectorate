@@ -3,77 +3,77 @@
     "fluxCapacitors": 1,
     "fluxVents": 40,
     "goalVariant": true,
-    "hullId": "dcp_jeannedarc",
+    "hullId": "dcp_DME_jeannedarc",
     "hullMods": ["expanded_deck_crew"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_jeannedarc_attack",
+    "variantId": "dcp_DME_jeannedarc_attack",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0008": "dcp_mirvtorpedo_barrage"}
+            "weapons": {"WS0008": "dcp_DME_mirvtorpedo_barrage"}
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0006": "dcp_gravmissilelauncher",
-                "WS0007": "dcp_gravmissilelauncher",
-                "WS0023": "dcp_gravmissiletube",
-                "WS0024": "dcp_gravmissiletube"
+                "WS0006": "dcp_DME_gravmissilelauncher",
+                "WS0007": "dcp_DME_gravmissilelauncher",
+                "WS0023": "dcp_DME_gravmissiletube",
+                "WS0024": "dcp_DME_gravmissiletube"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_hellspear"}
+            "weapons": {"WS0001": "dcp_DME_hellspear"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_heavylinear_autogun",
-                "WS0004": "dcp_heavylinear_autogun"
+                "WS0003": "dcp_DME_heavylinear_autogun",
+                "WS0004": "dcp_DME_heavylinear_autogun"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_12cmrailgun"}
+            "weapons": {"WS0002": "dcp_DME_12cmrailgun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0009": "dcp_micropd",
-                "WS0010": "dcp_micropd",
-                "WS0011": "dcp_micropd",
-                "WS0012": "dcp_micropd",
-                "WS0013": "dcp_micropd",
-                "WS0014": "dcp_micropd",
-                "WS0015": "dcp_microflak",
-                "WS0016": "dcp_microflak",
-                "WS0017": "dcp_micropd",
-                "WS0018": "dcp_micropd",
-                "WS0019": "dcp_micropd",
-                "WS0020": "dcp_micropd",
-                "WS0021": "dcp_microflak",
-                "WS0022": "dcp_microflak"
+                "WS0009": "dcp_DME_micropd",
+                "WS0010": "dcp_DME_micropd",
+                "WS0011": "dcp_DME_micropd",
+                "WS0012": "dcp_DME_micropd",
+                "WS0013": "dcp_DME_micropd",
+                "WS0014": "dcp_DME_micropd",
+                "WS0015": "dcp_DME_microflak",
+                "WS0016": "dcp_DME_microflak",
+                "WS0017": "dcp_DME_micropd",
+                "WS0018": "dcp_DME_micropd",
+                "WS0019": "dcp_DME_micropd",
+                "WS0020": "dcp_DME_micropd",
+                "WS0021": "dcp_DME_microflak",
+                "WS0022": "dcp_DME_microflak"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_linearflak"}
+            "weapons": {"WS0005": "dcp_DME_linearflak"}
         }
     ],
     "wings": [
-        "dcp_damselfly_wing",
-        "dcp_damselfly_wing",
-        "dcp_damselfly_wing",
-        "dcp_damselfly_wing",
-        "dcp_harridan_wing",
-        "dcp_harridan_wing"
+        "dcp_DME_damselfly_wing",
+        "dcp_DME_damselfly_wing",
+        "dcp_DME_damselfly_wing",
+        "dcp_DME_damselfly_wing",
+        "dcp_DME_harridan_wing",
+        "dcp_DME_harridan_wing"
     ]
 }

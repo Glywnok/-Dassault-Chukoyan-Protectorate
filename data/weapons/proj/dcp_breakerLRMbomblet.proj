@@ -1,9 +1,9 @@
 {
-	"id":"dcp_breakerLRMbomblet",
+	"id":"dcp_DME_breakerLRMbomblet",
 	"specClass":"missile",
 	"missileType":"PHASE_MINE",
-	"sprite":"graphics/DCP/missiles/dcp_energy_bomb_breakerLRM.png",
-	"glowSprite":"graphics/DCP/missiles/dcp_energy_bomb_glow.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_energy_bomb_breakerLRM.png",
+	"glowSprite":"graphics/DCP/missiles/dcp_DME_energy_bomb_glow.png",
 	"glowColor":[100,165,255,200],
 	"size":[14,14],	
 	"center":[7,7],
@@ -47,7 +47,7 @@
 									 "detailedExplosionFlashDuration":0.3,
 									 "detailedExplosionFlashColorFringe":[50,65,155,155],
 									 "detailedExplosionFlashColorCore":[50,65,255,255],
-									 "sound":"dcp_mine_explosion_vsm"},
+									 "sound":"dcp_DME_mine_explosion_vsm"},
 					}	
 }
 

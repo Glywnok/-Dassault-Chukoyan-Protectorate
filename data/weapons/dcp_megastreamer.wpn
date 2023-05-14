@@ -1,11 +1,11 @@
 {
 	"specClass":"beam",
-	"id":"dcp_megastreamer",
+	"id":"dcp_DME_megastreamer",
 	"type":"ENERGY",
 	"size":"LARGE",
 	"beamFireOnlyOnFullCharge":true,
-	"beamEffect":"data.scripts.weapons.dcp_MegaStreamerEffect",
-  	"everyFrameEffect": "data.scripts.weapons.dcp_MegaStreamerFX",
+	"beamEffect":"data.scripts.weapons.dcp_DME_MegaStreamerEffect",
+  	"everyFrameEffect": "data.scripts.weapons.dcp_DME_MegaStreamerFX",
 	"turretSprite":"graphics/weapons/tachyon_lance_turret_base.png",
 	"turretGlowSprite":"graphics/weapons/tachyon_lance_turret_glow.png",
 	"hardpointSprite":"graphics/weapons/tachyon_lance_hardpoint_base.png",
@@ -23,6 +23,6 @@
 	"textureScrollSpeed":256.0,
 	"pixelsPerTexel":5.0,
 	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
-	"fireSoundOne":"dcp_megastreamer_fire",
+	"fireSoundOne":"dcp_DME_megastreamer_fire",
 	"fireSoundTwo":"tachyon_lance_fire",
 }

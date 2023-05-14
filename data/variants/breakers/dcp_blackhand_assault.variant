@@ -2,24 +2,24 @@
     "displayName": "Assault",
     "fluxCapacitors": 0,
     "fluxVents": 7,
-    "hullId": "dcp_blackhand",
-    "hullMods": ["dcp_bbassault"],
+    "hullId": "dcp_DME_blackhand",
+    "hullMods": ["dcp_DME_bbassault"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_blackhand_assault",
+    "variantId": "dcp_DME_blackhand_assault",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_plasmadisruptor",
-                "WS0003": "dcp_plasmadisruptor"
+                "WS0002": "dcp_DME_plasmadisruptor",
+                "WS0003": "dcp_DME_plasmadisruptor"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_plasrocket_pod"}
+            "weapons": {"WS0001": "dcp_DME_plasrocket_pod"}
         }
     ]
 }

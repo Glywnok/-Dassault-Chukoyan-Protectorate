@@ -3,51 +3,51 @@
     "fluxCapacitors": 5,
     "fluxVents": 24,
     "goalVariant": true,
-    "hullId": "dcp_baikal_brone",
+    "hullId": "dcp_DME_baikal_brone",
     "hullMods": [
         "missleracks",
         "targetingunit"
     ],
     "modules": [
-        {"WS0010": "dcp_bronev_plate_bow_std"},
-        {"WS0021": "dcp_bronev_plate_left_std"},
-        {"WS0030": "dcp_bronev_plate_right_std"},
-        {"WS0031": "dcp_bronev_plate_lrear_std"},
-        {"WS0032": "dcp_bronev_plate_rrear_std"}
+        {"WS0010": "dcp_DME_bronev_plate_bow_std"},
+        {"WS0021": "dcp_DME_bronev_plate_left_std"},
+        {"WS0030": "dcp_DME_bronev_plate_right_std"},
+        {"WS0031": "dcp_DME_bronev_plate_lrear_std"},
+        {"WS0032": "dcp_DME_bronev_plate_rrear_std"}
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_baikal_brone_barrage",
+    "variantId": "dcp_DME_baikal_brone_barrage",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0008": "dcp_mirvtorpedo_barrage"}
+            "weapons": {"WS0008": "dcp_DME_mirvtorpedo_barrage"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_clusterlauncher",
-                "WS0009": "dcp_gravmissiletube"
+                "WS0003": "dcp_DME_clusterlauncher",
+                "WS0009": "dcp_DME_gravmissiletube"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_20cmrailgun",
-                "WS0004": "dcp_tacbeamer",
-                "WS0005": "dcp_tacbeamer",
-                "WS0007": "dcp_microflak"
+                "WS0001": "dcp_DME_20cmrailgun",
+                "WS0004": "dcp_DME_tacbeamer",
+                "WS0005": "dcp_DME_tacbeamer",
+                "WS0007": "dcp_DME_microflak"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_linearflak_single",
-                "WS0006": "dcp_micropd"
+                "WS0002": "dcp_DME_linearflak_single",
+                "WS0006": "dcp_DME_micropd"
             }
         }
     ]

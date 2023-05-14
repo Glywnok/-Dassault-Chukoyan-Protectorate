@@ -1,13 +1,13 @@
 {
-	"id":"dcp_bravemissile",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_bravemissile",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_SigmaBusterLaunchFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_SigmaBusterLaunchFX",
 	"type":"ENERGY",
 	"mountTypeOverride":"SYNERGY",
 	"size":"MEDIUM",
 	"displayArcRadius":600,
 	"turretSprite":"",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_bravemissile_glow.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_bravemissile_glow.png",
 	"hardpointSprite":"",
 	"hardpointGlowSprite":"",
 	"glowColor":[25,200,125,215],
@@ -37,7 +37,7 @@
 					   "particleDuration":0.1,
 					   "particleCount":18,
 					   "particleColor":[25,200,125,215]},
-	"projectileSpecId":"dcp_bravemissile_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge",
-	"fireSoundTwo":"dcp_phaserail_fire",
+	"projectileSpecId":"dcp_DME_bravemissile_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge",
+	"fireSoundTwo":"dcp_DME_phaserail_fire",
 }

@@ -3,35 +3,35 @@
     "fluxCapacitors": 1,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_bouclier",
+    "hullId": "dcp_DME_bouclier",
     "hullMods": [
         "hardened_subsystems",
         "insulatedengine"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_bouclier_std",
+    "variantId": "dcp_DME_bouclier_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_gravmissiletube"}
+            "weapons": {"WS0003": "dcp_DME_gravmissiletube"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_heavylinear_autogun",
-                "WS0002": "dcp_NTKcannon"
+                "WS0001": "dcp_DME_heavylinear_autogun",
+                "WS0002": "dcp_DME_NTKcannon"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_linearvulcan",
-                "WS0005": "dcp_linearvulcan",
-                "WS0006": "dcp_linearvulcan"
+                "WS0004": "dcp_DME_linearvulcan",
+                "WS0005": "dcp_DME_linearvulcan",
+                "WS0006": "dcp_DME_linearvulcan"
             }
         }
     ]

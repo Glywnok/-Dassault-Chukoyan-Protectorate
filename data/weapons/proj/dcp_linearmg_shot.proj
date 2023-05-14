@@ -1,5 +1,5 @@
 {
-	"id":"dcp_linearmg_shot",
+	"id":"dcp_DME_linearmg_shot",
 	"specClass":"projectile",
 	"onHitEffect":"data.scripts.weapons.LinearMGSparks",
 	"spawnType":"BALLISTIC",
@@ -13,5 +13,5 @@
 	"coreColor":[255,255,255,255],
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":5.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_miniblaster_long_bolt.png"
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_miniblaster_long_bolt.png"
 }

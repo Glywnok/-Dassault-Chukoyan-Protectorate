@@ -4,7 +4,7 @@ import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
-import data.scripts.MagellanUtils;
+import data.scripts.DMEUtils;
 import java.awt.Color;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -33,7 +33,7 @@ public class dcp_FusbombBarrageFX implements EveryFrameWeaponEffectPlugin {
             ShipAPI ship = weapon.getShip();
             // explosion (frame 0 only)
             if (elapsed <= 0f) {
-                Vector2f explosion_offset = MagellanUtils.translate_polar(weapon_location, OFFSET +
+                Vector2f explosion_offset = DMEUtils.translate_polar(weapon_location, OFFSET +
                                                                           ((0.05f * 100f) - 2f), weapon.getCurrAngle());
                 engine.spawnExplosion(explosion_offset, ship.getVelocity(), FLASH_COLOR, 70f, 0.18f);
             }
@@ -41,16 +41,16 @@ public class dcp_FusbombBarrageFX implements EveryFrameWeaponEffectPlugin {
             elapsed += amount;
 
             // particles
-            Vector2f particle_offset = MagellanUtils.translate_polar(weapon_location, OFFSET, weapon.getCurrAngle());
+            Vector2f particle_offset = DMEUtils.translate_polar(weapon_location, OFFSET, weapon.getCurrAngle());
             float size, speed, angle;
             Vector2f velocity;
             // more particles to start with, fewer later on
             int particle_count_this_frame = (int) (30f * (FIRE_DURATION - elapsed));
             for (int x = 0; x < particle_count_this_frame; x++) {
-                size = MagellanUtils.get_random(3f, 6f);
-                speed = MagellanUtils.get_random(135f, 200f);
-                angle = weapon.getCurrAngle() + MagellanUtils.get_random(-75f, 75f);
-                velocity = MagellanUtils.translate_polar(ship.getVelocity(), speed, angle);
+                size = DMEUtils.get_random(3f, 6f);
+                speed = DMEUtils.get_random(135f, 200f);
+                angle = weapon.getCurrAngle() + DMEUtils.get_random(-75f, 75f);
+                velocity = DMEUtils.translate_polar(ship.getVelocity(), speed, angle);
                 engine.addHitParticle(particle_offset, velocity, size, 1.5f, 0.4f, PARTICLE_COLOR);
             }
         } else {

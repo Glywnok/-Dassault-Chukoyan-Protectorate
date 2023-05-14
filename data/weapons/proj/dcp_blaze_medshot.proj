@@ -1,7 +1,7 @@
 {
-	"id":"dcp_blaze_medshot",
+	"id":"dcp_DME_blaze_medshot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_BlazeGunOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_BlazeGunOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

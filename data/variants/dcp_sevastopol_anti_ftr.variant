@@ -2,36 +2,36 @@
     "displayName": "Medium",
     "fluxCapacitors": 2,
     "fluxVents": 10,
-    "hullId": "dcp_sevastopol",
+    "hullId": "dcp_DME_sevastopol",
     "hullMods": ["auxiliarythrusters"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_sevastopol_anti_ftr",
+    "variantId": "dcp_DME_sevastopol_anti_ftr",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0005": "dcp_marteau_esm_rack"}
+            "weapons": {"WS0005": "dcp_DME_marteau_esm_rack"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0006": "dcp_autolaser_small"}
+            "weapons": {"WS0006": "dcp_DME_autolaser_small"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_linearvulcan",
-                "WS0002": "dcp_linearvulcan"
+                "WS0001": "dcp_DME_linearvulcan",
+                "WS0002": "dcp_DME_linearvulcan"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_micropd",
-                "WS0004": "dcp_micropd"
+                "WS0003": "dcp_DME_micropd",
+                "WS0004": "dcp_DME_micropd"
             }
         }
     ]

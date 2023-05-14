@@ -2,30 +2,30 @@
   "displayName": "Gunship",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_spooky",
+  "hullId": "dcp_DME_spooky",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_spooky_Gunship",
+  "variantId": "dcp_DME_spooky_Gunship",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0002": "dcp_slapper"
+        "WS0002": "dcp_DME_slapper"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_matadorheavy"
+        "WS0001": "dcp_DME_matadorheavy"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "dcp_multipdnode"
+        "WS0005": "dcp_DME_multipdnode"
       }
     }
   ]

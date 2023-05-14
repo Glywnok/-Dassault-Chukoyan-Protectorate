@@ -2,18 +2,18 @@
     "displayName": "Standard",
     "fluxCapacitors": 0,
     "fluxVents": 5,
-    "hullId": "dcpx_alaudatailbinder",
+    "hullId": "dcp_DMEx_alaudatailbinder",
     "hullMods": [],
     "permaMods": [],
-    "variantId": "dcpx_alaudatailbinder_std",
+    "variantId": "dcp_DMEx_alaudatailbinder_std",
     "weaponGroups": [{
         "autofire": true,
         "mode": "LINKED",
         "weapons": {
-            "WS0001": "dcp_micropd",
-            "WS0002": "dcp_micropd",
-            "WS0003": "dcp_micropd",
-            "WS0004": "dcp_micropd"
+            "WS0001": "dcp_DME_micropd",
+            "WS0002": "dcp_DME_micropd",
+            "WS0003": "dcp_DME_micropd",
+            "WS0004": "dcp_DME_micropd"
         }
     }]
 }

@@ -20,12 +20,12 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 001": "dcp_blazegun"}
+            "weapons": {"WS 001": "dcp_DME_blazegun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 002": "dcp_impaler"}
+            "weapons": {"WS 002": "dcp_DME_impaler"}
         }
     ]
 }

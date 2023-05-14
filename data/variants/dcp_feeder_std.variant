@@ -3,33 +3,33 @@
     "fluxCapacitors": 0,
     "fluxVents": 12,
     "goalVariant": true,
-    "hullId": "dcp_feeder",
+    "hullId": "dcp_DME_feeder",
     "hullMods": ["autorepair"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_feeder_std",
+    "variantId": "dcp_DME_feeder_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "ALTERNATING",
-            "weapons": {"WS0001": "dcp_clusterlauncher"}
+            "weapons": {"WS0001": "dcp_DME_clusterlauncher"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_linearcannonlight"}
+            "weapons": {"WS0002": "dcp_DME_linearcannonlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0011": "dcp_micropd",
-                "WS0012": "dcp_micropd"
+                "WS0011": "dcp_DME_micropd",
+                "WS0012": "dcp_DME_micropd"
             }
         }
     ],
     "wings": [
-        "dcp_thunderbolt_heavy_wing",
-        "dcp_hummingbird_wing"
+        "dcp_DME_thunderbolt_heavy_wing",
+        "dcp_DME_hummingbird_wing"
     ]
 }

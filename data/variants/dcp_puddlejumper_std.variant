@@ -3,22 +3,22 @@
     "fluxCapacitors": 4,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_puddlejumper",
+    "hullId": "dcp_DME_puddlejumper",
     "hullMods": [],
     "permaMods": [],
-    "variantId": "dcp_puddlejumper_std",
+    "variantId": "dcp_DME_puddlejumper_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_linearcannonlight"}
+            "weapons": {"WS0001": "dcp_DME_linearcannonlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_micropd",
-                "WS0003": "dcp_micropd"
+                "WS0002": "dcp_DME_micropd",
+                "WS0003": "dcp_DME_micropd"
             }
         }
     ],

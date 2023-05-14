@@ -2,27 +2,27 @@
     "displayName": "Export",
     "fluxCapacitors": 3,
     "fluxVents": 8,
-    "hullId": "dcp_puddlejumper_exp",
+    "hullId": "dcp_DME_puddlejumper_exp",
     "hullMods": [],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_puddlejumper_export",
+    "variantId": "dcp_DME_puddlejumper_export",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0001": "dcp_ammlight"}
+            "weapons": {"WS0001": "dcp_DME_ammlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_blazegun"}
+            "weapons": {"WS0002": "dcp_DME_blazegun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_impaler"}
+            "weapons": {"WS0003": "dcp_DME_impaler"}
         }
     ],
-    "wings": ["dcp_pup_wing"]
+    "wings": ["dcp_DME_pup_wing"]
 }

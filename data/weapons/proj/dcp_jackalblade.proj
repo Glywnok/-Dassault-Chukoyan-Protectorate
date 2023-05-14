@@ -1,9 +1,9 @@
 {
-	"id":"dcp_jackalblade",
+	"id":"dcp_DME_jackalblade",
 	"specClass":"missile",	
-	"onHitEffect":"data.scripts.weapons.dcp_JackalSparks",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_JackalSparks",
 	"missileType":"ROCKET",
-	"sprite":"graphics/DCP/missiles/dcp_slicerblade.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_slicerblade.png",
 	"size":[19,16],	
 	"center":[9.5,8],
 	"collisionRadius":15,

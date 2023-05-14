@@ -1,9 +1,9 @@
 {
-	"id":"dcp_smartbomb",
+	"id":"dcp_DME_smartbomb",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_GravmissileOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_GravmissileOnHit",
 	"missileType":"MISSILE",
-	"sprite":"graphics/DCP/missiles/dcp_bomblet.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_bomblet.png",
 	"size":[11,18],	
 	"center":[5.5,9],
 	"collisionRadius":13,

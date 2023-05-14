@@ -1,14 +1,14 @@
 {
-	"id":"dcp_shellback",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_shellback",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_ShellbackFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_ShellbackFX",
 	"type":"BALLISTIC",
 	"mountTypeOverride":"HYBRID",
 	"size":"SMALL",
-	"turretSprite":"graphics/DCP/weapons/dcp_shellback_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_shellback_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_shellback_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_shellback_hardpoint_glow.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_shellback_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_shellback_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_shellback_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_shellback_hardpoint_glow.png",
 	"glowColor":[100,110,255,255],
 	"renderHints":[RENDER_BARREL_BELOW],
 	"turretOffsets":[12, 0],
@@ -25,6 +25,6 @@
 					   "particleDuration":0.12,
 					   "particleCount":15,
 					   "particleColor":[100,110,255,255]},
-	"projectileSpecId":"dcp_shellback_shot",  # projectile that will be fired
-	"fireSoundTwo":"dcp_shellback_fire",
+	"projectileSpecId":"dcp_DME_shellback_shot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_shellback_fire",
 }

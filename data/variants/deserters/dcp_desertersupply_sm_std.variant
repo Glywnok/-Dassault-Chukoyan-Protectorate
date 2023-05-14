@@ -3,22 +3,22 @@
     "fluxCapacitors": 2,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_desertersupply_sm",
+    "hullId": "dcp_DME_desertersupply_sm",
     "hullMods": [
         "hardenedshieldemitter",
         "magazines"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_desertersupply_sm_std",
+    "variantId": "dcp_DME_desertersupply_sm_std",
     "weaponGroups": [{
         "autofire": true,
         "mode": "LINKED",
         "weapons": {
-            "WS0001": "dcp_impulsor_ring",
-            "WS0002": "dcp_impulsor_ring",
-            "WS0003": "dcp_impulsor_ring",
-            "WS0004": "dcp_impulsor_ring"
+            "WS0001": "dcp_DME_impulsor_ring",
+            "WS0002": "dcp_DME_impulsor_ring",
+            "WS0003": "dcp_DME_impulsor_ring",
+            "WS0004": "dcp_DME_impulsor_ring"
         }
     }]
 }

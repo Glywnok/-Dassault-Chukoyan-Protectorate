@@ -1,7 +1,7 @@
 {
-	"id":"dcp_shellbackftr_shot",
+	"id":"dcp_DME_shellbackftr_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_ShellerOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_ShellerOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_NO_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
@@ -18,5 +18,5 @@
 	"hitGlowRadius":15,
 	"textureScrollSpeed":256.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_wavebolt_blue.png"	
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_wavebolt_blue.png"
 }

@@ -1,7 +1,7 @@
 {
-	"id":"dcp_artillery_shot",
+	"id":"dcp_DME_artillery_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_ShockArtyOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_ShockArtyOnHit",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",

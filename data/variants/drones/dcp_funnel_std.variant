@@ -2,16 +2,16 @@
   "displayName": "Attack Bit",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_funnel",
+  "hullId": "dcp_DME_funnel",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_funnel_std",
+  "variantId": "dcp_DME_funnel_std",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_tacbeamerftr"
+        "WS0001": "dcp_DME_tacbeamerftr"
       }
     }
   ]

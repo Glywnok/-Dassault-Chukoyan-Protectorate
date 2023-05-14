@@ -2,36 +2,36 @@
     "displayName": "Fire Support",
     "fluxCapacitors": 15,
     "fluxVents": 20,
-    "hullId": "dcp_tunguska",
+    "hullId": "dcp_DME_tunguska",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_tunguska_fsup",
+    "variantId": "dcp_DME_tunguska_fsup",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0003": "dcp_hellhound",
-                "WS0004": "dcp_hellhound"
+                "WS0003": "dcp_DME_hellhound",
+                "WS0004": "dcp_DME_hellhound"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_linearcannonheavy"}
+            "weapons": {"WS0001": "dcp_DME_linearcannonheavy"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_ionbeamer"}
+            "weapons": {"WS0002": "dcp_DME_ionbeamer"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_micropd",
-                "WS0006": "dcp_micropd"
+                "WS0005": "dcp_DME_micropd",
+                "WS0006": "dcp_DME_micropd"
             }
         }
     ]

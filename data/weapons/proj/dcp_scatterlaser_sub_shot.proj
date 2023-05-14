@@ -1,5 +1,5 @@
 {
-	"id":"dcp_scatterlaser_sub_shot",
+	"id":"dcp_DME_scatterlaser_sub_shot",
 	"specClass":"projectile",
 	"onHitEffect":"data.scripts.weapons.AutolaserSmallSparks",
 	#"spawnType":"BEAM",

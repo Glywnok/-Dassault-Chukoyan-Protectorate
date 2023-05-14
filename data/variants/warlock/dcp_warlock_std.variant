@@ -2,72 +2,72 @@
     "displayName": "Support",
     "fluxCapacitors": 5,
     "fluxVents": 48,
-    "hullId": "dcp_warlock",
-    "hullMods": ["dcp_bbsupport"],
-    "modules": [{"WS0015": "dcp_bbLRMmodule_std"}],
+    "hullId": "dcp_DME_warlock",
+    "hullMods": ["dcp_DME_bbsupport"],
+    "modules": [{"WS0015": "dcp_DME_bbLRMmodule_std"}],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_warlock_std",
+    "variantId": "dcp_DME_warlock_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0006": "dcp_thermalmortar"}
+            "weapons": {"WS0006": "dcp_DME_thermalmortar"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_pulseripper"}
+            "weapons": {"WS0001": "dcp_DME_pulseripper"}
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_electrogun"}
+            "weapons": {"WS0003": "dcp_DME_electrogun"}
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_electrogun"}
+            "weapons": {"WS0002": "dcp_DME_electrogun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0009": "dcp_shellback",
-                "WS0010": "dcp_shellback",
-                "WS0013": "dcp_shellback",
-                "WS0014": "dcp_shellback"
+                "WS0009": "dcp_DME_shellback",
+                "WS0010": "dcp_DME_shellback",
+                "WS0013": "dcp_DME_shellback",
+                "WS0014": "dcp_DME_shellback"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "dcp_proxbomb_ciws",
-                "WS0008": "dcp_proxbomb_ciws"
+                "WS0007": "dcp_DME_proxbomb_ciws",
+                "WS0008": "dcp_DME_proxbomb_ciws"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0011": "dcp_thermalpd",
-                "WS0012": "dcp_thermalpd",
-                "WS0037": "dcp_impulsor",
-                "WS0038": "dcp_impulsor",
-                "WS0039": "dcp_impulsor",
-                "WS0040": "dcp_impulsor",
-                "WS0041": "dcp_impulsor",
-                "WS0042": "dcp_impulsor",
-                "WS0043": "dcp_impulsor",
-                "WS0044": "dcp_impulsor"
+                "WS0011": "dcp_DME_thermalpd",
+                "WS0012": "dcp_DME_thermalpd",
+                "WS0037": "dcp_DME_impulsor",
+                "WS0038": "dcp_DME_impulsor",
+                "WS0039": "dcp_DME_impulsor",
+                "WS0040": "dcp_DME_impulsor",
+                "WS0041": "dcp_DME_impulsor",
+                "WS0042": "dcp_DME_impulsor",
+                "WS0043": "dcp_DME_impulsor",
+                "WS0044": "dcp_DME_impulsor"
             }
         }
     ],
     "wings": [
-        "dcp_focuser_wing",
-        "dcp_focuser_wing",
-        "dcp_focuser_wing",
-        "dcp_lycosid_wing"
+        "dcp_DME_focuser_wing",
+        "dcp_DME_focuser_wing",
+        "dcp_DME_focuser_wing",
+        "dcp_DME_lycosid_wing"
     ]
 }

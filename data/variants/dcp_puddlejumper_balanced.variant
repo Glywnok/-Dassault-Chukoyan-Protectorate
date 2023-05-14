@@ -2,23 +2,23 @@
     "displayName": "Balanced",
     "fluxCapacitors": 4,
     "fluxVents": 10,
-    "hullId": "dcp_puddlejumper",
+    "hullId": "dcp_DME_puddlejumper",
     "hullMods": ["extendedshieldemitter"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_puddlejumper_balanced",
+    "variantId": "dcp_DME_puddlejumper_balanced",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_autolaser_small"}
+            "weapons": {"WS0002": "dcp_DME_autolaser_small"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_microflak",
-                "WS0003": "dcp_micropd"
+                "WS0001": "dcp_DME_microflak",
+                "WS0003": "dcp_DME_micropd"
             }
         }
     ],

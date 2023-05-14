@@ -1,0 +1,74 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 37,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "dcp_magellan_battleship",
+    "hullMods": [
+        "targetingunit",
+        "autorepair"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_battleship_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_magellan_LKmissile_pod"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_magellan_ripfiresrmpod",
+                "WS0011": "dcp_magellan_ripfiresrmpod",
+                "WS0012": "dcp_magellan_ripfiresrmpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "dcp_magellan_largebonecrusher",
+                "WS0010": "dcp_magellan_largebonecrusher"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_solenoidbattery"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_magellan_solenoidbattery"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_magellan_beehive",
+                "WS0006": "dcp_magellan_beehive",
+                "WS0007": "dcp_magellan_beehive",
+                "WS0008": "dcp_magellan_beehive"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "dcp_magellan_medciws",
+                "WS0016": "dcp_magellan_medciws",
+                "WS0019": "dcp_magellan_linkflak",
+                "WS0020": "dcp_magellan_linkflak",
+                "WS0021": "dcp_magellan_medciws",
+                "WS0022": "dcp_magellan_medciws",
+                "WS0023": "dcp_magellan_linkflak",
+                "WS0024": "dcp_magellan_linkflak",
+                "WS0025": "dcp_magellan_medciws",
+                "WS0026": "dcp_magellan_medciws"
+            }
+        }
+    ]
+}

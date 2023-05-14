@@ -43,10 +43,10 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 009": "dcp_micropd",
-                "WS 010": "dcp_micropd",
-                "WS 011": "dcp_micropd",
-                "WS 012": "dcp_micropd"
+                "WS 009": "dcp_DME_micropd",
+                "WS 010": "dcp_DME_micropd",
+                "WS 011": "dcp_DME_micropd",
+                "WS 012": "dcp_DME_micropd"
             }
         }
     ]

@@ -1,13 +1,13 @@
 {
-	"id":"dcp_matadorheavy",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_matadorheavy",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"BALLISTIC",
 	"mountTypeOverride":"HYBRID",
 	"size":"MEDIUM",
-	"turretSprite":"graphics/DCP/weapons/dcp_bbciws_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_bbciws_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_bbciws_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_bbciws_hardpoint_glow.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_bbciws_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_bbciws_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_bbciws_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_bbciws_hardpoint_glow.png",
 	"glowColor":[75,125,200,255],
 	"turretOffsets":[5, 0],
 	"turretAngleOffsets":[0],
@@ -24,6 +24,6 @@
 					   "particleDuration":0.05,
 					   "particleCount":24,
 					   "particleColor":[75,125,200,175]},
-	"projectileSpecId":"dcp_matadorheavy_shot",  # projectile that will be fired
-	"fireSoundTwo":"dcp_toreadorfire",	
+	"projectileSpecId":"dcp_DME_matadorheavy_shot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_toreadorfire",
 }

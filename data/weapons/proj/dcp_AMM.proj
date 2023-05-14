@@ -1,9 +1,9 @@
 {
-	"id":"dcp_AMM",
+	"id":"dcp_DME_AMM",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_AMMOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_AMMOnHit",
 	"missileType":"MISSILE",
-	"sprite":"graphics/DCP/missiles/dcp_AMM.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_AMM.png",
 	"size":[5,10],	
 	"center":[2.5,5],
 	"collisionRadius":7,

@@ -2,38 +2,38 @@
     "displayName": "Balanced",
     "fluxCapacitors": 0,
     "fluxVents": 20,
-    "hullId": "dcp_leyte",
+    "hullId": "dcp_DME_leyte",
     "hullMods": ["expanded_deck_crew"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_leyte_balanced",
+    "variantId": "dcp_DME_leyte_balanced",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_autolaser_small",
-                "WS0004": "dcp_autolaser_small"
+                "WS0003": "dcp_DME_autolaser_small",
+                "WS0004": "dcp_DME_autolaser_small"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_gravmissiletube"}
+            "weapons": {"WS0005": "dcp_DME_gravmissiletube"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_NTKcannon"}
+            "weapons": {"WS0001": "dcp_DME_NTKcannon"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_micropd"}
+            "weapons": {"WS0002": "dcp_DME_micropd"}
         }
     ],
     "wings": [
-        "dcp_damselfly_wing",
-        "dcp_dard_wing"
+        "dcp_DME_damselfly_wing",
+        "dcp_DME_dard_wing"
     ]
 }

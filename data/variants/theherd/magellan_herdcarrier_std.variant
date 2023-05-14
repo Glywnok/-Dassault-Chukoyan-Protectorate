@@ -1,0 +1,44 @@
+{
+    "displayName": "Battle",
+    "fluxCapacitors": 2,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "dcp_magellan_herdcarrier",
+    "hullMods": ["hardened_subsystems"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_herdcarrier_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "dcp_magellan_crackerafm",
+                "WS0008": "dcp_magellan_crackerafm"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_LKmissile_pod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_magellan_herdlaser",
+                "WS0006": "dcp_magellan_herdlaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_magellan_medciws",
+                "WS0003": "dcp_magellan_medciws",
+                "WS0004": "dcp_magellan_medciws"
+            }
+        }
+    ],
+    "wings": []
+}

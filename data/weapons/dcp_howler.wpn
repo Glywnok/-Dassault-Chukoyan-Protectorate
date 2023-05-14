@@ -1,17 +1,17 @@
 {
-	"id":"dcp_howler",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_howler",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	#"everyFrameEffect": "data.scripts.weapons.dcp_HowlerClusterFX", #this doesn't work yet
+	#"everyFrameEffect": "data.scripts.weapons.dcp_DME_HowlerClusterFX", #this doesn't work yet
 	"type":"BALLISTIC",
 	"size":"MEDIUM",
-	"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_med.png",
-	"turretSprite":"graphics/DCP/weapons/dcp_howler_turret_base.png",
-	"turretGunSprite":"graphics/DCP/weapons/dcp_howler_turret_recoil.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_howler_turret_glow.png",
-	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_socket_hardpoint_med.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_howler_hardpoint_base.png",
-	"hardpointGunSprite":"graphics/DCP/weapons/dcp_howler_hardpoint_recoil.png",	
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_howler_hardpoint_glow.png",	
+	"turretUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_turret_med.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_howler_turret_base.png",
+	"turretGunSprite":"graphics/DCP/weapons/dcp_DME_howler_turret_recoil.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_howler_turret_glow.png",
+	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_hardpoint_med.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_howler_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/DCP/weapons/dcp_DME_howler_hardpoint_recoil.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_howler_hardpoint_glow.png",
 	"visualRecoil":5.0,  # the gun sprites are only used if this is non-0
 	"glowColor":[255,125,75,175],
 	"renderHints":[RENDER_BARREL_BELOW],
@@ -29,6 +29,6 @@
 					   "particleDuration":0.2,
 					   "particleCount":40,
 					   "particleColor":[255,150,100,225]},	
-	"projectileSpecId":"dcp_howler_shot",  # projectile that will be fired	
-	"fireSoundTwo":"dcp_howler_fire",
+	"projectileSpecId":"dcp_DME_howler_shot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_howler_fire",
 }

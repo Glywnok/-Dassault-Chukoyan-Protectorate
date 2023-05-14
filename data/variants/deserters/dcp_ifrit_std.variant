@@ -3,52 +3,52 @@
     "fluxCapacitors": 30,
     "fluxVents": 30,
     "goalVariant": true,
-    "hullId": "dcp_ifrit",
+    "hullId": "dcp_DME_ifrit",
     "hullMods": ["missleracks"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_ifrit_std",
+    "variantId": "dcp_DME_ifrit_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0019": "dcp_electronrocket",
-                "WS0020": "dcp_electronrocket"
+                "WS0019": "dcp_DME_electronrocket",
+                "WS0020": "dcp_DME_electronrocket"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_mirvtorpedo_barrage"}
+            "weapons": {"WS0001": "dcp_DME_mirvtorpedo_barrage"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_heavylinear_autogun",
-                "WS0003": "dcp_heavylinear_autogun",
-                "WS0004": "dcp_heavylinear_autogun"
+                "WS0002": "dcp_DME_heavylinear_autogun",
+                "WS0003": "dcp_DME_heavylinear_autogun",
+                "WS0004": "dcp_DME_heavylinear_autogun"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_matador",
-                "WS0006": "dcp_matador",
-                "WS0007": "dcp_matador",
-                "WS0008": "dcp_matador"
+                "WS0005": "dcp_DME_matador",
+                "WS0006": "dcp_DME_matador",
+                "WS0007": "dcp_DME_matador",
+                "WS0008": "dcp_DME_matador"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0009": "dcp_impulsor_proto",
-                "WS0010": "dcp_impulsor_proto",
-                "WS0011": "dcp_impulsor_proto",
-                "WS0012": "dcp_impulsor_proto"
+                "WS0009": "dcp_DME_impulsor_proto",
+                "WS0010": "dcp_DME_impulsor_proto",
+                "WS0011": "dcp_DME_impulsor_proto",
+                "WS0012": "dcp_DME_impulsor_proto"
             }
         }
     ]

@@ -1,0 +1,75 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 17,
+    "fluxVents": 50,
+    "hullId": "dcp_magellan_battlecruiser_blackcollar",
+    "hullMods": [
+        "missleracks",
+        "targetingunit",
+        "magazines"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_battlecruiser_blackcollar_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_trinitycannon"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0017": "dcp_magellan_balefiremrm_pod",
+                "WS0018": "dcp_magellan_balefiremrm_pod",
+                "WS0019": "dcp_magellan_balefiremrm_pod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "dcp_magellan_calliope_sm",
+                "WS0009": "dcp_magellan_calliope_sm"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_magellan_largebonecrusher",
+                "WS0003": "dcp_magellan_bonecrusher",
+                "WS0005": "dcp_magellan_bonecrusher"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_magellan_medautocannon",
+                "WS0006": "dcp_magellan_medautocannon",
+                "WS0007": "dcp_magellan_medautocannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "dcp_magellan_triflak",
+                "WS0013": "dcp_magellan_triflak",
+                "WS0014": "dcp_magellan_triflak",
+                "WS0015": "dcp_magellan_triflak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "dcp_magellan_smpdmaser",
+                "WS0011": "dcp_magellan_smpdmaser"
+            }
+        }
+    ],
+    "wings": []
+}

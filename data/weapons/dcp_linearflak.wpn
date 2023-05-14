@@ -1,16 +1,16 @@
 {
-	"id":"dcp_linearflak",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_linearflak",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_LinearFlakFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_LinearFlakFX",
 	"type":"BALLISTIC",
 	"size":"MEDIUM",
 	"displayArcRadius":400,
-	"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_med.png",
-	"turretSprite":"graphics/DCP/weapons/dcp_linearflak_turret_base.png",
-	"turretGunSprite":"graphics/DCP/weapons/dcp_linearflak_turret_recoil.png",
-	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_socket_hardpoint_med.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_linearflak_hardpoint_base.png",
-	"hardpointGunSprite":"graphics/DCP/weapons/dcp_linearflak_hardpoint_recoil.png",	
+	"turretUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_turret_med.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_linearflak_turret_base.png",
+	"turretGunSprite":"graphics/DCP/weapons/dcp_DME_linearflak_turret_recoil.png",
+	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_hardpoint_med.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_linearflak_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/DCP/weapons/dcp_DME_linearflak_hardpoint_recoil.png",
 	"visualRecoil":5.0,  # the gun sprites are only used if this is non-0
 	"turretOffsets":[12, -8, 12, 8],
 	"turretAngleOffsets":[-0.5, 0.5],
@@ -26,6 +26,6 @@
 					   "particleDuration":0.12,
 					   "particleCount":16,
 					   "particleColor":[255,155,75,225]},
-	"projectileSpecId":"dcp_linearflakshot",  # projectile that will be fired	
-	"fireSoundTwo":"dcp_linearflak_fire",
+	"projectileSpecId":"dcp_DME_linearflakshot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_linearflak_fire",
 }

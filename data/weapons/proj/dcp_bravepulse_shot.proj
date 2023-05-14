@@ -1,7 +1,7 @@
 {
-	"id":"dcp_bravepulse_shot",
+	"id":"dcp_DME_bravepulse_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_BravePulseOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_BravePulseOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",
@@ -14,5 +14,5 @@
 	"textureType":"SMOOTH",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-48.0,
 	"pixelsPerTexel":1.0,
-	#"bulletSprite":"graphics/DCP/missiles/dcp_matador_bolt.png",	
+	#"bulletSprite":"graphics/DCP/missiles/dcp_DME_matador_bolt.png",
 }

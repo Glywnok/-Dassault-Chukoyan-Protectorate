@@ -1,0 +1,46 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 16,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_magellan_linedestroyer",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "variantId": "dcp_magellan_linedestroyer_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0008": "dcp_magellan_electrontorp"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_magellan_calliope"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_burstmaster",
+                "WS0002": "dcp_magellan_burstmaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dcp_magellan_smpdmaser",
+                "WS0007": "dcp_magellan_smpdmaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_magellan_smciws",
+                "WS0005": "dcp_magellan_smciws"
+            }
+        }
+    ]
+}

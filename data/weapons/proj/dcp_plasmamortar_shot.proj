@@ -1,7 +1,7 @@
 {
-	"id":"dcp_plasmamortar_shot",
+	"id":"dcp_DME_plasmamortar_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_PlasrocketEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_PlasrocketEMPOnHit",
 	"spawnType":"PLASMA",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",
@@ -24,6 +24,6 @@
 # 									 "particleCount":24,
 # 									 "particleColor":[220,200,255,255],
 # 									 "explosionColor":[175,125,255,155],
-#  									 "sound":"dcp_energy_crit"},
+#  									 "sound":"dcp_DME_energy_crit"},
 #  					}	
 }

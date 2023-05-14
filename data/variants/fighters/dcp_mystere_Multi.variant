@@ -2,24 +2,24 @@
   "displayName": "Fighter-Bomber",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_mystere",
+  "hullId": "dcp_DME_mystere",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_mystere_Multi",
+  "variantId": "dcp_DME_mystere_Multi",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_ruptureftr_tube",
-        "WS0002": "dcp_ruptureftr_tube"
+        "WS0001": "dcp_DME_ruptureftr_tube",
+        "WS0002": "dcp_DME_ruptureftr_tube"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "dcp_linearvulcan"
+        "WS0003": "dcp_DME_linearvulcan"
       }
     }
   ]

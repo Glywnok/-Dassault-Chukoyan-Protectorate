@@ -1,7 +1,7 @@
 {
-	"id":"dcp_shellhead_shot",
+	"id":"dcp_DME_shellhead_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_ShellheadOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_ShellheadOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
@@ -18,5 +18,5 @@
 	"hitGlowRadius":45,
 	"textureScrollSpeed":256.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_slicerblade.png"	
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_slicerblade.png"
 }

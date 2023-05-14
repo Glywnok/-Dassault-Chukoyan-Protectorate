@@ -1,15 +1,15 @@
 {
-	"id":"dcp_6cmrailgun",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_6cmrailgun",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect":"data.scripts.weapons.dcp_RailFX6cm",
+	"everyFrameEffect":"data.scripts.weapons.dcp_DME_RailFX6cm",
 	"type":"BALLISTIC",
 	"size":"SMALL",
-	"turretSprite":"graphics/DCP/weapons/dcp_6cm_railgun_turret_base.png",
-	"turretGunSprite":"graphics/DCP/weapons/dcp_6cm_railgun_turret_recoil.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_6cm_railgun_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_6cm_railgun_hardpoint_base.png",
-	"hardpointGunSprite":"graphics/DCP/weapons/dcp_6cm_railgun_hardpoint_recoil.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_6cm_railgun_hardpoint_glow.png",	
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_6cm_railgun_turret_base.png",
+	"turretGunSprite":"graphics/DCP/weapons/dcp_DME_6cm_railgun_turret_recoil.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_6cm_railgun_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_6cm_railgun_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/DCP/weapons/dcp_DME_6cm_railgun_hardpoint_recoil.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_6cm_railgun_hardpoint_glow.png",
 	"visualRecoil":2.0,  # the gun sprites are only used if this is non-0
 	"renderHints":[RENDER_BARREL_BELOW],
 	"glowColor":[100,155,255,255],
@@ -27,7 +27,7 @@
 					   "particleDuration":0.12,
 					   "particleCount":40,
 					   "particleColor":[125,175,255,255]},	
-	"projectileSpecId":"dcp_6cmrailgunshot",  # projectile that will be fired
-	"fireSoundOne":"dcp_6cmrailgun_charge",
-	"fireSoundTwo":"dcp_6cmrailgun_fire",	
+	"projectileSpecId":"dcp_DME_6cmrailgunshot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_6cmrailgun_charge",
+	"fireSoundTwo":"dcp_DME_6cmrailgun_fire",
 }

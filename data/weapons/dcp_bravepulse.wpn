@@ -1,14 +1,14 @@
 {
-	"id":"dcp_bravepulse",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_bravepulse",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_SigmaPulserFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_SigmaPulserFX",
 	"type":"ENERGY",
 	"size":"SMALL",
 	"displayArcRadius":600,
 	"turretSprite":"",
 	"turretGlowSprite":"",
 	"hardpointSprite":"",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_bravepulse_hardpoint_glow.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_bravepulse_hardpoint_glow.png",
 	"glowColor":[25,200,125,215],
 	"turretOffsets":[0, 0],
 	"turretAngleOffsets":[0],
@@ -24,7 +24,7 @@
 					   "particleDuration":0.06,
 					   "particleCount":27,
 					   "particleColor":[25,200,125,215]},
-	"projectileSpecId":"dcp_bravepulse_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge_small",
-	"fireSoundTwo":"dcp_brigadorfire",	
+	"projectileSpecId":"dcp_DME_bravepulse_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge_small",
+	"fireSoundTwo":"dcp_DME_brigadorfire",
 }

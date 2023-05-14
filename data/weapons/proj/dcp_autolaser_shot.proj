@@ -1,5 +1,5 @@
 {
-	"id":"dcp_autolaser_shot",
+	"id":"dcp_DME_autolaser_shot",
 	"specClass":"projectile",
 	"onHitEffect":"data.scripts.weapons.AutolaserMedSparks",
 	#"spawnType":"BEAM",

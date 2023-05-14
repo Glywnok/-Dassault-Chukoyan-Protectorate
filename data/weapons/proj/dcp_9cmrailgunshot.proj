@@ -1,7 +1,7 @@
 {
-	"id":"dcp_9cmrailgunshot",
+	"id":"dcp_DME_9cmrailgunshot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_RailSparks6cm",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_RailSparks6cm",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
@@ -19,5 +19,5 @@
 	"passThroughMissiles":true,
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":10.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_railslug.png"	
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_railslug.png"
 }

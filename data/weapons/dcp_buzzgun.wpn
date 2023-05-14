@@ -1,13 +1,13 @@
 {
-	"id":"dcp_buzzgun",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_buzzgun",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"BALLISTIC",
 	"size":"SMALL",
 	"displayArcRadius":400,
-	"turretSprite":"graphics/DCP/weapons/dcp_buzzgun_turret_base.png",
-	"turretGunSprite":"graphics/DCP/weapons/dcp_buzzgun_turret_recoil.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_buzzgun_hardpoint_base.png",
-	"hardpointGunSprite":"graphics/DCP/weapons/dcp_buzzgun_hardpoint_recoil.png",	
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_buzzgun_turret_base.png",
+	"turretGunSprite":"graphics/DCP/weapons/dcp_DME_buzzgun_turret_recoil.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_buzzgun_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/DCP/weapons/dcp_DME_buzzgun_hardpoint_recoil.png",
 	"visualRecoil":4.0,  # the gun sprites are only used if this is non-0
 	"renderHints":[RENDER_BARREL_BELOW],
 	"turretOffsets":[12, 0],
@@ -24,6 +24,6 @@
 					   "particleDuration":0.08,
 					   "particleCount":18,
 					   "particleColor":[255,155,75,225]},
-	"projectileSpecId":"dcp_buzzgun_shot",  # projectile that will be fired
-	"fireSoundTwo":"dcp_buzzgun_fire",	
+	"projectileSpecId":"dcp_DME_buzzgun_shot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_buzzgun_fire",
 }

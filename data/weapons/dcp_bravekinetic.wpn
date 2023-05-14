@@ -1,5 +1,5 @@
 {
-	"id":"dcp_bravekinetic",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_bravekinetic",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"ENERGY",
 	"size":"SMALL",
@@ -7,7 +7,7 @@
 	"turretSprite":"",
 	"turretGlowSprite":"",
 	"hardpointSprite":"",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_bravekinetic_glow.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_bravekinetic_glow.png",
 	"glowColor":[125,175,255,255],
 	"turretOffsets":[0, 0],
 	"turretAngleOffsets":[0],
@@ -23,7 +23,7 @@
 					   "particleDuration":0.3,
 					   "particleCount":60,
 					   "particleColor":[125,175,255,155]},
-	"projectileSpecId":"dcp_bravekinetic_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge",
-	"fireSoundTwo":"dcp_plasmamortar_fire",
+	"projectileSpecId":"dcp_DME_bravekinetic_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge",
+	"fireSoundTwo":"dcp_DME_plasmamortar_fire",
 }

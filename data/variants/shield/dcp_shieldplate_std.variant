@@ -2,9 +2,9 @@
     "displayName": "Standard",
     "fluxCapacitors": 0,
     "fluxVents": 1,
-    "hullId": "dcp_shieldplate",
+    "hullId": "dcp_DME_shieldplate",
     "hullMods": [],
     "permaMods": [],
-    "variantId": "dcp_shieldplate_std",
+    "variantId": "dcp_DME_shieldplate_std",
     "weaponGroups": []
 }

@@ -1,7 +1,7 @@
 {
-	"id":"dcp_magpulser_shot",
+	"id":"dcp_DME_magpulser_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_PulserEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_PulserEMPOnHit",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",
@@ -16,5 +16,5 @@
 	"textureType":"WEAVE",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-96.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_hybrid_med.png"	
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_hybrid_med.png"
 }

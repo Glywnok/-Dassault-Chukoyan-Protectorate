@@ -2,33 +2,33 @@
     "displayName": "Standard",
     "fluxCapacitors": 7,
     "fluxVents": 10,
-    "hullId": "dcp_borzoi",
+    "hullId": "dcp_DME_borzoi",
     "hullMods": ["missleracks"],
     "permaMods": [],
-    "variantId": "dcp_borzoi_std",
+    "variantId": "dcp_DME_borzoi_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_omniblaster"}
+            "weapons": {"WS0002": "dcp_DME_omniblaster"}
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0010": "dcp_AMMblistertube",
-                "WS0011": "dcp_AMMblistertube"
+                "WS0010": "dcp_DME_AMMblistertube",
+                "WS0011": "dcp_DME_AMMblistertube"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_tacbeamer"}
+            "weapons": {"WS0001": "dcp_DME_tacbeamer"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_linearcannon"}
+            "weapons": {"WS0005": "dcp_DME_linearcannon"}
         }
     ]
 }

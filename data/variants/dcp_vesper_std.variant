@@ -3,36 +3,36 @@
     "fluxCapacitors": 7,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_vesper",
+    "hullId": "dcp_DME_vesper",
     "hullMods": [
         "advancedshieldemitter",
         "targetingunit"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_vesper_std",
+    "variantId": "dcp_DME_vesper_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0002": "dcp_marteau_esm_rack"}
+            "weapons": {"WS0002": "dcp_DME_marteau_esm_rack"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_autolaser"}
+            "weapons": {"WS0001": "dcp_DME_autolaser"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_linearcannon"}
+            "weapons": {"WS0003": "dcp_DME_linearcannon"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_micropd",
-                "WS0005": "dcp_micropd"
+                "WS0004": "dcp_DME_micropd",
+                "WS0005": "dcp_DME_micropd"
             }
         }
     ]

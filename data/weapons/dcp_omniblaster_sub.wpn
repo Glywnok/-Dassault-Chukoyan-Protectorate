@@ -1,14 +1,14 @@
 {
-	"id":"dcp_omniblaster_sub",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_omniblaster_sub",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"ENERGY",
 	"size":"SMALL",
-	"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_sm.png",
-	"turretSprite":"graphics/DCP/weapons/dcp_omniblaster_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_omniblaster_turret_glow.png",
-	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_socket_hardpoint_sm.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_omniblaster_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_omniblaster_hardpoint_glow.png",
+	"turretUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_turret_sm.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_omniblaster_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_omniblaster_turret_glow.png",
+	"hardpointUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_hardpoint_sm.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_omniblaster_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_omniblaster_hardpoint_glow.png",
 	"glowColor":[150,125,255,255],
 	"turretOffsets":[12, 0],
 	"turretAngleOffsets":[0],
@@ -24,7 +24,7 @@
 					   "particleCount":15,
 					   "particleColor":[120,110,255,175]},
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
-	"projectileSpecId":"dcp_omniblaster_sub_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge",
-	"fireSoundTwo":"dcp_omniblaster_fire",
+	"projectileSpecId":"dcp_DME_omniblaster_sub_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge",
+	"fireSoundTwo":"dcp_DME_omniblaster_fire",
 }

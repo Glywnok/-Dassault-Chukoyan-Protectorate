@@ -1,9 +1,9 @@
 {
-	"id":"dcp_fragtorp",
+	"id":"dcp_DME_fragtorp",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_GravmissileOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_GravmissileOnHit",
 	"missileType":"ROCKET",
-	"sprite":"graphics/DCP/missiles/dcp_bombletB.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_bombletB.png",
 	"size":[11,18],	
 	"center":[5.5,9],
 	"collisionRadius":12,

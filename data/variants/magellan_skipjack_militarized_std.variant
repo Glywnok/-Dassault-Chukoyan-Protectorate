@@ -1,0 +1,55 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 8,
+    "fluxVents": 30,
+    "hullId": "dcp_magellan_skipjack_militarized",
+    "hullMods": ["heavyarmor"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_skipjack_militarized_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_magellan_quenchcannon"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_calliope"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0010": "dcp_magellan_crackerafm",
+                "WS0011": "dcp_magellan_crackerafm"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "dcp_magellan_boneshakerbattery"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_magellan_boneshakerbattery"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_magellan_smciws",
+                "WS0006": "dcp_magellan_smciws",
+                "WS0007": "dcp_magellan_smciws",
+                "WS0008": "dcp_magellan_smciws",
+                "WS0009": "dcp_magellan_smciws"
+            }
+        }
+    ],
+    "wings": [
+        "dcp_magellan_hvyfighter_wing",
+        "dcp_magellan_hvyfighter_wing"
+    ]
+}

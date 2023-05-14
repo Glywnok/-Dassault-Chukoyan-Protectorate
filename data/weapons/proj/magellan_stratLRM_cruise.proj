@@ -1,0 +1,62 @@
+{
+	"id":"dcp_magellan_stratLRM_cruise",
+	"specClass":"missile",
+	"onHitEffect":"data.scripts.weapons.dcp_magellan_StratLRMOnHit",
+	"missileType":"MISSILE",
+	"sprite":"graphics/Magellan/missiles/dcp_magellan_stratlrm.png",
+	"size":[12,40],	
+	"center":[6,20],
+	"collisionRadius":20,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[200,165,50,75],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":10, # purely visual
+	"explosionSpec":{"duration":0.15f, # not visual
+				 	 "radius":200,
+				 	 "coreRadius":120, # full damage within core radius
+				 	 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+				 	 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+				 	 "particleSizeMin":9.0,
+				 	 "particleSizeRange":6.0,
+				 	 "particleDuration":2.0,
+				 	 "particleCount":30,
+				 	 "particleColor":[255,225,125,155],
+				 	 "useDetailedExplosion":true,
+					 "useDetailedExplosionColorAlpha":true,
+					 "detailedExplosionRadius":60,
+					 "detailedExplosionFlashRadius":200,
+					 "detailedExplosionFlashDuration":0.4,
+					 "detailedExplosionFlashColorFringe":[200,165,50,155],
+					 "detailedExplosionFlashColorCore":[200,165,50,75],
+				 	},
+	"flameoutTime":0.75, # total time from flameout to full fadeout
+	"armingTime":1,
+	"noEngineGlowTime":0.25, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+	"engineSpec":{"turnAcc":100,
+				  "turnRate":60,
+				  "maxSpeed":600,
+				  "acc":250,
+				  "dec":25},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-18, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[155,135,75,155],
+						"glowSizeMult":1.5,
+						"contrailDuration":2.0,
+						"contrailWidthMult":1.25,
+						"contrailWidthAddedFractionAtEnd":3,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.25f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0.5f, # how far away from engine it starts
+						"contrailColor":[100,100,100,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":32.0,
+				    "angle":180.0}]
+}
+
+			

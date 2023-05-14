@@ -1,0 +1,26 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 2,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_magellan_ltfreight",
+    "hullMods": ["expanded_cargo_holds"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_ltfreight_std",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_smciws",
+                "WS0002": "dcp_magellan_smciws"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_magellan_linkflak"}
+        }
+    ]
+}

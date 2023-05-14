@@ -1,15 +1,15 @@
 {
-	"id":"dcp_toreador",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_toreador",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"BALLISTIC",
 	"mountTypeOverride":"HYBRID",
 	"size":"SMALL",
 	"displayArcRadius":600,
-	"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_sm.png",
-	"turretSprite":"graphics/DCP/weapons/dcp_toreador_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_toreador_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_toreador_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_toreador_hardpoint_glow.png",
+	"turretUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_turret_sm.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_toreador_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_toreador_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_toreador_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_toreador_hardpoint_glow.png",
 	"glowColor":[75,125,200,255],
 	"turretOffsets":[5, 0],
 	"turretAngleOffsets":[0],
@@ -26,6 +26,6 @@
 					   "particleDuration":0.06,
 					   "particleCount":27,
 					   "particleColor":[75,125,200,175]},
-	"projectileSpecId":"dcp_matadorheavy_shot",  # projectile that will be fired
-	"fireSoundTwo":"dcp_toreadorfire",	
+	"projectileSpecId":"dcp_DME_matadorheavy_shot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_toreadorfire",
 }

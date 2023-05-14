@@ -2,32 +2,32 @@
     "displayName": "Elite",
     "fluxCapacitors": 2,
     "fluxVents": 30,
-    "hullId": "dcp_centaur",
+    "hullId": "dcp_DME_centaur",
     "hullMods": ["stabilizedshieldemitter"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_centaur_elite",
+    "variantId": "dcp_DME_centaur_elite",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "ALTERNATING",
-            "weapons": {"WS0001": "dcp_perforatorpod"}
+            "weapons": {"WS0001": "dcp_DME_perforatorpod"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_linearcannon",
-                "WS0006": "dcp_linearcannon"
+                "WS0005": "dcp_DME_linearcannon",
+                "WS0006": "dcp_DME_linearcannon"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_micropd",
-                "WS0003": "dcp_micropd",
-                "WS0004": "dcp_micropd"
+                "WS0002": "dcp_DME_micropd",
+                "WS0003": "dcp_DME_micropd",
+                "WS0004": "dcp_DME_micropd"
             }
         }
     ]

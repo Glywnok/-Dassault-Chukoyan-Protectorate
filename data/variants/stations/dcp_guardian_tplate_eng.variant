@@ -3,29 +3,29 @@
     "fluxCapacitors": 9,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_guardian_tplate",
+    "hullId": "dcp_DME_guardian_tplate",
     "hullMods": [
         "hardenedshieldemitter",
-        "dcp_bbsupport",
+        "dcp_DME_bbsupport",
         "fluxdistributor",
         "advancedshieldemitter"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_guardian_tplate_eng",
+    "variantId": "dcp_DME_guardian_tplate_eng",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_bbheavymg",
-                "WS0003": "dcp_bbheavymg"
+                "WS0002": "dcp_DME_bbheavymg",
+                "WS0003": "dcp_DME_bbheavymg"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_plasrocket_pod"}
+            "weapons": {"WS0001": "dcp_DME_plasrocket_pod"}
         }
     ]
 }

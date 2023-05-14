@@ -2,37 +2,37 @@
     "displayName": "Scout",
     "fluxCapacitors": 9,
     "fluxVents": 10,
-    "hullId": "dcp_starsylph_deserter",
+    "hullId": "dcp_DME_starsylph_deserter",
     "hullMods": [
         "hardenedshieldemitter",
         "stabilizedshieldemitter"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_starsylph_deserter_test",
+    "variantId": "dcp_DME_starsylph_deserter_test",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_brigador"}
+            "weapons": {"WS0001": "dcp_DME_brigador"}
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_ammlight"}
+            "weapons": {"WS0002": "dcp_DME_ammlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_6cmrailgun",
-                "WS0004": "dcp_6cmrailgun"
+                "WS0003": "dcp_DME_6cmrailgun",
+                "WS0004": "dcp_DME_6cmrailgun"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0011": "dcp_matador"}
+            "weapons": {"WS0011": "dcp_DME_matador"}
         }
     ]
 }

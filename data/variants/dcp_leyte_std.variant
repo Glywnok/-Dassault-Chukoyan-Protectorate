@@ -3,38 +3,38 @@
     "fluxCapacitors": 0,
     "fluxVents": 20,
     "goalVariant": true,
-    "hullId": "dcp_leyte",
+    "hullId": "dcp_DME_leyte",
     "hullMods": [],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_leyte_std",
+    "variantId": "dcp_DME_leyte_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_linearcannon"}
+            "weapons": {"WS0001": "dcp_DME_linearcannon"}
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_gravmissiletube"}
+            "weapons": {"WS0005": "dcp_DME_gravmissiletube"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_micropd",
-                "WS0004": "dcp_micropd"
+                "WS0003": "dcp_DME_micropd",
+                "WS0004": "dcp_DME_micropd"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_microflak"}
+            "weapons": {"WS0002": "dcp_DME_microflak"}
         }
     ],
     "wings": [
-        "dcp_rafale1_wing",
-        "dcp_flare_wing"
+        "dcp_DME_rafale1_wing",
+        "dcp_DME_flare_wing"
     ]
 }

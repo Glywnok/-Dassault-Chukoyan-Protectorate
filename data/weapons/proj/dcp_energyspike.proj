@@ -1,7 +1,7 @@
 {
-	"id":"dcp_energyspike",
+	"id":"dcp_DME_energyspike",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_SlapperEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_SlapperEMPOnHit",
 	"spawnType":"BALLISTIC_AS_BEAM",
     "collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",

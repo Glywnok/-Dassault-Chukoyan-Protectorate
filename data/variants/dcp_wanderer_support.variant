@@ -3,36 +3,36 @@
     "fluxCapacitors": 8,
     "fluxVents": 20,
     "goalVariant": true,
-    "hullId": "dcp_wanderer",
+    "hullId": "dcp_DME_wanderer",
     "hullMods": ["blast_doors"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_wanderer_support",
+    "variantId": "dcp_DME_wanderer_support",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_gravmissiletube",
-                "WS0003": "dcp_gravmissiletube"
+                "WS0002": "dcp_DME_gravmissiletube",
+                "WS0003": "dcp_DME_gravmissiletube"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_12cmrailgun",
-                "WS0004": "dcp_ionbeamer",
-                "WS0005": "dcp_ionbeamer",
-                "WS0006": "dcp_linearcannon"
+                "WS0001": "dcp_DME_12cmrailgun",
+                "WS0004": "dcp_DME_ionbeamer",
+                "WS0005": "dcp_DME_ionbeamer",
+                "WS0006": "dcp_DME_linearcannon"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "dcp_micropd",
-                "WS0008": "dcp_micropd"
+                "WS0007": "dcp_DME_micropd",
+                "WS0008": "dcp_DME_micropd"
             }
         }
     ]

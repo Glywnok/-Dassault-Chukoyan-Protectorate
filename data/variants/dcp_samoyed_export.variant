@@ -2,28 +2,28 @@
     "displayName": "Export",
     "fluxCapacitors": 5,
     "fluxVents": 10,
-    "hullId": "dcp_samoyed",
+    "hullId": "dcp_DME_samoyed",
     "hullMods": ["hardened_subsystems"],
     "permaMods": [],
     "quality": 0.5,
-    "variantId": "dcp_samoyed_export",
+    "variantId": "dcp_DME_samoyed_export",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0013": "dcp_ammftr"}
+            "weapons": {"WS0013": "dcp_DME_ammftr"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_blazegun"}
+            "weapons": {"WS0002": "dcp_DME_blazegun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_multipdnode",
-                "WS0006": "dcp_multipdnode"
+                "WS0005": "dcp_DME_multipdnode",
+                "WS0006": "dcp_DME_multipdnode"
             }
         }
     ]

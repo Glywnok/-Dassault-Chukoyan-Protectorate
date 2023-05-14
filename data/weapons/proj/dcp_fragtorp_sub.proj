@@ -1,9 +1,9 @@
 {
-	"id":"dcp_fragtorp_sub",
+	"id":"dcp_DME_fragtorp_sub",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_FragtorpOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_FragtorpOnHit",
 	"missileType":"MISSILE",
-	"sprite":"graphics/DCP/missiles/dcp_fragtorp_sub.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_fragtorp_sub.png",
 	"size":[7,14],	
 	"center":[3.5,7],
 	"collisionRadius":13,

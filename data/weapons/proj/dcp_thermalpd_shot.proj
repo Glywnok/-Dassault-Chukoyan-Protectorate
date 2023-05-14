@@ -1,5 +1,5 @@
 {
-	"id":"dcp_thermalpd_shot",
+	"id":"dcp_DME_thermalpd_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
@@ -37,6 +37,6 @@
 									 "detailedExplosionFlashDuration":0.15,
 									 "detailedExplosionFlashColorFringe":[125,75,255,100],
 									 "detailedExplosionFlashColorCore":[175,125,255,255],
-									 "sound":"dcp_thermoburst_boom"},
+									 "sound":"dcp_DME_thermoburst_boom"},
 					}	
 }

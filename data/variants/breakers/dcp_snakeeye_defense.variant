@@ -2,39 +2,39 @@
     "displayName": "Defense",
     "fluxCapacitors": 8,
     "fluxVents": 10,
-    "hullId": "dcp_snakeeye",
+    "hullId": "dcp_DME_snakeeye",
     "hullMods": [
-        "dcp_bbdefense",
+        "dcp_DME_bbdefense",
         "magazines"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_snakeeye_defense",
+    "variantId": "dcp_DME_snakeeye_defense",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_jackal"}
+            "weapons": {"WS0001": "dcp_DME_jackal"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0015": "dcp_proxbomb_rack"}
+            "weapons": {"WS0015": "dcp_DME_proxbomb_rack"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_impulsor",
-                "WS0005": "dcp_impulsor"
+                "WS0004": "dcp_DME_impulsor",
+                "WS0005": "dcp_DME_impulsor"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_thermalpd",
-                "WS0003": "dcp_thermalpd"
+                "WS0002": "dcp_DME_thermalpd",
+                "WS0003": "dcp_DME_thermalpd"
             }
         }
     ]

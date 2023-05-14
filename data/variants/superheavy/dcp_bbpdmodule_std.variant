@@ -2,7 +2,7 @@
     "displayName": "Standard",
     "fluxCapacitors": 8,
     "fluxVents": 10,
-    "hullId": "dcp_bbpdmodule",
+    "hullId": "dcp_DME_bbpdmodule",
     "hullMods": [
         "ecm",
         "fluxbreakers",
@@ -11,14 +11,14 @@
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_bbpdmodule_std",
+    "variantId": "dcp_DME_bbpdmodule_std",
     "weaponGroups": [{
         "autofire": true,
         "mode": "LINKED",
         "weapons": {
-            "WS0001": "dcp_proxbomb_ciws",
-            "WS0002": "dcp_thermalpd",
-            "WS0003": "dcp_thermalpd"
+            "WS0001": "dcp_DME_proxbomb_ciws",
+            "WS0002": "dcp_DME_thermalpd",
+            "WS0003": "dcp_DME_thermalpd"
         }
     }]
 }

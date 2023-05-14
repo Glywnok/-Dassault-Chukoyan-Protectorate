@@ -3,29 +3,29 @@
     "fluxCapacitors": 2,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_stoat",
+    "hullId": "dcp_DME_stoat",
     "hullMods": ["advancedshieldemitter"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_stoat_escort",
+    "variantId": "dcp_DME_stoat_escort",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_6cmrailgun",
-                "WS0004": "dcp_6cmrailgun"
+                "WS0003": "dcp_DME_6cmrailgun",
+                "WS0004": "dcp_DME_6cmrailgun"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_mirvtorpedo_rack"}
+            "weapons": {"WS0001": "dcp_DME_mirvtorpedo_rack"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_tacbeamer"}
+            "weapons": {"WS0002": "dcp_DME_tacbeamer"}
         }
     ]
 }

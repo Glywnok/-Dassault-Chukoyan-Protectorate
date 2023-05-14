@@ -3,31 +3,31 @@
     "fluxCapacitors": 3,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_samoyed",
+    "hullId": "dcp_DME_samoyed",
     "hullMods": [
         "magazines",
         "targetingunit"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_samoyed_std",
+    "variantId": "dcp_DME_samoyed_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0013": "dcp_amm_samo"}
+            "weapons": {"WS0013": "dcp_DME_amm_samo"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_autolaser_small"}
+            "weapons": {"WS0002": "dcp_DME_autolaser_small"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_multipdnode",
-                "WS0006": "dcp_multipdnode"
+                "WS0005": "dcp_DME_multipdnode",
+                "WS0006": "dcp_DME_multipdnode"
             }
         }
     ]

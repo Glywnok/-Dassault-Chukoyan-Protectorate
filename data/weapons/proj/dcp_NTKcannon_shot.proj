@@ -1,7 +1,7 @@
 {
-	"id":"dcp_NTKcannon_shot",
+	"id":"dcp_DME_NTKcannon_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_HornetOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_HornetOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
@@ -16,5 +16,5 @@
 	"textureType":"ROUGH",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-24.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_hornetslug.png"
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_hornetslug.png"
 }

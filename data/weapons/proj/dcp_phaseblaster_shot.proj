@@ -1,7 +1,7 @@
 {
-	"id":"dcp_phaseblaster_shot",
+	"id":"dcp_DME_phaseblaster_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_PhaseBlasterOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_PhaseBlasterOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

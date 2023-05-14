@@ -3,47 +3,47 @@
     "fluxCapacitors": 9,
     "fluxVents": 30,
     "goalVariant": true,
-    "hullId": "dcp_baikal_brone",
+    "hullId": "dcp_DME_baikal_brone",
     "hullMods": [
         "targetingunit",
         "fluxbreakers"
     ],
     "modules": [
-        {"WS0010": "dcp_bronev_plate_bow_std"},
-        {"WS0021": "dcp_bronev_plate_left_std"},
-        {"WS0030": "dcp_bronev_plate_right_std"},
-        {"WS0031": "dcp_bronev_plate_lrear_std"},
-        {"WS0032": "dcp_bronev_plate_rrear_std"}
+        {"WS0010": "dcp_DME_bronev_plate_bow_std"},
+        {"WS0021": "dcp_DME_bronev_plate_left_std"},
+        {"WS0030": "dcp_DME_bronev_plate_right_std"},
+        {"WS0031": "dcp_DME_bronev_plate_lrear_std"},
+        {"WS0032": "dcp_DME_bronev_plate_rrear_std"}
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_baikal_brone_elite",
+    "variantId": "dcp_DME_baikal_brone_elite",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0008": "dcp_chasseurLRMlauncher",
-                "WS0009": "dcp_gravmissiletube"
+                "WS0008": "dcp_DME_chasseurLRMlauncher",
+                "WS0009": "dcp_DME_gravmissiletube"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_linearcannonheavy",
-                "WS0003": "dcp_howler",
-                "WS0004": "dcp_tacbeamer",
-                "WS0005": "dcp_tacbeamer",
-                "WS0006": "dcp_tacbeamer"
+                "WS0001": "dcp_DME_linearcannonheavy",
+                "WS0003": "dcp_DME_howler",
+                "WS0004": "dcp_DME_tacbeamer",
+                "WS0005": "dcp_DME_tacbeamer",
+                "WS0006": "dcp_DME_tacbeamer"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_linearflak",
-                "WS0007": "dcp_micropd"
+                "WS0002": "dcp_DME_linearflak",
+                "WS0007": "dcp_DME_micropd"
             }
         }
     ]

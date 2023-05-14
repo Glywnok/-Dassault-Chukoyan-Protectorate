@@ -1,0 +1,18 @@
+{
+  "displayName": "Interceptor",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_magellan_intyellowtail",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "dcp_magellan_intyellowtail_Interceptor",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_magellan_ebolter_ftr"
+      }
+    }
+  ]
+}

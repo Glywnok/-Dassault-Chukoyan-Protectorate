@@ -1,5 +1,5 @@
 {
-	"id":"dcp_autolaser_smallftr_shot",
+	"id":"dcp_DME_autolaser_smallftr_shot",
 	"specClass":"projectile",
 	#"spawnType":"BEAM",
 	"spawnType":"BALLISTIC_AS_BEAM",

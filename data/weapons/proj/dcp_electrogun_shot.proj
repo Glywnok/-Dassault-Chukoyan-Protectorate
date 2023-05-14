@@ -1,7 +1,7 @@
 {
-	"id":"dcp_electrogun_shot",
+	"id":"dcp_DME_electrogun_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_ElectroEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_ElectroEMPOnHit",
 	#"spawnType":"BEAM",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_NO_FF",

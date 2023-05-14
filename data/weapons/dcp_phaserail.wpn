@@ -1,15 +1,15 @@
 {
-	"id":"dcp_phaserail",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_phaserail",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_PhaseRailFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_PhaseRailFX",
 	"type":"ENERGY",
 	"mountTypeOverride":"HYBRID",
 	"size":"LARGE",
 	"displayArcRadius":1000,
-	"turretSprite":"graphics/DCP/weapons/dcp_phaserail_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_phaserail_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_phaserail_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_phaserail_hardpoint_glow.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_phaserail_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_phaserail_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_phaserail_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_phaserail_hardpoint_glow.png",
 	"glowColor":[75,125,200,255],
 	"turretOffsets":[9, 0],
 	"turretAngleOffsets":[0],
@@ -25,7 +25,7 @@
 					   "particleDuration":0.3,
 					   "particleCount":48,
 					   "particleColor":[75,125,200,215]},
-	"projectileSpecId":"dcp_phaserail_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge",
-	"fireSoundTwo":"dcp_phaserail_fire",	
+	"projectileSpecId":"dcp_DME_phaserail_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge",
+	"fireSoundTwo":"dcp_DME_phaserail_fire",
 }

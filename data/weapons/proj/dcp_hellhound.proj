@@ -1,9 +1,9 @@
 {
-	"id":"dcp_hellhound",
+	"id":"dcp_DME_hellhound",
 	"specClass":"missile",	
-	"onHitEffect":"data.scripts.weapons.dcp_HellhoundOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_HellhoundOnHit",
 	"missileType":"MISSILE",
-	"sprite":"graphics/DCP/missiles/dcp_hellhound.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_hellhound.png",
 	"size":[11,27],	
 	"center":[5.5,13.5],
 	"collisionRadius":16,

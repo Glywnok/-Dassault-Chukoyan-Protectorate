@@ -1,7 +1,7 @@
 {
-	"id":"dcp_bomblet2",
+	"id":"dcp_DME_bomblet2",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_MarteauEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_MarteauEMPOnHit",
 	"spawnType":"BALLISTIC",
     "collisionClass":"PROJECTILE_FIGHTER",
     "collisionClassByFighter":"PROJECTILE_FIGHTER",
@@ -13,5 +13,5 @@
 	"coreColor":[255,255,255,255],
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_slapper.png",
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_slapper.png",
 }

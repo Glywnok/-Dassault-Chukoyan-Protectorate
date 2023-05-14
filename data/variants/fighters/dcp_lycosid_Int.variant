@@ -2,16 +2,16 @@
   "displayName": "Interceptor",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_lycosid",
+  "hullId": "dcp_DME_lycosid",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_lycosid_Int",
+  "variantId": "dcp_DME_lycosid_Int",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_thermalpd"
+        "WS0001": "dcp_DME_thermalpd"
       }
     }
   ]

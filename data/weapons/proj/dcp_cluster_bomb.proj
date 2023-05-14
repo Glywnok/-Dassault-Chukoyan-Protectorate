@@ -1,9 +1,9 @@
 {
-	"id":"dcp_cluster_bomb",
+	"id":"dcp_DME_cluster_bomb",
 	"specClass":"missile",	
-	"onHitEffect":"data.scripts.weapons.dcp_MarteauEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_MarteauEMPOnHit",
 	"missileType":"MIRV",
-	"sprite":"graphics/DCP/missiles/dcp_cluster_bomb.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_cluster_bomb.png",
 	"size":[13,27],	
 	"center":[6.5,13.5],
 	"collisionRadius":15,
@@ -51,7 +51,7 @@
 					"spreadSpeed":250,
 					"spreadSpeedRange":400,
 					"projectileRange":750, # only needed if not a missile
-					"projectileSpec":"dcp_bomblet2",
+					"projectileSpec":"dcp_DME_bomblet2",
 					"smokeSpec":{"particleSizeMin":16.0,
 								 "particleSizeRange":20.0,
 								 "cloudParticleCount":16,

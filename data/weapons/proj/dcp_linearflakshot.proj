@@ -1,5 +1,5 @@
 {
-	"id":"dcp_linearflakshot",
+	"id":"dcp_DME_linearflakshot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
     "collisionClass":"RAY",
@@ -12,7 +12,7 @@
 	"coreColor":[255,255,255,255],
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":5.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_heshell.png",
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_heshell.png",
 	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
 					"shotRangeVariance":0.25,
 					"range":25,

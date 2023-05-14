@@ -2,28 +2,28 @@
     "displayName": "Fire Support",
     "fluxCapacitors": 9,
     "fluxVents": 10,
-    "hullId": "dcp_burya",
+    "hullId": "dcp_DME_burya",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_burya_support",
+    "variantId": "dcp_DME_burya_support",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0001": "dcp_clusterlauncher"}
+            "weapons": {"WS0001": "dcp_DME_clusterlauncher"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_ionbeamer"}
+            "weapons": {"WS0002": "dcp_DME_ionbeamer"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_linearvulcan",
-                "WS0004": "dcp_linearvulcan"
+                "WS0003": "dcp_DME_linearvulcan",
+                "WS0004": "dcp_DME_linearvulcan"
             }
         }
     ]

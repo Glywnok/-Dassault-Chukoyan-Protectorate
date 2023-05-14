@@ -3,41 +3,41 @@
     "fluxCapacitors": 7,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_starsylph",
+    "hullId": "dcp_DME_starsylph",
     "hullMods": [
         "auxiliarythrusters",
         "extendedshieldemitter"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_starsylph_std",
+    "variantId": "dcp_DME_starsylph_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0009": "dcp_ruptureasm_tube",
-                "WS0010": "dcp_ruptureasm_tube"
+                "WS0009": "dcp_DME_ruptureasm_tube",
+                "WS0010": "dcp_DME_ruptureasm_tube"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0002": "dcp_ammlight"}
+            "weapons": {"WS0002": "dcp_DME_ammlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_autolaser",
-                "WS0003": "dcp_erpulsebeam",
-                "WS0004": "dcp_erpulsebeam"
+                "WS0001": "dcp_DME_autolaser",
+                "WS0003": "dcp_DME_erpulsebeam",
+                "WS0004": "dcp_DME_erpulsebeam"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0011": "dcp_micropd"}
+            "weapons": {"WS0011": "dcp_DME_micropd"}
         }
     ]
 }

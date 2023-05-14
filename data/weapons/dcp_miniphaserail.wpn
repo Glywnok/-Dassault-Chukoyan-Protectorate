@@ -1,14 +1,14 @@
 {
-	"id":"dcp_miniphaserail",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_miniphaserail",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"ENERGY",
 	"mountTypeOverride":"HYBRID",
 	"size":"SMALL",
 	"displayArcRadius":700,
-	"turretSprite":"graphics/DCP/weapons/dcp_miniphaserail_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_miniphaserail_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_miniphaserail_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_miniphaserail_hardpoint_glow.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_miniphaserail_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_miniphaserail_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_miniphaserail_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_miniphaserail_hardpoint_glow.png",
 	"glowColor":[75,125,200,255],
 	"turretOffsets":[6, 0],
 	"turretAngleOffsets":[0],
@@ -24,7 +24,7 @@
 					   "particleDuration":0.1,
 					   "particleCount":24,
 					   "particleColor":[75,125,200,215]},
-	"projectileSpecId":"dcp_miniphaserail_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge_small",
-	"fireSoundTwo":"dcp_miniphaserail_fire",	
+	"projectileSpecId":"dcp_DME_miniphaserail_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge_small",
+	"fireSoundTwo":"dcp_DME_miniphaserail_fire",
 }

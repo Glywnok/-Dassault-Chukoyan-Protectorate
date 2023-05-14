@@ -1,7 +1,7 @@
 {
-	"id":"dcp_TBM_fragcloud_sub",
+	"id":"dcp_DME_TBM_fragcloud_sub",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_TBMSubOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_TBMSubOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
@@ -13,7 +13,7 @@
 	"coreColor":[255,175,125,255],
 	"textureScrollSpeed":32.0,
 	"pixelsPerTexel":5.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_miniblaster_long_bolt.png",
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_miniblaster_long_bolt.png",
 # 	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
 # 					"shotRangeVariance":0.25,
 # 					"range":10,

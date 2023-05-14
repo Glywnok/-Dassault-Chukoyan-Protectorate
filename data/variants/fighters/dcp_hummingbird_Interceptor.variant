@@ -2,16 +2,16 @@
   "displayName": "Interceptor",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_hummingbird",
+  "hullId": "dcp_DME_hummingbird",
   "hullMods": [],
-  "variantId": "dcp_hummingbird_Interceptor",
+  "variantId": "dcp_DME_hummingbird_Interceptor",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_buzzgun",
-        "WS0002": "dcp_buzzgun"
+        "WS0001": "dcp_DME_buzzgun",
+        "WS0002": "dcp_DME_buzzgun"
       }
     }
   ]

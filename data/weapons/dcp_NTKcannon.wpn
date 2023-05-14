@@ -1,14 +1,14 @@
 {
-	"id":"dcp_NTKcannon",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_NTKcannon",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"BALLISTIC",
 	"size":"SMALL",
-	#"turretUnderSprite":"graphics/DCP/weapons/dcp_socket_turret_sm.png",
-	"turretSprite":"graphics/DCP/weapons/dcp_NTKcannon_turret_base.png",
-	"turretGunSprite":"graphics/DCP/weapons/dcp_NTKcannon_turret_recoil.png",
-	#"hardpointUnderSprite":"graphics/DCP/weapons/dcp_socket_hardpoint_sm.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_NTKcannon_hardpoint_base.png",
-	"hardpointGunSprite":"graphics/DCP/weapons/dcp_NTKcannon_hardpoint_recoil.png",	
+	#"turretUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_turret_sm.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_NTKcannon_turret_base.png",
+	"turretGunSprite":"graphics/DCP/weapons/dcp_DME_NTKcannon_turret_recoil.png",
+	#"hardpointUnderSprite":"graphics/DCP/weapons/dcp_DME_socket_hardpoint_sm.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_NTKcannon_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/DCP/weapons/dcp_DME_NTKcannon_hardpoint_recoil.png",
 	"visualRecoil":3.0,  # the gun sprites are only used if this is non-0
 	"renderHints":[RENDER_BARREL_BELOW],
 	"turretOffsets":[14, 0],
@@ -25,6 +25,6 @@
 					   "particleDuration":0.1,
 					   "particleCount":24,
 					   "particleColor":[255,150,100,225]},	
-	"projectileSpecId":"dcp_NTKcannon_shot",  # projectile that will be fired	
-	"fireSoundTwo":"dcp_NTKcannon_fire",
+	"projectileSpecId":"dcp_DME_NTKcannon_shot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_NTKcannon_fire",
 }

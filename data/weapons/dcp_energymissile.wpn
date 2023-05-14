@@ -1,5 +1,5 @@
 {
-	"id":"dcp_energymissile",
+	"id":"dcp_DME_energymissile",
 	"specClass":"projectile",
 	"type":"MISSILE",
 	"size":"SMALL",
@@ -25,6 +25,6 @@
 				 "blowbackLength":30.0,
 				 "blowbackSpread":10.0,
 				 "particleColor":[215,215,200,200]},
-	"projectileSpecId":"dcp_bomblet1",
+	"projectileSpecId":"dcp_DME_bomblet1",
 	"fireSoundTwo":"sabot_srm_fire",
 }

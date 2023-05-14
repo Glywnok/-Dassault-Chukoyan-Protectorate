@@ -1,9 +1,9 @@
 {
-	"id":"dcp_plasrocket",
+	"id":"dcp_DME_plasrocket",
 	"specClass":"missile",	
-	"onHitEffect":"data.scripts.weapons.dcp_PlasrocketEMPOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_PlasrocketEMPOnHit",
 	"missileType":"ROCKET",
-	"sprite":"graphics/DCP/missiles/dcp_plasrocket.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_plasrocket.png",
 	"size":[4,14],	
 	"center":[2,7],
 	"collisionRadius":15,

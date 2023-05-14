@@ -1,13 +1,13 @@
 {
-	"id":"dcp_electronfan",
+	"id":"dcp_DME_electronfan",
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_ShellshockerFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_ShellshockerFX",
 	"type":"BALLISTIC",
 	"size":"LARGE",
-	"turretSprite":"graphics/DCP/weapons/dcp_electronfan_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_electronfan_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_electronfan_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_electronfan_hardpoint_glow.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_electronfan_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_electronfan_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_electronfan_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_electronfan_hardpoint_glow.png",
 	"glowColor":[100,110,255,255],
 	"turretOffsets":[40, 0],
 	"turretAngleOffsets":[0],
@@ -23,7 +23,7 @@
 					   "particleCount":48,
 					   "particleColor":[100,110,255,255]},
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
-	"projectileSpecId":"dcp_electronfan_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_shellshocker_charge",
-	"fireSoundTwo":"dcp_shellshocker_fire",
+	"projectileSpecId":"dcp_DME_electronfan_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_shellshocker_charge",
+	"fireSoundTwo":"dcp_DME_shellshocker_fire",
 }

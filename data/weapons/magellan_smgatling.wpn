@@ -1,0 +1,27 @@
+{
+	"id":"dcp_magellan_smgatling",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"turretSprite":"graphics/Magellan/weapons/smrotary/dcp_magellan_smgatling_turret_00.png",
+	"hardpointSprite":"graphics/Magellan/weapons/smrotary/dcp_magellan_smgatling_hardpoint_00.png",
+	"numFrames":6,	
+	"frameRate":30,
+	"turretOffsets":[16, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[16, 0],
+	"hardpointAngleOffsets":[0],	
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"muzzleFlashSpec":{"length":18.0, 
+                            "spread":18.0,
+                            "particleSizeMin":3.0,
+                            "particleSizeRange":24.0,
+                            "particleDuration":0.12,
+                            "particleCount":16,
+                            "particleColor":[200,200,255,155]},	
+	"projectileSpecId":"dcp_magellan_smkinetic_shot",  # projectile that will be fired
+	#"fireSoundOne":"istl_mincer_spinup",
+	"fireSoundTwo":"dcp_magellan_smallgat_fire",
+}

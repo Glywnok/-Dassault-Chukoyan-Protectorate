@@ -2,20 +2,20 @@
     "displayName": "Standard",
     "fluxCapacitors": 0,
     "fluxVents": 5,
-    "hullId": "dcpx_bbladetailbinder",
+    "hullId": "dcp_DMEx_bbladetailbinder",
     "hullMods": [],
     "permaMods": [],
-    "variantId": "dcpx_bbladetailbinder_std",
+    "variantId": "dcp_DMEx_bbladetailbinder_std",
     "weaponGroups": [{
         "autofire": true,
         "mode": "LINKED",
         "weapons": {
-            "WS0001": "dcp_braveimpulsor",
-            "WS0002": "dcp_braveimpulsor",
-            "WS0003": "dcp_braveimpulsor",
-            "WS0004": "dcp_braveimpulsor",
-            "WS0005": "dcp_braveimpulsor",
-            "WS0006": "dcp_braveimpulsor"
+            "WS0001": "dcp_DME_braveimpulsor",
+            "WS0002": "dcp_DME_braveimpulsor",
+            "WS0003": "dcp_DME_braveimpulsor",
+            "WS0004": "dcp_DME_braveimpulsor",
+            "WS0005": "dcp_DME_braveimpulsor",
+            "WS0006": "dcp_DME_braveimpulsor"
         }
     }]
 }

@@ -3,26 +3,26 @@
     "fluxCapacitors": 10,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_bbLRMmodule",
+    "hullId": "dcp_DME_bbLRMmodule",
     "hullMods": [
         "eccm",
         "fluxbreakers"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_bbLRMmodule_assault",
+    "variantId": "dcp_DME_bbLRMmodule_assault",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0001": "dcp_clusterlauncher_battery"}
+            "weapons": {"WS0001": "dcp_DME_clusterlauncher_battery"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_thermalpd",
-                "WS0003": "dcp_thermalpd"
+                "WS0002": "dcp_DME_thermalpd",
+                "WS0003": "dcp_DME_thermalpd"
             }
         }
     ]

@@ -1,14 +1,14 @@
 {
-	"id":"dcp_alaudapulse",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_alaudapulse",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
-	"everyFrameEffect": "data.scripts.weapons.dcp_AlaudaPulserFX",
+	"everyFrameEffect": "data.scripts.weapons.dcp_DME_AlaudaPulserFX",
 	"type":"ENERGY",
 	"size":"SMALL",
 	"displayArcRadius":600,
 	"turretSprite":"",
 	"turretGlowSprite":"",
 	"hardpointSprite":"",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_alaudapulse_hardpoint_glow.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_alaudapulse_hardpoint_glow.png",
 	"glowColor":[25,175,255,155],
 	"turretOffsets":[0, 0],
 	"turretAngleOffsets":[0],
@@ -24,7 +24,7 @@
 					   "particleDuration":0.08,
 					   "particleCount":24,
 					   "particleColor":[25,175,255,200]},
-	"projectileSpecId":"dcp_alaudapulse_shot",  # projectile that will be fired
-	"fireSoundOne":"dcp_energy_charge_small",
-	"fireSoundTwo":"dcp_autolaser_fire",
+	"projectileSpecId":"dcp_DME_alaudapulse_shot",  # projectile that will be fired
+	"fireSoundOne":"dcp_DME_energy_charge_small",
+	"fireSoundTwo":"dcp_DME_autolaser_fire",
 }

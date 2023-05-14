@@ -1,0 +1,7 @@
+{
+	"id":"dcp_DME_BBdecoyflare",
+	"type":"WEAPON",
+	"aiType":"FLARE_JAMMER",
+	"weaponDataId":"dcp_DME_BBflarelauncher",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

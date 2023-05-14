@@ -1,0 +1,234 @@
+{
+	id:"dcp_magellan_startigers",
+	"color":[153,134,117,255],
+	"displayName":"Skytigers",
+	"displayNameWithArticle":"the Skytiger Guards",
+	"logo":"graphics/Magellan/factions/protectorate.png",
+	"crest":"graphics/Magellan/factions/crest_protectorate.png",
+	"shipNamePrefix":"FSS",
+	"showInIntelTab":false,
+	"shipNameSources":{
+		"BRITISH_NAVY":3,
+		"DIKTAT":2,
+		"SPACE":1,
+	},
+	"names":{
+		"dcp_magellan":3,
+		"myth":2,
+		"world":1,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+			"buffalo2":0, # just say no
+			"apogee":0, # too civilian.
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["dcp_magellan"],
+		"hulls":[
+			"dcp_magellan_linedestroyer",
+			"dcp_magellan_supportdestroyer",
+			"dcp_magellan_supportfrigate",
+			"phaeton",
+			"dram",
+		],
+	},
+
+	"knownShips":{
+		"tags":["dcp_magellan_startiger"],
+		"hulls":[
+			"dcp_magellan_battleship_startiger",
+			"dcp_magellan_carrier_startiger",
+			"dcp_magellan_cruiser_startiger",
+			"dcp_magellan_linefrigate_startiger",
+			"phaeton",
+			"dram",
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["dcp_magellan_startiger"],
+		"hulls":[
+			"dcp_magellan_battleship_startiger",
+			"dcp_magellan_carrier_startiger",
+			"dcp_magellan_cruiser_startiger",
+			"dcp_magellan_linefrigate_startiger",
+		],
+	},
+	"knownFighters":{
+		"tags":["dcp_magellan_startiger"],
+	},
+	"priorityFighters":{
+		"tags":["dcp_magellan_startiger"],
+	},
+	"knownWeapons":{
+		"tags":["dcp_magellan", "dcp_magellan_startiger", "dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"weapons":[
+			"dualflak",
+			"dcp_magellan_bonecrusher",
+			"dcp_magellan_largebonecrusher",
+			"dcp_magellan_bonesaw",
+			"dcp_magellan_boneshaker",
+			"dcp_magellan_calliope_sm",
+			"dcp_magellan_calliope",
+			"dcp_magellan_crackerafm",
+			"dcp_magellan_hvyfusionbomb_pod",
+			"dcp_magellan_hvyfusionbomb_barrage",
+			"dcp_magellan_largemortar",
+			"dcp_magellan_medciws",
+			"dcp_magellan_medgatling",
+			"dcp_magellan_medhetlaser",
+			"dcp_magellan_medpdmaser",
+			"dcp_magellan_quenchgun",
+			"dcp_magellan_smciws",
+			"dcp_magellan_smgatling",
+			"dcp_magellan_smhetlaser",
+			"dcp_magellan_smpdmaser",
+			"dcp_magellan_solenoidbattery",
+			"dcp_magellan_solenoidgun",
+		],
+	},
+	"priorityWeapons":{
+		"tags":["dcp_magellan", "dcp_magellan_startiger", "dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"weapons":[
+			"dcp_magellan_bonesaw",
+			"dcp_magellan_boneshaker",
+			"dcp_magellan_calliope_sm",
+			"dcp_magellan_calliope",
+			"dcp_magellan_hvyfusionbomb_pod",
+			"dcp_magellan_hvyfusionbomb_barrage",
+			"dcp_magellan_largemortar",
+			"dcp_magellan_medciws",
+			"dcp_magellan_medhetlaser",
+			"dcp_magellan_medpdmaser",
+			"dcp_magellan_quenchgun",
+			"dcp_magellan_smciws",
+			"dcp_magellan_smpdmaser",
+			"dcp_magellan_solenoidbattery",
+			"dcp_magellan_solenoidgun",
+		],
+	},
+	"knownHullMods":{
+		"tags":["dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"hullMods":[
+			"advancedshieldemitter",
+			"augmentedengines",
+			"autorepair",
+			"efficiency_overhaul",
+			"expanded_deck_crew",
+			"extendedshieldemitter",
+			"fluxbreakers",
+			"frontemitter",
+			"frontshield",
+			"frontshield",  # makeshift
+			"heavyarmor",
+			"insulatedengine",
+			"magazines",
+			"missleracks",
+			"nav_relay",
+			"operations_center",
+			"stabilizedshieldemitter",
+			"surveying_equipment",
+			"targetingunit",
+			"turretgyros",
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":1,
+		"phaseShips":1,
+		
+		"officerQuality":3,
+		"shipQuality":5,
+		"numShips":2,
+		
+		"shipSize":5,
+		
+		"aggression":4,
+		
+		"combatFreighterProbability":0.1,      				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+		
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"crew_training",
+			"officer_training",
+		],
+	},
+	"illegalCommodities":[
+		"drugs",
+		"organs",
+		"hand_weapons",
+		"ai_cores",	
+	],
+	"internalComms":"protectorate_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_league07.png",
+			"graphics/portraits/portrait_league09.png",		
+			"graphics/portraits/portrait_luddic06.png",		
+			"graphics/portraits/portrait_mercenary01.png",
+			"graphics/portraits/portrait_mercenary04.png",
+			"graphics/portraits/portrait12.png",
+			"graphics/portraits/portrait13.png",
+			"graphics/portraits/portrait18.png",
+			"graphics/portraits/portrait20.png",
+			"graphics/portraits/portrait23.png",
+			"graphics/portraits/portrait26.png",
+			"graphics/portraits/portrait30.png",
+			"graphics/portraits/portrait33.png",
+			"graphics/portraits/portrait35.png",
+			"graphics/portraits/portrait38.png",
+			"graphics/portraits/portrait42.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_league08.png",
+			"graphics/portraits/portrait_league10.png",
+			"graphics/portraits/portrait_luddic11.png",		
+			"graphics/portraits/portrait_mercenary02.png",
+			"graphics/portraits/portrait_mercenary05.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait21.png",
+			"graphics/portraits/portrait22.png",
+			"graphics/portraits/portrait27.png",
+			"graphics/portraits/portrait29.png",
+			"graphics/portraits/portrait32.png",
+			"graphics/portraits/portrait34.png",
+			"graphics/portraits/portrait37.png",
+			"graphics/portraits/portrait39.png",
+			"graphics/portraits/portrait41.png",
+		],
+	},
+	"voices":{
+		"LOW":{
+			"soldier":10,
+			"official":5,
+			"spacer":5,
+		},
+		"MEDIUM":{
+			"soldier":10,
+			"official":10,
+		},
+		"HIGH":{
+			"soldier":5,
+			"official":10,
+			"aristo":3,
+		},
+	},
+	"fleetTypeNames":{
+		"patrolSmall":"Skytiger Guard Picket",
+		"patrolMedium":"Skytiger Guard Patrol",
+		"patrolLarge":"Skytiger Guard Detachment",
+	},
+
+},

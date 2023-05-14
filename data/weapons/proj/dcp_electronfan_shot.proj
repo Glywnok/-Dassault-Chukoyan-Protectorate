@@ -1,7 +1,7 @@
 {
-	"id":"dcp_electronfan_shot",
+	"id":"dcp_DME_electronfan_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_ShellshockerOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_ShellshockerOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	

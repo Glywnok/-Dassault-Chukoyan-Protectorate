@@ -1,0 +1,25 @@
+{
+  "displayName": "Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "dcp_magellan_lightfighter_civ",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "dcp_magellan_lightfighter_civ_Fighter",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "dcp_magellan_crackerftrsingle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dcp_magellan_bonesaw_ftr"
+      }
+    }
+  ]
+}

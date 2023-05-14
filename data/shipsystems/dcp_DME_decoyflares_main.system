@@ -1,0 +1,8 @@
+{
+	"id":"dcp_DME_decoyflares_main",
+	"type":"WEAPON",
+	"aiType":"FLARE",
+	
+	"weaponDataId":"dcp_DME_flarelauncher_main",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

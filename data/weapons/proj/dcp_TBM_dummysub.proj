@@ -1,7 +1,7 @@
 {
-	"id":"dcp_TBM_dummysub",
+	"id":"dcp_DME_TBM_dummysub",
 	"specClass":"projectile",
-#	"onHitEffect":"data.scripts.weapons.dcp_TBMSubOnHit",
+#	"onHitEffect":"data.scripts.weapons.dcp_DME_TBMSubOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
@@ -13,5 +13,5 @@
 	"coreColor":[255,255,255,255],
 	"textureScrollSpeed":32.0,
 	"pixelsPerTexel":5.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_lightbomb.png",					
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_lightbomb.png",
 }

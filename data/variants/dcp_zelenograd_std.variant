@@ -3,51 +3,51 @@
     "fluxCapacitors": 3,
     "fluxVents": 36,
     "goalVariant": true,
-    "hullId": "dcp_zelenograd",
+    "hullId": "dcp_DME_zelenograd",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_zelenograd_std",
+    "variantId": "dcp_DME_zelenograd_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0015": "dcp_marteau_esm_pod",
-                "WS0016": "dcp_marteau_esm_pod",
-                "WS0017": "dcp_marteau_esm_pod",
-                "WS0018": "dcp_marteau_esm_pod"
+                "WS0015": "dcp_DME_marteau_esm_pod",
+                "WS0016": "dcp_DME_marteau_esm_pod",
+                "WS0017": "dcp_DME_marteau_esm_pod",
+                "WS0018": "dcp_DME_marteau_esm_pod"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_autohybridblaster",
-                "WS0002": "dcp_autohybridblaster",
-                "WS0006": "dcp_linearcannon",
-                "WS0007": "dcp_linearcannon",
-                "WS0008": "dcp_linearcannon",
-                "WS0009": "dcp_linearcannon",
-                "WS0010": "dcp_linearcannon"
+                "WS0001": "dcp_DME_autohybridblaster",
+                "WS0002": "dcp_DME_autohybridblaster",
+                "WS0006": "dcp_DME_linearcannon",
+                "WS0007": "dcp_DME_linearcannon",
+                "WS0008": "dcp_DME_linearcannon",
+                "WS0009": "dcp_DME_linearcannon",
+                "WS0010": "dcp_DME_linearcannon"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_tribeamer",
-                "WS0004": "dcp_tribeamer",
-                "WS0005": "dcp_tribeamer",
-                "WS0011": "dcp_micropd",
-                "WS0012": "dcp_micropd",
-                "WS0013": "dcp_micropd",
-                "WS0014": "dcp_micropd"
+                "WS0003": "dcp_DME_tribeamer",
+                "WS0004": "dcp_DME_tribeamer",
+                "WS0005": "dcp_DME_tribeamer",
+                "WS0011": "dcp_DME_micropd",
+                "WS0012": "dcp_DME_micropd",
+                "WS0013": "dcp_DME_micropd",
+                "WS0014": "dcp_DME_micropd"
             }
         }
     ],
     "wings": [
-        "dcp_mystere_wing",
-        "dcp_mystere_wing"
+        "dcp_DME_mystere_wing",
+        "dcp_DME_mystere_wing"
     ]
 }

@@ -1,7 +1,7 @@
 {
-	"id":"dcp_matador_shot",
+	"id":"dcp_DME_matador_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_MatadorOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_MatadorOnHit",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",
@@ -19,7 +19,7 @@
 	"textureType":"ROUGH",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-48.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_matador_bolt.png",
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_matador_bolt.png",
 	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
 					"range":0, #set to 0 for 0.9.1
 				    "vsMissileRange":5, #missile-only prox fuze
@@ -34,6 +34,6 @@
 									 "particleCount":6,
 									 "particleColor":[235,235,235,255],
 									 "explosionColor":[75,125,200,155],
-									 "sound":"dcp_explosion_flak_small"},
+									 "sound":"dcp_DME_explosion_flak_small"},
 					}
 }

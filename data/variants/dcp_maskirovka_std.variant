@@ -3,35 +3,35 @@
     "fluxCapacitors": 11,
     "fluxVents": 20,
     "goalVariant": true,
-    "hullId": "dcp_maskirovka",
+    "hullId": "dcp_DME_maskirovka",
     "hullMods": [
         "unstable_injector",
         "magazines"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_maskirovka_std",
+    "variantId": "dcp_DME_maskirovka_std",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_scatterlaser"}
+            "weapons": {"WS0001": "dcp_DME_scatterlaser"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_whdcper",
-                "WS0003": "dcp_whdcper"
+                "WS0002": "dcp_DME_whdcp_DMEer",
+                "WS0003": "dcp_DME_whdcp_DMEer"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_multipdnode",
-                "WS0005": "dcp_multipdnode",
-                "WS0006": "dcp_multipdnode"
+                "WS0004": "dcp_DME_multipdnode",
+                "WS0005": "dcp_DME_multipdnode",
+                "WS0006": "dcp_DME_multipdnode"
             }
         }
     ]

@@ -1,0 +1,34 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 7,
+    "fluxVents": 10,
+    "hullId": "dcp_magellan_phasefrig_blackcollar",
+    "hullMods": [
+        "hardened_subsystems",
+        "fluxbreakers",
+        "solar_shielding"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_phasefrig_blackcollar_attack",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_scatterblaster"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "dcp_magellan_crackerafm"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_magellan_smciws",
+                "WS0003": "dcp_magellan_smciws"
+            }
+        }
+    ]
+}

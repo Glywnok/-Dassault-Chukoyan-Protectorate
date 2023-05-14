@@ -2,33 +2,33 @@
     "displayName": "Overdriven",
     "fluxCapacitors": 2,
     "fluxVents": 10,
-    "hullId": "dcp_vesper",
+    "hullId": "dcp_DME_vesper",
     "hullMods": ["safetyoverrides"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_vesper_overdriven",
+    "variantId": "dcp_DME_vesper_overdriven",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_omniblaster"}
+            "weapons": {"WS0002": "dcp_DME_omniblaster"}
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_perforatorpod"}
+            "weapons": {"WS0001": "dcp_DME_perforatorpod"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_linearcannonlight"}
+            "weapons": {"WS0003": "dcp_DME_linearcannonlight"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_microflak",
-                "WS0005": "dcp_microflak"
+                "WS0004": "dcp_DME_microflak",
+                "WS0005": "dcp_DME_microflak"
             }
         }
     ]

@@ -2,24 +2,24 @@
     "displayName": "Support",
     "fluxCapacitors": 8,
     "fluxVents": 10,
-    "hullId": "dcp_guardian_tcitadel",
+    "hullId": "dcp_DME_guardian_tcitadel",
     "hullMods": [
         "ecm",
-        "dcp_bbsupport",
+        "dcp_DME_bbsupport",
         "magazines"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_guardian_tcitadel_std",
+    "variantId": "dcp_DME_guardian_tcitadel_std",
     "weaponGroups": [{
         "autofire": false,
         "mode": "LINKED",
         "weapons": {
-            "WS0001": "dcp_thermalmortar",
-            "WS0002": "dcp_shellback",
-            "WS0003": "dcp_shellback",
-            "WS0004": "dcp_impulsor",
-            "WS0005": "dcp_impulsor"
+            "WS0001": "dcp_DME_thermalmortar",
+            "WS0002": "dcp_DME_shellback",
+            "WS0003": "dcp_DME_shellback",
+            "WS0004": "dcp_DME_impulsor",
+            "WS0005": "dcp_DME_impulsor"
         }
     }]
 }

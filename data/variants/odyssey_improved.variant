@@ -13,45 +13,45 @@
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS 001": "dcp_marteau_esm_barrage",
-                "WS 005": "dcp_marteau_esm_pod",
-                "WS 006": "dcp_marteau_esm_pod"
+                "WS 001": "dcp_DME_marteau_esm_barrage",
+                "WS 005": "dcp_DME_marteau_esm_pod",
+                "WS 006": "dcp_DME_marteau_esm_pod"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 002": "dcp_autohybridblaster",
-                "WS 003": "dcp_autohybridblaster",
-                "WS 008": "dcp_magpulser",
-                "WS 011": "dcp_magpulser",
-                "WS 012": "dcp_magpulser",
-                "WS 013": "dcp_magpulser",
-                "WS 015": "dcp_magpulser",
-                "WS 016": "dcp_magpulser"
+                "WS 002": "dcp_DME_autohybridblaster",
+                "WS 003": "dcp_DME_autohybridblaster",
+                "WS 008": "dcp_DME_magpulser",
+                "WS 011": "dcp_DME_magpulser",
+                "WS 012": "dcp_DME_magpulser",
+                "WS 013": "dcp_DME_magpulser",
+                "WS 015": "dcp_DME_magpulser",
+                "WS 016": "dcp_DME_magpulser"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 004": "dcp_gravmissilelauncher"}
+            "weapons": {"WS 004": "dcp_DME_gravmissilelauncher"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 007": "dcp_micropd",
-                "WS 009": "dcp_micropd",
-                "WS 010": "dcp_micropd",
-                "WS 014": "dcp_micropd",
-                "WS 017": "dcp_micropd",
-                "WS 018": "dcp_micropd"
+                "WS 007": "dcp_DME_micropd",
+                "WS 009": "dcp_DME_micropd",
+                "WS 010": "dcp_DME_micropd",
+                "WS 014": "dcp_DME_micropd",
+                "WS 017": "dcp_DME_micropd",
+                "WS 018": "dcp_DME_micropd"
             }
         }
     ],
     "wings": [
-        "dcp_damselfly_wing",
-        "dcp_harridan_wing"
+        "dcp_DME_damselfly_wing",
+        "dcp_DME_harridan_wing"
     ]
 }

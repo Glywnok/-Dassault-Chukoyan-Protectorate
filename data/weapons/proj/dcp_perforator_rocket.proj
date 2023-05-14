@@ -1,8 +1,8 @@
 {
-	"id":"dcp_perforator_rocket",
+	"id":"dcp_DME_perforator_rocket",
 	"specClass":"missile",	
 	"missileType":"ROCKET",
-	"sprite":"graphics/DCP/missiles/dcp_perforator.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_perforator.png",
 	"size":[5,15],	
 	"center":[2.5,7.5],
 	"collisionRadius":15,

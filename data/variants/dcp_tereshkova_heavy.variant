@@ -2,37 +2,37 @@
     "displayName": "Combat",
     "fluxCapacitors": 8,
     "fluxVents": 20,
-    "hullId": "dcp_tereshkova",
+    "hullId": "dcp_DME_tereshkova",
     "hullMods": [],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_tereshkova_heavy",
+    "variantId": "dcp_DME_tereshkova_heavy",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_20cmrailgun"}
+            "weapons": {"WS0002": "dcp_DME_20cmrailgun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_NTKcannon",
-                "WS0004": "dcp_NTKcannon"
+                "WS0003": "dcp_DME_NTKcannon",
+                "WS0004": "dcp_DME_NTKcannon"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_hybridblaster"}
+            "weapons": {"WS0001": "dcp_DME_hybridblaster"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "dcp_linearvulcan",
-                "WS0006": "dcp_linearvulcan",
-                "WS0007": "dcp_linearvulcan"
+                "WS0005": "dcp_DME_linearvulcan",
+                "WS0006": "dcp_DME_linearvulcan",
+                "WS0007": "dcp_DME_linearvulcan"
             }
         }
     ]

@@ -3,29 +3,29 @@
     "fluxCapacitors": 4,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_bbminerunner",
+    "hullId": "dcp_DME_bbminerunner",
     "hullMods": [
-        "dcp_bbsupport",
+        "dcp_DME_bbsupport",
         "magazines"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_bbminerunner_std",
+    "variantId": "dcp_DME_bbminerunner_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_erpulsebeam"}
+            "weapons": {"WS0001": "dcp_DME_erpulsebeam"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_6cmrailgun"}
+            "weapons": {"WS0002": "dcp_DME_6cmrailgun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dcp_matador"}
+            "weapons": {"WS0003": "dcp_DME_matador"}
         }
     ],
     "wings": []

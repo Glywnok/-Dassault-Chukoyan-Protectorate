@@ -1,0 +1,30 @@
+{
+	"id":"dcp_DME_heavyburn",
+	"type":"ENGINE_MOD",
+	"aiType":"BURN_DRIVE_TOGGLE",
+	
+	"statsScript":"data.shipsystems.scripts.dcp_DME_HeavyBurnStats",
+	
+	#"engineGlowColor":[255,175,125,255],
+	#"engineGlowContrailColor":[100,165,255,25],
+	"engineGlowLengthMult":3,
+	"engineGlowWidthMult":1.2,
+	"engineGlowGlowMult":1.8,
+	
+	"flameoutOnImpactChance":0.25,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	"useSound":"dcp_DME_ramdrive_activate",
+	"loopSound":"dcp_DME_ramdrive_loop",
+	"deactivateSound":"dcp_DME_jetinjector_deactivate",
+	"outOfUsesSound":"dcp_DME_system_unavailable",
+	
+	"aiHints":{
+		"activeSpeedIncrease":100,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":100,
+	}
+}

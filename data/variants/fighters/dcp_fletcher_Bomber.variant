@@ -2,16 +2,16 @@
   "displayName": "Bomber",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_fletcher",
+  "hullId": "dcp_DME_fletcher",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_fletcher_Bomber",
+  "variantId": "dcp_DME_fletcher_Bomber",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "dcp_energymissile"
+        "WS0001": "dcp_DME_energymissile"
       }
     }
   ]

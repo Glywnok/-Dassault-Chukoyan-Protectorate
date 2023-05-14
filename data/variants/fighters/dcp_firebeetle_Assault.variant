@@ -2,23 +2,23 @@
   "displayName": "Assault Fighter",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_firebeetle",
+  "hullId": "dcp_DME_firebeetle",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_firebeetle_Assault",
+  "variantId": "dcp_DME_firebeetle_Assault",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_3x4cmrailgun"
+        "WS0001": "dcp_DME_3x4cmrailgun"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "dcp_toreador"
+        "WS0002": "dcp_DME_toreador"
       }
     }
   ]

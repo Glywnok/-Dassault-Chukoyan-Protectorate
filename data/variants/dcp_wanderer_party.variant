@@ -2,39 +2,39 @@
     "displayName": "Pulse Laser",
     "fluxCapacitors": 3,
     "fluxVents": 20,
-    "hullId": "dcp_wanderer",
+    "hullId": "dcp_DME_wanderer",
     "hullMods": [
         "hardenedshieldemitter",
         "targetingunit"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_wanderer_party",
+    "variantId": "dcp_DME_wanderer_party",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_howler",
-                "WS0002": "dcp_6cmrailgun",
-                "WS0003": "dcp_6cmrailgun"
+                "WS0001": "dcp_DME_howler",
+                "WS0002": "dcp_DME_6cmrailgun",
+                "WS0003": "dcp_DME_6cmrailgun"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_heavylrpd",
-                "WS0005": "dcp_heavylrpd"
+                "WS0004": "dcp_DME_heavylrpd",
+                "WS0005": "dcp_DME_heavylrpd"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "dcp_micropd",
-                "WS0007": "dcp_micropd",
-                "WS0008": "dcp_micropd"
+                "WS0006": "dcp_DME_micropd",
+                "WS0007": "dcp_DME_micropd",
+                "WS0008": "dcp_DME_micropd"
             }
         }
     ]

@@ -3,28 +3,28 @@
     "fluxCapacitors": 6,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_burya",
+    "hullId": "dcp_DME_burya",
     "hullMods": ["missleracks"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_burya_heavy",
+    "variantId": "dcp_DME_burya_heavy",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {"WS0001": "dcp_hellhoundlauncher"}
+            "weapons": {"WS0001": "dcp_DME_hellhoundlauncher"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_heavylinear_autogun"}
+            "weapons": {"WS0002": "dcp_DME_heavylinear_autogun"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_linearvulcan",
-                "WS0004": "dcp_linearvulcan"
+                "WS0003": "dcp_DME_linearvulcan",
+                "WS0004": "dcp_DME_linearvulcan"
             }
         }
     ]

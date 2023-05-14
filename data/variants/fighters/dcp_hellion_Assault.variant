@@ -2,23 +2,23 @@
   "displayName": "Phase Fighter",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_hellion",
+  "hullId": "dcp_DME_hellion",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_hellion_Assault",
+  "variantId": "dcp_DME_hellion_Assault",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_shellbackftr",
+        "WS0001": "dcp_DME_shellbackftr",
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "dcp_micropd",
+        "WS0002": "dcp_DME_micropd",
       }
     }
   ]

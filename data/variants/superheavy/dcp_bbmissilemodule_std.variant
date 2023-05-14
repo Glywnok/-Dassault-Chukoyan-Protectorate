@@ -3,7 +3,7 @@
     "fluxCapacitors": 10,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_bbmissilemodule",
+    "hullId": "dcp_DME_bbmissilemodule",
     "hullMods": [
         "eccm",
         "pointdefenseai",
@@ -11,22 +11,22 @@
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_bbmissilemodule_std",
+    "variantId": "dcp_DME_bbmissilemodule_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003t": "dcp_thermalpd",
-                "WS0004": "dcp_thermalpd"
+                "WS0003t": "dcp_DME_thermalpd",
+                "WS0004": "dcp_DME_thermalpd"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0001": "dcp_marteau_esm_barrage",
-                "WS0002": "dcp_marteau_esm_barrage"
+                "WS0001": "dcp_DME_marteau_esm_barrage",
+                "WS0002": "dcp_DME_marteau_esm_barrage"
             }
         }
     ]

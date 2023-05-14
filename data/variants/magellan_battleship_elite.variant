@@ -1,0 +1,73 @@
+{
+    "displayName": "Veteran",
+    "fluxCapacitors": 9,
+    "fluxVents": 50,
+    "hullId": "dcp_magellan_battleship",
+    "hullMods": [
+        "targetingunit",
+        "auxiliarythrusters"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_battleship_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_magellan_hvyfusionbomb_barrage"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "dcp_magellan_calliope",
+                "WS0011": "dcp_magellan_calliope",
+                "WS0012": "dcp_magellan_calliope"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "dcp_magellan_largemortar",
+                "WS0010": "dcp_magellan_largemortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dcp_magellan_solenoidbattery"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_magellan_solenoidbattery"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dcp_magellan_burstmaster",
+                "WS0006": "dcp_magellan_burstmaster",
+                "WS0007": "dcp_magellan_burstmaster",
+                "WS0008": "dcp_magellan_burstmaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "dcp_magellan_medpdmaser",
+                "WS0016": "dcp_magellan_medpdmaser",
+                "WS0019": "dcp_magellan_linkflak",
+                "WS0020": "dcp_magellan_linkflak",
+                "WS0021": "dcp_magellan_medpdmaser",
+                "WS0022": "dcp_magellan_medpdmaser",
+                "WS0023": "dcp_magellan_linkflak",
+                "WS0024": "dcp_magellan_linkflak",
+                "WS0025": "dcp_magellan_medpdmaser",
+                "WS0026": "dcp_magellan_medpdmaser"
+            }
+        }
+    ]
+}

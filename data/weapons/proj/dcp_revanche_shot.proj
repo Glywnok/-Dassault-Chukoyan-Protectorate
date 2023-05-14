@@ -1,5 +1,5 @@
 {
-	"id":"dcp_revanche_shot",
+	"id":"dcp_DME_revanche_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
@@ -13,7 +13,7 @@
 	"textureType":"ROUGH",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-24.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_miniblaster_long_bolt.png",
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_miniblaster_long_bolt.png",
 	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
 					"shotRangeVariance":0.15,
 					"range":0, #set to 0 for 0.9.1
@@ -29,6 +29,6 @@
 									 "particleCount":12,
 									 "particleColor":[255,155,75,225],
 									 "explosionColor":[255,155,75,135],
-									 "sound":"dcp_explosion_flak_small"},
+									 "sound":"dcp_DME_explosion_flak_small"},
 					}
 }

@@ -1,7 +1,7 @@
 {
-	"id":"dcp_miniphaserail_shot",
+	"id":"dcp_DME_miniphaserail_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_MinirailOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_MinirailOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

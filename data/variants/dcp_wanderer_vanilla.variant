@@ -2,11 +2,11 @@
     "displayName": "Vanilla",
     "fluxCapacitors": 0,
     "fluxVents": 20,
-    "hullId": "dcp_wanderer",
+    "hullId": "dcp_DME_wanderer",
     "hullMods": ["insulatedengine"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_wanderer_vanilla",
+    "variantId": "dcp_DME_wanderer_vanilla",
     "weaponGroups": [
         {
             "autofire": true,

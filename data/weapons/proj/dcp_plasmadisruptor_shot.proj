@@ -1,7 +1,7 @@
 {
-	"id":"dcp_plasmadisruptor_shot",
+	"id":"dcp_DME_plasmadisruptor_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_PlasmaGunOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_PlasmaGunOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

@@ -1,0 +1,30 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 7,
+    "fluxVents": 10,
+    "hullId": "dcp_magellan_lev_dronefrig",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_lev_dronefrig_strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "dcp_magellan_targetingbeam"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_ripfiresrm",
+                "WS0003": "dcp_magellan_ripfiresrm"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dcp_magellan_diffusiongun"}
+        }
+    ]
+}

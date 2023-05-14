@@ -1,9 +1,9 @@
 {
-	"id":"dcp_jackal_sub_shot",
+	"id":"dcp_DME_jackal_sub_shot",
 	"specClass":"missile",	
-	"onFireEffect":"data.scripts.weapons.dcp_JackalSubVelocityVarOnFire",
+	"onFireEffect":"data.scripts.weapons.dcp_DME_JackalSubVelocityVarOnFire",
 	"missileType":"BOMB_WITH_SLOW",
-	"sprite":"graphics/DCP/missiles/dcp_slicerblade.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_slicerblade.png",
 	"size":[19,16],	
 	"center":[9.5,8],
 	"collisionRadius":15,

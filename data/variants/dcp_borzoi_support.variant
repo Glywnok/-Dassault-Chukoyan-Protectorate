@@ -2,35 +2,35 @@
     "displayName": "Support",
     "fluxCapacitors": 8,
     "fluxVents": 10,
-    "hullId": "dcp_borzoi",
+    "hullId": "dcp_DME_borzoi",
     "hullMods": [
         "high_scatter_amp",
         "hardened_subsystems"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_borzoi_support",
+    "variantId": "dcp_DME_borzoi_support",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_erpulsebeam",
-                "WS0002": "dcp_erpulsebeam"
+                "WS0001": "dcp_DME_erpulsebeam",
+                "WS0002": "dcp_DME_erpulsebeam"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0010": "dcp_AMMblistertube",
-                "WS0011": "dcp_AMMblistertube"
+                "WS0010": "dcp_DME_AMMblistertube",
+                "WS0011": "dcp_DME_AMMblistertube"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_6cmrailgun"}
+            "weapons": {"WS0005": "dcp_DME_6cmrailgun"}
         }
     ]
 }

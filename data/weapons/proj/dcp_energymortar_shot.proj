@@ -1,7 +1,7 @@
 {
-	"id":"dcp_energymortar_shot",
+	"id":"dcp_DME_energymortar_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_EnergyMortarOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_EnergyMortarOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

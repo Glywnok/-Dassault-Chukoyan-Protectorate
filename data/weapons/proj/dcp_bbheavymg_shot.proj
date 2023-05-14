@@ -1,7 +1,7 @@
 {
-	"id":"dcp_bbheavymg_shot",
+	"id":"dcp_DME_bbheavymg_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_ShellerOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_ShellerOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
@@ -13,5 +13,5 @@
 	"coreColor":[225,245,255,255],
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":5.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_miniblaster_long_bolt.png"
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_miniblaster_long_bolt.png"
 }

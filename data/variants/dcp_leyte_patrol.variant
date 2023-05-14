@@ -3,34 +3,34 @@
     "fluxCapacitors": 1,
     "fluxVents": 9,
     "goalVariant": true,
-    "hullId": "dcp_leyte",
+    "hullId": "dcp_DME_leyte",
     "hullMods": [],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_leyte_patrol",
+    "variantId": "dcp_DME_leyte_patrol",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_6cmrailgun"}
+            "weapons": {"WS0001": "dcp_DME_6cmrailgun"}
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_gravmissiletube"}
+            "weapons": {"WS0005": "dcp_DME_gravmissiletube"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_micropd",
-                "WS0003": "dcp_micropd",
-                "WS0004": "dcp_micropd"
+                "WS0002": "dcp_DME_micropd",
+                "WS0003": "dcp_DME_micropd",
+                "WS0004": "dcp_DME_micropd"
             }
         }
     ],
     "wings": [
-        "dcp_rafale2_wing",
-        "dcp_harridan_wing"
+        "dcp_DME_rafale2_wing",
+        "dcp_DME_harridan_wing"
     ]
 }

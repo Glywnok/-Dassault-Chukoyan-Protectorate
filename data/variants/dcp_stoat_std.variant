@@ -3,29 +3,29 @@
     "fluxCapacitors": 3,
     "fluxVents": 10,
     "goalVariant": true,
-    "hullId": "dcp_stoat",
+    "hullId": "dcp_DME_stoat",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_stoat_std",
+    "variantId": "dcp_DME_stoat_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "dcp_linearcannon",
-                "WS0004": "dcp_linearcannon"
+                "WS0003": "dcp_DME_linearcannon",
+                "WS0004": "dcp_DME_linearcannon"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_hellhound"}
+            "weapons": {"WS0001": "dcp_DME_hellhound"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_autolaser_small"}
+            "weapons": {"WS0002": "dcp_DME_autolaser_small"}
         }
     ],
     "wings": []

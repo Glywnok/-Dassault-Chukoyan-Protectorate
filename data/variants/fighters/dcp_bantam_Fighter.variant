@@ -2,23 +2,23 @@
   "displayName": "Fighter Drone",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_bantam",
+  "hullId": "dcp_DME_bantam",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_bantam_Fighter",
+  "variantId": "dcp_DME_bantam_Fighter",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_braveion"
+        "WS0001": "dcp_DME_braveion"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "dcp_multipdnode"
+        "WS0004": "dcp_DME_multipdnode"
       }
     }
   ]

@@ -2,16 +2,16 @@
   "displayName": "Heavy Bomber",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_rafale",
+  "hullId": "dcp_DME_rafale",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_rafale_Hedgehog",
+  "variantId": "dcp_DME_rafale_Hedgehog",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "dcp_hedgehog_bay"
+        "WS0001": "dcp_DME_hedgehog_bay"
       }
     }
   ]

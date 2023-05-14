@@ -2,32 +2,32 @@
     "displayName": "Balanced",
     "fluxCapacitors": 6,
     "fluxVents": 10,
-    "hullId": "dcp_naja",
+    "hullId": "dcp_DME_naja",
     "hullMods": ["fluxdistributor"],
     "permaMods": [],
-    "variantId": "dcp_naja_balanced",
+    "variantId": "dcp_DME_naja_balanced",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0005": "dcp_shockartillery"}
+            "weapons": {"WS0005": "dcp_DME_shockartillery"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0008": "dcp_6cmrailgun",
-                "WS0009": "dcp_6cmrailgun"
+                "WS0008": "dcp_DME_6cmrailgun",
+                "WS0009": "dcp_DME_6cmrailgun"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_multipdnode",
-                "WS0002": "dcp_multipdnode",
-                "WS0003": "dcp_multipdnode",
-                "WS0004": "dcp_multipdnode"
+                "WS0001": "dcp_DME_multipdnode",
+                "WS0002": "dcp_DME_multipdnode",
+                "WS0003": "dcp_DME_multipdnode",
+                "WS0004": "dcp_DME_multipdnode"
             }
         }
     ]

@@ -12,7 +12,7 @@ import com.fs.starfarer.api.util.Misc;
 import java.util.HashSet;
 import java.util.Set;
 
-public class dcp_DMEMonoblocConstruction extends BaseHullMod {
+public class dcp_DME_MonoblocConstruction extends BaseHullMod {
     private String getString(String key) {
     return Global.getSettings().getString("HullMod", "dcp_" + key);}
         

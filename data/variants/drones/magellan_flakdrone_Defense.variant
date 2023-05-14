@@ -1,0 +1,29 @@
+{
+  "variantId": "dcp_magellan_flakdrone_Drone",
+  "hullId": "dcp_magellan_flakdrone",
+  "displayName": "Drone",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "dcp_magellan_flakcharge"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dcp_magellan_linkflak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

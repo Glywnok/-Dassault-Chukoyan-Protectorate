@@ -1,7 +1,7 @@
 {
-	"id":"dcp_howler_shot",
+	"id":"dcp_DME_howler_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_HowlerOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_HowlerOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",
@@ -17,5 +17,5 @@
 	"textureType":"ROUGH",  # only needed for BEAM spawnType
 	"textureScrollSpeed":-24.0,
 	"pixelsPerTexel":1.0,
-	"bulletSprite":"graphics/DCP/missiles/dcp_howlerslug.png"
+	"bulletSprite":"graphics/DCP/missiles/dcp_DME_howlerslug.png"
 }

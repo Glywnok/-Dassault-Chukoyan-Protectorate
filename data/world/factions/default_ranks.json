@@ -1,12 +1,16 @@
 {
 	"ranks":{
 		#Sigma matter researcher 
-		"dcp_smatterresearch":{"name":"Sigma Matter Researcher"},
+		"dcp_DME_smatterresearch":{"name":"Sigma Matter Researcher"},
+		#Lord Regent
+		"dcp_magellan_lordregent":{"name":"Lord Regent"},
+		#Big Fat Ass
+		"fat_ass":{"name":"Big boi"},
 	},
 	
 	"posts":{
 		#SNRI Rep
-		"dcp_SNRIrep":{"name":"SNRI Representative"},
-		"dcp_armsengineer":{"name":"Weapons Engineer"},
+		"dcp_DME_SNRIrep":{"name":"SNRI Representative"},
+		"dcp_DME_armsengineer":{"name":"Weapons Engineer"},
 	},
 }

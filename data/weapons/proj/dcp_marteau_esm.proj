@@ -1,8 +1,8 @@
 {
-	"id":"dcp_marteau_esm",
+	"id":"dcp_DME_marteau_esm",
 	"specClass":"missile",	
 	"missileType":"MISSILE",
-	"sprite":"graphics/DCP/missiles/dcp_marteau.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_marteau.png",
 	"size":[8,22],	
 	"center":[4,11],
 	"collisionRadius":15,

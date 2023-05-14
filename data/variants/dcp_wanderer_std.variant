@@ -3,40 +3,40 @@
     "fluxCapacitors": 9,
     "fluxVents": 20,
     "goalVariant": true,
-    "hullId": "dcp_wanderer",
+    "hullId": "dcp_DME_wanderer",
     "hullMods": ["auxiliarythrusters"],
     "permaMods": [],
     "quality": 1.0,
-    "variantId": "dcp_wanderer_std",
+    "variantId": "dcp_DME_wanderer_std",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_hybridblaster"}
+            "weapons": {"WS0001": "dcp_DME_hybridblaster"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_autolaser",
-                "WS0005": "dcp_autolaser"
+                "WS0004": "dcp_DME_autolaser",
+                "WS0005": "dcp_DME_autolaser"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_linearcannonlight",
-                "WS0003": "dcp_linearcannonlight"
+                "WS0002": "dcp_DME_linearcannonlight",
+                "WS0003": "dcp_DME_linearcannonlight"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "dcp_micropd",
-                "WS0007": "dcp_micropd",
-                "WS0008": "dcp_micropd"
+                "WS0006": "dcp_DME_micropd",
+                "WS0007": "dcp_DME_micropd",
+                "WS0008": "dcp_DME_micropd"
             }
         }
     ]

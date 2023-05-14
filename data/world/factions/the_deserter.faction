@@ -116,8 +116,8 @@
 			"fallback":{"combatMedium":2},
 		},
 		"combatCapital":{
-			"dcp_bladewood_std":10,
-			"dcp_bladewood_elite":2,
+			"dcp_DME_bladewood_std":10,
+			"dcp_DME_bladewood_elite":2,
 			"fallback":{"combatLarge":2},
 		},
 		

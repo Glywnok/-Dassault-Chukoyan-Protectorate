@@ -1,0 +1,45 @@
+{
+    "displayName": "Makeshift",
+    "fluxCapacitors": 7,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "dcp_magellan_ltfreight_theherd",
+    "hullMods": ["autorepair"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_ltfreight_theherd_std",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0008": "dcp_magellan_ripfiresrmpod"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "dcp_magellan_calliope_sm",
+                "WS0011": "dcp_magellan_calliope_sm"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0009": "dcp_magellan_fuelscatter_flak"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_smciws",
+                "WS0002": "dcp_magellan_smciws"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "dcp_magellan_linkflak"}
+        }
+    ],
+    "wings": []
+}

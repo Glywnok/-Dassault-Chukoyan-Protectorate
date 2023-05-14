@@ -3,37 +3,37 @@
     "fluxCapacitors": 14,
     "fluxVents": 30,
     "goalVariant": true,
-    "hullId": "dcp_baikal",
+    "hullId": "dcp_DME_baikal",
     "hullMods": ["targetingunit"],
     "permaMods": [],
     "quality": 1.0,
-    "variantId": "dcp_baikal_cqb",
+    "variantId": "dcp_DME_baikal_cqb",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0003": "dcp_perforatorpod",
-                "WS0008": "dcp_chasseurLRMlauncher",
-                "WS0009": "dcp_gravmissiletube"
+                "WS0003": "dcp_DME_perforatorpod",
+                "WS0008": "dcp_DME_chasseurLRMlauncher",
+                "WS0009": "dcp_DME_gravmissiletube"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_linearcannonheavy",
-                "WS0002": "dcp_howler",
-                "WS0007": "dcp_linearcannonlight"
+                "WS0001": "dcp_DME_linearcannonheavy",
+                "WS0002": "dcp_DME_howler",
+                "WS0007": "dcp_DME_linearcannonlight"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "dcp_micropd",
-                "WS0005": "dcp_micropd",
-                "WS0006": "dcp_micropd"
+                "WS0004": "dcp_DME_micropd",
+                "WS0005": "dcp_DME_micropd",
+                "WS0006": "dcp_DME_micropd"
             }
         }
     ]

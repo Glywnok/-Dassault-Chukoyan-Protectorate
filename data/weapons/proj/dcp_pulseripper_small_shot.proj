@@ -1,7 +1,7 @@
 {
-	"id":"dcp_pulseripper_small_shot",
+	"id":"dcp_DME_pulseripper_small_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_PulseripperSmallOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_PulseripperSmallOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

@@ -1,9 +1,9 @@
 {
-	"id":"dcp_rocketbomb",
+	"id":"dcp_DME_rocketbomb",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_ElecRocketOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_ElecRocketOnHit",
 	"missileType":"ROCKET",
-	"sprite":"graphics/DCP/missiles/dcp_electronrocket.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_electronrocket.png",
 	"size":[11,22],	
 	"center":[5.5,11],
 	"collisionRadius":10,

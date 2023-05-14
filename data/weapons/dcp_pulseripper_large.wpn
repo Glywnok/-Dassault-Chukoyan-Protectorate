@@ -1,13 +1,13 @@
 {
-	"id":"dcp_pulseripper_large",  # this id must match what's in the spreadsheet
+	"id":"dcp_DME_pulseripper_large",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"BALLISTIC",
 	"mountTypeOverride":"HYBRID",
 	"size":"MEDIUM",
-	"turretSprite":"graphics/DCP/weapons/dcp_pulseripper_turret_base.png",
-	"turretGlowSprite":"graphics/DCP/weapons/dcp_pulseripper_turret_glow.png",
-	"hardpointSprite":"graphics/DCP/weapons/dcp_pulseripper_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_pulseripper_hardpoint_glow.png",
+	"turretSprite":"graphics/DCP/weapons/dcp_DME_pulseripper_turret_base.png",
+	"turretGlowSprite":"graphics/DCP/weapons/dcp_DME_pulseripper_turret_glow.png",
+	"hardpointSprite":"graphics/DCP/weapons/dcp_DME_pulseripper_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/DCP/weapons/dcp_DME_pulseripper_hardpoint_glow.png",
 	"glowColor":[183,65,13,255],
 	"turretOffsets":[11, 0, 11, 0, 11, 0],
 	"turretAngleOffsets":[6, -6, 0],
@@ -23,6 +23,6 @@
 					   "particleCount":12,
 					   "particleColor":[183,95,70,255]},
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
-	"projectileSpecId":"dcp_pulseripper_large_shot",  # projectile that will be fired
-	"fireSoundTwo":"dcp_degencycler_fire",
+	"projectileSpecId":"dcp_DME_pulseripper_large_shot",  # projectile that will be fired
+	"fireSoundTwo":"dcp_DME_degencycler_fire",
 }

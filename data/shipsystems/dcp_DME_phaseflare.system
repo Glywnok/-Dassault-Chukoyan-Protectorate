@@ -1,0 +1,7 @@
+{
+	"id":"dcp_DME_phaseflare",
+	"type":"WEAPON",
+	"aiType":"FLARE_JAMMER",
+	"weaponDataId":"dcp_DME_BBDflare",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

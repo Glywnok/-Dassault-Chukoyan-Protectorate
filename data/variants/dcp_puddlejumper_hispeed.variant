@@ -2,23 +2,23 @@
     "displayName": "High Speed",
     "fluxCapacitors": 3,
     "fluxVents": 10,
-    "hullId": "dcp_puddlejumper",
+    "hullId": "dcp_DME_puddlejumper",
     "hullMods": ["unstable_injector"],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_puddlejumper_hispeed",
+    "variantId": "dcp_DME_puddlejumper_hispeed",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "dcp_erpulsebeam"}
+            "weapons": {"WS0002": "dcp_DME_erpulsebeam"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "dcp_microflak",
-                "WS0003": "dcp_micropd"
+                "WS0001": "dcp_DME_microflak",
+                "WS0003": "dcp_DME_micropd"
             }
         }
     ],

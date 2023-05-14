@@ -2,27 +2,27 @@
     "displayName": "Support",
     "fluxCapacitors": 8,
     "fluxVents": 10,
-    "hullId": "dcp_blackhand",
+    "hullId": "dcp_DME_blackhand",
     "hullMods": [
-        "dcp_bbsupport",
+        "dcp_DME_bbsupport",
         "turretgyros"
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "dcp_blackhand_support",
+    "variantId": "dcp_DME_blackhand_support",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "dcp_bbheavymg",
-                "WS0003": "dcp_bbheavymg"
+                "WS0002": "dcp_DME_bbheavymg",
+                "WS0003": "dcp_DME_bbheavymg"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "dcp_marteau_esm_pod"}
+            "weapons": {"WS0001": "dcp_DME_marteau_esm_pod"}
         }
     ]
 }

@@ -1,0 +1,34 @@
+{
+    "displayName": "Export",
+    "fluxCapacitors": 6,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "dcp_magellan_supply_civ",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "dcp_magellan_supply_civ_std",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dcp_magellan_smciws",
+                "WS0004": "dcp_magellan_smciws"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "dcp_magellan_stratLRM_launcher"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "dcp_magellan_smciws",
+                "WS0002": "dcp_magellan_smciws"
+            }
+        }
+    ]
+}

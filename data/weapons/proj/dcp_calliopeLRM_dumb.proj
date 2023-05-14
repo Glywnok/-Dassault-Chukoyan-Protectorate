@@ -1,10 +1,10 @@
 {
-	"id":"dcp_calliopeLRM_dumb",
+	"id":"dcp_DME_calliopeLRM_dumb",
 	"specClass":"missile",
-	"onHitEffect":"data.scripts.weapons.dcp_CalliopeOnHit",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_CalliopeOnHit",
 	"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
 	#"missileType":"ROCKET",
-	"sprite":"graphics/DCP/missiles/dcp_calliope_stage2.png",
+	"sprite":"graphics/DCP/missiles/dcp_DME_calliope_stage2.png",
 	"size":[5,14],	
 	"center":[2.5,7],
 	"collisionRadius":12,

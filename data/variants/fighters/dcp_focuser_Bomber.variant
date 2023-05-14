@@ -2,16 +2,16 @@
   "displayName": "Bomber",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcp_focuser",
+  "hullId": "dcp_DME_focuser",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcp_focuser_Bomber",
+  "variantId": "dcp_DME_focuser_Bomber",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "dcp_lens_hdem_fighter"
+        "WS0001": "dcp_DME_lens_hdem_fighter"
       }
     }
   ]

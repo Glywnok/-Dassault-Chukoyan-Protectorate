@@ -1,0 +1,24 @@
+{
+	"id":"dcp_DME_mine_strike_sm",
+	"type":"STAT_MOD",
+	"aiType":"MINE_STRIKE",
+	
+	"statsScript":"data.shipsystems.scripts.dcp_DME_SigmaMineStrikeStats",
+
+	"canUseWhileRightClickSystemOn":true,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"dcp_DME_DME_dronelaunch",
+	"outOfUsesSound":"dcp_DME_system_unavailable",
+	
+	"aiHints":{
+		"threatRange":1500,
+		"threatAmount":10,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

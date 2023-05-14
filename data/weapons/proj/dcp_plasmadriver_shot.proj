@@ -1,8 +1,8 @@
 {
-	"id":"dcp_plasmadriver_shot",
+	"id":"dcp_DME_plasmadriver_shot",
 	"specClass":"projectile",
-	"onFireEffect":"data.scripts.weapons.dcp_PlasmaDriverOnFire",
-	"onHitEffect":"data.scripts.weapons.dcp_PlasmaDriverOnHit",
+	"onFireEffect":"data.scripts.weapons.dcp_DME_PlasmaDriverOnFire",
+	"onHitEffect":"data.scripts.weapons.dcp_DME_PlasmaDriverOnHit",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",

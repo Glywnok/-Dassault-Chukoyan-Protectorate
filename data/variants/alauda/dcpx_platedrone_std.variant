@@ -2,16 +2,16 @@
   "displayName": "Standard",
   "fluxCapacitors": 0,
   "fluxVents": 0,
-  "hullId": "dcpx_platedrone",
+  "hullId": "dcp_DMEx_platedrone",
   "hullMods": [],
   "quality": 0,
-  "variantId": "dcpx_platedrone_std",
+  "variantId": "dcp_DMEx_platedrone_std",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "dcp_micropd"
+        "WS0001": "dcp_DME_micropd"
       }
     }
   ]

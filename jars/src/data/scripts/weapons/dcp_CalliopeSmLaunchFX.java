@@ -4,7 +4,7 @@ import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
-import data.scripts.MagellanUtils;
+import data.scripts.DMEUtils;
 import java.awt.Color;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -52,7 +52,7 @@ public class dcp_CalliopeSmLaunchFX implements EveryFrameWeaponEffectPlugin {
             // muzzle flash on fire after charging; ammo decreased indicates shot fired
             if (weapon_ammo < last_weapon_ammo) {
                 // do muzzle flash
-                Vector2f explosion_offset = MagellanUtils.translate_polar(weapon_location, OFFSET + ((0.05f * 100f) - 2f), weapon.getCurrAngle());
+                Vector2f explosion_offset = DMEUtils.translate_polar(weapon_location, OFFSET + ((0.05f * 100f) - 2f), weapon.getCurrAngle());
                 engine.spawnExplosion(explosion_offset, ship.getVelocity(), FLASH_COLOR, FLASH_SIZE, 0.1f);
 
             }
