@@ -29,9 +29,9 @@
 			#"width": 0,
           	#"length": 210,
           	#"angle": 210,
-          	"style": "MagellanFighterFlareTrail",
+          	"style": "dcp_magellanFighterFlareTrail",
 		},
-		"1":{"style":"MagellanFighterFlare"},
-		"2":{"style":"MagellanFighterFlare"},
+		"1":{"style":"dcp_magellanFighterFlare"},
+		"2":{"style":"dcp_magellanFighterFlare"},
 	},
 }

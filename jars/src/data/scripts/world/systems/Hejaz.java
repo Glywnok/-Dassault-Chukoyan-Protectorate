@@ -80,7 +80,7 @@ public class Hejaz {
       SectorEntityToken hejaz_loc = system.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
       hejaz_loc.setCircularOrbitPointingDown(hejaz_star, 0.0F, 4000.0F, 180.0F);
       system.addRingBand(hejaz_star, "misc", "rings_dust0", 256.0F, 3, Color.white, 256.0F, 4800.0F, 300.0F, "ring", "Hejaz Dust Band");
-      SectorEntityToken stationDerelict1 = DerelictThemeGenerator.addSalvageEntity(system, "dcp_DME_bladebreaker_habitat", "blade_breakers");
+      SectorEntityToken stationDerelict1 = DerelictThemeGenerator.addSalvageEntity(system, "dcp_bladebreaker_habitat", "blade_breakers");
       stationDerelict1.setId("hejaz_derelict1");
       stationDerelict1.setCircularOrbit(hejaz_star, 360.0F * (float)Math.random(), 4800.0F, 270.0F);
       Misc.setDefenderOverride(stationDerelict1, new DefenderDataOverride("blade_breakers", 1.0F, 8.0F, 21.0F));

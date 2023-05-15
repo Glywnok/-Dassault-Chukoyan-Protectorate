@@ -2,7 +2,7 @@
 	"id":"dcp_DME_flare_phase",
 	"specClass":"missile",	
 	"missileType":"FLARE_JAMMER",
-	"sprite":"graphics/DCP/missiles/dcp_DME_proxbomb_sm.png",
+	"sprite":"graphics/dcp_DME/missiles/dcp_DME_proxbomb_sm.png",
 	"size":[7,10],	
 	"center":[3.5,5],
 	"collisionRadius":9,

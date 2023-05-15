@@ -3,7 +3,7 @@
 	"specClass":"missile",
 	"missileType":"BOMB",
 	"onFireEffect":"data.scripts.weapons.dcp_magellan_FusbombFtrFX",
-	"sprite":"graphics/DCP/missiles/dcp_magellan_canister_lg.png",
+	"sprite":"graphics/dcp_magellan/missiles/dcp_magellan_canister_lg.png",
 	"size":[5,10],	
 	"center":[2.5,5],
 	"collisionRadius":8,

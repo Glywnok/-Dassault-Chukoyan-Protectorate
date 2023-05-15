@@ -1,7 +1,7 @@
 {
 	"id":"dcp_DME_scatterlaser_sub_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_DME_AutolaserSmallSparks",
+	"onHitEffect":"data.scripts.weapons.AutolaserSmallSparks",
 	#"spawnType":"BEAM",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",

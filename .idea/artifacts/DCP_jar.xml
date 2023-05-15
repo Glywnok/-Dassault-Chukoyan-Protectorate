@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="DCP:jar">
+    <output-path>$PROJECT_DIR$/jars</output-path>
+    <root id="archive" name="DCP.jar">
+      <element id="module-output" name="DCP" />
+    </root>
+  </artifact>
+</component>

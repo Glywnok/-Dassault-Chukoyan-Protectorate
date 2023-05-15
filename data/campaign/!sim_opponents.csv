@@ -9,9 +9,7 @@ dcp_DME_snowgoose_escort
 dcp_DME_tunguska_std
 dcp_DME_tunguska_fsup
 dcp_DME_wanderer_std
-dcp_DME_wanderer_std
 dcp_DME_wanderer_balanced
-dcp_DME_vesper_std
 dcp_DME_vesper_std
 dcp_DME_vesper_assault
 dcp_DME_starsylph_std
@@ -23,7 +21,6 @@ dcp_DME_stoat_std
 dcp_DME_stoat_escort
 dcp_DME_jeannedarc_std
 dcp_DME_mindanao_std
-dcp_DME_leyte_std
 dcp_DME_leyte_std
 dcp_DME_samoyed_std
 dcp_DME_samoyed_elite

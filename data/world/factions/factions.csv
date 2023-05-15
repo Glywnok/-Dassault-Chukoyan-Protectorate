@@ -1,6 +1,16 @@
 faction
+#DME
 data/world/factions/dassault_mikoyan.faction
 data/world/factions/6eme_bureau.faction
 data/world/factions/blade_breakers.faction
 data/world/factions/the_deserter.faction
+
+#MAGELLAN
+data/world/factions/magellan_protectorate.faction
+data/world/factions/magellan_startigers.faction
+data/world/factions/magellan_leveller.faction
+data/world/factions/magellan_ancientstarfarer.faction
+data/world/factions/magellan_civviescavs.faction
+data/world/factions/magellan_independentmkt.faction
+data/world/factions/magellan_theherd.faction
 

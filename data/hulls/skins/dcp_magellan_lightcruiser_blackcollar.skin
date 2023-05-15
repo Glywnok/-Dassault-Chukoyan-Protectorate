@@ -3,7 +3,7 @@
 	"skinHullId":"dcp_magellan_lightcruiser_blackcollar",
 	"hullName":"Chenel [BCR]",
 	"descriptionId":"dcp_magellan_lightcruiser",
-	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in Magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating.",
+	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in dcp_magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating.",
 	"tags":["dcp_magellan_blackcollar", "restricted"],
 	"tech":"Blackcollar Regiment",
     "fleetPoints":14,

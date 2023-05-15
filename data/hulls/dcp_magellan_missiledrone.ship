@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_missiledrone",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/DCP/missiles/dcp_magellan_missiledrone.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "height": 18,
   "width": 10,
   "center": [5, 6.5],
@@ -32,7 +32,7 @@
       "width": 5,
       "angle": 180,
       "contrailSize": 5,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     }
   ],
   "bounds": [

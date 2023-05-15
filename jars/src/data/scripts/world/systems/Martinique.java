@@ -43,7 +43,7 @@ public class Martinique {
       morningside.getMarket().getFirstCondition("ore_moderate").setSurveyed(true);
       SectorEntityToken morningside_field = system.addTerrain("magnetic_field", new MagneticFieldParams(60.0F, 90.0F, morningside, 60.0F, 120.0F, new Color(50, 30, 100, 30), 0.3F, new Color[]{new Color(50, 20, 110, 130), new Color(200, 50, 130, 190), new Color(250, 70, 150, 240), new Color(200, 80, 130, 255), new Color(75, 0, 160), new Color(127, 0, 255)}));
       morningside_field.setCircularOrbit(morningside, 0.0F, 0.0F, 100.0F);
-      PlanetAPI valjean = system.addPlanet("dcp_DME_planet_valjean", martinique_star, "Valjean", "dcp_DME_aridbread", 0.0F, 120.0F, 2160.0F, 80.0F);
+      PlanetAPI valjean = system.addPlanet("dcp_DME_planet_valjean", martinique_star, "Valjean", "dcp_aridbread", 0.0F, 120.0F, 2160.0F, 80.0F);
       valjean.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "asharu"));
       valjean.getSpec().setGlowColor(new Color(255, 160, 30, 255));
       valjean.getSpec().setUseReverseLightForGlow(true);

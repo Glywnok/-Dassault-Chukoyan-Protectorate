@@ -37,7 +37,9 @@
 		"dcp_DME_stoat_c_std":8,
 		
 
-		#Magellan
+		#MAGELLAN
+
+
 		"dcp_magellan_linefrigate_std":10,
 		"dcp_magellan_supportfrigate_std":10,
 		"dcp_magellan_linefrigate_attack":5,

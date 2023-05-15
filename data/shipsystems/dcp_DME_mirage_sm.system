@@ -2,7 +2,7 @@
 	"id":"dcp_DME_mirage_sm",
 	"type":"DISPLACER",
 	"aiType":"PHASE_DISPLACER",
-	#"statsScript":"data.shipsystems.scripts.dcp_DME_MirageFXStatsSm",
+	#"statsScript":"data.shipsystems.scripts.MirageFXStatsSm",
 
 	"jitterColor":[145,175,255,155],
 	#"jitterColor":[255,100,255,150],

@@ -114,7 +114,7 @@
         -136,
         -0
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 18
     },
     {
@@ -125,7 +125,7 @@
         -125,
         17
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 12
     },
     {
@@ -136,7 +136,7 @@
         -125,
         -17
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 12
     },
     {
@@ -147,7 +147,7 @@
         -20,
         47
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 10
     },
     {
@@ -158,7 +158,7 @@
         -20,
         -47
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 10
     },
     {
@@ -169,7 +169,7 @@
         -18,
         57.5
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 6
     },
     {
@@ -180,7 +180,7 @@
         -18,
         -57.5
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 6
     }
   ],
@@ -194,7 +194,7 @@
   ],
   "shieldRadius": 140,
   "spriteName": "graphics/DCP/ships/phase/dcp_magellan_phasecruiser.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

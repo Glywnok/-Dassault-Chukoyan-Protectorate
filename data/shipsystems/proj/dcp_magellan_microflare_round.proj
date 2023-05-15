@@ -2,7 +2,7 @@
 	"id":"dcp_magellan_microflare_round",
 	"specClass":"missile",	
 	"missileType":"FLARE",
-	"sprite":"graphics/DCP/missiles/dcp_magellan_canister_sm.png",
+	"sprite":"graphics/dcp_magellan/missiles/dcp_magellan_canister_sm.png",
 	"size":[2,4],	
 	"center":[1,2],
 	"collisionRadius":4,

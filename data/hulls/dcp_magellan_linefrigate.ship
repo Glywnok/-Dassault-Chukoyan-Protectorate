@@ -1,9 +1,9 @@
 {
-  "hullName": "Magellan Line Frigate",
+  "hullName": "dcp_magellan Line Frigate",
   "hullId": "dcp_magellan_linefrigate",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/dcp_magellan_linefrigate.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "height": 97,
   "width": 74,
   "center": [37, 48],
@@ -95,7 +95,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-47, 10.5],
@@ -103,7 +103,7 @@
       "width": 6,
       "angle": 180,
       "contrailSize": 6,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-47, -10.5],
@@ -111,7 +111,7 @@
       "width": 6,
       "angle": -180,
       "contrailSize": 6,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     }
   ],
   "bounds": [

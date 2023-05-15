@@ -47,7 +47,7 @@
   ],
   "shieldRadius": 54,
   "spriteName": "graphics/DCP/ships/dcp_magellan_fastdestroyerarmor.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "viewOffset": 0,
   "weaponSlots": [],
   "width": 52

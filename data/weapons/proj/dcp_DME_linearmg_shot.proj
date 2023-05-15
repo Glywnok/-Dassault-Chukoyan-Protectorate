@@ -1,7 +1,7 @@
 {
 	"id":"dcp_DME_linearmg_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_DME_LinearMGSparks",
+	"onHitEffect":"data.scripts.weapons.LinearMGSparks",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	

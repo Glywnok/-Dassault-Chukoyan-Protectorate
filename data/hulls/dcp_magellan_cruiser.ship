@@ -1,9 +1,9 @@
 {
-  "hullName": "Magellan Cruiser",
+  "hullName": "dcp_magellan Cruiser",
   "hullId": "dcp_magellan_cruiser",
   "hullSize": "CRUISER",
   "spriteName": "graphics/DCP/ships/dcp_magellan_cruiser.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "height": 272,
   "width": 154,
   "center": [77, 128],
@@ -247,7 +247,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-127, -41],
@@ -255,7 +255,7 @@
       "width": 12,
       "angle": -180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-127, 62],
@@ -263,7 +263,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-127, -62],
@@ -271,7 +271,7 @@
       "width": 12,
       "angle": -180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-125, 51.5],
@@ -279,7 +279,7 @@
       "width": 6,
       "angle": 180,
       "contrailSize": 6,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-125, -51.5],
@@ -287,7 +287,7 @@
       "width": 6,
       "angle": -180,
       "contrailSize": 6,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-108, 14],
@@ -295,7 +295,7 @@
       "width": 6,
       "angle": 180,
       "contrailSize": 6,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-108, -14],
@@ -303,7 +303,7 @@
       "width": 6,
       "angle": -180,
       "contrailSize": 6,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     }
   ],
   "bounds": [

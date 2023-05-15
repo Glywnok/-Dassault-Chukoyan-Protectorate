@@ -268,15 +268,15 @@ public class BladeBreakerThemeGenerator extends BaseThemeGenerator {
                float prob = 0.0F;
                float min = 1.0F;
                float max = 1.0F;
-               if ("istl_bladebreaker_mining".equals(added.entityType)) {
+               if ("dcp_bladebreaker_mining".equals(added.entityType)) {
                   prob = 0.25F;
                   min = 8.0F;
                   max = 15.0F;
-               } else if ("istl_bladebreaker_habitat".equals(added.entityType)) {
+               } else if ("dcp_bladebreaker_habitat".equals(added.entityType)) {
                   prob = 0.25F;
                   min = 8.0F;
                   max = 15.0F;
-               } else if ("istl_bladebreaker_research".equals(added.entityType)) {
+               } else if ("dcp_bladebreaker_research".equals(added.entityType)) {
                   prob = 0.25F;
                   min = 10.0F;
                   max = 20.0F;

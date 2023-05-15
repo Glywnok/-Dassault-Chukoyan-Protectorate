@@ -1,7 +1,7 @@
 {
 	"id":"dcp_DME_alaudapulse_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.scripts.weapons.dcp_DME_AutolaserSmallSparks",
+	"onHitEffect":"data.scripts.weapons.AutolaserSmallSparks",
 	"hitGlowRadius":15,
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
