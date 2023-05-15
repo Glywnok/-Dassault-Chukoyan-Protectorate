@@ -33,7 +33,7 @@ public class Martinique {
       system.addTag("theme_core");
       system.addTag("theme_core_populated");
       system.addTag("theme_dassault_system");
-      PlanetAPI morningside = system.addPlanet("istl_planet_morningside", martinique_star, "Morningside", "barren", 240.0F, 50.0F, 840.0F, 40.0F);
+      PlanetAPI morningside = system.addPlanet("dcp_DME_planet_morningside", martinique_star, "Morningside", "barren", 240.0F, 50.0F, 840.0F, 40.0F);
       morningside.setCustomDescriptionId("planet_morningside");
       Misc.initConditionMarket(morningside);
       morningside.getMarket().addCondition("no_atmosphere");
@@ -43,7 +43,7 @@ public class Martinique {
       morningside.getMarket().getFirstCondition("ore_moderate").setSurveyed(true);
       SectorEntityToken morningside_field = system.addTerrain("magnetic_field", new MagneticFieldParams(60.0F, 90.0F, morningside, 60.0F, 120.0F, new Color(50, 30, 100, 30), 0.3F, new Color[]{new Color(50, 20, 110, 130), new Color(200, 50, 130, 190), new Color(250, 70, 150, 240), new Color(200, 80, 130, 255), new Color(75, 0, 160), new Color(127, 0, 255)}));
       morningside_field.setCircularOrbit(morningside, 0.0F, 0.0F, 100.0F);
-      PlanetAPI valjean = system.addPlanet("istl_planet_valjean", martinique_star, "Valjean", "istl_aridbread", 0.0F, 120.0F, 2160.0F, 80.0F);
+      PlanetAPI valjean = system.addPlanet("dcp_DME_planet_valjean", martinique_star, "Valjean", "dcp_DME_aridbread", 0.0F, 120.0F, 2160.0F, 80.0F);
       valjean.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "asharu"));
       valjean.getSpec().setGlowColor(new Color(255, 160, 30, 255));
       valjean.getSpec().setUseReverseLightForGlow(true);
@@ -65,7 +65,7 @@ public class Martinique {
       system.addAsteroidBelt(martinique_star, 90, 3750.0F, 500.0F, 100.0F, 120.0F, "asteroid_belt", "Martinique Alpha Belt");
       system.addRingBand(martinique_star, "misc", "rings_dust0", 256.0F, 0, Color.white, 256.0F, 3600.0F, 105.0F, (String)null, (String)null);
       system.addRingBand(martinique_star, "misc", "rings_asteroids0", 256.0F, 1, Color.white, 256.0F, 3720.0F, 125.0F, (String)null, (String)null);
-      PlanetAPI cosette = system.addPlanet("istl_planet_cosette", martinique_star, "Cosette", "barren-bombarded", 75.0F, 40.0F, 4200.0F, 180.0F);
+      PlanetAPI cosette = system.addPlanet("dcp_DME_planet_cosette", martinique_star, "Cosette", "barren-bombarded", 75.0F, 40.0F, 4200.0F, 180.0F);
       cosette.setCustomDescriptionId("planet_cosette");
       Misc.initConditionMarket(cosette);
       cosette.getMarket().addCondition("no_atmosphere");
@@ -105,7 +105,7 @@ public class Martinique {
       MarketAPI novymirMarket = AddMarketplace.addMarketplace("dassault_mikoyan", indStation, (ArrayList)null, "Novy Mir Starforge", 5, new ArrayList(Arrays.asList("free_market", "industrial_polity", "vice_demand", "population_5")), new ArrayList(Arrays.asList("battlestation_high", "patrolhq", "refining", "spaceport", "heavyindustry", "fuelprod", "population")), new ArrayList(Arrays.asList("black_market", "open_market", "storage")), 0.2F);
       novymirMarket.addIndustry("fuelprod", new ArrayList(Arrays.asList("synchrotron")));
       indStation.setCustomDescriptionId("novymir_starforge");
-      PlanetAPI javert = system.addPlanet("istl_planet_javert", martinique_star, "Javert", "cryovolcanic", 135.0F, 120.0F, 6000.0F, 270.0F);
+      PlanetAPI javert = system.addPlanet("dcp_DME_planet_javert", martinique_star, "Javert", "cryovolcanic", 135.0F, 120.0F, 6000.0F, 270.0F);
       javert.setCustomDescriptionId("planet_javert");
       Misc.initConditionMarket(javert);
       javert.getMarket().addCondition("thin_atmosphere");

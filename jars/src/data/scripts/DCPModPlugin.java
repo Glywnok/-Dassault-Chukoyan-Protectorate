@@ -11,6 +11,7 @@ import com.fs.starfarer.api.combat.MissileAIPlugin;
 import com.fs.starfarer.api.combat.MissileAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import data.scripts.world.ISTLGen;
+import data.scripts.world.MagellanGen;
 import exerelin.campaign.SectorManager;
 import java.io.IOException;
 import org.apache.log4j.Level;
@@ -30,6 +31,7 @@ public class DCPModPlugin extends BaseModPlugin {
    private static void initDME() {
       (new ISTLGen()).generate(Global.getSector());
    }
+   private static void initMagellan(){(new MagellanGen()).generate(Global.getSector());}
 
    private static void initBreakers() {
       (new ISTLGen()).randombreakers(Global.getSector());
@@ -38,6 +40,7 @@ public class DCPModPlugin extends BaseModPlugin {
    public void onNewGame() {
       if (!isExerelin || SectorManager.getCorvusMode()) {
          initDME();
+         initMagellan();
       }
 
       if (!RANDOMBREAKERS) {

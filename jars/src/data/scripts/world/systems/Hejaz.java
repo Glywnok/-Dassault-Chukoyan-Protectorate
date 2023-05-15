@@ -51,7 +51,7 @@ public class Hejaz {
       debrisBeta1.setDiscoverable(true);
       debrisBeta1.setCircularOrbit(hejaz_star, 360.0F * (float)Math.random(), 2250.0F, 150.0F);
       debrisBeta1.setId("hejaz_debris1");
-      this.addDerelict(system, hejaz_star, "istl_tereshkova_export", ShipCondition.GOOD, 2250.0F, true);
+      this.addDerelict(system, hejaz_star, "dcp_DME_tereshkova_export", ShipCondition.GOOD, 2250.0F, true);
       system.addAsteroidBelt(hejaz_star, 60, 3250.0F, 500.0F, 290.0F, 310.0F, "asteroid_belt", "Hejaz Middle Belt");
       system.addRingBand(hejaz_star, "misc", "rings_dust0", 256.0F, 1, Color.white, 256.0F, 3200.0F, 360.0F, (String)null, (String)null);
       system.addRingBand(hejaz_star, "misc", "rings_ice0", 256.0F, 2, Color.white, 256.0F, 3300.0F, 300.0F, (String)null, (String)null);
@@ -63,7 +63,7 @@ public class Hejaz {
       debrisBeta2.setDiscoverable(true);
       debrisBeta2.setCircularOrbit(hejaz_star, 360.0F * (float)Math.random(), 3250.0F, 240.0F);
       debrisBeta2.setId("hejaz_debris2");
-      PlanetAPI qarib = system.addPlanet("istl_planet_qarib", hejaz_star, "Qarib", "barren-desert", 240.0F, 75.0F, 4000.0F, 180.0F);
+      PlanetAPI qarib = system.addPlanet("dcp_DME_planet_qarib", hejaz_star, "Qarib", "barren-desert", 240.0F, 75.0F, 4000.0F, 180.0F);
       qarib.getSpec().setCloudRotation(20.0F);
       qarib.applySpecChanges();
       qarib.setCustomDescriptionId("planet_qarib");
@@ -80,7 +80,7 @@ public class Hejaz {
       SectorEntityToken hejaz_loc = system.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
       hejaz_loc.setCircularOrbitPointingDown(hejaz_star, 0.0F, 4000.0F, 180.0F);
       system.addRingBand(hejaz_star, "misc", "rings_dust0", 256.0F, 3, Color.white, 256.0F, 4800.0F, 300.0F, "ring", "Hejaz Dust Band");
-      SectorEntityToken stationDerelict1 = DerelictThemeGenerator.addSalvageEntity(system, "istl_bladebreaker_habitat", "blade_breakers");
+      SectorEntityToken stationDerelict1 = DerelictThemeGenerator.addSalvageEntity(system, "dcp_DME_bladebreaker_habitat", "blade_breakers");
       stationDerelict1.setId("hejaz_derelict1");
       stationDerelict1.setCircularOrbit(hejaz_star, 360.0F * (float)Math.random(), 4800.0F, 270.0F);
       Misc.setDefenderOverride(stationDerelict1, new DefenderDataOverride("blade_breakers", 1.0F, 8.0F, 21.0F));

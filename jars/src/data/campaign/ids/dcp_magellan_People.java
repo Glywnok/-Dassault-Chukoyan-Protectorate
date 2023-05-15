@@ -9,7 +9,7 @@ import com.fs.starfarer.api.characters.FullName.Gender;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.impl.campaign.ids.Voices;
 
-public class magellan_People {
+public class dcp_magellan_People {
    public static final String MAGELLAN_ARAL = "magellan_protectorate_aral";
    public static final String MAGELLAN_MADSCIENTIST = "magellan_protectorate_madscientist";
    public static final String MAGELLAN_LEV_OBILO = "magellan_leveller_obilo";

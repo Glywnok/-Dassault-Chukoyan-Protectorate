@@ -7,9 +7,9 @@ public class SigmaUtils {
    Random characterSaveSeed;
    Random random;
    float selector;
-   public static final String ISTL_GUARDIAN_ACOLYTE = "istl_guardian_turret_std";
-   public static final String ISTL_GUARDIAN_DMG = "istl_bbsuperheavy_dmg";
-   public static final String ISTL_GUARDIAN_STD = "istl_bbsuperheavy_std";
+   public static final String ISTL_GUARDIAN_ACOLYTE = "dcp_DME_guardian_turret_std";
+   public static final String ISTL_GUARDIAN_DMG = "dcp_DME_bbsuperheavy_dmg";
+   public static final String ISTL_GUARDIAN_STD = "dcp_DME_bbsuperheavy_std";
    public static int level = 20;
    public static float radius_star = 300.0F;
    public static float radius_station = 3000.0F;

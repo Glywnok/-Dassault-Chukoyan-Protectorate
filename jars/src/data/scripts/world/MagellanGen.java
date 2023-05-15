@@ -5,7 +5,7 @@ import com.fs.starfarer.api.campaign.RepLevel;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.SectorGeneratorPlugin;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
-import data.campaign.ids.magellan_People;
+import data.campaign.ids.dcp_magellan_People;
 import data.scripts.world.systems.KhamnConstellation;
 import java.util.Iterator;
 import java.util.List;
@@ -15,7 +15,7 @@ public class MagellanGen implements SectorGeneratorPlugin {
       SharedData.getData().getPersonBountyEventData().addParticipatingFaction("magellan_protectorate");
       initFactionRelationships(sector);
       (new KhamnConstellation()).generate(sector);
-      (new magellan_People()).advance();
+      (new dcp_magellan_People()).advance();
    }
 
    public static void initFactionRelationships(SectorAPI sector) {

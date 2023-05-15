@@ -42,7 +42,7 @@ public class Kostroma {
       system.addTag("theme_core_populated");
       system.addTag("theme_dassault_system");
       system.addTag("theme_dassault_major");
-      PlanetAPI cendre = system.addPlanet("istl_planet_cendre", kostroma_star, "Cendre", "barren", 210.0F, 35.0F, 920.0F, 30.0F);
+      PlanetAPI cendre = system.addPlanet("dcp_DME_planet_cendre", kostroma_star, "Cendre", "barren", 210.0F, 35.0F, 920.0F, 30.0F);
       cendre.setCustomDescriptionId("planet_cendre");
       Misc.initConditionMarket(cendre);
       cendre.getMarket().addCondition("no_atmosphere");
@@ -50,7 +50,7 @@ public class Kostroma {
       cendre.getMarket().addCondition("very_hot");
       SectorEntityToken kostroma_field1 = system.addTerrain("magnetic_field", new MagneticFieldParams(400.0F, 1050.0F, kostroma_star, 850.0F, 1250.0F, new Color(50, 30, 100, 45), 0.3F, new Color[]{new Color(50, 20, 110, 130), new Color(150, 30, 120, 150), new Color(200, 50, 130, 190), new Color(250, 70, 150, 240), new Color(200, 80, 130, 255), new Color(75, 0, 160), new Color(127, 0, 255)}));
       kostroma_field1.setCircularOrbit(kostroma_star, 0.0F, 0.0F, 120.0F);
-      PlanetAPI astalon = system.addPlanet("istl_planet_astalon", kostroma_star, "Astalon", "toxic", 30.0F, 75.0F, 1540.0F, 80.0F);
+      PlanetAPI astalon = system.addPlanet("dcp_DME_planet_astalon", kostroma_star, "Astalon", "toxic", 30.0F, 75.0F, 1540.0F, 80.0F);
       astalon.getSpec().setPitch(-15.0F);
       astalon.getSpec().setTilt(12.0F);
       astalon.applySpecChanges();
@@ -62,7 +62,7 @@ public class Kostroma {
       system.addAsteroidBelt(kostroma_star, 120, 1780.0F, 300.0F, 200.0F, 300.0F, "asteroid_belt", "Astalon Necklace");
       SectorEntityToken kostroma_field2 = system.addTerrain("magnetic_field", new MagneticFieldParams(200.0F, 2020.0F, kostroma_star, 1920.0F, 2120.0F, new Color(50, 30, 100, 30), 0.6F, new Color[]{new Color(50, 20, 110, 130), new Color(150, 30, 120, 150), new Color(200, 50, 130, 190), new Color(250, 70, 150, 240), new Color(200, 80, 130, 255), new Color(75, 0, 160), new Color(127, 0, 255)}));
       kostroma_field2.setCircularOrbit(kostroma_star, 0.0F, 0.0F, 180.0F);
-      PlanetAPI mariegalante = system.addPlanet("istl_planet_mariegalante", kostroma_star, "Marie-Galante", "jungle", 270.0F, 150.0F, 2400.0F, 135.0F);
+      PlanetAPI mariegalante = system.addPlanet("dcp_DME_planet_mariegalante", kostroma_star, "Marie-Galante", "jungle", 270.0F, 150.0F, 2400.0F, 135.0F);
       mariegalante.setCustomDescriptionId("planet_mariegalante");
       mariegalante.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "asharu"));
       mariegalante.getSpec().setGlowColor(new Color(235, 235, 255, 255));
@@ -81,10 +81,10 @@ public class Kostroma {
       mariegalante.getMarket().addCondition("organics_plentiful");
       mariegalante.getMarket().addCondition("extreme_weather");
       SectorEntityToken derelictTerminal = system.addCustomEntity("mariegalante_station", "Orbital Terminal", "station_side03", "neutral");
-      derelictTerminal.setCircularOrbitWithSpin(system.getEntityById("istl_planet_mariegalante"), 210.0F, 240.0F, 45.0F, 7.0F, 21.0F);
+      derelictTerminal.setCircularOrbitWithSpin(system.getEntityById("dcp_DME_planet_mariegalante"), 210.0F, 240.0F, 45.0F, 7.0F, 21.0F);
       derelictTerminal.setInteractionImage("illustrations", "space_wreckage");
       derelictTerminal.setCustomDescriptionId("station_mariegalante");
-      PlanetAPI cayenne = system.addPlanet("istl_planet_cayenne", mariegalante, "Cayenne", "barren-bombarded", 30.0F, 50.0F, 300.0F, 45.0F);
+      PlanetAPI cayenne = system.addPlanet("dcp_DME_planet_cayenne", mariegalante, "Cayenne", "barren-bombarded", 30.0F, 50.0F, 300.0F, 45.0F);
       cayenne.setCustomDescriptionId("planet_cayenne");
       cayenne.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "asharu"));
       cayenne.getSpec().setGlowColor(new Color(255, 245, 235, 255));
@@ -218,7 +218,7 @@ public class Kostroma {
       debrisOuter2.setCircularOrbit(kostroma_star, 15.0F, 5500.0F, 240.0F);
       debrisOuter2.setId("kostroma_debrisOuter2");
       system.addRingBand(kostroma_star, "misc", "rings_dust0", 256.0F, 0, Color.white, 256.0F, 5900.0F, 240.0F);
-      PlanetAPI gironde = system.addPlanet("istl_planet_gironde", kostroma_star, "Gironde", "gas_giant", 300.0F, 360.0F, 8000.0F, 240.0F);
+      PlanetAPI gironde = system.addPlanet("dcp_DME_planet_gironde", kostroma_star, "Gironde", "gas_giant", 300.0F, 360.0F, 8000.0F, 240.0F);
       gironde.getSpec().setPitch(35.0F);
       gironde.getSpec().setPlanetColor(new Color(200, 235, 245, 255));
       gironde.getSpec().setAtmosphereColor(new Color(210, 240, 250, 250));
@@ -240,7 +240,7 @@ public class Kostroma {
       SectorEntityToken girondeL5 = system.addTerrain("asteroid_field", new AsteroidFieldParams(600.0F, 900.0F, 28, 52, 7.0F, 18.0F, "Gironde L5 Trojans"));
       girondeL4.setCircularOrbit(kostroma_star, 360.0F, 8000.0F, 240.0F);
       girondeL5.setCircularOrbit(kostroma_star, 240.0F, 8000.0F, 240.0F);
-      PlanetAPI pyla = system.addPlanet("istl_planet_pyla", gironde, "Pyla", "arid", 150.0F, 40.0F, 760.0F, 60.0F);
+      PlanetAPI pyla = system.addPlanet("dcp_DME_planet_pyla", gironde, "Pyla", "arid", 150.0F, 40.0F, 760.0F, 60.0F);
       pyla.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "aurorae"));
       pyla.getSpec().setGlowColor(new Color(153, 50, 204, 225));
       pyla.getSpec().setUseReverseLightForGlow(true);
@@ -254,14 +254,14 @@ public class Kostroma {
       SectorEntityToken pyla_field = system.addTerrain("magnetic_field", new MagneticFieldParams(80.0F, 80.0F, pyla, 40.0F, 120.0F, new Color(50, 30, 100, 30), 0.8F, new Color[]{new Color(50, 20, 110, 130), new Color(150, 30, 120, 150), new Color(200, 50, 130, 190), new Color(250, 70, 150, 240), new Color(200, 80, 130, 255), new Color(75, 0, 160), new Color(127, 0, 255)}));
       pyla_field.setCircularOrbit(pyla, 0.0F, 0.0F, 100.0F);
       system.addRingBand(gironde, "misc", "rings_dust0", 256.0F, 0, Color.gray, 128.0F, 850.0F, 60.0F);
-      PlanetAPI lareole = system.addPlanet("istl_planet_lareole", gironde, "La Réole", "water", 40.0F, 120.0F, 1280.0F, 105.0F);
+      PlanetAPI lareole = system.addPlanet("dcp_DME_planet_lareole", gironde, "La Réole", "water", 40.0F, 120.0F, 1280.0F, 105.0F);
       lareole.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "volturn"));
       lareole.getSpec().setGlowColor(new Color(255, 255, 255, 255));
       lareole.getSpec().setUseReverseLightForGlow(true);
       lareole.getSpec().setPitch(35.0F);
       lareole.applySpecChanges();
       SectorEntityToken lareolePolis = system.addCustomEntity("kostroma_port", "La Réole Polis", "station_dme_outpost", "dassault_mikoyan");
-      lareolePolis.setCircularOrbitPointingDown(system.getEntityById("istl_planet_lareole"), 90.0F, 250.0F, 75.0F);
+      lareolePolis.setCircularOrbitPointingDown(system.getEntityById("dcp_DME_planet_lareole"), 90.0F, 250.0F, 75.0F);
       lareolePolis.setInteractionImage("illustrations", "space_bar");
       SectorEntityToken lareole_loc = system.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
       lareole_loc.setCircularOrbitPointingDown(gironde, 220.0F, 1280.0F, 105.0F);
@@ -270,7 +270,7 @@ public class Kostroma {
       lareolePolis.setCustomDescriptionId("station_lareole_polis");
       system.addRingBand(gironde, "misc", "rings_dust0", 256.0F, 0, Color.white, 256.0F, 1720.0F, 120.0F);
       system.addAsteroidBelt(gironde, 120, 1720.0F, 135.0F, 200.0F, 300.0F, "asteroid_belt", "Gironde Belt");
-      PlanetAPI chantilly = system.addPlanet("istl_planet_chantilly", gironde, "Chantilly", "barren", 300.0F, 50.0F, 1920.0F, 135.0F);
+      PlanetAPI chantilly = system.addPlanet("dcp_DME_planet_chantilly", gironde, "Chantilly", "barren", 300.0F, 50.0F, 1920.0F, 135.0F);
       chantilly.setCustomDescriptionId("planet_chantilly");
       Misc.initConditionMarket(chantilly);
       chantilly.getMarket().addCondition("thin_atmosphere");
@@ -298,7 +298,7 @@ public class Kostroma {
       system.addRingBand(kostroma_star, "misc", "rings_dust0", 256.0F, 3, Color.white, 256.0F, 10750.0F, 340.0F);
       ring = system.addTerrain("ring", new RingParams(456.0F, 10575.0F, (SectorEntityToken)null, "Kostroma's Tears"));
       ring.setCircularOrbit(kostroma_star, 0.0F, 0.0F, 120.0F);
-      PlanetAPI tenacity = system.addPlanet("istl_planet_tenacity", kostroma_star, "Tenacity", "tundra", 150.0F, 135.0F, 11350.0F, 300.0F);
+      PlanetAPI tenacity = system.addPlanet("dcp_DME_planet_tenacity", kostroma_star, "Tenacity", "tundra", 150.0F, 135.0F, 11350.0F, 300.0F);
       tenacity.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "asharu"));
       tenacity.getSpec().setGlowColor(new Color(255, 160, 30, 255));
       tenacity.getSpec().setUseReverseLightForGlow(true);
@@ -308,9 +308,9 @@ public class Kostroma {
       SectorEntityToken tenacity_mirror1 = system.addCustomEntity("tenacity_mirror1", "Tenacity Stellar Mirror Alpha", "stellar_mirror", "independent");
       SectorEntityToken tenacity_mirror2 = system.addCustomEntity("tenacity_mirror2", "Tenacity Stellar Mirror Beta", "stellar_mirror", "independent");
       SectorEntityToken tenacity_mirror3 = system.addCustomEntity("tenacity_mirror3", "Tenacity Stellar Mirror Gamma", "stellar_mirror", "independent");
-      tenacity_mirror1.setCircularOrbitPointingDown(system.getEntityById("istl_planet_tenacity"), 113.0F, 360.0F, 300.0F);
-      tenacity_mirror2.setCircularOrbitPointingDown(system.getEntityById("istl_planet_tenacity"), 150.0F, 360.0F, 300.0F);
-      tenacity_mirror3.setCircularOrbitPointingDown(system.getEntityById("istl_planet_tenacity"), 187.0F, 360.0F, 300.0F);
+      tenacity_mirror1.setCircularOrbitPointingDown(system.getEntityById("dcp_DME_planet_tenacity"), 113.0F, 360.0F, 300.0F);
+      tenacity_mirror2.setCircularOrbitPointingDown(system.getEntityById("dcp_DME_planet_tenacity"), 150.0F, 360.0F, 300.0F);
+      tenacity_mirror3.setCircularOrbitPointingDown(system.getEntityById("dcp_DME_planet_tenacity"), 187.0F, 360.0F, 300.0F);
       tenacity_mirror1.setCustomDescriptionId("stellar_mirror");
       tenacity_mirror2.setCustomDescriptionId("stellar_mirror");
       tenacity_mirror3.setCustomDescriptionId("stellar_mirror");
@@ -344,7 +344,7 @@ public class Kostroma {
       debrisOuter4.setDiscoverable(true);
       debrisOuter4.setCircularOrbit(kostroma_star, 360.0F * (float)Math.random(), 13200.0F, 400.0F);
       debrisOuter4.setId("kostroma_debrisOuter4");
-      PlanetAPI davout = system.addPlanet("istl_planet_davout", kostroma_star, "Davout", "frozen", 180.0F, 90.0F, 14000.0F, 360.0F);
+      PlanetAPI davout = system.addPlanet("dcp_DME_planet_davout", kostroma_star, "Davout", "frozen", 180.0F, 90.0F, 14000.0F, 360.0F);
       davout.setCustomDescriptionId("planet_davout");
       Misc.initConditionMarket(davout);
       davout.getMarket().addCondition("thin_atmosphere");
