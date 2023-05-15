@@ -102,7 +102,7 @@
     
     "vengeanceFleetSizeMult":1.6,
         
-    "miningVariantsOrWings":["dcp_tereshkova_std"],
+    "miningVariantsOrWings":["dcp_DME_tereshkova_std"],
     
     "customStations":["station_dme_outpost", "station_dme_lab"],
     
@@ -112,34 +112,34 @@
     
     "startShipsSolo":[["dcp_starsylph_std"]],
     "startShipsCombatSmall":[
-    	["dcp_vesper_elite", "dcp_stoat_escort", "dcp_stoat_escort", "dcp_samoyed_std"],
-    	["dcp_naja_elite", "dcp_stoat_std", "dcp_burya_heavy"],
-    	["dcp_tunguska_assault", "dcp_stoat_antifighter"]
+    	["dcp_DME_vesper_elite", "dcp_DME_stoat_escort", "dcp_DME_stoat_escort", "dcp_DME_samoyed_std"],
+    	["dcp_DME_naja_elite", "dcp_DME_stoat_std", "dcp_DME_burya_heavy"],
+    	["dcp_DME_tunguska_assault", "dcp_DME_stoat_antifighter"]
     	],
     "startShipsCarrierSmall":[
-    	["dcp_leyte_std", "dcp_vesper_assault", "dcp_burya_std"],
-    	["dcp_leyte_patrol", "dcp_tereshkova_assault", "dcp_borzoi_elite"]
+    	["dcp_DME_leyte_std", "dcp_DME_vesper_assault", "dcp_DME_burya_std"],
+    	["dcp_DME_leyte_patrol", "dcp_DME_tereshkova_assault", "dcp_DME_borzoi_elite"]
     	],
     "startShipsTradeSmall":[
-    	["dcp_naja_std", "dcp_tereshkova_std", "dcp_sevastopol_std", "dcp_puddlejumper_std"],
-    	["dcp_wanderer_balanced", "dcp_sevastopol_std", "dcp_sevastopol_std"]
+    	["dcp_DME_naja_std", "dcp_DME_tereshkova_std", "dcp_DME_sevastopol_std", "dcp_DME_puddlejumper_std"],
+    	["dcp_DME_wanderer_balanced", "dcp_DME_sevastopol_std", "dcp_DME_sevastopol_std"]
     	],
     "startShipsCombatLarge":[
-    	["dcp_kormoran_std", "dcp_baikal_std", "dcp_tunguska_std"],
-    	["dcp_maskirovka_std", "dcp_tonnerre_std", "dcp_wanderer_support", "dcp_burya_support"]
+    	["dcp_DME_kormoran_std", "dcp_DME_baikal_std", "dcp_DME_tunguska_std"],
+    	["dcp_DME_maskirovka_std", "dcp_DME_tonnerre_std", "dcp_DME_wanderer_support", "dcp_DME_burya_support"]
     	],
     "startShipsCarrierLarge":[
-    	["dcp_mindanao_std", "dcp_wanderer_std", "dcp_borzoi_elite", "dcp_sevastopol_std"],
-    	["dcp_mindanao_patrol", "dcp_wanderer_balanced", "dcp_stoat_antifighter", "dcp_stoat_antifighter"]
+    	["dcp_DME_mindanao_std", "dcp_DME_wanderer_std", "dcp_DME_borzoi_elite", "dcp_DME_sevastopol_std"],
+    	["dcp_DME_mindanao_patrol", "dcp_DME_wanderer_balanced", "dcp_DME_stoat_antifighter", "dcp_DME_stoat_antifighter"]
     	],
     "startShipsTradeLarge":[
-    	["dcp_zelenograd_explore", "dcp_sevastopol_std"],
-    	["dcp_baikal_brone_barrage", "dcp_centaur_std", "dcp_centaur_std", "dcp_naja_std"]
+    	["dcp_DME_zelenograd_explore", "dcp_DME_sevastopol_std"],
+    	["dcp_DME_baikal_brone_barrage", "dcp_DME_centaur_std", "dcp_DME_centaur_std", "dcp_DME_naja_std"]
     	],
-    "startShipsSuper":[["dcp_snowgoose_elite"]],
+    "startShipsSuper":[["dcp_DME_snowgoose_elite"]],
 
     "startSpecialItems":[
-        [["dcp_dmecore_package", "dcp_dmeadv_package"]],
+        [["dcp_DME_dmecore_package", "dcp_DME_dmeadv_package"]],
     ],
     
     "colonyExpeditionChance":1.2,

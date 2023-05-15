@@ -1,10 +1,10 @@
 variant id
-dcp_centaur_std
-dcp_kormoran_std
-dcp_leyte_std
-dcp_mindanao_std
-dcp_naja_std
-dcp_snowgoose_std
-dcp_starsylph_std
-dcp_stoat_std
-dcp_zelenograd_std
+dcp_DME_centaur_std
+dcp_DME_kormoran_std
+dcp_DME_leyte_std
+dcp_DME_mindanao_std
+dcp_DME_naja_std
+dcp_DME_snowgoose_std
+dcp_DME_starsylph_std
+dcp_DME_stoat_std
+dcp_DME_zelenograd_std

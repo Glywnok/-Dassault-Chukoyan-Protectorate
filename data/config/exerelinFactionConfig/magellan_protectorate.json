@@ -88,21 +88,21 @@
     "diplomacyTraits":["paranoid", "law_and_order", "irredentist", "selfrighteous"],
 
     "startShipsSolo":[
-      ["magellan_cbtfreight_frontier"]
+      ["dcp_magellan_cbtfreight_frontier"]
     ],
     "startShipsCombatSmall":[
-      ["magellan_supportdestroyer_std", "magellan_linefrigate_std", "magellan_phasefrig_std"]
+      ["dcp_magellan_supportdestroyer_std", "dcp_magellan_linefrigate_std", "dcp_magellan_phasefrig_std"]
     ],
     "startShipsCombatLarge":[
-      ["magellan_cruiser_std", "magellan_linedestroyer_std", "magellan_supportfrigate_std"]
+      ["dcp_magellan_cruiser_std", "dcp_magellan_linedestroyer_std", "dcp_magellan_supportfrigate_std"]
     ],
     "startShipsCarrierLarge":[
-      ["magellan_fastdestroyer_std", "magellan_carrier_std", "magellan_linefrigate_std"]
+      ["dcp_magellan_fastdestroyer_std", "dcp_magellan_carrier_std", "dcp_magellan_linefrigate_std"]
     ],
-    "startShipsSuper":[["magellan_skipjack_militarized_std"]],
+    "startShipsSuper":[["dcp_magellan_skipjack_militarized_std"]],
 
     "startSpecialItems":[
-        [["magellan_core_package", "magellan_adv_package"]],
+        [["dcp_magellan_core_package", "dcp_magellan_adv_package"]],
     ],
     
     "defenceStations":[

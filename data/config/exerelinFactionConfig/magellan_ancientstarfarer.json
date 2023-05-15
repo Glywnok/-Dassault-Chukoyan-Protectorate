@@ -46,23 +46,23 @@
     ],
     
     "startShipsSolo":[
-    	["magellan_cbtfreight_civ_std"],
-    	["magellan_schooner_d_std"]
+    	["dcp_magellan_cbtfreight_civ_std"],
+    	["dcp_magellan_schooner_d_std"]
     ],
 	"startShipsTradeSmall":[
-		["magellan_linefrigate_civ_std", "magellan_supply_civ_std"],
-		["magellan_skiff_d_std", "magellan_ltfreight_std"],
-		["magellan_schooner_yellowtail_std", "magellan_ltfreight_yellowtail_std"]
+		["dcp_magellan_linefrigate_civ_std", "dcp_magellan_supply_civ_std"],
+		["dcp_magellan_skiff_d_std", "dcp_magellan_ltfreight_std"],
+		["dcp_magellan_schooner_yellowtail_std", "dcp_magellan_ltfreight_yellowtail_std"]
 	],
     "startShipsCombatSmall":[
-    	["magellan_patroldestroyer_civ_std", "magellan_linefrigate_civ_std"]
+    	["dcp_magellan_patroldestroyer_civ_std", "dcp_magellan_linefrigate_civ_std"]
     ],
     "startShipsSuper":[
-    	["magellan_skipjack_std"]
+    	["dcp_magellan_skipjack_std"]
     ],
     
     "startSpecialItems":[
-        [["magellan_core_package", "magellan_adv_package"]],
+        [["dcp_magellan_core_package", "dcp_magellan_adv_package"]],
     ],
     
 }
