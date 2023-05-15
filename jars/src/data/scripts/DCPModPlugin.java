@@ -72,8 +72,8 @@ public class DCPModPlugin extends BaseModPlugin {
       boolean hasGraphicsLib = Global.getSettings().getModManager().isModEnabled("shaderLib");
       if (hasGraphicsLib) {
          ShaderLib.init();
-         LightData.readLightDataCSV("data/lights/dcp_DME_light_data.csv");
-         TextureData.readTextureDataCSV("data/lights/dcp_DME_texture_data.csv");
+         LightData.readLightDataCSV("data/lights/dcp_light_data.csv");
+         TextureData.readTextureDataCSV("data/lights/dcp_texture_data.csv");
       }
 
       try {

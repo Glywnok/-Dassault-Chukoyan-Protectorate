@@ -2,7 +2,7 @@
 	"plugins":{
 		"DCPBlockedHullmodDisplayScript":"data.hullmods.DCPBlockedHullmodDisplayScript",
 		"magellan_LightInjector":"data.scripts.plugins.dcp_magellan_lightInjector",
-		"DME_LightInjector":"data.scripts.plugins.dcp_lightInjector",
+		"DME_LightInjector":"data.scripts.plugins.dcp_DME_lightInjector",
 		#"DME_ModuleRetreat":"data.scripts.plugins.dcp_ModuleRetreatCleaner",
 		#"DME_ProjectileTrailHandlerPlugin":"data.scripts.plugins.dcp_ProjectileTrailHandlerPlugin",
 	},
