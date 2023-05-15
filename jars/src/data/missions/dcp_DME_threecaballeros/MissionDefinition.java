@@ -1,4 +1,4 @@
-package data.missions.istl_threecaballeros;
+package data.missions.dcp_DME_threecaballeros;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;
@@ -15,15 +15,15 @@ public class MissionDefinition implements MissionDefinitionPlugin {
       api.addBriefingItem("Destroy or drive off the attacking pirate swarm.");
       api.addBriefingItem("Don't lose 'Pup Tentacle' - it's the centerpiece of your fleet.");
       api.addBriefingItem("You've got the advantage in firepower and durability. Exploit it.");
-      api.addToFleet(FleetSide.PLAYER, "istl_tunguska_fsup", FleetMemberType.SHIP, "Pup Tentacle", true);
-      api.addToFleet(FleetSide.PLAYER, "istl_wanderer_std", FleetMemberType.SHIP, "Peaches En Regalia", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_tereshkova_tech", FleetMemberType.SHIP, "Roxy & Elsewhere", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_tunguska_fsup", FleetMemberType.SHIP, "Pup Tentacle", true);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_wanderer_std", FleetMemberType.SHIP, "Peaches En Regalia", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_tereshkova_tech", FleetMemberType.SHIP, "Roxy & Elsewhere", false);
       api.addToFleet(FleetSide.ENEMY, "hammerhead_Overdriven", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "centurion_Assault", FleetMemberType.SHIP, false);
-      api.addToFleet(FleetSide.ENEMY, "istl_sevastopol_mk1_std", FleetMemberType.SHIP, "I'm The Slime", false);
-      api.addToFleet(FleetSide.ENEMY, "istl_naja_mk1_std", FleetMemberType.SHIP, false);
-      api.addToFleet(FleetSide.ENEMY, "istl_naja_mk1_brawl", FleetMemberType.SHIP, false);
-      api.addToFleet(FleetSide.ENEMY, "istl_naja_mk1_brawl", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_sevastopol_mk1_std", FleetMemberType.SHIP, "I'm The Slime", false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_mk1_std", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_mk1_brawl", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_mk1_brawl", FleetMemberType.SHIP, false);
       api.defeatOnShipLoss("Pup Tentacle");
       float width = 12000.0F;
       float height = 12000.0F;

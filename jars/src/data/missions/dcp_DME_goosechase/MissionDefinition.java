@@ -1,4 +1,4 @@
-package data.missions.istl_goosechase;
+package data.missions.dcp_DME_goosechase;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;
@@ -14,9 +14,9 @@ public class MissionDefinition implements MissionDefinitionPlugin {
       api.setFleetTagline(FleetSide.ENEMY, "Automated Test Targets");
       api.addBriefingItem("Destroy the enemy fleet.");
       api.addBriefingItem("Don't lose the prototype. We'll bill you.");
-      api.addToFleet(FleetSide.PLAYER, "istl_snowgoose_std", FleetMemberType.SHIP, "DMS Incontrovertible", true);
-      api.addToFleet(FleetSide.PLAYER, "istl_samoyed_std", FleetMemberType.SHIP, false);
-      api.addToFleet(FleetSide.PLAYER, "istl_samoyed_std", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_snowgoose_std", FleetMemberType.SHIP, "DMS Incontrovertible", true);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_samoyed_std", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_samoyed_std", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "dominator_Assault", FleetMemberType.SHIP, "Incapable Of Listening To Reason", false);
       api.addToFleet(FleetSide.ENEMY, "enforcer_Assault", FleetMemberType.SHIP, "Smooth Jazz Will Be Deployed", false);
       api.addToFleet(FleetSide.ENEMY, "lasher_CS", FleetMemberType.SHIP, "The Part Where He Kills You", false);

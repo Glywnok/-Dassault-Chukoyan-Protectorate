@@ -4,7 +4,7 @@
 	#
 
 	"corona_sigma":{
-		"plugin":"data.campaign.terrain.dcp_StarCoronaSigmaTerrainPlugin",
+		"plugin":"data.campaign.terrain.dcp_DME_StarCoronaSigmaTerrainPlugin",
 		"musicSuppression":1,
 		# inside corona but not inside flare
 		"loopOne":"dcp_terrain_sigma",

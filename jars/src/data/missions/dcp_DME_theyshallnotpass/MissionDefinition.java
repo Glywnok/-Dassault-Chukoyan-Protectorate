@@ -1,4 +1,4 @@
-package data.missions.istl_theyshallnotpass;
+package data.missions.dcp_DME_theyshallnotpass;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;
@@ -14,11 +14,11 @@ public class MissionDefinition implements MissionDefinitionPlugin {
       api.setFleetTagline(FleetSide.ENEMY, "The Guarantor's Guard");
       api.addBriefingItem("Destroy the enemy.");
       api.addBriefingItem("Don't lose the DMS Talleyrand");
-      api.addToFleet(FleetSide.PLAYER, "istl_jeannedarc_std", FleetMemberType.SHIP, "DMS Talleyrand", true);
-      api.addToFleet(FleetSide.PLAYER, "istl_baikal_std", FleetMemberType.SHIP, "DMS Konev", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_leyte_std", FleetMemberType.SHIP, "DMS Hougoumont", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_stoat_std", FleetMemberType.SHIP, false);
-      api.addToFleet(FleetSide.PLAYER, "istl_stoat_std", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_jeannedarc_std", FleetMemberType.SHIP, "DMS Talleyrand", true);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_baikal_std", FleetMemberType.SHIP, "DMS Konev", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_leyte_std", FleetMemberType.SHIP, "DMS Hougoumont", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_stoat_std", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_stoat_std", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "conquest_Standard", FleetMemberType.SHIP, "NIS Imperator", false);
       api.addToFleet(FleetSide.ENEMY, "dominator_d_Assault", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "drover_Strike", FleetMemberType.SHIP, false);

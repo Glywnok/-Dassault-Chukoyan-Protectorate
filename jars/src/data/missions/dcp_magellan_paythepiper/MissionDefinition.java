@@ -1,4 +1,4 @@
-package data.missions.magellan_paythepiper;
+package data.missions.dcp_magellan_paythepiper;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;

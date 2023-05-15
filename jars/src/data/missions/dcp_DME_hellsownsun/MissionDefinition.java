@@ -1,4 +1,4 @@
-package data.missions.istl_hellsownsun;
+package data.missions.dcp_DME_hellsownsun;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;
@@ -15,18 +15,18 @@ public class MissionDefinition implements MissionDefinitionPlugin {
       api.addBriefingItem("Destroy or drive off the Sixth Bureau task group.");
       api.addBriefingItem("Don't lose your flagship - your forces will be easy pickings if command is disrupted.");
       api.addBriefingItem("Acquit yourself well, volunteers. The Council expects great things from you.");
-      api.addToFleet(FleetSide.PLAYER, "istl_devilray_strike", FleetMemberType.SHIP, "Fang Leader", true);
-      api.addToFleet(FleetSide.PLAYER, "istl_stormkestrel_elite", FleetMemberType.SHIP, "Base One", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_snakeeye_support", FleetMemberType.SHIP, "Fang I", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_imp_assault", FleetMemberType.SHIP, "Fang II", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_imp_assault", FleetMemberType.SHIP, "Fang III", false);
-      api.addToFleet(FleetSide.ENEMY, "istl_wildgoose_elite", FleetMemberType.SHIP, "SBS Night Killer V", false);
-      api.addToFleet(FleetSide.ENEMY, "istl_kormoran_6e_elite", FleetMemberType.SHIP, "SBS Ultima Ratio", false);
-      api.addToFleet(FleetSide.ENEMY, "istl_tunguska_6e_elite", FleetMemberType.SHIP, "SBS Eccentric Orbit", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_devilray_strike", FleetMemberType.SHIP, "Fang Leader", true);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_stormkestrel_elite", FleetMemberType.SHIP, "Base One", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_snakeeye_support", FleetMemberType.SHIP, "Fang I", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_imp_assault", FleetMemberType.SHIP, "Fang II", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_imp_assault", FleetMemberType.SHIP, "Fang III", false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_wildgoose_elite", FleetMemberType.SHIP, "SBS Night Killer V", false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_kormoran_6e_elite", FleetMemberType.SHIP, "SBS Ultima Ratio", false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_tunguska_6e_elite", FleetMemberType.SHIP, "SBS Eccentric Orbit", false);
       api.addToFleet(FleetSide.ENEMY, "afflictor_patrol", FleetMemberType.SHIP, "SBS String 1", false);
-      api.addToFleet(FleetSide.ENEMY, "istl_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 2", false);
-      api.addToFleet(FleetSide.ENEMY, "istl_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 3", false);
-      api.addToFleet(FleetSide.ENEMY, "istl_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 4", false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 2", false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 3", false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_vesper_6e_elite", FleetMemberType.SHIP, "SBS String 4", false);
       api.addToFleet(FleetSide.ENEMY, "wolf_patrol", FleetMemberType.SHIP, "SBS String 5", false);
       api.addToFleet(FleetSide.ENEMY, "omen_patrol", FleetMemberType.SHIP, "SBS String 6", false);
       api.addToFleet(FleetSide.ENEMY, "omen_patrol", FleetMemberType.SHIP, "SBS String 7", false);

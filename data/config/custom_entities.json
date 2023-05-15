@@ -168,7 +168,7 @@
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
 		"tags":["has_interaction_dialog", "dcp_hardened_warning_beacon", "neutrino_high"],
 		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
-		"pluginClass":"data.campaign.dcp_BladeBreakerBeaconPlugin",
+		"pluginClass":"data.campaign.dcp_DME_BladeBreakerBeaconPlugin",
 	},
 
 	"station_breaker":{

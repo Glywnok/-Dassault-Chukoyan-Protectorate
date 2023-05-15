@@ -1,4 +1,4 @@
-package data.missions.istl_heavyiron;
+package data.missions.dcp_DME_heavyiron;
 
 import com.fs.starfarer.api.combat.BaseEveryFrameCombatPlugin;
 import com.fs.starfarer.api.combat.CombatEngineAPI;
@@ -18,21 +18,21 @@ public class MissionDefinition implements MissionDefinitionPlugin {
       api.addBriefingItem("Defeat all enemy forces");
       api.addBriefingItem("Use your range advantage and deeper flux pool to finish enemies. Don't get swarmed.");
       api.addBriefingItem("Remember: Your armor will absorb tremendous punishment. Use your shield sparingly in order to fire more often.");
-      api.addToFleet(FleetSide.PLAYER, "istl_baikal_brone_elite", FleetMemberType.SHIP, "DMS Rokossovsky", true);
-      api.addToFleet(FleetSide.PLAYER, "istl_grand_union_std", FleetMemberType.SHIP, "UNS Nameless", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_feeder_std", FleetMemberType.SHIP, "UNS Dar es Salaam", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_stoat_c_std", FleetMemberType.SHIP, "UNS Balls To The Wall", false);
-      api.addToFleet(FleetSide.PLAYER, "istl_stoat_c_std", FleetMemberType.SHIP, "UNS Plowman", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_baikal_brone_elite", FleetMemberType.SHIP, "DMS Rokossovsky", true);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_grand_union_std", FleetMemberType.SHIP, "UNS Nameless", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_feeder_std", FleetMemberType.SHIP, "UNS Dar es Salaam", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_stoat_c_std", FleetMemberType.SHIP, "UNS Balls To The Wall", false);
+      api.addToFleet(FleetSide.PLAYER, "dcp_DME_stoat_c_std", FleetMemberType.SHIP, "UNS Plowman", false);
       api.defeatOnShipLoss("DMS Rokossovsky");
       api.addToFleet(FleetSide.ENEMY, "heron_Attack", FleetMemberType.SHIP, "Hiryu", false);
-      api.addToFleet(FleetSide.ENEMY, "istl_naja_export", FleetMemberType.SHIP, false);
-      api.addToFleet(FleetSide.ENEMY, "istl_naja_mk1_std", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_export", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_naja_mk1_std", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "colossus3_Pirate", FleetMemberType.SHIP, "Golden Circle", true);
       api.addToFleet(FleetSide.ENEMY, "enforcer_Assault", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "lasher_CS", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "hound_Overdriven", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "hound_d_pirates_Shielded", FleetMemberType.SHIP, false);
-      api.addToFleet(FleetSide.ENEMY, "istl_sevastopol_mk1_std", FleetMemberType.SHIP, false);
+      api.addToFleet(FleetSide.ENEMY, "dcp_DME_sevastopol_mk1_std", FleetMemberType.SHIP, false);
       api.addToFleet(FleetSide.ENEMY, "nebula_Standard", FleetMemberType.SHIP, false);
       float width = 27000.0F;
       float height = 21000.0F;
@@ -50,7 +50,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
       }
 
       api.addAsteroidField(minX + width / 2.0F, minY + height / 2.0F, 15.0F, 9200.0F, 25.0F, 75.0F, 135);
-      api.addPlanet(0.0F, 0.0F, 120.0F, "istl_aridbread", 50.0F, true);
+      api.addPlanet(0.0F, 0.0F, 120.0F, "dcp_DME_aridbread", 50.0F, true);
       api.addPlugin(new BaseEveryFrameCombatPlugin() {
          public void init(CombatEngineAPI engine) {
             engine.getContext().setStandoffRange(6000.0F);

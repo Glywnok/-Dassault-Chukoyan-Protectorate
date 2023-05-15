@@ -1,4 +1,4 @@
-package data.missions.magellan_buffaloherd;
+package data.missions.dcp_magellan_buffaloherd;
 
 import com.fs.starfarer.api.fleet.FleetGoal;
 import com.fs.starfarer.api.fleet.FleetMemberType;
