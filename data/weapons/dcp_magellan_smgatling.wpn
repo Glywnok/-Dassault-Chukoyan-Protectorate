@@ -22,6 +22,6 @@
                             "particleCount":16,
                             "particleColor":[200,200,255,155]},	
 	"projectileSpecId":"dcp_magellan_smkinetic_shot",  # projectile that will be fired
-	#"fireSoundOne":"istl_mincer_spinup",
+	#"fireSoundOne":"dcp_DME_mincer_spinup",
 	"fireSoundTwo":"dcp_magellan_smallgat_fire",
 }

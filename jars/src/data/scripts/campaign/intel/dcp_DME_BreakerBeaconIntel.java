@@ -23,7 +23,7 @@ public class dcp_DME_BreakerBeaconIntel extends WarningBeaconIntel {
       Color tc = Misc.getTextColor();
       float pad = 3.0F;
       float opad = 10.0F;
-      Description desc = Global.getSettings().getDescription("istl_bladebreaker_beacon", Type.CUSTOM);
+      Description desc = Global.getSettings().getDescription("dcp_DME_bladebreaker_beacon", Type.CUSTOM);
       info.addPara(desc.getText1FirstPara(), opad);
       this.addBulletPoints(info, ListInfoMode.IN_DESC);
       if (this.beacon.isInHyperspace()) {
@@ -37,11 +37,11 @@ public class dcp_DME_BreakerBeaconIntel extends WarningBeaconIntel {
 
    public String getIcon() {
       if (this.isLow()) {
-         return Global.getSettings().getSpriteName("intel", "istl_hardenedbeacon_low");
+         return Global.getSettings().getSpriteName("intel", "dcp_DME_hardenedbeacon_low");
       } else if (this.isMedium()) {
-         return Global.getSettings().getSpriteName("intel", "istl_hardenedbeacon_medium");
+         return Global.getSettings().getSpriteName("intel", "dcp_DME_hardenedbeacon_medium");
       } else {
-         return this.isHigh() ? Global.getSettings().getSpriteName("intel", "istl_hardenedbeacon_high") : Global.getSettings().getSpriteName("intel", "istl_hardenedbeacon_low");
+         return this.isHigh() ? Global.getSettings().getSpriteName("intel", "dcp_DME_hardenedbeacon_high") : Global.getSettings().getSpriteName("intel", "dcp_DME_hardenedbeacon_low");
       }
    }
 

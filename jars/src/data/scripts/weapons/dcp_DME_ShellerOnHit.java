@@ -22,7 +22,7 @@ public class dcp_DME_ShellerOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_RAMPUP = 0.2F;
    private static final Color EXPLOSION_COLOR = new Color(125, 135, 255, 255);
    private static final float EXPLOSION_DUR_MULT = 0.6F;
-   private static final String SFX = "istl_kinetic_crit_micro";
+   private static final String SFX = "dcp_DME_kinetic_crit_micro";
    private static final Color PARTICLE_COLOR = new Color(100, 110, 255, 255);
    private static final float PARTICLE_SIZE = 3.0F;
    private static final float PARTICLE_BRIGHTNESS = 255.0F;

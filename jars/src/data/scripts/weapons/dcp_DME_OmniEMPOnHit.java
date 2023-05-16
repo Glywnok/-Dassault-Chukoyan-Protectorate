@@ -12,7 +12,7 @@ import java.awt.Color;
 import org.lwjgl.util.vector.Vector2f;
 
 public class dcp_DME_OmniEMPOnHit implements OnHitEffectPlugin {
-   private static final String SFX = "istl_shockarty_crit_sm";
+   private static final String SFX = "dcp_DME_shockarty_crit_sm";
    private static final Color EXPLOSION_COLOR = new Color(125, 100, 255, 155);
    private static final float EXPLOSION_RADIUS = 75.0F;
    private static final float EXPLOSION_DURATION = 0.8F;
@@ -34,6 +34,6 @@ public class dcp_DME_OmniEMPOnHit implements OnHitEffectPlugin {
 
       Vector2f v_target = new Vector2f(target.getVelocity());
       engine.spawnExplosion(point, v_target, EXPLOSION_COLOR, 75.0F, 0.8F);
-      Global.getSoundPlayer().playSound("istl_shockarty_crit_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_shockarty_crit_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
    }
 }

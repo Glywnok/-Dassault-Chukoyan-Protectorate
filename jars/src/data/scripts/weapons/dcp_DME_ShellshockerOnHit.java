@@ -17,7 +17,7 @@ public class dcp_DME_ShellshockerOnHit implements OnHitEffectPlugin {
    private static final int MAX_ARCS = 5;
    private static final float ARC_DAMAGE = 0.1667F;
    private static final float ARC_EMP = 0.2F;
-   private static final String SFX = "istl_kinetic_crit_med";
+   private static final String SFX = "dcp_DME_kinetic_crit_med";
    private static final float FLUXRAISE_MULT = 0.6F;
    private static final Color NEBULA_COLOR = new Color(75, 90, 255, 200);
    private static final float NEBULA_SIZE = 10.0F * (0.75F + (float)Math.random() * 0.5F);
@@ -50,7 +50,7 @@ public class dcp_DME_ShellshockerOnHit implements OnHitEffectPlugin {
             engine.spawnEmpArc(projectile.getSource(), point, target, target, DamageType.ENERGY, dam, emp, 100000.0F, "tachyon_lance_emp_impact", 25.0F, new Color(50, 55, 155, 255), new Color(200, 220, 255, 255));
          }
 
-         Global.getSoundPlayer().playSound("istl_kinetic_crit_med", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+         Global.getSoundPlayer().playSound("dcp_DME_kinetic_crit_med", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
          float speed = projectile.getVelocity().length();
          float facing = projectile.getFacing();
 

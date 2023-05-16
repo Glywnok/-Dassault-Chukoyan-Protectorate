@@ -14,7 +14,7 @@ import org.lwjgl.util.vector.Vector2f;
 public class dcp_DME_PulseripperFX implements OnFireEffectPlugin, EveryFrameWeaponEffectPlugin {
    public static final int REPLACE_EVERY_MIN = 3;
    public static final int REPLACE_EVERY_MAX = 5;
-   public static final String REPLACE_WPN_ID = "istl_pulseripper_large";
+   public static final String REPLACE_WPN_ID = "dcp_DME_pulseripper_large";
    private static final Color FLASH_CORE = new Color(183, 95, 70, 255);
    private static final Color FLASH_FRINGE = new Color(183, 95, 70, 155);
    private static final float FLASH_SIZE = 20.0F;
@@ -29,7 +29,7 @@ public class dcp_DME_PulseripperFX implements OnFireEffectPlugin, EveryFrameWeap
          this.roundCounter = 0;
          Vector2f loc = proj.getLocation();
          ship_velocity = proj.getVelocity();
-         DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(weapon.getShip(), weapon, "istl_pulseripper_large", loc, proj.getFacing(), weapon.getShip().getVelocity());
+         DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(weapon.getShip(), weapon, "dcp_DME_pulseripper_large", loc, proj.getFacing(), weapon.getShip().getVelocity());
          Global.getCombatEngine().removeEntity(proj);
       }
 

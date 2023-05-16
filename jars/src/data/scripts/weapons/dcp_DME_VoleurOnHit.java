@@ -17,7 +17,7 @@ public class dcp_DME_VoleurOnHit implements OnHitEffectPlugin {
    private static final int CRIT_DAMAGE_MAX = 150;
    private static final float CRIT_CHANCE = 1.0F;
    private static final Color EXPLOSION_COLOR = new Color(85, 115, 225, 200);
-   private static final String SFX = "istl_shockarty_crit";
+   private static final String SFX = "dcp_DME_shockarty_crit";
    private static final Color PARTICLE_COLOR = new Color(115, 145, 255, 255);
    private static final float PARTICLE_SIZE = 2.0F;
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
@@ -44,6 +44,6 @@ public class dcp_DME_VoleurOnHit implements OnHitEffectPlugin {
          engine.addHitParticle(point, vector, 2.0F, 255.0F, 1.0F, PARTICLE_COLOR);
       }
 
-      Global.getSoundPlayer().playSound("istl_shockarty_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_shockarty_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
    }
 }

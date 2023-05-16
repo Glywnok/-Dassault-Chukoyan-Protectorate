@@ -47,11 +47,11 @@
 		"aria"
     ],
     
-    "startShipsCombatSmall":[["magellan_patroldestroyer_leveller_turncoat"]],
-    "startShipsSuper":[["magellan_skipjack_leveller_std"]],
+    "startShipsCombatSmall":[["dcp_magellan_patroldestroyer_leveller_turncoat"]],
+    "startShipsSuper":[["dcp_magellan_skipjack_leveller_std"]],
     
     "startSpecialItems":[
-        [["magellan_levellercore_package", ""]],
+        [["dcp_magellan_levellercore_package", ""]],
     ],
     
 }

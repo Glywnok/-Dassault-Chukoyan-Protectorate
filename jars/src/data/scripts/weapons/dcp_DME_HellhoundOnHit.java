@@ -21,7 +21,7 @@ public class dcp_DME_HellhoundOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 18.0F;
    private static final float NEBULA_DUR = 2.0F;
    private static final float NEBULA_RAMPUP = 0.2F;
-   private static final String SFX = "istl_hellhound_crit";
+   private static final String SFX = "dcp_DME_hellhound_crit";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       if (target instanceof ShipAPI && !shieldHit) {
@@ -31,7 +31,7 @@ public class dcp_DME_HellhoundOnHit implements OnHitEffectPlugin {
       new Vector2f(target.getVelocity());
       engine.spawnExplosion(point, target.getVelocity(), EXPLOSION_COLOR, 90.0F, 0.8F);
       engine.addNebulaParticle(point, target.getVelocity(), NEBULA_SIZE, 18.0F, 0.2F, 0.3F, 2.0F, NEBULA_COLOR, true);
-      Global.getSoundPlayer().playSound("istl_hellhound_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_hellhound_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
    }
 
    public static void dealArmorDamage(DamagingProjectileAPI projectile, ShipAPI target, Vector2f point) {

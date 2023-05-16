@@ -18,7 +18,7 @@ public class dcp_DME_RailSparks20cm implements OnHitEffectPlugin {
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
    private static final float PARTICLE_DURATION = 3.2F;
    private static final int PARTICLE_COUNT = 9;
-   private static final String SFX = "istl_rail_crit_20cm";
+   private static final String SFX = "dcp_DME_rail_crit_20cm";
    private static final float CONE_ANGLE = 150.0F;
    private static final float VEL_MIN = 0.05F;
    private static final float VEL_MAX = 0.1F;

@@ -16,13 +16,13 @@ import org.lwjgl.util.vector.Vector2f;
 public class dcp_DME_AMMOnHit implements OnHitEffectPlugin {
    public static float DAMAGE = 25.0F;
    private static final Color EXPLOSION_COLOR = new Color(255, 95, 50, 255);
-   private static final String SFX = "istl_ballistic_crit_sm";
+   private static final String SFX = "dcp_DME_ballistic_crit_sm";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       if (!shieldHit && target instanceof ShipAPI) {
          dealArmorDamage(projectile, (ShipAPI)target, point);
          engine.spawnExplosion(point, target.getVelocity(), EXPLOSION_COLOR, 60.0F, 0.6F);
-         Global.getSoundPlayer().playSound("istl_ballistic_crit_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+         Global.getSoundPlayer().playSound("dcp_DME_ballistic_crit_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
       }
 
    }

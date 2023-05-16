@@ -19,12 +19,12 @@ public class dcp_DME_BlazeGunOnHit implements OnHitEffectPlugin {
          byte var12 = -1;
          switch(projid.hashCode()) {
          case 966761876:
-            if (projid.equals("istl_blaze_shot")) {
+            if (projid.equals("dcp_DME_blaze_shot")) {
                var12 = 0;
             }
             break;
          case 1921300972:
-            if (projid.equals("istl_blaze_medshot")) {
+            if (projid.equals("dcp_DME_blaze_medshot")) {
                var12 = 1;
             }
          }

@@ -112,7 +112,7 @@ public class dcp_DME_MineStrikeStats extends BaseShipSystemScript implements Min
          currLoc = Misc.getPointAtRadius(mineLoc, 30.0F + (float)Math.random() * 30.0F);
       }
 
-      MissileAPI mine = (MissileAPI)engine.spawnProjectile(source, (WeaponAPI)null, "istl_minelayer", currLoc, (float)Math.random() * 360.0F, (Vector2f)null);
+      MissileAPI mine = (MissileAPI)engine.spawnProjectile(source, (WeaponAPI)null, "dcp_DME_minelayer", currLoc, (float)Math.random() * 360.0F, (Vector2f)null);
       float fadeInTime = 0.5F;
       mine.getVelocity().scale(0.0F);
       mine.fadeOutThenIn(fadeInTime);

@@ -1,17 +1,21 @@
 {
     "displayName": "Restored",
-    "fluxCapacitors": 1,
-    "fluxVents": 10,
-    "goalVariant": true,
+    "fluxCapacitors": 0,
+    "fluxVents": 8,
     "hullId": "dcp_magellan_skiff",
-    "hullMods": [
-        "expanded_cargo_holds",
-        "autorepair"
-    ],
+    "hullMods": [],
     "permaMods": [],
     "sMods": [],
     "variantId": "dcp_magellan_skiff_std",
     "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "dcp_magellan_silverdart",
+                "WS0003": "dcp_magellan_silverdart"
+            }
+        },
         {
             "autofire": false,
             "mode": "LINKED",
@@ -20,15 +24,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {
-                "WS0002": "dcp_magellan_sniperautogun",
-                "WS0003": "dcp_magellan_sniperautogun"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {"WS0004": "dcp_magellan_ioncharge"}
+            "weapons": {"WS0004": "dcp_magellan_smpdmaser"}
         }
     ]
 }

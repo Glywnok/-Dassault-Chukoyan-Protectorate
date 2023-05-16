@@ -43,7 +43,7 @@ public class dcp_DME_DamperStats extends BaseShipSystemScript {
 
    public static ShipSystemAPI getDamper(ShipAPI ship) {
       ShipSystemAPI system = ship.getSystem();
-      return system != null && system.getId().equals("istl_damper") ? system : ship.getPhaseCloak();
+      return system != null && system.getId().equals("dcp_DME_damper") ? system : ship.getPhaseCloak();
    }
 
    public void unapply(MutableShipStatsAPI stats, String id) {

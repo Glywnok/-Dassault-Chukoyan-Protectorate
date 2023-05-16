@@ -24,7 +24,7 @@ public class dcp_DME_BladeBreakerEngineering extends BaseHullMod {
    public static final float RADIUS_MULT = 0.75F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("HullMod", "istl_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_DME_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -50,7 +50,7 @@ public class dcp_DME_BladeBreakerEngineering extends BaseHullMod {
       tooltip.addPara("- " + this.getString("BBEngDesc3"), padS, Misc.getHighlightColor(), new String[]{"25%"});
       tooltip.addPara("- " + this.getString("BBEngDesc4"), padS, Misc.getHighlightColor(), new String[]{"95%"});
       tooltip.addSectionHeading("Incompatibilities", Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/ISTL/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("DMEAllIncomp"), padS);
       text.addPara("- Safety Overrides", Misc.getNegativeHighlightColor(), padS);
       if (Global.getSettings().getModManager().isModEnabled("timid_xiv")) {

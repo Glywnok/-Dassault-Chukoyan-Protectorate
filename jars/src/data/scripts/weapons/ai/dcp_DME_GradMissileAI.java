@@ -35,7 +35,7 @@ public class dcp_DME_GradMissileAI extends dcp_DME_BaseMissile {
    private static final int NUMBER_SUBMUNITIONS = 4;
    private static final float SUBMUNITION_RELATIVE_OFFSET = 6.0F;
    private static final float SUBMUNITION_INACCURACY = 1.0F;
-   private static final String STAGE_TWO_WEAPON_ID = "istl_TBM_subForAI";
+   private static final String STAGE_TWO_WEAPON_ID = "dcp_DME_TBM_subForAI";
    private static final String STAGE_TWO_SOUND_ID = "devastator_explosion";
    private static final float VELOCITY_DAMPING_FACTOR = 0.15F;
    private static final float WEAVE_FALLOFF_DISTANCE = 1500.0F;
@@ -136,7 +136,7 @@ public class dcp_DME_GradMissileAI extends dcp_DME_BaseMissile {
                   Vector2f vel = this.missile.getVelocity();
                   Vector2f boost = VectorUtils.rotate(submunitionVelocityMod, this.missile.getFacing());
                   vel.translate(boost.x, boost.y);
-                  DamagingProjectileAPI submunition1 = (DamagingProjectileAPI)Global.getCombatEngine().spawnProjectile(this.launchingShip, this.missile.getWeapon(), "istl_TBM_subForAI", this.missile.getLocation(), angle, vel);
+                  DamagingProjectileAPI submunition1 = (DamagingProjectileAPI)Global.getCombatEngine().spawnProjectile(this.launchingShip, this.missile.getWeapon(), "dcp_DME_TBM_subForAI", this.missile.getLocation(), angle, vel);
                   submunition1.setFromMissile(true);
                }
 

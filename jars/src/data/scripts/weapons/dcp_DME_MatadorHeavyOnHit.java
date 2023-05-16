@@ -22,7 +22,7 @@ public class dcp_DME_MatadorHeavyOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 15.0F;
    private static final float NEBULA_DUR = 0.8F;
    private static final float NEBULA_RAMPUP = 0.1F;
-   private static final String SFX = "istl_energy_crit_sm";
+   private static final String SFX = "dcp_DME_energy_crit_sm";
    private static final Color PARTICLE_COLOR = new Color(235, 235, 255, 255);
    private static final float PARTICLE_SIZE = 5.0F;
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
@@ -57,7 +57,7 @@ public class dcp_DME_MatadorHeavyOnHit implements OnHitEffectPlugin {
             engine.addHitParticle(point, vector, 5.0F, 255.0F, 1.0F, PARTICLE_COLOR);
          }
 
-         Global.getSoundPlayer().playSound("istl_energy_crit_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+         Global.getSoundPlayer().playSound("dcp_DME_energy_crit_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
       }
 
    }

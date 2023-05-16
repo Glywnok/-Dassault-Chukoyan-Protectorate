@@ -33,7 +33,7 @@ public class dcp_DME_ITU extends BaseHullMod {
    }
 
    public boolean isApplicableToShip(ShipAPI ship) {
-      return ship.getHullSpec().getHullId().startsWith("istl_");
+      return ship.getHullSpec().getHullId().startsWith("dcp_DME_");
    }
 
    static {

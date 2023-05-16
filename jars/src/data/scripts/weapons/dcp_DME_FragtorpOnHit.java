@@ -16,11 +16,11 @@ import org.lwjgl.util.vector.Vector2f;
 public class dcp_DME_FragtorpOnHit implements OnHitEffectPlugin {
    public static float DAMAGE = 100.0F;
    private static final Color EXPLOSION_COLOR = new Color(100, 165, 255, 200);
-   private static final String SFX = "istl_shockarty_crit";
+   private static final String SFX = "dcp_DME_shockarty_crit";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       engine.spawnExplosion(point, target.getVelocity(), EXPLOSION_COLOR, 75.0F, 1.0F);
-      Global.getSoundPlayer().playSound("istl_shockarty_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_shockarty_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
       if (!shieldHit && target instanceof ShipAPI) {
          dealArmorDamage(projectile, (ShipAPI)target, point);
       }

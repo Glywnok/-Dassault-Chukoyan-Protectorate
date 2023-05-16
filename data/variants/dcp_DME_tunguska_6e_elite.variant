@@ -1,6 +1,6 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 15,
+    "fluxCapacitors": 17,
     "fluxVents": 24,
     "hullId": "dcp_DME_tunguska_6e",
     "hullMods": ["auxiliarythrusters"],

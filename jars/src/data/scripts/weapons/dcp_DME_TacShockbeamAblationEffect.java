@@ -44,7 +44,7 @@ public class dcp_DME_TacShockbeamAblationEffect implements BeamEffectPlugin {
       DamagingExplosionSpec spec = new DamagingExplosionSpec(0.12F, 30.0F, 12.0F, damage, damage / 2.0F, CollisionClass.PROJECTILE_FF, CollisionClass.PROJECTILE_FIGHTER, 5.0F, 2.0F, 0.5F, 16, new Color(140, 125, 255, 255), new Color(75, 100, 255, 200));
       spec.setDamageType(DamageType.FRAGMENTATION);
       spec.setUseDetailedExplosion(false);
-      spec.setSoundSetId("istl_energy_crit_sm");
+      spec.setSoundSetId("dcp_DME_energy_crit_sm");
       return spec;
    }
 }

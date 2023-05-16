@@ -49,11 +49,11 @@
 
 
 			#MAGELLAN
-			"magellan_core_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_core.png",
-			"magellan_adv_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_adv.png",
-			"magellan_levellercore_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_levellercore.png",
-			"magellan_startiger_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_startiger.png",
-			"magellan_theherd_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_theherd.png",
+			"dcp_magellan_core_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_core.png",
+			"dcp_magellan_adv_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_adv.png",
+			"dcp_magellan_levellercore_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_levellercore.png",
+			"dcp_magellan_startiger_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_startiger.png",
+			"dcp_magellan_theherd_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_theherd.png",
 		},
 		"industry":{
 			"dcp_shield_texture":"graphics/DCP/planets/dcp_DME_sigma_shield.png",

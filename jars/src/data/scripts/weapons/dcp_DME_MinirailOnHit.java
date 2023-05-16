@@ -44,7 +44,7 @@ public class dcp_DME_MinirailOnHit implements OnHitEffectPlugin {
       DamagingExplosionSpec spec = new DamagingExplosionSpec(0.25F, DAMAGE_MAXRADIUS, DAMAGE_MINRADIUS, DAMAGE, DAMAGE / 2.0F, CollisionClass.PROJECTILE_FF, CollisionClass.PROJECTILE_FIGHTER, 7.0F, 3.0F, 1.0F, 24, NEBULA_COLOR, BOOM_COLOR);
       spec.setDamageType(DamageType.FRAGMENTATION);
       spec.setUseDetailedExplosion(false);
-      spec.setSoundSetId("istl_shockarty_crit_sm");
+      spec.setSoundSetId("dcp_DME_shockarty_crit_sm");
       return spec;
    }
 }

@@ -44,7 +44,7 @@ public class dcp_DME_SigmaBeamAblationEffect implements BeamEffectPlugin {
       DamagingExplosionSpec spec = new DamagingExplosionSpec(0.05F, 16.0F, 9.0F, damage, damage / 2.0F, CollisionClass.PROJECTILE_FF, CollisionClass.PROJECTILE_FIGHTER, 7.0F, 3.0F, 0.6F, 12, new Color(75, 255, 175, 255), new Color(25, 255, 125, 155));
       spec.setDamageType(DamageType.ENERGY);
       spec.setUseDetailedExplosion(false);
-      spec.setSoundSetId("istl_energy_crit_sm");
+      spec.setSoundSetId("dcp_DME_energy_crit_sm");
       return spec;
    }
 }

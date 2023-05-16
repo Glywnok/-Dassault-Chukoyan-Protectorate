@@ -17,7 +17,7 @@ public class dcp_DME_ElectroEMPOnHit implements OnHitEffectPlugin {
    private static final int MAX_ARCS = 4;
    private static final float ARC_DAMAGE = 0.25F;
    private static final float ARC_EMP = 0.6F;
-   private static final String SFX = "istl_energy_crit";
+   private static final String SFX = "dcp_DME_energy_crit";
    private static final float FLUXRAISE_MULT = 1.0F;
    private static final Color NEBULA_COLOR = new Color(75, 90, 255, 200);
    private static final float NEBULA_SIZE = 7.0F * (0.75F + (float)Math.random() * 0.5F);
@@ -41,7 +41,7 @@ public class dcp_DME_ElectroEMPOnHit implements OnHitEffectPlugin {
             engine.spawnEmpArc(projectile.getSource(), point, target, target, DamageType.ENERGY, dam, emp, 100000.0F, "tachyon_lance_emp_impact", 25.0F, new Color(50, 55, 155, 255), new Color(200, 220, 255, 255));
          }
 
-         Global.getSoundPlayer().playSound("istl_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+         Global.getSoundPlayer().playSound("dcp_DME_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
          float fluxmult = projectile.getDamageAmount() * 1.0F;
          float maxflux = targetship.getMaxFlux();
          if ((double)maxflux > (double)fluxmult * 1.5D) {

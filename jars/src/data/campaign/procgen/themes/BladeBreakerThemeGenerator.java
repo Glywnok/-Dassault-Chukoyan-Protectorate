@@ -180,7 +180,7 @@ public class BladeBreakerThemeGenerator extends BaseThemeGenerator {
                         }
 
                         if (addStation) {
-                           List<CampaignFleetAPI> stations = this.addBattlestations(data, 1.0F, 1, 1, this.createStringPicker(new Object[]{"istl_guardian_turret_dmg", 10.0F}));
+                           List<CampaignFleetAPI> stations = this.addBattlestations(data, 1.0F, 1, 1, this.createStringPicker(new Object[]{"dcp_DME_guardian_turret_dmg", 10.0F}));
                            Iterator var44 = stations.iterator();
 
                            while(var44.hasNext()) {
@@ -191,7 +191,7 @@ public class BladeBreakerThemeGenerator extends BaseThemeGenerator {
                            }
                         }
                      } else if (type == BladeBreakerThemeGenerator.BladeBreakerSystemType.RESURGENT) {
-                        List<CampaignFleetAPI> stations = this.addBattlestations(data, 1.0F, 1, 1, this.createStringPicker(new Object[]{"istl_guardian_turret_std", 10.0F}));
+                        List<CampaignFleetAPI> stations = this.addBattlestations(data, 1.0F, 1, 1, this.createStringPicker(new Object[]{"dcp_DME_guardian_turret_std", 10.0F}));
                         Iterator var27 = stations.iterator();
 
                         while(var27.hasNext()) {
@@ -311,16 +311,16 @@ public class BladeBreakerThemeGenerator extends BaseThemeGenerator {
 
       boolean special = data.isBlackHole() || data.isNebula() || data.isPulsar();
       if (special) {
-         this.addResearchStations(data, 0.75F, 1, 1, this.createStringPicker(new Object[]{"istl_bladebreaker_research", 10.0F}));
+         this.addResearchStations(data, 0.75F, 1, 1, this.createStringPicker(new Object[]{"dcp_DME_bladebreaker_research", 10.0F}));
       }
 
       if (!(this.random.nextFloat() < 0.5F)) {
          if (!data.resourceRich.isEmpty()) {
-            this.addMiningStations(data, 0.5F, 1, 1, this.createStringPicker(new Object[]{"istl_bladebreaker_mining", 10.0F}));
+            this.addMiningStations(data, 0.5F, 1, 1, this.createStringPicker(new Object[]{"dcp_DME_bladebreaker_mining", 10.0F}));
          }
 
          if (!special && !data.habitable.isEmpty()) {
-            this.addHabCenters(data, 0.25F, 1, 1, this.createStringPicker(new Object[]{"istl_bladebreaker_habitat", 10.0F}));
+            this.addHabCenters(data, 0.25F, 1, 1, this.createStringPicker(new Object[]{"dcp_DME_bladebreaker_habitat", 10.0F}));
          }
 
          this.addShipGraveyard(data, 0.05F, 1, 1, this.createStringPicker(new Object[]{"independent", 10.0F, "scavengers", 8.0F, "dassault_mikoyan", 6.0F, "pirates", 3.0F}));
@@ -351,7 +351,7 @@ public class BladeBreakerThemeGenerator extends BaseThemeGenerator {
          level = HabitationLevel.HIGH;
       }
 
-      this.addHabCenters(data, 1.0F, maxHabCenters, maxHabCenters, this.createStringPicker(new Object[]{"istl_bladebreaker_habitat", 10.0F}));
+      this.addHabCenters(data, 1.0F, maxHabCenters, maxHabCenters, this.createStringPicker(new Object[]{"dcp_DME_bladebreaker_habitat", 10.0F}));
       float probGate = 1.0F;
       float probRelay = 1.0F;
       float probMining = 0.5F;
@@ -373,8 +373,8 @@ public class BladeBreakerThemeGenerator extends BaseThemeGenerator {
       this.addObjectives(data, probRelay);
       this.addInactiveGate(data, probGate, 0.5F, 0.5F, this.createStringPicker(new Object[]{"tritachyon", 10.0F, "hegemony", 7.0F, "independent", 3.0F}));
       this.addShipGraveyard(data, 0.25F, 1, 1, this.createStringPicker(new Object[]{"tritachyon", 10.0F, "hegemony", 7.0F, "independent", 3.0F}));
-      this.addMiningStations(data, probMining, 1, 1, this.createStringPicker(new Object[]{"istl_bladebreaker_mining", 10.0F}));
-      this.addResearchStations(data, probResearch, 1, 1, this.createStringPicker(new Object[]{"istl_bladebreaker_research", 10.0F}));
+      this.addMiningStations(data, probMining, 1, 1, this.createStringPicker(new Object[]{"dcp_DME_bladebreaker_mining", 10.0F}));
+      this.addResearchStations(data, probResearch, 1, 1, this.createStringPicker(new Object[]{"dcp_DME_bladebreaker_research", 10.0F}));
       this.addDebrisFields(data, 0.75F, 1, 5);
       this.addDerelictShips(data, 0.75F, 0, 7, this.createStringPicker(new Object[]{"tritachyon", 10.0F, "hegemony", 7.0F, "independent", 3.0F}));
       this.addCaches(data, 0.75F, 0, 3, this.createStringPicker(new Object[]{"weapons_cache_breakers", 5.0F, "weapons_cache_small_breakers", 5.0F, "supply_cache", 10.0F, "supply_cache_small", 10.0F, "equipment_cache", 10.0F, "equipment_cache_small", 10.0F}));
@@ -442,7 +442,7 @@ public class BladeBreakerThemeGenerator extends BaseThemeGenerator {
          }
       }
 
-      CustomCampaignEntityAPI beacon = Global.getSector().getHyperspace().addCustomEntity((String)null, (String)null, "istl_bladebreaker_beacon", "neutral");
+      CustomCampaignEntityAPI beacon = Global.getSector().getHyperspace().addCustomEntity((String)null, (String)null, "dcp_DME_bladebreaker_beacon", "neutral");
       beacon.getMemoryWithoutUpdate().set(type.getBeaconFlag(), true);
       switch(type) {
       case DESTROYED:

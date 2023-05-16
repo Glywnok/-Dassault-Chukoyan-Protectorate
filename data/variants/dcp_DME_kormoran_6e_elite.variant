@@ -1,6 +1,6 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 20,
+    "fluxCapacitors": 22,
     "fluxVents": 36,
     "goalVariant": true,
     "hullId": "dcp_DME_kormoran_6e",

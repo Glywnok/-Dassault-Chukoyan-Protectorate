@@ -22,7 +22,7 @@ public class dcp_DME_SkipspaceReactionFurnace extends BaseHullMod {
    public static final float CORONA_EFFECT_REDUCTION = 0.5F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("HullMod", "istl_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_DME_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -44,7 +44,7 @@ public class dcp_DME_SkipspaceReactionFurnace extends BaseHullMod {
       tooltip.addPara("- " + this.getString("ReactionFurnaceDesc4"), padS, Misc.getHighlightColor(), new String[]{"50su", "5%"});
       tooltip.addPara("- " + this.getString("ReactionFurnaceDesc5"), padS, Misc.getHighlightColor(), new String[]{"50%"});
       tooltip.addSectionHeading("Incompatibilities", Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/ISTL/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("DMEAllIncomp"), padS);
       text.addPara("- Safety Overrides", Misc.getNegativeHighlightColor(), padS);
       if (Global.getSettings().getModManager().isModEnabled("timid_xiv")) {
@@ -79,8 +79,8 @@ public class dcp_DME_SkipspaceReactionFurnace extends BaseHullMod {
       BLOCKED_HULLMODS.add("converted_hangar");
       BLOCKED_HULLMODS.add("roider_fighterClamps");
       BLOCKED_HULLMODS.add("fluxbreakers");
-      BLOCKED_HULLMODS.add("istl_bbassault");
-      BLOCKED_HULLMODS.add("istl_bbdefense");
-      BLOCKED_HULLMODS.add("istl_bbsupport");
+      BLOCKED_HULLMODS.add("dcp_DME_bbassault");
+      BLOCKED_HULLMODS.add("dcp_DME_bbdefense");
+      BLOCKED_HULLMODS.add("dcp_DME_bbsupport");
    }
 }

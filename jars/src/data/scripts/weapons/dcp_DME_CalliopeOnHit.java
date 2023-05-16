@@ -17,7 +17,7 @@ public class dcp_DME_CalliopeOnHit implements OnHitEffectPlugin {
    private static final float CRIT_DAMAGE_MAX_MULT = 0.25F;
    private static final float CRIT_CHANCE = 1.0F;
    private static final Color EXPLOSION_COLOR = new Color(185, 175, 100, 255);
-   private static final String SFX = "istl_ballistic_crit_sm";
+   private static final String SFX = "dcp_DME_ballistic_crit_sm";
    private static final Color PARTICLE_COLOR = new Color(205, 195, 120, 225);
    private static final float PARTICLE_SIZE = 4.0F;
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
@@ -48,6 +48,6 @@ public class dcp_DME_CalliopeOnHit implements OnHitEffectPlugin {
          engine.addHitParticle(point, vector, 4.0F, 255.0F, 0.6F, PARTICLE_COLOR);
       }
 
-      Global.getSoundPlayer().playSound("istl_ballistic_crit_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_ballistic_crit_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
    }
 }

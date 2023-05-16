@@ -98,7 +98,7 @@ public class dcp_DME_SigmaMatterDataRecovery extends BaseCommandPlugin {
 
    protected boolean personCanAcceptSMatter() {
       if (this.person != null && this.buysSMatter) {
-         return Ranks.POST_SCIENTIST.equals(this.person.getPostId()) || "istl_smatterresearch".equals(this.person.getRankId()) || "istl_SNRIrep".equals(this.person.getPostId());
+         return Ranks.POST_SCIENTIST.equals(this.person.getPostId()) || "dcp_DME_smatterresearch".equals(this.person.getRankId()) || "dcp_DME_SNRIrep".equals(this.person.getPostId());
       } else {
          return false;
       }
@@ -206,13 +206,13 @@ public class dcp_DME_SigmaMatterDataRecovery extends BaseCommandPlugin {
       return rep;
    }
 
-   public static float getBaseRepValue(String istl_SigmaMatterType) {
-      if ("istl_sigma_matter2".equals(istl_SigmaMatterType)) {
+   public static float getBaseRepValue(String dcp_DME_SigmaMatterType) {
+      if ("dcp_DME_sigma_matter2".equals(dcp_DME_SigmaMatterType)) {
          return 7.0F;
-      } else if ("istl_sigma_matter1".equals(istl_SigmaMatterType)) {
+      } else if ("dcp_DME_sigma_matter1".equals(dcp_DME_SigmaMatterType)) {
          return 5.0F;
       } else {
-         return "istl_sigma_matter3".equals(istl_SigmaMatterType) ? 2.0F : 1.0F;
+         return "dcp_DME_sigma_matter3".equals(dcp_DME_SigmaMatterType) ? 2.0F : 1.0F;
       }
    }
 

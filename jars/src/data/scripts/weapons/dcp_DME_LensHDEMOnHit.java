@@ -31,7 +31,7 @@ public class dcp_DME_LensHDEMOnHit implements OnHitEffectPlugin {
    private static final float VEL_MIN = 0.08F;
    private static final float VEL_MAX = 0.12F;
    private static final float A_2 = 75.0F;
-   private static final String SFX = "istl_plasmadriver_fire";
+   private static final String SFX = "dcp_DME_plasmadriver_fire";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       float NEBULA_SIZE_MULT;
@@ -45,7 +45,7 @@ public class dcp_DME_LensHDEMOnHit implements OnHitEffectPlugin {
       NEBULA_SIZE_MULT = Misc.getHitGlowSize(60.0F, projectile.getDamage().getBaseDamage(), damageResult) / 100.0F;
       engine.addNebulaParticle(point, target.getVelocity(), NEBULA_SIZE, 5.0F + 3.0F * NEBULA_SIZE_MULT, 0.15F, 0.0F, 1.0F, EXPLOSION_COLOR, true);
       engine.spawnExplosion(point, target.getVelocity(), EXPLOSION_COLOR, NEBULA_SIZE * 4.0F, 0.25F);
-      Global.getSoundPlayer().playSound("istl_plasmadriver_fire", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_plasmadriver_fire", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
       speed = projectile.getVelocity().length();
       float facing = projectile.getFacing();
 

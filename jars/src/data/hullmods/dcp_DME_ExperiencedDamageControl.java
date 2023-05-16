@@ -16,7 +16,7 @@ public class dcp_DME_ExperiencedDamageControl extends BaseHullMod {
    public static final float REPAIR_BONUS = 15.0F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("HullMod", "istl_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_DME_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {

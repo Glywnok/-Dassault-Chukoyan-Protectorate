@@ -24,13 +24,13 @@ public class dcp_DME_ScatterLaserFX implements OnFireEffectPlugin, EveryFrameWea
          Vector2f randomVel = MathUtils.getRandomPointOnCircumference((Vector2f)null, MathUtils.getRandomNumberInRange(30.0F, 60.0F));
          randomVel.x += vel.x;
          randomVel.y += vel.y;
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "istl_scatterlaser_sub", loc, proj.getFacing(), randomVel);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_DME_scatterlaser_sub", loc, proj.getFacing(), randomVel);
       }
 
       int shotCount2 = 1;
 
       for(int j = 0; j < shotCount2; ++j) {
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "istl_scatterlaser_core", loc, proj.getFacing(), (Vector2f)null);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_DME_scatterlaser_core", loc, proj.getFacing(), (Vector2f)null);
       }
 
       int shotCount3 = 8;
@@ -40,7 +40,7 @@ public class dcp_DME_ScatterLaserFX implements OnFireEffectPlugin, EveryFrameWea
          ship_velocity = MathUtils.getRandomPointOnCircumference((Vector2f)null, MathUtils.getRandomNumberInRange(60.0F, 120.0F));
          ship_velocity.x += vel.x;
          ship_velocity.y += vel.y;
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "istl_scatterlaser_submicro", loc, proj.getFacing(), ship_velocity);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_DME_scatterlaser_submicro", loc, proj.getFacing(), ship_velocity);
       }
 
       engine.removeEntity(proj);

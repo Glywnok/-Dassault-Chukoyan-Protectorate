@@ -16,7 +16,7 @@ public class dcp_DME_BraveKineticSparks implements OnHitEffectPlugin {
    private static final int CRIT_DAMAGE_MAX = 200;
    private static final float CRIT_CHANCE = 1.0F;
    private static final Color EXPLOSION_COLOR = new Color(125, 175, 255, 255);
-   private static final String SFX = "istl_rail_crit_20cm";
+   private static final String SFX = "dcp_DME_rail_crit_20cm";
    private static final Color PARTICLE_COLOR = new Color(155, 225, 255, 255);
    private static final float PARTICLE_SIZE = 3.0F;
    private static final float PARTICLE_BRIGHTNESS = 255.0F;

@@ -36,7 +36,7 @@ public class dcp_DME_SigmaShield extends BaseIndustry {
 
    public static void applyVisuals(PlanetAPI planet) {
       if (planet != null) {
-         planet.getSpec().setShieldTexture(Global.getSettings().getSpriteName("industry", "istl_shield_texture"));
+         planet.getSpec().setShieldTexture(Global.getSettings().getSpriteName("industry", "dcp_DME_shield_texture"));
          planet.getSpec().setShieldThickness(0.06F);
          planet.getSpec().setShieldColor(new Color(255, 255, 255, 100));
          planet.applySpecChanges();

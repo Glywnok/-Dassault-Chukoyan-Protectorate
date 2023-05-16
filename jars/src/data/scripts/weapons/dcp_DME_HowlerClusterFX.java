@@ -25,7 +25,7 @@ public class dcp_DME_HowlerClusterFX implements OnFireEffectPlugin, EveryFrameWe
          ship_velocity = MathUtils.getRandomPointOnCircumference((Vector2f)null, MathUtils.getRandomNumberInRange(25.0F, 75.0F));
          ship_velocity.x += vel.x;
          ship_velocity.y += vel.y;
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "istl_howler_lbx", loc, proj.getFacing(), ship_velocity);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_DME_howler_lbx", loc, proj.getFacing(), ship_velocity);
       }
 
       engine.removeEntity(proj);

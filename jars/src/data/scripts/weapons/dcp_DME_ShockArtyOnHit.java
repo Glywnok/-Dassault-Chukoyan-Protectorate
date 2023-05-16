@@ -35,7 +35,7 @@ public class dcp_DME_ShockArtyOnHit implements OnHitEffectPlugin {
       DamagingExplosionSpec spec = new DamagingExplosionSpec(0.3F, 120.0F, 40.0F, damage, damage / 3.0F, CollisionClass.PROJECTILE_FF, CollisionClass.PROJECTILE_FIGHTER, 5.0F, 2.0F, 1.0F, 48, NEBULA_COLOR, BOOM_COLOR);
       spec.setDamageType(DamageType.ENERGY);
       spec.setUseDetailedExplosion(false);
-      spec.setSoundSetId("istl_shockarty_crit");
+      spec.setSoundSetId("dcp_DME_shockarty_crit");
       return spec;
    }
 }

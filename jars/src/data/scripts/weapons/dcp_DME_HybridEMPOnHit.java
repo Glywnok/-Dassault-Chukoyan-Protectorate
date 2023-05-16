@@ -15,7 +15,7 @@ public class dcp_DME_HybridEMPOnHit implements OnHitEffectPlugin {
    private static final Color EXPLOSION_COLOR = new Color(125, 100, 255, 155);
    private static final float EXPLOSION_RADIUS = 60.0F;
    private static final float EXPLOSION_DURATION = 0.2F;
-   private static final String SFX = "istl_energy_crit";
+   private static final String SFX = "dcp_DME_energy_crit";
    private static final float ARC_CHANCE = 0.3F;
    private static final float ARC_RANGE = 100000.0F;
    private static final float ARC_DAMAGE_MULT = 0.3333F;
@@ -34,6 +34,6 @@ public class dcp_DME_HybridEMPOnHit implements OnHitEffectPlugin {
       }
 
       engine.spawnExplosion(point, v_target, EXPLOSION_COLOR, 60.0F, 0.2F);
-      Global.getSoundPlayer().playSound("istl_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
    }
 }

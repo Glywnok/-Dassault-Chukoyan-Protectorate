@@ -1,7 +1,7 @@
 {
     "displayName": "Standard",
     "fluxCapacitors": 0,
-    "fluxVents": 12,
+    "fluxVents": 8,
     "goalVariant": true,
     "hullId": "dcp_DME_feeder",
     "hullMods": ["autorepair"],
@@ -23,13 +23,13 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0011": "dcp_DME_micropd",
-                "WS0012": "dcp_DME_micropd"
+                "WS0011": "dcp_DME_impaler",
+                "WS0012": "dcp_DME_impaler"
             }
         }
     ],
     "wings": [
-        "dcp_DME_thunderbolt_heavy_wing",
+        "dcp_DME_fletcher_wing",
         "dcp_DME_hummingbird_wing"
     ]
 }

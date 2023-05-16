@@ -42,12 +42,12 @@ public class dcp_DME_SigmaBusterOnHit implements OnHitEffectPlugin {
       byte var13 = -1;
       switch(projid.hashCode()) {
       case 84483858:
-         if (projid.equals("istl_phasedbuster_shot")) {
+         if (projid.equals("dcp_DME_phasedbuster_shot")) {
             var13 = 1;
          }
          break;
       case 1701283094:
-         if (projid.equals("istl_bravemissile_shot")) {
+         if (projid.equals("dcp_DME_bravemissile_shot")) {
             var13 = 0;
          }
       }

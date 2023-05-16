@@ -21,7 +21,7 @@ public class dcp_DME_PlasmaOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 12.0F;
    private static final float NEBULA_DUR = 1.0F;
    private static final float NEBULA_RAMPUP = 0.0F;
-   private static final String SFX = "istl_energy_crit";
+   private static final String SFX = "dcp_DME_energy_crit";
    private static Random rng = new Random();
 
    private static float damageAmount() {
@@ -35,6 +35,6 @@ public class dcp_DME_PlasmaOnHit implements OnHitEffectPlugin {
       }
 
       engine.addNebulaParticle(point, v_target, NEBULA_SIZE, 12.0F, 0.0F, 0.0F, 1.0F, EXPLOSION_COLOR, true);
-      Global.getSoundPlayer().playSound("istl_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
    }
 }

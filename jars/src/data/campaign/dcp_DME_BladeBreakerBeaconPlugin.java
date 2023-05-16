@@ -32,8 +32,8 @@ public class dcp_DME_BladeBreakerBeaconPlugin extends BaseCustomEntityPlugin {
    }
 
    Object readResolve() {
-      this.sprite = Global.getSettings().getSprite("campaignEntities", "istl_breaker_beacon");
-      this.glow = Global.getSettings().getSprite("campaignEntities", "istl_breaker_beacon_glow");
+      this.sprite = Global.getSettings().getSprite("campaignEntities", "dcp_DME_breaker_beacon");
+      this.glow = Global.getSettings().getSprite("campaignEntities", "dcp_DME_breaker_beacon_glow");
       return this;
    }
 

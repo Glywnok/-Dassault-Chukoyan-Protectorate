@@ -19,7 +19,7 @@ public class dcp_DME_PlasrocketEMPOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE = 24.0F * (0.75F + (float)Math.random() * 0.5F);
    private static final float NEBULA_DUR = 0.75F;
    private static final float NEBULA_RAMPUP = 0.15F;
-   private static final String SFX = "istl_energy_crit";
+   private static final String SFX = "dcp_DME_energy_crit";
    private static final float ARC_CHANCE = 0.6F;
    private static final float ARC_RANGE = 100000.0F;
    private static final float ARC_DAMAGE_MULT = 1.0F;
@@ -41,6 +41,6 @@ public class dcp_DME_PlasrocketEMPOnHit implements OnHitEffectPlugin {
       NEBULA_SIZE_MULT = Misc.getHitGlowSize(60.0F, projectile.getDamage().getBaseDamage(), damageResult) / 100.0F;
       engine.addSwirlyNebulaParticle(point, target.getVelocity(), NEBULA_SIZE, 5.0F + 3.0F * NEBULA_SIZE_MULT, 0.15F, 0.0F, 0.75F, EXPLOSION_COLOR, true);
       engine.spawnExplosion(point, target.getVelocity(), EXPLOSION_COLOR, NEBULA_SIZE * 4.0F, 0.1875F);
-      Global.getSoundPlayer().playSound("istl_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
    }
 }

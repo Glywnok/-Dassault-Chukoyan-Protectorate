@@ -8,7 +8,7 @@ public class dcp_DME_Tags {
    public static final String THEME_DASSAULT_MAJOR = "theme_dassault_major";
    public static final String THEME_DASSAULT_CAPITAL = "theme_dassault_capital";
    public static final String BREAKER_FACTION = "blade_breakers";
-   public static final String HARDENED_WARNING_BEACON = "istl_hardened_warning_beacon";
+   public static final String HARDENED_WARNING_BEACON = "dcp_DME_hardened_warning_beacon";
    public static final String THEME_BREAKER = "theme_breakers";
    public static final String THEME_BREAKER_MAIN = "theme_breakers_main";
    public static final String THEME_BREAKER_SECONDARY = "theme_breakers_secondary";

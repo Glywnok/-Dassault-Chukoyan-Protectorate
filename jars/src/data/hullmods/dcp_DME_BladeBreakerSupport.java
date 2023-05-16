@@ -18,7 +18,7 @@ public class dcp_DME_BladeBreakerSupport extends BaseHullMod {
    public static final float FTR_RANGE_BONUS = 100.0F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("HullMod", "istl_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_DME_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -39,29 +39,29 @@ public class dcp_DME_BladeBreakerSupport extends BaseHullMod {
       float pad = 10.0F;
       float padS = 2.0F;
       tooltip.addSectionHeading("Details", Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/ISTL/icons/tooltip/istl_hullmod_sensor.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_sensor.png", 40.0F);
       text.addPara("- " + this.getString("BBSupportDesc1"), pad, Misc.getHighlightColor(), new String[]{"100", "200", "300", "400"});
       text.addPara("- " + this.getString("BBSupportDesc2"), padS, Misc.getHighlightColor(), new String[]{"50%"});
       text.addPara("- " + this.getString("BBSupportDesc3"), padS, Misc.getHighlightColor(), new String[]{"25%"});
       tooltip.addImageWithText(pad);
-      TooltipMakerAPI text2 = tooltip.beginImageWithText("graphics/ISTL/icons/tooltip/istl_hullmod_fighter.png", 40.0F);
+      TooltipMakerAPI text2 = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_fighter.png", 40.0F);
       text2.addPara("- " + this.getString("BBSupportDescFtr"), padS, Misc.getHighlightColor(), new String[]{"100"});
       tooltip.addImageWithText(pad);
    }
 
    public boolean isApplicableToShip(ShipAPI ship) {
-      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "istl_breaker_package")) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_DME_breaker_package")) {
          return false;
       } else {
-         return ship.getVariant().hasHullMod("istl_bbengineering") && super.isApplicableToShip(ship);
+         return ship.getVariant().hasHullMod("dcp_DME_bbengineering") && super.isApplicableToShip(ship);
       }
    }
 
    public String getUnapplicableReason(ShipAPI ship) {
-      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "istl_breaker_package")) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_DME_breaker_package")) {
          return "Can only install one combat focus on a Blade Breaker hull";
       } else {
-         return !ship.getVariant().hasHullMod("istl_bbengineering") ? "Must be installed on a Blade Breaker ship" : super.getUnapplicableReason(ship);
+         return !ship.getVariant().hasHullMod("dcp_DME_bbengineering") ? "Must be installed on a Blade Breaker ship" : super.getUnapplicableReason(ship);
       }
    }
 

@@ -44,7 +44,7 @@ public class dcp_DME_UltraShockbeamAblationEffect implements BeamEffectPlugin {
       DamagingExplosionSpec spec = new DamagingExplosionSpec(0.2F, 80.0F, 32.0F, damage, damage / 2.0F, CollisionClass.PROJECTILE_FF, CollisionClass.PROJECTILE_FIGHTER, 5.0F, 2.0F, 0.75F, 32, new Color(140, 125, 255, 255), new Color(75, 100, 255, 200));
       spec.setDamageType(DamageType.FRAGMENTATION);
       spec.setUseDetailedExplosion(false);
-      spec.setSoundSetId("istl_energy_crit");
+      spec.setSoundSetId("dcp_DME_energy_crit");
       return spec;
    }
 }

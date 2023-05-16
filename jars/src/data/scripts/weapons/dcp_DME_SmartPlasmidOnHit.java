@@ -23,14 +23,14 @@ public class dcp_DME_SmartPlasmidOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 30.0F;
    private static final float NEBULA_DUR = 1.8F;
    private static final float NEBULA_RAMPUP = 0.2F;
-   private static final String SFX = "istl_mine_explosion_sm";
+   private static final String SFX = "dcp_DME_mine_explosion_sm";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       new Vector2f(target.getVelocity());
       if (target instanceof ShipAPI) {
          engine.spawnDamagingExplosion(this.createExplosionSpec(), projectile.getSource(), point);
          engine.addNebulaParticle(point, target.getVelocity(), NEBULA_SIZE, 30.0F, 0.2F, 0.3F, 1.8F, NEBULA_COLOR, true);
-         Global.getSoundPlayer().playSound("istl_mine_explosion_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+         Global.getSoundPlayer().playSound("dcp_DME_mine_explosion_sm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
       }
 
       engine.spawnExplosion(point, target.getVelocity(), NEBULA_COLOR, NEBULA_SIZE * 4.0F, 0.9F);

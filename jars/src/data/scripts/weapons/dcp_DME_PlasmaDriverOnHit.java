@@ -21,7 +21,7 @@ public class dcp_DME_PlasmaDriverOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 20.0F;
    private static final float NEBULA_DUR = 1.8F;
    private static final float NEBULA_RAMPUP = 0.1F;
-   private static final String SFX = "istl_energy_crit";
+   private static final String SFX = "dcp_DME_energy_crit";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       new Vector2f(target.getVelocity());
@@ -32,6 +32,6 @@ public class dcp_DME_PlasmaDriverOnHit implements OnHitEffectPlugin {
       }
 
       engine.addNebulaParticle(point, target.getVelocity(), NEBULA_SIZE, 20.0F, 0.1F, 0.2F, 1.8F, EXPLOSION_COLOR, true);
-      Global.getSoundPlayer().playSound("istl_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+      Global.getSoundPlayer().playSound("dcp_DME_energy_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
    }
 }

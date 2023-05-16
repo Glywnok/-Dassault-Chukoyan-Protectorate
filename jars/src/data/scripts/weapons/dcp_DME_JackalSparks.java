@@ -32,7 +32,7 @@ public class dcp_DME_JackalSparks implements OnHitEffectPlugin {
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
    private static final float PARTICLE_DURATION = 2.0F;
    private static final int PARTICLE_COUNT = 3;
-   private static final String SFX = "istl_jackal_crit";
+   private static final String SFX = "dcp_DME_jackal_crit";
    private static final float CONE_ANGLE = 150.0F;
    private static final float VEL_MIN = 0.1F;
    private static final float VEL_MAX = 0.2F;
@@ -63,10 +63,10 @@ public class dcp_DME_JackalSparks implements OnHitEffectPlugin {
          for(int i = 0; i < 1; ++i) {
             newangle = angle - 30.0F + (float)(Math.random() * 60.0D);
             spawn = MathUtils.getPoint(projectile.getLocation(), 30.0F, newangle);
-            engine.spawnProjectile(projectile.getSource(), projectile.getWeapon(), "istl_jackal_sub", spawn, newangle, new Vector2f());
+            engine.spawnProjectile(projectile.getSource(), projectile.getWeapon(), "dcp_DME_jackal_sub", spawn, newangle, new Vector2f());
          }
 
-         Global.getSoundPlayer().playSound("istl_jackal_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+         Global.getSoundPlayer().playSound("dcp_DME_jackal_crit", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
       }
 
    }
@@ -75,7 +75,7 @@ public class dcp_DME_JackalSparks implements OnHitEffectPlugin {
       DamagingExplosionSpec spec = new DamagingExplosionSpec(0.25F, DAMAGE_MAXRADIUS, DAMAGE_MINRADIUS, DAMAGE, DAMAGE / 2.0F, CollisionClass.PROJECTILE_FF, CollisionClass.PROJECTILE_FIGHTER, 7.0F, 3.0F, 1.0F, 24, NEBULA_COLOR, BOOM_COLOR);
       spec.setDamageType(DamageType.FRAGMENTATION);
       spec.setUseDetailedExplosion(false);
-      spec.setSoundSetId("istl_ballistic_crit");
+      spec.setSoundSetId("dcp_DME_ballistic_crit");
       return spec;
    }
 }

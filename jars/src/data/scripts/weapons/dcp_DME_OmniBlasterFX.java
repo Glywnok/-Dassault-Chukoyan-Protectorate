@@ -25,13 +25,13 @@ public class dcp_DME_OmniBlasterFX implements OnFireEffectPlugin, EveryFrameWeap
          Vector2f randomVel = MathUtils.getRandomPointOnCircumference((Vector2f)null, MathUtils.getRandomNumberInRange(30.0F, 60.0F));
          randomVel.x += vel.x;
          randomVel.y += vel.y;
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "istl_omniblaster_sub", loc, proj.getFacing(), randomVel);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_DME_omniblaster_sub", loc, proj.getFacing(), randomVel);
       }
 
       int shotCount2 = 1;
 
       for(int j = 0; j < shotCount2; ++j) {
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "istl_omniblaster_core", loc, proj.getFacing(), (Vector2f)null);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_DME_omniblaster_core", loc, proj.getFacing(), (Vector2f)null);
       }
 
       engine.removeEntity(proj);

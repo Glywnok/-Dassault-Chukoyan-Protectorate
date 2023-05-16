@@ -18,7 +18,7 @@ public class dcp_DME_RefurbishedFrame extends BaseHullMod {
    public static final float REPAIR_BONUS = 25.0F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("HullMod", "istl_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_DME_" + key);
    }
 
    public void addPostDescriptionSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
@@ -28,7 +28,7 @@ public class dcp_DME_RefurbishedFrame extends BaseHullMod {
       tooltip.addPara("- " + this.getString("RefurbDesc1"), pad, Misc.getHighlightColor(), new String[]{"25%"});
       tooltip.addPara("- " + this.getString("RefurbDesc2"), padS, Misc.getHighlightColor(), new String[]{"25%"});
       tooltip.addSectionHeading("Incompatibilities", Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/ISTL/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("DMEAllIncomp"), padS);
       text.addPara("- Heavy Armor", Misc.getNegativeHighlightColor(), padS);
       if (Global.getSettings().getModManager().isModEnabled("apex_design")) {
@@ -58,8 +58,8 @@ public class dcp_DME_RefurbishedFrame extends BaseHullMod {
       BLOCKED_HULLMODS.add("heavyarmor");
       BLOCKED_HULLMODS.add("apex_armor");
       BLOCKED_HULLMODS.add("apex_cryo_armor");
-      BLOCKED_HULLMODS.add("istl_bbassault");
-      BLOCKED_HULLMODS.add("istl_bbdefense");
-      BLOCKED_HULLMODS.add("istl_bbsupport");
+      BLOCKED_HULLMODS.add("dcp_DME_bbassault");
+      BLOCKED_HULLMODS.add("dcp_DME_bbdefense");
+      BLOCKED_HULLMODS.add("dcp_DME_bbsupport");
    }
 }

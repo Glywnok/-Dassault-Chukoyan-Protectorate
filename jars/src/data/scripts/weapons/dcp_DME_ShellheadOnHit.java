@@ -24,7 +24,7 @@ public class dcp_DME_ShellheadOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_DUR = 0.6F;
    private static final float NEBULA_RAMPUP = 0.1F;
    private static final float EXPLOSION_DUR_MULT = 0.8F;
-   private static final String SFX = "istl_kinetic_crit_med";
+   private static final String SFX = "dcp_DME_kinetic_crit_med";
    private static final Color PARTICLE_COLOR = new Color(100, 110, 255, 255);
    private static final float PARTICLE_SIZE = 7.0F;
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
@@ -42,7 +42,7 @@ public class dcp_DME_ShellheadOnHit implements OnHitEffectPlugin {
          float critmult = projectile.getDamageAmount() * 0.5F;
          engine.applyDamage(target, point, critmult, DamageType.ENERGY, 200.0F, false, false, projectile.getSource());
          engine.addNebulaParticle(point, target.getVelocity(), NEBULA_SIZE, 16.0F, 0.1F, 0.3F, 0.6F, NEBULA_COLOR, true);
-         Global.getSoundPlayer().playSound("istl_kinetic_crit_med", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+         Global.getSoundPlayer().playSound("dcp_DME_kinetic_crit_med", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
          fluxminmult = projectile.getVelocity().length();
          fluxmaxmult = projectile.getFacing();
 

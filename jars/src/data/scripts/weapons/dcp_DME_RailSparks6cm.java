@@ -18,7 +18,7 @@ public class dcp_DME_RailSparks6cm implements OnHitEffectPlugin {
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
    private static final float PARTICLE_DURATION = 1.6F;
    private static final int PARTICLE_COUNT = 3;
-   private static final String SFX = "istl_rail_crit_6cm";
+   private static final String SFX = "dcp_DME_rail_crit_6cm";
    private static final float CONE_ANGLE = 150.0F;
    private static final float VEL_MIN = 0.05F;
    private static final float VEL_MAX = 0.1F;
@@ -35,7 +35,7 @@ public class dcp_DME_RailSparks6cm implements OnHitEffectPlugin {
             Vector2f vector = MathUtils.getPointOnCircumference((Vector2f)null, vel, angle);
             engine.addHitParticle(point, vector, 5.0F, 255.0F, 1.6F, BRIGHT_COLOR);
             engine.addHitParticle(point, vector, 20.0F, 255.0F, 0.8F, DIM_COLOR);
-            Global.getSoundPlayer().playSound("istl_rail_crit_6cm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+            Global.getSoundPlayer().playSound("dcp_DME_rail_crit_6cm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
          }
       }
 

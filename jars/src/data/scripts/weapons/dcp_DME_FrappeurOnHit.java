@@ -37,7 +37,7 @@ public class dcp_DME_FrappeurOnHit implements OnHitEffectPlugin {
       DamagingExplosionSpec spec = new DamagingExplosionSpec(0.3F, DAMAGE_MAXRADIUS, DAMAGE_MINRADIUS, 350.0F, 175.0F, CollisionClass.PROJECTILE_FF, CollisionClass.PROJECTILE_FIGHTER, 7.0F, 3.0F, 3.0F, 12, NEBULA_COLOR, EXPLOSION_COLOR);
       spec.setDamageType(DamageType.FRAGMENTATION);
       spec.setUseDetailedExplosion(false);
-      spec.setSoundSetId("istl_mine_explosion_sm");
+      spec.setSoundSetId("dcp_DME_mine_explosion_sm");
       return spec;
    }
 }
