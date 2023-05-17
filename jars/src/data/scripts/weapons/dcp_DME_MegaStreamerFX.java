@@ -5,7 +5,7 @@ import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -35,19 +35,19 @@ public class dcp_DME_MegaStreamerFX implements EveryFrameWeaponEffectPlugin {
             ShipAPI ship = weapon.getShip();
             Vector2f particle_offset;
             if (this.elapsed <= 0.0F) {
-               particle_offset = DMEUtils.translate_polar(weapon_location, 5.0F, weapon.getCurrAngle());
+               particle_offset = DCPUtils.translate_polar(weapon_location, 5.0F, weapon.getCurrAngle());
                engine.spawnExplosion(particle_offset, ship.getVelocity(), FLASH_COLOR, 75.0F, 0.4F);
             }
 
             this.elapsed += amount;
-            particle_offset = DMEUtils.translate_polar(weapon_location, 2.0F, weapon.getCurrAngle());
+            particle_offset = DCPUtils.translate_polar(weapon_location, 2.0F, weapon.getCurrAngle());
             int particle_count_this_frame = (int)(7.0F * (2.4F - this.elapsed));
 
             for(int x = 0; x < particle_count_this_frame; ++x) {
-               float size = DMEUtils.get_random(3.0F, 12.0F);
-               radCountPrim = DMEUtils.get_random(200.0F, 400.0F);
-               radCountSec = weapon.getCurrAngle() + DMEUtils.get_random(-7.0F, 7.0F);
-               Vector2f velocity = DMEUtils.translate_polar(ship.getVelocity(), radCountPrim, radCountSec);
+               float size = DCPUtils.get_random(3.0F, 12.0F);
+               radCountPrim = DCPUtils.get_random(200.0F, 400.0F);
+               radCountSec = weapon.getCurrAngle() + DCPUtils.get_random(-7.0F, 7.0F);
+               Vector2f velocity = DCPUtils.translate_polar(ship.getVelocity(), radCountPrim, radCountSec);
                engine.addHitParticle(particle_offset, velocity, size, 1.5F, 0.3F, PARTICLE_COLOR);
             }
          } else {

@@ -1,5 +1,5 @@
 {
-    "uniqueModClassName":"data.scripts.MagellanModPlugin", # String
+    "uniqueModClassName":"data.scripts.DCPModPlugin", # String
     "playableFaction":true,
     "corvusCompatible":true,
     

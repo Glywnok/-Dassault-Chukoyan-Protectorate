@@ -5,7 +5,7 @@ import com.fs.starfarer.api.combat.DamagingProjectileAPI;
 import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -34,7 +34,7 @@ public class dcp_DME_PhasedBusterLauncherGuidedFX implements EveryFrameWeaponEff
             Vector2f ship_velocity = target.getVelocity();
             MathUtils.getPointOnCircumference(weapon_location, 5.0F, ship_facing);
             if (weapon_ammo < this.last_weapon_ammo) {
-               Vector2f explosion_offset = DMEUtils.translate_polar(weapon_location, 8.0F, weapon.getCurrAngle());
+               Vector2f explosion_offset = DCPUtils.translate_polar(weapon_location, 8.0F, weapon.getCurrAngle());
                engine.spawnExplosion(explosion_offset, target.getVelocity(), FLASH_COLOR, 135.0F, 0.1F);
             }
          }

@@ -35,7 +35,7 @@ public class dcp_DME_RailSparks20cm implements OnHitEffectPlugin {
             Vector2f vector = MathUtils.getPointOnCircumference((Vector2f)null, vel, angle);
             engine.addHitParticle(point, vector, 5.0F, 255.0F, 3.2F, BRIGHT_COLOR);
             engine.addHitParticle(point, vector, 20.0F, 255.0F, 1.6F, DIM_COLOR);
-            Global.getSoundPlayer().playSound("istl_rail_crit_20cm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+            Global.getSoundPlayer().playSound("dcp_DME_rail_crit_20cm", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
          }
       }
 

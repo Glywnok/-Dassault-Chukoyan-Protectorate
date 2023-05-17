@@ -38,7 +38,7 @@ public class dcp_DME_ShellerOnHit implements OnHitEffectPlugin {
          float critmult = projectile.getDamageAmount() * 1.25F;
          engine.applyDamage(target, point, critmult, DamageType.ENERGY, 100.0F, false, false, projectile.getSource());
          engine.addNebulaParticle(point, target.getVelocity(), NEBULA_SIZE, 21.0F, 0.2F, 0.2F, 0.8F, NEBULA_COLOR, true);
-         Global.getSoundPlayer().playSound("istl_kinetic_crit_micro", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
+         Global.getSoundPlayer().playSound("dcp_DME_kinetic_crit_micro", 1.0F, 1.0F, target.getLocation(), target.getVelocity());
          float speed = projectile.getVelocity().length();
          float facing = projectile.getFacing();
 

@@ -3,7 +3,7 @@ package data.hullmods;
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.util.Misc;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 
 public class dcp_magellan_ClassicShieldHullmod extends BaseHullMod {
@@ -19,7 +19,7 @@ public class dcp_magellan_ClassicShieldHullmod extends BaseHullMod {
          if (hardflux_track < 0.5F) {
             outputColorLerp = 0.0F;
          } else if (hardflux_track >= 0.5F) {
-            outputColorLerp = DMEUtils.lerp(0.0F, hardflux_track, hardflux_track);
+            outputColorLerp = DCPUtils.lerp(0.0F, hardflux_track, hardflux_track);
          }
 
          Color color1 = Misc.interpolateColor(ZERO_FLUX_RING, FULL_FLUX_RING, Math.min(outputColorLerp, 1.0F));

@@ -5,7 +5,7 @@ import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.plugins.ShipSystemStatsScript;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -36,7 +36,7 @@ public abstract class dcp_DME_MirageFXStatsSm implements ShipSystemStatsScript {
                Vector2f vel = (Vector2f)Vector2f.sub(loc, pos, new Vector2f()).scale(1.2F);
                float size = MathUtils.getRandomNumberInRange(4.0F, 8.0F);
                float brightness = (float)Math.random();
-               Color color = DMEUtils.lerpRGB(PARTICLE_COLOR_2, PARTICLE_COLOR_1, effectLevel);
+               Color color = DCPUtils.lerpRGB(PARTICLE_COLOR_2, PARTICLE_COLOR_1, effectLevel);
                engine.addSmoothParticle(pos, vel, size, brightness, 0.66F, color);
             }
          }

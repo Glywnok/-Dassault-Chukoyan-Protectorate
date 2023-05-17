@@ -6,7 +6,7 @@ import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.OnFireEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -26,7 +26,7 @@ public class dcp_DME_SigmaBusterLaunchFX implements OnFireEffectPlugin, EveryFra
       float ship_facing = ship.getFacing();
       Vector2f ship_velocity = ship.getVelocity();
       MathUtils.getPointOnCircumference(weapon_location, 0.0F, ship_facing);
-      Vector2f explosion_offset = DMEUtils.translate_polar(weapon_location, 3.0F, weapon.getCurrAngle());
+      Vector2f explosion_offset = DCPUtils.translate_polar(weapon_location, 3.0F, weapon.getCurrAngle());
       engine.addSwirlyNebulaParticle(explosion_offset, ship_velocity, NEBULA_SIZE, 15.0F, 0.1F, 0.2F, 0.45F, NEBULA_COLOR, true);
       engine.addSmoothParticle(explosion_offset, ship_velocity, NEBULA_SIZE * 4.0F, 0.75F, 0.1F, 0.1125F, BOOM_COLOR);
       engine.spawnExplosion(explosion_offset, ship_velocity, BOOM_COLOR, NEBULA_SIZE * 6.0F, 0.225F);

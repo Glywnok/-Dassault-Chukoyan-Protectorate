@@ -10,7 +10,7 @@ public class dcp_magellan_TargetingDroneStats extends BaseShipSystemScript {
    public static final float RECOIL_MULT = 0.3F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("System", "magellan_" + key);
+      return Global.getSettings().getString("System", "dcp_magellan_" + key);
    }
 
    public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {

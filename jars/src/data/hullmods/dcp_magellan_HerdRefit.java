@@ -38,7 +38,7 @@ public class dcp_magellan_HerdRefit extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "magellan_" + key);
+      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -83,7 +83,7 @@ public class dcp_magellan_HerdRefit extends BaseHullMod {
       tooltip.addPara("- " + this.getString("HerdRefitDesc3"), pad2S, h, new String[]{"45", "30", "15", "5"});
       tooltip.addPara("- " + this.getString("HerdRefitDesc4"), padS, h, new String[]{"15%"});
       tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("MagellanAllIncomp"), padS);
       text.addPara("- Hardened Shields", bad, padS);
       text.addPara("- Armored Weapon Mounts", bad, 0.0F);

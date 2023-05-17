@@ -35,7 +35,7 @@ public class dcp_magellan_StartigerUpgrade extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "magellan_" + key);
+      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -72,7 +72,7 @@ public class dcp_magellan_StartigerUpgrade extends BaseHullMod {
       intlabel.setHighlight(new String[]{this.getString("StartigerMod6HL"), "25%"});
       intlabel.setHighlightColors(new Color[]{emp_color, h});
       tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("MagellanAllIncomp"), padS);
       text.addPara("- Hardened Shields", bad, padS);
       text.addPara("- Armored Weapon Mounts", bad, 0.0F);
@@ -98,10 +98,10 @@ public class dcp_magellan_StartigerUpgrade extends BaseHullMod {
    }
 
    static {
-      BUILT_IN_WING.put(HullSize.FRIGATE, "magellan_interceptor_startiger_lt_wing");
-      BUILT_IN_WING.put(HullSize.DESTROYER, "magellan_interceptor_startiger_wing");
-      BUILT_IN_WING.put(HullSize.CRUISER, "magellan_interceptor_startiger_wing");
-      BUILT_IN_WING.put(HullSize.CAPITAL_SHIP, "magellan_corvette_startiger_wing");
+      BUILT_IN_WING.put(HullSize.FRIGATE, "dcp_magellan_interceptor_startiger_lt_wing");
+      BUILT_IN_WING.put(HullSize.DESTROYER, "dcp_magellan_interceptor_startiger_wing");
+      BUILT_IN_WING.put(HullSize.CRUISER, "dcp_magellan_interceptor_startiger_wing");
+      BUILT_IN_WING.put(HullSize.CAPITAL_SHIP, "dcp_magellan_corvette_startiger_wing");
       DMOD_AVOID_CHANCE = 10.0F;
       BLOCKED_HULLMODS.add("hardenedshieldemitter");
       BLOCKED_HULLMODS.add("armoredweapons");

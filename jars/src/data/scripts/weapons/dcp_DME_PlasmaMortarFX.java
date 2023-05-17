@@ -4,7 +4,7 @@ import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -26,7 +26,7 @@ public class dcp_DME_PlasmaMortarFX implements EveryFrameWeaponEffectPlugin {
             Vector2f ship_velocity = ship.getVelocity();
             MathUtils.getPointOnCircumference(weapon_location, 10.0F, ship_facing);
             if (weapon_ammo < this.last_weapon_ammo) {
-               Vector2f explosion_offset = DMEUtils.translate_polar(weapon_location, 13.0F, weapon.getCurrAngle());
+               Vector2f explosion_offset = DCPUtils.translate_polar(weapon_location, 13.0F, weapon.getCurrAngle());
                engine.spawnExplosion(explosion_offset, ship.getVelocity(), FLASH_COLOR, 40.0F, 0.07F);
             }
          }

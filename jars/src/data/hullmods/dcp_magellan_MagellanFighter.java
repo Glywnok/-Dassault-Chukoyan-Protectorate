@@ -31,7 +31,7 @@ public class dcp_magellan_MagellanFighter extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "magellan_" + key);
+      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -93,7 +93,7 @@ public class dcp_magellan_MagellanFighter extends BaseHullMod {
       Color quote = dcp_magellan_hullmodUtils.getQuoteColor();
       Color attrib = Misc.getGrayColor();
       tooltip.addSectionHeading(this.getString("MagSpecialTitle"), mag, magbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/magellan_hullmod_fighter.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/magellan_hullmod_fighter.png", 40.0F);
       text.addPara("- " + this.getString("FighterSPDesc1"), padS, h, new String[]{"1", "2", "3", "8"});
       text.addPara("- " + this.getString("FighterSPDesc2"), padS, h, new String[]{"50%"});
       text.addPara("- " + this.getString("FighterSPDesc3"), padS, h, new String[]{"10su"});
@@ -118,10 +118,10 @@ public class dcp_magellan_MagellanFighter extends BaseHullMod {
    }
 
    public boolean isApplicableToShip(ShipAPI ship) {
-      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_exclusive_hullmod")) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_magellan_exclusive_hullmod")) {
          return false;
       } else {
-         return ship != null && !ship.isFrigate() && ship.getHullSpec().getFighterBays() > 0 && !ship.getVariant().hasHullMod("phasefield") && (ship.getVariant().hasHullMod("magellan_engineering") || ship.getVariant().hasHullMod("magellan_engineering_civ") || ship.getVariant().hasHullMod("magellan_blackcollarmod") || ship.getVariant().hasHullMod("magellan_startigermod") || ship.getVariant().hasHullMod("magellan_levellermod") || ship.getVariant().hasHullMod("magellan_herdmod") || ship.getVariant().hasHullMod("magellan_yellowtailmod")) && super.isApplicableToShip(ship);
+         return ship != null && !ship.isFrigate() && ship.getHullSpec().getFighterBays() > 0 && !ship.getVariant().hasHullMod("phasefield") && (ship.getVariant().hasHullMod("dcp_magellan_engineering") || ship.getVariant().hasHullMod("dcp_magellan_engineering_civ") || ship.getVariant().hasHullMod("magellan_blackcollarmod") || ship.getVariant().hasHullMod("magellan_startigermod") || ship.getVariant().hasHullMod("magellan_levellermod") || ship.getVariant().hasHullMod("magellan_herdmod") || ship.getVariant().hasHullMod("magellan_yellowtailmod")) && super.isApplicableToShip(ship);
       }
    }
 

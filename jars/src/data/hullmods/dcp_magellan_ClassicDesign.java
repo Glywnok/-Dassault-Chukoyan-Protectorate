@@ -8,7 +8,7 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -34,7 +34,7 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "magellan_" + key);
+      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -53,7 +53,7 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
          if (hardflux_track < 0.5F) {
             outputColorLerp = 0.0F;
          } else if (hardflux_track >= 0.5F) {
-            outputColorLerp = DMEUtils.lerp(0.0F, hardflux_track, hardflux_track);
+            outputColorLerp = DCPUtils.lerp(0.0F, hardflux_track, hardflux_track);
          }
 
          Color color1 = Misc.interpolateColor(ZERO_FLUX_RING, FULL_FLUX_RING, Math.min(outputColorLerp, 1.0F));
@@ -79,7 +79,7 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
       tooltip.addPara("- " + this.getString("MagellanEngDesc3"), padS, h, new String[]{"100%"});
       tooltip.addPara("- " + this.getString("BlackcollarModDesc7"), padS, h, new String[]{"25%"});
       tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("MagellanAllIncomp"), padS);
       text.addPara("- Integrated Targeting Unit", bad, padS);
       text.addPara("- Dedicated Targeting Core", bad, 0.0F);

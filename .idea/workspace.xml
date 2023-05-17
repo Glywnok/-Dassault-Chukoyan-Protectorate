@@ -4,92 +4,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="help me">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="Even more useless changes....">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/!sim_opponents.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/special_items.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/special_items.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_leveller.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_leveller.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/ship_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/ship_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/6e/dcp_DME_kormoran_6e_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/6e/dcp_DME_tunguska_6e_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/6e/dcp_DME_vesper_6e_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/6e/dcp_DME_wildgoose_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/civ/dcp_magellan_skiff_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_feeder_std.variant" beforeDir="false" afterPath="$PROJECT_DIR$/data/variants/dcp_DME_feeder_std.variant" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_kormoran_6e_elite.variant" beforeDir="false" afterPath="$PROJECT_DIR$/data/variants/dcp_DME_kormoran_6e_elite.variant" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tunguska_6e_elite.variant" beforeDir="false" afterPath="$PROJECT_DIR$/data/variants/dcp_DME_tunguska_6e_elite.variant" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_skiff_std.variant" beforeDir="false" afterPath="$PROJECT_DIR$/data/variants/dcp_magellan_skiff_std.variant" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/revolutionary/dcp_DME_feeder_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_magellan_smciws_ftr.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_magellan_smciws_ftr.wpn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_magellan_smgatling.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_magellan_smgatling.wpn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ja/mag/hulls/ship_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ja/mag/hulls/wing_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ja/mag/weapons/weapon_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/DCP.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/dcp_DME_BladeBreakerBeaconPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/dcp_DME_BladeBreakerBeaconPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_DME_SigmaShield.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_DME_SigmaShield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_DME_Tags.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_DME_Tags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/procgen/themes/BladeBreakerThemeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/procgen/themes/BladeBreakerThemeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/rulescmd/dcp_DME_SigmaMatterDataRecovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/rulescmd/dcp_DME_SigmaMatterDataRecovery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_BladeBreakerAssault.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_BladeBreakerAssault.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_BladeBreakerDefense.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_BladeBreakerDefense.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_BladeBreakerEngineering.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_BladeBreakerEngineering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_BladeBreakerSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_BladeBreakerSupport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_ExperiencedDamageControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_ExperiencedDamageControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_ITU.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_ITU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_MonoblocConstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_MonoblocConstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_RefurbishedFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_RefurbishedFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_SkipspaceReactionFurnace.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_SkipspaceReactionFurnace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/campaign/intel/dcp_DME_BreakerBeaconIntel.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/campaign/intel/dcp_DME_BreakerBeaconIntel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/campaign/intel/dcp_DME_DiscoverEntityListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/campaign/intel/dcp_DME_DiscoverEntityListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/ai/dcp_DME_GradMissileAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/ai/dcp_DME_GradMissileAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_AMMOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_AMMOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_BlazeGunOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_BlazeGunOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_BraveKineticSparks.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_BraveKineticSparks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_CalliopeOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_CalliopeOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_EBolterEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_EBolterEMPOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElecRocketOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElecRocketOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElectroEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElectroEMPOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_FragtorpOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_FragtorpOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_FrappeurOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_FrappeurOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_HellhoundOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_HellhoundOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_HowlerClusterFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_HowlerClusterFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_HybridEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_HybridEMPOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_JackalLgSparks.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_JackalLgSparks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_JackalSparks.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_JackalSparks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_LensHDEMOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_LensHDEMOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_LinearFlakFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_LinearFlakFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_MatadorHeavyOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_MatadorHeavyOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_MinirailOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_MinirailOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_OmniBlasterFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_OmniBlasterFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_OmniEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_OmniEMPOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PhaseRailOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PhaseRailOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasmaDriverOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasmaDriverOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasmaGunOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasmaGunOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasmaOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasmaOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasrocketEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasrocketEMPOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PulserEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PulserEMPOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PulseripperFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PulseripperFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_RailSparks12cm.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_RailSparks12cm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCP.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_protectorate.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_protectorate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/proj/dcp_DME_flare_phase.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/proj/dcp_DME_flare_phase.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/proj/dcp_DME_minelayer_mine.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/proj/dcp_DME_minelayer_mine.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/proj/dcp_DME_sigmamine.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/proj/dcp_DME_sigmamine.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/proj/dcp_magellan_flakpod_proj.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/proj/dcp_magellan_flakpod_proj.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/proj/dcp_magellan_microflare_round.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/proj/dcp_magellan_microflare_round.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/proj/dcp_magellan_smokeround.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/proj/dcp_magellan_smokeround.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/ship_systems.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/ship_systems.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/DCP.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src.zip" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/submarkets/magellan_IndieMilMarketPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/submarkets/magellan_IndieMilMarketPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_SO.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_DME_SO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_AblativeComposites.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_AblativeComposites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_BattlelineDoctrine.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_BattlelineDoctrine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_BlackcollarUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_BlackcollarUpgrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicDesign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicDesignB.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicDesignB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicShieldHullmod.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicShieldHullmod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ConvertedShuttleBay.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ConvertedShuttleBay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_DemilitarizedRefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_DemilitarizedRefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_HerdRefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_HerdRefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_LevellerRefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_LevellerRefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanDefense.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanDefense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanEngineering.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanEngineering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanFighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanFighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_SpartacusReactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_SpartacusReactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_StartigerUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_StartigerUpgrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_YellowtailRefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_YellowtailRefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/DMEUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/DCPUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/plugins/dcp_DME_lightInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/plugins/dcp_DME_lightInjector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/MagicGuidance/dcp_DME_PhasedBusterLauncherGuidedFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/MagicGuidance/dcp_DME_PhasedBusterLauncherGuidedFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/MagicGuidance/dcp_DME_ThermalMortarGuidedFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/MagicGuidance/dcp_DME_ThermalMortarGuidedFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_CalliopeLaunchFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_CalliopeLaunchFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElecRocketLaunchFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElecRocketLaunchFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElecRocketSmLaunchFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElecRocketSmLaunchFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElectrobolterFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ElectrobolterFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_KineticFireFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_KineticFireFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_MegaStreamerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_MegaStreamerFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PhaseBlasterFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PhaseBlasterFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PhaseRailFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PhaseRailFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PhasedBusterLauncherFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PhasedBusterLauncherFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasBolterFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasBolterFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasDriverFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasDriverFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasmaMortarFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_PlasmaMortarFX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_RailSparks20cm.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_RailSparks20cm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_RailSparks6cm.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_RailSparks6cm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ScatterLaserFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ScatterLaserFX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShellerOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShellerOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShellheadOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShellheadOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShellshockerOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShellshockerOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShockArtyOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShockArtyOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SigmaBeamAblationEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SigmaBeamAblationEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SigmaBusterOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SigmaBusterOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SmartPlasmidOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SmartPlasmidOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_TacShockbeamAblationEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_TacShockbeamAblationEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_UltraShockbeamAblationEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_UltraShockbeamAblationEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_VoleurOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_VoleurOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_VoltigeurOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_VoltigeurOnHit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_DamperStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_DamperStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_MineStrikeStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_MineStrikeStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_SigmaMineStrikeStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_SigmaMineStrikeStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShockArtilleryFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_ShockArtilleryFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SigmaBusterLaunchFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SigmaBusterLaunchFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SigmaPulserFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_SigmaPulserFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_basicBeamFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_DME_basicBeamFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonecrackerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonecrackerFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonegrinderFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonegrinderFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_DiffusionGunFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_DiffusionGunFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_DiffusionPulseFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_DiffusionPulseFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelScatterFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelScatterFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelrodFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelrodFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FusbombFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FusbombFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_HEShotgunFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_HEShotgunFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_HESniperFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_HESniperFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_IonChargeFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_IonChargeFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_QuenchCannonFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_QuenchCannonFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_MirageFXStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_MirageFXStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_MirageFXStatsSm.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_MirageFXStatsSm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_SkipjetParticleFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_DME_SkipjetParticleFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_BurstJetStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_BurstJetStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_MissileDroneStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_MissileDroneStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_TargetingDroneStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_TargetingDroneStats.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,17 +92,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/Fractal Softworks/Starsector 0.95.1/mods/Dassault-Chukoyan Protectorate/jars&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.17011495&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Program Files (x86)/Fractal Softworks/Starsector 0.95.1/mods/Dassault-Chukoyan Protectorate/data",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15527344",
+    "project.structure.side.proportion": "0.17011495",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -141,11 +126,19 @@
       <option name="project" value="LOCAL" />
       <updated>1684167130408</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Even more useless changes....">
+      <created>1684218190583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684218190583</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="help me" />
-    <option name="LAST_COMMIT_MESSAGE" value="help me" />
+    <MESSAGE value="Even more useless changes...." />
+    <option name="LAST_COMMIT_MESSAGE" value="Even more useless changes...." />
   </component>
 </project>

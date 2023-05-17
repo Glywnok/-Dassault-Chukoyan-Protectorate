@@ -18,7 +18,7 @@ public class dcp_magellan_AblativeComposites extends BaseHullMod {
    private static final float EMP_MULT = 0.75F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "magellan_" + key);
+      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -46,14 +46,14 @@ public class dcp_magellan_AblativeComposites extends BaseHullMod {
    }
 
    public boolean isApplicableToShip(ShipAPI ship) {
-      return ship != null && !ship.isFrigate() && (ship.getVariant().hasHullMod("magellan_engineering") || ship.getVariant().hasHullMod("magellan_engineering_civ") || ship.getVariant().hasHullMod("magellan_blackcollarmod") || ship.getVariant().hasHullMod("magellan_startigermod") || ship.getVariant().hasHullMod("magellan_herdmod")) && super.isApplicableToShip(ship);
+      return ship != null && !ship.isFrigate() && (ship.getVariant().hasHullMod("dcp_magellan_engineering") || ship.getVariant().hasHullMod("dcp_magellan_engineering_civ") || ship.getVariant().hasHullMod("dcp_magellan_blackcollarmod") || ship.getVariant().hasHullMod("dcp_magellan_startigermod") || ship.getVariant().hasHullMod("dcp_magellan_herdmod")) && super.isApplicableToShip(ship);
    }
 
    public String getUnapplicableReason(ShipAPI ship) {
       if (ship != null && ship.isFrigate()) {
          return this.getString("MagSpecialCompatFrigate");
       } else {
-         return ship.getVariant().hasHullMod("magellan_engineering") && ship.getVariant().hasHullMod("magellan_engineering_civ") && ship.getVariant().hasHullMod("magellan_blackcollarmod") && ship.getVariant().hasHullMod("magellan_startigermod") && ship.getVariant().hasHullMod("magellan_herdmod") ? super.getUnapplicableReason(ship) : this.getString("MagSpecialCompat2");
+         return ship.getVariant().hasHullMod("dcp_magellan_engineering") && ship.getVariant().hasHullMod("dcp_magellan_engineering_civ") && ship.getVariant().hasHullMod("dcp_magellan_blackcollarmod") && ship.getVariant().hasHullMod("magellan_startigermod") && ship.getVariant().hasHullMod("magellan_herdmod") ? super.getUnapplicableReason(ship) : this.getString("MagSpecialCompat2");
       }
    }
 

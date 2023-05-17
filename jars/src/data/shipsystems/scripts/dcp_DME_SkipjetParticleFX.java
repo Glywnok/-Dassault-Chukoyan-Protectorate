@@ -3,7 +3,7 @@ package data.shipsystems.scripts;
 import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipEngineControllerAPI.ShipEngineAPI;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import java.util.Iterator;
 import org.lazywizard.lazylib.MathUtils;
@@ -42,7 +42,7 @@ public class dcp_DME_SkipjetParticleFX {
             float angle = MathUtils.getRandomNumberInRange(-this.coneAngle, this.coneAngle);
             Vector2f vel = (Vector2f)VectorUtils.rotate(baseVel, angle, new Vector2f()).scale(this.velMult);
             float size = this.baseSize * (effectLevel + (float)Math.random());
-            Color color = DMEUtils.lerpRGB(engine.getEngineColor(), this.fullColor, effectLevel);
+            Color color = DCPUtils.lerpRGB(engine.getEngineColor(), this.fullColor, effectLevel);
             combat.addSmoothParticle(engine.getLocation(), vel, size, this.baseBrightness + chance, this.baseDuration + chance, color);
          }
       }

@@ -6,7 +6,7 @@ import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.OnFireEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -23,7 +23,7 @@ public class dcp_DME_PhaseRailFX implements OnFireEffectPlugin, EveryFrameWeapon
       float ship_facing = ship.getFacing();
       Vector2f ship_velocity = ship.getVelocity();
       MathUtils.getPointOnCircumference(weapon_location, 17.0F, ship_facing);
-      Vector2f explosion_offset = DMEUtils.translate_polar(weapon_location, 20.0F, weapon.getCurrAngle());
+      Vector2f explosion_offset = DCPUtils.translate_polar(weapon_location, 20.0F, weapon.getCurrAngle());
       engine.spawnExplosion(explosion_offset, ship.getVelocity(), FLASH_COLOR, 105.0F, 0.3F);
    }
 

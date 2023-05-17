@@ -6,7 +6,7 @@ import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.OnFireEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -34,8 +34,8 @@ public class dcp_magellan_FuelScatterFX implements OnFireEffectPlugin, EveryFram
       engine.removeEntity(proj);
       Vector2f weapon_location = weapon.getLocation();
       ShipAPI ship = weapon.getShip();
-      Vector2f explosion_offset = DMEUtils.translate_polar(weapon_location, 31.0F, weapon.getCurrAngle());
-      Vector2f explosion_offset2 = DMEUtils.translate_polar(weapon_location, 25.0F, weapon.getCurrAngle());
+      Vector2f explosion_offset = DCPUtils.translate_polar(weapon_location, 31.0F, weapon.getCurrAngle());
+      Vector2f explosion_offset2 = DCPUtils.translate_polar(weapon_location, 25.0F, weapon.getCurrAngle());
       engine.spawnExplosion(explosion_offset, ship.getVelocity(), BRIGHT_COLOR, 36.0F, 0.3F);
       engine.spawnExplosion(explosion_offset2, ship.getVelocity(), DIM_COLOR, 18.0F, 0.18F);
    }

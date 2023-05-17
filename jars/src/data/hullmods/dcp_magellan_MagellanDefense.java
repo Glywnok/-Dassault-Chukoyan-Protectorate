@@ -9,7 +9,7 @@ import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.LabelAPI;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 
 public class dcp_magellan_MagellanDefense extends BaseHullMod {
@@ -35,7 +35,7 @@ public class dcp_magellan_MagellanDefense extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "magellan_" + key);
+      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -60,7 +60,7 @@ public class dcp_magellan_MagellanDefense extends BaseHullMod {
          if (hardflux_track < 0.5F) {
             outputColorLerp = 0.0F;
          } else if (hardflux_track >= 0.5F) {
-            outputColorLerp = DMEUtils.lerp(0.0F, hardflux_track, hardflux_track);
+            outputColorLerp = DCPUtils.lerp(0.0F, hardflux_track, hardflux_track);
          }
 
          Color color1 = Misc.interpolateColor(ZERO_FLUX_RING, FULL_FLUX_RING, Math.min(outputColorLerp, 1.0F));
@@ -81,7 +81,7 @@ public class dcp_magellan_MagellanDefense extends BaseHullMod {
       Color quote = dcp_magellan_hullmodUtils.getQuoteColor();
       Color attrib = Misc.getGrayColor();
       tooltip.addSectionHeading(this.getString("MagSpecialTitle"), mag, magbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/magellan_hullmod_defense.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/magellan_hullmod_defense.png", 40.0F);
       text.addPara("- " + this.getString("DefenseSPDesc1"), padS, h, new String[]{"15%"});
       text.addPara("- " + this.getString("DefenseSPDesc2"), padS, h, new String[]{"20%"});
       text.addPara("- " + this.getString("DefenseSPDesc3"), padS, h, new String[]{"25%"});
@@ -93,10 +93,10 @@ public class dcp_magellan_MagellanDefense extends BaseHullMod {
    }
 
    public boolean isApplicableToShip(ShipAPI ship) {
-      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_exclusive_hullmod")) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_magellan_exclusive_hullmod")) {
          return false;
       } else {
-         return (ship.getVariant().hasHullMod("magellan_engineering") || ship.getVariant().hasHullMod("magellan_engineering_civ") || ship.getVariant().hasHullMod("magellan_blackcollarmod") || ship.getVariant().hasHullMod("magellan_startigermod") || ship.getVariant().hasHullMod("magellan_levellermod") || ship.getVariant().hasHullMod("magellan_herdmod") || ship.getVariant().hasHullMod("magellan_yellowtailmod")) && super.isApplicableToShip(ship);
+         return (ship.getVariant().hasHullMod("dcp_magellan_engineering") || ship.getVariant().hasHullMod("magellan_engineering_civ") || ship.getVariant().hasHullMod("magellan_blackcollarmod") || ship.getVariant().hasHullMod("magellan_startigermod") || ship.getVariant().hasHullMod("magellan_levellermod") || ship.getVariant().hasHullMod("magellan_herdmod") || ship.getVariant().hasHullMod("magellan_yellowtailmod")) && super.isApplicableToShip(ship);
       }
    }
 

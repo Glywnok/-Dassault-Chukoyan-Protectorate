@@ -41,52 +41,52 @@ public class dcp_DME_lightInjector extends BaseEveryFrameCombatPlugin {
                      byte var12 = -1;
                      switch(id.hashCode()) {
                      case -2047486922:
-                        if (id.equals("istl_BBpulsejets")) {
+                        if (id.equals("dcp_DME_BBpulsejets")) {
                            var12 = 8;
                         }
                         break;
                      case -1679772003:
-                        if (id.equals("istl_bravejets")) {
+                        if (id.equals("dcp_DME_bravejets")) {
                            var12 = 9;
                         }
                         break;
                      case -803047367:
-                        if (id.equals("istl_heavyburn")) {
+                        if (id.equals("dcp_DME_heavyburn")) {
                            var12 = 6;
                         }
                         break;
                      case -507108695:
-                        if (id.equals("istl_ramdrive")) {
+                        if (id.equals("dcp_DME_ramdrive")) {
                            var12 = 4;
                         }
                         break;
                      case -55722704:
-                        if (id.equals("istl_jetinjector")) {
+                        if (id.equals("dcp_DME_jetinjector")) {
                            var12 = 3;
                         }
                         break;
                      case 123430954:
-                        if (id.equals("istl_dockjets")) {
+                        if (id.equals("dcp_DME_dockjets")) {
                            var12 = 5;
                         }
                         break;
                      case 805851446:
-                        if (id.equals("istl_pulsejets")) {
+                        if (id.equals("dcp_DME_pulsejets")) {
                            var12 = 0;
                         }
                         break;
                      case 1215710802:
-                        if (id.equals("istl_slammerjets")) {
+                        if (id.equals("dcp_DME_slammerjets")) {
                            var12 = 7;
                         }
                         break;
                      case 1688044178:
-                        if (id.equals("istl_pulsejets_frg")) {
+                        if (id.equals("dcp_DME_pulsejets_frg")) {
                            var12 = 2;
                         }
                         break;
                      case 1688044251:
-                        if (id.equals("istl_pulsejets_ftr")) {
+                        if (id.equals("dcp_DME_pulsejets_ftr")) {
                            var12 = 1;
                         }
                      }

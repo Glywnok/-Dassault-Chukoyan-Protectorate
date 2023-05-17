@@ -9,7 +9,7 @@ import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.LabelAPI;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -33,7 +33,7 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "magellan_" + key);
+      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -67,7 +67,7 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
       if (fluxlevel < 0.7F) {
          jitterLevel = 0.0F;
       } else if (fluxlevel >= 0.7F) {
-         jitterLevel = DMEUtils.lerp(0.0F, fluxlevel, -3.0F + 4.0F * hardfluxlevel);
+         jitterLevel = DCPUtils.lerp(0.0F, fluxlevel, -3.0F + 4.0F * hardfluxlevel);
          if (jitterLevel > 1.0F) {
             jitterLevel = 1.0F;
          }
@@ -98,7 +98,7 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
       intlabel.setHighlightColors(new Color[]{emp_color, h, h});
       tooltip.addPara("- " + this.getString("SpartacusReactorDesc4"), padS, h, new String[]{this.getString("SpartacusReactor4HL"), "25%"});
       tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/Magellan/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("MagellanAllIncomp"), padS);
       text.addPara("- Expanded Deck Crew", bad, padS);
       text.addPara("- Resistant Flux Conduits", bad, padS);
@@ -119,7 +119,7 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
    }
 
    public boolean isApplicableToShip(ShipAPI ship) {
-      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_core_hullmod")) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_magellan_core_hullmod")) {
          return false;
       } else {
          return ship != null && !ship.isFrigate() && super.isApplicableToShip(ship);
@@ -130,7 +130,7 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
       if (ship != null && ship.isFrigate()) {
          return this.getString("MagSpecialCompatFrigate");
       } else {
-         return this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_core_hullmod") ? this.getString("MagSpecialCompat3") : super.getUnapplicableReason(ship);
+         return this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_magellan_core_hullmod") ? this.getString("MagSpecialCompat3") : super.getUnapplicableReason(ship);
       }
    }
 

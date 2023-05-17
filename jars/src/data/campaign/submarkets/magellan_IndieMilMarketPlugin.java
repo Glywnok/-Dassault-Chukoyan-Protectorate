@@ -14,7 +14,7 @@ import java.util.Iterator;
 
 public class magellan_IndieMilMarketPlugin extends MilitarySubmarketPlugin {
    private String getString(String key) {
-      return Global.getSettings().getString("Magellan_Strings", "magellan_" + key);
+      return Global.getSettings().getString("Magellan_Strings", "dcp_magellan_" + key);
    }
 
    public void updateCargoPrePlayerInteraction() {

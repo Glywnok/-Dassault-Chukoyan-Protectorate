@@ -19,7 +19,7 @@ import com.fs.starfarer.api.combat.ShipSystemAPI.SystemState;
 import com.fs.starfarer.api.combat.ShipwideAIFlags.AIFlags;
 import com.fs.starfarer.api.impl.combat.DroneStrikeStats;
 import com.fs.starfarer.api.util.Misc;
-import data.scripts.DMEUtils;
+import data.scripts.DCPUtils;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,7 +29,7 @@ import java.util.List;
 import org.lwjgl.util.vector.Vector2f;
 
 public class dcp_magellan_MissileDroneStats extends DroneStrikeStats {
-   private final String DRONE_WPN_ID = "magellan_missiledrone_wpn";
+   private final String DRONE_WPN_ID = "dcp_magellan_missiledrone_wpn";
    private final int DRONES_TO_FIRE = 1;
    private final Color FLASH_COLOR = new Color(210, 170, 90, 255);
    protected WeaponAPI weapon;
@@ -37,11 +37,11 @@ public class dcp_magellan_MissileDroneStats extends DroneStrikeStats {
    protected ShipAPI forceNextTarget = null;
 
    private String getString(String key) {
-      return Global.getSettings().getString("Magellan_Strings", "magellan_" + key);
+      return Global.getSettings().getString("Magellan_Strings", "dcp_magellan_" + key);
    }
 
    protected String getWeaponId() {
-      return "magellan_missiledrone_wpn";
+      return "dcp_magellan_missiledrone_wpn";
    }
 
    protected int getNumToFire() {
@@ -115,7 +115,7 @@ public class dcp_magellan_MissileDroneStats extends DroneStrikeStats {
             engine.addLayeredRenderingPlugin(new data.shipsystems.scripts.dcp_magellan_MissileDroneStats.DroneMissileScript(drone, missile));
             float thickness = 8.0F;
             float coreWidthMult = 0.5F;
-            EmpArcEntityAPI arc = engine.spawnEmpArcVisual(DMEUtils.translate_polar(ship.getLocation(), -20.0F, ship.getFacing()), ship, missile.getLocation(), missile, thickness, this.FLASH_COLOR, Color.white);
+            EmpArcEntityAPI arc = engine.spawnEmpArcVisual(DCPUtils.translate_polar(ship.getLocation(), -20.0F, ship.getFacing()), ship, missile.getLocation(), missile, thickness, this.FLASH_COLOR, Color.white);
             arc.setCoreWidthOverride(thickness * coreWidthMult);
             arc.setSingleFlickerMode();
          } else if (drone.getShipAI() != null) {

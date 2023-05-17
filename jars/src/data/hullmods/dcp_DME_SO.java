@@ -48,7 +48,7 @@ public class dcp_DME_SO extends BaseHullMod {
    }
 
    public boolean isApplicableToShip(ShipAPI ship) {
-      return ship.getHullSpec().getHullId().startsWith("istl_");
+      return ship.getHullSpec().getHullId().startsWith("dcp_DME_");
    }
 
    public void advanceInCombat(ShipAPI ship, float amount) {

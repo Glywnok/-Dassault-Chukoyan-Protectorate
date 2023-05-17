@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 public class dcp_magellan_BurstJetStats extends BaseShipSystemScript {
    private String getString(String key) {
-      return Global.getSettings().getString("System", "magellan_" + key);
+      return Global.getSettings().getString("System", "dcp_magellan_" + key);
    }
 
    public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
