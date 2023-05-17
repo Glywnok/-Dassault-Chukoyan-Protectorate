@@ -874,7 +874,7 @@
     },
 
 	#Other ship sounds
-	"dcp_DME_DME_dronelaunch":
+	"dcp_dme_dronelaunch":
 	[
 		{"file":"sounds/DCP/dcpmisc/dcp_DME_dronelaunch.ogg","pitch":0.985, "volume":0.29},
 		{"file":"sounds/DCP/dcpmisc/dcp_DME_dronelaunch.ogg","pitch":1, "volume":0.3},

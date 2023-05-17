@@ -265,7 +265,7 @@ public class Kostroma {
       lareolePolis.setInteractionImage("illustrations", "space_bar");
       SectorEntityToken lareole_loc = system.addCustomEntity((String)null, (String)null, "stable_location", "neutral");
       lareole_loc.setCircularOrbitPointingDown(gironde, 220.0F, 1280.0F, 105.0F);
-      AddMarketplace.addMarketplace("dassault_mikoyan", lareole, new ArrayList(Arrays.asList(lareolePolis)), "La Réole", 5, new ArrayList(Arrays.asList("habitable", "water_surface", "free_market", "volturnian_lobster_pens", "organics_common", "ore_abundant", "rare_ore_sparse", "large_refugee_population", "urbanized_polity", "population_5")), new ArrayList(Arrays.asList("battlestation_high", "militarybase", "aquaculture", "mining", "spaceport", "heavybatteries", "6emebureau", "population")), new ArrayList(Arrays.asList("generic_military", "black_market", "open_market", "storage")), 0.2F);
+      AddMarketplace.addMarketplace("dassault_mikoyan", lareole, new ArrayList(Arrays.asList(lareolePolis)), "La Réole", 5, new ArrayList(Arrays.asList("habitable", "water_surface", "free_market", "volturnian_lobster_pens", "organics_common", "ore_abundant", "rare_ore_sparse", "large_refugee_population", "urbanized_polity", "population_5")), new ArrayList(Arrays.asList("battlestation_high", "militarybase", "aquaculture", "mining", "spaceport", "heavybatteries", "dcp_DME_6emebureau", "population")), new ArrayList(Arrays.asList("generic_military", "black_market", "open_market", "storage")), 0.2F);
       lareole.setCustomDescriptionId("planet_lareole");
       lareolePolis.setCustomDescriptionId("station_lareole_polis");
       system.addRingBand(gironde, "misc", "rings_dust0", 256.0F, 0, Color.white, 256.0F, 1720.0F, 120.0F);

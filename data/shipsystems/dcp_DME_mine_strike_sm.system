@@ -8,7 +8,7 @@
 	"canUseWhileRightClickSystemOn":true,
 
 	"fadeActivationSoundOnChargedown":true,
-	"useSound":"dcp_DME_DME_dronelaunch",
+	"useSound":"dcp_dme_dronelaunch",
 	"outOfUsesSound":"dcp_DME_system_unavailable",
 	
 	"aiHints":{

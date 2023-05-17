@@ -139,7 +139,7 @@
     "startShipsSuper":[["dcp_DME_snowgoose_elite"]],
 
     "startSpecialItems":[
-        [["dcp_DME_dmecore_package", "dcp_DME_dmeadv_package"]],
+        [["dcp_dmecore_package", "dcp_dmeadv_package"]],
     ],
     
     "colonyExpeditionChance":1.2,

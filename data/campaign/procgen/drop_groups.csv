@@ -20,14 +20,14 @@ nothing,breaker_research,100
 "item_modspec:{tier:3, tags:[bladebreakers, !no_drop_salvage]}",breaker_research,30
 dcp_securedata,breaker_research,10
 ,,
-nothing,sigma_matter2,100
-dcp_sigma_matter2,sigma_matter2,4
-dcp_sigma_matter1,sigma_matter2,10
-dcp_sigma_matter3,sigma_matter2,1
+nothing,dcp_DME_sigma_matter2,100
+dcp_DME_sigma_matter2,dcp_DME_sigma_matter2,4
+dcp_DME_sigma_matter1,dcp_DME_sigma_matter2,10
+dcp_DME_sigma_matter3,dcp_DME_sigma_matter2,1
 ,,
-nothing,sigma_matter1,100
-dcp_sigma_matter1,sigma_matter1,10
-dcp_sigma_matter3,sigma_matter1,1
+nothing,dcp_DME_sigma_matter1,100
+dcp_DME_sigma_matter1,dcp_DME_sigma_matter1,10
+dcp_DME_sigma_matter3,dcp_DME_sigma_matter1,1
 ,,
-nothing,sigma_matter3,100
-dcp_sigma_matter3,sigma_matter3,1
+nothing,dcp_DME_sigma_matter3,100
+dcp_DME_sigma_matter3,dcp_DME_sigma_matter3,1

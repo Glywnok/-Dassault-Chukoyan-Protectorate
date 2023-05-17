@@ -57,7 +57,7 @@
 		},
 	],
 	
-	"useSound":"dcp_DME_DME_dronelaunch",
+	"useSound":"dcp_DME_dronelaunch",
 	"outOfUsesSound":"dcp_DME_midtech_arm_sm",
 	
 	"aiHints":{

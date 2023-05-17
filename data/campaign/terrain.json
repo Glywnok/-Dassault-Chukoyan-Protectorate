@@ -7,9 +7,9 @@
 		"plugin":"data.campaign.terrain.dcp_DME_StarCoronaSigmaTerrainPlugin",
 		"musicSuppression":1,
 		# inside corona but not inside flare
-		"loopOne":"dcp_terrain_sigma",
+		"loopOne":"dcp_DME_terrain_sigma",
 		# inside flare
-		"loopTwo":"dcp_terrain_sigma_flare",
+		"loopTwo":"dcp_DME_terrain_sigma_flare",
 	},
 }
 

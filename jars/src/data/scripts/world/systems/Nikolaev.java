@@ -84,7 +84,7 @@ public class Nikolaev {
       SectorEntityToken station = system.addCustomEntity("nikolaev_port", "Peremohy Highport", "station_nikolaev_highport", "dassault_mikoyan");
       station.setCircularOrbitPointingDown(system.getEntityById("dcp_DME_planet_peremohy"), 45.0F, 420.0F, 45.0F);
       station.setInteractionImage("illustrations", "orbital");
-      MarketAPI peremohyMarket = AddMarketplace.addMarketplace("dassault_mikoyan", peremohy, new ArrayList(Arrays.asList(station)), "Peremohy", 7, new ArrayList(Arrays.asList("habitable", "farmland_adequate", "ore_moderate", "rare_ore_sparse", "urbanized_polity", "regional_capital", "terran", "population_7")), new ArrayList(Arrays.asList("starfortress_mid", "militarybase", "refining", "megaport", "heavybatteries", "6emebureau", "population")), new ArrayList(Arrays.asList("generic_military", "black_market", "open_market", "storage")), 0.2F);
+      MarketAPI peremohyMarket = AddMarketplace.addMarketplace("dassault_mikoyan", peremohy, new ArrayList(Arrays.asList(station)), "Peremohy", 7, new ArrayList(Arrays.asList("habitable", "farmland_adequate", "ore_moderate", "rare_ore_sparse", "urbanized_polity", "regional_capital", "terran", "population_7")), new ArrayList(Arrays.asList("starfortress_mid", "militarybase", "refining", "megaport", "heavybatteries", "dcp_DME_6emebureau", "population")), new ArrayList(Arrays.asList("generic_military", "black_market", "open_market", "storage")), 0.2F);
       peremohyMarket.addIndustry("orbitalworks", new ArrayList(Arrays.asList("pristine_nanoforge")));
       peremohy.setCustomDescriptionId("planet_peremohy");
       station.setCustomDescriptionId("nikolaev_highport");

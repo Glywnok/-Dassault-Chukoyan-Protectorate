@@ -189,7 +189,7 @@ public class KhamnConstellation {
       jeshad.getSpec().setTilt(20.0F);
       jeshad.applySpecChanges();
       jeshad.setInteractionImage("illustrations", "desert_moons_ruins");
-      MarketAPI jeshadMarket = AddMarketplace.addMarketplace("magellan_protectorate", jeshad, (ArrayList)null, "Jeshad", 8, new ArrayList(Arrays.asList("habitable", "extreme_weather", "farmland_poor", "ore_abundant", "rare_ore_sparse", "organics_common", "urbanized_polity", "dissident", "magellan_warrens", "population_8")), new ArrayList(Arrays.asList("starfortress", "megaport", "farming", "mining", "highcommand", "heavybatteries", "population")), new ArrayList(Arrays.asList("generic_military", "black_market", "open_market", "storage")), 0.3F);
+      MarketAPI jeshadMarket = AddMarketplace.addMarketplace("magellan_protectorate", jeshad, (ArrayList)null, "Jeshad", 8, new ArrayList(Arrays.asList("habitable", "extreme_weather", "farmland_poor", "ore_abundant", "rare_ore_sparse", "organics_common", "urbanized_polity", "dissident", "dcp_magellan_warrens", "population_8")), new ArrayList(Arrays.asList("starfortress", "megaport", "farming", "mining", "highcommand", "heavybatteries", "population")), new ArrayList(Arrays.asList("generic_military", "black_market", "open_market", "storage")), 0.3F);
       jeshadMarket.addIndustry("heavyindustry", new ArrayList(Arrays.asList("corrupted_nanoforge")));
       jeshad.setCustomDescriptionId("planet_jeshad");
       PlanetAPI annore = system_khamn.addPlanet("magellan_planet_annore", magella, "Annore", "water", 360.0F * (float)Math.random(), 75.0F, 2100.0F, 105.0F);
@@ -322,11 +322,11 @@ public class KhamnConstellation {
       system_two.setName(this.StarName + " Secundus Star System");
       system_two.addRingBand(two_star, "misc", "rings_dust0", 256.0F, 0, Color.gray, 144.0F, radius_junkyard - 1000.0F, 1050.0F);
       system_two.addAsteroidBelt(two_star, 100, radius_junkyard - 1000.0F, 240.0F, 120.0F, 180.0F, "asteroid_belt", this.StarName + " Secundus Inner Belt");
-      SectorEntityToken junkyardStation = system_two.addCustomEntity("station_junkyardstarport", "Ghammol Station", "station_side06", "independent");
+      SectorEntityToken junkyardStation = system_two.addCustomEntity("dcp_station_junkyardstarport", "Ghammol Station", "station_side06", "independent");
       junkyardStation.setCircularOrbitWithSpin(two_star, 60.0F, radius_junkyard - 600.0F, 105.0F, 3.0F, 7.0F);
-      MarketAPI junkyardMarket = AddMarketplace.addMarketplace("independent", junkyardStation, (ArrayList)null, "Ghammol Station", 4, new ArrayList(Arrays.asList("stealth_minefields", "population_4")), new ArrayList(Arrays.asList("battlestation", "heavybatteries", "spaceport", "refining", "population")), new ArrayList(Arrays.asList("magellan_ind_military", "black_market", "magellan_open_market", "storage")), 0.2F);
+      MarketAPI junkyardMarket = AddMarketplace.addMarketplace("independent", junkyardStation, (ArrayList)null, "Ghammol Station", 4, new ArrayList(Arrays.asList("stealth_minefields", "population_4")), new ArrayList(Arrays.asList("battlestation", "heavybatteries", "spaceport", "refining", "population")), new ArrayList(Arrays.asList("dcp_magellan_ind_military", "black_market", "magellan_open_market", "storage")), 0.2F);
       junkyardMarket.addTag("magellan_indiemarket");
-      junkyardStation.setCustomDescriptionId("station_junkyardstarport");
+      junkyardStation.setCustomDescriptionId("dcp_station_junkyardstarport");
       JumpPointAPI jumpPoint3 = Global.getFactory().createJumpPoint("magellan_junkyard_jump", this.StarName + " Secundus Bridge");
       jumpPoint3.setCircularOrbit(two_star, 240.0F, radius_junkyard - 600.0F, 105.0F);
       system_two.addEntity(jumpPoint3);
