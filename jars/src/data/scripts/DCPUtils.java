@@ -5,10 +5,10 @@ import java.util.Random;
 import org.lazywizard.lazylib.FastTrig;
 import org.lwjgl.util.vector.Vector2f;
 
-public class DMEUtils {
+public class DCPUtils {
    private static final Random rand = new Random();
 
-   private DMEUtils() {
+   private DCPUtils() {
    }
 
    public static final float lerp(float a, float b, float amount) {
