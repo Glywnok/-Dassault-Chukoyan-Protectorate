@@ -20,7 +20,7 @@
 	#"coreColor":[125,175,255,255],
 	#"glowColor":[100,155,255,225],
 	"width":9.0,
-	"textureType":["graphics/DCP/fx/dcp_DME_ribbedfringe.png","graphics/DCP/fx/dcp_DME_thinbeamcore.png"],
+	"textureType":["graphics/DCP/fx/dcp_ribbedfringe.png","graphics/DCP/fx/dcp_thinbeamcore.png"],
 	"textureScrollSpeed":256.0,
 	"pixelsPerTexel":0.5,
 	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER],

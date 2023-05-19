@@ -10,11 +10,11 @@ import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.impl.campaign.ids.Voices;
 
 public class dcp_magellan_People {
-   public static final String MAGELLAN_ARAL = "magellan_protectorate_aral";
-   public static final String MAGELLAN_MADSCIENTIST = "magellan_protectorate_madscientist";
-   public static final String MAGELLAN_LEV_OBILO = "magellan_leveller_obilo";
-   public static final String MAGELLAN_LEV_VALCA = "magellan_leveller_valca";
-   public static final String MAGELLAN_LEV_GHAMMOL = "magellan_leveller_ghammol";
+   public static final String MAGELLAN_ARAL = "dcp_magellan_protectorate_aral";
+   public static final String MAGELLAN_MADSCIENTIST = "dcp_magellan_protectorate_madscientist";
+   public static final String MAGELLAN_LEV_OBILO = "dcp_magellan_leveller_obilo";
+   public static final String MAGELLAN_LEV_VALCA = "dcp_magellan_leveller_valca";
+   public static final String MAGELLAN_LEV_GHAMMOL = "dcp_magellan_leveller_ghammol";
 
    public static PersonAPI getPerson(String id) {
       return Global.getSector().getImportantPeople().getPerson(id);
@@ -40,7 +40,7 @@ public class dcp_magellan_People {
          person.setImportance(PersonImportance.HIGH);
          person.getName().setFirst("Aral");
          person.getName().setLast("Dalganos");
-         person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "dcp_magellan_aral"));
+         person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "dcp_magellan_protectorate_aral"));
          person.getStats().setSkillLevel("coordinated_maneuvers", 2.0F);
          person.getStats().setSkillLevel("officer_training", 2.0F);
          person.getStats().setSkillLevel("officer_management", 2.0F);

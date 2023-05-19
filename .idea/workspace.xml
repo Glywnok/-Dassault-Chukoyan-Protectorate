@@ -4,591 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="I genuenly have no idea....">
+    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="YOOOOO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/channels.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/channels.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/commodities.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/commodities.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/procgen/salvage_entity_gen_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/procgen/salvage_entity_gen_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/campaign/procgen/condition_gen_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/procgen/condition_gen_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/campaign/procgen/drop_groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/procgen/drop_groups.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/campaign/procgen/planet_gen_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/procgen/planet_gen_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/campaign/special_items.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/special_items.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/1version/version_files.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config/custom_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/custom_entities.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/exerelin/mining_weapons.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelin/mining_weapons.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/exerelinFactionConfig/dassault_mikoyan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelinFactionConfig/dassault_mikoyan.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/exerelinFactionConfig/the_deserter.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelinFactionConfig/the_deserter.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/indEvo/printing_whitelist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/indEvo/printing_whitelist.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/omnifactory/restricted_ships.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/omnifactory/restricted_ships.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/omnifactory/restricted_weapons.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/omnifactory/restricted_weapons.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/prism/prism_ships_blacklist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/prism/prism_ships_blacklist.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/prism/prism_weapons_blacklist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/prism/prism_weapons_blacklist.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/hull_styles.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/hull_styles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/planets.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/planets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/prism/prism_blueprints_values.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/prism/prism_blueprints_values.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/sounds.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_BBtempest.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_arcite.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_baikal.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_baikal_brone.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bantam.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bbLRMmodule.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bbminerunner.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bbmissilemodule.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bbpdmodule.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bbsuperheavy.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bbsuperheavy_bow.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_blackhand.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_blacklancer.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bladewood.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_borzoi.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bouclier.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bronev_plate_bow.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bronev_plate_left.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bronev_plate_lrear.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bronev_plate_right.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_bronev_plate_rrear.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_burya.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_centaur.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_crasher.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_curse.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_damselfly.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_dard.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_demon.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_desertersupply_lg.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_desertersupply_sm.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_devilray.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_ebeam_drone.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_egret.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_feeder.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_firebeetle.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_firespray.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_flare.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_flatmouse.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_fletcher.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_focuser.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_funnel.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_goalkeeper.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_grand_union.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_guardian_tcitadel.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_guardian_tplate.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_guardian_turret.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_gunpod.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_harridan.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_hellion.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_hummingbird.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_icax.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_ifrit.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_imp.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_iridium.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_jeannedarc.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_kormoran.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_leyte.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_lightbomber.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_lycosid.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_maskirovka.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_mindanao.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_mystere.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_naja.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_naja_mk1.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_puddlejumper.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_pup.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_rafale.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_rafale2.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_reef.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_samoyed.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_sevastopol.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_shieldplate.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_skink.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_slammer.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_snakeeye.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_snowgoose.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_spearhead.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_spooky.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_starsylph.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_stoat.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_stoat_c.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_stormkestrel.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_tempestdrone.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_tereshkova.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_thunderbolt.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_tonnerre.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_tunguska.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_vesper.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_wanderer.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_warlock.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_zelenograd.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_zonedefbit.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DMEx_alauda.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DMEx_alaudatailbinder.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DMEx_bbladetailbinder.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DMEx_bravebit.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DMEx_braveblade.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DMEx_platedrone.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_battlecruiser.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_battleship.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_bomber.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_carrier.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_cbtfreight.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_corvette.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_cruiser.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastdestroyer.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastdestroyerarmor.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastfrigate.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_flakdrone.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_herdcarrier.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_herdintercept.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_hvyfighter.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_interceptor.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_intyellowtail.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_lev_dronefrig.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_lev_lancefrig.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_lightcruiser.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_lightfighter_civ.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_linedestroyer.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_linefrigate.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_ltfreight.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_ltfreight_cbt.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_missiledrone.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_patroldestroyer.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_phasecruiser.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_phasefrig.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_rounder.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_schooner.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_skate.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_skiff.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_skipjack.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_supply.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportcruiser.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportdestroyer.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportfrigate.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_swarmfighter.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_targdrone.ship" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/ship_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_centaur_exp.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_curse_proto.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_imp_proto.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_kormoran_6e.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_naja_exp.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_puddlejumper_exp.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_puddlejumper_mk1.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_sevastopol_mk1.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_starsylph_deserter.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_stormkestrel_proto.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_tempest_deserter.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_tereshkova_exp.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_tunguska_6e.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_vesper_6e.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DME_wildgoose.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_DMEx_bravebit_noshield.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_battlecruiser_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_battleship_startiger.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_bomber_startiger.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_carrier_startiger.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_carrier_theherd.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_carrier_yellowtail.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_cbtfreight_civ.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_corvette_startiger.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_corvette_yellowtail.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_cruiser_startiger.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_fastdestroyer_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_fastdestroyerarmor_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_fastfrigate_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_hvyfighter_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_hvyfighter_theherd.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_hvyfighter_yellowtail.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_interceptor_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_interceptor_civ.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_interceptor_startiger.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_lightcruiser_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_lightcruiser_elite.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_lightcruiser_yellowtail.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_linedestroyer_theherd.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_linefrigate_civ.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_linefrigate_leveller.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_linefrigate_startiger.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_ltfreight_d.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_ltfreight_theherd.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_ltfreight_yellowtail.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_missilefrigate_theherd.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_patroldestroyer_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_patroldestroyer_civ.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_patroldestroyer_leveller.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_phasefrig_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_phasefrig_theherd.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_rounder_leveller.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_schooner_d.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_schooner_d2.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_schooner_yellowtail.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_skiff_d.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_skiff_d2.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_skiff_theherd.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_skipjack_leveller.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_skipjack_militarized.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supply_civ.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supply_yellowtail.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supportcruiser_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supportdestroyer_blackcollar.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supportdestroyer_leveller.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supportdestroyer_yellowtail.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supportfrigate_theherd.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_targdrone_lev.skin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/wing_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lights/dcp_light_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/lights/dcp_light_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lights/dcp_texture_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/lights/dcp_texture_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_BBdreadgunpod.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_BBdreadgunpod.system" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_BBebeam_drones.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_BBebeam_drones.system" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_BBguardgunpod.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_BBguardgunpod.system" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_DMEphasecloak.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_DMEphasecloak.system" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_bravebit_single.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_bravebit_single.system" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_bravebits.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_bravebits.system" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_mine_strike.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_mine_strike.system" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_mine_strike_sm.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_mine_strike_sm.system" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/shipsystems/ship_systems.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/ship_systems.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/strings/descriptions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/strings/descriptions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/afflictor_patrol.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/alauda/dcp_DMEx_alauda_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/alauda/dcp_DMEx_alaudatailbinder_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/alauda/dcp_DMEx_platedrone_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/apogee_improved.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/astral_patrol.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_battlecruiser_blackcollar_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_fastdestroyer_blackcollar_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_fastdestroyerarmor_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_fastfrigate_blackcollar_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_lightcruiser_blackcollar_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_patroldestroyer_blackcollar_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_phasefrig_blackcollar_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_supportcruiser_blackcollar_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/blackcollars/dcp_magellan_supportdestroyer_blackcollar_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/braveblade/dcp_DMEx_bbladetailbinder_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/braveblade/dcp_DMEx_bravebit_noshield_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/braveblade/dcp_DMEx_bravebit_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/braveblade/dcp_DMEx_braveblade_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_blackhand_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_blackhand_defense.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_blackhand_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_blacklancer_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_blacklancer_defense.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_blacklancer_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_curse_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_curse_defense.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_curse_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_devilray_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_devilray_strike.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_devilray_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_ebeam_drone_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_gunpod_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_imp_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_imp_picket.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_imp_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_snakeeye_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_snakeeye_cqb.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_snakeeye_defense.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_snakeeye_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_snakeeye_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_spearhead_def.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_spearhead_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_spearhead_strike.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_spearhead_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_stormkestrel_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_stormkestrel_command.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_stormkestrel_cqb.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/breakers/dcp_DME_stormkestrel_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/civ/dcp_magellan_cbtfreight_civ_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/civ/dcp_magellan_linefrigate_civ_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/civ/dcp_magellan_patroldestroyer_civ_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/civ/dcp_magellan_schooner_restored.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/civ/dcp_magellan_supply_civ_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_baikal_arty.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_baikal_brone_barrage.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_baikal_brone_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_baikal_cqb.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_baikal_sniper.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_baikal_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_baikal_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_borzoi_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_borzoi_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_borzoi_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_borzoi_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_bouclier_export.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_bouclier_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_bronev_plate_bow_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_bronev_plate_left_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_bronev_plate_lrear_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_bronev_plate_right_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_bronev_plate_rrear_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_burya_antifighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_burya_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_burya_heavy.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_burya_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_burya_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_centaur_antifighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_centaur_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_centaur_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_centaur_export.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_centaur_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_centaur_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_feeder_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_jeannedarc_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_jeannedarc_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_jeannedarc_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_kormoran_6e_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_kormoran_command.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_kormoran_pbeam.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_kormoran_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_leyte_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_leyte_patrol.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_leyte_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_maskirovka_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_maskirovka_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_maskirovka_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_mindanao_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_mindanao_patrol.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_mindanao_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_mindanao_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_naja_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_naja_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_naja_export.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_naja_mk1_brawl.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_naja_mk1_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_naja_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_naja_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_puddlejumper_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_puddlejumper_export.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_puddlejumper_hispeed.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_puddlejumper_mk1_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_puddlejumper_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_samoyed_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_samoyed_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_samoyed_export.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_samoyed_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_sevastopol_anti_ftr.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_sevastopol_mk1_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_sevastopol_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_sevastopol_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_snowgoose_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_snowgoose_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_snowgoose_escort.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_snowgoose_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_snowgoose_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_starsylph_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_starsylph_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_starsylph_pulsebeam.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_starsylph_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_starsylph_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_stoat_antifighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_stoat_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_stoat_escort.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_stoat_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_stoat_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tereshkova_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tereshkova_export.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tereshkova_heavy.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tereshkova_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tereshkova_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tereshkova_tech.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tonnerre_area.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tonnerre_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tonnerre_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tunguska_6e_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tunguska_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tunguska_fsup.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_tunguska_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_vesper_6e_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_vesper_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_vesper_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_vesper_overdriven.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_vesper_patrol.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_vesper_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_vesper_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_wanderer_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_wanderer_balanced.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_wanderer_party.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_wanderer_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_wanderer_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_wanderer_vanilla.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_wildgoose_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_zelenograd_battle.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_zelenograd_explore.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_DME_zelenograd_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_battlecruiser_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_battlecruiser_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_battlecruiser_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_battleship_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_battleship_line.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_battleship_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_carrier_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_carrier_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_cbtfreight_frontier.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_cbtfreight_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_cruiser_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_cruiser_obsolete.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_cruiser_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_fastdestroyer_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_fastdestroyer_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_fastdestroyerarmor_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_fastfrigate_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_fastfrigate_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_lightcruiser_elite_proto.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_lightcruiser_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_lightcruiser_veteran.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_linedestroyer_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_linedestroyer_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_linedestroyer_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_linedestroyer_suppport.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_linefrigate_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_linefrigate_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_linefrigate_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_ltfreight_d_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_ltfreight_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_patroldestroyer_explorer.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_patroldestroyer_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_phasecruiser_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_phasefrig_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_phasefrig_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_schooner_d2_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_schooner_d_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_skiff_d2_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_skiff_d_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_skiff_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_skipjack_militarized_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_skipjack_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supply_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportcruiser_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportcruiser_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportcruiser_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportdestroyer_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportdestroyer_shtrafbat.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportdestroyer_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportdestroyer_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportfrigate_attack.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportfrigate_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/dcp_magellan_supportfrigate_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_bbminerunner_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_bladewood_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_bladewood_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_bladewood_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_crasher_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_curse_proto_test.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_demon_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_desertersupply_lg_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_desertersupply_sm_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_flatmouse_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_ifrit_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_ifrit_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_imp_proto_test.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_reef_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_slammer_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_starsylph_deserter_test.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/dcp_DME_stormkestrel_proto_test.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/doom_righthand.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/omen_lefthand.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/shade_lefthand.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/tempest_righthand.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/deserters/wolf_righthand.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/drones/dcp_DME_funnel_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/drones/dcp_DME_goalkeeper_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/drones/dcp_DME_tempestdrone_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/drones/dcp_DME_zonedefbit_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/drones/dcp_magellan_flakdrone_Defense.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/drones/dcp_magellan_missiledrone_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/drones/dcp_magellan_targdrone_lev_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/drones/dcp_magellan_targdrone_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_arcite_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_bantam_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_damselfly_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_dard_Interceptor.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_egret_SSF.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_firebeetle_Assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_firespray_Plasma.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_flare_Heavy.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_fletcher_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_focuser_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_harridan_Scout.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_hellion_Assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_hummingbird_Interceptor.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_icax_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_iridium_Assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_lightbomber_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_lycosid_Int.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_mystere_Multi.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_pup_Armored.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_rafale2_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_rafale_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_rafale_Hedgehog.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_skink_Int.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_spooky_Gunship.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_DME_thunderbolt_Heavy.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_bomber_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_bomber_startiger_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_corvette_Escort.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_corvette_startiger_Gunship.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_corvette_yellowtail_Escort.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_herdintercept_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_hvyfighter_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_hvyfighter_blackcollar_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_hvyfighter_theherd_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_hvyfighter_yellowtail_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_interceptor_Interceptor.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_interceptor_blackcollar_Interceptor.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_interceptor_civ_Interceptor.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_interceptor_startiger_Interceptor.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_intyellowtail_Interceptor.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_lightfighter_civ_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_rounder_Fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_rounder_leveller_Bomber.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_skate_Escort.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/fighters/dcp_magellan_swarmfighter_Assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_lev_dronefrig_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_lev_dronefrig_strike.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_lev_dronefrig_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_lev_lancefrig_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_linefrigate_leveller_missile.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_linefrigate_leveller_turncoat.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_patroldestroyer_leveller_turncoat.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_skipjack_leveller_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/levellers/dcp_magellan_supportdestroyer_leveller_turncoat.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/odyssey_improved.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/omen_patrol.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/revolutionary/dcp_DME_grand_union_cqb.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/revolutionary/dcp_DME_grand_union_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/revolutionary/dcp_DME_stoat_c_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/shield/dcp_DME_shieldplate_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/startigers/dcp_magellan_battleship_startiger_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/startigers/dcp_magellan_carrier_startiger_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/startigers/dcp_magellan_cruiser_startiger_elite.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/startigers/dcp_magellan_linefrigate_startiger_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/stations/dcp_DME_guardian_tcitadel_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/stations/dcp_DME_guardian_tplate_eng.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/stations/dcp_DME_guardian_tplate_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/stations/dcp_DME_guardian_turret_dmg.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/stations/dcp_DME_guardian_turret_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/superheavy/dcp_DME_bbmissilemodule_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/superheavy/dcp_DME_bbpdmodule_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/superheavy/dcp_DME_bbsuperheavy_bow_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/superheavy/dcp_DME_bbsuperheavy_dmg.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/superheavy/dcp_DME_bbsuperheavy_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_carrier_theherd_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_herdcarrier_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_linedestroyer_theherd_fighter.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_linedestroyer_theherd_support.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_ltfreight_theherd_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_missilefrigate_theherd_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_phasefrig_theherd_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_skiff_theherd_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/theherd/dcp_magellan_supportfrigate_theherd_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/warlock/dcp_DME_bbLRMmodule_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/warlock/dcp_DME_bbLRMmodule_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/warlock/dcp_DME_warlock_assault.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/warlock/dcp_DME_warlock_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/wolf_patrol.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/yellowtails/dcp_magellan_carrier_yellowtail_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/yellowtails/dcp_magellan_lightcruiser_yellowtail_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/yellowtails/dcp_magellan_ltfreight_yellowtail_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/yellowtails/dcp_magellan_schooner_yellowtail_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/yellowtails/dcp_magellan_supply_yellowtail_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/variants/yellowtails/dcp_magellan_supportdestroyer_yellowtail_std.variant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/DCP/icons/intel/dme_internal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics/DCP/icons/intel/dme_public.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_DME_People.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_DME_People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/procgen/themes/BladeBreakerThemeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/procgen/themes/BladeBreakerThemeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/title_screen_variants.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_baikal.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_DME_baikal.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/ship_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/ship_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_DME_dronepd.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_DME_dronepd.wpn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_DME_micropd.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_DME_micropd.wpn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_DME_multipdnode.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_DME_multipdnode.wpn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_DME_tribeamer.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_DME_tribeamer.wpn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_alaudapulse_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_alaudapulse_shot.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_autolaser_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_autolaser_shot.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_autolaser_small_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_autolaser_small_shot.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_linearmg_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_linearmg_shot.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_core_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_core_shot.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_shot.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_sub_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_sub_shot.proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/player.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/player.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_magellan_People.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_magellan_People.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/DCPModPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/DCPModPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/Hejaz.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/Hejaz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/KhamnConstellation.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/KhamnConstellation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/Martinique.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/Martinique.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -614,6 +60,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.17011495&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
@@ -667,13 +114,32 @@
       <option name="project" value="LOCAL" />
       <updated>1684310807950</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="YOOOOO">
+      <created>1684503629944</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684503629944</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="help me" />
     <MESSAGE value="Even more useless changes...." />
     <MESSAGE value="I genuenly have no idea...." />
-    <option name="LAST_COMMIT_MESSAGE" value="I genuenly have no idea...." />
+    <MESSAGE value="YOOOOO" />
+    <option name="LAST_COMMIT_MESSAGE" value="YOOOOO" />
   </component>
 </project>

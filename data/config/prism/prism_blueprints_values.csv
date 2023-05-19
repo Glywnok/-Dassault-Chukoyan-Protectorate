@@ -1,4 +1,4 @@
 id,value
-dcp_bureau_package,25000
-dcp_deserter_package,25000
-dcp_bladewood_package,10000
+dcp_DME_bureau_package,25000
+dcp_DME_deserter_package,25000
+dcp_DME_bladewood_package,10000

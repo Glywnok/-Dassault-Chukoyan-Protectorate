@@ -14,15 +14,15 @@
 		"shieldInnerColor":[75,105,255,75],
 		"fluxVentCoreColor":[125,155,255,255],
 		"fluxVentFringeColor":[75,105,255,225],
-		"engineLoopSet":"dcp_engine_loop", 					# id of entry in sounds.json
-		"engineAccelerateSet":"dcp_engine_accelerate",		# id of entry in sounds.json
-		"empLoopSet":"dcp_emp_loop",						# id of entry in sounds.json
-		"fluxLoopSet":"dcp_flux_loop",			# id of entry in sounds.json
-		"ventFluxSet":"dcp_flux_vent",			# id of entry in sounds.json
-		"shieldBurnoutSet":"dcp_shield_burnout",			# id of entry in sounds.json
-		"shieldLowerSet":"dcp_shield_lower",				# id of entry in sounds.json
-		"shieldRaiseSet":"dcp_shield_raise",				# id of entry in sounds.json
-		"explosionShipSet":"dcp_explosion_ship",			# id of entry in sounds.json
+		"engineLoopSet":"dcp_DME_engine_loop", 					# id of entry in sounds.json
+		"engineAccelerateSet":"dcp_DME_engine_accelerate",		# id of entry in sounds.json
+		"empLoopSet":"dcp_DME_emp_loop",						# id of entry in sounds.json
+		"fluxLoopSet":"dcp_DME_flux_loop",			# id of entry in sounds.json
+		"ventFluxSet":"dcp_DME_flux_vent",			# id of entry in sounds.json
+		"shieldBurnoutSet":"dcp_DME_shield_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"dcp_DME_shield_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"dcp_DME_shield_raise",				# id of entry in sounds.json
+		"explosionShipSet":"dcp_DME_explosion_ship",			# id of entry in sounds.json
 		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
 		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
 		
@@ -51,15 +51,15 @@
 		"shieldInnerColor":[200,100,0,75],
 		"fluxVentCoreColor":[255,175,55,255],
 		"fluxVentFringeColor":[200,120,0,255],
-		"engineLoopSet":"dcp_engine_loop", 					# id of entry in sounds.json
-		"engineAccelerateSet":"dcp_engine_accelerate",		# id of entry in sounds.json
-		"empLoopSet":"dcp_emp_loop",						# id of entry in sounds.json
-		"fluxLoopSet":"dcp_flux_loop",		# id of entry in sounds.json
-		"ventFluxSet":"dcp_flux_vent",		# id of entry in sounds.json
-		"shieldBurnoutSet":"dcp_shield_burnout",			# id of entry in sounds.json
-		"shieldLowerSet":"dcp_shield_lower",				# id of entry in sounds.json
-		"shieldRaiseSet":"dcp_shield_raise",				# id of entry in sounds.json
-		"explosionShipSet":"dcp_explosion_ship",			# id of entry in sounds.json
+		"engineLoopSet":"dcp_DME_engine_loop", 					# id of entry in sounds.json
+		"engineAccelerateSet":"dcp_DME_engine_accelerate",		# id of entry in sounds.json
+		"empLoopSet":"dcp_DME_emp_loop",						# id of entry in sounds.json
+		"fluxLoopSet":"dcp_DME_flux_loop",		# id of entry in sounds.json
+		"ventFluxSet":"dcp_DME_flux_vent",		# id of entry in sounds.json
+		"shieldBurnoutSet":"dcp_DME_shield_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"dcp_DME_shield_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"dcp_DME_shield_raise",				# id of entry in sounds.json
+		"explosionShipSet":"dcp_DME_explosion_ship",			# id of entry in sounds.json
 		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
 		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
 		
@@ -88,15 +88,15 @@
 		"shieldInnerColor":[75,105,255,75],
 		"fluxVentCoreColor":[200,255,215,235],
 		"fluxVentFringeColor":[25,255,200,255],
-		"engineLoopSet":"dcp_engine_loop", 					# id of entry in sounds.json
-		"engineAccelerateSet":"dcp_engine_accelerate",		# id of entry in sounds.json
-		"empLoopSet":"dcp_emp_loop",						# id of entry in sounds.json
-		"fluxLoopSet":"dcp_flux_loop",		# id of entry in sounds.json
-		"ventFluxSet":"dcp_flux_vent",		# id of entry in sounds.json
-		"shieldBurnoutSet":"dcp_shield_burnout",			# id of entry in sounds.json
-		"shieldLowerSet":"dcp_shield_lower",				# id of entry in sounds.json
-		"shieldRaiseSet":"dcp_shield_raise",				# id of entry in sounds.json
-		"explosionShipSet":"dcp_explosion_ship",			# id of entry in sounds.json
+		"engineLoopSet":"dcp_DME_engine_loop", 					# id of entry in sounds.json
+		"engineAccelerateSet":"dcp_DME_engine_accelerate",		# id of entry in sounds.json
+		"empLoopSet":"dcp_DME_emp_loop",						# id of entry in sounds.json
+		"fluxLoopSet":"dcp_DME_flux_loop",		# id of entry in sounds.json
+		"ventFluxSet":"dcp_DME_flux_vent",		# id of entry in sounds.json
+		"shieldBurnoutSet":"dcp_DME_shield_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"dcp_DME_shield_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"dcp_DME_shield_raise",				# id of entry in sounds.json
+		"explosionShipSet":"dcp_DME_explosion_ship",			# id of entry in sounds.json
 		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
 		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
 		
@@ -132,15 +132,15 @@
 		"shieldInnerColor":[200,100,0,75],
 		"fluxVentCoreColor":[255,175,55,255],
 		"fluxVentFringeColor":[200,120,0,255],
-		"engineLoopSet":"magellan_engine_loop", 			    # id of entry in sounds.json
-		"engineAccelerateSet":"magellan_engine_accelerate",	    # id of entry in sounds.json
-		"empLoopSet":"magellan_emp_loop",						# id of entry in sounds.json
-		"fluxLoopSet":"magellan_flux_loop",						# id of entry in sounds.json
-		"ventFluxSet":"magellan_flux_vent",						# id of entry in sounds.json
-		"shieldBurnoutSet":"magellan_shield_burnout",			# id of entry in sounds.json
-		"shieldLowerSet":"magellan_shield_lower",				# id of entry in sounds.json
-		"shieldRaiseSet":"magellan_shield_raise",				# id of entry in sounds.json
-		"explosionShipSet":"magellan_explosion_ship",			# id of entry in sounds.json
+		"engineLoopSet":"dcp_magellan_engine_loop", 			    # id of entry in sounds.json
+		"engineAccelerateSet":"dcp_magellan_engine_accelerate",	    # id of entry in sounds.json
+		"empLoopSet":"dcp_magellan_emp_loop",						# id of entry in sounds.json
+		"fluxLoopSet":"dcp_magellan_flux_loop",						# id of entry in sounds.json
+		"ventFluxSet":"dcp_magellan_flux_vent",						# id of entry in sounds.json
+		"shieldBurnoutSet":"dcp_magellan_shield_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"dcp_magellan_shield_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"dcp_magellan_shield_raise",				# id of entry in sounds.json
+		"explosionShipSet":"dcp_magellan_explosion_ship",			# id of entry in sounds.json
 		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
 		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
 		
@@ -169,15 +169,15 @@
 		"shieldInnerColor":[125,125,255,75],
 		"fluxVentCoreColor":[255,255,255,255],
 		"fluxVentFringeColor":[125,0,155,255],
-		"engineLoopSet":"magellan_engine_loop", 			    # id of entry in sounds.json
-		"engineAccelerateSet":"magellan_engine_accelerate",	    # id of entry in sounds.json
-		"empLoopSet":"magellan_emp_loop",						# id of entry in sounds.json
-		"fluxLoopSet":"magellan_flux_loop",						# id of entry in sounds.json
-		"ventFluxSet":"magellan_flux_vent",						# id of entry in sounds.json
-		"shieldBurnoutSet":"magellan_shield_burnout",			# id of entry in sounds.json
-		"shieldLowerSet":"magellan_shield_lower",				# id of entry in sounds.json
-		"shieldRaiseSet":"magellan_shield_raise",				# id of entry in sounds.json
-		"explosionShipSet":"magellan_explosion_ship",			# id of entry in sounds.json
+		"engineLoopSet":"dcp_magellan_engine_loop", 			    # id of entry in sounds.json
+		"engineAccelerateSet":"dcp-magellan_engine_accelerate",	    # id of entry in sounds.json
+		"empLoopSet":"dcp_magellan_emp_loop",						# id of entry in sounds.json
+		"fluxLoopSet":"dcp_magellan_flux_loop",						# id of entry in sounds.json
+		"ventFluxSet":"dcp_magellan_flux_vent",						# id of entry in sounds.json
+		"shieldBurnoutSet":"dcp_magellan_shield_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"dcp_magellan_shield_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"dcp_magellan_shield_raise",				# id of entry in sounds.json
+		"explosionShipSet":"dcp_magellan_explosion_ship",			# id of entry in sounds.json
 		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
 		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
 		

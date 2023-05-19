@@ -41,11 +41,11 @@
 			"dcp_DMEenergy_package":"graphics/DCP/icons/cargo/dcp_DME_bp_eng.png",
 			"dcp_DMEmissile_package":"graphics/DCP/icons/cargo/dcp_DME_bp_mis.png",
 			
-			"dcp_bureau_package":"graphics/DCP/icons/cargo/dcp_DME_bp_6eme.png",
-			"dcp_deserter_package":"graphics/DCP/icons/cargo/dcp_DME_bp_deserter.png",
-			"dcp_bladewood_package":"graphics/DCP/icons/cargo/dcp_DME_bp_bladewood.png",
-			"dcp_sigmatech_package":"graphics/DCP/icons/cargo/dcp_DME_bp_sigma.png",
-			"dcp_DMErefit_package":"graphics/DCP/icons/cargo/dcp_DME_bp_ref.png",
+			"dcp_DME_bureau_package":"graphics/DCP/icons/cargo/dcp_DME_bp_6eme.png",
+			"dcp_DME_deserter_package":"graphics/DCP/icons/cargo/dcp_DME_bp_deserter.png",
+			"dcp_DME_bladewood_package":"graphics/DCP/icons/cargo/dcp_DME_bp_bladewood.png",
+			"dcp_DME_sigmatech_package":"graphics/DCP/icons/cargo/dcp_DME_bp_sigma.png",
+			"dcp_DME_DMErefit_package":"graphics/DCP/icons/cargo/dcp_DME_bp_ref.png",
 
 
 			#MAGELLAN
@@ -56,13 +56,13 @@
 			"dcp_magellan_theherd_package":"graphics/DCP/icons/cargo/dcp_magellan_bp_theherd.png",
 		},
 		"industry":{
-			"dcp_shield_texture":"graphics/DCP/planets/dcp_DME_sigma_shield.png",
-			"dcp_dysonshell":"graphics/DCP/planets/dcp_DME_toposphere.png",
-			"dcp_dysonshield":"graphics/DCP/planets/dcp_DME_toposhield.png",
+			"dcp_DME_shield_texture":"graphics/DCP/planets/dcp_DME_sigma_shield.png",
+			"dcp_DME_dysonshell":"graphics/DCP/planets/dcp_DME_toposphere.png",
+			"dcp_DME_dysonshield":"graphics/DCP/planets/dcp_DME_toposhield.png",
 		},
 		"campaignEntities":{
-			"dcp_breaker_beacon":"graphics/DCP/stations/dcp_DME_breakerbuoy00.png",
-			"dcp_breaker_beacon_glow":"graphics/DCP/stations/dcp_DME_breakerbuoy00glow.png",
+			"dcp_DME_breaker_beacon":"graphics/DCP/stations/dcp_DME_breakerbuoy00.png",
+			"dcp_DME_breaker_beacon_glow":"graphics/DCP/stations/dcp_DME_breakerbuoy00glow.png",
 		},
 		"intel":{
 			"dcp_hardenedbeacon_high":"graphics/DCP/icons/intel/dcp_DME_hardenedbeacon_high.png",
@@ -71,23 +71,23 @@
     	},
 		"characters":{
 			#DME
-			"DME_ari":"graphics/DCP/portraits/characters/ariane.png",
-			"DME_niko":"graphics/DCP/portraits/characters/niko.png",
-			"DME_emile":"graphics/DCP/portraits/characters/emile.png",
-			"DME_maya":"graphics/DCP/portraits/characters/maya.png",
+			"dcp_DME_ari":"graphics/DCP/portraits/characters/ariane.png",
+			"dcp_DME_niko":"graphics/DCP/portraits/characters/niko.png",
+			"dcp_DME_emile":"graphics/DCP/portraits/characters/emile.png",
+			"dcp_DME_maya":"graphics/DCP/portraits/characters/maya.png",
 			"volta":"graphics/portraits/characters/volta.png",
 
 			#MAGELLAN
-			"magellan_aral":"graphics/DCP/portraits/characters/aral.png",
+			"dcp_magellan_protectorate_aral":"graphics/DCP/portraits/characters/aral.png",
 		},
 		"misc":{
 			"dcp_DME_blankring":"graphics/DCP/planets/dcp_DME_blankring.png",
 		},
 		"terrain":{
 			#DME
-			"dcp_nebula_sigma":"graphics/DCP/terrain/dcp_DME_sigma_cloud.png",
-			"dcp_nebula_sigma_glow":"graphics/DCP/terrain/dcp_DME_sigma_cloud_glow.png",
-			"dcp_nebula_sigma_map":"graphics/DCP/terrain/dcp_DME_sigma_cloud_map.png",
+			"dcp_DME_nebula_sigma":"graphics/DCP/terrain/dcp_DME_sigma_cloud.png",
+			"dcp_DME_nebula_sigma_glow":"graphics/DCP/terrain/dcp_DME_sigma_cloud_glow.png",
+			"dcp_DME_nebula_sigma_map":"graphics/DCP/terrain/dcp_DME_sigma_cloud_map.png",
 
 			#MAGELLAN
 			"magellan_garden_nebula":"graphics/DCP/terrain/dcp_magellan_garden_nebula.png",

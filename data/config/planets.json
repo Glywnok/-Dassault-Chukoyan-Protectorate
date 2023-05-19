@@ -1,5 +1,5 @@
 {
-	"dcp_aridbread":{
+	"dcp_DME_aridbread":{
 		"name":"Arid",
 		"aOrAn":"an",
 		"tilt":30, # left-right (>0 tilts to the left)
@@ -18,7 +18,7 @@
 		"cloudColor":[190,180,170,240],
 		"cloudRotation":-10, # degrees/second, optional
 	},
-	"dcp_sigmaworld":{
+	"dcp_DME_sigmaworld":{
 		"name":"Sigma-Distorted",
 		"aOrAn":"a",
 		"tilt":20, # left-right (>0 tilts to the left)
@@ -40,7 +40,7 @@
 		"cloudColor":[200,185,255,200],
 		"cloudRotation":1.6, # degrees/second, optional
 	},
-	"dcp_dysonshell":{
+	"dcp_DME_dysonshell":{
 		"name":"Dyson Shell",	
 		"tilt":-27, # left-right (>0 tilts to the left)
 		"pitch":2, # towards-away from the viewer (>0 pitches towards)

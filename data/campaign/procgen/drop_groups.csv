@@ -18,7 +18,7 @@ drugs,breaker_training,10
 ,,
 nothing,breaker_research,100
 "item_modspec:{tier:3, tags:[bladebreakers, !no_drop_salvage]}",breaker_research,30
-dcp_securedata,breaker_research,10
+dcp_DME_securedata,breaker_research,10
 ,,
 nothing,dcp_DME_sigma_matter2,100
 dcp_DME_sigma_matter2,dcp_DME_sigma_matter2,4

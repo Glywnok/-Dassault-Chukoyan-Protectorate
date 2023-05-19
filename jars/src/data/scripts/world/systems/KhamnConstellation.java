@@ -202,7 +202,7 @@ public class KhamnConstellation {
       SectorEntityToken annoreOrbital = system_khamn.addCustomEntity("magellan_annore_orbital", "Annore Orbital", "station_side04", "magellan_protectorate");
       annoreOrbital.setCircularOrbitPointingDown(system_khamn.getEntityById("magellan_planet_annore"), 360.0F * (float)Math.random(), 150.0F, 60.0F);
       annoreOrbital.setInteractionImage("illustrations", "orbital");
-      AddMarketplace.addMarketplace("magellan_protectorate", annore, new ArrayList(Arrays.asList(annoreOrbital)), "Annore", 5, new ArrayList(Arrays.asList("habitable", "water_surface", "free_market", "regional_capital", "closed_immigration", "population_5")), new ArrayList(Arrays.asList("orbitalstation", "aquaculture", "spaceport", "waystation", "lightindustry", "refining", "magellan_startigerhq", "heavybatteries", "population")), new ArrayList(Arrays.asList("black_market", "open_market", "storage")), 0.3F);
+      AddMarketplace.addMarketplace("magellan_protectorate", annore, new ArrayList(Arrays.asList(annoreOrbital)), "Annore", 5, new ArrayList(Arrays.asList("habitable", "water_surface", "free_market", "regional_capital", "closed_immigration", "population_5")), new ArrayList(Arrays.asList("orbitalstation", "aquaculture", "spaceport", "waystation", "lightindustry", "refining", "dcp_magellan_startigerhq", "heavybatteries", "population")), new ArrayList(Arrays.asList("black_market", "open_market", "storage")), 0.3F);
       annore.setCustomDescriptionId("planet_annore");
       annoreOrbital.setCustomDescriptionId("station_annoreorbital");
       system_khamn.addRingBand(magella, "misc", "rings_ice0", 256.0F, 1, Color.white, 256.0F, 3000.0F, 90.0F, "ring", "Magella Ring");
