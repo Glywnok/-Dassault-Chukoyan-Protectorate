@@ -52,7 +52,7 @@
         -41,
         9.5
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 6
     },
     {
@@ -63,7 +63,7 @@
         -41,
         -9.5
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 6
     },
     {
@@ -74,7 +74,7 @@
         -44,
         -0
       ],
-      "style": "dcp_magellanFlare",
+      "style": "MagellanFlare",
       "width": 12
     }
   ],
@@ -88,7 +88,7 @@
   ],
   "shieldRadius": 73,
   "spriteName": "graphics/DCP/ships/dcp_magellan_supportfrigate.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "viewOffset": 0,
   "weaponSlots": [
     {

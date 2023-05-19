@@ -3,11 +3,11 @@ hull id
 #DME
 dcp_DME_icax_wing
 dcp_DME_starsylph
-dcp_DME_DME_snowgoose
+dcp_DME_snowgoose
 dcp_DME_kormoran_6e
 dcp_DME_tunguska_6e
 dcp_DME_vesper_6e
-dcpx_alauda
+dcp_DMEx_alauda
 dcp_DME_wildgoose
 
 dcp_DME_hellion_wing
@@ -42,7 +42,7 @@ dcp_DME_slammer
 dcp_DME_stormkestrel_proto
 dcp_DME_blacklancer
 dcp_DME_bladewood
-dcpx_braveblade
+dcp_DMEx_braveblade
 
 
 #MAGELLAN

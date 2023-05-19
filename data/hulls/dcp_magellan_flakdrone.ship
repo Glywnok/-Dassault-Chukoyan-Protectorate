@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_flakdrone",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/DCP/ships/dcp_magellan_flakdrone.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "height": 24,
   "width": 16,
   "center": [8, 13],
@@ -45,7 +45,7 @@
       "width": 6,
       "angle": 180,
       "contrailSize": 6,
-      "style": "dcp_magellanFighterFlareTrail"
+      "style": "MagellanFighterFlareTrail"
     }
   ],
   "bounds": [

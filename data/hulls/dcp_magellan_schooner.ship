@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_schooner",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/civ/dcp_magellan_schooner.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "height": 144,
   "width": 92,
   "center": [46, 64],
@@ -89,7 +89,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "dcp_magellanFighterFlareTrail"
+      "style": "MagellanFighterFlareTrail"
     },
     {
       "location": [-48, -15],
@@ -97,7 +97,7 @@
       "width": 12,
       "angle": -180,
       "contrailSize": 12,
-      "style": "dcp_magellanFighterFlareTrail"
+      "style": "MagellanFighterFlareTrail"
     },
     {
       "location": [-54, 39.5],
@@ -105,7 +105,7 @@
       "width": 5,
       "angle": 180,
       "contrailSize": 5,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-54, -39.5],
@@ -113,7 +113,7 @@
       "width": 5,
       "angle": -180,
       "contrailSize": 5,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     }
   ],
   "bounds": [

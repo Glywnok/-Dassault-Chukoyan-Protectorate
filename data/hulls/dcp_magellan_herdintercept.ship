@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_herdintercept",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/DCP/ships/theherd/dcp_magellan_herdintercept.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "height": 38,
   "width": 28,
   "center": [14, 17],
@@ -32,7 +32,7 @@
       "width": 4,
       "angle": 180,
       "contrailSize": 4,
-      "style": "dcp_magellanFighterFlareTrail"
+      "style": "MagellanFighterFlareTrail"
     },
     {
       "location": [-16, 8],
@@ -40,7 +40,7 @@
       "width": 6,
       "angle": 177.5,
       "contrailSize": 6,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-16, -8],
@@ -48,7 +48,7 @@
       "width": 6,
       "angle": -177.5,
       "contrailSize": 6,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     }
   ],
   "bounds": [

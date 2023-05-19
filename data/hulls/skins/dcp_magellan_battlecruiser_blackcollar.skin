@@ -3,7 +3,7 @@
 	"skinHullId":"dcp_magellan_battlecruiser_blackcollar",
 	"hullName":"Porey [BCR]",
 	"descriptionId":"dcp_magellan_battlecruiser",
-	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in dcp_magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating. Additionally, it's been refitted with a new spinal weapon and a captured Entropy Amplifier.",
+	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in Magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating. Additionally, it's been refitted with a new spinal weapon and a captured Entropy Amplifier.",
 	"tags":["dcp_magellan_blackcollar", "no_dealer", "restricted"],
 	"tech":"Blackcollar Regiment",
     "fleetPoints":28,

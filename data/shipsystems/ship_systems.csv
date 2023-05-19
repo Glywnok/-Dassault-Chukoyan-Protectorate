@@ -17,7 +17,7 @@ MIRAGE System,dcp_DME_mirage_sm,,,,,,,,2,0.12,0.6,,0.2,0,,TRUE,,TRUE,,,,,,,,,gra
 MIRAGE System,dcp_DME_mirage,,,,,,,,3,0.1,0.6,,0.2,0.05,,TRUE,,TRUE,,,,,,,,,graphics/DCP/icons/hullsys/dcp_DME_mirage.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 "#Phase, Mines",,,,,,,,,,,,,,,,,,,,,,,,,,,
-Phase Cloak,dcp_dmephasecloak,,,,,,,,,,0.3,,0.3,3,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,,TRUE,,graphics/DCP/icons/hullsys/dcp_DME_phasecloak.png
+Phase Cloak,dcp_DMEphasecloak,,,,,,,,,,0.3,,0.3,3,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,,TRUE,,graphics/DCP/icons/hullsys/dcp_DME_phasecloak.png
 Energy Mines,dcp_DME_mine_strike,,,,,,0.1,,5,0.15,0.15,,0.35,0,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Fighter Systems,,,,,,,,,,,,,,,,,,,,,,,,,,,

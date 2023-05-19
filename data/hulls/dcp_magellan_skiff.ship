@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_skiff",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/civ/dcp_magellan_skiff.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "height": 118,
   "width": 86,
   "center": [43, 54],
@@ -80,7 +80,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "dcp_magellanFlare"
+      "style": "MagellanFlare"
     },
     {
       "location": [-53, 36.5],
@@ -88,7 +88,7 @@
       "width": 5,
       "angle": 180,
       "contrailSize": 5,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-53, -36.5],
@@ -96,7 +96,7 @@
       "width": 5,
       "angle": -180,
       "contrailSize": 5,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     }
   ],
   "bounds": [

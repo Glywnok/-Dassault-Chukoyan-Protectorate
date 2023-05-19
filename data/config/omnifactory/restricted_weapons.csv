@@ -21,7 +21,6 @@ dcp_DME_twinjack
 dcp_DME_thermalpd
 dcp_DME_thermalheavy
 dcp_DME_thermalmortar
-dcp_DME_mincer
 dcp_DME_lens_hdem_single
 dcp_DME_lens_hdem_rack
 dcp_DME_plasrocket_pod
@@ -63,7 +62,6 @@ dcp_magellan_medciws
 dcp_magellan_medgatling
 dcp_magellan_medhetlaser
 dcp_magellan_medpdmaser
-dcp_magellan_bigsolenoid
 dcp_magellan_quenchgun
 dcp_magellan_ripfiresrm
 dcp_magellan_ripfiresrmpod
@@ -79,4 +77,3 @@ dcp_magellan_ebolter
 dcp_magellan_diffusiongun
 dcp_magellan_diffusionlaser
 dcp_magellan_scatterblaster
-dcp_magellan_scatterblaster_sub

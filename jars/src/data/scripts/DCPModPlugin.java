@@ -21,6 +21,19 @@ import org.dark.shaders.util.TextureData;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/*
+package data;
+
+import com.fs.starfarer.api.BaseModPlugin;
+
+public class CrashModPlugin extends BaseModPlugin {
+   public void onApplicationLoad() {
+      throw new RuntimeException("What the fuck did you expect?");
+   }
+}
+
+ */
+
 public class DCPModPlugin extends BaseModPlugin {
    private static final String DME_SETTINGS = "DCPsettings.ini";
    public static boolean RANDOMBREAKERS;
@@ -69,6 +82,7 @@ public class DCPModPlugin extends BaseModPlugin {
    }
 
    public void onApplicationLoad() {
+
       boolean hasGraphicsLib = Global.getSettings().getModManager().isModEnabled("shaderLib");
       if (hasGraphicsLib) {
          ShaderLib.init();
@@ -76,6 +90,38 @@ public class DCPModPlugin extends BaseModPlugin {
          TextureData.readTextureDataCSV("data/lights/dcp_texture_data.csv");
       }
 
+      boolean hasshit = Global.getSettings().getModManager().isModEnabled("lyr_ehm");
+      boolean DME = Global.getSettings().getModManager().isModEnabled("istl_dassaultmikoyan");
+      boolean NGO = Global.getSettings().getModManager().isModEnabled("TheDragn_tying_nooses");
+      boolean MAG = Global.getSettings().getModManager().isModEnabled("mag_protect");
+      //boolean BB = Global.getSettings().getModManager().isModEnabled("");
+      boolean DF = Global.getSettings().getModManager().isModEnabled("hm_flagpack");
+
+      if (DME) {
+         throw new RuntimeException("DCP works as DME replacement, please disable original DME, or the bootleg of it.");
+      }
+
+      if (MAG) {
+         throw new RuntimeException("DCP works as Magellan Protectorate replacement, please disable original MP, or the bootleg of it.");
+      }
+      /*
+      if (DF) {
+         throw new RuntimeException("DCP works as Deluxe Player Flags replacement, please disable original DPF, or the bootleg of it.");
+      }
+
+      if (NGO) {
+         throw new RuntimeException("No original NGO bitch. Disable it.");
+      }
+
+      if (BB) {
+         throw new RuntimeException("keepin it here");
+      }
+
+
+      if (hasshit) {
+         throw new RuntimeException("Fuck you");
+      }
+       */
       try {
          loadDMESettings();
       } catch (JSONException | IOException var3) {

@@ -27,8 +27,8 @@
 
 "DME_public":{
 	"name":"Nikolaev Media Authority",
-	"logo":"graphics/DCP/icons/intel/dcp_dme_public.png",
-	"icon":"graphics/DCP/icons/intel/dcp_dme_public.png",
+	"logo":"graphics/DCP/icons/intel/dcp_DME_public.png",
+	"icon":"graphics/DCP/icons/intel/dcp_DME_public.png",
 	"image":"graphics/DCP/factions/dassault_mikoyan.png",
 	"sound":"ui_channel_news",
 	"faction":"dassault_mikoyan",
@@ -37,8 +37,8 @@
 },
 "DME_internal":{
 	"name":"DME High Guard Intelligence",
-	"logo":"graphics/DCP/icons/intel/dcp_dme_internal.png",
-	"icon":"graphics/DCP/icons/intel/dcp_dme_internal.png",
+	"logo":"graphics/DCP/icons/intel/dcp_DME_internal.png",
+	"icon":"graphics/DCP/icons/intel/dcp_DME_internal.png",
 	"image":"graphics/DCP/factions/dassault_mikoyan.png",
 	"sound":"ui_channel_comm_secure",
 	"faction":"dassault_mikoyan",

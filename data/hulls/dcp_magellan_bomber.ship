@@ -39,7 +39,7 @@
         -19,
         -0
       ],
-      "style": "dcp_magellanFighterFlareTrail",
+      "style": "MagellanFighterFlareTrail",
       "width": 6
     },
     {
@@ -50,7 +50,7 @@
         -18,
         3.5
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 2
     },
     {
@@ -61,13 +61,13 @@
         -18,
         -3.5
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 2
     }
   ],
   "height": 40,
   "hullId": "dcp_magellan_bomber",
-  "hullName": "dcp_magellan Bomber",
+  "hullName": "Magellan Bomber",
   "hullSize": "FIGHTER",
   "shieldCenter": [
     0,
@@ -75,7 +75,7 @@
   ],
   "shieldRadius": 21.5,
   "spriteName": "graphics/DCP/ships/dcp_magellan_bomber.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "viewOffset": 0,
   "weaponSlots": [
     {

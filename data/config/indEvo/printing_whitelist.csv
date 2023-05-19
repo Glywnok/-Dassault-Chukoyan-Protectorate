@@ -54,8 +54,8 @@ dcp_DME_wanderer
 dcp_DME_wildgoose
 dcp_DME_zelenograd
 # Specials - these are optional. They could go away if people complain about them being available. If you think they shouldn't be available, remove them.
-dcpx_alauda
-dcpx_braveblade
+dcp_DMEx_alauda
+dcp_DMEx_braveblade
 
 
 

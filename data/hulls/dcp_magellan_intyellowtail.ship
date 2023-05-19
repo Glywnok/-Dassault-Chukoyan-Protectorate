@@ -1,9 +1,9 @@
 {
-  "hullName": "dcp_magellan Scout",
+  "hullName": "Magellan Scout",
   "hullId": "dcp_magellan_intyellowtail",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/DCP/ships/yellowtails/dcp_magellan_intyellowtail.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "height": 24,
   "width": 24,
   "center": [12, 12],

@@ -46,7 +46,7 @@
     "startShipsSolo":[["dcp_DME_starsylph_deserter_test"]],
     "startShipsCombatLarge":[["dcp_DME_stormkestrel_proto_test"]],
     "startShipsCarrierSmall":[["dcp_DME_curse_proto_test"]],
-    "startShipsSuper":[["dcpx_DME_braveblade_std", "dcp_DME_flatmouse_std", "dcp_DME_desertersupply_sm_std"]],
+    "startShipsSuper":[["dcp_DMEx_braveblade_std", "dcp_DME_flatmouse_std", "dcp_DME_desertersupply_sm_std"]],
     
     "startSpecialItems":[
         [["dcp_DME_deserter_package", ""]],

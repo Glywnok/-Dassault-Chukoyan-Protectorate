@@ -3,7 +3,7 @@
 	"skinHullId":"dcp_magellan_patroldestroyer_blackcollar",
 	"hullName":"Kant [BCR]",
 	"descriptionId":"dcp_magellan_patroldestroyer",
-	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in dcp_magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating.",
+	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in Magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating.",
 	"tags":["dcp_magellan_blackcollar", "no_dealer", "restricted"],
 	"tech":"Blackcollar Regiment",
     "fleetPoints":9,

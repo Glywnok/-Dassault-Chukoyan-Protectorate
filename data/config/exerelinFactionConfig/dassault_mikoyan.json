@@ -110,7 +110,7 @@
     
     "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.FactionListNamer",
     
-    "startShipsSolo":[["dcp_starsylph_std"]],
+    "startShipsSolo":[["dcp_DME_starsylph_std"]],
     "startShipsCombatSmall":[
     	["dcp_DME_vesper_elite", "dcp_DME_stoat_escort", "dcp_DME_stoat_escort", "dcp_DME_samoyed_std"],
     	["dcp_DME_naja_elite", "dcp_DME_stoat_std", "dcp_DME_burya_heavy"],
@@ -139,7 +139,7 @@
     "startShipsSuper":[["dcp_DME_snowgoose_elite"]],
 
     "startSpecialItems":[
-        [["dcp_dmecore_package", "dcp_dmeadv_package"]],
+        [["dcp_DMEcore_package", "dcp_DMEadv_package"]],
     ],
     
     "colonyExpeditionChance":1.2,

@@ -34,18 +34,18 @@
 	"graphics":{
 		"blueprint_packages":{
 			#DME
-			"dcp_dmecivil_package":"graphics/DCP/icons/cargo/dcp_DME_bp_civ.png",
-			"dcp_dmecore_package":"graphics/DCP/icons/cargo/dcp_DME_bp_core.png",
-			"dcp_dmeadv_package":"graphics/DCP/icons/cargo/dcp_DME_bp_adv.png",
-			"dcp_dmeballistic_package":"graphics/DCP/icons/cargo/dcp_DME_bp_bal.png",
-			"dcp_dmeenergy_package":"graphics/DCP/icons/cargo/dcp_DME_bp_eng.png",
-			"dcp_dmemissile_package":"graphics/DCP/icons/cargo/dcp_DME_bp_mis.png",
+			"dcp_DMEcivil_package":"graphics/DCP/icons/cargo/dcp_DME_bp_civ.png",
+			"dcp_DMEcore_package":"graphics/DCP/icons/cargo/dcp_DME_bp_core.png",
+			"dcp_DMEadv_package":"graphics/DCP/icons/cargo/dcp_DME_bp_adv.png",
+			"dcp_DMEballistic_package":"graphics/DCP/icons/cargo/dcp_DME_bp_bal.png",
+			"dcp_DMEenergy_package":"graphics/DCP/icons/cargo/dcp_DME_bp_eng.png",
+			"dcp_DMEmissile_package":"graphics/DCP/icons/cargo/dcp_DME_bp_mis.png",
 			
 			"dcp_bureau_package":"graphics/DCP/icons/cargo/dcp_DME_bp_6eme.png",
 			"dcp_deserter_package":"graphics/DCP/icons/cargo/dcp_DME_bp_deserter.png",
 			"dcp_bladewood_package":"graphics/DCP/icons/cargo/dcp_DME_bp_bladewood.png",
 			"dcp_sigmatech_package":"graphics/DCP/icons/cargo/dcp_DME_bp_sigma.png",
-			"dcp_dmerefit_package":"graphics/DCP/icons/cargo/dcp_DME_bp_ref.png",
+			"dcp_DMErefit_package":"graphics/DCP/icons/cargo/dcp_DME_bp_ref.png",
 
 
 			#MAGELLAN
@@ -81,7 +81,7 @@
 			"magellan_aral":"graphics/DCP/portraits/characters/aral.png",
 		},
 		"misc":{
-			"dcp_blankring":"graphics/DCP/planets/dcp_DME_blankring.png",
+			"dcp_DME_blankring":"graphics/DCP/planets/dcp_DME_blankring.png",
 		},
 		"terrain":{
 			#DME

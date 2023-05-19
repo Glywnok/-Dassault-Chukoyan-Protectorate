@@ -39,7 +39,7 @@
         -52,
         13
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 12
     },
     {
@@ -50,7 +50,7 @@
         -52,
         -13
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 12
     },
     {
@@ -61,7 +61,7 @@
         -29,
         30.5
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 6
     },
     {
@@ -72,13 +72,13 @@
         -29,
         -30.5
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 6
     }
   ],
   "height": 104,
   "hullId": "dcp_magellan_phasefrig",
-  "hullName": "dcp_magellan Phase Frigate",
+  "hullName": "Magellan Phase Frigate",
   "hullSize": "FRIGATE",
   "shieldCenter": [
     -2,
@@ -86,7 +86,7 @@
   ],
   "shieldRadius": 61,
   "spriteName": "graphics/DCP/ships/phase/dcp_magellan_phasefrig.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "viewOffset": 0,
   "weaponSlots": [
     {

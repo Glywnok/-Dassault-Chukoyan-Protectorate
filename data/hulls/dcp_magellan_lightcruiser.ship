@@ -74,7 +74,7 @@
         -120,
         29
       ],
-      "style": "dcp_magellanFlare",
+      "style": "MagellanFlare",
       "width": 12
     },
     {
@@ -85,7 +85,7 @@
         -120,
         -29
       ],
-      "style": "dcp_magellanFlare",
+      "style": "MagellanFlare",
       "width": 12
     },
     {
@@ -96,7 +96,7 @@
         -120,
         50
       ],
-      "style": "dcp_magellanFlare",
+      "style": "MagellanFlare",
       "width": 12
     },
     {
@@ -107,7 +107,7 @@
         -120,
         -50
       ],
-      "style": "dcp_magellanFlare",
+      "style": "MagellanFlare",
       "width": 12
     },
     {
@@ -118,7 +118,7 @@
         -118,
         39.5
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 6
     },
     {
@@ -129,7 +129,7 @@
         -118,
         -39.5
       ],
-      "style": "dcp_magellanFighterFlare",
+      "style": "MagellanFighterFlare",
       "width": 6
     }
   ],
@@ -143,7 +143,7 @@
   ],
   "shieldRadius": 156.5,
   "spriteName": "graphics/DCP/ships/dcp_magellan_lightcruiser.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "viewOffset": 0,
   "weaponSlots": [
     {

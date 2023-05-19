@@ -7,7 +7,7 @@
 		"icon":"graphics/DCP/icons/dcp_DME_station_highport.png",
 		"iconWidth":24,
 		"iconHeight":24,
-		"sprite":"graphics/DCP/stations/dcp_dmemegahab.png",
+		"sprite":"graphics/DCP/stations/dcp_DME_DMEmegahab.png",
 		"spriteWidth":180,
 		"spriteHeight":180,
 		"renderShadow":true,
@@ -23,12 +23,12 @@
     "station_dme_lab":{
 		"defaultName":"Lab", # used if name=null in addCustomEntity()
 		"defaultRadius":64, # used if radius<0 in addCustomEntity()
-		"customDescriptionId":"dcp_dme_lab",
+		"customDescriptionId":"dcp_DME_lab",
 		"interactionImage":"graphics/illustrations/orbital_construction.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_lab.png",
 		"iconWidth":20,
 		"iconHeight":20,
-		"sprite":"graphics/DCP/stations/dcp_dmespacelab.png",
+		"sprite":"graphics/DCP/stations/dcp_DMEspacelab.png",
 		"spriteWidth":72,
 		"spriteHeight":72,
 		"renderShadow":true,
@@ -44,12 +44,12 @@
 	"station_dme_outpost":{
 		"defaultName":"Habitat", # used if name=null in addCustomEntity()
 		"defaultRadius":64, # used if radius<0 in addCustomEntity()
-		"customDescriptionId":"dcp_dme_outpost",
+		"customDescriptionId":"dcp_DME_outpost",
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_outpost.png",
 		"iconWidth":20,
 		"iconHeight":20,
-		"sprite":"graphics/DCP/stations/dcp_dmeoutpost.png",
+		"sprite":"graphics/DCP/stations/dcp_DMEoutpost.png",
 		"spriteWidth":72,
 		"spriteHeight":72,
 		"renderShadow":true,
@@ -65,12 +65,12 @@
 	"station_dme_small":{
 		"defaultName":"Station", # used if name=null in addCustomEntity()
 		"defaultRadius":32, # used if radius<0 in addCustomEntity()
-		"customDescriptionId":"dcp_dme_small",
+		"customDescriptionId":"dcp_DME_small",
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_belt.png",
 		"iconWidth":16,
 		"iconHeight":16,
-		"sprite":"graphics/DCP/stations/dcp_dmesmallstation.png",
+		"sprite":"graphics/DCP/stations/dcp_DMEsmallstation.png",
 		"spriteWidth":36,
 		"spriteHeight":36,
 		"renderShadow":true,
@@ -86,12 +86,12 @@
 	"station_dme_belt":{
 		"defaultName":"Belt Station", # used if name=null in addCustomEntity()
 		"defaultRadius":32, # used if radius<0 in addCustomEntity()
-		"customDescriptionId":"dcp_dme_belt",
+		"customDescriptionId":"dcp_DME_belt",
 		"interactionImage":"graphics/illustrations/abandoned_station2.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_belt.png",
 		"iconWidth":16,
 		"iconHeight":16,
-		"sprite":"graphics/DCP/stations/dcp_dmebelt.png",
+		"sprite":"graphics/DCP/stations/dcp_DMEbelt.png",
 		"spriteWidth":36,
 		"spriteHeight":36,
 		"renderShadow":true,
@@ -107,12 +107,12 @@
 	"station_dme_tether":{
 		"defaultName":"Power Tether", # used if name=null in addCustomEntity()
 		"defaultRadius":64, # used if radius<0 in addCustomEntity()
-		"customDescriptionId":"dcp_dme_powertether",
+		"customDescriptionId":"dcp_DME_powertether",
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_tether.png",
 		"iconWidth":16,
 		"iconHeight":16,
-		"sprite":"graphics/DCP/stations/dcp_dmepowertether.png",
+		"sprite":"graphics/DCP/stations/dcp_DMEpowertether.png",
 		"spriteWidth":72,
 		"spriteHeight":72,
 		"renderShadow":true,
@@ -130,12 +130,12 @@
 	"station_dme_industrial":{
 		"defaultName":"Outpost", # used if name=null in addCustomEntity()
 		"defaultRadius":64, # used if radius<0 in addCustomEntity()
-		"customDescriptionId":"dcp_dme_industrial",
+		"customDescriptionId":"dcp_DME_industrial",
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_industrial.png",
 		"iconWidth":20,
 		"iconHeight":20,
-		"sprite":"graphics/DCP/stations/dcp_dmeindustrial.png",
+		"sprite":"graphics/DCP/stations/dcp_DMEindustrial.png",
 		"spriteWidth":72,
 		"spriteHeight":72,
 		"renderShadow":true,
@@ -148,7 +148,7 @@
 		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
 	},
 	
-	"dcp_bladebreaker_beacon":{
+	"dcp_DME_bladebreaker_beacon":{
 		"defaultName":"Hardened Warning Beacon", # used if name=null in addCustomEntity()
 		"defaultRadius":40, # used if radius<0 in addCustomEntity()
 		"detectionRange":2400, # must be >0 for discoverable/discoveryXP to be used
@@ -175,7 +175,7 @@
 		"defaultName":"Breaker Base", # used if name=null in addCustomEntity()
 		"defaultRadius":64, # used if radius<0 in addCustomEntity()
 		"shortName":"research base",
-		"customDescriptionId":"dcp_bladebreaker_researchbase",
+		"customDescriptionId":"dcp_DME_bladebreaker_researchbase",
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_breakerbase.png",
 		"iconWidth":20,
@@ -193,11 +193,11 @@
 		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
 	},
 
-	"dcp_bladebreaker_mining":{
+	"dcp_DME_bladebreaker_mining":{
 		"defaultName":"Mining Base", # used if name=null in addCustomEntity()
 		"defaultRadius":48, # used if radius<0 in addCustomEntity()
 		"shortName":"mining base",
-		"customDescriptionId":"dcp_bladebreaker_miningbase",
+		"customDescriptionId":"dcp_DME_bladebreaker_miningbase",
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_breakerbase.png",
 		"iconWidth":20,
@@ -214,11 +214,11 @@
 		"tags":["has_interaction_dialog", "salvageable", "neutrino"],
 		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
 	},
-	"dcp_bladebreaker_research":{
+	"dcp_DME_bladebreaker_research":{
 		"defaultName":"Research Base", # used if name=null in addCustomEntity()
 		"defaultRadius":64, # used if radius<0 in addCustomEntity()
 		"shortName":"research base",
-		"customDescriptionId":"dcp_bladebreaker_researchbase",
+		"customDescriptionId":"dcp_DME_bladebreaker_researchbase",
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
 		"icon":"graphics/DCP/icons/dcp_DME_station_breakerbase.png",
 		"iconWidth":20,
@@ -235,7 +235,7 @@
 		"tags":["has_interaction_dialog", "salvageable", "neutrino"],
 		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
 	},
-	"dcp_bladebreaker_habitat":{
+	"dcp_DME_bladebreaker_habitat":{
 		"defaultName":"Training Base", # used if name=null in addCustomEntity()
 		"defaultRadius":48, # used if radius<0 in addCustomEntity()
 		"shortName":"training base",

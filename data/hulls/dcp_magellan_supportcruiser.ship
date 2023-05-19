@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_supportcruiser",
   "hullSize": "CRUISER",
   "spriteName": "graphics/DCP/ships/dcp_magellan_supportcruiser.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "height": 268,
   "width": 136,
   "center": [68, 118],
@@ -117,7 +117,7 @@
       "width": 18,
       "angle": 180,
       "contrailSize": 18,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-110, 22],
@@ -125,7 +125,7 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 10,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-110, -22],
@@ -133,7 +133,7 @@
       "width": 10,
       "angle": -180,
       "contrailSize": 10,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-107, 13.5],
@@ -141,7 +141,7 @@
       "width": 6,
       "angle": 180,
       "contrailSize": 6,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-107, -13.5],
@@ -149,7 +149,7 @@
       "width": 6,
       "angle": -180,
       "contrailSize": 6,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     }
   ],
   "bounds": [

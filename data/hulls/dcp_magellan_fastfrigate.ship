@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_fastfrigate",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/dcp_magellan_fastfrigate.png",
-  "style": "dcp_magellan",
+  "style": "MAGELLAN",
   "height": 108,
   "width": 90,
   "center": [45, 60],
@@ -93,7 +93,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-21, -21],
@@ -101,7 +101,7 @@
       "width": 12,
       "angle": -180,
       "contrailSize": 12,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-5, 35.5],
@@ -109,7 +109,7 @@
       "width": 5,
       "angle": 175,
       "contrailSize": 5,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     },
     {
       "location": [-5, -35.5],
@@ -117,7 +117,7 @@
       "width": 5,
       "angle": -175,
       "contrailSize": 5,
-      "style": "dcp_magellanFighterFlare"
+      "style": "MagellanFighterFlare"
     }
   ],
   "bounds": [

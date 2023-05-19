@@ -12,11 +12,11 @@ import com.fs.starfarer.api.impl.campaign.ids.Voices;
 
 public class dcp_DME_People extends People {
    //DME
-   public static final String DME_ARI = "dcp_dme_ari";
-   public static final String DME_NIKO = "dcp_dme_niko";
-   public static final String DME_MAYA = "dcp_dme_maya";
-   public static final String DME_EMILE = "dcp_dme_emile";
-   public static final String DME_ARMSDEV = "dcp_dme_armsdev";
+   public static final String DME_ARI = "dcp_DME_ari";
+   public static final String DME_NIKO = "dcp_DME_niko";
+   public static final String DME_MAYA = "dcp_DME_maya";
+   public static final String DME_EMILE = "dcp_DME_emile";
+   public static final String DME_ARMSDEV = "dcp_DME_armsdev";
 
 
 
@@ -45,7 +45,7 @@ public class dcp_DME_People extends People {
       market = Global.getSector().getEconomy().getMarket("dcp_DME_planet_peremohy");
       if (market != null) {
          PersonAPI person = Global.getFactory().createPerson();
-         person.setId("dcp_dme_ari");
+         person.setId("dcp_DME_ari");
          person.setFaction("dassault_mikoyan");
          person.setGender(Gender.FEMALE);
          person.setRankId(Ranks.FACTION_LEADER);
@@ -70,7 +70,7 @@ public class dcp_DME_People extends People {
       PersonAPI person;
       if (market != null) {
          person = Global.getFactory().createPerson();
-         person.setId("dcp_dme_emile");
+         person.setId("dcp_DME_emile");
          person.setFaction("dassault_mikoyan");
          person.setGender(Gender.MALE);
          person.setRankId("dcp_DME_smatterresearch");
@@ -88,7 +88,7 @@ public class dcp_DME_People extends People {
 
       if (market != null) {
          person = Global.getSector().getFaction("dassault_mikoyan").createRandomPerson();
-         person.setId("dcp_dme_armsdev");
+         person.setId("dcp_DME_armsdev");
          person.setRankId(Ranks.CITIZEN);
          person.setPostId("dcp_DME_armsengineer");
          person.setImportance(PersonImportance.MEDIUM);
@@ -107,7 +107,7 @@ public class dcp_DME_People extends People {
       PersonAPI person;
       if (market != null) {
          person = Global.getFactory().createPerson();
-         person.setId("dcp_dme_niko");
+         person.setId("dcp_DME_niko");
          person.setFaction("dassault_mikoyan");
          person.setGender(Gender.MALE);
          person.setRankId(Ranks.SPACE_CAPTAIN);
@@ -125,7 +125,7 @@ public class dcp_DME_People extends People {
 
       if (market != null) {
          person = Global.getFactory().createPerson();
-         person.setId("dcp_dme_maya");
+         person.setId("dcp_DME_maya");
          person.setFaction("dassault_mikoyan");
          person.setGender(Gender.FEMALE);
          person.setRankId(Ranks.GROUND_MAJOR);
