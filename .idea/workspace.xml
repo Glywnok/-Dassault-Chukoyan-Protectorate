@@ -4,37 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="YOOOOO">
+    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="0.95 Release">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/procgen/condition_gen_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/procgen/condition_gen_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/procgen/drop_groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/procgen/drop_groups.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/procgen/planet_gen_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/procgen/planet_gen_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/campaign/special_items.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/special_items.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/1version/version_files.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/custom_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/custom_entities.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/hull_styles.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/hull_styles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/planets.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/planets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/prism/prism_blueprints_values.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/prism/prism_blueprints_values.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/campaign/rules.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/rules.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/title_screen_variants.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_DME_baikal.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_DME_baikal.ship" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hulls/ship_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/ship_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_DME_dronepd.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_DME_dronepd.wpn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_DME_micropd.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_DME_micropd.wpn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_DME_multipdnode.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_DME_multipdnode.wpn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/dcp_DME_tribeamer.wpn" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/dcp_DME_tribeamer.wpn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_alaudapulse_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_alaudapulse_shot.proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_autolaser_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_autolaser_shot.proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_autolaser_small_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_autolaser_small_shot.proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_linearmg_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_linearmg_shot.proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_core_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_core_shot.proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_shot.proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_sub_shot.proj" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/proj/dcp_DME_scatterlaser_sub_shot.proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/world/factions/player.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/player.faction" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_magellan_People.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_magellan_People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/DCPModPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/DCPModPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/KhamnConstellation.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/KhamnConstellation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/Martinique.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/Martinique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/procgen/themes/BladeBreakerSeededFleetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/procgen/themes/BladeBreakerSeededFleetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/rulescmd/dcp_DME_SigmaMatterDataRecovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/rulescmd/dcp_DME_SigmaMatterDataRecovery.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684503629944</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="0.95 Release">
+      <created>1684519526472</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684519526472</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +122,7 @@
     <MESSAGE value="Even more useless changes...." />
     <MESSAGE value="I genuenly have no idea...." />
     <MESSAGE value="YOOOOO" />
-    <option name="LAST_COMMIT_MESSAGE" value="YOOOOO" />
+    <MESSAGE value="0.95 Release" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.95 Release" />
   </component>
 </project>

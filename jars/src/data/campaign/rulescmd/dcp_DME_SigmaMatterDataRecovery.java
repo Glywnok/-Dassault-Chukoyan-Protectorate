@@ -111,7 +111,7 @@ public class dcp_DME_SigmaMatterDataRecovery extends BaseCommandPlugin {
       while(var2.hasNext()) {
          CargoStackAPI stack = (CargoStackAPI)var2.next();
          CommoditySpecAPI spec = stack.getResourceIfResource();
-         if (spec != null && spec.hasTag("sigma_matter")) {
+         if (spec != null && spec.hasTag("dcp_DME_sigma_matter")) {
             copy.addFromStack(stack);
          }
       }
@@ -181,7 +181,7 @@ public class dcp_DME_SigmaMatterDataRecovery extends BaseCommandPlugin {
       while(var3.hasNext()) {
          CargoStackAPI stack = (CargoStackAPI)var3.next();
          CommoditySpecAPI spec = stack.getResourceIfResource();
-         if (spec != null && spec.hasTag("sigma_matter")) {
+         if (spec != null && spec.hasTag("dcp_DME_sigma_matter")) {
             bounty += spec.getBasePrice() * stack.getSize();
          }
       }
@@ -197,7 +197,7 @@ public class dcp_DME_SigmaMatterDataRecovery extends BaseCommandPlugin {
       while(var3.hasNext()) {
          CargoStackAPI stack = (CargoStackAPI)var3.next();
          CommoditySpecAPI spec = stack.getResourceIfResource();
-         if (spec != null && spec.hasTag("sigma_matter")) {
+         if (spec != null && spec.hasTag("dcp_DME_sigma_matter")) {
             rep += getBaseRepValue(spec.getId()) * stack.getSize();
          }
       }
@@ -227,7 +227,7 @@ public class dcp_DME_SigmaMatterDataRecovery extends BaseCommandPlugin {
 
          CargoStackAPI stack = (CargoStackAPI)var1.next();
          spec = stack.getResourceIfResource();
-      } while(spec == null || !spec.hasTag("sigma_matter"));
+      } while(spec == null || !spec.hasTag("dcp_DME_sigma_matter"));
 
       return true;
    }

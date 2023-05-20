@@ -164,7 +164,7 @@ public class BladeBreakerSeededFleetManager extends SeededFleetManager {
       long salvageSeed = random.nextLong();
       fleet.getMemoryWithoutUpdate().set("$salvageSeed", salvageSeed);
       int[] counts = new int[5];
-      String[] groups = new String[]{"breaker_fighters", "sigma_matter1", "breaker_weapons_small", "breaker_weapons_medium", "ai_cores3"};
+      String[] groups = new String[]{"breaker_fighters", "dcp_DME_sigma_matter1", "breaker_weapons_small", "breaker_weapons_medium", "ai_cores3"};
       Iterator var7 = fleet.getFleetData().getMembersListCopy().iterator();
 
       while(var7.hasNext()) {
@@ -218,7 +218,7 @@ public class BladeBreakerSeededFleetManager extends SeededFleetManager {
 
                   List<DropData> dropRandom = new ArrayList();
                   int[] counts = new int[5];
-                  String[] groups = new String[]{"sigma_matter2", "breaker_weapons_small", "breaker_weapons_medium", "breaker_weapons_large", "ai_cores3"};
+                  String[] groups = new String[]{"dcp_DME_sigma_matter2", "breaker_weapons_small", "breaker_weapons_medium", "breaker_weapons_large", "ai_cores3"};
                   Iterator var10 = losses.iterator();
 
                   while(var10.hasNext()) {

@@ -28,7 +28,7 @@
 	},
 	
 	"ruleCommandPackages":[
-		"data.campaign.rulecmd",
+		"data.campaign.rulescmd",
 	],	
 
 	"graphics":{
