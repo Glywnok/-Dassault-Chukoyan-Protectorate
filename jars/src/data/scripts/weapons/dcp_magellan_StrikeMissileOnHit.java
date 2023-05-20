@@ -20,7 +20,7 @@ public class dcp_magellan_StrikeMissileOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 20.0F;
    private static final float NEBULA_RAMPUP = 0.1F;
    private static final float FX_DUR = 2.0F;
-   private static final String SFX = "magellan_mine_explosion_vsm";
+   private static final String SFX = "dcp_magellan_mine_explosion_vsm";
    public static float extra_armor_damage;
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
@@ -34,7 +34,7 @@ public class dcp_magellan_StrikeMissileOnHit implements OnHitEffectPlugin {
          engine.addNebulaParticle(point, v_comp, NEBULA_SIZE, 20.0F, 0.1F, 0.3F, 2.0F, SMOKE_COLOR);
          engine.addNebulaParticle(point, v_comp, NEBULA_SIZE, 20.0F, 0.1F, 0.6F, 2.0F, SMOKE_COLOR);
          engine.spawnExplosion(point, v_target, BOOM_COLOR, NEBULA_SIZE * 8.0F, 0.5F);
-         Global.getSoundPlayer().playSound("magellan_mine_explosion_vsm", 1.0F, 1.0F, loc_target, v_target);
+         Global.getSoundPlayer().playSound("dcp_magellan_mine_explosion_vsm", 1.0F, 1.0F, loc_target, v_target);
       }
 
    }

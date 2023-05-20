@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_herdcarrier",
   "hullSize": "CRUISER",
   "spriteName": "graphics/DCP/ships/theherd/dcp_magellan_herdcarrier.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "height": 248,
   "width": 144,
   "center": [72, 120],
@@ -151,7 +151,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-102, 46],
@@ -159,7 +159,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-102, -46],
@@ -167,7 +167,7 @@
       "width": 12,
       "angle": -180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-117, 12.5],
@@ -175,7 +175,7 @@
       "width": 6,
       "angle": 180,
       "contrailSize": 6,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-117, -12.5],
@@ -183,7 +183,7 @@
       "width": 6,
       "angle": -180,
       "contrailSize":6,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-100, 58.5],
@@ -191,7 +191,7 @@
       "width": 6,
       "angle": 180,
       "contrailSize": 128,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-100, -58.5],
@@ -199,7 +199,7 @@
       "width": 6,
       "angle": -180,
       "contrailSize": 128,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     }
   ],
   "bounds": [

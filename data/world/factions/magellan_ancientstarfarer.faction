@@ -1,9 +1,9 @@
 {
-	id:"magellan_ancientstarfarer",
+	id:"dcp_magellan_ancientstarfarer",
 	"color":[216,255,216,255],
 	"displayName":"Starfarers",
 	"displayNameWithArticle":"Starfarers",
-	"displayNameLong":"Magellan Starfarers",
+	"displayNameLong":"dcp_magellan Starfarers",
 	"displayNameLongWithArticle":"Starfarers",
 	"entityNamePrefix":"starfarers",
 	"personNamePrefix":"starfarer",
@@ -13,7 +13,7 @@
 	"crest":"graphics/DCP/factions/crest_starfarer.png",
 	"shipNamePrefix":"DNS",
 	"shipNameSources":{
-		"MAGELLAN_STARFARER":1,
+		"dcp_magellan_STARFARER":1,
 	},
 	"description":"No description yet.",
 	"names":{

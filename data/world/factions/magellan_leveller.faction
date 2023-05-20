@@ -1,5 +1,5 @@
 {
-	"id":"magellan_leveller",
+	"id":"dcp_magellan_leveller",
 	"color":[134,112,156,255],
 	"baseUIColor":[134,112,156,255],
 	"secondaryUIColor":[225,225,225,255],
@@ -17,9 +17,9 @@
 	"shipNamePrefix":"LVS",
 	"shipNameSources":{
 		"KNIGHTS":4,
-		"MAGELLAN_LEVELLER":4,
+		"dcp_magellan_LEVELLER":4,
 		"SPACE":2,
-		"MAGELLAN_LEVELLER_SILLY":1,													# if you don't think I'm funny, comment this line out
+		"dcp_magellan_LEVELLER_SILLY":1,													# if you don't think I'm funny, comment this line out
 	},
 	"names":{
 		"fringe":1,
@@ -130,13 +130,13 @@
 		"luxury_goods",
 	],
 	"music":{
-		"theme":"music_dcp_magellan_leveller_encounter",
-		"market_neutral":"music_dcp_magellan_leveller_market",
-		"market_hostile":"music_dcp_magellan_leveller_market",
-		"market_friendly":"music_dcp_magellan_leveller_market",
-		"encounter_neutral":"music_dcp_magellan_leveller_encounter",
-		"encounter_hostile":"music_dcp_magellan_leveller_encounter",
-		"encounter_friendly":"music_dcp_magellan_leveller_encounter",
+		"theme":"music_magellan_leveller_encounter",
+		"market_neutral":"music_magellan_leveller_market",
+		"market_hostile":"music_magellan_leveller_market",
+		"market_friendly":"music_magellan_leveller_market",
+		"encounter_neutral":"music_magellan_leveller_encounter",
+		"encounter_hostile":"music_magellan_leveller_encounter",
+		"encounter_friendly":"music_magellan_leveller_encounter",
 	},
 	"portraits":{
 		"standard_male":[

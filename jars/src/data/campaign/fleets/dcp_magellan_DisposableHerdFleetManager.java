@@ -17,11 +17,11 @@ public class dcp_magellan_DisposableHerdFleetManager extends DisposableFleetMana
    }
 
    protected String getSpawnId() {
-      return "magellan_herd_spawnID";
+      return "dcp_magellan_herd_spawnID";
    }
 
    protected int getDesiredNumFleetsForSpawnLocation() {
-      MarketAPI mags_ind = this.getLargestTaggedMarket("magellan_indiemarket");
+      MarketAPI mags_ind = this.getLargestTaggedMarket("dcp_magellan_indiemarket");
       return mags_ind == null ? 0 : mags_ind.getSize();
    }
 
@@ -78,7 +78,7 @@ public class dcp_magellan_DisposableHerdFleetManager extends DisposableFleetMana
             }
 
             combat *= 11.0F;
-            FleetParamsV3 params = new FleetParamsV3((MarketAPI)null, system.getLocation(), "magellan_theherd", (Float)null, fleetType, combat, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.4F);
+            FleetParamsV3 params = new FleetParamsV3((MarketAPI)null, system.getLocation(), "dcp_magellan_theherd", (Float)null, fleetType, combat, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.4F);
             params.ignoreMarketFleetSizeMult = true;
             CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
             if (fleet != null && !fleet.isEmpty()) {

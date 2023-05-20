@@ -19,7 +19,7 @@ public class dcp_magellan_ScatterBolterEMPOnHit implements OnHitEffectPlugin {
    private static final Color EXPLOSION_COLOR = new Color(200, 220, 255, 255);
    private static final float EXPLOSION_RADIUS = 10.0F;
    private static final float EXPLOSION_DURATION = 0.2F;
-   private static final String SFX = "magellan_electron_crit_sm";
+   private static final String SFX = "dcp_magellan_electron_crit_sm";
    private static final float ARC_CHANCE = 0.6F;
    private static final float ARC_RANGE = 20000.0F;
    private static final float ARC_DAMAGE_MULT = 0.5F;
@@ -49,6 +49,6 @@ public class dcp_magellan_ScatterBolterEMPOnHit implements OnHitEffectPlugin {
       }
 
       engine.spawnExplosion(point, v_comp, EXPLOSION_COLOR, 10.0F, 0.2F);
-      Global.getSoundPlayer().playSound("magellan_electron_crit_sm", 1.0F, 1.0F, target.getLocation(), v_comp);
+      Global.getSoundPlayer().playSound("dcp_magellan_electron_crit_sm", 1.0F, 1.0F, target.getLocation(), v_comp);
    }
 }

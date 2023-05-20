@@ -29,12 +29,12 @@ public class dcp_magellan_ElectroTorpOnHit implements OnHitEffectPlugin {
          byte var18 = -1;
          switch(projid.hashCode()) {
          case -455203911:
-            if (projid.equals("magellan_electrontorp_ftr_shot")) {
+            if (projid.equals("dcp_magellan_electrontorp_ftr_shot")) {
                var18 = 0;
             }
             break;
          case 225852350:
-            if (projid.equals("magellan_electrontorp_shot")) {
+            if (projid.equals("dcp_magellan_electrontorp_shot")) {
                var18 = 1;
             }
          }
@@ -50,14 +50,14 @@ public class dcp_magellan_ElectroTorpOnHit implements OnHitEffectPlugin {
             max_arcs = 3;
             explosion_size = 50.0F;
             explosion_dur = 0.2F;
-            hit_sfx = "magellan_electron_crit_sm";
+            hit_sfx = "dcp_magellan_electron_crit_sm";
             break;
          case 1:
             min_arcs = 3;
             max_arcs = 5;
             explosion_size = 75.0F;
             explosion_dur = 0.3F;
-            hit_sfx = "magellan_electron_crit";
+            hit_sfx = "dcp_magellan_electron_crit";
             break;
          default:
             return;

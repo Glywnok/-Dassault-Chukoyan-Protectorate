@@ -35,7 +35,7 @@ public class dcp_magellan_StartigerUpgrade extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -71,9 +71,9 @@ public class dcp_magellan_StartigerUpgrade extends BaseHullMod {
       LabelAPI intlabel = tooltip.addPara("- " + this.getString("StartigerModDesc6"), padS, h, new String[]{"25%"});
       intlabel.setHighlight(new String[]{this.getString("StartigerMod6HL"), "25%"});
       intlabel.setHighlightColors(new Color[]{emp_color, h});
-      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
       TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
-      text.addPara(this.getString("MagellanAllIncomp"), padS);
+      text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Hardened Shields", bad, padS);
       text.addPara("- Armored Weapon Mounts", bad, 0.0F);
       text.addPara("- Converted Hangar", bad, 0.0F);

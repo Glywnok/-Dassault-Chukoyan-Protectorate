@@ -35,13 +35,13 @@
         -9,
         -0
       ],
-      "style": "MagellanFighterFlareTrail",
+      "style": "dcp_magellanFighterFlareTrail",
       "width": 6
     }
   ],
   "height": 24,
   "hullId": "dcp_magellan_interceptor",
-  "hullName": "Magellan Interceptor",
+  "hullName": "dcp_magellan Interceptor",
   "hullSize": "FIGHTER",
   "shieldCenter": [
     0,
@@ -49,7 +49,7 @@
   ],
   "shieldRadius": 15,
   "spriteName": "graphics/DCP/ships/dcp_magellan_interceptor.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

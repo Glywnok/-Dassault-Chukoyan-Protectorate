@@ -14,7 +14,7 @@
     		"persean"], 									# String array
     "factionsDisliked":[
     		"hegemony",
-    		"magellan_leveller",
+    		"dcp_magellan_leveller",
     		"SCY",
     		"diableavionics",
     		"scalartech",
@@ -51,7 +51,7 @@
     "diplomacyPositiveChance":{
     		"luddic_church": 0.4, 				
     		"luddic_path": 0.25, 				
-    		"magellan_leveller": 0.25, 			# okay, you don't *literally* eat babies
+    		"dcp_magellan_leveller": 0.25, 			# okay, you don't *literally* eat babies
     		"SCY": 0.3, 						
     		"shadow_industry": 0.3, 			# disinformation is an investment, not an expense
     		"diableavionics": 0.25, 			
@@ -66,7 +66,7 @@
     "diplomacyNegativeChance":{
     		"luddic_church": 0.6, 				
     		"luddic_path": 0.75, 				
-    		"magellan_leveller": 0.75, 			# but you're still a motley bunch of perfidious egalitarians
+    		"dcp_magellan_leveller": 0.75, 			# but you're still a motley bunch of perfidious egalitarians
     		"SCY": 0.6, 						
     		"shadow_industry": 0.7, 			# but there's some shit even Protectorate Times can't spin
     		"diableavionics": 0.75, 			

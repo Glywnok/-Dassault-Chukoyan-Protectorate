@@ -18,12 +18,12 @@ public class dcp_magellan_SuperSolenoidFX implements OnFireEffectPlugin, EveryFr
       byte var9 = -1;
       switch(projid.hashCode()) {
       case -124460084:
-         if (projid.equals("magellan_supersolenoid_sm_shot")) {
+         if (projid.equals("dcp_magellan_supersolenoid_sm_shot")) {
             var9 = 0;
          }
          break;
       case 372238349:
-         if (projid.equals("magellan_supersolenoid_shot")) {
+         if (projid.equals("dcp_magellan_supersolenoid_shot")) {
             var9 = 1;
          }
       }

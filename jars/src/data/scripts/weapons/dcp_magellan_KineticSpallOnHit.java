@@ -33,22 +33,22 @@ public class dcp_magellan_KineticSpallOnHit implements OnHitEffectPlugin {
       byte var22 = -1;
       switch(projid.hashCode()) {
       case -1319076437:
-         if (projid.equals("magellan_quenchgun_shot")) {
+         if (projid.equals("dcp_magellan_quenchgun_shot")) {
             var22 = 2;
          }
          break;
       case -236207448:
-         if (projid.equals("magellan_bigsolenoid_shot")) {
+         if (projid.equals("dcp_magellan_bigsolenoid_shot")) {
             var22 = 1;
          }
          break;
       case 720592249:
-         if (projid.equals("magellan_lilsolenoid_shot")) {
+         if (projid.equals("dcp_magellan_lilsolenoid_shot")) {
             var22 = 0;
          }
          break;
       case 1852173482:
-         if (projid.equals("magellan_quenchcannon_shot")) {
+         if (projid.equals("dcp_magellan_quenchcannon_shot")) {
             var22 = 3;
          }
       }
@@ -72,7 +72,7 @@ public class dcp_magellan_KineticSpallOnHit implements OnHitEffectPlugin {
          damagemin_mult = 0.25F;
          damagemax_mult = 0.5F;
          pushmult = 0.0F;
-         spall_sfx = "magellan_kineticspall_sm_crit";
+         spall_sfx = "dcp_magellan_kineticspall_sm_crit";
          break;
       case 1:
          explosion_size = 50.0F;
@@ -83,7 +83,7 @@ public class dcp_magellan_KineticSpallOnHit implements OnHitEffectPlugin {
          damagemin_mult = 0.5F;
          damagemax_mult = 0.667F;
          pushmult = 0.0F;
-         spall_sfx = "magellan_kineticspall_crit";
+         spall_sfx = "dcp_magellan_kineticspall_crit";
          break;
       case 2:
          explosion_size = 50.0F;
@@ -94,7 +94,7 @@ public class dcp_magellan_KineticSpallOnHit implements OnHitEffectPlugin {
          damagemin_mult = 0.5F;
          damagemax_mult = 0.667F;
          pushmult = 0.05F;
-         spall_sfx = "magellan_kineticspall_crit";
+         spall_sfx = "dcp_magellan_kineticspall_crit";
          break;
       case 3:
          explosion_size = 75.0F;
@@ -105,7 +105,7 @@ public class dcp_magellan_KineticSpallOnHit implements OnHitEffectPlugin {
          damagemin_mult = 0.333F;
          damagemax_mult = 0.5F;
          pushmult = 0.1F;
-         spall_sfx = "magellan_kineticspall_crit";
+         spall_sfx = "dcp_magellan_kineticspall_crit";
          break;
       default:
          return;

@@ -25,7 +25,7 @@ public class dcp_magellan_FlashfireOnHit implements OnHitEffectPlugin {
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
    private static final float PARTICLE_DURATION = 1.8F;
    private static final int PARTICLE_COUNT = 2;
-   private static final String SFX = "magellan_kineticspall_crit";
+   private static final String SFX = "dcp_magellan_kineticspall_crit";
    private static final float CONE_ANGLE = 45.0F;
    private static final float VEL_MIN = 0.2F;
    private static final float VEL_MAX = 0.4F;
@@ -56,6 +56,6 @@ public class dcp_magellan_FlashfireOnHit implements OnHitEffectPlugin {
          targetship.getFluxTracker().increaseFlux(fluxmult, false);
       }
 
-      Global.getSoundPlayer().playSound("magellan_kineticspall_crit", 1.0F, 1.0F, loc_target, v_comp);
+      Global.getSoundPlayer().playSound("dcp_magellan_kineticspall_crit", 1.0F, 1.0F, loc_target, v_comp);
    }
 }

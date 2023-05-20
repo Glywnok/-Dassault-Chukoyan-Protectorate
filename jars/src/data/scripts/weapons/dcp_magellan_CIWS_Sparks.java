@@ -23,22 +23,22 @@ public class dcp_magellan_CIWS_Sparks implements OnHitEffectPlugin {
       byte var13 = -1;
       switch(projid.hashCode()) {
       case -1520227573:
-         if (projid.equals("magellan_lgminigun_shot")) {
+         if (projid.equals("dcp_magellan_lgminigun_shot")) {
             var13 = 2;
          }
          break;
       case 366577168:
-         if (projid.equals("magellan_minigun_shot")) {
+         if (projid.equals("dcp_magellan_minigun_shot")) {
             var13 = 0;
          }
          break;
       case 592633595:
-         if (projid.equals("magellan_lgminigun_tracer_shot")) {
+         if (projid.equals("dcp_magellan_lgminigun_tracer_shot")) {
             var13 = 3;
          }
          break;
       case 1953891414:
-         if (projid.equals("magellan_minigun_tracer_shot")) {
+         if (projid.equals("dcp_magellan_minigun_tracer_shot")) {
             var13 = 1;
          }
       }

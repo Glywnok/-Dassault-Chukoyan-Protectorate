@@ -20,7 +20,7 @@
 		# Campaign tracks
 
 		# Leveller Encounter Loop - needs to be replaced eventually
-		"music_dcp_magellan_leveller_encounter":[
+		"music_magellan_leveller_encounter":[
 			{"file":"dcp_magellan_unforgivinghimalayas.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":false},
 		],
 		# Leveller market loop - also needs to be replaced
@@ -32,20 +32,20 @@
 			{"file":"dcp_magellan_emergingaliencivilizations.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
 		],
 		# Magellan Encounter Music (by MesoTroniK)
-		"music_dcp_magellan_protectorate_encounter_neutral":[
+		"music_magellan_protectorate_encounter_neutral":[
 			{"file":"dcp_magellan_protectorate_neutral_encounter.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
 		],
-		"music_dcp_magellan_protectorate_encounter_hostile":[
+		"music_magellan_protectorate_encounter_hostile":[
 			{"file":"dcp_magellan_protectorate_hostile_encounter.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
 		],
-		"music_dcp_magellan_protectorate_encounter_friendly":[
+		"music_magellan_protectorate_encounter_friendly":[
 			{"file":"dcp_magellan_protectorate_friendly_encounter.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
 		],
 		# Magellan Market Music (by MesoTroniK)
-		"music_dcp_magellan_protectorate_market_neutral":[
+		"music_magellan_protectorate_market_neutral":[
 			{"file":"dcp_magellan_protectorate_market_neutral.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
 		],
-		"music_dcp_magellan_protectorate_market_hostile":[
+		"music_magellan_protectorate_market_hostile":[
 			{"file":"dcp_magellan_protectorate_market_hostile.ogg","source":"sounds/DCP/dcpmusic","volume":0.40,"randomStart":true},
 		],
 				
@@ -1749,7 +1749,7 @@
 			{"file":"sounds/sfx_engines/engine_03_hitek_04_capital.ogg","pitch":1,"volume":1},    # index: 9
 			],
 
-		"MAGELLAN":{"sounds":[0,1,2,3,4], "pitch":0.9, "volume":0.5},
+		"dcp_magellan":{"sounds":[0,1,2,3,4], "pitch":0.9, "volume":0.5},
 		"MGLN_LEVELLER":{"sounds":[5,6,7,8,9], "pitch":1, "volume":0.5},
 		"FIGHTER":{"sounds":[0,5], "pitch":1, "volume":0.4},
 		"FRIGATE":{"sounds":[1,6], "pitch":1, "volume":0.7},
@@ -1765,7 +1765,7 @@
 			{"file":"sounds/sfx_engines/engine_boost_02.ogg","pitch":1,"volume":0.4},
 			{"file":"sounds/sfx_engines/engine_boost_03.ogg","pitch":1,"volume":0.4},
 		],
-		"MAGELLAN":{"sounds":[0,1,2], "pitch":0.75, "volume":1},
+		"dcp_magellan":{"sounds":[0,1,2], "pitch":0.75, "volume":1},
 		"MGLN_LEVELLER":{"sounds":[0,1,2], "pitch":1, "volume":1},
 		"FIGHTER":{"sounds":[0,1,2], "pitch":1, "volume":0.4},
 		"FRIGATE":{"sounds":[0,1,2], "pitch":1, "volume":0.6},
@@ -1779,7 +1779,7 @@
 		"sounds":[
 			{"file":"sounds/sfx_shields/shields_burnout_oneshot.ogg","pitch":1,"volume":1},
 		],
-		"MAGELLAN":{"sounds":[0], "pitch":0.75, "volume":1},
+		"dcp_magellan":{"sounds":[0], "pitch":0.75, "volume":1},
 		"MGLN_LEVELLER":{"sounds":[0], "pitch":1, "volume":1},
 		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
 		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
@@ -1791,7 +1791,7 @@
 		"sounds":[
 			{"file":"sounds/sfx_shields/shields_burnout_loop.ogg","pitch":1,"volume":0.6},
 		],
-		"MAGELLAN":{"sounds":[0], "pitch":0.75, "volume":1},
+		"dcp_magellan":{"sounds":[0], "pitch":0.75, "volume":1},
 		"MGLN_LEVELLER":{"sounds":[0], "pitch":1, "volume":1},
 		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
 		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
@@ -1803,7 +1803,7 @@
 		"sounds":[
 			{"file":"sounds/sfx_flux/flux_flush_loop.ogg","pitch":1,"volume":0.8},
 		],
-		"MAGELLAN":{"sounds":[0], "pitch":0.75, "volume":1},
+		"dcp_magellan":{"sounds":[0], "pitch":0.75, "volume":1},
 		"MGLN_LEVELLER":{"sounds":[0], "pitch":1, "volume":1},
 		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
 		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
@@ -1815,7 +1815,7 @@
 		"sounds":[
 			{"file":"sounds/sfx_flux/flux_vent.ogg","pitch":1,"volume":0.5},
 		],
-		"MAGELLAN":{"sounds":[0], "pitch":0.75, "volume":1},
+		"dcp_magellan":{"sounds":[0], "pitch":0.75, "volume":1},
 		"MGLN_LEVELLER":{"sounds":[0], "pitch":1, "volume":1},
 		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
 		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
@@ -1832,7 +1832,7 @@
 			{"file":"sounds/sfx_shields/shields_down_medium.ogg","pitch":1,"volume":0.4},
 			{"file":"sounds/sfx_shields/shields_down_small.ogg","pitch":1,"volume":0.4},
 		],
-		"MAGELLAN":{"sounds":[0,1,2], "pitch":0.95, "volume":1},
+		"dcp_magellan":{"sounds":[0,1,2], "pitch":0.95, "volume":1},
 		"MGLN_LEVELLER":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
 		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.6},
 		"FRIGATE":{"sounds":[1], "pitch":1, "volume":0.7},
@@ -1846,7 +1846,7 @@
 			{"file":"sounds/sfx_shields/shields_up_medium.ogg","pitch":1,"volume":1},
 			{"file":"sounds/sfx_shields/shields_up_small.ogg","pitch":1,"volume":1},
 		],
-		"MAGELLAN":{"sounds":[0,1,2], "pitch":0.95, "volume":1},
+		"dcp_magellan":{"sounds":[0,1,2], "pitch":0.95, "volume":1},
 		"MGLN_LEVELLER":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
 		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
 		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
@@ -1862,7 +1862,7 @@
 			{"file":"sounds/sfx_impacts/explosion_03_fighter.ogg","pitch":1,"volume":1.0},
 			{"file":"sounds/sfx_impacts/explosion_04.ogg","pitch":1,"volume":1.0},
 		],
-		"MAGELLAN":{"sounds":[0,1,2,3], "pitch":0.95, "volume":1},
+		"dcp_magellan":{"sounds":[0,1,2,3], "pitch":0.95, "volume":1},
 		"MGLN_LEVELLER":{"sounds":[0,1,2,3], "pitch":1, "volume":1},
 		"FIGHTER":{"sounds":[2], "pitch":1, "volume":1.0},
 		"FRIGATE":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},

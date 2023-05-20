@@ -1,5 +1,5 @@
 {
-	"magellan_protectorate":{
+	"dcp_magellan_protectorate":{
 		# Any of the entries in this file may be ommited if you simply want to defer
 		#	to the default for that entry
 	
@@ -9,7 +9,7 @@
 		
 		# Changes the short description prior to listing traits. Enter %s where the
 		#	commander's name should be, if you want it to apear at all
-		"descriptionOverride":"Magellan ships are known for having the following traits:",
+		"descriptionOverride":"dcp_magellan ships are known for having the following traits:",
 		
 		# Allows the fleets of this faction to have famous flagships, which the
 		# 	player may find out about from a bar event

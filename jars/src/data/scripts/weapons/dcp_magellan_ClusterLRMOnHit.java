@@ -21,7 +21,7 @@ public class dcp_magellan_ClusterLRMOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 20.0F;
    private static final float NEBULA_DUR = 1.5F;
    private static final float NEBULA_RAMPUP = 0.3F;
-   private static final String SFX = "magellan_bonecrusher_crit";
+   private static final String SFX = "dcp_magellan_bonecrusher_crit";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       if (!shieldHit && !projectile.isFading() && target instanceof ShipAPI) {
@@ -32,7 +32,7 @@ public class dcp_magellan_ClusterLRMOnHit implements OnHitEffectPlugin {
          Vector2f v_comp = (Vector2f)Vector2f.sub(v_proj, v_target, new Vector2f()).scale(0.1F);
          engine.addNebulaParticle(point, v_comp, NEBULA_SIZE, 20.0F, 0.3F, 0.3F, 1.5F, NEBULA_COLOR);
          engine.spawnExplosion(point, v_comp, EXPLOSION_COLOR, NEBULA_SIZE * 6.0F, 0.15F);
-         Global.getSoundPlayer().playSound("magellan_bonecrusher_crit", 1.0F, 1.0F, loc_target, v_comp);
+         Global.getSoundPlayer().playSound("dcp_magellan_bonecrusher_crit", 1.0F, 1.0F, loc_target, v_comp);
       }
 
    }

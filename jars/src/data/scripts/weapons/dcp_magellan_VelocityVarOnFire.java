@@ -12,17 +12,17 @@ public class dcp_magellan_VelocityVarOnFire implements OnFireEffectPlugin {
       byte var8 = -1;
       switch(projid.hashCode()) {
       case -1355660860:
-         if (projid.equals("magellan_eflak_shot")) {
+         if (projid.equals("dcp_magellan_eflak_shot")) {
             var8 = 0;
          }
          break;
       case -1183910284:
-         if (projid.equals("magellan_bonesaw_shot")) {
+         if (projid.equals("dcp_magellan_bonesaw_shot")) {
             var8 = 1;
          }
          break;
       case 227094684:
-         if (projid.equals("magellan_bonegrinder_shot")) {
+         if (projid.equals("dcp_magellan_bonegrinder_shot")) {
             var8 = 2;
          }
       }

@@ -14,7 +14,7 @@ import org.lwjgl.util.vector.Vector2f;
 public class dcp_magellan_SilverdartFX implements OnFireEffectPlugin, EveryFrameWeaponEffectPlugin {
    public static final int REPLACE_EVERY_MIN = 4;
    public static final int REPLACE_EVERY_MAX = 8;
-   public static final String REPLACE_WPN_ID = "magellan_silverdart_emp";
+   public static final String REPLACE_WPN_ID = "dcp_magellan_silverdart_emp";
    private static final Color FLASH_CORE = new Color(25, 170, 245, 125);
    private static final Color FLASH_FRINGE = new Color(125, 215, 245, 100);
    private static final float FLASH_SIZE = 1.0F;
@@ -29,7 +29,7 @@ public class dcp_magellan_SilverdartFX implements OnFireEffectPlugin, EveryFrame
          this.roundCounter = 0;
          Vector2f loc = proj.getLocation();
          ship_velocity = proj.getVelocity();
-         DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(weapon.getShip(), weapon, "magellan_silverdart_emp", loc, proj.getFacing(), weapon.getShip().getVelocity());
+         DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(weapon.getShip(), weapon, "dcp_magellan_silverdart_emp", loc, proj.getFacing(), weapon.getShip().getVelocity());
          Global.getCombatEngine().removeEntity(proj);
       }
 

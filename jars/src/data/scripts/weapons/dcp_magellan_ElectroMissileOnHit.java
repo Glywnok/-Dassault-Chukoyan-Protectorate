@@ -17,7 +17,7 @@ public class dcp_magellan_ElectroMissileOnHit implements OnHitEffectPlugin {
    private static final int MAX_ARCS = 3;
    private static final float ARC_DAMAGE = 0.25F;
    private static final float ARC_EMP = 1.0F;
-   private static final String SFX = "magellan_electron_crit_sm";
+   private static final String SFX = "dcp_magellan_electron_crit_sm";
    private static final Color EXPLOSION_COLOR = new Color(100, 110, 255, 255);
    private static final float EXPLOSION_RADIUS = 75.0F;
    private static final float EXPLOSION_DURATION = 0.3F;
@@ -33,7 +33,7 @@ public class dcp_magellan_ElectroMissileOnHit implements OnHitEffectPlugin {
             Vector2f loc_target = new Vector2f(target.getLocation());
             Vector2f v_target = new Vector2f(target.getVelocity());
             engine.spawnExplosion(point, v_target, EXPLOSION_COLOR, 75.0F, 0.3F);
-            Global.getSoundPlayer().playSound("magellan_electron_crit_sm", 1.0F, 1.0F, loc_target, v_target);
+            Global.getSoundPlayer().playSound("dcp_magellan_electron_crit_sm", 1.0F, 1.0F, loc_target, v_target);
          }
       }
 

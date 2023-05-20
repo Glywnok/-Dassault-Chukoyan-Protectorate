@@ -34,7 +34,7 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -78,9 +78,9 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
       tooltip.addPara("- " + this.getString("ClassicDesc3"), padS, h, new String[]{"1"});
       tooltip.addPara("- " + this.getString("MagellanEngDesc3"), padS, h, new String[]{"100%"});
       tooltip.addPara("- " + this.getString("BlackcollarModDesc7"), padS, h, new String[]{"25%"});
-      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
       TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
-      text.addPara(this.getString("MagellanAllIncomp"), padS);
+      text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Integrated Targeting Unit", bad, padS);
       text.addPara("- Dedicated Targeting Core", bad, 0.0F);
       text.addPara("- Expanded Deck Crew", bad, 0.0F);
@@ -101,7 +101,7 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
    }
 
    public boolean isApplicableToShip(ShipAPI ship) {
-      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_core_hullmod")) {
+      if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_magellan_core_hullmod")) {
          return false;
       } else {
          return ship != null && !ship.isCapital() && super.isApplicableToShip(ship);
@@ -112,7 +112,7 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
       if (ship != null && ship.isCapital()) {
          return this.getString("MagSpecialCompatCapital");
       } else {
-         return this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_core_hullmod") ? this.getString("MagSpecialCompat3") : super.getUnapplicableReason(ship);
+         return this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_magellan_core_hullmod") ? this.getString("MagSpecialCompat3") : super.getUnapplicableReason(ship);
       }
    }
 

@@ -32,7 +32,7 @@ public class dcp_magellan_BonecrackerFX implements OnFireEffectPlugin, EveryFram
          weapon_location = MathUtils.getRandomPointOnCircumference((Vector2f)null, MathUtils.getRandomNumberInRange(18.0F, 24.0F));
          weapon_location.x += proj_vel.x + ship_vel.x;
          weapon_location.y += proj_vel.y + ship_vel.y;
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "magellan_bonecracker_sub", loc, proj.getFacing(), weapon_location);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_magellan_bonecracker_sub", loc, proj.getFacing(), weapon_location);
       }
 
       int shotCount2 = 1;
@@ -40,7 +40,7 @@ public class dcp_magellan_BonecrackerFX implements OnFireEffectPlugin, EveryFram
       for(int j = 0; j < shotCount2; ++j) {
          proj_vel.x += ship_vel.x;
          proj_vel.y += ship_vel.y;
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "magellan_bonecracker_core", loc, proj.getFacing(), proj_vel);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_magellan_bonecracker_core", loc, proj.getFacing(), proj_vel);
       }
 
       engine.removeEntity(proj);

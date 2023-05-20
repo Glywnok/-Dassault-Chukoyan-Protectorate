@@ -79,7 +79,7 @@
         -90,
         30
       ],
-      "style": "MagellanFlare",
+      "style": "dcp_magellanFlare",
       "width": 12
     },
     {
@@ -90,7 +90,7 @@
         -90,
         -30
       ],
-      "style": "MagellanFlare",
+      "style": "dcp_magellanFlare",
       "width": 12
     },
     {
@@ -101,7 +101,7 @@
         -87,
         39.5
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 5
     },
     {
@@ -112,7 +112,7 @@
         -87,
         -39.5
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 5
     },
     {
@@ -123,7 +123,7 @@
         -87,
         20.5
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 5
     },
     {
@@ -134,7 +134,7 @@
         -87,
         -20.5
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 5
     }
   ],
@@ -148,7 +148,7 @@
   ],
   "shieldRadius": 120,
   "spriteName": "graphics/DCP/ships/dcp_magellan_patroldestroyer.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

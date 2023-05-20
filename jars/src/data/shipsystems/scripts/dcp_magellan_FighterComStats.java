@@ -23,7 +23,7 @@ public class dcp_magellan_FighterComStats extends BaseShipSystemScript {
    public static final Color JITTER_UNDER_COLOR = new Color(175, 155, 95, 155);
 
    private String getString(String key) {
-      return Global.getSettings().getString("System", "magellan_" + key);
+      return Global.getSettings().getString("System", "dcp_magellan_" + key);
    }
 
    public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {

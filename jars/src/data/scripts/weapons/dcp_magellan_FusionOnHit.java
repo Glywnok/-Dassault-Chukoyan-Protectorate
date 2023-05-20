@@ -25,27 +25,27 @@ public class dcp_magellan_FusionOnHit implements OnHitEffectPlugin {
       byte var21 = -1;
       switch(projid.hashCode()) {
       case -1740691591:
-         if (projid.equals("magellan_balefiresmall")) {
+         if (projid.equals("dcp_magellan_balefiresmall")) {
             var21 = 2;
          }
          break;
       case -407949746:
-         if (projid.equals("magellan_balefire")) {
+         if (projid.equals("dcp_magellan_balefire")) {
             var21 = 4;
          }
          break;
       case -103560718:
-         if (projid.equals("magellan_scatterblaster_shot")) {
+         if (projid.equals("dcp_magellan_scatterblaster_shot")) {
             var21 = 3;
          }
          break;
       case 176808081:
-         if (projid.equals("magellan_trinitycannon_shot")) {
+         if (projid.equals("dcp_magellan_trinitycannon_shot")) {
             var21 = 1;
          }
          break;
       case 756148494:
-         if (projid.equals("magellan_fusbomb_ftr_shot")) {
+         if (projid.equals("dcp_magellan_fusbomb_ftr_shot")) {
             var21 = 0;
          }
       }
@@ -67,7 +67,7 @@ public class dcp_magellan_FusionOnHit implements OnHitEffectPlugin {
          damagemax_mult = 0.6F;
          boom_radius = 45.0F;
          boom_count = 3;
-         hit_sfx = "magellan_fusion_sm_crit";
+         hit_sfx = "dcp_magellan_fusion_sm_crit";
          break;
       case 1:
          explosion_size = 120.0F;
@@ -77,7 +77,7 @@ public class dcp_magellan_FusionOnHit implements OnHitEffectPlugin {
          damagemax_mult = 0.5F;
          boom_radius = 60.0F;
          boom_count = 0;
-         hit_sfx = "magellan_fusion_sm_crit";
+         hit_sfx = "dcp_magellan_fusion_sm_crit";
          break;
       case 2:
          explosion_size = 120.0F;
@@ -87,7 +87,7 @@ public class dcp_magellan_FusionOnHit implements OnHitEffectPlugin {
          damagemax_mult = 0.5F;
          boom_radius = 60.0F;
          boom_count = 5;
-         hit_sfx = "magellan_fusion_crit";
+         hit_sfx = "dcp_magellan_fusion_crit";
          break;
       case 3:
          explosion_size = 150.0F;
@@ -97,7 +97,7 @@ public class dcp_magellan_FusionOnHit implements OnHitEffectPlugin {
          damagemax_mult = 0.5F;
          boom_radius = 90.0F;
          boom_count = 0;
-         hit_sfx = "magellan_fusion_sm_crit";
+         hit_sfx = "dcp_magellan_fusion_sm_crit";
          break;
       case 4:
          explosion_size = 150.0F;
@@ -107,7 +107,7 @@ public class dcp_magellan_FusionOnHit implements OnHitEffectPlugin {
          damagemax_mult = 0.5F;
          boom_radius = 90.0F;
          boom_count = 7;
-         hit_sfx = "magellan_fusion_crit";
+         hit_sfx = "dcp_magellan_fusion_crit";
          break;
       default:
          return;

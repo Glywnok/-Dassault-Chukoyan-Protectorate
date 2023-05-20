@@ -37,7 +37,7 @@ public class dcp_magellan_IonSmokeExplosionEffect implements ProximityExplosionE
 
       for(i = 0; i <= 0; ++i) {
          float angle = (float)(Math.random() * 360.0D);
-         engine.spawnProjectile(originalProjectile.getSource(), originalProjectile.getWeapon(), "magellan_microflare_brief", loc_boom, angle, v_comp);
+         engine.spawnProjectile(originalProjectile.getSource(), originalProjectile.getWeapon(), "dcp_magellan_microflare_brief", loc_boom, angle, v_comp);
       }
 
    }

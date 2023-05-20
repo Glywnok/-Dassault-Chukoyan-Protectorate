@@ -29,6 +29,6 @@ public class dcp_DME_Tags {
    public static final String THEME_SECUNDUS_GRAVEYARD = "theme_magellan_graveyard";
    public static final String THEME_LEVELLER = "theme_magellan_leveller";
    public static final String THEME_LEVELLER_HOME_NEBULA = "theme_magellan_leveller_home_nebula";
-   public static final String MAGELLAN_INDMARKET = "magellan_indiemarket";
-   public static final String MAGELLAN_MEETPOINT = "magellan_meetpointInt";
+   public static final String MAGELLAN_INDMARKET = "dcp_magellan_indiemarket";
+   public static final String MAGELLAN_MEETPOINT = "dcp_magellan_meetpointInt";
 }

@@ -37,7 +37,7 @@ public class dcp_magellan_MissileDroneStats extends DroneStrikeStats {
    protected ShipAPI forceNextTarget = null;
 
    private String getString(String key) {
-      return Global.getSettings().getString("Magellan_Strings", "dcp_magellan_" + key);
+      return Global.getSettings().getString("Strings", "dcp_magellan_" + key);
    }
 
    protected String getWeaponId() {

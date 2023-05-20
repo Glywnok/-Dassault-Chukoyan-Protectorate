@@ -17,7 +17,7 @@ public class dcp_magellan_ConvertedShuttleBay extends BaseHullMod {
    private static Map<HullSize, Integer> numBays = new HashMap();
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {

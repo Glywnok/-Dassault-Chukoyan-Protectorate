@@ -21,7 +21,7 @@ public class dcp_magellan_RipfireOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 20.0F;
    private static final float NEBULA_RAMPUP = 0.1F;
    private static final float FX_DUR = 1.0F;
-   private static final String SFX = "magellan_bonecrusher_crit";
+   private static final String SFX = "dcp_magellan_bonecrusher_crit";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       Vector2f loc_target = new Vector2f(target.getLocation());
@@ -33,7 +33,7 @@ public class dcp_magellan_RipfireOnHit implements OnHitEffectPlugin {
          engine.addNebulaSmokeParticle(point, v_comp, NEBULA_SIZE, 20.0F, 0.1F, 0.3F, 1.0F, SMOKE_COLOR);
          engine.addNebulaSmokeParticle(point, v_comp, NEBULA_SIZE, 20.0F, 0.1F, 0.6F, 1.0F, SMOKE_COLOR);
          engine.spawnExplosion(point, v_comp, BOOM_COLOR, NEBULA_SIZE * 8.0F, 0.25F);
-         Global.getSoundPlayer().playSound("magellan_bonecrusher_crit", 1.0F, 1.0F, loc_target, v_comp);
+         Global.getSoundPlayer().playSound("dcp_magellan_bonecrusher_crit", 1.0F, 1.0F, loc_target, v_comp);
       }
 
    }

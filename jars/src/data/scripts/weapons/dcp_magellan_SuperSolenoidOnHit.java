@@ -35,12 +35,12 @@ public class dcp_magellan_SuperSolenoidOnHit implements OnHitEffectPlugin {
       byte var21 = -1;
       switch(projid.hashCode()) {
       case -124460084:
-         if (projid.equals("magellan_supersolenoid_sm_shot")) {
+         if (projid.equals("dcp_magellan_supersolenoid_sm_shot")) {
             var21 = 0;
          }
          break;
       case 372238349:
-         if (projid.equals("magellan_supersolenoid_shot")) {
+         if (projid.equals("dcp_magellan_supersolenoid_shot")) {
             var21 = 1;
          }
       }
@@ -66,7 +66,7 @@ public class dcp_magellan_SuperSolenoidOnHit implements OnHitEffectPlugin {
          velmin_mult = 0.04F;
          velmax_mult = 0.2F;
          pushmult = 0.05F;
-         hit_sfx = "magellan_electron_crit_sm";
+         hit_sfx = "dcp_magellan_electron_crit_sm";
          break;
       case 1:
          maxarcs = 3;
@@ -78,7 +78,7 @@ public class dcp_magellan_SuperSolenoidOnHit implements OnHitEffectPlugin {
          velmin_mult = 0.03F;
          velmax_mult = 0.15F;
          pushmult = 0.1F;
-         hit_sfx = "magellan_electron_crit";
+         hit_sfx = "dcp_magellan_electron_crit";
          break;
       default:
          return;

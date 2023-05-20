@@ -14,7 +14,7 @@ import org.lwjgl.util.vector.Vector2f;
 public class dcp_magellan_BonecrusherOnHit implements OnHitEffectPlugin {
    private static final float EXPLOSION_RADIUS = 30.0F;
    private static final float EXPLOSION_DURATION = 0.3F;
-   private static final String SFX = "magellan_bonecrusher_crit";
+   private static final String SFX = "dcp_magellan_bonecrusher_crit";
    private static final float ARC_CHANCE = 0.2F;
    private static final float ARC_RANGE = 100000.0F;
    private static final float ARC_DAMAGE_MULT = 0.2F;
@@ -35,6 +35,6 @@ public class dcp_magellan_BonecrusherOnHit implements OnHitEffectPlugin {
       Vector2f v_target = new Vector2f(target.getVelocity());
       engine.addSmoothParticle(point, v_target, 50.001F, 1.0F, 0.3F, 0.09990001F, CORE_COLOR);
       engine.spawnExplosion(point, v_target, FRINGE_COLOR, 30.0F, 0.3F);
-      Global.getSoundPlayer().playSound("magellan_bonecrusher_crit", 1.0F, 1.0F, loc_target, v_target);
+      Global.getSoundPlayer().playSound("dcp_magellan_bonecrusher_crit", 1.0F, 1.0F, loc_target, v_target);
    }
 }

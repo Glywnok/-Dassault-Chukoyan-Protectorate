@@ -34,7 +34,7 @@ public class dcp_magellan_MagellanMovement extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -91,17 +91,17 @@ public class dcp_magellan_MagellanMovement extends BaseHullMod {
       if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_magellan_exclusive_hullmod")) {
          return false;
       } else {
-         return ship != null && !ship.isCapital() && (ship.getVariant().hasHullMod("dcp_magellan_engineering") || ship.getVariant().hasHullMod("dcp_magellan_engineering_civ") || ship.getVariant().hasHullMod("dcp_magellan_blackcollarmod") || ship.getVariant().hasHullMod("dcp_magellan_startigermod") || ship.getVariant().hasHullMod("dcp_magellan_levellermod") || ship.getVariant().hasHullMod("magellan_herdmod") || ship.getVariant().hasHullMod("magellan_yellowtailmod")) && super.isApplicableToShip(ship);
+         return ship != null && !ship.isCapital() && (ship.getVariant().hasHullMod("dcp_magellan_engineering") || ship.getVariant().hasHullMod("dcp_magellan_engineering_civ") || ship.getVariant().hasHullMod("dcp_magellan_blackcollarmod") || ship.getVariant().hasHullMod("dcp_magellan_startigermod") || ship.getVariant().hasHullMod("dcp_magellan_levellermod") || ship.getVariant().hasHullMod("dcp_magellan_herdmod") || ship.getVariant().hasHullMod("dcp_magellan_yellowtailmod")) && super.isApplicableToShip(ship);
       }
    }
 
    public String getUnapplicableReason(ShipAPI ship) {
       if (ship != null && ship.isCapital()) {
          return this.getString("MagSpecialCompatCapital");
-      } else if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "magellan_exclusive_hullmod")) {
+      } else if (this.shipHasOtherModInCategory(ship, this.spec.getId(), "dcp_magellan_exclusive_hullmod")) {
          return this.getString("MagSpecialCompat1");
       } else {
-         return ship.getVariant().hasHullMod("magellan_engineering") && ship.getVariant().hasHullMod("magellan_engineering_civ") && ship.getVariant().hasHullMod("magellan_blackcollarmod") && ship.getVariant().hasHullMod("magellan_startigermod") && ship.getVariant().hasHullMod("magellan_levellermod") && ship.getVariant().hasHullMod("magellan_herdmod") && ship.getVariant().hasHullMod("magellan_yellowtailmod") ? super.getUnapplicableReason(ship) : this.getString("MagSpecialCompat2");
+         return ship.getVariant().hasHullMod("dcp_magellan_engineering") && ship.getVariant().hasHullMod("dcp_magellan_engineering_civ") && ship.getVariant().hasHullMod("dcp_magellan_blackcollarmod") && ship.getVariant().hasHullMod("dcp_magellan_startigermod") && ship.getVariant().hasHullMod("dcp_magellan_levellermod") && ship.getVariant().hasHullMod("dcp_magellan_herdmod") && ship.getVariant().hasHullMod("dcp_magellan_yellowtailmod") ? super.getUnapplicableReason(ship) : this.getString("MagSpecialCompat2");
       }
    }
 

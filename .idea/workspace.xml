@@ -4,12 +4,155 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="0.95 Release">
+    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="Some more changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/campaign/channels.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/channels.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/campaign/rules.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/rules.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/campaign/submarkets.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/campaign/submarkets.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/bountiesExpanded/default_blacklist.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/bountiesExpanded/default_blacklist.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/custom_entities.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/custom_entities.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/engine_styles.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/engine_styles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/exerelinFactionConfig/dassault_mikoyan.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelinFactionConfig/dassault_mikoyan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_ancientstarfarer.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_ancientstarfarer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_leveller.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_leveller.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_protectorate.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/exerelinFactionConfig/magellan_protectorate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/hull_styles.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/hull_styles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/modSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/modSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/procgen/themes/BladeBreakerSeededFleetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/procgen/themes/BladeBreakerSeededFleetManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/rulescmd/dcp_DME_SigmaMatterDataRecovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/rulescmd/dcp_DME_SigmaMatterDataRecovery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/sounds.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/starship_legends/factionConfigurations.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/starship_legends/factionConfigurations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hullmods/hull_mods.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/hullmods/hull_mods.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_battlecruiser.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_battlecruiser.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_battleship.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_battleship.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_bomber.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_bomber.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_carrier.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_carrier.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_cbtfreight.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_cbtfreight.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_corvette.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_corvette.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_cruiser.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_cruiser.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastdestroyer.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastdestroyer.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastdestroyerarmor.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastdestroyerarmor.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastfrigate.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_fastfrigate.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_flakdrone.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_flakdrone.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_herdcarrier.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_herdcarrier.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_herdintercept.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_herdintercept.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_hvyfighter.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_hvyfighter.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_interceptor.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_interceptor.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_intyellowtail.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_intyellowtail.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_lev_dronefrig.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_lev_dronefrig.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_lev_lancefrig.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_lev_lancefrig.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_lightcruiser.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_lightcruiser.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_lightfighter_civ.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_lightfighter_civ.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_linedestroyer.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_linedestroyer.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_linefrigate.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_linefrigate.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_ltfreight.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_ltfreight.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_ltfreight_cbt.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_ltfreight_cbt.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_missiledrone.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_missiledrone.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_patroldestroyer.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_patroldestroyer.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_phasecruiser.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_phasecruiser.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_phasefrig.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_phasefrig.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_rounder.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_rounder.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_schooner.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_schooner.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_skate.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_skate.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_skiff.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_skiff.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_skipjack.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_skipjack.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_supply.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_supply.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportcruiser.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportcruiser.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportdestroyer.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportdestroyer.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportfrigate.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_supportfrigate.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/dcp_magellan_targdrone.ship" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/dcp_magellan_targdrone.ship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_cbtfreight_civ.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_cbtfreight_civ.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_hvyfighter_theherd.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_hvyfighter_theherd.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_interceptor_civ.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_interceptor_civ.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_lightcruiser_elite.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_lightcruiser_elite.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_linefrigate_civ.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_linefrigate_civ.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_ltfreight_theherd.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_ltfreight_theherd.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_patroldestroyer_civ.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_patroldestroyer_civ.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_skipjack_militarized.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_skipjack_militarized.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supply_civ.skin" beforeDir="false" afterPath="$PROJECT_DIR$/data/hulls/skins/dcp_magellan_supply_civ.skin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/dcp_DME_DMEphasecloak.system" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/dcp_DME_DMEphasecloak.system" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/shipsystems/ship_systems.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/shipsystems/ship_systems.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/strings/descriptions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/strings/descriptions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/strings/ship_names.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/strings/ship_names.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/strings/strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/strings/strings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/weapons/weapon_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/weapons/weapon_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/magellan_ancientstarfarer.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/magellan_ancientstarfarer.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/magellan_blackcollar.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/magellan_blackcollar.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/magellan_civviescavs.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/magellan_civviescavs.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/magellan_independentmkt.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/magellan_independentmkt.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/magellan_leveller.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/magellan_leveller.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/magellan_protectorate.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/magellan_protectorate.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/magellan_startigers.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/magellan_startigers.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/world/factions/magellan_theherd.faction" beforeDir="false" afterPath="$PROJECT_DIR$/data/world/factions/magellan_theherd.faction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/econ/dcp_magellan_CityWarrens.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/econ/dcp_magellan_CityWarrens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_magellan_DisposableHerdFleetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_magellan_DisposableHerdFleetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_magellan_DisposableLevellerFleetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_magellan_DisposableLevellerFleetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_magellan_MCivFleetRouteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_magellan_MCivFleetRouteManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_magellan_SkytigerGuardHQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/fleets/dcp_magellan_SkytigerGuardHQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_DME_Factions.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_DME_Factions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_DME_Tags.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_DME_Tags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_magellan_People.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/ids/dcp_magellan_People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/submarkets/magellan_IndieMarketPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/submarkets/magellan_IndieMarketPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/campaign/submarkets/magellan_IndieMilMarketPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/campaign/submarkets/magellan_IndieMilMarketPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_AblativeComposites.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_AblativeComposites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_BattlelineDoctrine.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_BattlelineDoctrine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_BlackcollarUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_BlackcollarUpgrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicDesign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicDesignB.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ClassicDesignB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ConvertedShuttleBay.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_ConvertedShuttleBay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_DemilitarizedRefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_DemilitarizedRefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_HerdRefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_HerdRefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_LevellerRefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_LevellerRefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanDefense.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanDefense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanEngineering.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanEngineering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanFighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanFighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_MagellanMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_SpartacusReactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_SpartacusReactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_StartigerUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_StartigerUpgrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_YellowtailRefit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/hullmods/dcp_magellan_YellowtailRefit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonecrackerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonecrackerFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonecrusherOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonecrusherOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonegrinderOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonegrinderOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonesawFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonesawFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonesawOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_BonesawOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_CIWS_MedTracerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_CIWS_MedTracerFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_CIWS_SmTracerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_CIWS_SmTracerFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_CIWS_Sparks.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_CIWS_Sparks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ClusterACFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ClusterACFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ClusterLRMOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ClusterLRMOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_EBolterEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_EBolterEMPOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ElectroMissileOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ElectroMissileOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ElectroTorpOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ElectroTorpOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FlashfireOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FlashfireOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FoxfireSparks.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FoxfireSparks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelScatterFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelScatterFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelrodOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelrodOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelscatterOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FuelscatterOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FusCutterEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FusCutterEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FusionOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_FusionOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_HEShotgunFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_HEShotgunFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_IonSmokeExplosionEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_IonSmokeExplosionEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_KineticSpallOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_KineticSpallOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_LargeMortarOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_LargeMortarOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_RadFlamerEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_RadFlamerEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_RendfireOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_RendfireOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_RipfireOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_RipfireOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ScatterBolterEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_ScatterBolterEMPOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SilverdartEMPOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SilverdartEMPOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SilverdartFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SilverdartFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SmokeExplosionEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SmokeExplosionEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SolenoidFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SolenoidFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_StratLRMOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_StratLRMOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_StrikeMissileOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_StrikeMissileOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SuperSolenoidFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SuperSolenoidFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SuperSolenoidOnHit.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_SuperSolenoidOnHit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_VelocityVarOnFire.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/weapons/dcp_magellan_VelocityVarOnFire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/world/ISTLGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/world/ISTLGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/world/MagellanGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/world/MagellanGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/KhamnConstellation.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/scripts/world/systems/KhamnConstellation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_BallisticAccelStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_BallisticAccelStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_FighterComStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_FighterComStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_ImpBurnStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_ImpBurnStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_MissileDroneStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/jars/src/data/shipsystems/scripts/dcp_magellan_MissileDroneStats.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684519526472</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1.0.1 Fix for 0.95">
+      <created>1684552640446</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684552640446</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +273,8 @@
     <MESSAGE value="I genuenly have no idea...." />
     <MESSAGE value="YOOOOO" />
     <MESSAGE value="0.95 Release" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.95 Release" />
+    <MESSAGE value="1.0.1 Fix for 0.95" />
+    <MESSAGE value="Some more changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some more changes" />
   </component>
 </project>

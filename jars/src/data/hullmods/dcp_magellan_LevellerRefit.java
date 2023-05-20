@@ -33,7 +33,7 @@ public class dcp_magellan_LevellerRefit extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -64,9 +64,9 @@ public class dcp_magellan_LevellerRefit extends BaseHullMod {
       tooltip.addPara("- " + this.getString("LevellerRefitDesc2"), pad2S, h, new String[]{"200su"});
       tooltip.addPara("- " + this.getString("LevellerRefitDesc3"), padS, h, new String[]{"30", "60", "90", "150"});
       tooltip.addPara("- " + this.getString("LevellerRefitDesc4"), padS, h, new String[]{"25%"});
-      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
       TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
-      text.addPara(this.getString("MagellanAllIncomp"), padS);
+      text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Armored Weapon Mounts", bad, 0.0F);
       text.addPara("- Converted Hangar", bad, 0.0F);
       if (Global.getSettings().getModManager().isModEnabled("roider")) {

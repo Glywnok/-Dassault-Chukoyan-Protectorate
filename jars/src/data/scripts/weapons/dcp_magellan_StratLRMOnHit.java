@@ -19,8 +19,8 @@ public class dcp_magellan_StratLRMOnHit implements OnHitEffectPlugin {
    private static final Color BRIGHT_COLOR = new Color(255, 225, 125, 155);
    private static final Color SMOKE_COLOR = new Color(75, 75, 75, 155);
    private static final float NEBULA_RAMPUP = 0.15F;
-   private static final String SFX_MED = "magellan_mine_explosion_vsm";
-   private static final String SFX_LG = "magellan_mine_explosion_sm";
+   private static final String SFX_MED = "dcp_magellan_mine_explosion_vsm";
+   private static final String SFX_LG = "dcp_magellan_mine_explosion_sm";
    private float fx_dur;
    private float extra_armor_damage;
    private String projectile_sfx;
@@ -31,17 +31,17 @@ public class dcp_magellan_StratLRMOnHit implements OnHitEffectPlugin {
       byte var14 = -1;
       switch(projid.hashCode()) {
       case -1194117231:
-         if (projid.equals("magellan_stratLRM_cruise")) {
+         if (projid.equals("dcp_magellan_stratLRM_cruise")) {
             var14 = 2;
          }
          break;
       case -993775357:
-         if (projid.equals("magellan_stratLRM")) {
+         if (projid.equals("dcp_magellan_stratLRM")) {
             var14 = 1;
          }
          break;
       case 277153428:
-         if (projid.equals("magellan_slamfiretorp")) {
+         if (projid.equals("dcp_magellan_slamfiretorp")) {
             var14 = 0;
          }
       }
@@ -58,7 +58,7 @@ public class dcp_magellan_StratLRMOnHit implements OnHitEffectPlugin {
          smoke_radius = 60.0F;
          this.fx_dur = 2.0F;
          this.extra_armor_damage = 0.25F * projdamage;
-         this.projectile_sfx = "magellan_mine_explosion_vsm";
+         this.projectile_sfx = "dcp_magellan_mine_explosion_vsm";
          break;
       case 1:
          nebula_size = 25.0F * (0.75F + (float)Math.random() * 0.5F);
@@ -67,7 +67,7 @@ public class dcp_magellan_StratLRMOnHit implements OnHitEffectPlugin {
          smoke_radius = 100.0F;
          this.fx_dur = 3.0F;
          this.extra_armor_damage = 0.0F;
-         this.projectile_sfx = "magellan_mine_explosion_vsm";
+         this.projectile_sfx = "dcp_magellan_mine_explosion_vsm";
          break;
       case 2:
          nebula_size = 40.0F * (0.75F + (float)Math.random() * 0.5F);
@@ -76,7 +76,7 @@ public class dcp_magellan_StratLRMOnHit implements OnHitEffectPlugin {
          smoke_radius = 120.0F;
          this.fx_dur = 5.0F;
          this.extra_armor_damage = 0.25F * projdamage;
-         this.projectile_sfx = "magellan_mine_explosion_sm";
+         this.projectile_sfx = "dcp_magellan_mine_explosion_sm";
          break;
       default:
          return;

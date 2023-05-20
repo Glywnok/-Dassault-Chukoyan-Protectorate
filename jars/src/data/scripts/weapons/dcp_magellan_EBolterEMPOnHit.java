@@ -28,12 +28,12 @@ public class dcp_magellan_EBolterEMPOnHit implements OnHitEffectPlugin {
       byte var16 = -1;
       switch(projid.hashCode()) {
       case 768080301:
-         if (projid.equals("magellan_ebolter_ftr_shot")) {
+         if (projid.equals("dcp_magellan_ebolter_ftr_shot")) {
             var16 = 0;
          }
          break;
       case 1979788210:
-         if (projid.equals("magellan_ebolter_shot")) {
+         if (projid.equals("dcp_magellan_ebolter_shot")) {
             var16 = 1;
          }
       }
@@ -45,12 +45,12 @@ public class dcp_magellan_EBolterEMPOnHit implements OnHitEffectPlugin {
       case 0:
          explosion_size = 8.0F;
          explosion_dur = 0.2F;
-         hit_sfx = "magellan_ebolter_crit";
+         hit_sfx = "dcp_magellan_ebolter_crit";
          break;
       case 1:
          explosion_size = 10.0F;
          explosion_dur = 0.3F;
-         hit_sfx = "magellan_ebolter_crit";
+         hit_sfx = "dcp_magellan_ebolter_crit";
          break;
       default:
          return;

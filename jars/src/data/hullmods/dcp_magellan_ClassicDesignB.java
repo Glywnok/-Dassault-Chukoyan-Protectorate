@@ -28,7 +28,7 @@ public class dcp_magellan_ClassicDesignB extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -50,9 +50,9 @@ public class dcp_magellan_ClassicDesignB extends BaseHullMod {
       tooltip.addPara("- " + this.getString("ClassicDesc1"), pad, h, new String[]{"30%"});
       tooltip.addPara("- " + this.getString("MagellanEngDesc3"), padS, h, new String[]{"100%"});
       tooltip.addPara("- " + this.getString("BlackcollarModDesc7"), padS, h, new String[]{"50%"});
-      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
       TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
-      text.addPara(this.getString("MagellanAllIncomp"), padS);
+      text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Integrated Targeting Unit", bad, padS);
       text.addPara("- Dedicated Targeting Core", bad, 0.0F);
       tooltip.addImageWithText(pad);

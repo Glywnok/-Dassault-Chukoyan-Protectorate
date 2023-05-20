@@ -29,7 +29,7 @@ public class dcp_magellan_MCivFleetRouteManager extends BaseRouteFleetManager {
    }
 
    protected String getRouteSourceId() {
-      return "magellan_civvy_" + this.system.getId();
+      return "dcp_magellan_civvy_" + this.system.getId();
    }
 
    protected int getMaxFleets() {
@@ -70,7 +70,7 @@ public class dcp_magellan_MCivFleetRouteManager extends BaseRouteFleetManager {
 
       while(var2.hasNext()) {
          MarketAPI market = (MarketAPI)var2.next();
-         if (!market.getFaction().isHostileTo("independent") && market.getContainingLocation() != null && !market.getContainingLocation().isHyperspace() && !market.isHidden() && market.getTags().contains("magellan_indiemarket")) {
+         if (!market.getFaction().isHostileTo("independent") && market.getContainingLocation() != null && !market.getContainingLocation().isHyperspace() && !market.isHidden() && market.getTags().contains("dcp_magellan_indiemarket")) {
             float distLY = Misc.getDistanceLY(this.system.getLocation(), market.getLocationInHyperspace());
             float weight = (float)market.getSize();
             float f = Math.max(0.1F, 1.0F - Math.min(1.0F, distLY / 20.0F));
@@ -149,7 +149,7 @@ public class dcp_magellan_MCivFleetRouteManager extends BaseRouteFleetManager {
       freighter = (int)((float)freighter * 2.0F);
       tanker = (int)((float)tanker * 2.0F);
       transport = (int)((float)transport * 1.0F);
-      FleetParamsV3 params = new FleetParamsV3(route != null ? route.getMarket() : source, locInHyper, "magellan_civviescavs", route == null ? null : route.getQualityOverride(), type, (float)combat, (float)freighter, (float)tanker, (float)transport, 0.0F, (float)utility, MathUtils.getRandomNumberInRange(0.2F, 0.6F));
+      FleetParamsV3 params = new FleetParamsV3(route != null ? route.getMarket() : source, locInHyper, "dcp_magellan_civviescavs", route == null ? null : route.getQualityOverride(), type, (float)combat, (float)freighter, (float)tanker, (float)transport, 0.0F, (float)utility, MathUtils.getRandomNumberInRange(0.2F, 0.6F));
       if (route != null) {
          params.timestamp = route.getTimestamp();
       }
@@ -162,7 +162,7 @@ public class dcp_magellan_MCivFleetRouteManager extends BaseRouteFleetManager {
          if (!pirate) {
          }
 
-         Misc.makeLowRepImpact(fleet, "magellan_scav");
+         Misc.makeLowRepImpact(fleet, "dcp_magellan_scav");
          return fleet;
       } else {
          return null;

@@ -164,9 +164,9 @@
 		"showInCampaign":true,
 		"showIconOnMap":true,
 		"scaleIconWithZoom":true,
-		"customDescriptionId":"dcp_bladebreaker_beacon",
+		"customDescriptionId":"dcp_DME_bladebreaker_beacon",
 		"interactionImage":"graphics/illustrations/comm_relay.jpg",
-		"tags":["has_interaction_dialog", "dcp_hardened_warning_beacon", "neutrino_high"],
+		"tags":["has_interaction_dialog", "dcp_DME_hardened_warning_beacon", "neutrino_high"],
 		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
 		"pluginClass":"data.campaign.dcp_DME_BladeBreakerBeaconPlugin",
 	},

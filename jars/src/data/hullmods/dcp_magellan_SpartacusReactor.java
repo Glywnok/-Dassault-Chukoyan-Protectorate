@@ -33,7 +33,7 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
    }
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -55,7 +55,7 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
 
    public void advanceInCombat(ShipAPI ship, float amount) {
       MutableShipStatsAPI stats = ship.getMutableStats();
-      String id = "magellan_SpartacusReactor";
+      String id = "dcp_magellan_SpartacusReactor";
       float fluxlevel = ship.getFluxLevel();
       float hardfluxlevel = ship.getHardFluxLevel();
       stats.getEmpDamageTakenMult().modifyMult(id, 0.25F + 1.0F * fluxlevel);
@@ -97,9 +97,9 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
       intlabel.setHighlight(new String[]{this.getString("SpartacusReactor3HL"), "25%", "125%"});
       intlabel.setHighlightColors(new Color[]{emp_color, h, h});
       tooltip.addPara("- " + this.getString("SpartacusReactorDesc4"), padS, h, new String[]{this.getString("SpartacusReactor4HL"), "25%"});
-      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
       TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
-      text.addPara(this.getString("MagellanAllIncomp"), padS);
+      text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Expanded Deck Crew", bad, padS);
       text.addPara("- Resistant Flux Conduits", bad, padS);
       tooltip.addImageWithText(pad);

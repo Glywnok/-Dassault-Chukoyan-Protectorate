@@ -18,17 +18,17 @@ public class dcp_magellan_BonesawFX implements OnFireEffectPlugin, EveryFrameWea
       byte var8 = -1;
       switch(projid.hashCode()) {
       case -1488217268:
-         if (projid.equals("magellan_edefensor_shot")) {
+         if (projid.equals("dcp_magellan_edefensor_shot")) {
             var8 = 0;
          }
          break;
       case -1183910284:
-         if (projid.equals("magellan_bonesaw_shot")) {
+         if (projid.equals("dcp_magellan_bonesaw_shot")) {
             var8 = 1;
          }
          break;
       case 304188873:
-         if (projid.equals("magellan_boneshaker_shot")) {
+         if (projid.equals("dcp_magellan_boneshaker_shot")) {
             var8 = 2;
          }
       }

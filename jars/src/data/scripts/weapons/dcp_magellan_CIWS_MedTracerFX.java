@@ -12,7 +12,7 @@ import org.lwjgl.util.vector.Vector2f;
 
 public class dcp_magellan_CIWS_MedTracerFX implements OnFireEffectPlugin, EveryFrameWeaponEffectPlugin {
    public static final int TRACER_EVERY = 4;
-   public static final String TRACER_WPN_ID = "magellan_grinder_tracer";
+   public static final String TRACER_WPN_ID = "dcp_magellan_grinder_tracer";
    private static final Color FLASH_CORE = new Color(255, 225, 165, 125);
    private static final Color FLASH_FRINGE = new Color(215, 175, 115, 75);
    private static final float FLASH_SIZE = 1.0F;
@@ -26,7 +26,7 @@ public class dcp_magellan_CIWS_MedTracerFX implements OnFireEffectPlugin, EveryF
          this.roundCounter = 0;
          Vector2f loc = proj.getLocation();
          ship_velocity = proj.getVelocity();
-         DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(weapon.getShip(), weapon, "magellan_grinder_tracer", loc, proj.getFacing(), weapon.getShip().getVelocity());
+         DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(weapon.getShip(), weapon, "dcp_magellan_grinder_tracer", loc, proj.getFacing(), weapon.getShip().getVelocity());
          Global.getCombatEngine().removeEntity(proj);
       }
 

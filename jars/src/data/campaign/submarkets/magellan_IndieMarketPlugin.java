@@ -16,7 +16,7 @@ public class magellan_IndieMarketPlugin extends OpenMarketPlugin {
       this.sinceLastCargoUpdate = 0.0F;
       if (this.okToUpdateShipsAndWeapons()) {
          this.sinceSWUpdate = 0.0F;
-         String replaceFaction = "magellan_independentmkt";
+         String replaceFaction = "dcp_magellan_independentmkt";
          this.pruneWeapons(0.0F);
          int weapons = 5 + Math.max(0, this.market.getSize() - 1) + (Misc.isMilitary(this.market) ? 5 : 0);
          int fighters = 1 + Math.max(0, (this.market.getSize() - 3) / 2) + (Misc.isMilitary(this.market) ? 2 : 0);

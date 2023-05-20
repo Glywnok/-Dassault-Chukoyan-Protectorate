@@ -20,12 +20,12 @@ public class dcp_magellan_SolenoidFX implements OnFireEffectPlugin, EveryFrameWe
       byte var11 = -1;
       switch(projid.hashCode()) {
       case -236207448:
-         if (projid.equals("magellan_bigsolenoid_shot")) {
+         if (projid.equals("dcp_magellan_bigsolenoid_shot")) {
             var11 = 1;
          }
          break;
       case 720592249:
-         if (projid.equals("magellan_lilsolenoid_shot")) {
+         if (projid.equals("dcp_magellan_lilsolenoid_shot")) {
             var11 = 0;
          }
       }

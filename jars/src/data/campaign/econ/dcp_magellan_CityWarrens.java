@@ -11,12 +11,12 @@ import java.awt.Color;
 import java.util.Arrays;
 
 public class dcp_magellan_CityWarrens extends BaseMarketConditionPlugin {
-   private static String[] magellanFactions = new String[]{"magellan_protectorate", "magellan_leveller"};
+   private static String[] magellanFactions = new String[]{"dcp_magellan_protectorate", "dcp_magellan_leveller"};
    public static float DEFENSE_BONUS_MAGELLAN = 4.0F;
    public static float DEFENSE_BONUS_OTHER = 2.0F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("Magellan_Strings", "magellan_" + key);
+      return Global.getSettings().getString("Strings", "dcp_magellan_" + key);
    }
 
    public void apply(String id) {

@@ -5,7 +5,7 @@
 	"descriptionId":"dcp_magellan_skipjack",
 	"descriptionPrefix":"This hull has been refitted to Magellan military specifications; among other changes, the bow-mounted missile hardpoint has been replaced with an integral solenoid quench cannon.",
 	"tags":["ship_can_not_scuttle", "restricted", "dcp_magellan_unique_ship"],
-	"tech":"Magellan",
+	"tech":"dcp_magellan",
     "fleetPoints":28,
     "ordnancePoints":140,
     "baseValueMult":1.2,

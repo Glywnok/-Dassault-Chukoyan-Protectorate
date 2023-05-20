@@ -86,7 +86,7 @@ public class dcp_magellan_RadFlamerEffect extends BaseCombatLayeredRenderingPlug
                   e *= t;
                }
 
-               Global.getSoundPlayer().playLoop("magellan_flamer_loop", ship, 1.0F, e, com, ship.getVelocity());
+               Global.getSoundPlayer().playLoop("dcp_magellan_flamer_loop", ship, 1.0F, e, com, ship.getVelocity());
             }
          }
 

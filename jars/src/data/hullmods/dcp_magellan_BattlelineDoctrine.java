@@ -18,7 +18,7 @@ public class dcp_magellan_BattlelineDoctrine extends BaseHullMod {
    public static Color NAME = new Color(153, 134, 117, 255);
 
    private String getString(String key) {
-      return Global.getSettings().getString("Hullmod", "dcp_magellan_" + key);
+      return Global.getSettings().getString("HullMod", "dcp_magellan_" + key);
    }
 
    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {

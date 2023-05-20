@@ -27,7 +27,7 @@ The ship is able to run a low-grade phase field for extended periods of time, re
 ,,,,,,,,,,,,,,,,,,
 #Comissioned Crews,,,,,,,,,,,,,,,,,,
 Advanced Damage Control,dcp_DME_dccrew,,,,,,,,TRUE,,0,0,0,0,data.hullmods.dcp_DME_ExperiencedDamageControl,"Dassault-Mikoyan's damage-control practices are widely regarded as the best in the sector. Rigorous alert procedures, improved safety gear, and extensive repair training all contribute to fewer deaths and injuries in combat.",Reduces crew casualties and repair times by 10 percent.,graphics/DCP/hullmods/dcp_DME_dccrew.png
-Battleline Doctrine,dcp_magellan_battleline,,,,,,,,TRUE,,0,0,0,0,data.hullmods.dcp_magellan_BattlelineDoctrine,"Magellan fleet doctrine emphasizes the primacy of the battleline above all other tactical concerns. Pursuit of a decisive battle with the enemy's fleet is the overarching goal of all operations, and Fleet Ops trains crew and develops new technology around this assumption.","Reduces ballistic weapon flux costs, increases non-beam PD range and boosts anti-fighter damage.",graphics/DCP/hullmods/dcp_magellan_battleline.png
+Battleline Doctrine,dcp_magellan_battleline,,,,,,,,TRUE,,0,0,0,0,data.hullmods.dcp_magellan_BattlelineDoctrine,"dcp_magellan fleet doctrine emphasizes the primacy of the battleline above all other tactical concerns. Pursuit of a decisive battle with the enemy's fleet is the overarching goal of all operations, and Fleet Ops trains crew and develops new technology around this assumption.","Reduces ballistic weapon flux costs, increases non-beam PD range and boosts anti-fighter damage.",graphics/DCP/hullmods/dcp_magellan_battleline.png
 ,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,

@@ -33,7 +33,7 @@
         -3.5,
         4.5
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 3
     },
     {
@@ -44,7 +44,7 @@
         -3.5,
         -4.5
       ],
-      "style": "MagellanFighterFlare",
+      "style": "dcp_magellanFighterFlare",
       "width": 3
     }
   ],
@@ -58,7 +58,7 @@
   ],
   "shieldRadius": 15.5,
   "spriteName": "graphics/DCP/ships/dcp_magellan_targdrone.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

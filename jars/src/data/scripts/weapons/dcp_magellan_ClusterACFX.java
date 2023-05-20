@@ -27,7 +27,7 @@ public class dcp_magellan_ClusterACFX implements OnFireEffectPlugin, EveryFrameW
          ship_velocity = MathUtils.getRandomPointOnCircumference((Vector2f)null, MathUtils.getRandomNumberInRange(2.0F * (float)shotCount, 5.0F * (float)shotCount));
          ship_velocity.x += proj_vel.x + ship_vel.x;
          ship_velocity.y += proj_vel.y + ship_vel.y;
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "magellan_autoshotgun_sub", loc, proj.getFacing(), ship_velocity);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_magellan_autoshotgun_sub", loc, proj.getFacing(), ship_velocity);
       }
 
       engine.removeEntity(proj);

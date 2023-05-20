@@ -1,9 +1,9 @@
 {
-  "hullName": "Magellan Light Fighter",
+  "hullName": "dcp_magellan Light Fighter",
   "hullId": "dcp_magellan_lightfighter_civ",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/DCP/ships/civ/dcp_magellan_lightfighter_civ.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "height": 38,
   "width": 28,
   "center": [14, 16],

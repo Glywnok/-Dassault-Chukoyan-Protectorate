@@ -1,12 +1,12 @@
 {
   "blacklistedFactions": [
-    "magellan_ancientstarfarer",
-    "magellan_blackcollar",
-    "magellan_civviescavs",
-    "magellan_independentmkt",
-    "magellan_leveller",
-    "magellan_startigers",
-    "magellan_theherd",
-    "magellan_yellowtail",
+    "dcp_magellan_ancientstarfarer",
+    "dcp_magellan_blackcollar",
+    "dcp_magellan_civviescavs",
+    "dcp_magellan_independentmkt",
+    "dcp_magellan_leveller",
+    "dcp_magellan_startigers",
+    "dcp_magellan_theherd",
+    "dcp_magellan_yellowtail",
   ]
 }

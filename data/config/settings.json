@@ -1,7 +1,7 @@
 {
 	"plugins":{
 		"DCPBlockedHullmodDisplayScript":"data.hullmods.DCPBlockedHullmodDisplayScript",
-		"magellan_LightInjector":"data.scripts.plugins.dcp_magellan_lightInjector",
+		"dcp_magellan_LightInjector":"data.scripts.plugins.dcp_magellan_lightInjector",
 		"DME_LightInjector":"data.scripts.plugins.dcp_DME_lightInjector",
 		#"DME_ModuleRetreat":"data.scripts.plugins.dcp_ModuleRetreatCleaner",
 		#"DME_ProjectileTrailHandlerPlugin":"data.scripts.plugins.dcp_ProjectileTrailHandlerPlugin",
@@ -65,9 +65,9 @@
 			"dcp_DME_breaker_beacon_glow":"graphics/DCP/stations/dcp_DME_breakerbuoy00glow.png",
 		},
 		"intel":{
-			"dcp_hardenedbeacon_high":"graphics/DCP/icons/intel/dcp_DME_hardenedbeacon_high.png",
-			"dcp_hardenedbeacon_medium":"graphics/DCP/icons/intel/dcp_DME_hardenedbeacon_medium.png",
-			"dcp_hardenedbeacon_low":"graphics/DCP/icons/intel/dcp_DME_hardenedbeacon_low.png",
+			"dcp_DME_hardenedbeacon_high":"graphics/DCP/icons/intel/dcp_DME_hardenedbeacon_high.png",
+			"dcp_DME_hardenedbeacon_medium":"graphics/DCP/icons/intel/dcp_DME_hardenedbeacon_medium.png",
+			"dcp_DME_hardenedbeacon_low":"graphics/DCP/icons/intel/dcp_DME_hardenedbeacon_low.png",
     	},
 		"characters":{
 			#DME
@@ -90,8 +90,8 @@
 			"dcp_DME_nebula_sigma_map":"graphics/DCP/terrain/dcp_DME_sigma_cloud_map.png",
 
 			#MAGELLAN
-			"magellan_garden_nebula":"graphics/DCP/terrain/dcp_magellan_garden_nebula.png",
-			"magellan_garden_nebula_map":"graphics/DCP/terrain/dcp_magellan_garden_nebula_map.png",
+			"dcp_magellan_garden_nebula":"graphics/DCP/terrain/dcp_magellan_garden_nebula.png",
+			"dcp_magellan_garden_nebula_map":"graphics/DCP/terrain/dcp_magellan_garden_nebula_map.png",
 		},
 		"fx":{
 			#DME
@@ -134,22 +134,22 @@
 
 		#Magellan
 		#built-ins
-		"magellan_engineering",
-		"magellan_engineering_civ",
-		"magellan_blackcollarmod",
-		"magellan_startigermod",
-		"magellan_levellermod",
-		"magellan_spartacusreactor",													  
-		"magellan_herdmod",
-		"magellan_yellowtailmod",
-		"magellan_classicdesign",
-		"magellan_classicdesign_b",
+		"dcp_magellan_engineering",
+		"dcp_magellan_engineering_civ",
+		"dcp_magellan_blackcollarmod",
+		"dcp_magellan_startigermod",
+		"dcp_magellan_levellermod",
+		"dcp_magellan_spartacusreactor",
+		"dcp_magellan_herdmod",
+		"dcp_magellan_yellowtailmod",
+		"dcp_magellan_classicdesign",
+		"dcp_magellan_classicdesign_b",
 		#modular
-		"magellan_defense_mod",
-		"magellan_fighter_mod",
-		"magellan_movement_mod",	
+		"dcp_magellan_defense_mod",
+		"dcp_magellan_fighter_mod",
+		"dcp_magellan_movement_mod",
 		#cc
-		"magellan_battleline",
+		"dcp_magellan_battleline",
 	],
 }
 

@@ -437,7 +437,7 @@
 
 
 
-	"MAGELLAN_STARFARER": [
+	"dcp_magellan_STARFARER": [
 	    "Arcadia",
 	    "El Dorado",
 	    "Hyperborea",
@@ -451,7 +451,7 @@
 	    "Zerzura",
 	],
 	
-	"MAGELLAN_THEHERD": [
+	"dcp_magellan_THEHERD": [
 		"A Dollar's Worth Of Steel Holes",
 		"A Killer For Huerta",
 		"The Antelope",
@@ -505,7 +505,7 @@
 	    "You're Gonna Need A Couple Of Stitches",
 	],
 	
-	"MAGELLAN_LEVELLER":[
+	"dcp_magellan_LEVELLER":[
 		"A Pushcart At The Curb",
 		"A Railway Ticket Or A Revolution",
 		"As I Please",
@@ -548,7 +548,7 @@
 		"Zhdanovschina Doll",
 	],
 	
-	"MAGELLAN_LEVELLER_SILLY":[
+	"dcp_magellan_LEVELLER_SILLY":[
 		"Akademgorodonkadonk",
 		"All Skytigers Are Bastards",
 		"Anarcho-Catgirlism",

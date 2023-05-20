@@ -4,7 +4,7 @@
 	"hullName":"Chela [CIV]",
 	"descriptionId":"dcp_magellan_interceptor_civ",
 	#"tags":[],
-	"tech":"Magellan",
+	"tech":"dcp_magellan",
     "fleetPoints":0,
     "ordnancePoints":0,
     "baseValueMult":0.9,

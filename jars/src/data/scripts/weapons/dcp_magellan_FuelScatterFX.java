@@ -28,7 +28,7 @@ public class dcp_magellan_FuelScatterFX implements OnFireEffectPlugin, EveryFram
          Vector2f randomVel = MathUtils.getRandomPointOnCircumference((Vector2f)null, MathUtils.getRandomNumberInRange(5.0F * (float)shotCount, 15.0F * (float)shotCount));
          randomVel.x += proj_vel.x + ship_vel.x;
          randomVel.y += proj_vel.y + ship_vel.y;
-         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "magellan_fuelscatter_sub", loc, proj.getFacing(), randomVel);
+         engine.spawnProjectile(proj.getSource(), proj.getWeapon(), "dcp_magellan_fuelscatter_sub", loc, proj.getFacing(), randomVel);
       }
 
       engine.removeEntity(proj);

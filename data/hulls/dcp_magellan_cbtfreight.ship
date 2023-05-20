@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_cbtfreight",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/dcp_magellan_cbtfreight.png",
-  "style": "MAGELLAN",
+  "style": "dcp_magellan",
   "height": 142,
   "width": 90,
   "center": [45, 66],
@@ -90,7 +90,7 @@
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-65, -24],
@@ -98,7 +98,7 @@
       "width": 12,
       "angle": -180,
       "contrailSize": 12,
-      "style": "MagellanFlare"
+      "style": "dcp_magellanFlare"
     },
     {
       "location": [-62, 33.5],
@@ -106,7 +106,7 @@
       "width": 5,
       "angle": 180,
       "contrailSize": 5,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-62, -33.5],
@@ -114,7 +114,7 @@
       "width": 5,
       "angle": -180,
       "contrailSize": 5,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-62, 14.5],
@@ -122,7 +122,7 @@
       "width": 5,
       "angle": 180,
       "contrailSize": 5,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-62, -14.5],
@@ -130,7 +130,7 @@
       "width": 5,
       "angle": -180,
       "contrailSize": 5,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-12.5, 41.5],
@@ -138,7 +138,7 @@
       "width": 5,
       "angle": 175,
       "contrailSize": 128,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     },
     {
       "location": [-12.5, -41.5],
@@ -146,7 +146,7 @@
       "width": 5,
       "angle": -175,
       "contrailSize": 128,
-      "style": "MagellanFighterFlare"
+      "style": "dcp_magellanFighterFlare"
     }
   ],
   "bounds": [

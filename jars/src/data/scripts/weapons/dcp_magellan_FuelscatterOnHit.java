@@ -23,7 +23,7 @@ public class dcp_magellan_FuelscatterOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 20.0F;
    private static final float NEBULA_DUR = 1.5F;
    private static final float NEBULA_RAMPUP = 0.15F;
-   private static final String SFX = "magellan_fuelrod_crit_sm";
+   private static final String SFX = "dcp_magellan_fuelrod_crit_sm";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       Vector2f loc_target = new Vector2f(target.getLocation());
@@ -36,7 +36,7 @@ public class dcp_magellan_FuelscatterOnHit implements OnHitEffectPlugin {
          engine.addNebulaParticle(point, v_comp, NEBULA_SIZE, 20.0F, 0.15F, 0.3F, 1.5F, EXPLOSION_COLOR, true);
          CombatUtils.applyForce(target, v_proj, speed * PUSHMULT);
          if (Math.random() <= 0.5D) {
-            Global.getSoundPlayer().playSound("magellan_fuelrod_crit_sm", 1.0F, 1.0F, loc_target, v_comp);
+            Global.getSoundPlayer().playSound("dcp_magellan_fuelrod_crit_sm", 1.0F, 1.0F, loc_target, v_comp);
          }
       } else if (shieldHit && !projectile.isFading() && target instanceof ShipAPI) {
          engine.addNebulaParticle(point, v_comp, NEBULA_SIZE / 2.0F, 20.0F, 0.15F, 0.3F, 0.75F, EXPLOSION_COLOR, true);

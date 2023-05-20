@@ -10,7 +10,7 @@ import org.lwjgl.util.vector.Vector2f;
 
 public class dcp_magellan_CIWS_SmTracerFX implements OnFireEffectPlugin, EveryFrameWeaponEffectPlugin {
    public static final int TRACER_EVERY = 4;
-   public static final String TRACER_WPN_ID = "magellan_flenser_tracer";
+   public static final String TRACER_WPN_ID = "dcp_magellan_flenser_tracer";
    private int roundCounter = 0;
 
    public void onFire(DamagingProjectileAPI proj, WeaponAPI weapon, CombatEngineAPI engine) {
@@ -19,7 +19,7 @@ public class dcp_magellan_CIWS_SmTracerFX implements OnFireEffectPlugin, EveryFr
          this.roundCounter = 0;
          Vector2f loc = proj.getLocation();
          Vector2f vel = proj.getVelocity();
-         DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(weapon.getShip(), weapon, "magellan_flenser_tracer", loc, proj.getFacing(), weapon.getShip().getVelocity());
+         DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(weapon.getShip(), weapon, "dcp_magellan_flenser_tracer", loc, proj.getFacing(), weapon.getShip().getVelocity());
          Global.getCombatEngine().removeEntity(proj);
       }
 

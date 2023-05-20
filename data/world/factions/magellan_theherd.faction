@@ -1,5 +1,5 @@
 {
-	"id":"magellan_theherd",
+	"id":"dcp_magellan_theherd",
 	"color":[204,204,29,200],
 	"baseUIColor":[204,204,29,225],
 	"secondaryUIColor":[68,68,10,155],
@@ -17,7 +17,7 @@
 	"crest":"graphics/DCP/factions/crest_theherd.png",
 	"shipNamePrefix":"HS",
 	"shipNameSources":{
-		"MAGELLAN_THEHERD":2,
+		"dcp_magellan_THEHERD":2,
 		"PIRATES":2,
 		"BEASTS":1,
 		"NORSE":1,

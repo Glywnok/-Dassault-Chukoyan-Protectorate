@@ -19,7 +19,7 @@ public class dcp_magellan_FoxfireSparks implements OnHitEffectPlugin {
    private static final float PARTICLE_BRIGHTNESS = 255.0F;
    private static final float PARTICLE_DURATION = 1.5F;
    private static final int PARTICLE_COUNT = 2;
-   private static final String SFX = "magellan_kineticspall_sm_crit";
+   private static final String SFX = "dcp_magellan_kineticspall_sm_crit";
    private static final float CONE_ANGLE = 45.0F;
    private static final float VEL_MIN = 0.2F;
    private static final float VEL_MAX = 0.4F;
@@ -41,7 +41,7 @@ public class dcp_magellan_FoxfireSparks implements OnHitEffectPlugin {
             engine.addHitParticle(point, vector, 20.0F, 255.0F, 1.125F, GLOW_COLOR);
          }
 
-         Global.getSoundPlayer().playSound("magellan_kineticspall_sm_crit", 1.0F, 1.0F, target.getLocation(), v_comp);
+         Global.getSoundPlayer().playSound("dcp_magellan_kineticspall_sm_crit", 1.0F, 1.0F, target.getLocation(), v_comp);
       }
 
    }

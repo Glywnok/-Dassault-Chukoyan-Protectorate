@@ -187,7 +187,7 @@
 
 
 	#Decoy Flares
-	"Magellan_BaseFlare":{
+	"dcp_magellan_BaseFlare":{
 		"engineColor":[185,170,105,225],
 		"contrailParticleSizeMult":8,
 		"contrailParticleDuration":2.0,
@@ -198,7 +198,7 @@
 		"type":"SMOKE" # GLOW or SMOKE
 	},
 	#Missile Engines
-	"MagellanTorpedo":{
+	"dcp_magellanTorpedo":{
 		"engineColor":[185,170,105,225],
 		"contrailParticleSizeMult":7.5,
 		"contrailParticleDuration":1.0,
@@ -209,7 +209,7 @@
 		"type":"SMOKE" # GLOW or SMOKE
 	},
 	#Ship Engines
-	"MagellanFlare":{
+	"dcp_magellanFlare":{
 		"engineColor":[185,170,105,225],
 		"engineCampaignColor":[165,150,85,215],
 		"contrailParticleSizeMult":2,
@@ -223,7 +223,7 @@
 		
 		"glowAlternateColor":[120,105,35,255],
 	},
-	"MagellanFighterFlare":{
+	"dcp_magellanFighterFlare":{
 		"engineColor":[185,170,105,225],
 		"engineCampaignColor":[165,150,85,215],
 		"contrailParticleSizeMult":1,
@@ -237,7 +237,7 @@
 		
 		"glowAlternateColor":[120,105,35,255],
 	},
-	"MagellanFighterFlareTrail":{
+	"dcp_magellanFighterFlareTrail":{
 		"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
 		"contrailDuration":1.2,
 		"contrailWidthMult":1.5,

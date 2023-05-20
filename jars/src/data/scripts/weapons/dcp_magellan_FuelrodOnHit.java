@@ -23,7 +23,7 @@ public class dcp_magellan_FuelrodOnHit implements OnHitEffectPlugin {
    private static final float NEBULA_SIZE_MULT = 20.0F;
    private static final float NEBULA_DUR = 2.0F;
    private static final float NEBULA_RAMPUP = 0.1F;
-   private static final String SFX = "magellan_fuelrod_crit";
+   private static final String SFX = "dcp_magellan_fuelrod_crit";
 
    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
       Vector2f loc_target = new Vector2f(target.getLocation());
@@ -35,7 +35,7 @@ public class dcp_magellan_FuelrodOnHit implements OnHitEffectPlugin {
          dealArmorDamage(projectile, (ShipAPI)target, point);
          engine.addNebulaParticle(point, v_comp, NEBULA_SIZE, 20.0F, 0.1F, 0.3F, 2.0F, EXPLOSION_COLOR, true);
          CombatUtils.applyForce(target, v_proj, speed * PUSHMULT);
-         Global.getSoundPlayer().playSound("magellan_fuelrod_crit", 1.0F, 1.0F, loc_target, v_comp);
+         Global.getSoundPlayer().playSound("dcp_magellan_fuelrod_crit", 1.0F, 1.0F, loc_target, v_comp);
       } else if (shieldHit && !projectile.isFading() && target instanceof ShipAPI) {
          engine.addNebulaParticle(point, v_comp, NEBULA_SIZE / 2.0F, 20.0F, 0.1F, 0.3F, 1.0F, EXPLOSION_COLOR, true);
          CombatUtils.applyForce(target, v_proj, speed * PUSHMULT_SHIELD);

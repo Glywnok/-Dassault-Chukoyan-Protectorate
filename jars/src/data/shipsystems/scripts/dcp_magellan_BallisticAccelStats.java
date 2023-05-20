@@ -12,7 +12,7 @@ public class dcp_magellan_BallisticAccelStats extends BaseShipSystemScript {
    public static final float PROJ_SPEED_BONUS = 30.0F;
 
    private String getString(String key) {
-      return Global.getSettings().getString("System", "magellan_" + key);
+      return Global.getSettings().getString("System", "dcp_magellan_" + key);
    }
 
    public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
