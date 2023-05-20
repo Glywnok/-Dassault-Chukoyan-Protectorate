@@ -63,8 +63,8 @@ public class dcp_magellan_DemilitarizedRefit extends BaseHullMod {
       tooltip.addPara("- " + this.getString("DemilDesc5"), pad2S, h, new String[]{"50%"});
       tooltip.addPara("- " + this.getString("DemilDesc6"), padS, h, new String[]{"25%"});
       tooltip.addPara("- " + this.getString("DemilDesc7"), padS, h, new String[]{"20%"});
-      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Hardened Shields", bad, padS);
       text.addPara("- Armored Weapon Mounts", bad, 0.0F);

@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_battlecruiser",
   "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/DCP/ships/dcp_magellan_battlecruiser.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 420,
   "width": 160,
   "center": [80, 198],

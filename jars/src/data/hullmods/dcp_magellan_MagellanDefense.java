@@ -81,7 +81,7 @@ public class dcp_magellan_MagellanDefense extends BaseHullMod {
       Color quote = dcp_magellan_hullmodUtils.getQuoteColor();
       Color attrib = Misc.getGrayColor();
       tooltip.addSectionHeading(this.getString("MagSpecialTitle"), mag, magbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/magellan_hullmod_defense.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_defense.png", 40.0F);
       text.addPara("- " + this.getString("DefenseSPDesc1"), padS, h, new String[]{"15%"});
       text.addPara("- " + this.getString("DefenseSPDesc2"), padS, h, new String[]{"20%"});
       text.addPara("- " + this.getString("DefenseSPDesc3"), padS, h, new String[]{"25%"});

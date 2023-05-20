@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_lev_lancefrig",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/dcp_magellan_lev_lancefrig.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 120,
   "width": 44,
   "center": [22, 45],

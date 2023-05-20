@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_lev_dronefrig",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/dcp_magellan_lev_dronefrig.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 108,
   "width": 60,
   "center": [30, 43],

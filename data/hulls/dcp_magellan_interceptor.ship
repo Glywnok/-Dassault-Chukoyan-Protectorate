@@ -49,7 +49,7 @@
   ],
   "shieldRadius": 15,
   "spriteName": "graphics/DCP/ships/dcp_magellan_interceptor.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

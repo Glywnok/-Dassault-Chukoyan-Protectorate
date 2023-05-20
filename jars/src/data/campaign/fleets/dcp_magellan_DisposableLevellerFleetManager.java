@@ -18,13 +18,13 @@ public class dcp_magellan_DisposableLevellerFleetManager extends DisposableFleet
    }
 
    protected String getSpawnId() {
-      return "dcp_magellan_leveller_spawnID";
+      return "magellan_leveller_spawnID";
    }
 
    protected int getDesiredNumFleetsForSpawnLocation() {
-      MarketAPI mags = this.getLargestMarket("dcp_magellan_protectorate");
+      MarketAPI mags = this.getLargestMarket("magellan_protectorate");
       String commission = Misc.getCommissionFactionId();
-      if ("dcp_magellan_protectorate".equals(commission)) {
+      if ("magellan_protectorate".equals(commission)) {
          MarketAPI player = this.getLargestMarket("player");
          if (player != null && (mags == null || player.getSize() > mags.getSize())) {
             mags = player;
@@ -87,7 +87,7 @@ public class dcp_magellan_DisposableLevellerFleetManager extends DisposableFleet
             }
 
             combat *= 7.0F;
-            FleetParamsV3 params = new FleetParamsV3((MarketAPI)null, system.getLocation(), "dcp_magellan_leveller", (Float)null, fleetType, combat, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.6F);
+            FleetParamsV3 params = new FleetParamsV3((MarketAPI)null, system.getLocation(), "magellan_leveller", (Float)null, fleetType, combat, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.6F);
             params.ignoreMarketFleetSizeMult = true;
             CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
             if (fleet != null && !fleet.isEmpty()) {

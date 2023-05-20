@@ -253,7 +253,7 @@ $player.heavy_machinery < 50","SetTextHighlightColors buttonShortcut
 SetTextHighlights 50","You feel moved by the desolation to do something, make some gesture in support of all who fled and hid here. From the looks of things, a donation of 50 units of heavy machinery would provide a small but measurable form of aid to the Leveller cause. Unfortunately you do not have enough heavy machinery on hand.",,
 dcp_magellan_oldLevellerHabitatGiveDonation,DialogOptionSelected,$option == dcp_magellan_oldLevellerHabitatGiveDonation,"AddText ""You leave the crates of equipment in the cargo terminal.""
 AddRemoveCommodity heavy_machinery -50 true
-AdjustRep dcp_magellan_leveller SHRINE_OFFERING
+AdjustRep magellan_leveller SHRINE_OFFERING
 $dcp_magellan_LevellerDonationMade = true 60
 FireBest dcp_magellan_oldLevellerHabitatMainOptions",,,
 dcp_magellan_oldLevellerHabitatCancelDonation,DialogOptionSelected,$option == dcp_magellan_oldLevellerHabitatCancelDonation,FireBest dcp_magellan_oldLevellerHabitatMainOptions,,,
@@ -284,21 +284,21 @@ dcp_magellan_meetpointLeave,DialogOptionSelected,$option == dcp_magellan_meetpoi
 ,,,,,,
 # Herd relations,,,,,,
 relLevelNeutralHerd,RelationshipLevelDesc,"$faction.rel == NEUTRAL
-$faction.id == dcp_magellan_theherd",,"You've been around pirates, smugglers, and other types of criminals often enough, and know how to act so they see you as one of their own.",,
+$faction.id == magellan_theherd",,"You've been around pirates, smugglers, and other types of criminals often enough, and know how to act so they see you as one of their own.",,
 relLevelWelcomingHerd,RelationshipLevelDesc,"$faction.rel == WELCOMING
-$faction.id == dcp_magellan_theherd",,"You've gained a measure of notoriety in the underworld of Magellan space, and know how to throw your weight around to get what you want.",,
+$faction.id == magellan_theherd",,"You've gained a measure of notoriety in the underworld of Magellan space, and know how to throw your weight around to get what you want.",,
 relLevelFriendlyHerd,RelationshipLevelDesc,"$faction.rel == FRIENDLY
-$faction.id == dcp_magellan_theherd",,You've proven useful to some of the leaders of the various criminal enterprises in the Sector. Harassing you is more trouble than it's worth.,,
+$faction.id == magellan_theherd",,You've proven useful to some of the leaders of the various criminal enterprises in the Sector. Harassing you is more trouble than it's worth.,,
 relLevelCooperativeHerd,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
-$faction.id == dcp_magellan_theherd",,"Both your prowess in battle and your barbecue skills are legendary, and your connections and influence in the Magellan underworld, enviable.",,
+$faction.id == magellan_theherd",,"Both your prowess in battle and your barbecue skills are legendary, and your connections and influence in the Magellan underworld, enviable.",,
 relLevelSuspiciousHerd,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
-$faction.id == dcp_magellan_theherd",,"The Herd, as a whole, only tend to view you with distrust. Incidentally, that's more than can be said for how they see fellow captains.",,
+$faction.id == magellan_theherd",,"The Herd, as a whole, only tend to view you with distrust. Incidentally, that's more than can be said for how they see fellow captains.",,
 relLevelInhospitableHerd,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
-$faction.id == dcp_magellan_theherd",,"The Herd are generally only inhospitable towards you, which means you've already made a name for yourself as someone whose interests might align with theirs.",,
+$faction.id == magellan_theherd",,"The Herd are generally only inhospitable towards you, which means you've already made a name for yourself as someone whose interests might align with theirs.",,
 relLevelHostileHerd,RelationshipLevelDesc,"$faction.rel == HOSTILE
-$faction.id == dcp_magellan_theherd",,"Your name is not known to Herd captains, for good or ill. Mostly ill, as they'll attack you without a second thought if the opportunity arises, although Herd bases will gladly trade with you.",,
+$faction.id == magellan_theherd",,"Your name is not known to Herd captains, for good or ill. Mostly ill, as they'll attack you without a second thought if the opportunity arises, although Herd bases will gladly trade with you.",,
 relLevelVengefulHerd,RelationshipLevelDesc,"$faction.rel == VENGEFUL
-$faction.id == dcp_magellan_theherd",,"You've made a name for yourself by hunting down the Herd's members; Herd bases are no longer willing to trade with you. There's little practical difference in the attitude of Herd captains, as they were already willing to kill you given the chance.",,
+$faction.id == magellan_theherd",,"You've made a name for yourself by hunting down the Herd's members; Herd bases are no longer willing to trade with you. There's little practical difference in the attitude of Herd captains, as they were already willing to kill you given the chance.",,
 #END Herd relations,,,,,,
 #END MAGELLAN,,,,,,
 ,,,,,,

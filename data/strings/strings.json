@@ -185,7 +185,7 @@
 		"dcp_magellan_targetdrone_str2":"weapon range",
 		"dcp_magellan_targetdrone_str3":"recoil reduced by",
 	},	
-	"dcp_magellan_Strings": {
+	"Strings": {
 		# Misc	
 		"dcp_magellan_str_system_ready":"READY",
 		"dcp_magellan_str_system_outofrange":"OUT OF RANGE",

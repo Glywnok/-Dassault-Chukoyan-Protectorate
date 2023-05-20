@@ -78,8 +78,8 @@ public class dcp_magellan_ClassicDesign extends BaseHullMod {
       tooltip.addPara("- " + this.getString("ClassicDesc3"), padS, h, new String[]{"1"});
       tooltip.addPara("- " + this.getString("MagellanEngDesc3"), padS, h, new String[]{"100%"});
       tooltip.addPara("- " + this.getString("BlackcollarModDesc7"), padS, h, new String[]{"25%"});
-      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Integrated Targeting Unit", bad, padS);
       text.addPara("- Dedicated Targeting Core", bad, 0.0F);

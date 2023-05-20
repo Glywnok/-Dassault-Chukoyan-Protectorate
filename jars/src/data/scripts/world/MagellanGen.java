@@ -12,17 +12,17 @@ import java.util.List;
 
 public class MagellanGen implements SectorGeneratorPlugin {
    public void generate(SectorAPI sector) {
-      SharedData.getData().getPersonBountyEventData().addParticipatingFaction("dcp_magellan_protectorate");
+      SharedData.getData().getPersonBountyEventData().addParticipatingFaction("magellan_protectorate");
       initFactionRelationships(sector);
       (new KhamnConstellation()).generate(sector);
       (new dcp_magellan_People()).advance();
    }
 
    public static void initFactionRelationships(SectorAPI sector) {
-      FactionAPI protectorate = sector.getFaction("dcp_magellan_protectorate");
-      FactionAPI levellers = sector.getFaction("dcp_magellan_leveller");
-      FactionAPI theherd = sector.getFaction("dcp_magellan_theherd");
-      FactionAPI ancientstarfarer = sector.getFaction("dcp_magellan_ancientstarfarer");
+      FactionAPI protectorate = sector.getFaction("magellan_protectorate");
+      FactionAPI levellers = sector.getFaction("magellan_leveller");
+      FactionAPI theherd = sector.getFaction("magellan_theherd");
+      FactionAPI ancientstarfarer = sector.getFaction("magellan_ancientstarfarer");
       FactionAPI hegemony = sector.getFaction("hegemony");
       FactionAPI tritachyon = sector.getFaction("tritachyon");
       FactionAPI pirates = sector.getFaction("pirates");
@@ -74,7 +74,7 @@ public class MagellanGen implements SectorGeneratorPlugin {
       levellers.setRelationship(diktat.getId(), RepLevel.VENGEFUL);
       levellers.setRelationship(league.getId(), RepLevel.INHOSPITABLE);
       levellers.setRelationship(remnants.getId(), RepLevel.HOSTILE);
-      levellers.setRelationship("dcp_magellan_protectorate", RepLevel.HOSTILE);
+      levellers.setRelationship("magellan_protectorate", RepLevel.HOSTILE);
       levellers.setRelationship("blade_breakers", RepLevel.VENGEFUL);
       levellers.setRelationship("shadow_industry", RepLevel.WELCOMING);
       levellers.setRelationship("blackrock_driveyards", RepLevel.SUSPICIOUS);

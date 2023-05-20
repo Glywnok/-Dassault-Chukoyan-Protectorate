@@ -86,7 +86,7 @@
   ],
   "shieldRadius": 61,
   "spriteName": "graphics/DCP/ships/phase/dcp_magellan_phasefrig.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

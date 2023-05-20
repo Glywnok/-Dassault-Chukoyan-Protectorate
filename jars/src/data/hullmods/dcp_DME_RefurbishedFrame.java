@@ -28,7 +28,7 @@ public class dcp_DME_RefurbishedFrame extends BaseHullMod {
       tooltip.addPara("- " + this.getString("RefurbDesc1"), pad, Misc.getHighlightColor(), new String[]{"25%"});
       tooltip.addPara("- " + this.getString("RefurbDesc2"), padS, Misc.getHighlightColor(), new String[]{"25%"});
       tooltip.addSectionHeading("Incompatibilities", Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("DMEAllIncomp"), padS);
       text.addPara("- Heavy Armor", Misc.getNegativeHighlightColor(), padS);
       if (Global.getSettings().getModManager().isModEnabled("apex_design")) {

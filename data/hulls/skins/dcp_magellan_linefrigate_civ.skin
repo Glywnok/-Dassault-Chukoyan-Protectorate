@@ -5,7 +5,7 @@
 	"descriptionId":"dcp_magellan_linefrigate",
 	"descriptionPrefix":"This hull has been demilitarized for sale to independent worlds in the Magellan sphere of influence.",
 	"tags":["dcp_magellan_civ"],
-	"tech":"dcp_magellan",
+	"tech":"Magellan",
     "fleetPoints":6,
     "baseValueMult":0.9,
     "removeHints":[],

@@ -88,7 +88,7 @@
   ],
   "shieldRadius": 73,
   "spriteName": "graphics/DCP/ships/dcp_magellan_supportfrigate.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

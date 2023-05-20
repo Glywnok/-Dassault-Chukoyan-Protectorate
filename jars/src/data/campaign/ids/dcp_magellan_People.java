@@ -33,7 +33,7 @@ public class dcp_magellan_People {
       if (market != null) {
          PersonAPI person = Global.getFactory().createPerson();
          person.setId("dcp_magellan_protectorate_aral");
-         person.setFaction("dcp_magellan_protectorate");
+         person.setFaction("magellan_protectorate");
          person.setGender(Gender.MALE);
          person.setRankId("dcp_magellan_lordregent");
          person.setPostId(Ranks.POST_FACTION_LEADER);
@@ -58,7 +58,7 @@ public class dcp_magellan_People {
       MarketAPI market = null;
       market = Global.getSector().getEconomy().getMarket("dcp_magellan_planet_pariya");
       if (market != null) {
-         PersonAPI person = Global.getSector().getFaction("dcp_magellan_protectorate").createRandomPerson();
+         PersonAPI person = Global.getSector().getFaction("magellan_protectorate").createRandomPerson();
          person.setId("dcp_magellan_protectorate_madscientist");
          person.setRankId(Ranks.CITIZEN);
          person.setPostId(Ranks.POST_SCIENTIST);
@@ -77,7 +77,7 @@ public class dcp_magellan_People {
       market = Global.getSector().getEconomy().getMarket("dcp_station_obilotbase");
       PersonAPI person;
       if (market != null) {
-         person = Global.getSector().getFaction("dcp_magellan_leveller").createRandomPerson();
+         person = Global.getSector().getFaction("magellan_leveller").createRandomPerson();
          person.setId("dcp_magellan_leveller_obilo");
          person.setRankId(Ranks.TERRORIST);
          person.setPostId(Ranks.POST_OUTPOST_COMMANDER);
@@ -90,7 +90,7 @@ public class dcp_magellan_People {
 
       market = Global.getSector().getEconomy().getMarket("dcp_magellan_planet_valca");
       if (market != null) {
-         person = Global.getSector().getFaction("dcp_magellan_leveller").createRandomPerson();
+         person = Global.getSector().getFaction("magellan_leveller").createRandomPerson();
          person.setId("dcp_magellan_leveller_valca");
          person.setRankId(Ranks.TERRORIST);
          person.setPostId(Ranks.POST_SCIENTIST);
@@ -103,7 +103,7 @@ public class dcp_magellan_People {
 
       market = Global.getSector().getEconomy().getMarket("dcp_station_junkyardstarport");
       if (market != null) {
-         person = Global.getSector().getFaction("dcp_magellan_leveller").createRandomPerson();
+         person = Global.getSector().getFaction("magellan_leveller").createRandomPerson();
          person.setId("dcp_magellan_leveller_ghammol");
          person.setRankId(Ranks.TERRORIST);
          person.setPostId(Ranks.POST_ARMS_DEALER);

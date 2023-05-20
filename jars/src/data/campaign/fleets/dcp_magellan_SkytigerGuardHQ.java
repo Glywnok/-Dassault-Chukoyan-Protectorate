@@ -36,11 +36,11 @@ public class dcp_magellan_SkytigerGuardHQ extends BaseIndustry implements RouteF
    protected float returningPatrolValue = 0.0F;
 
    public boolean isHidden() {
-      return !this.market.getFactionId().equals("dcp_magellan_protectorate");
+      return !this.market.getFactionId().equals("magellan_protectorate");
    }
 
    public boolean isFunctional() {
-      return super.isFunctional() && this.market.getFactionId().equals("dcp_magellan_protectorate");
+      return super.isFunctional() && this.market.getFactionId().equals("magellan_protectorate");
    }
 
    public void apply() {
@@ -250,7 +250,7 @@ public class dcp_magellan_SkytigerGuardHQ extends BaseIndustry implements RouteF
          freighter = (float)Math.round(random.nextFloat()) * 5.0F;
       }
 
-      FleetParamsV3 params = new FleetParamsV3(this.market, (Vector2f)null, "dcp_magellan_startigers", route.getQualityOverride(), fleetType, combat, freighter, tanker, 0.0F, 0.0F, 0.0F, 0.0F);
+      FleetParamsV3 params = new FleetParamsV3(this.market, (Vector2f)null, "magellan_startigers", route.getQualityOverride(), fleetType, combat, freighter, tanker, 0.0F, 0.0F, 0.0F, 0.0F);
       params.timestamp = route.getTimestamp();
       params.random = random;
       params.modeOverride = Misc.getShipPickMode(this.market);

@@ -67,8 +67,8 @@ public class ISTLGen implements SectorGeneratorPlugin {
       dassault.setRelationship(league.getId(), RepLevel.INHOSPITABLE);
       dassault.setRelationship(remnants.getId(), RepLevel.HOSTILE);
       dassault.setRelationship("blade_breakers", RepLevel.VENGEFUL);
-      dassault.setRelationship("dcp_magellan_protectorate", RepLevel.HOSTILE);
-      dassault.setRelationship("dcp_magellan_leveller", RepLevel.SUSPICIOUS);
+      dassault.setRelationship("magellan_protectorate", RepLevel.HOSTILE);
+      dassault.setRelationship("magellan_leveller", RepLevel.SUSPICIOUS);
       dassault.setRelationship("shadow_industry", RepLevel.FAVORABLE);
       dassault.setRelationship("blackrock_driveyards", RepLevel.SUSPICIOUS);
       dassault.setRelationship("tiandong", RepLevel.WELCOMING);

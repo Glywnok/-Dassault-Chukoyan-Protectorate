@@ -121,7 +121,7 @@
 	# The following hull style ids are reserved and can not be used:
 	# "sounds", "DEFAULT", "FIGHTER", "FRIGATE", "DESTROYER", "CRUISER", "CAPITAL_SHIP"
 	
-	"dcp_magellan":{
+	"Magellan":{
 		"hyperspaceJitterColor":[200,200,125,255],
 		"baseCampaignExplosionColor":[255,175,125,255],
 		"baseCombatExplosionColor":[255,175,125,255],

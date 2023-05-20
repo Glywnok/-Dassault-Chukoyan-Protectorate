@@ -247,7 +247,7 @@
   ],
   "shieldRadius": 212,
   "spriteName": "graphics/DCP/ships/dcp_magellan_skipjack.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_fastfrigate",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/dcp_magellan_fastfrigate.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 108,
   "width": 90,
   "center": [45, 60],

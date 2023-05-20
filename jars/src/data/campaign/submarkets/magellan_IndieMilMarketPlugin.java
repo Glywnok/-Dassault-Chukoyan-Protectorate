@@ -21,7 +21,7 @@ public class magellan_IndieMilMarketPlugin extends MilitarySubmarketPlugin {
       float seconds = Global.getSector().getClock().convertToSeconds(this.sinceLastCargoUpdate);
       this.addAndRemoveStockpiledResources(seconds, false, true, true);
       this.sinceLastCargoUpdate = 0.0F;
-      String replaceFaction = "dcp_magellan_independentmkt";
+      String replaceFaction = "magellan_independentmkt";
       if (this.okToUpdateShipsAndWeapons()) {
          this.sinceSWUpdate = 0.0F;
          this.pruneWeapons(0.0F);
@@ -40,7 +40,7 @@ public class magellan_IndieMilMarketPlugin extends MilitarySubmarketPlugin {
    }
 
    public String getName() {
-      return this.submarket.getFaction().getId().equals("dcp_magellan_leveller") ? this.getString("str_revolutionary") : Misc.ucFirst(this.submarket.getFaction().getPersonNamePrefix()) + "\n" + this.getString("str_armsmarket");
+      return this.submarket.getFaction().getId().equals("magellan_leveller") ? this.getString("str_revolutionary") : Misc.ucFirst(this.submarket.getFaction().getPersonNamePrefix()) + "\n" + this.getString("str_armsmarket");
    }
 
    protected void createTooltipAfterDescription(TooltipMakerAPI tooltip, boolean expanded) {

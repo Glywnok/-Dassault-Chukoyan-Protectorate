@@ -97,8 +97,8 @@ public class dcp_magellan_SpartacusReactor extends BaseHullMod {
       intlabel.setHighlight(new String[]{this.getString("SpartacusReactor3HL"), "25%", "125%"});
       intlabel.setHighlightColors(new Color[]{emp_color, h, h});
       tooltip.addPara("- " + this.getString("SpartacusReactorDesc4"), padS, h, new String[]{this.getString("SpartacusReactor4HL"), "25%"});
-      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Expanded Deck Crew", bad, padS);
       text.addPara("- Resistant Flux Conduits", bad, padS);

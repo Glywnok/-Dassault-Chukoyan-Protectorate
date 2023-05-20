@@ -149,7 +149,7 @@ public class dcp_magellan_MCivFleetRouteManager extends BaseRouteFleetManager {
       freighter = (int)((float)freighter * 2.0F);
       tanker = (int)((float)tanker * 2.0F);
       transport = (int)((float)transport * 1.0F);
-      FleetParamsV3 params = new FleetParamsV3(route != null ? route.getMarket() : source, locInHyper, "dcp_magellan_civviescavs", route == null ? null : route.getQualityOverride(), type, (float)combat, (float)freighter, (float)tanker, (float)transport, 0.0F, (float)utility, MathUtils.getRandomNumberInRange(0.2F, 0.6F));
+      FleetParamsV3 params = new FleetParamsV3(route != null ? route.getMarket() : source, locInHyper, "magellan_civviescavs", route == null ? null : route.getQualityOverride(), type, (float)combat, (float)freighter, (float)tanker, (float)transport, 0.0F, (float)utility, MathUtils.getRandomNumberInRange(0.2F, 0.6F));
       if (route != null) {
          params.timestamp = route.getTimestamp();
       }

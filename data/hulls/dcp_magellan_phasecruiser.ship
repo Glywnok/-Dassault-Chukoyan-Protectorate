@@ -194,7 +194,7 @@
   ],
   "shieldRadius": 140,
   "spriteName": "graphics/DCP/ships/phase/dcp_magellan_phasecruiser.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

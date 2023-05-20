@@ -58,7 +58,7 @@
   ],
   "shieldRadius": 15.5,
   "spriteName": "graphics/DCP/ships/dcp_magellan_targdrone.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "viewOffset": 0,
   "weaponSlots": [
     {

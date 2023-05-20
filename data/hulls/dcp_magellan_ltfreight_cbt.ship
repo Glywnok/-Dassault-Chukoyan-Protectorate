@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_ltfreight_cbt",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/DCP/ships/civ/dcp_magellan_ltfreight.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 192,
   "width": 96,
   "center": [48, 92],

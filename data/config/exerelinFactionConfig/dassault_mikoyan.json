@@ -45,7 +45,7 @@
     		"diableavionics": -0.5, #the whole 'planet full of slaves' is kind of a dealbreaker
     		"sylphon": 0.25, #I like you okay, bud
     		"mayorate": -0.8, #I don't like the look of your face
-    		"dcp_magellan_protectorate": -0.3, #the whole 'massive pointy social pyramid' thing is a hard no
+    		"magellan_protectorate": -0.3, #the whole 'massive pointy social pyramid' thing is a hard no
     		"communist_clouds": -0.1, #not our favorite people, not by a long shot
     		"new_galactic_order": -1.0 }, #you know why you don't get invited to the good parties
     "maxRelationships":{
@@ -57,7 +57,7 @@
     		"diableavionics": 0.1, #still not gonna swipe right
     		"sylphon": 0.75, #but taking a stuffed AI core to bed with you is pretty weird
     		"mayorate": -0.2, #but you live this time
-    		"dcp_magellan_protectorate": 0.3, #seriously doubt you're gonna fix that any time soon
+    		"magellan_protectorate": 0.3, #seriously doubt you're gonna fix that any time soon
     		"communist_clouds": 0.3, #and there's a big bright line between 'sometimes tolerable' and 'trustworthy'
     		"new_galactic_order": -0.9 }, #weird right, how genocidal dicks have trouble making friends
     "diplomacyPositiveChance":{
@@ -68,7 +68,7 @@
     		"diableavionics": 0.25, #man I want to like your visuals so much
     		"interstellarimperium": 0.3, #space rome wasn't built in a day
     		"sylphon": 0.6, #Sylphon AIs are fun at parties and buy rounds for the house
-    		"dcp_magellan_protectorate": 0.25, #sometimes you get it right
+    		"magellan_protectorate": 0.25, #sometimes you get it right
     		"communist_clouds": 0.3, #on the whole, you're acceptable allies of convenience
     		"new_galactic_order": 0.01 }, #fuuuck space nazis
     "diplomacyNegativeChance":{
@@ -79,7 +79,7 @@
     		"diableavionics": 0.75, #but the mismatched muzzleflashes and projectiles kill it for me
     		"interstellarimperium": 0.6, #but it can fall a lot quicker
     		"sylphon": 0.3, #but let's not kid ourselves the plushie thing is kiiind of freaky
-    		"dcp_magellan_protectorate": 0.75, #the sans-culottes are gonna make you a sans-tête if you keep it up
+    		"magellan_protectorate": 0.75, #the sans-culottes are gonna make you a sans-tête if you keep it up
     		"communist_clouds": 0.7, #but the key concept here is 'convenience'
     		"new_galactic_order": 5.0 }, #fuck them with planet-cracker bombs
     "morality":"good", #if 'good' doesn't exclude a whole lotta collateral damage.

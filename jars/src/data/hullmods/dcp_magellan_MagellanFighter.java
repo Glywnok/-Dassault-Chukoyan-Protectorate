@@ -93,7 +93,7 @@ public class dcp_magellan_MagellanFighter extends BaseHullMod {
       Color quote = dcp_magellan_hullmodUtils.getQuoteColor();
       Color attrib = Misc.getGrayColor();
       tooltip.addSectionHeading(this.getString("MagSpecialTitle"), mag, magbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/magellan_hullmod_fighter.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_fighter.png", 40.0F);
       text.addPara("- " + this.getString("FighterSPDesc1"), padS, h, new String[]{"1", "2", "3", "8"});
       text.addPara("- " + this.getString("FighterSPDesc2"), padS, h, new String[]{"50%"});
       text.addPara("- " + this.getString("FighterSPDesc3"), padS, h, new String[]{"10su"});

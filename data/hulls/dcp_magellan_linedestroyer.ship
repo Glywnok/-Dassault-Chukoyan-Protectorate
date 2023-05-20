@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_linedestroyer",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/DCP/ships/dcp_magellan_linedestroyer.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 164,
   "width": 136,
   "center": [68, 78],

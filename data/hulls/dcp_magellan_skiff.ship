@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_skiff",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/civ/dcp_magellan_skiff.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 118,
   "width": 86,
   "center": [43, 54],

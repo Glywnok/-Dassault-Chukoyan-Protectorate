@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_schooner",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/DCP/ships/civ/dcp_magellan_schooner.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 144,
   "width": 92,
   "center": [46, 64],

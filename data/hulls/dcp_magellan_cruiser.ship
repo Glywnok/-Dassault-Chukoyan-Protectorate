@@ -3,7 +3,7 @@
   "hullId": "dcp_magellan_cruiser",
   "hullSize": "CRUISER",
   "spriteName": "graphics/DCP/ships/dcp_magellan_cruiser.png",
-  "style": "dcp_magellan",
+  "style": "Magellan",
   "height": 272,
   "width": 154,
   "center": [77, 128],

@@ -61,8 +61,8 @@ public class dcp_magellan_BlackcollarUpgrade extends BaseHullMod {
       tooltip.addPara("- " + this.getString("BlackcollarModDesc5"), pad2S, h, new String[]{"15%"});
       tooltip.addPara("- " + this.getString("BlackcollarModDesc6"), padS, h, new String[]{"25%"});
       tooltip.addPara("- " + this.getString("BlackcollarModDesc7"), padS, h, new String[]{"50%"});
-      tooltip.addSectionHeading(this.getString("magellanIncompTitle"), bad, badbg, Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      tooltip.addSectionHeading(this.getString("MagellanIncompTitle"), bad, badbg, Alignment.MID, pad);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("magellanAllIncomp"), padS);
       text.addPara("- Hardened Shields", bad, padS);
       text.addPara("- Armored Weapon Mounts", bad, 0.0F);

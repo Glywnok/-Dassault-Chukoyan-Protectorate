@@ -36,7 +36,7 @@ public class dcp_DME_MonoblocConstruction extends BaseHullMod {
       tooltip.addPara("%s " + this.getString("MonoblocDesc2"), padS, Misc.getHighlightColor(), new String[]{"-", "50%"});
       tooltip.addPara("%s " + this.getString("MonoblocDesc3"), padS, Misc.getHighlightColor(), new String[]{"-", "25su"});
       tooltip.addSectionHeading("Incompatibilities", Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("DMEAllIncomp"), padS);
       text.addPara("- Heavy Armor", Misc.getNegativeHighlightColor(), padS);
       if (Global.getSettings().getModManager().isModEnabled("apex_design")) {

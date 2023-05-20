@@ -44,7 +44,7 @@ public class dcp_DME_SkipspaceReactionFurnace extends BaseHullMod {
       tooltip.addPara("- " + this.getString("ReactionFurnaceDesc4"), padS, Misc.getHighlightColor(), new String[]{"50su", "5%"});
       tooltip.addPara("- " + this.getString("ReactionFurnaceDesc5"), padS, Misc.getHighlightColor(), new String[]{"50%"});
       tooltip.addSectionHeading("Incompatibilities", Alignment.MID, pad);
-      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/hullmod_incompatible.png", 40.0F);
+      TooltipMakerAPI text = tooltip.beginImageWithText("graphics/DCP/icons/tooltip/dcp_hullmod_incompatible.png", 40.0F);
       text.addPara(this.getString("DMEAllIncomp"), padS);
       text.addPara("- Safety Overrides", Misc.getNegativeHighlightColor(), padS);
       if (Global.getSettings().getModManager().isModEnabled("timid_xiv")) {
