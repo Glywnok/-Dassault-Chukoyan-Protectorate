@@ -109,9 +109,6 @@
 		},
 		"combatLarge":{
 			"apogee_Balanced":10,
-			"aurora_Assault":4,
-			"aurora_Escort":4,
-			"aurora_Strike":4,
 			"doom_righthand":10,
 			"fallback":{"combatMedium":2},
 		},

@@ -4,7 +4,7 @@
 	"author":"The guy who LOVES trolling :trol:", #aka Glywnok
 	"version":"1.0.1",
 	"description":"This is a mod which adds Dassault-Mikoyan, Magellan Protectorate, NGO, removed BB+ stuff and Deluxe Flags in one mod.\nI \nDo \nNot \nCare\nCope. Seethe. Mald.",
-    "gameVersion": "0.95.1a-RC6", 
+    "gameVersion": "0.96", 
 	"dependencies": [
     {
         "id": "lw_lazylib",
