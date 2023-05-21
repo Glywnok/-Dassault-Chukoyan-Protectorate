@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="hotfix 2&#10;probably last for 0.95">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="change for 0.96" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684612809085</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="change for 0.96">
+      <created>1684688134183</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684688134183</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,7 +148,8 @@
     <MESSAGE value="1.0.1 Fix for 0.95" />
     <MESSAGE value="Some more changes" />
     <MESSAGE value="hotfix 2&#10;probably last for 0.95" />
-    <option name="LAST_COMMIT_MESSAGE" value="hotfix 2&#10;probably last for 0.95" />
+    <MESSAGE value="change for 0.96" />
+    <option name="LAST_COMMIT_MESSAGE" value="change for 0.96" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
