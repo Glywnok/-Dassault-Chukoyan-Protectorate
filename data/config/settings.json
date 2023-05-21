@@ -113,7 +113,7 @@
 			#If there was any...
 		},
 		"ui":{
-            "dcp_hullmod_incompatible":"graphics/DCP/icons/tooltip/hullmod_incompatible.png",
+            "dcp_hullmod_incompatible":"graphics/DCP/icons/tooltip/dcp_hullmod_incompatible.png",
             "dcp_hullmod_defense":"graphics/DCP/icons/tooltip/dcp_hullmod_defense.png",
             "dcp_hullmod_fighter":"graphics/DCP/icons/tooltip/dcp_hullmod_fighter.png",
             "dcp_hullmod_movement":"graphics/DCP/icons/tooltip/dcp_hullmod_movement.png",

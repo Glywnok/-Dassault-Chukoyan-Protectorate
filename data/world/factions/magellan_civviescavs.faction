@@ -1,8 +1,8 @@
 {
 	# only used for fleet creation, not an actual faction
 	"id":"magellan_civviescavs",
-	"displayName":"scavengers",
-	"displayNameWithArticle":"the scavengers",
+	"displayName":"Scavengers",
+	"displayNameWithArticle":"The scavengers",
 	"logo":"graphics/factions/neutral_traders.png",
 	"crest":"graphics/factions/crest_neutral.png",
 	"showInIntelTab":false,

@@ -10,7 +10,7 @@
 	"brightUIColor":[204,204,59,225],
 	
 	"displayName":"The Herd",
-	"displayNameWithArticle":"the Herd",
+	"displayNameWithArticle":"The Herd",
 	"displayNameIsOrAre":"are",
 	"showInIntelTab":true,
 	"logo":"graphics/DCP/factions/theherd.png",
