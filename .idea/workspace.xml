@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="change for 0.96" />
+    <list default="true" id="74164da4-6c1d-471a-8dbc-c71e9eb23262" name="Changes" comment="change for 0.96&#10;hotfix">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/material/weapons/dcp_DME_whdcp_DMEer_hardpoint_base_material.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/material/weapons/dcp_DME_whdcper_hardpoint_base_material.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/material/weapons/dcp_DME_whdcp_DMEer_hardpoint_recoil_material.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/material/weapons/dcp_DME_whdcper_hardpoint_recoil_material.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/material/weapons/dcp_DME_whdcp_DMEer_turret_base_material.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/material/weapons/dcp_DME_whdcper_turret_base_material.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/material/weapons/dcp_DME_whdcp_DMEer_turret_recoil_material.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/material/weapons/dcp_DME_whdcpr_turret_recoil_material.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/normal/weapons/dcp_DME_whdcp_DMEer_hardpoint_base_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/normal/weapons/dcp_DME_whdcper_hardpoint_base_normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/normal/weapons/dcp_DME_whdcp_DMEer_hardpoint_recoil_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/normal/weapons/dcp_DME_whdcper_hardpoint_recoil_normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/normal/weapons/dcp_DME_whdcp_DMEer_turret_base_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/normal/weapons/dcp_DME_whdcper_turret_base_normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/normal/weapons/dcp_DME_whdcp_DMEer_turret_recoil_normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/normal/weapons/dcp_DME_whdcper_turret_recoil_normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/surface/weapons/dcp_DME_whdcp_DMEer_hardpoint_base_surface.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/surface/weapons/dcp_DME_whdcper_hardpoint_base_surface.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/surface/weapons/dcp_DME_whdcp_DMEer_hardpoint_recoil_surface.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/surface/weapons/dcp_DME_whdcper_hardpoint_recoil_surface.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/surface/weapons/dcp_DME_whdcp_DMEer_turret_base_surface.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/surface/weapons/dcp_DME_whdcper_turret_base_surface.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphics/DCP/shaders/surface/weapons/dcp_DME_whdcp_DMEer_turret_recoil_surface.png" beforeDir="false" afterPath="$PROJECT_DIR$/graphics/DCP/shaders/surface/weapons/dcp_DME_whdcper_turret_recoil_surface.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684688134183</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="change for 0.96&#10;hotfix">
+      <created>1684689389802</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684689389802</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +171,8 @@
     <MESSAGE value="Some more changes" />
     <MESSAGE value="hotfix 2&#10;probably last for 0.95" />
     <MESSAGE value="change for 0.96" />
-    <option name="LAST_COMMIT_MESSAGE" value="change for 0.96" />
+    <MESSAGE value="change for 0.96&#10;hotfix" />
+    <option name="LAST_COMMIT_MESSAGE" value="change for 0.96&#10;hotfix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
