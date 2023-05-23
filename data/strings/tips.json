@@ -11,6 +11,7 @@
 	"UAF is a good looking mod, but CY is a big dickhead",
 	"If you think there is no such thing as Starsector Multiplayer mod, you surely are a USC cuck.",
 	"USC is a shithole, change my mind",
+	"Hey You like this mod? Well join: XLU and Stinger Shipyards Joint Beta testing server: Bricky Shipyards Spaceport Corvus: Multiplayer Mod Testing Server (Starsector Corvus Discord, sponsored by Arthr's Ships and Stuff), Featuring Reimu from Touhou Project (Formerly under Sindrian Diktat Authority); Featuring Dassault Chuckoyan Protectorate (Formerly Dassault Mikoyan Engieneering, Magellan Protectorate and Deluxe Player Pack), a Starsector Discord server, now under the joint administration of the joint Asschad-Furry Cartel (formerly Chuck's), and at last The Only server with Banano of Doom special mod Terraformers: Active Development.",
 	"[DCP] Dassault Chukoyan Protectorate is this mods second name, first I wanted it to be Dassault Magellan Protectorate or Dassault Magellan Engieneering, but after some bottles of vodka we have Dassault Chuckoyan Protectorate.",
 		"[DCP] Hey! Yes you! Would you like to see horrors?",
 		"[DCP]DME is the only mod I really liked, before looking that 50% of src is missing..",
@@ -25,6 +26,7 @@
 	#dumb bullshit with very low frequency
 	{"freq":0.01, "tip": "If you can't spot the sucker at the poker table - it's you."},
 	{"freq":0, "tip": "You can turn off silly tips that offend your delicate sense of 'immersion' by setting their frequency to 0, just like this one."},
+	
 
 ],
 }

@@ -30,7 +30,7 @@ Advanced Damage Control,dcp_DME_dccrew,,,,,,,,TRUE,,0,0,0,0,data.hullmods.dcp_DM
 Battleline Doctrine,dcp_magellan_battleline,,,,,,,,TRUE,,0,0,0,0,data.hullmods.dcp_magellan_BattlelineDoctrine,"dcp_magellan fleet doctrine emphasizes the primacy of the battleline above all other tactical concerns. Pursuit of a decisive battle with the enemy's fleet is the overarching goal of all operations, and Fleet Ops trains crew and develops new technology around this assumption.","Reduces ballistic weapon flux costs, increases non-beam PD range and boosts anti-fighter damage.",graphics/DCP/hullmods/dcp_magellan_battleline.png
 ,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
+HULLMOD CONFLICT,DCPBlockedBlankHullmod,,,,,,,FALSE,TRUE,,0,0,0,0,data.hullmods.DCPBlockedBlankHullmod,"%s, the hullmod you tried to install conflicts with this hull or another previously installed hullmod.",Blocks incompatible hullmods.,graphics/icons/intel/investigation.png
 ,,,,,,,,,,,,,,,,,,
 #Magellan,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,
