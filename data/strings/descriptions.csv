@@ -91,6 +91,10 @@ dcp_DME_warlock,SHIP,"An impressively built battlecarrier, lightly-armed but wit
 dcp_DME_zelenograd,SHIP,"A hulking survey ship, built immediately post-Collapse to spearhead aggressive tech mining and exploration efforts. Over the years, the various iterations of the Zelenograd have been up-armored and refitted with heavier and heavier weapons packages to deal with claim-jumpers and raiders, until the final product is more of a pocket dreadnought than a large science vessel.
 
 While the current Block XI Zelenograd is fairly described as more warship than explorer, it retains an impressive capability for long-range, independent operations with minimal trailing support craft. No few of the current small salvage and tech-mining firms would be delighted to compact their cumbersome, aging scavenger fleets and vulnerable tankers into nimble, purposeful expeditions spearheaded by a Zelenograd.",,,
+dcp_DME_vesper_p,SHIP,"An unusual combination of backdoor dealings, political interplay and plain hubris delivered the blueprints for this advanced vessel to a willing rogue industrial conglomerate. Albeit lacking key technologies and manufacturing know-how, the design was nonetheless made flightworthy by assembling what was available and replacing the rest with stock components. 
+
+While in appearance similar to the original, this frigate lacks its versatility and is best suited for the roles of long range support and assault on larger and slower vessels, not unlike the missile corvettes of old. ",,,
+,,,,,
 ,,,,,
 dcp_DME_zonedefbit,SHIP,A lightly armed defense drone with a low refit time.,,,
 dcp_DME_funnel,SHIP,"A light offensive drone, often installed on Dassault-Mikoyan ships as a support weapon.",,,

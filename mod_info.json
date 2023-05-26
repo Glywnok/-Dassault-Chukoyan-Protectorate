@@ -2,7 +2,7 @@
     "id":"DCP", # internal id
 	"name":" Dassault-Chukoyan Protectorate", # displayed to the player
 	"author":"The guy who LOVES trolling :trol:", #aka Glywnok
-	"version":"1.1.1",
+	"version":"1.1.2",
 	"description":"This is a mod which adds Dassault-Mikoyan, Magellan Protectorate, NGO, removed BB+ stuff and Deluxe Flags in one mod.\nI \nDo \nNot \nCare\nCope. Seethe. Mald.",
     "gameVersion": "0.96", 
 	"dependencies": [

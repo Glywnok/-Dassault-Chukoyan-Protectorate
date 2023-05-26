@@ -170,7 +170,7 @@
 		"fluxVentCoreColor":[255,255,255,255],
 		"fluxVentFringeColor":[125,0,155,255],
 		"engineLoopSet":"dcp_magellan_engine_loop", 			    # id of entry in sounds.json
-		"engineAccelerateSet":"dcp-magellan_engine_accelerate",	    # id of entry in sounds.json
+		"engineAccelerateSet":"dcp_magellan_engine_accelerate",	    # id of entry in sounds.json
 		"empLoopSet":"dcp_magellan_emp_loop",						# id of entry in sounds.json
 		"fluxLoopSet":"dcp_magellan_flux_loop",						# id of entry in sounds.json
 		"ventFluxSet":"dcp_magellan_flux_vent",						# id of entry in sounds.json
@@ -190,7 +190,7 @@
 		"slotCoverMediumHardpoint":"graphics/weapons/covers/cover_hardpoint_hightech_medium.png",
 		"slotCoverLargeTurret":"graphics/weapons/covers/cover_turret_hightech_large.png",
 		"slotCoverLargeHardpoint":"graphics/weapons/covers/cover_hardpoint_hightech_large.png",
-		
+
 		"dHullOverlayLight":"graphics/damage/dmod_overlay_hightech_light.png",
 		"dHullOverlayMedium":"graphics/damage/dmod_overlay_hightech_medium.png",
 		"dHullOverlayHeavy":"graphics/damage/dmod_overlay_hightech_heavy.png",

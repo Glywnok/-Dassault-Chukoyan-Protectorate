@@ -1,0 +1,124 @@
+{
+  "hullName": "Vesper (P)",
+  "hullId": "dcp_DME_vesper_p",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/DCP/ships/pirate/dcp_DME_vesper_p.png",
+  "style": "HIGH_TECH",
+  "height": 97,
+  "width": 92,
+  "center": [46, 43],
+  "collisionRadius": 84,
+  "shieldCenter": [4.5, -1],
+  "shieldRadius": 76,
+  "viewOffset": 0,
+  "builtInMods": [
+    "unstable_injector",
+    "safetyoverrides",
+    "ground_support"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [7.5, -23.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-11, 1]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [7, 25.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-36.5, 26],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-37, -24],
+      "length": 40,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-23.5, 13.5],
+      "length": 22.5,
+      "width": 4,
+      "angle": 175,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-23.5, -12],
+      "length": 22.5,
+      "width": 4,
+      "angle": -175,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-22.5, 43],
+      "length": 22.5,
+      "width": 4,
+      "angle": 150,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-22.5, -41],
+      "length": 22.5,
+      "width": 4,
+      "angle": -150,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    54, -2.5,
+    45, -6.5,
+    37, -13.5,
+    38.5, -7,
+    17, -9.5,
+    21.5, -16,
+    21.5, -36,
+    -9, -45,
+    -21.5, -39,
+    -35, -21,
+    -17, -14,
+    -41, -5,
+    -41, 5,
+    -17, 14,
+    -37.5, 23,
+    -21.5, 39,
+    -9, 45,
+    21.5, 36,
+    21, 17,
+    17, 10.5,
+    38.5, 7,
+    37, 13.5,
+    45, 6.5,
+    54, 2.5
+  ]
+}

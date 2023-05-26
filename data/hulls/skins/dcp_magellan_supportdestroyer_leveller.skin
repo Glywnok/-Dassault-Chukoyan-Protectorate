@@ -4,7 +4,7 @@
 	"hullName":"Pollard [LV]",
 	"descriptionId":"dcp_magellan_supportdestroyer",
 	"descriptionPrefix":"This hull has been reconditioned to serve the Leveller cause. A flux distributor has been integrated into the frame, while the ballistic accelerator has been removed in favor of an impulse-burn rig, the shuttle bay converted for swarmfighters, and several of the weapon mounts refitted for energy weapons.",
-	"tags":["dcp_magellan_levellercore_bp", "restricted"],
+	"tags":["magellan_levellercore_bp", "restricted"],
 	"tech":"Leveller",
     "fleetPoints":11,
     "ordnancePoints":105,

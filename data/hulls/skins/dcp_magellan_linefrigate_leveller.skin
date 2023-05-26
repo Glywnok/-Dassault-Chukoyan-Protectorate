@@ -4,7 +4,7 @@
 	"hullName":"Janz [LV]",
 	"descriptionId":"dcp_magellan_linefrigate",
 	"descriptionPrefix":"This hull has been reconditioned to serve the Leveller cause. A flux distributor has been integrated into the frame, while the ballistic accelerator has been removed in favor of an impulse-burn rig, and several of the weapon mounts refitted.",
-	"tags":["dcp_magellan_levellercore_bp", "restricted"],
+	"tags":["magellan_levellercore_bp", "restricted"],
 	"tech":"Leveller",
     "removeHints":[],
 	"spriteName":"graphics/DCP/ships/dcp_magellan_linefrigate_leveller.png",

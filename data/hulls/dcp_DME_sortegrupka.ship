@@ -1,0 +1,512 @@
+{
+  "hullName": "Soregrupka",
+  "hullId": "dcp_DME_sortegrupka",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/DCP/ships/dcp_DME_sortegrupka.png",
+  "style": "DMEMain",
+  "height": 355,
+  "width": 224,
+  "center": [112, 135],
+  "collisionRadius": 249.5,
+  "shieldCenter": [42.5, 0],
+  "shieldRadius": 211,
+  "viewOffset": 0,
+  "builtInMods": [
+    "dcp_DME_monobloc",
+    "repair_gantry",
+    "dedicated_targeting_core"
+  ],
+  "builtInWings": [
+    "dcp_DME_harridan_wing"
+  ],
+  "builtInWeapons": {
+    "WS0003": "dcp_DME_hellspear",
+    "WS0007": "tpc",
+    "WS0008": "tpc",
+    "WS0022": "blinker_red",
+    "WS0023": "blinker_red",
+    "WS0024": "dcp_DME_blinkerC_green",
+    "WS0025": "dcp_DME_blinkerC_green",
+    "WS0026": "dcp_DME_blinkerA_blue",
+    "WS0027": "dcp_DME_blinkerA_blue",
+    "WS0032": "blinker_green",
+    "WS0033": "blinker_green",
+    "WS0034": "dcp_DME_blinkerC_green",
+    "WS0035": "dcp_DME_blinkerC_green",
+    "WS0036": "dcp_DME_blinkerC_green",
+    "WS0037": "dcp_DME_blinkerC_green",
+    "WS0038": "blinker_green",
+    "WS0039": "blinker_green",
+    "WS0040": "blinker_red",
+    "WS0041": "blinker_red",
+    "WS0042": "blinker_green",
+    "WS0043": "blinker_green",
+    "WS0044": "blinker_red",
+    "WS0045": "blinker_red"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [158, -44]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [158, 44]
+    },
+    {
+      "id": "WS0011",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 45,
+      "locations": [25, 78]
+    },
+    {
+      "id": "WS0012",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -45,
+      "locations": [25, -78]
+    },
+    {
+      "id": "WS0015",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-46, -0]
+    },
+    {
+      "id": "WS0016",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -135,
+      "locations": [-98.5, -52.5]
+    },
+    {
+      "id": "WS0017",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 135,
+      "locations": [-98.5, 52.5]
+    },
+    {
+      "id": "WS0018",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [136, 96]
+    },
+    {
+      "id": "WS0019",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [136, -96]
+    },
+    {
+      "id": "WS0024",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -180,
+      "locations": [-105, 31]
+    },
+    {
+      "id": "WS0025",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-105, -31]
+    },
+    {
+      "id": "WS0026",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-22.5, -59]
+    },
+    {
+      "id": "WS0027",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-22.5, 59]
+    },
+    {
+      "id": "WS0032",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -0,
+      "locations": [110, -32]
+    },
+    {
+      "id": "WS0033",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [110, 32]
+    },
+    {
+      "id": "WS0034",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -0,
+      "locations": [69.5, -23]
+    },
+    {
+      "id": "WS0035",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [69.5, 23]
+    },
+    {
+      "id": "WS0036",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [91, 26.5]
+    },
+    {
+      "id": "WS0037",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -0,
+      "locations": [91, -26.5]
+    },
+    {
+      "id": "WS0022",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [111, 32]
+    },
+    {
+      "id": "WS0023",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -0,
+      "locations": [111, -32]
+    },
+    {
+      "id": "WS0038",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [112, 32]
+    },
+    {
+      "id": "WS0039",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -0,
+      "locations": [112, -32]
+    },
+    {
+      "id": "WS0040",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [113, 32]
+    },
+    {
+      "id": "WS0041",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -0,
+      "locations": [113, -32]
+    },
+    {
+      "id": "WS0042",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [114, 32]
+    },
+    {
+      "id": "WS0043",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -0,
+      "locations": [114, -32]
+    },
+    {
+      "id": "WS0044",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [115, 32]
+    },
+    {
+      "id": "WS0045",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -0,
+      "locations": [115, -32]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 35,
+      "angle": -0,
+      "locations": [70, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        78.5, -18.5,
+        82, 22.5,
+        72, -18,
+        73.5, 22.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-42, 95],
+      "length": 11,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-42, -95],
+      "length": 11,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-56, 82],
+      "length": 20,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-56, -82],
+      "length": 20,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-124, -18],
+      "length": 25,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-124, 18],
+      "length": 25,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-128, -12.5],
+      "length": 22,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-128, 12.5],
+      "length": 22,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-118, -35],
+      "length": 12,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-118, 35],
+      "length": 12,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-59, -58],
+      "length": 14,
+      "width": 4,
+      "angle": -135,
+      "contrailSize": 4,
+      "style": "DMESuperFlare"
+    },
+    {
+      "location": [-59, 58],
+      "length": 14,
+      "width": 4,
+      "angle": 135,
+      "contrailSize": 4,
+      "style": "DMESuperFlare"
+    }
+  ],
+  "bounds": [
+    -123, -5,
+    -128, -8,
+    -128, -17,
+    -124, -18,
+    -124, -26.5,
+    -114, -29,
+    -117, -33,
+    -129, -33,
+    -134.5, -48.5,
+    -110, -64,
+    -85, -64,
+    -39, -54,
+    -26, -59,
+    -35, -71,
+    -47, -73,
+    -56, -76,
+    -56, -88,
+    -48, -89,
+    -41.5, -97,
+    -30, -105,
+    -4, -106,
+    61, -106,
+    65, -102,
+    65, -91,
+    115, -106,
+    154, -106,
+    187, -89,
+    188, -80,
+    188, -70,
+    187, -65,
+    185, -59,
+    163, -53,
+    181, -49,
+    181, -41,
+    175, -32,
+    149, -26,
+    117, -26,
+    115, -23,
+    103, -23,
+    101, -0,
+    103, 23,
+    115, 23,
+    117, 26,
+    149, 26,
+    175, 32,
+    181, 41,
+    181, 49,
+    163, 53,
+    185, 59,
+    187, 65,
+    188, 70,
+    188, 80,
+    187, 89,
+    154, 106,
+    115, 106,
+    65, 91,
+    65, 102,
+    61, 106,
+    -4, 106,
+    -30, 105,
+    -41.5, 97,
+    -48, 89,
+    -56, 88,
+    -56, 76,
+    -47, 73,
+    -35, 71,
+    -26, 59,
+    -39, 54,
+    -85, 64,
+    -110, 64,
+    -134.5, 48.5,
+    -129, 33,
+    -117, 33,
+    -114, 29,
+    -124, 26.5,
+    -124, 18,
+    -128, 17,
+    -128, 8,
+    -123, 5
+  ]
+}
