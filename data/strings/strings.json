@@ -1,6 +1,7 @@
 {
 	"HullMod":{
 		"dcp_DME_DMEAllIncomp":"This ship cannot install the following hullmods:",
+		"dcp_magellan_magellanAllIncomp": "This ship cannot install the following hullmods:",
 
 		"dcp_DME_MonoblocDesc1":"EMP damage reduced by %s.",
 		"dcp_DME_MonoblocDesc2":"Overload duration is reduced by %s.",
