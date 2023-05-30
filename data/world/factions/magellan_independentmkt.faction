@@ -65,7 +65,7 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["dcp_magellan_core_bp", "dcp_magellan_civ"],
+		"tags":["magellan_core_bp", "magellan_civ"],
 		"hulls":[
 			"dcp_magellan_cbtfreight_civ",
 			"dcp_magellan_patroldestroyer_civ",
@@ -102,7 +102,7 @@
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":["dcp_magellan", "dcp_magellan_civ", "dcp_magellan_core_bp"],
+		"tags":["magellan", "magellan_civ", "magellan_core_bp"],
 		"hulls":[
 			"dcp_magellan_cbtfreight",
 			"dcp_magellan_cbtfreight_civ",
@@ -115,7 +115,7 @@
 		],
 	},
 	"knownFighters":{
-		"tags":["dcp_magellan_civ", "dcp_magellan_core_bp"],
+		"tags":["magellan_civ", "magellan_core_bp"],
 		"fighters":[
 			"mining_drone_wing",
 			"dcp_magellan_interceptor_civ_wing",
@@ -124,14 +124,14 @@
 		],
 	},
 	"priorityFighters":{
-		"tags":["dcp_magellan", "dcp_magellan_civ", "dcp_magellan_core_bp"],
+		"tags":["magellan", "magellan_civ", "magellan_core_bp"],
 		"fighters":[
 			"dcp_magellan_interceptor_civ_wing",
 			"dcp_magellan_lightfighter_civ_wing",
 		],
 	},
 	"knownWeapons":{
-		"tags":["dcp_magellan_core_bp", "missile_bp", "independent"],
+		"tags":["magellan_core_bp", "missile_bp", "independent"],
 		"weapons":[
 			#vanilla
 			"lightmortar",
@@ -161,7 +161,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":["dcp_magellan", "dcp_magellan_civ", "dcp_magellan_core_bp"],
+		"tags":["magellan", "magellan_civ", "magellan_core_bp"],
 		"weapons":[
 			"dcp_magellan_bonesaw",
 			"dcp_magellan_boneshaker",
@@ -172,7 +172,7 @@
 		],
 	},
 	"knownHullMods":{
-		"tags":["base_bp", "independent", "dcp_magellan_exclusive_hullmod"],
+		"tags":["base_bp", "independent", "magellan_exclusive_hullmod"],
 		"hullMods":[
 			"dcp_magellan_defense_mod",
 			"dcp_magellan_fighter_mod",

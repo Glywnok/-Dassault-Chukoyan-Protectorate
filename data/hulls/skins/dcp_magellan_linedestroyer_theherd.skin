@@ -4,7 +4,7 @@
 	"hullName":"Graff [Herd]",
 	"descriptionId":"dcp_magellan_linedestroyer",
 	"descriptionPrefix":"This hull has been battered by years of low-level warfare and unsafe drive modifications. A makeshift gamma torch has been crudely attached to the bow, providing both a fearsome close-range weapon, and a safety valve for the dangerously overtuned drive rig.",
-	"tags":["dcp_magellan_theherd", "restricted"],
+	"tags":["magellan_theherd", "restricted"],
 	"tech":"The Herd",
     "fleetPoints":10,
     "ordnancePoints":105,

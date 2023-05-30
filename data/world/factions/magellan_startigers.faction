@@ -43,7 +43,7 @@
 	},
 
 	"knownShips":{
-		"tags":["dcp_magellan_startiger"],
+		"tags":["magellan_startiger"],
 		"hulls":[
 			"dcp_magellan_battleship_startiger",
 			"dcp_magellan_carrier_startiger",
@@ -55,7 +55,7 @@
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":["dcp_magellan_startiger"],
+		"tags":["magellan_startiger"],
 		"hulls":[
 			"dcp_magellan_battleship_startiger",
 			"dcp_magellan_carrier_startiger",
@@ -64,13 +64,13 @@
 		],
 	},
 	"knownFighters":{
-		"tags":["dcp_magellan_startiger"],
+		"tags":["magellan_startiger"],
 	},
 	"priorityFighters":{
-		"tags":["dcp_magellan_startiger"],
+		"tags":["magellan_startiger"],
 	},
 	"knownWeapons":{
-		"tags":["dcp_magellan", "dcp_magellan_startiger", "dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"tags":["magellan", "magellan_startiger", "magellan_core_bp", "magellan_adv_bp"],
 		"weapons":[
 			"dualflak",
 			"dcp_magellan_bonecrusher",
@@ -97,7 +97,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":["dcp_magellan", "dcp_magellan_startiger", "dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"tags":["magellan", "magellan_startiger", "magellan_core_bp", "magellan_adv_bp"],
 		"weapons":[
 			"dcp_magellan_bonesaw",
 			"dcp_magellan_boneshaker",
@@ -117,7 +117,7 @@
 		],
 	},
 	"knownHullMods":{
-		"tags":["dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"tags":["magellan_core_bp", "magellan_adv_bp"],
 		"hullMods":[
 			"advancedshieldemitter",
 			"augmentedengines",

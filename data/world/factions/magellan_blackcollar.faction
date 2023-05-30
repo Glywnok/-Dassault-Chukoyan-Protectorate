@@ -42,7 +42,7 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["dcp_magellan", "dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"tags":["magellan", "magellan_core_bp", "magellan_adv_bp"],
 		"hulls":[
 			"atlas",
 			"phaeton",
@@ -50,7 +50,7 @@
 		],
 	},
 	"knownShips":{
-		"tags":["dcp_magellan", "dcp_magellan_blackcollar"],
+		"tags":["magellan", "magellan_blackcollar"],
 		"hulls":[
 			"dram",
 			"dcp_magellan_battlecruiser_blackcollar",
@@ -90,7 +90,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["dcp_magellan", "dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"tags":["magellan", "magellan_core_bp", "magellan_adv_bp"],
 		"weapons":[
 			"dualflak",
 			"dcp_magellan_bonecrusher",
@@ -113,7 +113,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":["dcp_magellan", "dcp_magellan_core_bp", "dcp_magellan_adv_bp"],
+		"tags":["magellan", "magellan_core_bp", "magellan_adv_bp"],
 		"weapons":[
 			"dcp_magellan_bonesaw",
 			"dcp_magellan_boneshaker",
@@ -131,7 +131,7 @@
 		],
 	},
 	"knownHullMods":{
-		"tags":["dcp_magellan_core_bp", "dcp_magellan_adv_bp", "dcp_magellan_exclusive_hullmod"],
+		"tags":["magellan_core_bp", "magellan_adv_bp", "magellan_exclusive_hullmod"],
 		"hullMods":[
 			"dcp_magellan_defense_mod",
 			"dcp_magellan_fighter_mod",

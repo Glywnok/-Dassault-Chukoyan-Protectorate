@@ -4,7 +4,7 @@
 	"hullName":"Janz [SKT]",
 	"descriptionId":"dcp_magellan_linefrigate",
 	"descriptionPrefix":"This hull has been refurbished to an alternate spec for the Skytiger Guards division.",
-	"tags":["dcp_magellan_startiger", "no_dealer"],
+	"tags":["magellan_startiger", "no_dealer"],
 	"tech":"Skytiger Guards Division",
     "fleetPoints":6,
     "ordnancePoints":48,

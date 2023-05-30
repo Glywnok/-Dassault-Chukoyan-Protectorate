@@ -38,7 +38,7 @@
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
 		"tags":{
-			"dcp_magellan_theherd":1,
+			"magellan_theherd":1,
 		},
 		"hulls":{
 			"dcp_magellan_skiff_theherd":1.25,
@@ -53,7 +53,7 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["dcp_magellan_theherd"],
+		"tags":["magellan_theherd"],
 		"hulls":[
 			#subfaction skins
 			"dcp_magellan_herdcarrier",
@@ -68,7 +68,7 @@
 		],
 	},
 	"knownShips":{
-		"tags":["dcp_magellan_theherd"],
+		"tags":["magellan_theherd"],
 		"hulls":[
 			#subfaction skins
 			"dcp_magellan_herdcarrier",
@@ -84,7 +84,7 @@
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":["dcp_magellan_theherd"],
+		"tags":["magellan_theherd"],
 		"hulls":[
 			"dcp_magellan_herdcarrier",
 			"dcp_magellan_ltfreight_theherd",
@@ -93,17 +93,17 @@
 		],
 	},
 	"knownFighters":{
-		"tags":["dcp_magellan_theherd"],
+		"tags":["magellan_theherd"],
 		"fighters":[			
 		],
 	},
 	"priorityFighters":{
-		"tags":["dcp_magellan_theherd"],
+		"tags":["magellan_theherd"],
 		"fighters":[
 		],
 	},
 	"knownWeapons":{
-		"tags":["dcp_magellan_core_bp", "dcp_magellan_theherd"],
+		"tags":["magellan_core_bp", "magellan_theherd"],
 		"weapons":[
 			"dcp_magellan_largebonecrusher",
 			"dcp_magellan_largemortar",
@@ -117,7 +117,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":["dcp_magellan_core_bp", "dcp_magellan_theherd"],
+		"tags":["magellan_core_bp", "magellan_theherd"],
 		"weapons":[
 			"dcp_magellan_calliope_sm",
 			"dcp_magellan_largebonecrusher",

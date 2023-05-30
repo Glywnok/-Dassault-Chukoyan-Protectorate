@@ -43,7 +43,7 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["dcp_magellan_core_bp", "dcp_magellan_civ"],
+		"tags":["magellan_core_bp", "magellan_civ"],
 		"hulls":[
 		],
 	},
@@ -91,7 +91,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["dcp_magellan_core_bp", "missile_bp", "independent"],
+		"tags":["magellan_core_bp", "missile_bp", "independent"],
 		"weapons":[
 			#vanilla
 			"lightmortar",
@@ -114,7 +114,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":["dcp_magellan", "dcp_magellan_civ", "dcp_magellan_core_bp"],
+		"tags":["magellan", "magellan_civ", "magellan_core_bp"],
 		"weapons":[
 			"dcp_magellan_bonesaw",
 			"dcp_magellan_boneshaker",
@@ -125,7 +125,7 @@
 		],
 	},
 	"knownHullMods":{
-		"tags":["base_bp", "independent", "dcp_magellan_exclusive_hullmod"],
+		"tags":["base_bp", "independent", "magellan_exclusive_hullmod"],
 		"hullMods":[
 			"dcp_magellan_defense_mod",
 			"dcp_magellan_fighter_mod",

@@ -45,39 +45,39 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["leveller", "dcp_magellan_levellercore_bp", "dcp_magellan_levellerunique_bp"],
+		"tags":["leveller", "magellan_levellercore_bp", "magellan_levellerunique_bp"],
 		"hulls":[
 			"dram",
 		],
 	},
 	"knownShips":{
-		"tags":["leveller", "dcp_magellan_levellercore_bp", "dcp_magellan_levellerunique_bp"],
+		"tags":["leveller", "magellan_levellercore_bp", "magellan_levellerunique_bp"],
 		"hulls":[
 			"dram",
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":["dcp_magellan_levellercore_bp", "dcp_magellan_levellerunique_bp"],
+		"tags":["magellan_levellercore_bp", "magellan_levellerunique_bp"],
 		"hulls":[
 		],
 	},
 	"knownFighters":{
-		"tags":["leveller", "dcp_magellan_levellercore_bp", "dcp_magellan_levellerunique_bp"],
+		"tags":["leveller", "magellan_levellercore_bp", "magellan_levellerunique_bp"],
 		"fighters":[
 			"dcp_magellan_swarmfighter_wing",
 			
 		],
 	},
 	"priorityFighters":{
-		"tags":["dcp_magellan_levellercore_bp", "dcp_magellan_levellerunique_bp"],
+		"tags":["magellan_levellercore_bp", "magellan_levellerunique_bp"],
 		"fighters":[
 			"dcp_magellan_swarmfighter_wing",
 
 		],
 	},
 	"knownWeapons":{
-		"tags":["leveller", "dcp_magellan_levellercore_bp", "dcp_magellan_levellerunique_bp"],
+		"tags":["leveller", "magellan_levellercore_bp", "magellan_levellerunique_bp"],
 		"weapons":[
 			"dcp_magellan_solenoidgun",
 			"dcp_magellan_laservulcan",
@@ -85,7 +85,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":["dcp_magellan_levellercore_bp", "dcp_magellan_levellerunique_bp"],
+		"tags":["magellan_levellercore_bp", "magellan_levellerunique_bp"],
 		"weapons":[
 			"dcp_magellan_stunfire_rack",
 			"dcp_magellan_electromissile_pod",

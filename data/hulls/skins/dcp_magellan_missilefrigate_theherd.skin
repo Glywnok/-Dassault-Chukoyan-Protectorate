@@ -4,7 +4,7 @@
 	"hullName":"Dekker-M [Herd]",
 	"descriptionId":"dcp_magellan_supportfrigate",
 	"descriptionPrefix":"This hull has been battered by years of low-level warfare and unsafe drive modifications. Two crude box launchers for uranium-enriched dirty missiles have been bolted to the ship's frame, turning it into a deadly long-range support platform.",
-	"tags":["dcp_magellan_theherd", "restricted"],
+	"tags":["magellan_theherd", "restricted"],
 	"tech":"The Herd",
     "fleetPoints":6,
     "ordnancePoints":35,

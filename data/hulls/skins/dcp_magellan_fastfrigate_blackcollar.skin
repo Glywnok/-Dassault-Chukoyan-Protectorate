@@ -4,7 +4,7 @@
 	"hullName":"Almarshad [BCR]",
 	"descriptionId":"dcp_magellan_fastfrigate",
 	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in Magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating.",
-	"tags":["dcp_magellan_blackcollar", "no_dealer", "restricted"],
+	"tags":["magellan_blackcollar", "no_dealer", "restricted"],
 	"tech":"Blackcollar Regiment",
     "ordnancePoints":54,
     "baseValueMult":1.2,

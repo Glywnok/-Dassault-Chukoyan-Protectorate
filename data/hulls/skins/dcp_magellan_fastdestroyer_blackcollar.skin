@@ -4,7 +4,7 @@
 	"hullName":"Capella [BCR]",
 	"descriptionId":"dcp_magellan_fastdestroyer",
 	"descriptionPrefix":"This hull has come fresh from the nanoforge with the latest improvements in Magellan technology, and sports a menacing and stylish paintjob that incorporates a stealth coating. This particular model also uses an experimental neural interface, purchased at great cost from Tri-Tachyon agents.",
-	"tags":["dcp_magellan_blackcollar_special", "no_sell", "no_dealer", "restricted"],
+	"tags":["magellan_blackcollar_special", "no_sell", "no_dealer", "restricted"],
 	"tech":"Blackcollar Regiment",
     "fleetPoints":13,
     "ordnancePoints":115,

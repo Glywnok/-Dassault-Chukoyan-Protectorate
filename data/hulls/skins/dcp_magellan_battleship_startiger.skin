@@ -4,7 +4,7 @@
 	"hullName":"Mazian [SKT]",
 	"descriptionId":"dcp_magellan_battleship",
 	"descriptionPrefix":"This hull has been refurbished to an alternate spec for the Skytiger Guards division.",
-	"tags":["dcp_magellan_startiger", "no_dealer"],
+	"tags":["magellan_startiger", "no_dealer"],
 	"tech":"Skytiger Guards Division",
     "fleetPoints":35,
     "ordnancePoints":360,

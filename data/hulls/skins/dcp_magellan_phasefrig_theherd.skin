@@ -4,7 +4,7 @@
 	"hullName":"Yeager [Herd]",
 	"descriptionId":"dcp_magellan_phasefrig",
 	"descriptionPrefix":"This hull has been battered by years of low-level warfare and unsafe drive modifications. A pair of makeshift gamma torches have been crudely attached to the bow, providing both a fearsome close-range weapon, and a safety valve for the dangerously overtuned drive rig.",
-	"tags":["dcp_magellan_theherd", "restricted"],
+	"tags":["magellan_theherd", "restricted"],
 	"tech":"The Herd",
     "ordnancePoints":40,
     "baseValueMult":1.04,

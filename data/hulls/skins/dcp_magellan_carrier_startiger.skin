@@ -4,7 +4,7 @@
 	"hullName":"Edger [SKT]",
 	"descriptionId":"dcp_magellan_carrier",
 	"descriptionPrefix":"This hull has been refurbished to an alternate spec for the Skytiger Guards division.",
-	"tags":["dcp_magellan_startiger", "no_dealer"],
+	"tags":["magellan_startiger", "no_dealer"],
 	"tech":"Skytiger Guards Division",
     "fleetPoints":17,
     "ordnancePoints":128,
